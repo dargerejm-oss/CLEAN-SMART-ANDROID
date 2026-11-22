@@ -47,14 +47,22 @@ TEXTS = {
                 "Android te demande une dernière confirmation.",
                 "Les fichiers vont dans la corbeille de la Galerie : tu peux les récupérer pendant 30 jours.",
             ]),
-            ("4. La sauvegarde", [
+            ("4. Photos ratées, tri rapide, corbeille", [
+                "Photos ratées : floues, trop sombres, trop claires ou trop petites. Vérifie avant de cocher.",
+                "Tri rapide : une photo à la fois. Glisse à gauche pour jeter, à droite pour garder.",
+                "« J'ai fait une bêtise » remet dans la galerie les derniers fichiers mis à la corbeille.",
+                "La corbeille prend encore de la place : « Vider la corbeille » la libère pour de bon.",
+                "Dans une catégorie : « Envoyer » (WhatsApp, mail…) ou « Protéger » (la photo passe",
+                "en favori et ne sera plus jamais proposée).",
+            ]),
+            ("5. La sauvegarde", [
                 "Dans « Sauvegarde », choisis un dossier : carte SD, clé USB ou Google Drive.",
                 "« Sauvegarder toutes mes photos » copie tes photos et vidéos, rangées par mois.",
                 "Les fois suivantes, seules les nouvelles photos sont copiées.",
                 "Option « Sauvegarder avant de supprimer » (activée par défaut) : avant chaque",
                 "nettoyage, une copie est faite automatiquement. Les contacts sont exportés en .vcf.",
             ]),
-            ("5. La boîte mail", [
+            ("6. La boîte mail", [
                 "Touche « Connecter ma boîte mail » et choisis ta messagerie.",
                 "Gmail, Yahoo et iCloud demandent un MOT DE PASSE D'APPLICATION (pas ton mot de passe",
                 "habituel). Clean Smart t'explique comment le créer et ouvre la bonne page.",
@@ -62,7 +70,7 @@ TEXTS = {
                 "Les mails vont dans la corbeille de ta messagerie : rien n'est effacé directement.",
                 "Ton mot de passe reste chiffré sur ton téléphone.",
             ]),
-            ("6. Sauvegarder des mails", [
+            ("7. Sauvegarder des mails", [
                 "Dans Mails, touche « Sauvegarder des mails ».",
                 "Clean Smart cherche les mails qui ont des pièces jointes.",
                 "Coche ceux à garder (bouton « Cocher les PDF » pour aller vite).",
@@ -70,11 +78,12 @@ TEXTS = {
                 "le mail complet (.eml), CleanSmart/PDF réunit tous les PDF, et CleanSmart/Pièces jointes",
                 "les autres fichiers.",
             ]),
-            ("7. Les options", [
-                "Le bouton en haut à droite ouvre les options. Il n'y en a que trois :",
-                "- le dossier de sauvegarde ;",
-                "- sauvegarder avant de supprimer ;",
-                "- protéger mes favoris : les photos mises en favori ne sont jamais proposées.",
+            ("8. Les options", [
+                "Le bouton en haut à droite ouvre les options :",
+                "- le dossier de sauvegarde, et sauvegarder avant de supprimer ;",
+                "- protéger mes favoris : les photos en favori ne sont jamais proposées ;",
+                "- la sévérité : prudente (moins de photos proposées), normale ou stricte ;",
+                "- la taille du texte : normale, gros ou très gros.",
                 "Tu y trouves aussi le compteur d'espace libéré et ce mode d'emploi.",
             ]),
         ],
@@ -109,14 +118,22 @@ TEXTS = {
                 "Android asks for a final confirmation.",
                 "Files go to the Gallery bin: you can restore them for 30 days.",
             ]),
-            ("4. Backup", [
+            ("4. Failed photos, quick sort, bin", [
+                "Failed photos: blurry, too dark, too bright or too small. Check before ticking.",
+                "Quick sort: one photo at a time. Swipe left to discard, right to keep.",
+                "\"J'ai fait une bêtise\" (I made a mistake) puts the last binned files back in the gallery.",
+                "The bin still takes space: \"Vider la corbeille\" (Empty the bin) frees it for good.",
+                "In a category: \"Envoyer\" (Send: WhatsApp, email…) or \"Protéger\" (Protect: the photo",
+                "becomes a favourite and is never suggested again).",
+            ]),
+            ("5. Backup", [
                 "In \"Sauvegarde\" (Backup), choose a folder: SD card, USB drive or Google Drive.",
                 "\"Back up all my photos\" copies your photos and videos, sorted by month.",
                 "Next time, only new photos are copied.",
                 "\"Back up before deleting\" option (on by default): before each clean-up,",
                 "a copy is made automatically. Contacts are exported as a .vcf file.",
             ]),
-            ("5. Mailbox", [
+            ("6. Mailbox", [
                 "Tap \"Connecter ma boîte mail\" (Connect my mailbox) and pick your provider.",
                 "Gmail, Yahoo and iCloud require an APP PASSWORD (not your usual password).",
                 "Clean Smart explains how to create one and opens the right page.",
@@ -124,7 +141,7 @@ TEXTS = {
                 "Emails go to your mailbox bin: nothing is erased directly.",
                 "Your password stays encrypted on your phone.",
             ]),
-            ("6. Save emails", [
+            ("7. Save emails", [
                 "In Mails, tap \"Sauvegarder des mails\" (Save emails).",
                 "Clean Smart finds the emails that have attachments.",
                 "Tick the ones to keep (\"Cocher les PDF\" button to go fast).",
@@ -132,11 +149,12 @@ TEXTS = {
                 "email (.eml), CleanSmart/PDF gathers all PDFs, and CleanSmart/Pieces jointes",
                 "the other files.",
             ]),
-            ("7. Options", [
-                "The button at the top right opens the options. There are only three:",
-                "- the backup folder;",
-                "- back up before deleting;",
-                "- protect my favourites: favourite photos are never suggested.",
+            ("8. Options", [
+                "The button at the top right opens the options:",
+                "- the backup folder, and back up before deleting;",
+                "- protect my favourites: favourite photos are never suggested;",
+                "- severity: careful (fewer photos suggested), normal or strict;",
+                "- text size: normal, large or very large.",
                 "You will also find the freed-space counter and this guide.",
             ]),
         ],

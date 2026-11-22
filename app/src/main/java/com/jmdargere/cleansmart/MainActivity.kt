@@ -6,6 +6,9 @@ import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.Density
 import com.jmdargere.cleansmart.ui.CleanSmartApp
 import com.jmdargere.cleansmart.ui.CleanSmartTheme
 
@@ -20,7 +23,13 @@ class MainActivity : ComponentActivity() {
         )
         super.onCreate(savedInstanceState)
         setContent {
-            CleanSmartTheme { CleanSmartApp(vm) }
+            CleanSmartTheme {
+                // option "Gros caracteres" : agrandit tous les textes de l'appli
+                val d = LocalDensity.current
+                CompositionLocalProvider(LocalDensity provides Density(d.density, d.fontScale * vm.settings.fontScale)) {
+                    CleanSmartApp(vm)
+                }
+            }
         }
     }
 

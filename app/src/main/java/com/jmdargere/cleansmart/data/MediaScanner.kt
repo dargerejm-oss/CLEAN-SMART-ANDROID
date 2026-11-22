@@ -5,9 +5,13 @@ import android.content.ContentUris
 import android.content.Context
 import android.graphics.Bitmap
 import android.net.Uri
+import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Size
 import java.security.MessageDigest
+import java.util.concurrent.Callable
+import java.util.concurrent.Executors
+import java.util.concurrent.atomic.AtomicInteger
 
 data class MediaItem(
     val key: String,
@@ -19,6 +23,10 @@ data class MediaItem(
     val path: String,
     val bucket: String,
     val favorite: Boolean,
+    val width: Int = 0,
+    val height: Int = 0,
+    /** Petite etiquette affichee sur la miniature (ex. "Floue", "Trop sombre"). */
+    val note: String = "",
 )
 
 /** Un groupe de fichiers semblables ; [keep] est celui que l'appli conseille de garder. */
@@ -34,6 +42,10 @@ data class MediaResult(
     val screens: List<MediaItem>,
     val bigVideos: List<MediaItem>,
     val whatsapp: List<MediaItem>,
+    /** Photos floues, trop sombres ou trop claires (jamais pre-cochees). */
+    val blurry: List<MediaItem> = emptyList(),
+    /** Les 30 photos/videos les plus lourdes (pour information, jamais pre-cochees). */
+    val biggest: List<MediaItem> = emptyList(),
 )
 
 /**
@@ -78,11 +90,11 @@ class MediaScanner(ctx: Context) {
                         removable.forEach { dupRemovable += it.key }
                     }
                 }
-            if (i % 20 == 0) progress("Recherche des doublons", 15 + 35 * i / bySize.size.coerceAtLeast(1))
+            if (i % 20 == 0) progress("Recherche des doublons", 15 + 20 * i / bySize.size.coerceAtLeast(1))
         }
 
         // --- Photos similaires : rafales (quelques secondes d'ecart) qui se ressemblent ---
-        progress("Recherche des photos similaires", 50)
+        progress("Recherche des photos similaires", 35)
         val screenKeys = screens.map { it.key }.toHashSet()
         val photos = all.filter { !it.video && it.key !in screenKeys && it.key !in dupRemovable }.sortedBy { it.date }
         val burstMs = s.burstSeconds * 1000L
@@ -99,7 +111,7 @@ class MediaScanner(ctx: Context) {
 
         val similar = ArrayList<MediaGroup>()
         bursts.forEachIndexed { bi, burst ->
-            if (bi % 5 == 0) progress("Recherche des photos similaires", 50 + 45 * bi / bursts.size.coerceAtLeast(1))
+            if (bi % 5 == 0) progress("Recherche des photos similaires", 35 + 20 * bi / bursts.size.coerceAtLeast(1))
             val sig = HashMap<String, LongArray>()
             burst.forEach { item -> signature(item)?.let { sig[item.key] = it } }
             val groups = ArrayList<MutableList<MediaItem>>()
@@ -120,6 +132,12 @@ class MediaScanner(ctx: Context) {
             }
         }
 
+        // --- Photos floues ou ratees (trop sombres / trop claires) ---
+        progress("Recherche des photos floues", 55)
+        val blurry = findBlurry(
+            candidates.filter { !it.video && it.key !in screenKeys && it.key !in dupRemovable }, s,
+        ) { pct -> progress("Recherche des photos floues", 55 + 43 * pct / 100) }
+
         progress("Terminé", 100)
         return MediaResult(
             photoCount = all.count { !it.video },
@@ -131,7 +149,99 @@ class MediaScanner(ctx: Context) {
             screens = screens,
             bigVideos = bigVideos,
             whatsapp = whatsapp,
+            blurry = blurry,
+            biggest = candidates.sortedByDescending { it.size }.take(30),
         )
+    }
+
+    /**
+     * Mesure chaque photo sur une miniature (rapide, 4 en parallele) :
+     *  - nettete = variance du laplacien : une photo floue n'a presque pas de contours nets ;
+     *  - luminosite moyenne : presque noire (photo prise dans la poche) ou presque blanche.
+     * Pour ne pas accuser a tort les photos douces (ciel, brume, portrait), une photo n'est
+     * "floue" que si elle est tres en dessous du seuil ET parmi les moins nettes de la galerie.
+     */
+    private fun findBlurry(all: List<MediaItem>, s: Settings, progress: (Int) -> Unit): List<MediaItem> {
+        if (all.isEmpty()) return emptyList()
+        // trop petites : connues tout de suite par leur taille en pixels
+        val small = all.filter { it.width > 0 && it.height > 0 && it.width.toLong() * it.height < s.smallPixels }
+            .map { it.copy(note = "Trop petite") }
+        val smallKeys = small.map { it.key }.toHashSet()
+        val photos = all.filter { it.key !in smallKeys }
+        if (photos.isEmpty()) return small
+        val pool = Executors.newFixedThreadPool(4)
+        val done = AtomicInteger(0)
+        val results = try {
+            pool.invokeAll(photos.map { item ->
+                Callable {
+                    val q = quality(item)
+                    val n = done.incrementAndGet()
+                    if (n % 50 == 0) progress(100 * n / photos.size)
+                    item to q
+                }
+            }).mapNotNull { f -> runCatching { f.get() }.getOrNull() }
+        } finally {
+            pool.shutdownNow()
+        }
+        val measured = results.mapNotNull { (item, q) -> q?.let { item to it } }
+        if (measured.isEmpty()) return small
+
+        // seuil relatif : une fraction de la nettete mediane de la galerie
+        val sharpSorted = measured.map { it.second[0] }.sorted()
+        val median = sharpSorted[sharpSorted.size / 2]
+        val blurLimit = minOf(s.blurAbsolute, median * s.blurRelative)
+
+        return (small + measured.mapNotNull { (item, q) ->
+            val (sharp, mean) = q[0] to q[1]
+            when {
+                mean < s.darkLimit -> item.copy(note = "Trop sombre")
+                mean > s.brightLimit -> item.copy(note = "Trop claire")
+                sharp < blurLimit -> item.copy(note = "Floue")
+                else -> null
+            }
+        }).sortedBy { it.date }
+    }
+
+    /** [0] = nettete (variance du laplacien), [1] = luminosite moyenne (0-255). */
+    private fun quality(it: MediaItem): DoubleArray? {
+        var bmp: Bitmap? = null
+        return try {
+            bmp = software(cr.loadThumbnail(it.uri, Size(320, 320), null))
+            val w = bmp.width
+            val h = bmp.height
+            if (w < 16 || h < 16) return null
+            val px = IntArray(w * h)
+            bmp.getPixels(px, 0, w, 0, 0, w, h)
+            val g = IntArray(w * h) { i -> gray(px[i]) }
+            var sum = 0.0; var sum2 = 0.0; var lum = 0.0; var cnt = 0
+            for (y in 1 until h - 1) for (x in 1 until w - 1) {
+                val c = y * w + x
+                val lap = (g[c - w] + g[c + w] + g[c - 1] + g[c + 1] - 4 * g[c]).toDouble()
+                sum += lap; sum2 += lap * lap; lum += g[c]; cnt++
+            }
+            val mean = sum / cnt
+            doubleArrayOf(sum2 / cnt - mean * mean, lum / cnt)
+        } catch (e: Exception) {
+            null
+        } finally {
+            bmp?.recycle()
+        }
+    }
+
+
+    /** Les photos les plus recentes, pour le tri rapide (favoris exclus si l'option est active). */
+    fun recentPhotos(s: Settings, max: Int): List<MediaItem> {
+        val all = ArrayList<MediaItem>()
+        load(MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL), false, all)
+        return all.filter { !(s.protectFavorites && it.favorite) }.sortedByDescending { it.date }.take(max)
+    }
+
+    /** Photos et videos actuellement dans la corbeille Android (elles prennent encore de la place). */
+    fun trashed(): List<MediaItem> {
+        val all = ArrayList<MediaItem>()
+        load(MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL), false, all, trashed = true)
+        load(MediaStore.Video.Media.getContentUri(MediaStore.VOLUME_EXTERNAL), true, all, trashed = true)
+        return all
     }
 
     /** Toutes les photos et videos (pour la sauvegarde complete). */
@@ -148,7 +258,7 @@ class MediaScanner(ctx: Context) {
         return p.contains("screenshot") || n.startsWith("screenshot") || p.contains("captures d")
     }
 
-    private fun load(base: Uri, video: Boolean, out: MutableList<MediaItem>) {
+    private fun load(base: Uri, video: Boolean, out: MutableList<MediaItem>, trashed: Boolean = false) {
         val cols = arrayOf(
             MediaStore.MediaColumns._ID,
             MediaStore.MediaColumns.DISPLAY_NAME,
@@ -158,8 +268,14 @@ class MediaScanner(ctx: Context) {
             MediaStore.MediaColumns.RELATIVE_PATH,
             MediaStore.MediaColumns.BUCKET_DISPLAY_NAME,
             MediaStore.MediaColumns.IS_FAVORITE,
+            MediaStore.MediaColumns.WIDTH,
+            MediaStore.MediaColumns.HEIGHT,
         )
-        cr.query(base, cols, null, null, MediaStore.MediaColumns.DATE_TAKEN + " ASC")?.use { c ->
+        val args = Bundle().apply {
+            putStringArray(ContentResolver.QUERY_ARG_SORT_COLUMNS, arrayOf(MediaStore.MediaColumns.DATE_TAKEN))
+            if (trashed) putInt(MediaStore.QUERY_ARG_MATCH_TRASHED, MediaStore.MATCH_ONLY)
+        }
+        cr.query(base, cols, args, null)?.use { c ->
             while (c.moveToNext()) {
                 val id = c.getLong(0)
                 val taken = c.getLong(3)
@@ -173,6 +289,8 @@ class MediaScanner(ctx: Context) {
                     path = c.getString(5) ?: "",
                     bucket = c.getString(6) ?: "",
                     favorite = c.getInt(7) == 1,
+                    width = c.getInt(8),
+                    height = c.getInt(9),
                 )
             }
         }

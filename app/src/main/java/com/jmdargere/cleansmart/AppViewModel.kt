@@ -7,6 +7,7 @@ import android.os.Environment
 import android.os.StatFs
 import android.provider.MediaStore
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -28,6 +29,7 @@ import com.jmdargere.cleansmart.data.Provider
 import com.jmdargere.cleansmart.data.Settings
 import com.jmdargere.cleansmart.data.fmtBytes
 import com.jmdargere.cleansmart.data.fmtNum
+import com.jmdargere.cleansmart.data.plural
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -36,9 +38,11 @@ import kotlinx.coroutines.withContext
 enum class Cat(val emoji: String, val title: String, val hint: String, val grouped: Boolean) {
     DUPLICATES("🧬", "Doublons", "Copies identiques — l'original est gardé", true),
     SIMILAR("🎞️", "Photos similaires", "Rafales — la plus nette est gardée", true),
+    BLURRY("🌫️", "Photos floues ou ratées", "Floues, trop sombres ou trop claires — vérifie avant de cocher", false),
     SCREENS("📱", "Captures d'écran", "Souvent inutiles après coup", false),
     BIG_VIDEOS("🎬", "Grosses vidéos", "Plus de 100 Mo chacune", false),
     WHATSAPP("💬", "Médias WhatsApp", "Photos et vidéos reçues ou envoyées", false),
+    BIGGEST("🐘", "Mes plus gros fichiers", "Les 30 photos et vidéos qui prennent le plus de place", false),
 }
 
 data class Busy(val title: String, val step: String = "", val pct: Int = 0)
@@ -107,15 +111,18 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         // pre-selection : seulement les copies et les photos ratees (jamais celle a garder)
         selected = (r.duplicates + r.similar).flatMap { g -> g.items.filter { it.key != g.keep }.map { it.key } }.toSet()
         if (withContacts) contacts = withContext(Dispatchers.IO) { runCatching { contactsCleaner.scan() }.getOrNull() }
+        trash = withContext(Dispatchers.IO) { runCatching { scanner.trashed() }.getOrDefault(emptyList()) }
     }
 
     fun groups(c: Cat): List<MediaGroup> = media?.let {
         when (c) {
             Cat.DUPLICATES -> it.duplicates
             Cat.SIMILAR -> it.similar
+            Cat.BLURRY -> it.blurry.map { m -> MediaGroup(listOf(m), "") }
             Cat.SCREENS -> it.screens.map { m -> MediaGroup(listOf(m), "") }
             Cat.BIG_VIDEOS -> it.bigVideos.map { m -> MediaGroup(listOf(m), "") }
             Cat.WHATSAPP -> it.whatsapp.map { m -> MediaGroup(listOf(m), "") }
+            Cat.BIGGEST -> it.biggest.map { m -> MediaGroup(listOf(m), "") }
         }
     } ?: emptyList()
 
@@ -136,10 +143,13 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     // ------------------------------------------------------------------ nettoyage photos
 
-    /** Sauvegarde si besoin, puis demande a Android la mise a la corbeille. */
-    fun prepareTrash(onReady: (IntentSender) -> Unit) = run("Préparation") {
+    /** Sauvegarde si besoin, puis demande a Android la mise a la corbeille de la selection. */
+    fun prepareTrash(onReady: (IntentSender) -> Unit) {
         val m = itemByKey()
-        val items = selected.mapNotNull { m[it] }
+        trashItems(selected.mapNotNull { m[it] }, onReady)
+    }
+
+    private fun trashItems(items: List<MediaItem>, onReady: (IntentSender) -> Unit) = run("Préparation") {
         if (items.isEmpty()) return@run
         val tree = settings.backupTree
         if (settings.backupBeforeDelete && backup.isUsable(tree)) {
@@ -154,6 +164,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun onTrashResult(ok: Boolean) {
         val gone = pendingTrash.map { it.key }.toSet()
         val bytes = pendingTrash.sumOf { it.size }
+        val pendingTrashDone = pendingTrash
         pendingTrash = emptyList()
         if (!ok) { say("Rien n'a été supprimé."); return }
         media = media?.let { r ->
@@ -161,12 +172,136 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             fun List<MediaGroup>.cleanG() = map { g -> g.copy(items = g.items.clean()) }
                 .filter { g -> g.items.size > 1 && g.items.any { it.key == g.keep } }
             r.copy(duplicates = r.duplicates.cleanG(), similar = r.similar.cleanG(),
-                screens = r.screens.clean(), bigVideos = r.bigVideos.clean(), whatsapp = r.whatsapp.clean())
+                screens = r.screens.clean(), bigVideos = r.bigVideos.clean(), whatsapp = r.whatsapp.clean(),
+                blurry = r.blurry.clean(), biggest = r.biggest.clean())
         }
         selected = selected - gone
+        saveLastTrashed(pendingTrashDone)
+        swipeList?.let { l ->
+            swipeIndex = (swipeIndex - l.take(swipeIndex).count { it.key in gone }).coerceAtLeast(0)
+            swipeList = l.filter { it.key !in gone }
+        }
+        swipeTrash = swipeTrash.filter { it.key !in gone }
         addFreed(bytes)
         refreshStorage()
+        refreshTrash()
         say("✨ ${fmtBytes(bytes)} libérés (récupérables 30 jours dans la corbeille de la Galerie)")
+    }
+
+    // ------------------------------------------------------------------ "J'ai fait une betise" (annuler)
+
+    /** Les fichiers de la derniere mise a la corbeille (gardes meme si l'appli est fermee). */
+    var lastTrashed by mutableStateOf(loadLastTrashed()); private set
+
+    private fun loadLastTrashed(): List<android.net.Uri> =
+        (prefs.getString("lastTrashed", "") ?: "").split('\n').filter { it.isNotBlank() }.map { android.net.Uri.parse(it) }
+
+    private fun saveLastTrashed(items: List<MediaItem>) {
+        lastTrashed = items.map { it.uri }
+        prefs.edit().putString("lastTrashed", lastTrashed.joinToString("\n")).apply()
+    }
+
+    /** Remet dans la galerie les fichiers de la derniere mise a la corbeille. */
+    fun prepareUndo(onReady: (IntentSender) -> Unit) {
+        if (lastTrashed.isEmpty()) return
+        runCatching { MediaStore.createTrashRequest(ctx.contentResolver, lastTrashed, false) }
+            .onSuccess { onReady(it.intentSender) }
+            .onFailure { say("Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.") }
+    }
+
+    fun onUndoResult(ok: Boolean) {
+        if (!ok) return
+        say("↩️ ${plural(lastTrashed.size, "fichier")} remis dans la galerie")
+        lastTrashed = emptyList()
+        prefs.edit().remove("lastTrashed").apply()
+        refreshTrash()
+        refreshStorage()
+    }
+
+    // ------------------------------------------------------------------ proteger des photos (= favoris Android)
+
+    private var pendingProtect: List<MediaItem> = emptyList()
+
+    fun selectedIn(c: Cat): List<MediaItem> = groups(c).flatMap { it.items }.filter { it.key in selected }.distinctBy { it.key }
+
+    fun prepareProtect(items: List<MediaItem>, onReady: (IntentSender) -> Unit) {
+        if (items.isEmpty()) return
+        pendingProtect = items
+        runCatching { MediaStore.createFavoriteRequest(ctx.contentResolver, items.map { it.uri }, true) }
+            .onSuccess { onReady(it.intentSender) }
+            .onFailure { say(it.message ?: "Impossible de protéger ces photos") }
+    }
+
+    fun onProtectResult(ok: Boolean) {
+        val keys = pendingProtect.map { it.key }.toSet()
+        pendingProtect = emptyList()
+        if (!ok) return
+        selected = selected - keys
+        // une photo protegee n'est plus jamais proposee
+        if (settings.protectFavorites) media = media?.let { r ->
+            fun List<MediaItem>.clean() = filter { it.key !in keys }
+            fun List<MediaGroup>.cleanG() = map { g -> g.copy(items = g.items.filter { it.key == g.keep || it.key !in keys }) }
+                .filter { it.items.size > 1 }
+            r.copy(duplicates = r.duplicates.cleanG(), similar = r.similar.cleanG(), screens = r.screens.clean(),
+                bigVideos = r.bigVideos.clean(), whatsapp = r.whatsapp.clean(), blurry = r.blurry.clean(), biggest = r.biggest.clean())
+        }
+        say("🛡️ ${plural(keys.size, "photo protégée", "photos protégées")} (mises en favori)")
+    }
+
+    // ------------------------------------------------------------------ tri rapide (une photo a la fois)
+
+    var swipeList by mutableStateOf<List<MediaItem>?>(null); private set
+    var swipeIndex by mutableIntStateOf(0); private set
+    var swipeTrash by mutableStateOf<List<MediaItem>>(emptyList()); private set
+
+    fun loadSwipe() = run("Tri rapide") {
+        swipeList = withContext(Dispatchers.IO) { scanner.recentPhotos(settings, 1000) }
+        swipeIndex = 0
+        swipeTrash = emptyList()
+    }
+
+    /** jeter = true : la photo part dans la pile "a jeter" ; false : on la garde. */
+    fun swipe(jeter: Boolean) {
+        val it = swipeList?.getOrNull(swipeIndex) ?: return
+        if (jeter) swipeTrash = swipeTrash + it
+        swipeIndex++
+    }
+
+    fun swipeUndo() {
+        val l = swipeList ?: return
+        if (swipeIndex == 0) return
+        swipeIndex--
+        val back = l[swipeIndex]
+        swipeTrash = swipeTrash.filter { it.key != back.key }
+    }
+
+    fun prepareSwipeTrash(onReady: (IntentSender) -> Unit) = trashItems(swipeTrash, onReady)
+
+    // ------------------------------------------------------------------ corbeille Android
+
+    /** Contenu de la corbeille (nombre, taille) : ces fichiers prennent encore de la place. */
+    var trash by mutableStateOf<List<MediaItem>>(emptyList()); private set
+
+    fun refreshTrash() {
+        viewModelScope.launch {
+            trash = withContext(Dispatchers.IO) { runCatching { scanner.trashed() }.getOrDefault(emptyList()) }
+        }
+    }
+
+    /** Suppression definitive de la corbeille (Android demande confirmation). */
+    fun prepareEmptyTrash(onReady: (IntentSender) -> Unit) {
+        val items = trash
+        if (items.isEmpty()) return
+        runCatching { MediaStore.createDeleteRequest(ctx.contentResolver, items.map { it.uri }) }
+            .onSuccess { onReady(it.intentSender) }
+            .onFailure { say(it.message ?: "Impossible de vider la corbeille") }
+    }
+
+    fun onEmptyTrashResult(ok: Boolean) {
+        val bytes = trash.sumOf { it.size }
+        if (ok) say("🗑️ Corbeille vidée : ${fmtBytes(bytes)} récupérés pour de bon")
+        refreshTrash()
+        refreshStorage()
     }
 
     private fun addFreed(b: Long) { freed += b; prefs.edit().putLong("freed", freed).apply() }

@@ -73,7 +73,7 @@ import com.jmdargere.cleansmart.data.fmtNum
 import com.jmdargere.cleansmart.data.plural
 
 /** Les ecrans de l'appli (navigation simple, sans bibliotheque). */
-private enum class Ecran { ACCUEIL, CATEGORIE, MAILS, MAILS_SAUVER, OPTIONS, MANUEL }
+private enum class Ecran { ACCUEIL, CATEGORIE, TRI, MAILS, MAILS_SAUVER, OPTIONS, MANUEL }
 
 private fun mediaPerms(): Array<String> =
     if (Build.VERSION.SDK_INT >= 33) arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
@@ -117,6 +117,46 @@ fun CleanSmartApp(vm: AppViewModel) {
     val trashLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
         vm.onTrashResult(it.resultCode == Activity.RESULT_OK)
     }
+    // --- Vider la corbeille (suppression definitive, confirmee par Android) ---
+    val emptyTrashLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
+        vm.onEmptyTrashResult(it.resultCode == Activity.RESULT_OK)
+    }
+    fun viderCorbeille() {
+        val n = vm.trash.size
+        confirm = Confirm(
+            "Vider la corbeille ?",
+            "${plural(n, "élément")} (${fmtBytes(vm.trash.sumOf { it.size })}) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.",
+            "Vider",
+        ) { vm.prepareEmptyTrash { s -> emptyTrashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
+    }
+    LaunchedEffect(Unit) { if (granted(ctx, mediaPerms())) vm.refreshTrash() }
+
+    // --- "J'ai fait une betise" : remettre la derniere mise a la corbeille ---
+    val undoLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
+        vm.onUndoResult(it.resultCode == Activity.RESULT_OK)
+    }
+    fun annuler() = vm.prepareUndo { s -> undoLauncher.launch(IntentSenderRequest.Builder(s).build()) }
+
+    // --- Proteger des photos (favoris Android) ---
+    val protectLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {
+        vm.onProtectResult(it.resultCode == Activity.RESULT_OK)
+    }
+    fun proteger(items: List<com.jmdargere.cleansmart.data.MediaItem>) =
+        vm.prepareProtect(items) { s -> protectLauncher.launch(IntentSenderRequest.Builder(s).build()) }
+
+    // --- Envoyer des photos (WhatsApp, mail...) : 20 au maximum ---
+    fun envoyer(items: List<com.jmdargere.cleansmart.data.MediaItem>) {
+        val l = items.take(20)
+        if (l.isEmpty()) return
+        val send = Intent(Intent.ACTION_SEND_MULTIPLE).apply {
+            type = if (l.any { it.video }) "*/*" else "image/*"
+            putParcelableArrayListExtra(Intent.EXTRA_STREAM, ArrayList(l.map { it.uri }))
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
+        runCatching { ctx.startActivity(Intent.createChooser(send, "Envoyer ${plural(l.size, "fichier")}")) }
+        if (items.size > 20) vm.message = "Seuls les 20 premiers fichiers sont envoyés."
+    }
+
     fun nettoyer() {
         val n = vm.selected.size
         val save = vm.settings.backupBeforeDelete && vm.backupReady()
@@ -152,6 +192,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                     Text(when (ecran) {
                         Ecran.ACCUEIL -> "✨ Clean Smart"
                         Ecran.CATEGORIE -> cat.emoji + " " + cat.title
+                        Ecran.TRI -> "👆 Tri rapide"
                         Ecran.MAILS -> "✉️ Mails"
                         Ecran.MAILS_SAUVER -> "💾 Sauver des mails"
                         Ecran.OPTIONS -> "⚙️ Options"
@@ -178,13 +219,21 @@ fun CleanSmartApp(vm: AppViewModel) {
     ) { pad ->
         Box(Modifier.padding(pad).fillMaxSize()) {
             when (ecran) {
-                Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai,
+                Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai, ::viderCorbeille, ::annuler,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
+                    openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
                     chooseFolder = { folderLauncher.launch(null) },
                     ask = { confirm = it })
-                Ecran.CATEGORIE -> Categorie(vm, cat)
+                Ecran.CATEGORIE -> Categorie(vm, cat, envoyer = ::envoyer, proteger = ::proteger)
+                Ecran.TRI -> TriRapide(vm) {
+                    confirm = Confirm(
+                        "Jeter ${plural(vm.swipeTrash.size, "photo")} ?",
+                        "${fmtBytes(vm.swipeTrash.sumOf { it.size })} vont dans la corbeille de la Galerie (récupérables 30 jours).",
+                        "Corbeille",
+                    ) { vm.prepareSwipeTrash { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
+                }
                 Ecran.MAILS -> Mails(vm, ask = { confirm = it }, openSave = { ecran = Ecran.MAILS_SAUVER })
                 Ecran.MAILS_SAUVER -> MailsSauver(vm, chooseFolder = { folderLauncher.launch(null) })
                 Ecran.OPTIONS -> Options(vm, chooseFolder = { folderLauncher.launch(null) }, openManual = { ecran = Ecran.MANUEL })
@@ -206,7 +255,10 @@ private fun Accueil(
     vm: AppViewModel,
     analyser: () -> Unit,
     joursEssai: Int,
+    viderCorbeille: () -> Unit,
+    annuler: () -> Unit,
     openCat: (Cat) -> Unit,
+    openTri: () -> Unit,
     openMail: () -> Unit,
     openManual: () -> Unit,
     chooseFolder: () -> Unit,
@@ -233,6 +285,21 @@ private fun Accueil(
                     }
                 }
             }
+            if (vm.lastTrashed.isNotEmpty()) {
+                OutlinedButton(onClick = annuler, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                    shape = RoundedCornerShape(14.dp)) {
+                    Text("↩️ J'ai fait une bêtise : remettre les ${plural(vm.lastTrashed.size, "derniers fichiers", "derniers fichiers")}",
+                        color = Rouge, fontWeight = FontWeight.Bold)
+                }
+            }
+            if (vm.trash.isNotEmpty()) {
+                BoxCard {
+                    InfoRow("🗑️", "Corbeille : ${plural(vm.trash.size, "élément")}",
+                        "Ils prennent encore de la place pendant 30 jours", fmtBytes(vm.trash.sumOf { it.size }))
+                    Gap(4)
+                    BigButton("Vider la corbeille maintenant", color = Carte2, onClick = viderCorbeille)
+                }
+            }
             Gap()
             BigButton(if (m == null) "🔍 Analyser mon téléphone" else "🔄 Analyser à nouveau", onClick = analyser)
             Gap()
@@ -251,7 +318,9 @@ private fun Accueil(
             }
         } else {
             item {
-                val total = Cat.entries.sumOf { c -> vm.removable(c).sumOf { it.size } }
+                // chaque fichier compte une seule fois (une photo peut etre dans 2 categories)
+                val total = Cat.entries.filter { it != Cat.BIGGEST }
+                    .flatMap { vm.removable(it) }.distinctBy { it.key }.sumOf { it.size }
                 BoxCard {
                     Text("Espace à récupérer", color = Gris, fontSize = 13.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                     Text(fmtBytes(total), fontSize = 36.sp, fontWeight = FontWeight.Black, color = Violet2,
@@ -271,6 +340,12 @@ private fun Accueil(
                             fmtBytes(r.sumOf { it.size })) { openCat(c) }
                     }
                 }
+            }
+        }
+
+        item {
+            BoxCard(onClick = openTri) {
+                InfoRow("👆", "Tri rapide", "Une photo à la fois : glisse à gauche pour jeter, à droite pour garder", onClick = openTri)
             }
         }
 
@@ -362,8 +437,14 @@ private fun EssaiTermine() {
 // =====================================================================================
 
 @Composable
-private fun Categorie(vm: AppViewModel, cat: Cat) {
+private fun Categorie(
+    vm: AppViewModel,
+    cat: Cat,
+    envoyer: (List<com.jmdargere.cleansmart.data.MediaItem>) -> Unit,
+    proteger: (List<com.jmdargere.cleansmart.data.MediaItem>) -> Unit,
+) {
     val groups = vm.groups(cat)
+    val choisis = vm.selectedIn(cat)
     LazyVerticalGrid(
         columns = GridCells.Fixed(3),
         contentPadding = PaddingValues(12.dp, 4.dp, 12.dp, 24.dp),
@@ -379,6 +460,14 @@ private fun Categorie(vm: AppViewModel, cat: Cat) {
                     OutlinedButton(onClick = { vm.selectAll(cat, true) }) { Text("Tout cocher", color = Color.White) }
                     RowGap()
                     OutlinedButton(onClick = { vm.selectAll(cat, false) }) { Text("Tout décocher", color = Color.White) }
+                }
+                if (choisis.isNotEmpty()) {
+                    Gap(4)
+                    Row(Modifier.horizontalScroll(rememberScrollState())) {
+                        OutlinedButton(onClick = { envoyer(choisis) }) { Text("📤 Envoyer (${choisis.size})", color = Color.White) }
+                        RowGap()
+                        OutlinedButton(onClick = { proteger(choisis) }) { Text("🛡️ Protéger (${choisis.size})", color = Color.White) }
+                    }
                 }
                 Gap(4)
             }
@@ -617,9 +706,24 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
             }
             SectionTitle("PROTECTION")
             BoxCard {
-                OptionSwitch("Protéger mes favoris", "Les photos mises en favori ne sont jamais proposées", s.protectFavorites) {
+                OptionSwitch("Protéger mes favoris",
+                    "Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées", s.protectFavorites) {
                     vm.updateSettings(s.copy(protectFavorites = it))
                 }
+            }
+            SectionTitle("RECHERCHE DES PHOTOS RATÉES")
+            BoxCard {
+                Text("Sévérité", fontWeight = FontWeight.Bold)
+                Text("Prudente : moins de photos proposées. Stricte : davantage.", color = Gris, fontSize = 13.sp)
+                Gap(6)
+                ChipsChoix(listOf("Prudente", "Normale", "Stricte"), s.severity) { vm.updateSettings(s.copy(severity = it)) }
+                Text("Relance l'analyse après un changement.", color = Gris, fontSize = 12.sp)
+            }
+            SectionTitle("AFFICHAGE")
+            BoxCard {
+                Text("Taille du texte", fontWeight = FontWeight.Bold)
+                Gap(6)
+                ChipsChoix(listOf("Normale", "Gros", "Très gros"), s.textSize) { vm.updateSettings(s.copy(textSize = it)) }
             }
             SectionTitle("AUTRE")
             BoxCard {
@@ -633,6 +737,17 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
             Gap()
             Text("Clean Smart ${BuildConfig.VERSION_NAME} — JM Dargère", color = Gris, fontSize = 12.sp,
                 modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
+        }
+    }
+}
+
+@Composable
+private fun ChipsChoix(labels: List<String>, selected: Int, onSelect: (Int) -> Unit) {
+    Row(Modifier.horizontalScroll(rememberScrollState())) {
+        labels.forEachIndexed { i, l ->
+            FilterChip(selected = selected == i, onClick = { onSelect(i) }, label = { Text(l) },
+                modifier = Modifier.padding(end = 6.dp),
+                colors = FilterChipDefaults.filterChipColors(selectedContainerColor = Violet, selectedLabelColor = Color.White))
         }
     }
 }

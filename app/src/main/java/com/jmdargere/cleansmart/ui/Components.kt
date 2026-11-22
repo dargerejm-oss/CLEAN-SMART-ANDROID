@@ -201,6 +201,11 @@ fun Thumb(item: MediaItem, selected: Boolean, keep: Boolean, onToggle: () -> Uni
                 modifier = Modifier.align(Alignment.TopStart).padding(4.dp)
                     .background(Color(0x99000000), RoundedCornerShape(5.dp)).padding(horizontal = 5.dp, vertical = 1.dp))
         }
+        if (!keep && item.note.isNotEmpty()) {
+            Text(item.note, fontSize = 10.sp, fontWeight = FontWeight.Bold, color = Color(0xFF2A1A00),
+                modifier = Modifier.align(Alignment.BottomStart).padding(4.dp)
+                    .background(Color(0xFFFFB547), RoundedCornerShape(5.dp)).padding(horizontal = 5.dp, vertical = 1.dp))
+        }
         if (keep) {
             Text("GARDÉE", fontSize = 10.sp, fontWeight = FontWeight.ExtraBold, color = Color(0xFF002211),
                 modifier = Modifier.align(Alignment.BottomStart).padding(4.dp)
