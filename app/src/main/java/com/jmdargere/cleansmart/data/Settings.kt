@@ -10,8 +10,8 @@ import android.net.Uri
 data class Settings(
     /** Dossier de sauvegarde choisi (carte SD, cle USB, Drive...) ou null. */
     val backupUri: String? = null,
-    /** Sauvegarder automatiquement avant chaque suppression. */
-    val backupBeforeDelete: Boolean = true,
+    /** Sauvegarder automatiquement avant chaque suppression (desactive par defaut : inutile pour les doublons et photos ratees). */
+    val backupBeforeDelete: Boolean = false,
     /** Ne jamais proposer les photos favorites (= photos protegees). */
     val protectFavorites: Boolean = true,
     /** Severite de la recherche : 0 = prudente, 1 = normale, 2 = stricte. */
@@ -51,7 +51,7 @@ data class Settings(
             val p = ctx.getSharedPreferences(P, Context.MODE_PRIVATE)
             return Settings(
                 backupUri = p.getString("backupUri", null),
-                backupBeforeDelete = p.getBoolean("backupBeforeDelete", true),
+                backupBeforeDelete = p.getBoolean("backupBeforeDelete", false),
                 protectFavorites = p.getBoolean("protectFavorites", true),
                 severity = p.getInt("severity", 1),
                 textSize = p.getInt("textSize", 0),

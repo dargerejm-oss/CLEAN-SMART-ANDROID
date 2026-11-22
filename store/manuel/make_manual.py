@@ -1,313 +1,540 @@
 """
-Fabrique le mode d'emploi de Clean Smart en francais et en anglais :
+Fabrique le mode d'emploi illustre de Clean Smart, en francais et en anglais :
     app/src/main/assets/manuel_fr.pdf
     app/src/main/assets/manuel_en.pdf
 
-Usage :  python store/manuel/make_manual.py      (depuis le dossier CLEAN_SMART)
-Besoin : pip install reportlab
+Usage :  python store/manuel/make_manual.py      (depuis le dossier CLEAN_SMART, sous Windows)
+Besoin : pip install reportlab pillow
+         polices Windows : Segoe UI (texte) et Segoe UI Emoji (icones en couleur)
 """
 import os
-from reportlab.lib.pagesizes import A5
-from reportlab.lib.units import mm
+import tempfile
+
+from PIL import Image, ImageDraw, ImageFont
 from reportlab.lib.colors import HexColor, white
+from reportlab.lib.pagesizes import A5
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
-FOND = HexColor("#0F0F1E")
-CARTE = HexColor("#1B1B33")
-VIOLET = HexColor("#6A5CFF")
-VIOLET2 = HexColor("#9D93FF")
-GRIS = HexColor("#A3A3C7")
-VERT = HexColor("#2ECC8F")
+FONTS = r"C:\Windows\Fonts"
+pdfmetrics.registerFont(TTFont("UI", os.path.join(FONTS, "segoeui.ttf")))
+pdfmetrics.registerFont(TTFont("UIB", os.path.join(FONTS, "segoeuib.ttf")))
+pdfmetrics.registerFont(TTFont("UISB", os.path.join(FONTS, "seguisb.ttf")))
+EMOJI_FONT = os.path.join(FONTS, "seguiemj.ttf")
 
-TEXTS = {
-    "fr": {
-        "title": "Clean Smart",
-        "subtitle": "Mode d'emploi",
-        "tag": "Libère de l'espace sur ton téléphone, simplement et sans risque.",
-        "pages": [
-            ("1. Analyser", [
-                "Ouvre Clean Smart et appuie sur le gros bouton « Analyser mon téléphone ».",
-                "La première fois, Android te demande l'accès aux photos et aux contacts : accepte.",
-                "En quelques secondes, Clean Smart te montre l'espace que tu peux récupérer.",
-                "Rien n'est supprimé pendant l'analyse.",
-            ]),
-            ("2. Ce que Clean Smart trouve", [
-                "Doublons : copies identiques d'une même photo ou vidéo. L'original est gardé.",
-                "Photos similaires : rafales prises à quelques secondes d'écart. La plus nette est gardée.",
-                "Captures d'écran : souvent inutiles après coup.",
-                "Grosses vidéos : plus de 100 Mo chacune.",
-                "Médias WhatsApp : photos et vidéos reçues ou envoyées.",
-                "Contacts en double : même nom et même numéro.",
-            ]),
-            ("3. Choisir et nettoyer", [
-                "Touche une catégorie pour voir les miniatures.",
-                "Touche une image pour la cocher ou la décocher. Appui long : la voir en grand.",
-                "Les photos marquées « GARDÉE » sont celles que Clean Smart te conseille de garder.",
-                "Appuie sur le bouton rouge « Nettoyer » en bas de l'écran.",
-                "Android te demande une dernière confirmation.",
-                "Les fichiers vont dans la corbeille de la Galerie : tu peux les récupérer pendant 30 jours.",
-            ]),
-            ("4. Photos ratées, tri rapide, corbeille", [
-                "Photos ratées : floues, trop sombres, trop claires ou trop petites. Vérifie avant de cocher.",
-                "Tri rapide : une photo à la fois. Glisse à gauche pour jeter, à droite pour garder.",
-                "« J'ai fait une bêtise » remet dans la galerie les derniers fichiers mis à la corbeille.",
-                "La corbeille prend encore de la place : « Vider la corbeille » la libère pour de bon.",
-                "Dans une catégorie : « Envoyer » (WhatsApp, mail…) ou « Protéger » (la photo passe",
-                "en favori et ne sera plus jamais proposée).",
-            ]),
-            ("5. La sauvegarde", [
-                "Dans « Sauvegarde », choisis un dossier : carte SD, clé USB ou Google Drive.",
-                "« Sauvegarder toutes mes photos » copie tes photos et vidéos, rangées par mois.",
-                "Les fois suivantes, seules les nouvelles photos sont copiées.",
-                "Option « Sauvegarder avant de supprimer » (activée par défaut) : avant chaque",
-                "nettoyage, une copie est faite automatiquement. Les contacts sont exportés en .vcf.",
-            ]),
-            ("6. La boîte mail", [
-                "Touche « Connecter ma boîte mail » et choisis ta messagerie.",
-                "Gmail, Yahoo et iCloud demandent un MOT DE PASSE D'APPLICATION (pas ton mot de passe",
-                "habituel). Clean Smart t'explique comment le créer et ouvre la bonne page.",
-                "Analyse ta boîte puis, en un bouton : newsletters, gros mails (+ 5 Mo) ou mails de plus de 2 ans.",
-                "Les mails vont dans la corbeille de ta messagerie : rien n'est effacé directement.",
-                "Ton mot de passe reste chiffré sur ton téléphone.",
-            ]),
-            ("7. Sauvegarder des mails", [
-                "Dans Mails, touche « Sauvegarder des mails ».",
-                "Clean Smart cherche les mails qui ont des pièces jointes.",
-                "Coche ceux à garder (bouton « Cocher les PDF » pour aller vite).",
-                "Appuie sur « Sauvegarder » : dans ton dossier de sauvegarde, CleanSmart/Mails contient",
-                "le mail complet (.eml), CleanSmart/PDF réunit tous les PDF, et CleanSmart/Pièces jointes",
-                "les autres fichiers.",
-            ]),
-            ("8. Encore plus pour tes mails", [
-                "Les mails de ta banque, de l'administration ou de santé ne sont JAMAIS mis à la corbeille.",
-                "Mails en double : les copies reçues à quelques secondes d'écart partent en un bouton.",
-                "« À retrouver vite » : factures et papiers, colis, voyages (lecture seule).",
-                "« Remettre des mails » : coche des mails de la corbeille pour les remettre dans ta boîte.",
-                "Boîte presque pleine : la place utilisée s'affiche si ta messagerie la donne.",
-                "Archive sur le PC : ouvre CleanSmart/Mails/index.html et cherche un mot, un nom ou un PDF.",
-            ]),
-            ("9. La nuit, libérer la place", [
-                "Option « Sauvegarde automatique chaque nuit » : vers 2 h, les nouvelles photos partent",
-                "dans ton dossier de sauvegarde. Une notification te prévient si ça n'a pas marché.",
-                "Option « Alertes et rapport du mois » : alerte s'il reste moins de 1 Go, bilan le 1er du mois.",
-                "« Libérer la place » (Plus d'outils) : les photos de plus de 3 mois DÉJÀ sauvegardées sont",
-                "proposées à la corbeille. Jamais une photo qui n'est pas à l'abri. Durée réglable : 1, 3, 6, 12 mois.",
-            ]),
-            ("10. PDF souvenir et vidéos", [
-                "PDF souvenir (Plus d'outils) : les plus belles photos du mois ou de l'année dans un PDF",
-                "léger, rangé dans Téléchargements/Clean Smart, prêt à envoyer à un proche.",
-                "Réduire mes vidéos : dans « Grosses vidéos », coche des vidéos puis « Compresser ».",
-                "Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère (Films/Clean Smart).",
-                "Ensuite, Clean Smart te propose de mettre les originaux à la corbeille.",
-            ]),
-            ("11. Les options", [
-                "Le bouton en haut à droite ouvre les options :",
-                "- le dossier de sauvegarde, et sauvegarder avant de supprimer ;",
-                "- protéger mes favoris : les photos en favori ne sont jamais proposées ;",
-                "- la sévérité : prudente (moins de photos proposées), normale ou stricte ;",
-                "- la taille du texte : normale, gros ou très gros.",
-                "Tu y trouves aussi le compteur d'espace libéré et ce mode d'emploi.",
-            ]),
-        ],
-        "safety": "Ta sécurité d'abord : pas de suppression sans ton accord, tout passe par une corbeille, "
-                  "et aucune donnée n'est envoyée ailleurs que vers ta propre messagerie.",
-        "footer": "Clean Smart - JM Dargère",
-    },
-    "en": {
-        "title": "Clean Smart",
-        "subtitle": "User guide",
-        "tag": "Free up space on your phone, simply and safely.",
-        "pages": [
-            ("1. Scan", [
-                "Open Clean Smart and tap the big \"Analyser mon téléphone\" (Scan my phone) button.",
-                "The first time, Android asks for access to photos and contacts: allow it.",
-                "Within seconds, Clean Smart shows how much space you can get back.",
-                "Nothing is deleted during the scan.",
-            ]),
-            ("2. What Clean Smart finds", [
-                "Duplicates: identical copies of a photo or video. The original is kept.",
-                "Similar photos: bursts taken seconds apart. The sharpest one is kept.",
-                "Screenshots: often useless afterwards.",
-                "Large videos: over 100 MB each.",
-                "WhatsApp media: photos and videos received or sent.",
-                "Duplicate contacts: same name and same number.",
-            ]),
-            ("3. Choose and clean", [
-                "Tap a category to see the thumbnails.",
-                "Tap a picture to select or unselect it. Long press: view it full screen.",
-                "Pictures marked \"GARDÉE\" (kept) are the ones Clean Smart advises you to keep.",
-                "Tap the red \"Nettoyer\" (Clean) button at the bottom of the screen.",
-                "Android asks for a final confirmation.",
-                "Files go to the Gallery bin: you can restore them for 30 days.",
-            ]),
-            ("4. Failed photos, quick sort, bin", [
-                "Failed photos: blurry, too dark, too bright or too small. Check before ticking.",
-                "Quick sort: one photo at a time. Swipe left to discard, right to keep.",
-                "\"J'ai fait une bêtise\" (I made a mistake) puts the last binned files back in the gallery.",
-                "The bin still takes space: \"Vider la corbeille\" (Empty the bin) frees it for good.",
-                "In a category: \"Envoyer\" (Send: WhatsApp, email…) or \"Protéger\" (Protect: the photo",
-                "becomes a favourite and is never suggested again).",
-            ]),
-            ("5. Backup", [
-                "In \"Sauvegarde\" (Backup), choose a folder: SD card, USB drive or Google Drive.",
-                "\"Back up all my photos\" copies your photos and videos, sorted by month.",
-                "Next time, only new photos are copied.",
-                "\"Back up before deleting\" option (on by default): before each clean-up,",
-                "a copy is made automatically. Contacts are exported as a .vcf file.",
-            ]),
-            ("6. Mailbox", [
-                "Tap \"Connecter ma boîte mail\" (Connect my mailbox) and pick your provider.",
-                "Gmail, Yahoo and iCloud require an APP PASSWORD (not your usual password).",
-                "Clean Smart explains how to create one and opens the right page.",
-                "Scan your inbox, then in one tap: newsletters, large emails (5 MB+) or emails older than 2 years.",
-                "Emails go to your mailbox bin: nothing is erased directly.",
-                "Your password stays encrypted on your phone.",
-            ]),
-            ("7. Save emails", [
-                "In Mails, tap \"Sauvegarder des mails\" (Save emails).",
-                "Clean Smart finds the emails that have attachments.",
-                "Tick the ones to keep (\"Cocher les PDF\" button to go fast).",
-                "Tap \"Sauvegarder\" (Save): in your backup folder, CleanSmart/Mails holds the full",
-                "email (.eml), CleanSmart/PDF gathers all PDFs, and CleanSmart/Pieces jointes",
-                "the other files.",
-            ]),
-            ("8. More for your emails", [
-                "Emails from your bank, government or health services are NEVER sent to the bin.",
-                "Duplicate emails: copies received seconds apart go away in one tap.",
-                "\"À retrouver vite\" (Find fast): invoices and papers, parcels, travel (read-only).",
-                "\"Remettre des mails\" (Restore emails): tick emails in the bin to put them back.",
-                "Mailbox almost full: the space used is shown if your provider gives it.",
-                "Archive on the PC: open CleanSmart/Mails/index.html and search a word, a name or a PDF.",
-            ]),
-            ("9. Night, free up space", [
-                "\"Automatic backup every night\" option: around 2 am, new photos go to your backup",
-                "folder. A notification tells you if it did not work.",
-                "\"Alerts and monthly report\" option: alert under 1 GB free, summary on the 1st of the month.",
-                "\"Libérer la place\" (Free up space, in More tools): photos older than 3 months ALREADY",
-                "backed up are offered to the bin. Never a photo that is not safe. Duration: 1, 3, 6, 12 months.",
-            ]),
-            ("10. Souvenir PDF and videos", [
-                "Souvenir PDF (More tools): the best photos of the month or year in a light PDF,",
-                "saved in Downloads/Clean Smart, ready to send to a loved one.",
-                "Shrink my videos: in \"Grosses vidéos\", tick videos then \"Compresser\" (Compress).",
-                "Each video is remade in 720p, often 3 to 5 times lighter (Movies/Clean Smart).",
-                "Then Clean Smart offers to move the originals to the bin.",
-            ]),
-            ("11. Options", [
-                "The button at the top right opens the options:",
-                "- the backup folder, and back up before deleting;",
-                "- protect my favourites: favourite photos are never suggested;",
-                "- severity: careful (fewer photos suggested), normal or strict;",
-                "- text size: normal, large or very large.",
-                "You will also find the freed-space counter and this guide.",
-            ]),
-        ],
-        "safety": "Your safety first: nothing is deleted without your consent, everything goes through a bin, "
-                  "and no data is sent anywhere except to your own mail provider.",
-        "footer": "Clean Smart - JM Dargère",
-    },
+W, H = A5                      # 420 x 595 points
+M = 30                         # marge
+VIOLET = HexColor("#6A5CFF")
+NUIT = HexColor("#0F0F1E")
+ENCRE = HexColor("#1E1E2E")
+GRIS = HexColor("#6B6B80")
+FOND = HexColor("#F6F5FF")
+VERT_TXT = HexColor("#1F7A4D")
+COUL = {
+    "vert": HexColor("#2E7D32"), "bleu": HexColor("#1E4FB4"), "rouge": HexColor("#C62828"),
+    "violet": HexColor("#6A1B9A"), "orange": HexColor("#EF6C00"), "indigo": HexColor("#5B4BE0"),
 }
 
-W, H = A5
+# ---------------------------------------------------------------- icones (emoji en couleur)
+
+_EMOJI_DIR = tempfile.mkdtemp(prefix="cs_emoji_")
+_EMOJI_CACHE = {}
+
+
+def emoji_png(e):
+    """Dessine un emoji en couleur (Segoe UI Emoji) et renvoie le chemin d'une image PNG carree."""
+    if e in _EMOJI_CACHE:
+        return _EMOJI_CACHE[e]
+    font = ImageFont.truetype(EMOJI_FONT, 109)
+    img = Image.new("RGBA", (300, 200), (0, 0, 0, 0))
+    ImageDraw.Draw(img).text((20, 20), e, font=font, embedded_color=True)
+    box = img.getbbox() or (0, 0, 1, 1)
+    img = img.crop(box)
+    side = max(img.size)
+    sq = Image.new("RGBA", (side, side), (0, 0, 0, 0))
+    sq.paste(img, ((side - img.width) // 2, (side - img.height) // 2), img)
+    path = os.path.join(_EMOJI_DIR, f"e{len(_EMOJI_CACHE)}.png")
+    sq.save(path)
+    _EMOJI_CACHE[e] = path
+    return path
+
+
+def icon(c, e, x, y, size):
+    c.drawImage(emoji_png(e), x, y, size, size, mask="auto")
+
+
+def icon_round(c, e, cx, cy, r, bg=white):
+    c.setFillColor(bg)
+    c.circle(cx, cy, r, stroke=0, fill=1)
+    s = r * 1.25
+    icon(c, e, cx - s / 2, cy - s / 2, s)
+
+
+# ---------------------------------------------------------------- texte
+
+def fr_spaces(text):
+    """Espaces insecables avant « » ? ! : » et apres « (typographie francaise : pas de signe seul en debut de ligne)."""
+    for a, b in ((" »", " »"), ("« ", "« "), (" ?", " ?"), (" !", " !"), (" :", " :")):
+        text = text.replace(a, b)
+    return text
 
 
 def wrap(c, text, font, size, width):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        t = (cur + " " + w).strip()
-        if c.stringWidth(t, font, size) <= width:
-            cur = t
-        else:
-            lines.append(cur)
-            cur = w
-    if cur:
+    lines = []
+    for para in fr_spaces(text).split("\n"):
+        cur = ""
+        for w in [x for x in para.split(" ") if x]:
+            t = (cur + " " + w).strip()
+            if c.stringWidth(t, font, size) <= width:
+                cur = t
+            else:
+                if cur:
+                    lines.append(cur)
+                cur = w
         lines.append(cur)
     return lines
 
 
-def background(c):
-    c.setFillColor(FOND)
-    c.rect(0, 0, W, H, stroke=0, fill=1)
-
-
-def sparkle(c, x, y, r, color):
+def text_block(c, text, x, y, width, font="UI", size=14.5, color=ENCRE, lead=1.32):
+    """Ecrit un paragraphe et renvoie la nouvelle position y (sous le texte)."""
     c.setFillColor(color)
-    p = c.beginPath()
-    k = r * 0.22
-    p.moveTo(x, y + r); p.lineTo(x + k, y + k); p.lineTo(x + r, y); p.lineTo(x + k, y - k)
-    p.lineTo(x, y - r); p.lineTo(x - k, y - k); p.lineTo(x - r, y); p.lineTo(x - k, y + k)
-    p.close()
-    c.drawPath(p, stroke=0, fill=1)
+    c.setFont(font, size)
+    for line in wrap(c, text, font, size, width):
+        c.drawString(x, y - size, line)
+        y -= size * lead
+    return y
 
 
-def footer(c, t, n):
-    c.setFillColor(GRIS)
-    c.setFont("Helvetica", 8)
-    c.drawString(14 * mm, 8 * mm, t["footer"])
-    c.drawRightString(W - 14 * mm, 8 * mm, str(n))
+# ---------------------------------------------------------------- mise en page
+
+class Doc:
+    def __init__(self, path, t):
+        self.c = canvas.Canvas(path, pagesize=A5)
+        self.c.setTitle(f"Clean Smart - {t['subtitle']}")
+        self.c.setAuthor("JM Dargère")
+        self.t = t
+        self.page = 0
+        self.y = 0
+
+    def new_page(self, header=True):
+        if self.page:
+            self.footer()
+            self.c.showPage()
+        self.page += 1
+        c = self.c
+        c.setFillColor(white)
+        c.rect(0, 0, W, H, stroke=0, fill=1)
+        if header:
+            c.setFillColor(VIOLET)
+            c.rect(0, H - 46, W, 46, stroke=0, fill=1)
+            icon(c, "✨", M - 4, H - 37, 26)
+            c.setFillColor(white)
+            c.setFont("UIB", 20)
+            c.drawString(M + 28, H - 31, "CLEAN SMART")
+            self.y = H - 66
+        else:
+            self.y = H - M
+
+    def footer(self):
+        if self.page <= 1:
+            return
+        c = self.c
+        c.setFillColor(GRIS)
+        c.setFont("UI", 8.5)
+        c.drawString(M, 16, self.t["footer"])
+        c.drawRightString(W - M, 16, str(self.page))
+
+    def need(self, h):
+        if self.y - h < 40:
+            self.new_page()
+
+    def banner(self, e, title, color):
+        """Grand bandeau de couleur avec icone : le titre de la page."""
+        c = self.c
+        lines = wrap(c, title.upper(), "UIB", 17, W - 2 * M - 80)
+        h = max(52, 22 + len(lines) * 21)
+        self.need(h + 10)
+        c.setFillColor(COUL[color])
+        c.roundRect(M, self.y - h, W - 2 * M, h, 14, stroke=0, fill=1)
+        icon(c, e, M + 14, self.y - h / 2 - 17, 34)
+        c.setFillColor(white)
+        c.setFont("UIB", 17)
+        ty = self.y - (h - len(lines) * 21) / 2 - 16
+        for ln in lines:
+            c.drawCentredString(W / 2 + 22, ty, ln)
+            ty -= 21
+        self.y -= h + 16
+
+    def para(self, text, size=14.5, color=ENCRE, font="UI"):
+        lines = wrap(self.c, text, font, size, W - 2 * M)
+        self.need(len(lines) * size * 1.32 + 6)
+        self.y = text_block(self.c, text, M, self.y, W - 2 * M, font, size, color) - 8
+
+    def step(self, n, text, color):
+        """Etape numerotee : rond de couleur + texte en gros."""
+        c = self.c
+        size = 14.5
+        lines = wrap(c, text, "UI", size, W - 2 * M - 40)
+        h = len(lines) * size * 1.32
+        self.need(h + 12)
+        c.setFillColor(COUL[color])
+        c.circle(M + 14, self.y - 14, 14, stroke=0, fill=1)
+        c.setFillColor(white)
+        c.setFont("UIB", 14)
+        c.drawCentredString(M + 14, self.y - 19, str(n))
+        self.y = text_block(c, text, M + 40, self.y - 2, W - 2 * M - 40, "UI", size) - 12
+
+    def item(self, e, title, text):
+        """Ligne avec icone : un titre en gras et une explication."""
+        c = self.c
+        tl = wrap(c, title, "UIB", 14.5, W - 2 * M - 44)
+        bl = wrap(c, text, "UI", 13, W - 2 * M - 44)
+        h = len(tl) * 19 + len(bl) * 17 + 8
+        self.need(h + 6)
+        icon_round(c, e, M + 15, self.y - 15, 15, FOND)
+        y = text_block(c, title, M + 42, self.y, W - 2 * M - 44, "UIB", 14.5, lead=1.3)
+        y = text_block(c, text, M + 42, y, W - 2 * M - 44, "UI", 13, GRIS, lead=1.3)
+        self.y = y - 10
+
+    def option(self, e, title, text, know):
+        """Annexe des options : bandeau bleu + explication + « A savoir »."""
+        c = self.c
+        bl = wrap(c, text, "UI", 12.5, W - 2 * M - 8)
+        kl = wrap(c, know, "UI", 12, W - 2 * M - 8)
+        self.need(34 + len(bl) * 16.5 + len(kl) * 16 + 14)
+        c.setFillColor(COUL["bleu"])
+        c.roundRect(M, self.y - 28, W - 2 * M, 28, 9, stroke=0, fill=1)
+        icon(c, e, M + 8, self.y - 23, 18)
+        c.setFillColor(white)
+        c.setFont("UIB", 13)
+        c.drawString(M + 34, self.y - 19, title)
+        y = text_block(c, text, M + 4, self.y - 34, W - 2 * M - 8, "UI", 12.5, lead=1.3)
+        y = text_block(c, know, M + 4, y, W - 2 * M - 8, "UI", 12, VERT_TXT, lead=1.3)
+        self.y = y - 12
+
+    def card(self, e, title, text, color):
+        """Carte de couleur de la page « Comment ca marche ? »."""
+        c = self.c
+        tl = wrap(c, title, "UIB", 15, W - 2 * M - 78)
+        bl = wrap(c, text, "UI", 12.5, W - 2 * M - 78)
+        h = max(70, 18 + len(tl) * 19 + len(bl) * 16.5)
+        self.need(h + 8)
+        c.setFillColor(COUL[color])
+        c.roundRect(M, self.y - h, W - 2 * M, h, 14, stroke=0, fill=1)
+        icon_round(c, e, M + 32, self.y - h / 2, 22)
+        y = text_block(c, title, M + 64, self.y - 8, W - 2 * M - 78, "UIB", 15, white, 1.27)
+        text_block(c, text, M + 64, y, W - 2 * M - 78, "UI", 12.5, white, 1.32)
+        self.y -= h + 9
+
+    def save(self):
+        self.footer()
+        self.c.save()
+
+
+def phone(c, x, y, w, h):
+    """Petit dessin du telephone avec l'ecran d'accueil de Clean Smart."""
+    c.setFillColor(HexColor("#2B2B3A"))
+    c.roundRect(x, y, w, h, 16, stroke=0, fill=1)
+    sx, sy, sw, sh = x + 6, y + 6, w - 12, h - 12
+    c.setFillColor(NUIT)
+    c.roundRect(sx, sy, sw, sh, 12, stroke=0, fill=1)
+    c.setFillColor(white)
+    c.setFont("UIB", 9)
+    c.drawCentredString(sx + sw / 2, sy + sh - 16, "Clean Smart")
+    # anneau de stockage
+    cx, cy, r = sx + sw / 2, sy + sh - 52, 22
+    c.setStrokeColor(HexColor("#26264A")); c.setLineWidth(6); c.circle(cx, cy, r, stroke=1, fill=0)
+    c.setStrokeColor(VIOLET); c.arc(cx - r, cy - r, cx + r, cy + r, 90, -260)
+    c.setFillColor(white); c.setFont("UIB", 9); c.drawCentredString(cx, cy - 3, "72 %")
+    # gros bouton
+    c.setFillColor(VIOLET); c.roundRect(sx + 8, sy + sh - 100, sw - 16, 16, 5, stroke=0, fill=1)
+    c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + sh - 95, "Analyser")
+    # cartes
+    yy = sy + sh - 122
+    for e in ("🧬", "🎞️", "🎬"):
+        c.setFillColor(HexColor("#1B1B33")); c.roundRect(sx + 8, yy, sw - 16, 16, 4, stroke=0, fill=1)
+        icon(c, e, sx + 11, yy + 2, 12)
+        c.setFillColor(HexColor("#26264A")); c.rect(sx + 28, yy + 6, sw - 60, 4, stroke=0, fill=1)
+        yy -= 20
+    c.setFillColor(HexColor("#FF5C7A")); c.roundRect(sx + 8, sy + 8, sw - 16, 16, 5, stroke=0, fill=1)
+    c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + 13, "Nettoyer")
+
+
+# ---------------------------------------------------------------- contenu
+
+TEXTS = {
+    "fr": {
+        "subtitle": "Mode d'emploi",
+        "tag": "Plus de place sur ton téléphone,\nsimplement et sans risque.",
+        "credit": "Créé par JM Dargère",
+        "footer": "CLEAN SMART — Créé par JM Dargère",
+        "how_title": "Comment ça marche ?",
+        "how": [
+            ("📱", "rouge", "1. Ton téléphone est plein ?", "Photos en double, photos ratées, vidéos énormes, mails inutiles… tout prend de la place."),
+            ("🔍", "bleu", "2. Clean Smart cherche tout seul", "Un seul bouton. Pendant l'analyse, rien n'est supprimé."),
+            ("✅", "violet", "3. Tu choisis", "Ce qui est sûr est déjà coché pour toi. Pour le reste, c'est toi qui décides."),
+            ("🗑️", "orange", "4. Rien n'est perdu", "Tout passe par la corbeille : 30 jours pour récupérer une photo ou un mail."),
+            ("💾", "vert", "5. Tout reste à l'abri", "Sauvegarde sur carte SD, clé USB ou Google Drive, et même toute seule la nuit."),
+        ],
+        "sections": [
+            ("🔍", "vert", "Analyser mon téléphone",
+             "C'est le gros bouton de l'accueil. Tu n'as rien à régler.",
+             [("step", "Touche « Analyser mon téléphone »."),
+              ("step", "La première fois, Android demande l'accès aux photos et aux contacts : accepte."),
+              ("step", "Une barre montre l'avancement. Ensuite, Clean Smart affiche en gros l'espace que tu peux récupérer.")]),
+            ("📸", "bleu", "Ce que Clean Smart trouve", "",
+             [("item", "🧬", "Doublons", "Copies identiques. L'original est gardé."),
+              ("item", "🎞️", "Photos similaires", "Rafales prises à quelques secondes. La plus nette est gardée."),
+              ("item", "🌫️", "Photos ratées", "Floues, trop sombres, trop claires ou trop petites."),
+              ("item", "📱", "Captures d'écran", "Souvent inutiles après coup."),
+              ("item", "🎬", "Grosses vidéos", "Plus de 100 Mo chacune."),
+              ("item", "💬", "Médias WhatsApp", "Photos et vidéos reçues ou envoyées."),
+              ("item", "🐘", "Mes plus gros fichiers", "Les 30 photos et vidéos les plus lourdes."),
+              ("item", "👥", "Contacts en double", "Même nom et même numéro.")]),
+            ("🧹", "rouge", "Choisir et nettoyer", "",
+             [("step", "Touche une catégorie pour voir les photos."),
+              ("step", "Touche une photo pour la cocher. Appui long : tu la vois en grand."),
+              ("step", "« GARDÉE » : c'est la photo que Clean Smart te conseille de garder."),
+              ("step", "Appuie sur le bouton rouge « Nettoyer » en bas de l'écran."),
+              ("step", "Android te demande une dernière confirmation. Les photos vont dans la corbeille : 30 jours pour les récupérer.")]),
+            ("👆", "violet", "Le tri rapide",
+             "Pour trier tes photos récentes une par une, sans réfléchir.",
+             [("step", "Sur l'accueil, touche « Tri rapide »."),
+              ("step", "Glisse la photo vers la GAUCHE pour la jeter, vers la DROITE pour la garder."),
+              ("step", "Le petit bouton rond du milieu revient à la photo précédente."),
+              ("step", "À la fin, le bouton rouge met les photos à jeter dans la corbeille.")]),
+            ("🗑️", "orange", "La corbeille et « J'ai fait une bêtise »", "",
+             [("step", "Les photos mises à la corbeille prennent encore de la place pendant 30 jours."),
+              ("step", "« Vider la corbeille maintenant » libère la place tout de suite (attention : c'est définitif)."),
+              ("step", "« J'ai fait une bêtise » remet dans la galerie les derniers fichiers jetés.")]),
+            ("🛡️", "violet", "Protéger et envoyer", "Dans une catégorie, coche des photos puis :",
+             [("item", "🛡️", "Protéger", "La photo passe en favori : elle ne sera plus jamais proposée."),
+              ("item", "📤", "Envoyer", "Par WhatsApp, mail… (20 photos au maximum). Rien ne bouge du téléphone."),
+              ("item", "🗜️", "Compresser", "Pour les vidéos : refaites en 720p, souvent 3 à 5 fois plus légères.")]),
+            ("💾", "bleu", "La sauvegarde",
+             "Tes photos à l'abri sur une carte SD, une clé USB ou Google Drive.",
+             [("step", "Dans « Sauvegarde », touche « Choisir un dossier »."),
+              ("step", "« Sauvegarder toutes mes photos » copie tes photos, rangées par mois."),
+              ("step", "Les fois suivantes, seules les nouvelles photos sont copiées."),
+              ("step", "Dans les Options, la « Sauvegarde automatique chaque nuit » le fait toute seule.")]),
+            ("🧰", "vert", "Plus d'outils", "Sur l'accueil, touche « Plus d'outils » :",
+             [("item", "🧹", "Libérer la place", "Les photos de plus de 3 mois DÉJÀ sauvegardées vont à la corbeille. Jamais une photo qui n'est pas à l'abri."),
+              ("item", "📕", "PDF souvenir", "Les plus belles photos du mois ou de l'année dans un PDF, à envoyer à un proche."),
+              ("item", "🗜️", "Réduire mes vidéos", "Ouvre « Grosses vidéos », coche-les puis « Compresser ».")]),
+            ("✉️", "bleu", "Ma boîte mail",
+             "Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…",
+             [("step", "Touche « Connecter ma boîte mail » et choisis ta messagerie."),
+              ("step", "Gmail, Yahoo et iCloud demandent un MOT DE PASSE D'APPLICATION. Clean Smart ouvre la bonne page."),
+              ("step", "« Analyser ma boîte mail », puis un bouton pour : newsletters, gros mails, vieux mails, mails en double."),
+              ("step", "Les mails vont dans la corbeille de ta messagerie. Ceux de ta banque, de l'administration ou de santé ne sont JAMAIS touchés.")]),
+            ("📎", "orange", "Sauver des mails et leurs pièces jointes", "",
+             [("step", "Dans Mails, touche « Sauvegarder des mails »."),
+              ("step", "Coche les mails à garder (« Cocher les PDF » pour aller vite)."),
+              ("step", "Touche « Sauvegarder » : le mail complet, et tous les PDF réunis dans un dossier PDF."),
+              ("step", "Sur le PC, ouvre CleanSmart/Mails/index.html : tape un mot, un nom ou un PDF pour tout retrouver.")]),
+            ("↩️", "vert", "Remettre des mails", "",
+             [("step", "Dans Mails, touche « Remettre des mails »."),
+              ("step", "Coche les mails de la corbeille à récupérer."),
+              ("step", "Touche « Remettre » : ils reviennent dans ta boîte de réception.")]),
+            ("👥", "violet", "Contacts en double", "",
+             [("step", "Après l'analyse, la carte « Contacts » montre les doublons (même nom, même numéro)."),
+              ("step", "« Supprimer les doublons » garde le contact d'origine."),
+              ("step", "Attention : la suppression est aussi faite sur ton compte Google.")]),
+        ],
+        "options_title": "Les options expliquées",
+        "options": [
+            ("🌙", "Sauvegarde automatique chaque nuit", "Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde.", "À savoir : une notification te prévient si ça n'a pas marché."),
+            ("🔔", "Alertes et rapport du mois", "Alerte s'il reste moins de 1 Go, et un petit bilan le 1er du mois.", "À savoir : au plus une alerte tous les 3 jours."),
+            ("💾", "Sauvegarder avant de supprimer", "Copie les photos (et les contacts) dans ton dossier avant chaque nettoyage.", "À savoir : désactivé par défaut, inutile pour les doublons et les photos ratées."),
+            ("🛡️", "Protéger mes favoris", "Les photos en favori ne sont jamais proposées.", "À savoir : activé par défaut."),
+            ("⚖️", "Sévérité", "Prudente : moins de photos proposées. Normale. Stricte : davantage.", "À savoir : relance l'analyse après un changement."),
+            ("🧹", "Libérer la place", "Garder sur le téléphone les photos des 1, 3, 6 ou 12 derniers mois.", "À savoir : seules les photos déjà sauvegardées sont proposées."),
+            ("🔠", "Taille du texte", "Normale, gros ou très gros.", "À savoir : il y a un peu plus à faire défiler."),
+        ],
+        "faq_title": "Questions fréquentes",
+        "faq": [
+            ("Mes photos sont-elles supprimées tout de suite ?", "Non. Elles vont dans la corbeille de la Galerie : 30 jours pour les récupérer, ou « J'ai fait une bêtise »."),
+            ("Mes photos partent-elles sur Internet ?", "Non. Tout se passe sur le téléphone. Seule la sauvegarde va où tu l'as choisi (carte SD, clé, Drive)."),
+            ("Pourquoi un mot de passe d'application ?", "Gmail, Yahoo et iCloud l'exigent pour les applis de messagerie. Il reste chiffré sur ton téléphone."),
+            ("La place ne revient pas après le nettoyage ?", "La corbeille garde les photos 30 jours. Touche « Vider la corbeille maintenant » sur l'accueil."),
+        ],
+    },
+    "en": {
+        "subtitle": "User guide",
+        "tag": "More space on your phone,\nsimply and safely.",
+        "credit": "Created by JM Dargère",
+        "footer": "CLEAN SMART — Created by JM Dargère",
+        "how_title": "How does it work?",
+        "how": [
+            ("📱", "rouge", "1. Is your phone full?", "Duplicate photos, failed shots, huge videos, useless emails… all take space."),
+            ("🔍", "bleu", "2. Clean Smart searches for you", "One single button. Nothing is deleted during the scan."),
+            ("✅", "violet", "3. You choose", "What is safe is already ticked for you. For the rest, you decide."),
+            ("🗑️", "orange", "4. Nothing is lost", "Everything goes through the bin: 30 days to get a photo or an email back."),
+            ("💾", "vert", "5. Everything stays safe", "Backup to an SD card, USB drive or Google Drive, even on its own at night."),
+        ],
+        "sections": [
+            ("🔍", "vert", "Scan my phone",
+             "It is the big button on the home screen. Nothing to set up.",
+             [("step", "Tap \"Analyser mon téléphone\" (Scan my phone)."),
+              ("step", "The first time, Android asks for access to photos and contacts: allow it."),
+              ("step", "A bar shows the progress. Then Clean Smart shows in big how much space you can get back.")]),
+            ("📸", "bleu", "What Clean Smart finds", "",
+             [("item", "🧬", "Duplicates", "Identical copies. The original is kept."),
+              ("item", "🎞️", "Similar photos", "Bursts taken seconds apart. The sharpest one is kept."),
+              ("item", "🌫️", "Failed photos", "Blurry, too dark, too bright or too small."),
+              ("item", "📱", "Screenshots", "Often useless afterwards."),
+              ("item", "🎬", "Large videos", "Over 100 MB each."),
+              ("item", "💬", "WhatsApp media", "Photos and videos received or sent."),
+              ("item", "🐘", "My biggest files", "The 30 heaviest photos and videos."),
+              ("item", "👥", "Duplicate contacts", "Same name and same number.")]),
+            ("🧹", "rouge", "Choose and clean", "",
+             [("step", "Tap a category to see the photos."),
+              ("step", "Tap a photo to tick it. Long press: view it full screen."),
+              ("step", "\"GARDÉE\" (kept): the photo Clean Smart advises you to keep."),
+              ("step", "Tap the red \"Nettoyer\" (Clean) button at the bottom."),
+              ("step", "Android asks for a final confirmation. Photos go to the bin: 30 days to restore them.")]),
+            ("👆", "violet", "Quick sort",
+             "To sort your recent photos one by one, without thinking.",
+             [("step", "On the home screen, tap \"Tri rapide\" (Quick sort)."),
+              ("step", "Swipe the photo LEFT to discard it, RIGHT to keep it."),
+              ("step", "The small round button in the middle goes back to the previous photo."),
+              ("step", "At the end, the red button sends the discarded photos to the bin.")]),
+            ("🗑️", "orange", "The bin and \"I made a mistake\"", "",
+             [("step", "Photos in the bin still take space for 30 days."),
+              ("step", "\"Vider la corbeille maintenant\" (Empty the bin now) frees the space right away (careful: it is final)."),
+              ("step", "\"J'ai fait une bêtise\" (I made a mistake) puts the last discarded files back in the gallery.")]),
+            ("🛡️", "violet", "Protect and send", "In a category, tick photos then:",
+             [("item", "🛡️", "Protect", "The photo becomes a favourite: it will never be suggested again."),
+              ("item", "📤", "Send", "By WhatsApp, email… (20 photos max). Nothing leaves the phone."),
+              ("item", "🗜️", "Compress", "For videos: remade in 720p, often 3 to 5 times lighter.")]),
+            ("💾", "bleu", "Backup",
+             "Your photos safe on an SD card, a USB drive or Google Drive.",
+             [("step", "In \"Sauvegarde\" (Backup), tap \"Choisir un dossier\" (Choose a folder)."),
+              ("step", "\"Back up all my photos\" copies your photos, sorted by month."),
+              ("step", "Next times, only new photos are copied."),
+              ("step", "In Options, \"Automatic backup every night\" does it on its own.")]),
+            ("🧰", "vert", "More tools", "On the home screen, tap \"Plus d'outils\" (More tools):",
+             [("item", "🧹", "Free up space", "Photos older than 3 months ALREADY backed up go to the bin. Never a photo that is not safe."),
+              ("item", "📕", "Souvenir PDF", "The best photos of the month or year in a PDF, to send to a loved one."),
+              ("item", "🗜️", "Shrink my videos", "Open \"Grosses vidéos\" (Large videos), tick them, then \"Compresser\".")]),
+            ("✉️", "bleu", "My mailbox",
+             "Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…",
+             [("step", "Tap \"Connecter ma boîte mail\" (Connect my mailbox) and choose your provider."),
+              ("step", "Gmail, Yahoo and iCloud require an APP PASSWORD. Clean Smart opens the right page."),
+              ("step", "Scan your mailbox, then one button for: newsletters, large emails, old emails, duplicate emails."),
+              ("step", "Emails go to your mailbox bin. Those from your bank, government or health services are NEVER touched.")]),
+            ("📎", "orange", "Save emails and their attachments", "",
+             [("step", "In Mails, tap \"Sauvegarder des mails\" (Save emails)."),
+              ("step", "Tick the emails to keep (\"Cocher les PDF\" to go fast)."),
+              ("step", "Tap \"Sauvegarder\": the full email, and all PDFs gathered in a PDF folder."),
+              ("step", "On the PC, open CleanSmart/Mails/index.html: type a word, a name or a PDF to find everything.")]),
+            ("↩️", "vert", "Restore emails", "",
+             [("step", "In Mails, tap \"Remettre des mails\" (Restore emails)."),
+              ("step", "Tick the emails in the bin you want back."),
+              ("step", "Tap \"Remettre\": they come back to your inbox.")]),
+            ("👥", "violet", "Duplicate contacts", "",
+             [("step", "After the scan, the \"Contacts\" card shows duplicates (same name, same number)."),
+              ("step", "\"Supprimer les doublons\" keeps the original contact."),
+              ("step", "Careful: deletion is also done on your Google account.")]),
+        ],
+        "options_title": "Options explained",
+        "options": [
+            ("🌙", "Automatic backup every night", "Around 2 am, new photos are copied to your backup folder.", "Good to know: a notification tells you if it did not work."),
+            ("🔔", "Alerts and monthly report", "Alert when less than 1 GB is left, and a short summary on the 1st of the month.", "Good to know: at most one alert every 3 days."),
+            ("💾", "Back up before deleting", "Copies photos (and contacts) to your folder before each clean-up.", "Good to know: off by default, useless for duplicates and failed photos."),
+            ("🛡️", "Protect my favourites", "Favourite photos are never suggested.", "Good to know: on by default."),
+            ("⚖️", "Severity", "Careful: fewer photos suggested. Normal. Strict: more.", "Good to know: scan again after a change."),
+            ("🧹", "Free up space", "Keep on the phone the photos of the last 1, 3, 6 or 12 months.", "Good to know: only photos already backed up are suggested."),
+            ("🔠", "Text size", "Normal, large or very large.", "Good to know: a bit more scrolling."),
+        ],
+        "faq_title": "Frequently asked questions",
+        "faq": [
+            ("Are my photos deleted right away?", "No. They go to the Gallery bin: 30 days to restore them, or \"I made a mistake\"."),
+            ("Do my photos go on the Internet?", "No. Everything happens on the phone. Only the backup goes where you chose (SD card, USB, Drive)."),
+            ("Why an app password?", "Gmail, Yahoo and iCloud require it for mail apps. It stays encrypted on your phone."),
+            ("The space does not come back after cleaning?", "The bin keeps photos for 30 days. Tap \"Empty the bin now\" on the home screen."),
+        ],
+    },
+}
 
 
 def build(lang, path):
     t = TEXTS[lang]
-    c = canvas.Canvas(path, pagesize=A5)
-    c.setTitle(f"{t['title']} - {t['subtitle']}")
-    c.setAuthor("JM Dargère")
+    d = Doc(path, t)
+    c = d.c
 
-    # --- couverture ---
-    background(c)
+    # ---- couverture
+    d.new_page(header=False)
+    c.setFillColor(NUIT)
+    c.rect(0, 0, W, H, stroke=0, fill=1)
     c.setFillColor(VIOLET)
-    c.roundRect(W / 2 - 22 * mm, H - 95 * mm, 44 * mm, 44 * mm, 10 * mm, stroke=0, fill=1)
-    sparkle(c, W / 2, H - 73 * mm, 14 * mm, white)
-    sparkle(c, W / 2 + 11 * mm, H - 62 * mm, 4.5 * mm, HexColor("#DDD8FF"))
+    c.roundRect(W / 2 - 50, H - 200, 100, 100, 26, stroke=0, fill=1)
+    icon(c, "✨", W / 2 - 36, H - 186, 72)
     c.setFillColor(white)
-    c.setFont("Helvetica-Bold", 30)
-    c.drawCentredString(W / 2, H - 118 * mm, t["title"])
-    c.setFillColor(VIOLET2)
-    c.setFont("Helvetica", 16)
-    c.drawCentredString(W / 2, H - 128 * mm, t["subtitle"])
-    c.setFillColor(GRIS)
-    c.setFont("Helvetica", 10)
-    for i, line in enumerate(wrap(c, t["tag"], "Helvetica", 10, W - 40 * mm)):
-        c.drawCentredString(W / 2, H - 142 * mm - i * 13, line)
-    c.showPage()
+    c.setFont("UIB", 38)
+    c.drawCentredString(W / 2, H - 252, "CLEAN SMART")
+    c.setFillColor(HexColor("#B9B2FF"))
+    c.setFont("UI", 19)
+    c.drawCentredString(W / 2, H - 280, t["subtitle"])
+    c.setFillColor(white)
+    c.setFont("UI", 15)
+    y = H - 320
+    for ln in t["tag"].split("\n"):
+        c.drawCentredString(W / 2, y, ln)
+        y -= 21
+    for i, e in enumerate(["🧹", "📸", "✉️", "💾", "🛡️"]):
+        icon(c, e, W / 2 - 130 + i * 56, 120, 40)
+    c.setFillColor(HexColor("#A3A3C7"))
+    c.setFont("UI", 10)
+    c.drawCentredString(W / 2, 40, t["credit"])
 
-    # --- pages ---
-    for n, (title, lines) in enumerate(t["pages"], start=2):
-        background(c)
-        c.setFillColor(VIOLET)
-        c.rect(0, H - 26 * mm, W, 26 * mm, stroke=0, fill=1)
-        c.setFillColor(white)
-        c.setFont("Helvetica-Bold", 18)
-        c.drawString(14 * mm, H - 16 * mm, title)
+    # ---- comment ca marche
+    d.new_page()
+    c.setFillColor(ENCRE)
+    c.setFont("UIB", 22)
+    c.drawString(M, d.y - 20, t["how_title"])
+    d.y -= 38
+    for e, col, title, text in t["how"]:
+        d.card(e, title, text, col)
 
-        y = H - 40 * mm
-        card_w = W - 24 * mm
-        for line in lines:
-            wl = wrap(c, line, "Helvetica", 11, card_w - 16 * mm)
-            box_h = 8 * mm + len(wl) * 14
-            c.setFillColor(CARTE)
-            c.roundRect(12 * mm, y - box_h + 4 * mm, card_w, box_h, 4 * mm, stroke=0, fill=1)
-            c.setFillColor(VIOLET2)
-            c.circle(18 * mm, y - 1.5 * mm, 1.4 * mm, stroke=0, fill=1)
-            c.setFillColor(white)
-            c.setFont("Helvetica", 11)
-            for i, l in enumerate(wl):
-                c.drawString(22 * mm, y - 3 * mm - i * 14, l)
-            y -= box_h + 3 * mm
-        footer(c, t, n)
-        c.showPage()
+    # ---- une page par fonction (avec le dessin du telephone sur la premiere)
+    for i, (e, col, title, intro, parts) in enumerate(t["sections"]):
+        d.new_page()
+        d.banner(e, title, col)
+        if intro:
+            d.para(intro)
+        n = 0
+        for p in parts:
+            if p[0] == "step":
+                n += 1
+                d.step(n, p[1], col)
+            else:
+                d.item(p[1], p[2], p[3])
+        if i == 0 and d.y > 230:
+            phone(c, W / 2 - 65, 50, 130, d.y - 80 if d.y - 80 < 250 else 250)
 
-    # --- securite ---
-    background(c)
-    c.setFillColor(VERT)
-    c.roundRect(12 * mm, H / 2 - 30 * mm, W - 24 * mm, 60 * mm, 6 * mm, stroke=0, fill=1)
-    c.setFillColor(HexColor("#002211"))
-    c.setFont("Helvetica-Bold", 12)
-    for i, l in enumerate(wrap(c, t["safety"], "Helvetica-Bold", 12, W - 40 * mm)):
-        c.drawCentredString(W / 2, H / 2 + 16 * mm - i * 16, l)
-    footer(c, t, len(t["pages"]) + 2)
-    c.showPage()
-    c.save()
+    # ---- options
+    d.new_page()
+    c.setFillColor(ENCRE)
+    c.setFont("UIB", 22)
+    c.drawString(M, d.y - 20, t["options_title"])
+    d.y -= 38
+    for e, title, text, know in t["options"]:
+        d.option(e, title, text, know)
+
+    # ---- questions frequentes
+    d.new_page()
+    c.setFillColor(ENCRE)
+    c.setFont("UIB", 22)
+    c.drawString(M, d.y - 20, t["faq_title"])
+    d.y -= 40
+    for q, a in t["faq"]:
+        lines = wrap(c, q, "UIB", 16, W - 2 * M)
+        d.need(len(lines) * 21 + 60)
+        d.y = text_block(c, q, M, d.y, W - 2 * M, "UIB", 16, COUL["orange"], 1.28) - 2
+        d.y = text_block(c, a, M, d.y, W - 2 * M, "UI", 14, ENCRE, 1.32) - 16
+    d.save()
 
 
 if __name__ == "__main__":

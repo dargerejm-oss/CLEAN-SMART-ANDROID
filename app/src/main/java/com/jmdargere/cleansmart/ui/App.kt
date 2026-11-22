@@ -859,7 +859,7 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                 BigButton(if (vm.backupReady()) "Changer de dossier" else "Choisir un dossier", onClick = chooseFolder)
                 Gap()
                 OptionSwitch("Sauvegarder avant de supprimer",
-                    "Copie les photos (et les contacts en .vcf) dans le dossier avant chaque nettoyage", s.backupBeforeDelete) {
+                    "Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.", s.backupBeforeDelete) {
                     vm.updateSettings(s.copy(backupBeforeDelete = it))
                 }
                 if (vm.backupReady()) {
