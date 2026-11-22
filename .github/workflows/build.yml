@@ -33,12 +33,13 @@ jobs:
       - name: Construire l'APK et l'AAB (Google Play)
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-        run: gradle assembleDebug bundleRelease --no-daemon
+        run: gradle assembleCompletDebug assembleEssaiDebug bundleCompletRelease --no-daemon
 
-      - name: Renommer l'APK et l'AAB
+      - name: Renommer l'APK, l'APK d'essai et l'AAB
         run: |
-          cp app/build/outputs/apk/debug/app-debug.apk CLEAN_SMART.apk
-          cp app/build/outputs/bundle/release/app-release.aab CLEAN_SMART.aab
+          cp app/build/outputs/apk/complet/debug/app-complet-debug.apk CLEAN_SMART.apk
+          cp app/build/outputs/apk/essai/debug/app-essai-debug.apk CLEAN_SMART_TEST_30_JOURS.apk
+          cp app/build/outputs/bundle/completRelease/app-complet-release.aab CLEAN_SMART.aab
 
       - name: Publier l'APK et l'AAB
         uses: softprops/action-gh-release@v2
@@ -49,4 +50,5 @@ jobs:
           prerelease: ${{ github.ref_name != 'main' && github.ref_name != 'master' }}
           files: |
             CLEAN_SMART.apk
+            CLEAN_SMART_TEST_30_JOURS.apk
             CLEAN_SMART.aab

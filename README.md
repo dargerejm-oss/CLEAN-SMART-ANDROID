@@ -11,4 +11,7 @@ Appli Android native (Kotlin + Jetpack Compose) de JM.DARGERE pour libérer de l
   sources : `store/manuel/make_manual.py`).
 
 Télécharger la dernière version :
-https://github.com/dargerejm-oss/CLEAN-SMART-ANDROID/releases/latest/download/CLEAN_SMART.apk
+- Complète : https://github.com/dargerejm-oss/CLEAN-SMART-ANDROID/releases/latest/download/CLEAN_SMART.apk
+- Essai 30 jours : https://github.com/dargerejm-oss/CLEAN-SMART-ANDROID/releases/latest/download/CLEAN_SMART_TEST_30_JOURS.apk
+
+La version complète s'installe par-dessus la version d'essai (mêmes réglages conservés).

@@ -18,7 +18,9 @@
 - GitHub construit l'APK et l'AAB à chaque envoi (`.github/workflows/build.yml`).
 - Clé de signature privée dans les secrets GitHub `KEYSTORE_B64` et `KEYSTORE_PASSWORD` (jamais dans le dépôt).
 - Augmenter `versionCode` et `versionName` dans `app/build.gradle` à chaque nouvelle version.
-- Lien de mise à jour : https://github.com/dargerejm-oss/CLEAN-SMART-ANDROID/releases/latest/download/CLEAN_SMART.apk
+- Deux versions (flavors Gradle) : `complet` → CLEAN_SMART.apk et `essai` (30 jours, `data/Essai.kt`) → CLEAN_SMART_TEST_30_JOURS.apk.
+- Liens : https://github.com/dargerejm-oss/CLEAN-SMART-ANDROID/releases/latest/download/CLEAN_SMART.apk
+  et https://github.com/dargerejm-oss/CLEAN-SMART-ANDROID/releases/latest/download/CLEAN_SMART_TEST_30_JOURS.apk
 
 ## Style des réponses
 - Expliquer simplement, sans jargon ; l'utilisateur teste sur son téléphone Android.

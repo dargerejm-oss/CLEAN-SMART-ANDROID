@@ -66,6 +66,7 @@ import androidx.core.content.ContextCompat
 import com.jmdargere.cleansmart.AppViewModel
 import com.jmdargere.cleansmart.BuildConfig
 import com.jmdargere.cleansmart.Cat
+import com.jmdargere.cleansmart.data.Essai
 import com.jmdargere.cleansmart.data.Provider
 import com.jmdargere.cleansmart.data.fmtBytes
 import com.jmdargere.cleansmart.data.fmtNum
@@ -91,6 +92,10 @@ fun CleanSmartApp(vm: AppViewModel) {
     var cat by rememberSaveable { mutableStateOf(Cat.DUPLICATES) }
     var confirm by remember { mutableStateOf<Confirm?>(null) }
     val snack = remember { SnackbarHostState() }
+    val joursEssai = remember { Essai.joursRestants(ctx) }
+
+    // Version d'essai terminee : plus d'acces au nettoyage
+    if (Essai.actif && joursEssai == 0) { EssaiTermine(); return }
 
     BackHandler(enabled = ecran != Ecran.ACCUEIL) { ecran = if (ecran == Ecran.MAILS_SAUVER) Ecran.MAILS else Ecran.ACCUEIL }
 
@@ -173,7 +178,7 @@ fun CleanSmartApp(vm: AppViewModel) {
     ) { pad ->
         Box(Modifier.padding(pad).fillMaxSize()) {
             when (ecran) {
-                Ecran.ACCUEIL -> Accueil(vm, ::analyser,
+                Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
@@ -200,6 +205,7 @@ fun CleanSmartApp(vm: AppViewModel) {
 private fun Accueil(
     vm: AppViewModel,
     analyser: () -> Unit,
+    joursEssai: Int,
     openCat: (Cat) -> Unit,
     openMail: () -> Unit,
     openManual: () -> Unit,
@@ -208,6 +214,12 @@ private fun Accueil(
 ) {
     val m = vm.media
     LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp)) {
+        if (Essai.actif) item {
+            Text("🎁 Version d'essai · ${plural(joursEssai, "jour restant", "jours restants")}",
+                color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
+                    .background(if (joursEssai <= 5) Rouge else Violet, RoundedCornerShape(12.dp)).padding(10.dp))
+        }
         item {
             BoxCard {
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -317,6 +329,31 @@ private fun Accueil(
                 Text("📖 Mode d'emploi", color = Color.White)
             }
         }
+    }
+}
+
+// =====================================================================================
+// ESSAI TERMINE
+// =====================================================================================
+
+@Composable
+private fun EssaiTermine() {
+    Column(
+        Modifier.fillMaxSize().background(Fond).padding(28.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Text("✨", fontSize = 64.sp)
+        Gap(12)
+        Text("Clean Smart", fontSize = 28.sp, fontWeight = FontWeight.Black)
+        Gap(16)
+        Text("Ta période d'essai de 30 jours est terminée.", fontSize = 18.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center)
+        Gap(10)
+        Text("Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. " +
+                "Tes réglages et ta boîte mail seront conservés.",
+            color = Gris, textAlign = TextAlign.Center, lineHeight = 22.sp)
+        Gap(10)
+        Text("Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.", color = Gris, fontSize = 13.sp, textAlign = TextAlign.Center)
     }
 }
 
