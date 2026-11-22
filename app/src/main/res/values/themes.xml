@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cx_fond">#0F0F1E</color>
+    <color name="cx_violet">#6A5CFF</color>
+    <style name="CleanSmartTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/cx_fond</item>
+        <item name="android:statusBarColor">@color/cx_fond</item>
+        <item name="android:navigationBarColor">@color/cx_fond</item>
+        <item name="android:colorAccent">@color/cx_violet</item>
+    </style>
+</resources>

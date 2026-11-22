@@ -1,0 +1,84 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    namespace 'com.jmdargere.cleansmart'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.jmdargere.cleansmart"
+        minSdk 30
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // Cle de signature PRIVEE : fournie par GitHub (secrets KEYSTORE_B64 et KEYSTORE_PASSWORD), jamais dans le depot.
+    signingConfigs {
+        fixe {
+            def ksFile = System.getenv("KEYSTORE_FILE")
+            def ksPass = System.getenv("KEYSTORE_PASSWORD")
+            if (ksFile == null || ksPass == null || !new File(ksFile).exists()) {
+                throw new GradleException("Cle privee absente : ajouter les secrets KEYSTORE_B64 et KEYSTORE_PASSWORD dans GitHub.")
+            }
+            storeFile file(ksFile)
+            storePassword ksPass
+            keyAlias "cleansmart"
+            keyPassword ksPass
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.fixe
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.fixe
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        compose true
+        buildConfig true
+    }
+
+    packaging {
+        resources {
+            excludes += ['META-INF/LICENSE', 'META-INF/LICENSE.md', 'META-INF/NOTICE', 'META-INF/NOTICE.md',
+                         'META-INF/LICENSE.txt', 'META-INF/NOTICE.txt', 'META-INF/*.kotlin_module']
+        }
+    }
+}
+
+dependencies {
+    def composeBom = platform('androidx.compose:compose-bom:2024.12.01')
+    implementation composeBom
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.foundation:foundation'
+    implementation 'androidx.activity:activity-compose:1.9.3'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
+    // Sauvegarde vers carte SD / cle USB / Drive (dossier choisi par l'utilisateur)
+    implementation 'androidx.documentfile:documentfile:1.0.1'
+
+    // Messagerie IMAP
+    implementation 'com.sun.mail:android-mail:1.6.7'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+    // Mot de passe chiffre sur le telephone
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+}

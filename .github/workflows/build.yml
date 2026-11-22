@@ -1,0 +1,52 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main, master, 'claude/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Preparer la cle privee
+        env:
+          KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
+        run: |
+          echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/cle.keystore"
+          echo "KEYSTORE_FILE=$RUNNER_TEMP/cle.keystore" >> "$GITHUB_ENV"
+
+      - name: Construire l'APK et l'AAB (Google Play)
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        run: gradle assembleDebug bundleRelease --no-daemon
+
+      - name: Renommer l'APK et l'AAB
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk CLEAN_SMART.apk
+          cp app/build/outputs/bundle/release/app-release.aab CLEAN_SMART.aab
+
+      - name: Publier l'APK et l'AAB
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ (github.ref_name == 'main' || github.ref_name == 'master') && format('apk-{0}', github.run_number) || format('test-{0}', github.run_number) }}
+          name: ${{ (github.ref_name == 'main' || github.ref_name == 'master') && format('CLEAN SMART (version {0})', github.run_number) || format('CLEAN SMART TEST (essai {0})', github.run_number) }}
+          target_commitish: ${{ github.sha }}
+          prerelease: ${{ github.ref_name != 'main' && github.ref_name != 'master' }}
+          files: |
+            CLEAN_SMART.apk
+            CLEAN_SMART.aab
