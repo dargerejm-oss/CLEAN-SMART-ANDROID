@@ -73,7 +73,7 @@ import com.jmdargere.cleansmart.data.fmtNum
 import com.jmdargere.cleansmart.data.plural
 
 /** Les ecrans de l'appli (navigation simple, sans bibliotheque). */
-private enum class Ecran { ACCUEIL, CATEGORIE, TRI, MAILS, MAILS_SAUVER, OPTIONS, MANUEL }
+private enum class Ecran { ACCUEIL, CATEGORIE, TRI, MAILS, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL }
 
 private fun mediaPerms(): Array<String> =
     if (Build.VERSION.SDK_INT >= 33) arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
@@ -97,7 +97,10 @@ fun CleanSmartApp(vm: AppViewModel) {
     // Version d'essai terminee : plus d'acces au nettoyage
     if (Essai.actif && joursEssai == 0) { EssaiTermine(); return }
 
-    BackHandler(enabled = ecran != Ecran.ACCUEIL) { ecran = if (ecran == Ecran.MAILS_SAUVER) Ecran.MAILS else Ecran.ACCUEIL }
+    fun retour() {
+        ecran = if (ecran == Ecran.MAILS_SAUVER || ecran == Ecran.MAILS_CORBEILLE) Ecran.MAILS else Ecran.ACCUEIL
+    }
+    BackHandler(enabled = ecran != Ecran.ACCUEIL) { retour() }
 
     LaunchedEffect(vm.message) {
         vm.message?.let { snack.showSnackbar(it); vm.message = null }
@@ -143,6 +146,47 @@ fun CleanSmartApp(vm: AppViewModel) {
     }
     fun proteger(items: List<com.jmdargere.cleansmart.data.MediaItem>) =
         vm.prepareProtect(items) { s -> protectLauncher.launch(IntentSenderRequest.Builder(s).build()) }
+
+    // --- Liberer la place : quand la liste est prete, on demande confirmation ---
+    LaunchedEffect(vm.freeCandidates) {
+        val l = vm.freeCandidates
+        if (!l.isNullOrEmpty()) confirm = Confirm(
+            "Libérer ${fmtBytes(l.sumOf { it.size })} ?",
+            "${plural(l.size, "photo ou vidéo", "photos ou vidéos")} de plus de ${vm.settings.keepMonths} mois " +
+                    "sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.",
+            "Libérer",
+        ) { vm.prepareFreeSpace { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
+    }
+
+    // --- PDF souvenir : envoi a un proche une fois cree ---
+    fun souvenir(periode: Int) = vm.makeSouvenir(periode) { uri ->
+        val send = Intent(Intent.ACTION_SEND).apply {
+            type = "application/pdf"
+            putExtra(Intent.EXTRA_STREAM, uri)
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
+        runCatching { ctx.startActivity(Intent.createChooser(send, "Envoyer le PDF souvenir")) }
+    }
+
+    // --- Compression des videos, puis proposition de jeter les originaux ---
+    fun compresser(items: List<com.jmdargere.cleansmart.data.MediaItem>) {
+        val videos = items.filter { it.video }
+        if (videos.isEmpty()) return
+        confirm = Confirm(
+            "Compresser ${plural(videos.size, "vidéo")} ?",
+            "Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. " +
+                    "L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.",
+            "Compresser", danger = false,
+        ) {
+            vm.compressVideos(videos) { originaux, gain ->
+                confirm = Confirm(
+                    "Jeter les originaux ?",
+                    "${plural(originaux.size, "vidéo compressée", "vidéos compressées")} avec succès. En mettant les originaux à la corbeille, tu gagnes ${fmtBytes(gain)}.",
+                    "Corbeille",
+                ) { vm.trashOriginals(originaux) { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
+            }
+        }
+    }
 
     // --- Envoyer des photos (WhatsApp, mail...) : 20 au maximum ---
     fun envoyer(items: List<com.jmdargere.cleansmart.data.MediaItem>) {
@@ -195,14 +239,13 @@ fun CleanSmartApp(vm: AppViewModel) {
                         Ecran.TRI -> "👆 Tri rapide"
                         Ecran.MAILS -> "✉️ Mails"
                         Ecran.MAILS_SAUVER -> "💾 Sauver des mails"
+                        Ecran.MAILS_CORBEILLE -> "↩️ Remettre des mails"
                         Ecran.OPTIONS -> "⚙️ Options"
                         Ecran.MANUEL -> "📖 Mode d'emploi"
                     }, fontWeight = FontWeight.ExtraBold)
                 },
                 navigationIcon = {
-                    if (ecran != Ecran.ACCUEIL) TextButton(onClick = {
-                        ecran = if (ecran == Ecran.MAILS_SAUVER) Ecran.MAILS else Ecran.ACCUEIL
-                    }) { Text("‹ Retour", color = Violet2) }
+                    if (ecran != Ecran.ACCUEIL) TextButton(onClick = { retour() }) { Text("‹ Retour", color = Violet2) }
                 },
                 actions = {
                     if (ecran == Ecran.ACCUEIL) TextButton(onClick = { ecran = Ecran.OPTIONS }) { Text("⚙️", fontSize = 22.sp) }
@@ -219,14 +262,14 @@ fun CleanSmartApp(vm: AppViewModel) {
     ) { pad ->
         Box(Modifier.padding(pad).fillMaxSize()) {
             when (ecran) {
-                Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai, ::viderCorbeille, ::annuler,
+                Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai, ::viderCorbeille, ::annuler, ::souvenir,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
                     openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
                     chooseFolder = { folderLauncher.launch(null) },
                     ask = { confirm = it })
-                Ecran.CATEGORIE -> Categorie(vm, cat, envoyer = ::envoyer, proteger = ::proteger)
+                Ecran.CATEGORIE -> Categorie(vm, cat, envoyer = ::envoyer, proteger = ::proteger, compresser = ::compresser)
                 Ecran.TRI -> TriRapide(vm) {
                     confirm = Confirm(
                         "Jeter ${plural(vm.swipeTrash.size, "photo")} ?",
@@ -234,7 +277,9 @@ fun CleanSmartApp(vm: AppViewModel) {
                         "Corbeille",
                     ) { vm.prepareSwipeTrash { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
                 }
-                Ecran.MAILS -> Mails(vm, ask = { confirm = it }, openSave = { ecran = Ecran.MAILS_SAUVER })
+                Ecran.MAILS -> Mails(vm, ask = { confirm = it }, openSave = { ecran = Ecran.MAILS_SAUVER },
+                    openTrash = { ecran = Ecran.MAILS_CORBEILLE; vm.loadMailTrash() })
+                Ecran.MAILS_CORBEILLE -> MailsCorbeille(vm)
                 Ecran.MAILS_SAUVER -> MailsSauver(vm, chooseFolder = { folderLauncher.launch(null) })
                 Ecran.OPTIONS -> Options(vm, chooseFolder = { folderLauncher.launch(null) }, openManual = { ecran = Ecran.MANUEL })
                 Ecran.MANUEL -> Manual()
@@ -257,6 +302,7 @@ private fun Accueil(
     joursEssai: Int,
     viderCorbeille: () -> Unit,
     annuler: () -> Unit,
+    souvenir: (Int) -> Unit,
     openCat: (Cat) -> Unit,
     openTri: () -> Unit,
     openMail: () -> Unit,
@@ -346,6 +392,40 @@ private fun Accueil(
         item {
             BoxCard(onClick = openTri) {
                 InfoRow("👆", "Tri rapide", "Une photo à la fois : glisse à gauche pour jeter, à droite pour garder", onClick = openTri)
+            }
+        }
+
+        // Plus d'outils : replie par defaut pour garder l'accueil simple
+        item {
+            var ouvert by rememberSaveable { mutableStateOf(false) }
+            var choixPdf by remember { mutableStateOf(false) }
+            BoxCard {
+                InfoRow("🧰", "Plus d'outils", if (ouvert) "" else "Libérer la place, PDF souvenir…", onClick = { ouvert = !ouvert })
+                if (ouvert) {
+                    InfoRow("🧹", "Libérer la place",
+                        "Met à la corbeille les photos de plus de ${vm.settings.keepMonths} mois déjà sauvegardées",
+                        onClick = { vm.findFreeSpace() })
+                    InfoRow("📕", "PDF souvenir", "Les plus belles photos du mois ou de l'année, à envoyer à un proche",
+                        onClick = { choixPdf = true })
+                    InfoRow("🗜️", "Réduire mes vidéos", "Ouvre « Grosses vidéos », coche-les puis « Compresser »",
+                        onClick = { if (vm.media != null) openCat(Cat.BIG_VIDEOS) else analyser() })
+                }
+            }
+            if (choixPdf) {
+                androidx.compose.material3.AlertDialog(
+                    onDismissRequest = { choixPdf = false },
+                    containerColor = Carte,
+                    title = { Text("PDF souvenir", fontWeight = FontWeight.Bold) },
+                    text = {
+                        Column {
+                            listOf("Ce mois-ci", "Le mois dernier", "Cette année").forEachIndexed { i, l ->
+                                BigButton(l, color = Carte2) { choixPdf = false; souvenir(i) }
+                                Gap(6)
+                            }
+                        }
+                    },
+                    confirmButton = { TextButton(onClick = { choixPdf = false }) { Text("Annuler", color = Gris) } },
+                )
             }
         }
 
@@ -442,6 +522,7 @@ private fun Categorie(
     cat: Cat,
     envoyer: (List<com.jmdargere.cleansmart.data.MediaItem>) -> Unit,
     proteger: (List<com.jmdargere.cleansmart.data.MediaItem>) -> Unit,
+    compresser: (List<com.jmdargere.cleansmart.data.MediaItem>) -> Unit,
 ) {
     val groups = vm.groups(cat)
     val choisis = vm.selectedIn(cat)
@@ -467,6 +548,11 @@ private fun Categorie(
                         OutlinedButton(onClick = { envoyer(choisis) }) { Text("📤 Envoyer (${choisis.size})", color = Color.White) }
                         RowGap()
                         OutlinedButton(onClick = { proteger(choisis) }) { Text("🛡️ Protéger (${choisis.size})", color = Color.White) }
+                        val nbVideos = choisis.count { it.video }
+                        if (nbVideos > 0) {
+                            RowGap()
+                            OutlinedButton(onClick = { compresser(choisis) }) { Text("🗜️ Compresser ($nbVideos)", color = Color.White) }
+                        }
                     }
                 }
                 Gap(4)
@@ -497,7 +583,7 @@ private fun Categorie(
 // =====================================================================================
 
 @Composable
-private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit) {
+private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit, openTrash: () -> Unit) {
     val a = vm.mailAccount
     var edit by rememberSaveable { mutableStateOf(false) }
     val ctx = LocalContext.current
@@ -556,8 +642,9 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                     Text("Analyse des 3 000 mails les plus récents de la boîte de réception.", color = Gris, fontSize = 12.sp,
                         modifier = Modifier.fillMaxWidth().padding(top = 6.dp), textAlign = TextAlign.Center)
                 }
-                BoxCard(onClick = openSave) {
+                BoxCard {
                     InfoRow("💾", "Sauvegarder des mails", "Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part", onClick = openSave)
+                    InfoRow("↩️", "Remettre des mails", "Récupère des mails mis à la corbeille de ta messagerie", onClick = openTrash)
                 }
             }
             vm.mailResult?.let { r ->
@@ -565,7 +652,18 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                     SectionTitle("RÉSULTAT")
                     BoxCard {
                         Text("${fmtNum(r.total)} mails dans la boîte · ${fmtBytes(r.bytes)} analysés", color = Gris, fontSize = 13.sp)
+                        if (r.quotaMax > 0) {
+                            val ratio = (r.quotaUsed.toFloat() / r.quotaMax).coerceIn(0f, 1f)
+                            Gap(6)
+                            Text("Boîte mail remplie à ${(ratio * 100).toInt()} % (${fmtBytes(r.quotaUsed)} / ${fmtBytes(r.quotaMax)})",
+                                fontWeight = FontWeight.Bold, color = if (ratio > 0.85f) Rouge else Color.White, fontSize = 14.sp)
+                            androidx.compose.material3.LinearProgressIndicator(progress = { ratio },
+                                modifier = Modifier.fillMaxWidth().padding(top = 4.dp), color = if (ratio > 0.85f) Rouge else Violet, trackColor = Carte2)
+                        }
                         Gap()
+                        Text("🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.",
+                            color = Vert, fontSize = 12.sp)
+                        Gap(6)
                         MailAction("📰", "Newsletters et pubs", plural(r.newsletters, "mail"), r.newsletters > 0) {
                             val n = r.senders.count { it.newsletter }
                             ask(Confirm("Jeter les newsletters ?",
@@ -578,12 +676,25 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                         MailAction("🕰️", "Mails de plus de 2 ans", "${plural(r.oldCount, "mail")} · ${fmtBytes(r.oldBytes)}", r.oldCount > 0) {
                             ask(Confirm("Jeter les vieux mails ?", "Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.", "Corbeille") { vm.trashOldMails() })
                         }
+                        MailAction("👯", "Mails en double", "Reçus plusieurs fois à quelques secondes d'écart : ${plural(r.doublons.size, "copie")}", r.doublons.isNotEmpty()) {
+                            ask(Confirm("Jeter les copies ?", "${plural(r.doublons.size, "copie")} en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.", "Corbeille") { vm.trashDoublons() })
+                        }
+                    }
+                    // Lecture seule : retrouver vite l'important
+                    if (r.factures.isNotEmpty() || r.colis.isNotEmpty() || r.voyages.isNotEmpty()) {
+                        SectionTitle("À RETROUVER VITE")
+                        BoxCard {
+                            ListeMails("🧾", "Factures et papiers", r.factures)
+                            ListeMails("📦", "Colis et livraisons", r.colis)
+                            ListeMails("✈️", "Voyages et réservations", r.voyages)
+                        }
                     }
                     if (r.senders.isNotEmpty()) {
                         SectionTitle("QUI T'ÉCRIT LE PLUS")
                         BoxCard {
                             r.senders.take(10).forEach { s ->
-                                InfoRow(if (s.newsletter) "📰" else "👤", s.name.ifEmpty { s.email }, s.email, fmtNum(s.count))
+                                InfoRow(when { s.important -> "🛡️"; s.newsletter -> "📰"; else -> "👤" },
+                                    s.name.ifEmpty { s.email }, s.email, fmtNum(s.count))
                             }
                         }
                     }
@@ -597,6 +708,59 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                         ask(Confirm("Oublier ce compte ?", "L'adresse et le mot de passe seront effacés du téléphone.", "Oublier") { vm.forgetMail() })
                     }) { Text("Oublier", color = Rouge) }
                 }
+            }
+        }
+    }
+}
+
+/** Une liste de mails depliable (lecture seule). */
+@Composable
+private fun ListeMails(emoji: String, titre: String, mails: List<com.jmdargere.cleansmart.data.BigMail>) {
+    if (mails.isEmpty()) return
+    var ouvert by rememberSaveable(titre) { mutableStateOf(false) }
+    InfoRow(emoji, titre, if (ouvert) "" else "Toucher pour voir", fmtNum(mails.size), onClick = { ouvert = !ouvert })
+    if (ouvert) mails.take(30).forEach { m ->
+        Column(Modifier.fillMaxWidth().padding(start = 58.dp, bottom = 8.dp)) {
+            Text(m.subject.ifEmpty { "(sans objet)" }, fontSize = 14.sp, fontWeight = FontWeight.Bold, maxLines = 1,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+            Text("${m.from} · ${com.jmdargere.cleansmart.data.fmtDate(m.date)}", color = Gris, fontSize = 12.sp, maxLines = 1)
+        }
+    }
+}
+
+// =====================================================================================
+// REMETTRE DES MAILS : depuis la corbeille de la messagerie
+// =====================================================================================
+
+@Composable
+private fun MailsCorbeille(vm: AppViewModel) {
+    val list = vm.mailTrash
+    Column(Modifier.fillMaxSize()) {
+        LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 12.dp)) {
+            item {
+                Text("Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.",
+                    color = Gris, fontSize = 14.sp, modifier = Modifier.padding(4.dp, 0.dp, 4.dp, 8.dp))
+            }
+            if (list != null && list.isEmpty()) item { Text("La corbeille est vide.", color = Gris, modifier = Modifier.padding(16.dp)) }
+            items((list ?: emptyList()).size) { i ->
+                val m = list!![i]
+                val on = m.uid in vm.mailTrashSel
+                BoxCard(onClick = { vm.toggleMailTrash(m.uid) }) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        androidx.compose.material3.Checkbox(checked = on, onCheckedChange = { vm.toggleMailTrash(m.uid) },
+                            colors = androidx.compose.material3.CheckboxDefaults.colors(checkedColor = Violet))
+                        Column(Modifier.weight(1f)) {
+                            Text(m.subject.ifEmpty { "(sans objet)" }, fontWeight = FontWeight.Bold, maxLines = 1,
+                                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+                            Text("${m.from} · ${com.jmdargere.cleansmart.data.fmtDate(m.date)}", color = Gris, fontSize = 12.sp, maxLines = 1)
+                        }
+                    }
+                }
+            }
+        }
+        if (vm.mailTrashSel.isNotEmpty()) {
+            Box(Modifier.fillMaxWidth().padding(16.dp, 8.dp)) {
+                BigButton("↩️ Remettre ${plural(vm.mailTrashSel.size, "mail")} dans ma boîte") { vm.restoreMails() }
             }
         }
     }
@@ -703,6 +867,36 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                     BigButton("💾 Sauvegarder toutes mes photos", color = Carte2) { vm.backupEverything() }
                     Text("Seules les nouvelles photos sont copiées à chaque fois.", color = Gris, fontSize = 12.sp)
                 }
+            }
+            SectionTitle("LA NUIT")
+            BoxCard {
+                val notifLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
+                fun demanderNotif() {
+                    if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(ctx, Manifest.permission.POST_NOTIFICATIONS)
+                        != PackageManager.PERMISSION_GRANTED) notifLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                }
+                OptionSwitch("Sauvegarde automatique chaque nuit",
+                    "Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.",
+                    s.nightBackup) {
+                    if (it) demanderNotif()
+                    vm.updateSettings(s.copy(nightBackup = it))
+                }
+                OptionSwitch("Alertes et rapport du mois",
+                    "Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.",
+                    s.alerts) {
+                    if (it) demanderNotif()
+                    vm.updateSettings(s.copy(alerts = it))
+                }
+            }
+            SectionTitle("LIBÉRER LA PLACE")
+            BoxCard {
+                Text("Garder sur le téléphone les photos des derniers…", fontWeight = FontWeight.Bold)
+                Gap(6)
+                val mois = listOf(1, 3, 6, 12)
+                ChipsChoix(listOf("1 mois", "3 mois", "6 mois", "12 mois"), mois.indexOf(s.keepMonths).coerceAtLeast(0)) {
+                    vm.updateSettings(s.copy(keepMonths = mois[it]))
+                }
+                Text("Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.", color = Gris, fontSize = 12.sp)
             }
             SectionTitle("PROTECTION")
             BoxCard {

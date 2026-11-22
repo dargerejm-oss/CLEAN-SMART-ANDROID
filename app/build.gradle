@@ -12,8 +12,8 @@ android {
         applicationId "com.jmdargere.cleansmart"
         minSdk 30
         targetSdk 35
-        versionCode 3
-        versionName "1.2"
+        versionCode 4
+        versionName "1.3"
     }
 
     // Cle de signature PRIVEE : fournie par GitHub (secrets KEYSTORE_B64 et KEYSTORE_PASSWORD), jamais dans le depot.
@@ -90,6 +90,12 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
     // Sauvegarde vers carte SD / cle USB / Drive (dossier choisi par l'utilisateur)
     implementation 'androidx.documentfile:documentfile:1.0.1'
+    // Travail de nuit (sauvegarde automatique, alertes, rapport du mois)
+    implementation 'androidx.work:work-runtime-ktx:2.10.0'
+    // Compression des videos
+    implementation 'androidx.media3:media3-transformer:1.5.1'
+    implementation 'androidx.media3:media3-effect:1.5.1'
+    implementation 'androidx.media3:media3-common:1.5.1'
 
     // Messagerie IMAP
     implementation 'com.sun.mail:android-mail:1.6.7'

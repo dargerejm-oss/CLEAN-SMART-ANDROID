@@ -28,8 +28,12 @@ data class MailAccount(val email: String = "", val host: String = "", val provid
     val ready get() = email.isNotBlank() && host.isNotBlank() && hasPassword
 }
 
-data class Sender(val email: String, val name: String, val count: Int, val bytes: Long, val newsletter: Boolean, val last: Long)
-data class BigMail(val from: String, val subject: String, val size: Long, val date: Long)
+data class Sender(
+    val email: String, val name: String, val count: Int, val bytes: Long, val newsletter: Boolean, val last: Long,
+    /** Banque, administration, sante... : jamais mis a la corbeille par Clean Smart. */
+    val important: Boolean = false,
+)
+data class BigMail(val from: String, val subject: String, val size: Long, val date: Long, val uid: Long = 0)
 
 data class MailResult(
     val total: Int,
@@ -42,7 +46,37 @@ data class MailResult(
     val oldBytes: Long,
     val senders: List<Sender>,
     val bigList: List<BigMail>,
+    /** Lecture seule : factures et papiers, colis, voyages (les plus recents). */
+    val factures: List<BigMail> = emptyList(),
+    val colis: List<BigMail> = emptyList(),
+    val voyages: List<BigMail> = emptyList(),
+    /** Mails identiques recus a quelques secondes d'ecart (UID des copies a jeter). */
+    val doublons: List<Long> = emptyList(),
+    /** Place utilisee / disponible sur le serveur (0 si la messagerie ne la donne pas). */
+    val quotaUsed: Long = 0,
+    val quotaMax: Long = 0,
 )
+
+/** Reconnait les mails importants et les classe (factures, colis, voyages). */
+object MailTri {
+    private val IMPORTANT = listOf(
+        "gouv.fr", "impots", "ameli", "caf.fr", "urssaf", "francetravail", "pole-emploi", "ants.gouv", "service-public",
+        "banque", "bank", "credit", "bnpparibas", "societegenerale", "labanquepostale", "lcl.fr", "boursorama",
+        "caisse-epargne", "creditmutuel", "cic.fr", "hellobank", "fortuneo", "revolut", "paypal", "notaire",
+        "mutuelle", "assurance", "doctolib", "hopital", "chu-", "edf.fr", "engie", "trésor", "tresor",
+    )
+    private val FACTURE = Regex("(?i)facture|invoice|re[çc]u de paiement|avis d'[ée]ch[ée]ance|relev[ée]|quittance|bulletin de (salaire|paie)|avis d'imp[oô]t")
+    private val COLIS = Regex("(?i)colis|livraison|exp[ée]di|suivi de (commande|votre)|tracking|colissimo|chronopost|mondial relay|ups |dhl|dpd|gls|votre commande")
+    private val VOYAGE = Regex("(?i)r[ée]servation|billet|booking|e-ticket|boarding|embarquement|vol |flight|sncf|ouigo|airbnb|h[ôo]tel|itin[ée]raire|check-in")
+
+    fun important(email: String, name: String): Boolean {
+        val s = (email + " " + name).lowercase()
+        return IMPORTANT.any { it in s }
+    }
+    fun facture(subject: String) = FACTURE.containsMatchIn(subject)
+    fun colis(subject: String) = COLIS.containsMatchIn(subject)
+    fun voyage(subject: String) = VOYAGE.containsMatchIn(subject)
+}
 
 /** Un mail qui a des pieces jointes (pour la sauvegarde). */
 data class MailWithFiles(val uid: Long, val from: String, val subject: String, val date: Long, val size: Long, val files: List<String>) {
@@ -53,7 +87,12 @@ sealed class MailCriteria {
     data class From(val emails: List<String>) : MailCriteria()
     data class Big(val minMb: Int) : MailCriteria()
     data class Old(val years: Int) : MailCriteria()
+    /** Des mails precis (par leur numero UID), ex. les doublons. */
+    data class Uids(val uids: List<Long>) : MailCriteria()
 }
+
+/** Un mail de la corbeille, pour le remettre dans la boite. */
+data class TrashedMail(val uid: Long, val from: String, val subject: String, val date: Long)
 
 class MailException(msg: String) : Exception(msg)
 
@@ -165,17 +204,24 @@ class MailCleaner(private val ctx: Context) {
     fun scan(max: Int, s: Settings, progress: (String, Int) -> Unit): MailResult {
         progress("Connexion au serveur", 2)
         val st = connect()
-        var inbox: Folder? = null
+        var inbox: IMAPFolder? = null
         try {
-            inbox = st.getFolder("INBOX").apply { open(Folder.READ_ONLY) }
+            inbox = (st.getFolder("INBOX") as IMAPFolder).apply { open(Folder.READ_ONLY) }
             val total = inbox.messageCount
             val start = maxOf(1, total - max + 1)
             val toRead = total - start + 1
             val fp = FetchProfile().apply {
                 add(FetchProfile.Item.ENVELOPE)
                 add(FetchProfile.Item.SIZE)
+                add(UIDFolder.FetchProfileItem.UID)
                 add("List-Unsubscribe")
             }
+            val factures = ArrayList<BigMail>()
+            val colis = ArrayList<BigMail>()
+            val voyages = ArrayList<BigMail>()
+            // doublons : meme expediteur + meme objet + meme taille, recus a moins de 2 minutes d'ecart
+            val vus = HashMap<String, Long>()
+            val doublons = ArrayList<Long>()
             val bigLimit = s.bigMailMb.toLong() * 1024 * 1024
             val oldLimit = System.currentTimeMillis() - s.oldMailYears * 365L * 24 * 3600 * 1000
 
@@ -197,12 +243,23 @@ class MailCleaner(private val ctx: Context) {
                         val size = m.size.coerceAtLeast(0).toLong()
                         val date = (m.receivedDate ?: m.sentDate)?.time ?: 0L
                         val isNews = !m.getHeader("List-Unsubscribe").isNullOrEmpty()
+                        val subject = m.subject ?: ""
+                        val uid = inbox.getUID(m)
+                        val info = BigMail(name.ifEmpty { email }, subject, size, date, uid)
                         bytes += size
                         if (isNews) news++
                         if (size >= bigLimit) {
                             bigCount++; bigBytes += size
-                            if (big.size < 40) big += BigMail(name.ifEmpty { email }, m.subject ?: "", size, date)
+                            if (big.size < 40) big += info
                         }
+                        if (!isNews) {
+                            if (factures.size < 50 && MailTri.facture(subject)) factures += info
+                            else if (colis.size < 50 && MailTri.colis(subject)) colis += info
+                            else if (voyages.size < 50 && MailTri.voyage(subject)) voyages += info
+                        }
+                        val cle = "$email|$subject|$size"
+                        val avant = vus[cle]
+                        if (avant != null && kotlin.math.abs(avant - date) < 120_000) doublons += uid else vus[cle] = date
                         if (date in 1 until oldLimit) { oldCount++; oldBytes += size }
                         if (email.isNotEmpty()) {
                             val acc = senders.getOrPut(email) { Acc(email, name) }
@@ -221,10 +278,19 @@ class MailCleaner(private val ctx: Context) {
             val top = senders.values.filter { it.count >= 2 }
                 .sortedWith(compareByDescending<Acc> { it.count }.thenByDescending { it.bytes })
                 .take(80)
-                .map { Sender(it.email, it.name, it.count, it.bytes, it.news, it.last) }
+                .map { Sender(it.email, it.name, it.count, it.bytes, it.news, it.last, MailTri.important(it.email, it.name)) }
+
+            // place sur le serveur (si la messagerie la donne)
+            var used = 0L; var maxQ = 0L
+            runCatching {
+                (st as? javax.mail.QuotaAwareStore)?.getQuota("INBOX")?.forEach { q ->
+                    q.resources?.firstOrNull { it.name.equals("STORAGE", true) }?.let { r -> used = r.usage * 1024; maxQ = r.limit * 1024 }
+                }
+            }
 
             progress("Terminé", 100)
-            return MailResult(total, read, bytes, news, bigCount, bigBytes, oldCount, oldBytes, top, big.sortedByDescending { it.size })
+            return MailResult(total, read, bytes, news, bigCount, bigBytes, oldCount, oldBytes, top, big.sortedByDescending { it.size },
+                factures, colis, voyages, doublons, used, maxQ)
         } finally {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }
             runCatching { st.close() }
@@ -246,8 +312,15 @@ class MailCleaner(private val ctx: Context) {
                     val before = Date(System.currentTimeMillis() - c.years.coerceAtLeast(1) * 365L * 24 * 3600 * 1000)
                     found += inbox.search(ReceivedDateTerm(ComparisonTerm.LT, before))
                 }
+                is MailCriteria.Uids -> found += inbox.getMessagesByUID(c.uids.toLongArray()).filterNotNull()
             }
-            val all = found.toTypedArray()
+            // les mails importants (banque, administration, sante...) ne sont JAMAIS mis a la corbeille
+            val all = found.filterNot { m ->
+                runCatching {
+                    val ia = m.from?.firstOrNull() as? InternetAddress
+                    MailTri.important(ia?.address ?: "", ia?.personal ?: "")
+                }.getOrDefault(true)
+            }.toTypedArray()
             var needExpunge = false
             all.toList().chunked(200).forEach { part ->
                 val arr = part.toTypedArray()
@@ -266,6 +339,56 @@ class MailCleaner(private val ctx: Context) {
             return all.size
         } finally {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }
+            runCatching { st.close() }
+        }
+    }
+
+    // ---------- Remettre des mails depuis la corbeille ----------
+
+    /** Les 200 derniers mails de la corbeille du compte. */
+    fun listTrash(): List<TrashedMail> {
+        val st = connect()
+        var trash: IMAPFolder? = null
+        try {
+            trash = (findTrash(st) ?: throw MailException("Dossier Corbeille introuvable sur ce compte.")) as IMAPFolder
+            trash.open(Folder.READ_ONLY)
+            val total = trash.messageCount
+            if (total == 0) return emptyList()
+            val msgs = trash.getMessages(maxOf(1, total - 199), total)
+            trash.fetch(msgs, FetchProfile().apply { add(FetchProfile.Item.ENVELOPE); add(UIDFolder.FetchProfileItem.UID) })
+            return msgs.reversed().mapNotNull { m ->
+                runCatching {
+                    val ia = m.from?.firstOrNull() as? InternetAddress
+                    TrashedMail(trash.getUID(m), ia?.personal ?: ia?.address ?: "", m.subject ?: "",
+                        (m.receivedDate ?: m.sentDate)?.time ?: 0L)
+                }.getOrNull()
+            }
+        } finally {
+            runCatching { if (trash?.isOpen == true) trash.close(false) }
+            runCatching { st.close() }
+        }
+    }
+
+    /** Remet dans la boite de reception les mails choisis de la corbeille. */
+    fun restore(uids: List<Long>): Int {
+        if (uids.isEmpty()) return 0
+        val st = connect()
+        var trash: IMAPFolder? = null
+        try {
+            trash = (findTrash(st) ?: throw MailException("Dossier Corbeille introuvable.")) as IMAPFolder
+            trash.open(Folder.READ_WRITE)
+            val inbox = st.getFolder("INBOX")
+            val msgs = trash.getMessagesByUID(uids.toLongArray()).filterNotNull().toTypedArray()
+            try {
+                trash.moveMessages(msgs, inbox)
+            } catch (e: Exception) {
+                trash.copyMessages(msgs, inbox)
+                trash.setFlags(msgs, Flags(Flags.Flag.DELETED), true)
+                try { trash.expunge(msgs) } catch (x: Exception) { trash.expunge() }
+            }
+            return msgs.size
+        } finally {
+            runCatching { if (trash?.isOpen == true) trash.close(false) }
             runCatching { st.close() }
         }
     }

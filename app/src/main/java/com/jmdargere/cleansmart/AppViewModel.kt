@@ -25,7 +25,10 @@ import com.jmdargere.cleansmart.data.MediaGroup
 import com.jmdargere.cleansmart.data.MediaItem
 import com.jmdargere.cleansmart.data.MediaResult
 import com.jmdargere.cleansmart.data.MediaScanner
+import com.jmdargere.cleansmart.data.Night
 import com.jmdargere.cleansmart.data.Provider
+import com.jmdargere.cleansmart.data.Souvenir
+import com.jmdargere.cleansmart.data.VideoCompressor
 import com.jmdargere.cleansmart.data.Settings
 import com.jmdargere.cleansmart.data.fmtBytes
 import com.jmdargere.cleansmart.data.fmtNum
@@ -76,6 +79,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     private var pendingTrash: List<MediaItem> = emptyList()
 
     init {
+        Night.schedule(app, settings)
         refreshStorage()
         viewModelScope.launch { mailAccount = withContext(Dispatchers.IO) { mail.account() } }
     }
@@ -346,6 +350,26 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         trashMail(MailCriteria.From(it))
     }
 
+    fun trashDoublons() = mailResult?.doublons?.takeIf { it.isNotEmpty() }?.let { trashMail(MailCriteria.Uids(it)) }
+
+    // corbeille de la messagerie : remettre des mails
+    var mailTrash by mutableStateOf<List<com.jmdargere.cleansmart.data.TrashedMail>?>(null); private set
+    var mailTrashSel by mutableStateOf(setOf<Long>()); private set
+
+    fun loadMailTrash() = run("Corbeille de la messagerie") {
+        mailTrash = withContext(Dispatchers.IO) { mail.listTrash() }
+        mailTrashSel = emptySet()
+    }
+
+    fun toggleMailTrash(uid: Long) { mailTrashSel = if (uid in mailTrashSel) mailTrashSel - uid else mailTrashSel + uid }
+
+    fun restoreMails() = run("Remettre des mails") {
+        val n = withContext(Dispatchers.IO) { mail.restore(mailTrashSel.toList()) }
+        say("↩️ ${plural(n, "mail remis", "mails remis")} dans la boîte de réception")
+        mailTrash = withContext(Dispatchers.IO) { mail.listTrash() }
+        mailTrashSel = emptySet()
+    }
+
     fun trashBigMails() = trashMail(MailCriteria.Big(settings.bigMailMb))
     fun trashOldMails() = trashMail(MailCriteria.Old(settings.oldMailYears))
 
@@ -382,12 +406,13 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         val tree = settings.backupTree
         if (!backup.isUsable(tree)) { say("Choisis d'abord un dossier de sauvegarde."); return@run }
         val uids = mailFilesSel.toList()
-        var pdf = 0
+        val saved = ArrayList<com.jmdargere.cleansmart.data.SavedMail>()
         withContext(Dispatchers.IO) {
-            mail.forEachMail(uids, progress("Sauvegarde des mails")) { m -> pdf += backup.saveMail(tree!!, m) }
+            mail.forEachMail(uids, progress("Sauvegarde des mails")) { m -> saved += backup.saveMail(tree!!, m) }
+            backup.updateMailIndex(tree!!, saved)
         }
         mailFilesSel = emptySet()
-        say("✅ ${fmtNum(uids.size)} mail(s) sauvegardé(s) · ${fmtNum(pdf)} PDF dans le dossier PDF")
+        say("✅ ${fmtNum(saved.size)} mail(s) sauvegardé(s) · ${fmtNum(saved.sumOf { it.pdf })} PDF · archive CleanSmart/Mails/index.html à jour")
     }
 
     // ------------------------------------------------------------------ sauvegarde & options
@@ -405,5 +430,60 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         say(if (n == 0) "Tout était déjà sauvegardé 👍" else "✅ ${fmtNum(n)} nouveau(x) fichier(s) sauvegardé(s)")
     }
 
-    fun updateSettings(s: Settings) { settings = s; Settings.save(ctx, s) }
+    fun updateSettings(s: Settings) {
+        settings = s
+        Settings.save(ctx, s)
+        Night.schedule(ctx, s)
+    }
+
+    // ------------------------------------------------------------------ liberer la place (photos deja sauvegardees)
+
+    /** Photos/videos de plus de N mois, deja presentes dans la sauvegarde : proposees a la corbeille. */
+    var freeCandidates by mutableStateOf<List<MediaItem>?>(null); private set
+
+    fun findFreeSpace() = run("Libérer la place") {
+        val tree = settings.backupTree
+        if (!backup.isUsable(tree)) { say("Choisis d'abord un dossier de sauvegarde et fais une sauvegarde."); return@run }
+        val limit = System.currentTimeMillis() - settings.keepMonths * 30L * 24 * 3600 * 1000
+        freeCandidates = withContext(Dispatchers.IO) {
+            val old = scanner.allMedia().filter { it.date in 1 until limit && !(settings.protectFavorites && it.favorite) }
+            backup.alreadySaved(tree!!, old, progress("Libérer la place"))
+        }
+        if (freeCandidates.isNullOrEmpty()) say("Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».")
+    }
+
+    fun prepareFreeSpace(onReady: (IntentSender) -> Unit) {
+        val l = freeCandidates ?: return
+        freeCandidates = null
+        trashItems(l, onReady)
+    }
+
+    fun cancelFreeSpace() { freeCandidates = null }
+
+    // ------------------------------------------------------------------ PDF souvenir
+
+    fun makeSouvenir(periode: Int, onDone: (android.net.Uri) -> Unit) = run("PDF souvenir") {
+        busy = Busy("PDF souvenir", "Choix des plus belles photos…", 20)
+        val uri = withContext(Dispatchers.IO) { Souvenir.make(ctx, periode, settings) }
+        if (uri == null) say("Pas de photos pour cette période.") else { say("📕 PDF enregistré dans Téléchargements / Clean Smart"); onDone(uri) }
+    }
+
+    // ------------------------------------------------------------------ compression des videos
+
+    /** Compresse les videos choisies en 720p, puis propose les originaux a la corbeille. */
+    fun compressVideos(items: List<MediaItem>, onOriginals: (List<MediaItem>, Long) -> Unit) = run("Compression des vidéos") {
+        val done = ArrayList<MediaItem>()
+        var gain = 0L
+        items.filter { it.video }.forEachIndexed { i, v ->
+            val label = "Vidéo ${i + 1} / ${items.count { it.video }}"
+            val newSize = runCatching {
+                VideoCompressor.compress(ctx, v) { pct -> busy = Busy("Compression des vidéos", label, pct) }
+            }.getOrElse { e -> say("${v.name} : ${e.message ?: "compression impossible"}"); -1L }
+            if (newSize in 1 until (v.size * 0.9).toLong()) { done += v; gain += v.size - newSize }
+        }
+        if (done.isEmpty()) say("Aucune vidéo n'a pu être réduite davantage.")
+        else onOriginals(done, gain)
+    }
+
+    fun trashOriginals(items: List<MediaItem>, onReady: (IntentSender) -> Unit) = trashItems(items, onReady)
 }

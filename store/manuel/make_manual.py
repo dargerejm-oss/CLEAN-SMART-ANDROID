@@ -78,7 +78,29 @@ TEXTS = {
                 "le mail complet (.eml), CleanSmart/PDF réunit tous les PDF, et CleanSmart/Pièces jointes",
                 "les autres fichiers.",
             ]),
-            ("8. Les options", [
+            ("8. Encore plus pour tes mails", [
+                "Les mails de ta banque, de l'administration ou de santé ne sont JAMAIS mis à la corbeille.",
+                "Mails en double : les copies reçues à quelques secondes d'écart partent en un bouton.",
+                "« À retrouver vite » : factures et papiers, colis, voyages (lecture seule).",
+                "« Remettre des mails » : coche des mails de la corbeille pour les remettre dans ta boîte.",
+                "Boîte presque pleine : la place utilisée s'affiche si ta messagerie la donne.",
+                "Archive sur le PC : ouvre CleanSmart/Mails/index.html et cherche un mot, un nom ou un PDF.",
+            ]),
+            ("9. La nuit, libérer la place", [
+                "Option « Sauvegarde automatique chaque nuit » : vers 2 h, les nouvelles photos partent",
+                "dans ton dossier de sauvegarde. Une notification te prévient si ça n'a pas marché.",
+                "Option « Alertes et rapport du mois » : alerte s'il reste moins de 1 Go, bilan le 1er du mois.",
+                "« Libérer la place » (Plus d'outils) : les photos de plus de 3 mois DÉJÀ sauvegardées sont",
+                "proposées à la corbeille. Jamais une photo qui n'est pas à l'abri. Durée réglable : 1, 3, 6, 12 mois.",
+            ]),
+            ("10. PDF souvenir et vidéos", [
+                "PDF souvenir (Plus d'outils) : les plus belles photos du mois ou de l'année dans un PDF",
+                "léger, rangé dans Téléchargements/Clean Smart, prêt à envoyer à un proche.",
+                "Réduire mes vidéos : dans « Grosses vidéos », coche des vidéos puis « Compresser ».",
+                "Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère (Films/Clean Smart).",
+                "Ensuite, Clean Smart te propose de mettre les originaux à la corbeille.",
+            ]),
+            ("11. Les options", [
                 "Le bouton en haut à droite ouvre les options :",
                 "- le dossier de sauvegarde, et sauvegarder avant de supprimer ;",
                 "- protéger mes favoris : les photos en favori ne sont jamais proposées ;",
@@ -149,7 +171,29 @@ TEXTS = {
                 "email (.eml), CleanSmart/PDF gathers all PDFs, and CleanSmart/Pieces jointes",
                 "the other files.",
             ]),
-            ("8. Options", [
+            ("8. More for your emails", [
+                "Emails from your bank, government or health services are NEVER sent to the bin.",
+                "Duplicate emails: copies received seconds apart go away in one tap.",
+                "\"À retrouver vite\" (Find fast): invoices and papers, parcels, travel (read-only).",
+                "\"Remettre des mails\" (Restore emails): tick emails in the bin to put them back.",
+                "Mailbox almost full: the space used is shown if your provider gives it.",
+                "Archive on the PC: open CleanSmart/Mails/index.html and search a word, a name or a PDF.",
+            ]),
+            ("9. Night, free up space", [
+                "\"Automatic backup every night\" option: around 2 am, new photos go to your backup",
+                "folder. A notification tells you if it did not work.",
+                "\"Alerts and monthly report\" option: alert under 1 GB free, summary on the 1st of the month.",
+                "\"Libérer la place\" (Free up space, in More tools): photos older than 3 months ALREADY",
+                "backed up are offered to the bin. Never a photo that is not safe. Duration: 1, 3, 6, 12 months.",
+            ]),
+            ("10. Souvenir PDF and videos", [
+                "Souvenir PDF (More tools): the best photos of the month or year in a light PDF,",
+                "saved in Downloads/Clean Smart, ready to send to a loved one.",
+                "Shrink my videos: in \"Grosses vidéos\", tick videos then \"Compresser\" (Compress).",
+                "Each video is remade in 720p, often 3 to 5 times lighter (Movies/Clean Smart).",
+                "Then Clean Smart offers to move the originals to the bin.",
+            ]),
+            ("11. Options", [
                 "The button at the top right opens the options:",
                 "- the backup folder, and back up before deleting;",
                 "- protect my favourites: favourite photos are never suggested;",
