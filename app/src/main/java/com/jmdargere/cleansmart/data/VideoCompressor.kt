@@ -63,7 +63,7 @@ object VideoCompressor {
                 if (transformer.getProgress(holder) == Transformer.PROGRESS_STATE_AVAILABLE) progress(holder.progress)
                 delay(500)
             }
-            error?.let { throw IllegalStateException("compression impossible (${ExportException.getErrorCodeName(it.errorCode)})") }
+            error?.let { throw IllegalStateException("compression impossible (${it.message ?: "erreur inconnue"})") }
         }
 
         val newSize = out.length()
