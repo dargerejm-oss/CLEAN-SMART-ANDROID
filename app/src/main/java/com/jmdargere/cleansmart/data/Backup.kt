@@ -70,35 +70,46 @@ class Backup(private val ctx: Context) {
         return dir(t, "CleanSmart")
     }
 
-    /** Copie les photos/videos. Retourne le nombre de fichiers copies (les deja sauvegardes sont ignores). */
+    /**
+     * Copie les photos/videos, rangees par mois. Les photos en favori (= les meilleures, protegees)
+     * sont aussi reunies dans « Mes meilleures ». Retourne le nombre de fichiers copies
+     * (les deja sauvegardes sont ignores).
+     */
     fun saveMedia(tree: Uri, items: List<MediaItem>, progress: (String, Int) -> Unit): Int {
-        val photos = dir(root(tree), "Photos")
+        val r = root(tree)
+        val photos = dir(r, "Photos")
+        val best by lazy { dir(r, "Mes meilleures").let { f -> f to listing(f) } }
         val month = SimpleDateFormat("yyyy-MM", Locale.FRANCE)
         // contenu de chaque dossier mensuel, lu une seule fois : nom -> taille
         val known = HashMap<String, Pair<DocumentFile, HashMap<String, Long>>>()
         var copied = 0
         items.forEachIndexed { i, it ->
             val m = month.format(Date(if (it.date > 0) it.date else System.currentTimeMillis()))
-            val (folder, content) = known.getOrPut(m) {
-                val f = dir(photos, m)
-                f to HashMap<String, Long>().apply { f.listFiles().forEach { x -> put(x.name ?: "", x.length()) } }
-            }
-            if (content[it.name] != it.size) {
-                val mime = cr.getType(it.uri) ?: if (it.video) "video/mp4" else "image/jpeg"
-                folder.findFile(it.name)?.delete()
-                val dest = folder.createFile(mime, it.name) ?: throw IllegalStateException("Impossible d'écrire ${it.name}")
-                cr.openInputStream(it.uri).use { input ->
-                    cr.openOutputStream(dest.uri).use { out ->
-                        if (input == null || out == null) throw IllegalStateException("Lecture impossible : ${it.name}")
-                        input.copyTo(out, 256 * 1024)
-                    }
-                }
-                content[dest.name ?: it.name] = it.size
-                copied++
-            }
+            val (folder, content) = known.getOrPut(m) { dir(photos, m).let { f -> f to listing(f) } }
+            if (copyIfNeeded(folder, content, it)) copied++
+            if (it.favorite) copyIfNeeded(best.first, best.second, it)
             progress("Sauvegarde ${i + 1} / ${items.size}", 100 * (i + 1) / items.size.coerceAtLeast(1))
         }
         return copied
+    }
+
+    private fun listing(f: DocumentFile): HashMap<String, Long> =
+        HashMap<String, Long>().apply { f.listFiles().forEach { x -> put(x.name ?: "", x.length()) } }
+
+    /** Copie le fichier s'il n'est pas deja la (meme nom, meme taille). */
+    private fun copyIfNeeded(folder: DocumentFile, content: HashMap<String, Long>, it: MediaItem): Boolean {
+        if (content[it.name] == it.size) return false
+        val mime = cr.getType(it.uri) ?: if (it.video) "video/mp4" else "image/jpeg"
+        folder.findFile(it.name)?.delete()
+        val dest = folder.createFile(mime, it.name) ?: throw IllegalStateException("Impossible d'écrire ${it.name}")
+        cr.openInputStream(it.uri).use { input ->
+            cr.openOutputStream(dest.uri).use { out ->
+                if (input == null || out == null) throw IllegalStateException("Lecture impossible : ${it.name}")
+                input.copyTo(out, 256 * 1024)
+            }
+        }
+        content[dest.name ?: it.name] = it.size
+        return true
     }
 
     /**

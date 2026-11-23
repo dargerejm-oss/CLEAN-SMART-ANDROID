@@ -82,7 +82,13 @@ object Night {
                 val backup = Backup(ctx)
                 val tree = s.backupTree
                 if (backup.isUsable(tree)) {
-                    val n = runCatching { backup.saveMedia(tree!!, MediaScanner(ctx).allMedia()) { _, _ -> } }.getOrDefault(-1)
+                    // seulement les bonnes photos : pas les doublons/rafales/ratees reperes a la derniere analyse,
+                    // ni les captures d'ecran
+                    val exclure = p.getStringSet("exclure", emptySet()) ?: emptySet()
+                    val bonnes = MediaScanner(ctx).allMedia().filter {
+                        it.key !in exclure && !it.path.contains("screenshot", true) && !it.name.startsWith("Screenshot", true)
+                    }
+                    val n = runCatching { backup.saveMedia(tree!!, bonnes) { _, _ -> } }.getOrDefault(-1)
                     p.edit().putLong("lastBackup", now).putInt("lastBackupCount", n).apply()
                     if (n > 0) notify(ctx, 1, "💾 Sauvegarde de la nuit", "${plural(n, "nouveau fichier", "nouveaux fichiers")} copié(s) dans ton dossier de sauvegarde.")
                     if (n < 0) notify(ctx, 1, "⚠️ Sauvegarde de la nuit", "La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.")

@@ -73,7 +73,7 @@ import com.jmdargere.cleansmart.data.fmtNum
 import com.jmdargere.cleansmart.data.plural
 
 /** Les ecrans de l'appli (navigation simple, sans bibliotheque). */
-private enum class Ecran { ACCUEIL, CATEGORIE, TRI, MAILS, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL }
+private enum class Ecran { ACCUEIL, GUIDE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL }
 
 private fun mediaPerms(): Array<String> =
     if (Build.VERSION.SDK_INT >= 33) arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
@@ -97,8 +97,15 @@ fun CleanSmartApp(vm: AppViewModel) {
     // Version d'essai terminee : plus d'acces au nettoyage
     if (Essai.actif && joursEssai == 0) { EssaiTermine(); return }
 
+    var depuisGuide by rememberSaveable { mutableStateOf(false) }
     fun retour() {
-        ecran = if (ecran == Ecran.MAILS_SAUVER || ecran == Ecran.MAILS_CORBEILLE) Ecran.MAILS else Ecran.ACCUEIL
+        ecran = when {
+            ecran == Ecran.TRI && depuisGuide -> Ecran.GUIDE
+            ecran == Ecran.MAIL_TRI -> Ecran.MAIL_GUIDE
+            ecran == Ecran.MAILS_SAUVER || ecran == Ecran.MAILS_CORBEILLE || ecran == Ecran.MAIL_GUIDE -> Ecran.MAILS
+            else -> Ecran.ACCUEIL
+        }
+        if (ecran != Ecran.TRI) depuisGuide = false
     }
     BackHandler(enabled = ecran != Ecran.ACCUEIL) { retour() }
 
@@ -231,13 +238,19 @@ fun CleanSmartApp(vm: AppViewModel) {
         snackbarHost = { SnackbarHost(snack) },
         topBar = {
             CenterAlignedTopAppBar(
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = Fond),
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+                    containerColor = Bleu, titleContentColor = Color.White,
+                    navigationIconContentColor = Color.White, actionIconContentColor = Color.White,
+                ),
                 title = {
                     Text(when (ecran) {
-                        Ecran.ACCUEIL -> "✨ Clean Smart"
+                        Ecran.ACCUEIL -> "CLEAN SMART"
+                        Ecran.GUIDE -> "🧭 Ménage guidé"
                         Ecran.CATEGORIE -> cat.emoji + " " + cat.title
                         Ecran.TRI -> "👆 Tri rapide"
                         Ecran.MAILS -> "✉️ Mails"
+                        Ecran.MAIL_GUIDE -> "🧭 Ménage des mails"
+                        Ecran.MAIL_TRI -> "👆 Tri des expéditeurs"
                         Ecran.MAILS_SAUVER -> "💾 Sauver des mails"
                         Ecran.MAILS_CORBEILLE -> "↩️ Remettre des mails"
                         Ecran.OPTIONS -> "⚙️ Options"
@@ -245,7 +258,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                     }, fontWeight = FontWeight.ExtraBold)
                 },
                 navigationIcon = {
-                    if (ecran != Ecran.ACCUEIL) TextButton(onClick = { retour() }) { Text("‹ Retour", color = Violet2) }
+                    if (ecran != Ecran.ACCUEIL) TextButton(onClick = { retour() }) { Text("‹ Retour", color = Color.White, fontWeight = FontWeight.Bold) }
                 },
                 actions = {
                     if (ecran == Ecran.ACCUEIL) TextButton(onClick = { ecran = Ecran.OPTIONS }) { Text("⚙️", fontSize = 22.sp) }
@@ -264,13 +277,28 @@ fun CleanSmartApp(vm: AppViewModel) {
             when (ecran) {
                 Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai, ::viderCorbeille, ::annuler, ::souvenir,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
+                    openGuide = { ecran = Ecran.GUIDE },
                     openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
                     chooseFolder = { folderLauncher.launch(null) },
                     ask = { confirm = it })
                 Ecran.CATEGORIE -> Categorie(vm, cat, envoyer = ::envoyer, proteger = ::proteger, compresser = ::compresser)
-                Ecran.TRI -> TriRapide(vm) {
+                Ecran.GUIDE -> MenageGuide(vm,
+                    analyser = ::analyser,
+                    nettoyerSur = {
+                        val l = vm.safeItems
+                        confirm = Confirm(
+                            "Faire le ménage sûr ?",
+                            "${plural(l.size, "photo")} (${fmtBytes(l.sumOf { it.size })}) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).",
+                            "Nettoyer",
+                        ) { vm.guideClean { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
+                    },
+                    verifier = { vm.guideReview(); depuisGuide = true; ecran = Ecran.TRI },
+                    chooseFolder = { folderLauncher.launch(null) })
+                Ecran.TRI -> TriRapide(vm, onKeep = {
+                    vm.prepareSwipeKeep { s -> protectLauncher.launch(IntentSenderRequest.Builder(s).build()) }
+                }) {
                     confirm = Confirm(
                         "Jeter ${plural(vm.swipeTrash.size, "photo")} ?",
                         "${fmtBytes(vm.swipeTrash.sumOf { it.size })} vont dans la corbeille de la Galerie (récupérables 30 jours).",
@@ -278,7 +306,11 @@ fun CleanSmartApp(vm: AppViewModel) {
                     ) { vm.prepareSwipeTrash { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
                 }
                 Ecran.MAILS -> Mails(vm, ask = { confirm = it }, openSave = { ecran = Ecran.MAILS_SAUVER },
-                    openTrash = { ecran = Ecran.MAILS_CORBEILLE; vm.loadMailTrash() })
+                    openTrash = { ecran = Ecran.MAILS_CORBEILLE; vm.loadMailTrash() },
+                    openGuide = { ecran = Ecran.MAIL_GUIDE })
+                Ecran.MAIL_GUIDE -> MailGuide(vm, ask = { confirm = it }, openTri = { ecran = Ecran.MAIL_TRI },
+                    chooseFolder = { folderLauncher.launch(null) })
+                Ecran.MAIL_TRI -> MailTri(vm, ask = { confirm = it })
                 Ecran.MAILS_CORBEILLE -> MailsCorbeille(vm)
                 Ecran.MAILS_SAUVER -> MailsSauver(vm, chooseFolder = { folderLauncher.launch(null) })
                 Ecran.OPTIONS -> Options(vm, chooseFolder = { folderLauncher.launch(null) }, openManual = { ecran = Ecran.MANUEL })
@@ -288,6 +320,7 @@ fun CleanSmartApp(vm: AppViewModel) {
     }
 
     vm.busy?.let { BusyDialog(it) }
+    vm.done?.let { DoneDialog(it) { vm.done = null } }
     confirm?.let { ConfirmDialog(it) { confirm = null } }
 }
 
@@ -304,6 +337,7 @@ private fun Accueil(
     annuler: () -> Unit,
     souvenir: (Int) -> Unit,
     openCat: (Cat) -> Unit,
+    openGuide: () -> Unit,
     openTri: () -> Unit,
     openMail: () -> Unit,
     openManual: () -> Unit,
@@ -347,7 +381,11 @@ private fun Accueil(
                 }
             }
             Gap()
-            BigButton(if (m == null) "🔍 Analyser mon téléphone" else "🔄 Analyser à nouveau", onClick = analyser)
+            // le Menage guide : la facon la plus simple de tout faire, dans le bon ordre
+            CatTile("🧭", "Ménage guidé", "Trier, garder, sauvegarder, libérer",
+                "4 étapes", "CONSEILLÉ", Vert, Modifier.fillMaxWidth(), onClick = openGuide)
+            Gap()
+            BigButton(if (m == null) "🔍 Analyser mon téléphone" else "🔄 Analyser à nouveau", color = Bleu, onClick = analyser)
             Gap()
         }
 
@@ -375,15 +413,19 @@ private fun Accueil(
                         modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                 }
                 SectionTitle("PHOTOS ET VIDÉOS")
-                BoxCard {
-                    val visibles = Cat.entries.filter { vm.removable(it).isNotEmpty() }
-                    if (visibles.isEmpty()) Text("🎉 Rien à nettoyer, tout est propre !", color = Gris)
-                    visibles.forEach { c ->
-                        val r = vm.removable(c)
-                        val sel = r.count { it.key in vm.selected }
-                        InfoRow(c.emoji, c.title,
-                            plural(r.size, "élément") + if (sel > 0) " · $sel choisi" + (if (sel > 1) "s" else "") else "",
-                            fmtBytes(r.sumOf { it.size })) { openCat(c) }
+                val visibles = Cat.entries.filter { vm.removable(it).isNotEmpty() }
+                if (visibles.isEmpty()) BoxCard { Text("🎉 Rien à nettoyer, tout est propre !", color = Gris) }
+                // grandes tuiles de couleur, deux par ligne
+                visibles.chunked(2).forEach { ligne ->
+                    Row(Modifier.fillMaxWidth().padding(vertical = 5.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                        ligne.forEach { c ->
+                            val r = vm.removable(c)
+                            val sel = r.count { it.key in vm.selected }
+                            CatTile(c.emoji, c.title, plural(r.size, "élément"), fmtBytes(r.sumOf { it.size }),
+                                if (sel > 0) "✓ $sel choisi" + (if (sel > 1) "s" else "") else "",
+                                couleurDe(c), Modifier.weight(1f)) { openCat(c) }
+                        }
+                        if (ligne.size == 1) androidx.compose.foundation.layout.Spacer(Modifier.weight(1f))
                     }
                 }
             }
@@ -481,7 +523,102 @@ private fun Accueil(
         item {
             Gap()
             OutlinedButton(onClick = openManual, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
-                Text("📖 Mode d'emploi", color = Color.White)
+                Text("📖 Mode d'emploi", color = Texte)
+            }
+        }
+    }
+}
+
+// =====================================================================================
+// MENAGE GUIDE : 4 etapes dans le bon ordre, le bouton vert est toujours la prochaine
+// =====================================================================================
+
+@Composable
+private fun MenageGuide(
+    vm: AppViewModel,
+    analyser: () -> Unit,
+    nettoyerSur: () -> Unit,
+    verifier: () -> Unit,
+    chooseFolder: () -> Unit,
+) {
+    val m = vm.media
+    val safe = vm.safeItems
+    val review = vm.reviewItems
+    val d = vm.guideDone
+    // la prochaine etape a faire (celle qui a le bouton vert)
+    val prochaine = when {
+        m == null -> 0
+        1 !in d && safe.isNotEmpty() -> 1
+        2 !in d && review.isNotEmpty() -> 2
+        3 !in d -> 3
+        4 !in d -> 4
+        else -> 5
+    }
+
+    LazyColumn(contentPadding = PaddingValues(16.dp, 8.dp, 16.dp, 24.dp)) {
+        item {
+            Text("Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.",
+                color = Gris, fontSize = 15.sp, lineHeight = 21.sp, modifier = Modifier.padding(4.dp, 0.dp, 4.dp, 8.dp))
+            if (m == null) {
+                EtapeCarte(0, "🔍", "Avant tout : analyser", "Clean Smart regarde toutes tes photos (rien n'est supprimé).",
+                    Bleu, prochaine == 0, false, "Analyser mon téléphone", analyser)
+            }
+            EtapeCarte(1, "🧹", "Le ménage sûr",
+                if (m == null) "Doublons, rafales en trop, photos noires ou blanches, vieilles captures."
+                else "${plural(safe.size, "photo")} · ${fmtBytes(safe.sumOf { it.size })} : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.",
+                Rouge, prochaine == 1, 1 in d || (m != null && safe.isEmpty()), "Tout nettoyer", nettoyerSur)
+            EtapeCarte(2, "👆", "Je vérifie le douteux",
+                if (m == null) "Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides."
+                else "${plural(review.size, "photo")} à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).",
+                Pourpre, prochaine == 2, 2 in d || (m != null && review.isEmpty()), "Trier en glissant", verifier)
+            EtapeCarte(3, "💾", "Je mets à l'abri les bonnes",
+                if (!vm.backupReady()) "Choisis d'abord un dossier : carte SD, clé USB ou Google Drive."
+                else "Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».",
+                Bleu, prochaine == 3, 3 in d,
+                if (vm.backupReady()) "Sauvegarder mes bonnes photos" else "Choisir un dossier",
+                if (vm.backupReady()) ({ vm.backupEverything() }) else chooseFolder)
+            EtapeCarte(4, "📤", "Je libère la place",
+                "Les photos de plus de ${vm.settings.keepMonths} mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).",
+                Vert, prochaine == 4, 4 in d, "Libérer la place") { vm.findFreeSpace() }
+            if (prochaine == 5) {
+                Gap()
+                CatTile("🎉", "Ménage terminé !", "Ton téléphone est propre et tes photos sont à l'abri", "", "", Vert,
+                    Modifier.fillMaxWidth()) {}
+            }
+        }
+    }
+}
+
+/** Une etape du menage guide : numero, icone, explication, et le bouton (vert si c'est la prochaine). */
+@Composable
+internal fun EtapeCarte(
+    n: Int, emoji: String, titre: String, texte: String, couleur: Color,
+    prochaine: Boolean, faite: Boolean, bouton: String, onClick: () -> Unit,
+) {
+    androidx.compose.material3.Card(
+        modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
+        shape = RoundedCornerShape(20.dp),
+        colors = androidx.compose.material3.CardDefaults.cardColors(containerColor = Carte),
+        elevation = androidx.compose.material3.CardDefaults.cardElevation(if (prochaine) 6.dp else 1.dp),
+        border = if (prochaine) androidx.compose.foundation.BorderStroke(3.dp, Vert) else null,
+    ) {
+        Column(Modifier.padding(16.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Box(Modifier.size(48.dp).background(if (faite) Vert else couleur, androidx.compose.foundation.shape.CircleShape),
+                    contentAlignment = Alignment.Center) {
+                    Text(if (faite) "✓" else if (n == 0) emoji else "$n", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Black)
+                }
+                RowGap(12)
+                Column(Modifier.weight(1f)) {
+                    Text("$emoji  $titre", fontWeight = FontWeight.ExtraBold, fontSize = 17.sp, color = if (faite) Vert else Texte)
+                    if (faite) Text("Fait ✔", color = Vert, fontSize = 13.sp, fontWeight = FontWeight.Bold)
+                }
+            }
+            Gap(6)
+            Text(texte, color = Gris, fontSize = 14.sp, lineHeight = 20.sp)
+            if (!faite) {
+                Gap(10)
+                BigButton(bouton, color = if (prochaine) Vert else Gris, onClick = onClick)
             }
         }
     }
@@ -538,20 +675,20 @@ private fun Categorie(
                 Text("Touche une image pour la cocher · appui long pour la voir en grand", color = Gris, fontSize = 12.sp)
                 Gap()
                 Row {
-                    OutlinedButton(onClick = { vm.selectAll(cat, true) }) { Text("Tout cocher", color = Color.White) }
+                    OutlinedButton(onClick = { vm.selectAll(cat, true) }) { Text("Tout cocher", color = Texte) }
                     RowGap()
-                    OutlinedButton(onClick = { vm.selectAll(cat, false) }) { Text("Tout décocher", color = Color.White) }
+                    OutlinedButton(onClick = { vm.selectAll(cat, false) }) { Text("Tout décocher", color = Texte) }
                 }
                 if (choisis.isNotEmpty()) {
                     Gap(4)
                     Row(Modifier.horizontalScroll(rememberScrollState())) {
-                        OutlinedButton(onClick = { envoyer(choisis) }) { Text("📤 Envoyer (${choisis.size})", color = Color.White) }
+                        OutlinedButton(onClick = { envoyer(choisis) }) { Text("📤 Envoyer (${choisis.size})", color = Texte) }
                         RowGap()
-                        OutlinedButton(onClick = { proteger(choisis) }) { Text("🛡️ Protéger (${choisis.size})", color = Color.White) }
+                        OutlinedButton(onClick = { proteger(choisis) }) { Text("🛡️ Protéger (${choisis.size})", color = Texte) }
                         val nbVideos = choisis.count { it.video }
                         if (nbVideos > 0) {
                             RowGap()
-                            OutlinedButton(onClick = { compresser(choisis) }) { Text("🗜️ Compresser ($nbVideos)", color = Color.White) }
+                            OutlinedButton(onClick = { compresser(choisis) }) { Text("🗜️ Compresser ($nbVideos)", color = Texte) }
                         }
                     }
                 }
@@ -583,7 +720,7 @@ private fun Categorie(
 // =====================================================================================
 
 @Composable
-private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit, openTrash: () -> Unit) {
+private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit, openTrash: () -> Unit, openGuide: () -> Unit) {
     val a = vm.mailAccount
     var edit by rememberSaveable { mutableStateOf(false) }
     val ctx = LocalContext.current
@@ -635,6 +772,8 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
             }
         } else {
             item {
+                CatTile("🧭", "Ménage guidé des mails", "Trier, mettre l'important à l'abri, vider la boîte",
+                    "4 étapes", "CONSEILLÉ", Vert, Modifier.fillMaxWidth().padding(vertical = 6.dp), onClick = openGuide)
                 BoxCard {
                     InfoRow("✉️", a.email, a.host)
                     Gap()
@@ -656,7 +795,7 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                             val ratio = (r.quotaUsed.toFloat() / r.quotaMax).coerceIn(0f, 1f)
                             Gap(6)
                             Text("Boîte mail remplie à ${(ratio * 100).toInt()} % (${fmtBytes(r.quotaUsed)} / ${fmtBytes(r.quotaMax)})",
-                                fontWeight = FontWeight.Bold, color = if (ratio > 0.85f) Rouge else Color.White, fontSize = 14.sp)
+                                fontWeight = FontWeight.Bold, color = if (ratio > 0.85f) Rouge else Texte, fontSize = 14.sp)
                             androidx.compose.material3.LinearProgressIndicator(progress = { ratio },
                                 modifier = Modifier.fillMaxWidth().padding(top = 4.dp), color = if (ratio > 0.85f) Rouge else Violet, trackColor = Carte2)
                         }
@@ -692,9 +831,14 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                     if (r.senders.isNotEmpty()) {
                         SectionTitle("QUI T'ÉCRIT LE PLUS")
                         BoxCard {
-                            r.senders.take(10).forEach { s ->
-                                InfoRow(when { s.important -> "🛡️"; s.newsletter -> "📰"; else -> "👤" },
+                            r.senders.take(15).forEach { s ->
+                                InfoRow(when { s.important -> "🛡️"; s.newsletter -> "📰"; s.notif -> "🔔"; else -> "👤" },
                                     s.name.ifEmpty { s.email }, s.email, fmtNum(s.count))
+                                if (s.unsubscribe.isNotEmpty() && !s.important) {
+                                    TextButton(onClick = { desabonner(ctx, s) }, modifier = Modifier.padding(start = 50.dp)) {
+                                        Text("🚫 Se désabonner", color = Rouge, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                                    }
+                                }
                             }
                         }
                     }
@@ -796,11 +940,11 @@ private fun MailsSauver(vm: AppViewModel, chooseFolder: () -> Unit) {
                     Text("${plural(list.size, "mail")} avec pièces jointes (dont ${fmtNum(list.count { it.hasPdf })} avec PDF)",
                         color = Gris, fontSize = 13.sp, modifier = Modifier.padding(4.dp, 10.dp, 4.dp, 4.dp))
                     Row(Modifier.horizontalScroll(rememberScrollState())) {
-                        OutlinedButton(onClick = { vm.selectMailFiles("pdf") }) { Text("📕 Cocher les PDF", color = Color.White) }
+                        OutlinedButton(onClick = { vm.selectMailFiles("pdf") }) { Text("📕 Cocher les PDF", color = Texte) }
                         RowGap()
-                        OutlinedButton(onClick = { vm.selectMailFiles("all") }) { Text("Tout cocher", color = Color.White) }
+                        OutlinedButton(onClick = { vm.selectMailFiles("all") }) { Text("Tout cocher", color = Texte) }
                         RowGap()
-                        OutlinedButton(onClick = { vm.selectMailFiles("none") }) { Text("Rien", color = Color.White) }
+                        OutlinedButton(onClick = { vm.selectMailFiles("none") }) { Text("Rien", color = Texte) }
                     }
                 }
                 items(list.size) { i ->

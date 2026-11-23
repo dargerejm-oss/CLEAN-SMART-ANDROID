@@ -32,6 +32,10 @@ data class Sender(
     val email: String, val name: String, val count: Int, val bytes: Long, val newsletter: Boolean, val last: Long,
     /** Banque, administration, sante... : jamais mis a la corbeille par Clean Smart. */
     val important: Boolean = false,
+    /** Notifications automatiques (no-reply, reseaux sociaux...). */
+    val notif: Boolean = false,
+    /** Lien de desabonnement (https:// ou mailto:), vide s'il n'y en a pas. */
+    val unsubscribe: String = "",
 )
 data class BigMail(val from: String, val subject: String, val size: Long, val date: Long, val uid: Long = 0)
 
@@ -55,6 +59,8 @@ data class MailResult(
     /** Place utilisee / disponible sur le serveur (0 si la messagerie ne la donne pas). */
     val quotaUsed: Long = 0,
     val quotaMax: Long = 0,
+    /** UID des mails a mettre a l'abri : expediteurs importants et factures (les plus recents). */
+    val aGarder: List<Long> = emptyList(),
 )
 
 /** Reconnait les mails importants et les classe (factures, colis, voyages). */
@@ -68,6 +74,19 @@ object MailTri {
     private val FACTURE = Regex("(?i)facture|invoice|re[çc]u de paiement|avis d'[ée]ch[ée]ance|relev[ée]|quittance|bulletin de (salaire|paie)|avis d'imp[oô]t")
     private val COLIS = Regex("(?i)colis|livraison|exp[ée]di|suivi de (commande|votre)|tracking|colissimo|chronopost|mondial relay|ups |dhl|dpd|gls|votre commande")
     private val VOYAGE = Regex("(?i)r[ée]servation|billet|booking|e-ticket|boarding|embarquement|vol |flight|sncf|ouigo|airbnb|h[ôo]tel|itin[ée]raire|check-in")
+
+    private val NOTIF = listOf("noreply", "no-reply", "no_reply", "donotreply", "do-not-reply", "ne-pas-repondre",
+        "nepasrepondre", "notification", "notify", "alert", "facebookmail", "linkedin", "instagram", "twitter", "x.com",
+        "tiktok", "pinterest", "mailer-daemon")
+
+    fun notif(email: String) = NOTIF.any { it in email.lowercase() }
+
+    /** Extrait le meilleur lien de l'en-tete List-Unsubscribe (https d'abord, sinon mailto). */
+    fun unsubscribe(header: String?): String {
+        if (header.isNullOrBlank()) return ""
+        val links = Regex("<([^>]+)>").findAll(header).map { it.groupValues[1].trim() }.toList()
+        return links.firstOrNull { it.startsWith("https://") } ?: links.firstOrNull { it.startsWith("mailto:") } ?: ""
+    }
 
     fun important(email: String, name: String): Boolean {
         val s = (email + " " + name).lowercase()
@@ -225,7 +244,8 @@ class MailCleaner(private val ctx: Context) {
             val bigLimit = s.bigMailMb.toLong() * 1024 * 1024
             val oldLimit = System.currentTimeMillis() - s.oldMailYears * 365L * 24 * 3600 * 1000
 
-            class Acc(val email: String, var name: String) { var count = 0; var bytes = 0L; var news = false; var last = 0L }
+            class Acc(val email: String, var name: String) { var count = 0; var bytes = 0L; var news = false; var last = 0L; var unsub = "" }
+            val aGarder = ArrayList<Long>()
             val senders = HashMap<String, Acc>()
             val big = ArrayList<BigMail>()
             var bytes = 0L; var news = 0; var bigCount = 0; var bigBytes = 0L; var oldCount = 0; var oldBytes = 0L; var read = 0
@@ -242,7 +262,8 @@ class MailCleaner(private val ctx: Context) {
                         val name = ia?.personal ?: ""
                         val size = m.size.coerceAtLeast(0).toLong()
                         val date = (m.receivedDate ?: m.sentDate)?.time ?: 0L
-                        val isNews = !m.getHeader("List-Unsubscribe").isNullOrEmpty()
+                        val unsubHeader = m.getHeader("List-Unsubscribe")?.firstOrNull()
+                        val isNews = !unsubHeader.isNullOrEmpty()
                         val subject = m.subject ?: ""
                         val uid = inbox.getUID(m)
                         val info = BigMail(name.ifEmpty { email }, subject, size, date, uid)
@@ -252,6 +273,8 @@ class MailCleaner(private val ctx: Context) {
                             bigCount++; bigBytes += size
                             if (big.size < 40) big += info
                         }
+                        // a mettre a l'abri : expediteurs importants et factures (les 400 plus recents)
+                        if (aGarder.size < 400 && (MailTri.important(email, name) || (!isNews && MailTri.facture(subject)))) aGarder += uid
                         if (!isNews) {
                             if (factures.size < 50 && MailTri.facture(subject)) factures += info
                             else if (colis.size < 50 && MailTri.colis(subject)) colis += info
@@ -265,6 +288,7 @@ class MailCleaner(private val ctx: Context) {
                             val acc = senders.getOrPut(email) { Acc(email, name) }
                             acc.count++; acc.bytes += size
                             if (isNews) acc.news = true
+                            if (acc.unsub.isEmpty()) acc.unsub = MailTri.unsubscribe(unsubHeader)
                             if (date > acc.last) acc.last = date
                             if (acc.name.isEmpty()) acc.name = name
                         }
@@ -278,7 +302,11 @@ class MailCleaner(private val ctx: Context) {
             val top = senders.values.filter { it.count >= 2 }
                 .sortedWith(compareByDescending<Acc> { it.count }.thenByDescending { it.bytes })
                 .take(80)
-                .map { Sender(it.email, it.name, it.count, it.bytes, it.news, it.last, MailTri.important(it.email, it.name)) }
+                .map {
+                    val imp = MailTri.important(it.email, it.name)
+                    Sender(it.email, it.name, it.count, it.bytes, it.news, it.last, imp,
+                        notif = !imp && MailTri.notif(it.email), unsubscribe = it.unsub)
+                }
 
             // place sur le serveur (si la messagerie la donne)
             var used = 0L; var maxQ = 0L
@@ -290,7 +318,7 @@ class MailCleaner(private val ctx: Context) {
 
             progress("Terminé", 100)
             return MailResult(total, read, bytes, news, bigCount, bigBytes, oldCount, oldBytes, top, big.sortedByDescending { it.size },
-                factures, colis, voyages, doublons, used, maxQ)
+                factures, colis, voyages, doublons, used, maxQ, aGarder)
         } finally {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }
             runCatching { st.close() }

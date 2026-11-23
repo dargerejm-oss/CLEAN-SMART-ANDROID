@@ -11,6 +11,14 @@
   mails → corbeille du compte (IMAP MOVE), contacts → export .vcf avant suppression si la sauvegarde est active.
 - Code : `data/` (moteur : MediaScanner, MailCleaner, ContactsCleaner, Backup, Settings), `AppViewModel.kt`, `ui/` (écrans).
 
+## Version 1.5
+- Interface claire comme Mail Simple / Photo Simple : bandeau bleu, grandes tuiles de couleur, sablier avec
+  temps passé / restant / %, bandeau vert « TERMINÉ ».
+- Ménage guidé photos (4 étapes : ménage sûr, vérifier en glissant, sauvegarder SEULEMENT les bonnes + « Mes meilleures »,
+  libérer) et Ménage guidé mails (ménage sûr, tri par expéditeur, mettre l'important à l'abri, libérer) + « Se désabonner ».
+- La sauvegarde (manuelle et de nuit) ne copie jamais les doublons, rafales en trop, ratées, captures.
+- « Sauvegarder avant de supprimer » désactivé par défaut.
+
 ## Fonctions (version 1.3)
 - Photos : doublons, rafales, ratées (floues/sombres/claires/petites, sévérité réglable), captures, grosses vidéos,
   WhatsApp, plus gros fichiers, tri rapide (glisser), corbeille (vider), « J'ai fait une bêtise », envoyer, protéger

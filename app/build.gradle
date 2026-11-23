@@ -12,8 +12,8 @@ android {
         applicationId "com.jmdargere.cleansmart"
         minSdk 30
         targetSdk 35
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.5"
     }
 
     // Cle de signature PRIVEE : fournie par GitHub (secrets KEYSTORE_B64 et KEYSTORE_PASSWORD), jamais dans le depot.

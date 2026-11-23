@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.LruCache
 import android.util.Size
+import androidx.compose.animation.core.animateFloat
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -71,7 +72,46 @@ fun BoxCard(modifier: Modifier = Modifier, onClick: (() -> Unit)? = null, conten
         modifier = if (onClick != null) m.clip(RoundedCornerShape(20.dp)).clickable(onClick = onClick) else m,
         shape = RoundedCornerShape(20.dp),
         colors = CardDefaults.cardColors(containerColor = Carte),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) { Column(Modifier.padding(16.dp), content = content) }
+}
+
+/** Couleur de chaque categorie (comme les grandes cartes de Mail Simple / Photo Simple). */
+fun couleurDe(c: com.jmdargere.cleansmart.Cat): Color = when (c) {
+    com.jmdargere.cleansmart.Cat.DUPLICATES -> Bleu
+    com.jmdargere.cleansmart.Cat.SIMILAR -> Pourpre
+    com.jmdargere.cleansmart.Cat.BLURRY -> Orange
+    com.jmdargere.cleansmart.Cat.SCREENS -> Turquoise
+    com.jmdargere.cleansmart.Cat.BIG_VIDEOS -> Rouge
+    com.jmdargere.cleansmart.Cat.WHATSAPP -> Vert
+    com.jmdargere.cleansmart.Cat.BIGGEST -> Color(0xFF455A64)
+}
+
+/** Grande tuile de couleur : icone dans un rond blanc, titre, nombre et taille. */
+@Composable
+fun CatTile(emoji: String, title: String, sub: String, value: String, badge: String, color: Color,
+            modifier: Modifier = Modifier, onClick: () -> Unit) {
+    Card(
+        modifier = modifier.height(150.dp).clip(RoundedCornerShape(20.dp)).clickable(onClick = onClick),
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(containerColor = color),
+        elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),
+    ) {
+        Column(Modifier.fillMaxSize().padding(12.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Box(Modifier.size(44.dp).clip(CircleShape).background(Color.White), contentAlignment = Alignment.Center) {
+                    Text(emoji, fontSize = 22.sp)
+                }
+                Spacer(Modifier.weight(1f))
+                if (badge.isNotEmpty()) Text(badge, color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold,
+                    modifier = Modifier.background(Color(0x33FFFFFF), RoundedCornerShape(8.dp)).padding(6.dp, 2.dp))
+            }
+            Spacer(Modifier.weight(1f))
+            Text(title, color = Color.White, fontWeight = FontWeight.ExtraBold, fontSize = 15.sp, maxLines = 2, lineHeight = 18.sp)
+            Text(if (value.isEmpty()) sub else "$sub · $value", color = Color(0xE6FFFFFF), fontSize = 12.sp, maxLines = 2,
+                overflow = TextOverflow.Ellipsis)
+        }
+    }
 }
 
 /** Gros bouton pleine largeur. */
@@ -122,22 +162,115 @@ fun StorageRing(ratio: Float) {
     }
 }
 
-/** Fenetre de progression (bloquante) pendant un travail long. */
+/** "1 min 05 s" */
+private fun duree(ms: Long): String {
+    val s = (ms / 1000).coerceAtLeast(0)
+    return if (s < 60) "$s s" else "${s / 60} min ${"%02d".format(s % 60)} s"
+}
+
+/**
+ * Fenetre de travail (bloquante), comme dans Mail Simple et Photo Simple :
+ * le sablier, la barre, le pourcentage, le temps passe et le temps restant.
+ */
 @Composable
 fun BusyDialog(b: Busy) {
+    var now by remember { mutableStateOf(System.currentTimeMillis()) }
+    LaunchedEffect(Unit) { while (true) { now = System.currentTimeMillis(); kotlinx.coroutines.delay(500) } }
+    val passe = now - b.start
+    val reste = if (b.pct in 3..99) passe * (100 - b.pct) / b.pct else -1L
+
     Dialog(onDismissRequest = {}, properties = DialogProperties(dismissOnBackPress = false, dismissOnClickOutside = false)) {
-        Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = Carte)) {
-            Column(Modifier.padding(22.dp).fillMaxWidth()) {
-                Text(b.title, fontWeight = FontWeight.Bold, fontSize = 18.sp)
-                Spacer(Modifier.height(6.dp))
-                Text(b.step.ifEmpty { "Préparation…" }, color = Gris, fontSize = 14.sp)
-                Spacer(Modifier.height(14.dp))
+        Card(shape = RoundedCornerShape(24.dp), colors = CardDefaults.cardColors(containerColor = Carte)) {
+            Column(Modifier.padding(22.dp).fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(b.title, fontWeight = FontWeight.ExtraBold, fontSize = 19.sp, color = Bleu, textAlign = TextAlign.Center)
+                Spacer(Modifier.height(10.dp))
+                Sablier(b.pct / 100f)
+                Spacer(Modifier.height(10.dp))
+                Text("${b.pct} %", fontWeight = FontWeight.Black, fontSize = 30.sp, color = Texte)
+                Text(b.step.ifEmpty { "Préparation…" }, color = Gris, fontSize = 14.sp, textAlign = TextAlign.Center)
+                Spacer(Modifier.height(12.dp))
                 LinearProgressIndicator(
                     progress = { b.pct / 100f },
-                    modifier = Modifier.fillMaxWidth().height(10.dp).clip(RoundedCornerShape(99.dp)),
-                    color = Violet, trackColor = Carte2,
+                    modifier = Modifier.fillMaxWidth().height(12.dp).clip(RoundedCornerShape(99.dp)),
+                    color = Vert, trackColor = Carte2,
                 )
-                Text("${b.pct} %", color = Gris, fontSize = 13.sp, modifier = Modifier.fillMaxWidth().padding(top = 6.dp), textAlign = TextAlign.End)
+                Spacer(Modifier.height(10.dp))
+                Row(Modifier.fillMaxWidth()) {
+                    Column(Modifier.weight(1f)) {
+                        Text("Temps passé", color = Gris, fontSize = 12.sp)
+                        Text(duree(passe), fontWeight = FontWeight.Bold, fontSize = 15.sp, color = Texte)
+                    }
+                    Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                        Text("Temps restant", color = Gris, fontSize = 12.sp)
+                        Text(if (reste >= 0) "≈ ${duree(reste)}" else "calcul…", fontWeight = FontWeight.Bold, fontSize = 15.sp, color = Texte)
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** Sablier anime : le sable du haut descend avec l'avancement, un filet de sable coule. */
+@Composable
+fun Sablier(progress: Float) {
+    val anim = androidx.compose.animation.core.rememberInfiniteTransition(label = "sablier")
+    val flot by anim.animateFloat(
+        initialValue = 0f, targetValue = 1f, label = "flot",
+        animationSpec = androidx.compose.animation.core.infiniteRepeatable(
+            androidx.compose.animation.core.tween(700, easing = androidx.compose.animation.core.LinearEasing)),
+    )
+    val sable = Color(0xFFF5B841)
+    val verre = Color(0xFFDCE6F5)
+    val bois = Color(0xFF8D5A2B)
+    androidx.compose.foundation.Canvas(Modifier.size(width = 84.dp, height = 110.dp)) {
+        val w = size.width; val h = size.height
+        val cx = w / 2; val haut = h * 0.08f; val bas = h * 0.92f; val mid = h / 2
+        val l = w * 0.14f; val r = w * 0.86f; val col = w * 0.05f
+        val p = progress.coerceIn(0f, 1f)
+        fun tri(a: androidx.compose.ui.geometry.Offset, b: androidx.compose.ui.geometry.Offset, c: androidx.compose.ui.geometry.Offset) =
+            androidx.compose.ui.graphics.Path().apply { moveTo(a.x, a.y); lineTo(b.x, b.y); lineTo(c.x, c.y); close() }
+        val O = { x: Float, y: Float -> androidx.compose.ui.geometry.Offset(x, y) }
+        // verre : deux trapezes qui se touchent au milieu (le col du sablier)
+        drawPath(androidx.compose.ui.graphics.Path().apply {
+            moveTo(l, haut); lineTo(r, haut); lineTo(cx + col, mid); lineTo(cx - col, mid); close()
+        }, verre)
+        drawPath(androidx.compose.ui.graphics.Path().apply {
+            moveTo(cx - col, mid); lineTo(cx + col, mid); lineTo(r, bas); lineTo(l, bas); close()
+        }, verre)
+        // sable du haut : un triangle qui diminue
+        val th = (mid - haut) * (1f - p) * 0.9f
+        if (th > 1f) {
+            val k = th / (mid - haut)
+            drawPath(tri(O(cx - (r - l) / 2 * k, mid - th), O(cx + (r - l) / 2 * k, mid - th), O(cx, mid)), sable)
+        }
+        // sable du bas : un tas qui grandit
+        val bh = (bas - mid) * p * 0.9f
+        if (bh > 1f) drawPath(tri(O(cx - (r - l) / 2 * (0.35f + 0.65f * p), bas), O(cx, bas - bh), O(cx + (r - l) / 2 * (0.35f + 0.65f * p), bas)), sable)
+        // filet de sable qui coule
+        if (p < 1f) {
+            val y0 = mid + (bas - mid - bh) * flot * 0.9f
+            drawLine(sable, O(cx, mid), O(cx, mid + (bas - mid - bh)), strokeWidth = 3f)
+            drawCircle(sable, 3.5f, O(cx, y0))
+        }
+        // les deux planches de bois
+        drawRoundRect(bois, topLeft = O(w * 0.04f, 0f), size = androidx.compose.ui.geometry.Size(w * 0.92f, haut),
+            cornerRadius = androidx.compose.ui.geometry.CornerRadius(6f))
+        drawRoundRect(bois, topLeft = O(w * 0.04f, bas), size = androidx.compose.ui.geometry.Size(w * 0.92f, h - bas),
+            cornerRadius = androidx.compose.ui.geometry.CornerRadius(6f))
+    }
+}
+
+/** Grand bandeau vert « TERMINÉ » (comme Photo Simple). */
+@Composable
+fun DoneDialog(title: String, onClose: () -> Unit) {
+    LaunchedEffect(title) { kotlinx.coroutines.delay(3000); onClose() }
+    Dialog(onDismissRequest = onClose) {
+        Card(shape = RoundedCornerShape(24.dp), colors = CardDefaults.cardColors(containerColor = Vert),
+            modifier = Modifier.clickable(onClick = onClose)) {
+            Column(Modifier.padding(26.dp).fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                Text("✅", fontSize = 56.sp)
+                Text("TERMINÉ", fontWeight = FontWeight.Black, fontSize = 32.sp, color = Color.White)
+                Text(title, color = Color(0xE6FFFFFF), fontSize = 15.sp, textAlign = TextAlign.Center)
             }
         }
     }

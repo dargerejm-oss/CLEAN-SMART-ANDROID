@@ -237,27 +237,34 @@ def phone(c, x, y, w, h):
     c.setFillColor(HexColor("#2B2B3A"))
     c.roundRect(x, y, w, h, 16, stroke=0, fill=1)
     sx, sy, sw, sh = x + 6, y + 6, w - 12, h - 12
-    c.setFillColor(NUIT)
+    c.setFillColor(HexColor("#F4F6FB"))
     c.roundRect(sx, sy, sw, sh, 12, stroke=0, fill=1)
+    # bandeau bleu
+    c.setFillColor(HexColor("#0D47A1"))
+    c.roundRect(sx, sy + sh - 24, sw, 24, 12, stroke=0, fill=1)
+    c.rect(sx, sy + sh - 24, sw, 12, stroke=0, fill=1)
     c.setFillColor(white)
-    c.setFont("UIB", 9)
-    c.drawCentredString(sx + sw / 2, sy + sh - 16, "Clean Smart")
+    c.setFont("UIB", 8.5)
+    c.drawCentredString(sx + sw / 2, sy + sh - 16, "CLEAN SMART")
     # anneau de stockage
-    cx, cy, r = sx + sw / 2, sy + sh - 52, 22
-    c.setStrokeColor(HexColor("#26264A")); c.setLineWidth(6); c.circle(cx, cy, r, stroke=1, fill=0)
-    c.setStrokeColor(VIOLET); c.arc(cx - r, cy - r, cx + r, cy + r, 90, -260)
-    c.setFillColor(white); c.setFont("UIB", 9); c.drawCentredString(cx, cy - 3, "72 %")
-    # gros bouton
-    c.setFillColor(VIOLET); c.roundRect(sx + 8, sy + sh - 100, sw - 16, 16, 5, stroke=0, fill=1)
-    c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + sh - 95, "Analyser")
-    # cartes
-    yy = sy + sh - 122
-    for e in ("🧬", "🎞️", "🎬"):
-        c.setFillColor(HexColor("#1B1B33")); c.roundRect(sx + 8, yy, sw - 16, 16, 4, stroke=0, fill=1)
-        icon(c, e, sx + 11, yy + 2, 12)
-        c.setFillColor(HexColor("#26264A")); c.rect(sx + 28, yy + 6, sw - 60, 4, stroke=0, fill=1)
-        yy -= 20
-    c.setFillColor(HexColor("#FF5C7A")); c.roundRect(sx + 8, sy + 8, sw - 16, 16, 5, stroke=0, fill=1)
+    cx, cy, r = sx + sw / 2, sy + sh - 56, 20
+    c.setStrokeColor(HexColor("#E9EDF7")); c.setLineWidth(6); c.circle(cx, cy, r, stroke=1, fill=0)
+    c.setStrokeColor(HexColor("#1565C0")); c.arc(cx - r, cy - r, cx + r, cy + r, 90, -260)
+    c.setFillColor(ENCRE); c.setFont("UIB", 9); c.drawCentredString(cx, cy - 3, "72 %")
+    # tuile verte du menage guide
+    c.setFillColor(HexColor("#2E7D32")); c.roundRect(sx + 8, sy + sh - 104, sw - 16, 22, 5, stroke=0, fill=1)
+    c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + sh - 96, "Ménage guidé")
+    # tuiles de couleur
+    yy = sy + sh - 134
+    for row in ((("🧬", "#1E4FB4"), ("🎞️", "#6A1B9A")), (("🌫️", "#EF6C00"), ("🎬", "#C62828"))):
+        tw = (sw - 22) / 2
+        for k, (e, col) in enumerate(row):
+            tx = sx + 8 + k * (tw + 6)
+            c.setFillColor(HexColor(col)); c.roundRect(tx, yy, tw, 24, 5, stroke=0, fill=1)
+            c.setFillColor(white); c.circle(tx + 10, yy + 12, 7, stroke=0, fill=1)
+            icon(c, e, tx + 4.5, yy + 6.5, 11)
+        yy -= 30
+    c.setFillColor(HexColor("#C62828")); c.roundRect(sx + 8, sy + 8, sw - 16, 16, 5, stroke=0, fill=1)
     c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + 13, "Nettoyer")
 
 
@@ -278,6 +285,12 @@ TEXTS = {
             ("💾", "vert", "5. Tout reste à l'abri", "Sauvegarde sur carte SD, clé USB ou Google Drive, et même toute seule la nuit."),
         ],
         "sections": [
+            ("🧭", "vert", "Le ménage guidé (conseillé)",
+             "La façon la plus simple de tout faire, dans le bon ordre. Le bouton VERT est toujours la prochaine étape.",
+             [("step", "Le ménage sûr : doublons et rafales en trop (la meilleure est gardée), photos noires ou blanches, vieilles captures. Un bouton."),
+              ("step", "Je vérifie le douteux : photos un peu floues, WhatsApp… Glisse à gauche pour jeter, à droite pour garder (elle devient favori)."),
+              ("step", "Je mets à l'abri : seules les BONNES photos sont sauvegardées. Les favoris vont aussi dans « Mes meilleures »."),
+              ("step", "Je libère la place : les photos anciennes déjà sauvegardées quittent le téléphone.")]),
             ("🔍", "vert", "Analyser mon téléphone",
              "C'est le gros bouton de l'accueil. Tu n'as rien à régler.",
              [("step", "Touche « Analyser mon téléphone »."),
@@ -328,6 +341,13 @@ TEXTS = {
               ("step", "Gmail, Yahoo et iCloud demandent un MOT DE PASSE D'APPLICATION. Clean Smart ouvre la bonne page."),
               ("step", "« Analyser ma boîte mail », puis un bouton pour : newsletters, gros mails, vieux mails, mails en double."),
               ("step", "Les mails vont dans la corbeille de ta messagerie. Ceux de ta banque, de l'administration ou de santé ne sont JAMAIS touchés.")]),
+            ("🧭", "vert", "Le ménage guidé des mails",
+             "Dans Mails, touche la grande tuile verte. Même principe : le bouton vert est la prochaine étape.",
+             [("step", "Le ménage sûr : newsletters, pubs, notifications et mails en double vont à la corbeille."),
+              ("step", "Je trie par expéditeur : une carte par expéditeur. À gauche, tous ses mails partent ; à droite, on le garde."),
+              ("step", "Je mets l'important à l'abri : banque, administration, santé, factures et mails avec un PDF sont sauvegardés."),
+              ("step", "Je libère la boîte : les vieux mails partent à la corbeille, jamais les importants."),
+              ("step", "« Se désabonner » : pour ne plus recevoir une newsletter. Le bouton ouvre la page de désabonnement.")]),
             ("📎", "orange", "Sauver des mails et leurs pièces jointes", "",
              [("step", "Dans Mails, touche « Sauvegarder des mails »."),
               ("step", "Coche les mails à garder (« Cocher les PDF » pour aller vite)."),
@@ -374,6 +394,12 @@ TEXTS = {
             ("💾", "vert", "5. Everything stays safe", "Backup to an SD card, USB drive or Google Drive, even on its own at night."),
         ],
         "sections": [
+            ("🧭", "vert", "Guided clean-up (recommended)",
+             "The simplest way to do everything, in the right order. The GREEN button is always the next step.",
+             [("step", "Safe clean-up: extra duplicates and bursts (the best one is kept), black or white photos, old screenshots. One button."),
+              ("step", "Check the doubtful ones: slightly blurry photos, WhatsApp… Swipe left to discard, right to keep (it becomes a favourite)."),
+              ("step", "Keep them safe: only GOOD photos are backed up. Favourites also go to \"Mes meilleures\" (My best)."),
+              ("step", "Free up space: old photos already backed up leave the phone.")]),
             ("🔍", "vert", "Scan my phone",
              "It is the big button on the home screen. Nothing to set up.",
              [("step", "Tap \"Analyser mon téléphone\" (Scan my phone)."),
@@ -424,6 +450,13 @@ TEXTS = {
               ("step", "Gmail, Yahoo and iCloud require an APP PASSWORD. Clean Smart opens the right page."),
               ("step", "Scan your mailbox, then one button for: newsletters, large emails, old emails, duplicate emails."),
               ("step", "Emails go to your mailbox bin. Those from your bank, government or health services are NEVER touched.")]),
+            ("🧭", "vert", "Guided mailbox clean-up",
+             "In Mails, tap the big green tile. Same idea: the green button is the next step.",
+             [("step", "Safe clean-up: newsletters, ads, notifications and duplicate emails go to the bin."),
+              ("step", "Sort by sender: one card per sender. Left, all their emails go; right, you keep them."),
+              ("step", "Keep the important safe: bank, government, health, invoices and emails with a PDF are backed up."),
+              ("step", "Free the mailbox: old emails go to the bin, never the important ones."),
+              ("step", "\"Se désabonner\" (Unsubscribe): stop receiving a newsletter. The button opens the unsubscribe page.")]),
             ("📎", "orange", "Save emails and their attachments", "",
              [("step", "In Mails, tap \"Sauvegarder des mails\" (Save emails)."),
               ("step", "Tick the emails to keep (\"Cocher les PDF\" to go fast)."),

@@ -57,7 +57,7 @@ import kotlin.math.roundToInt
  * Rien n'est supprime tant qu'on n'appuie pas sur le bouton rouge (puis corbeille Android).
  */
 @Composable
-fun TriRapide(vm: AppViewModel, onTrash: () -> Unit) {
+fun TriRapide(vm: AppViewModel, onKeep: () -> Unit, onTrash: () -> Unit) {
     LaunchedEffect(Unit) { if (vm.swipeList == null) vm.loadSwipe() }
     val list = vm.swipeList ?: return
     val item = list.getOrNull(vm.swipeIndex)
@@ -86,8 +86,14 @@ fun TriRapide(vm: AppViewModel, onTrash: () -> Unit) {
         Gap()
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly, verticalAlignment = Alignment.CenterVertically) {
             RoundBtn("✕", Rouge, enabled = item != null) { vm.swipe(true) }
-            RoundBtn("↩", Carte2, small = true, enabled = vm.swipeIndex > 0) { vm.swipeUndo() }
+            RoundBtn("↩", Gris, small = true, enabled = vm.swipeIndex > 0) { vm.swipeUndo() }
             RoundBtn("✓", Vert, enabled = item != null) { vm.swipe(false) }
+        }
+        // a la fin : proteger les gardees (favori) et jeter les autres
+        if (item == null && vm.swipeKeep.any { !it.favorite }) {
+            Gap()
+            BigButton("⭐ Protéger mes ${plural(vm.swipeKeep.count { !it.favorite }, "photo gardée", "photos gardées")}",
+                color = Vert, onClick = onKeep)
         }
         if (vm.swipeTrash.isNotEmpty()) {
             Gap()
