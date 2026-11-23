@@ -11,6 +11,14 @@
   mails → corbeille du compte (IMAP MOVE), contacts → export .vcf avant suppression si la sauvegarde est active.
 - Code : `data/` (moteur : MediaScanner, MailCleaner, ContactsCleaner, Backup, Settings), `AppViewModel.kt`, `ui/` (écrans).
 
+## Version 1.8
+- Interface en anglais : les textes restent en français dans le code, enveloppés dans `Tr.t("...", args)` (`Tr.kt`) ;
+  dictionnaire `TrEn.kt` généré. Pour un nouveau texte : `python store/i18n/i18n.py extract . cles.json`, ajouter la
+  traduction dans `store/i18n/en.py`, puis `python store/i18n/gen_tren.py store/i18n/en.py cles.json app/src/main/java/com/jmdargere/cleansmart/TrEn.kt`
+  (et `i18n.py apply .` pour envelopper les nouveaux textes). Option Langue : auto / français / anglais.
+- Widget (`Widget.kt`, place libre + bouton Ménage), mode démonstration (`data/Demo.kt`, actions simulées),
+  « Quitter iCloud Photos » (même moteur `GoogleExport` avec `SourceExport.ICLOUD`, dates du « Photo Details.csv »).
+
 ## Version 1.7
 - Google Photos = un seul tableau de bord (circuit animé, jauge, 5 étapes repliables, liste des fichiers 001…,
   modèle de la page Takeout, notification de fin de fichier, fichier déjà fait détecté).
