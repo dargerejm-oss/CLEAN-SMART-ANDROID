@@ -116,6 +116,54 @@ fun CatTile(emoji: String, title: String, sub: String, value: String, badge: Str
     }
 }
 
+/** Coordonnees de l'auteur (comme dans Mail Simple et Photo Simple). */
+object Contact {
+    const val INSTAGRAM = "@jean_michel_dargere"
+    const val MAIL = "dargerejm@gmail.com"
+    const val TELEPHONE = "06 13 37 10 42"
+    const val WHATSAPP = "https://wa.me/33613371042"
+}
+
+/** Trois gros boutons : Instagram, mail, WhatsApp / appel. */
+@Composable
+fun BoutonsContact() {
+    val ctx = LocalContext.current
+    fun ouvrir(i: Intent) { runCatching { ctx.startActivity(i) } }
+    BigButton("📸 Instagram  ${Contact.INSTAGRAM}", color = Color(0xFFC13584)) {
+        ouvrir(Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://www.instagram.com/jean_michel_dargere/")))
+    }
+    Spacer(Modifier.height(8.dp))
+    BigButton("✉️ ${Contact.MAIL}", color = Bleu) {
+        ouvrir(Intent(Intent.ACTION_SENDTO, android.net.Uri.parse("mailto:${Contact.MAIL}"))
+            .putExtra(Intent.EXTRA_SUBJECT, "Clean Smart"))
+    }
+    Spacer(Modifier.height(8.dp))
+    BigButton("💬 WhatsApp  ${Contact.TELEPHONE}", color = Color(0xFF25D366)) {
+        ouvrir(Intent(Intent.ACTION_VIEW, android.net.Uri.parse(Contact.WHATSAPP)))
+    }
+    Spacer(Modifier.height(8.dp))
+    BigButton("📞 " + Tr.t("Appeler") + "  ${Contact.TELEPHONE}", color = Vert) {
+        ouvrir(Intent(Intent.ACTION_DIAL, android.net.Uri.parse("tel:0613371042")))
+    }
+}
+
+/** Fenetre « Version complete / Une question ? » avec les coordonnees. */
+@Composable
+fun ContactDialog(titre: String, texte: String, onClose: () -> Unit) {
+    Dialog(onDismissRequest = onClose) {
+        Card(shape = RoundedCornerShape(24.dp), colors = CardDefaults.cardColors(containerColor = Carte)) {
+            Column(Modifier.padding(20.dp).fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(titre, fontWeight = FontWeight.ExtraBold, fontSize = 20.sp, color = Bleu, textAlign = TextAlign.Center)
+                Spacer(Modifier.height(8.dp))
+                Text(texte, color = Gris, fontSize = 15.sp, textAlign = TextAlign.Center, lineHeight = 21.sp)
+                Spacer(Modifier.height(14.dp))
+                BoutonsContact()
+                TextButton(onClick = onClose) { Text(Tr.t("Fermer"), color = Gris) }
+            }
+        }
+    }
+}
+
 /** Gros bouton pleine largeur. */
 @Composable
 fun BigButton(text: String, modifier: Modifier = Modifier, color: Color = Violet, enabled: Boolean = true, onClick: () -> Unit) {

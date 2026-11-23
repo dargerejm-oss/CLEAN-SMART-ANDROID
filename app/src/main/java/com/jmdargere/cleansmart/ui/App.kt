@@ -13,6 +13,7 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -383,10 +384,19 @@ private fun Accueil(
             }
         }
         if (Essai.actif) item {
-            Text(Tr.t("🎁 Version d'essai · %1", plural(joursEssai, Tr.t("jour restant"), Tr.t("jours restants"))),
-                color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = TextAlign.Center,
-                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
-                    .background(if (joursEssai <= 5) Rouge else Violet, RoundedCornerShape(12.dp)).padding(10.dp))
+            // bandeau de l'essai : le toucher ouvre les coordonnees pour obtenir la version complete
+            var contact by remember { mutableStateOf(false) }
+            Column(Modifier.fillMaxWidth().padding(vertical = 4.dp)
+                .background(if (joursEssai <= 5) Rouge else Violet, RoundedCornerShape(12.dp))
+                .clickable { contact = true }.padding(10.dp),
+                horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(Tr.t("🎁 Version d'essai · %1", plural(joursEssai, Tr.t("jour restant"), Tr.t("jours restants"))),
+                    color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = TextAlign.Center)
+                Text(Tr.t("Touche ici pour la version complète ou une question"), color = Color(0xE6FFFFFF), fontSize = 12.sp,
+                    textAlign = TextAlign.Center)
+            }
+            if (contact) ContactDialog(Tr.t("Version complète"),
+                Tr.t("Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :")) { contact = false }
         }
         item {
             BoxCard {
@@ -688,6 +698,10 @@ private fun EssaiTermine() {
             color = Gris, textAlign = TextAlign.Center, lineHeight = 22.sp)
         Gap(10)
         Text(Tr.t("Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie."), color = Gris, fontSize = 13.sp, textAlign = TextAlign.Center)
+        Gap(20)
+        Text(Tr.t("Pour obtenir la version complète, écris-moi :"), fontWeight = FontWeight.Bold, color = Texte, textAlign = TextAlign.Center)
+        Gap(10)
+        BoutonsContact()
     }
 }
 
@@ -1119,6 +1133,14 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                     vm.demo) { vm.changerDemo(it) }
                 InfoRow("🆕", Tr.t("Rechercher une mise à jour"), Tr.t("Version installée : %1", BuildConfig.VERSION_NAME),
                     onClick = { vm.verifierMiseAJour(true) })
+            }
+            SectionTitle(Tr.t("CONTACT"))
+            BoxCard {
+                Text(Tr.t("Une question, un souci, la version complète ? Écris-moi :"), color = Gris, fontSize = 14.sp)
+                Gap(8)
+                BoutonsContact()
+            }
+            BoxCard {
                 InfoRow("⚙️", Tr.t("Réglages de stockage Android"), "", onClick = {
                     runCatching { ctx.startActivity(Intent(AndroidSettings.ACTION_INTERNAL_STORAGE_SETTINGS)) }
                 })

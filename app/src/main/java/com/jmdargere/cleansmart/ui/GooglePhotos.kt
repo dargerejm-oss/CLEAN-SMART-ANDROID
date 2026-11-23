@@ -157,7 +157,7 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                         modifier = Modifier.fillMaxWidth().height(14.dp).clip(RoundedCornerShape(99.dp)))
                     Gap(6)
                     val t = vm.gpTotal
-                    Text("${fmtBytes(t.octets)}${if (vm.gpTaille > 0) Tr.t(" sur environ ${fmtBytes(t.octets)} Go", vm.gpTaille) else ""} · " +
+                    Text("${fmtBytes(t.octets)}${if (vm.gpTaille > 0) Tr.t(" sur environ %1 Go", vm.gpTaille) else ""} · " +
                             Tr.t("%1 photos · %2 vidéos · %3 doublons et rafales écartés", fmtNum(t.photos), fmtNum(t.videos), fmtNum(t.doublons + t.rafales)),
                         color = Gris, fontSize = 12.sp)
                 }

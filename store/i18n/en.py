@@ -610,3 +610,13 @@ EN.update({
 "Langue": "Language",
 "Comme le téléphone": "Same as phone",
 })
+EN.update({
+"Appeler": "Call",
+"Fermer": "Close",
+"Touche ici pour la version complète ou une question": "Tap here for the full version or a question",
+"Version complète": "Full version",
+"Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :": "To get the full version of Clean Smart, or for any question, write to me:",
+"Pour obtenir la version complète, écris-moi :": "To get the full version, write to me:",
+"CONTACT": "CONTACT",
+"Une question, un souci, la version complète ? Écris-moi :": "A question, a problem, the full version? Write to me:",
+})

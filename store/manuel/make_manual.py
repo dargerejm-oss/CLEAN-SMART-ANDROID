@@ -390,6 +390,7 @@ TEXTS = {
             ("🎬", "Démonstration", "Montre l'appli avec de fausses photos, de faux mails et de faux contacts.", "À savoir : rien n'est touché sur le téléphone. Idéal pour présenter l'appli."),
             ("📲", "Widget", "Sur l'écran d'accueil du téléphone : appui long > Widgets > Clean Smart. Il montre la place libre et ouvre le Ménage guidé.", "À savoir : il se met à jour tout seul."),
         ],
+        "contact": "Une question, ou la version complète ? Écris-moi : dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp 06 13 37 10 42",
         "faq_title": "Questions fréquentes",
         "faq": [
             ("Mes photos sont-elles supprimées tout de suite ?", "Non. Elles vont dans la corbeille de la Galerie : 30 jours pour les récupérer, ou « J'ai fait une bêtise »."),
@@ -518,6 +519,7 @@ TEXTS = {
             ("🎬", "Demo mode", "Shows the app with fake photos, emails and contacts.", "Good to know: nothing is touched on the phone. Ideal to present the app."),
             ("📲", "Widget", "On the phone's home screen: long press > Widgets > Clean Smart. It shows free space and opens the guided clean-up.", "Good to know: it updates on its own."),
         ],
+        "contact": "A question, or the full version? Write to me: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42",
         "faq_title": "Frequently asked questions",
         "faq": [
             ("Are my photos deleted right away?", "No. They go to the Gallery bin: 30 days to restore them, or \"I made a mistake\"."),
@@ -605,6 +607,15 @@ def build(lang, path):
         d.need(len(lines) * 21 + 60)
         d.y = text_block(c, q, M, d.y, W - 2 * M, "UIB", 16, COUL["orange"], 1.28) - 2
         d.y = text_block(c, a, M, d.y, W - 2 * M, "UI", 14, ENCRE, 1.32) - 16
+    # encadre vert « Une question ? Ecris-moi » (comme dans Mail Simple / Photo Simple)
+    contact = t["contact"]
+    lignes = wrap(c, contact, "UI", 14, W - 2 * M - 32)
+    h = 26 + len(lignes) * 19
+    d.need(h + 10)
+    c.setFillColor(COUL["vert"])
+    c.roundRect(M, d.y - h, W - 2 * M, h, 14, stroke=0, fill=1)
+    text_block(c, contact, M + 16, d.y - 12, W - 2 * M - 32, "UI", 14, white, 1.35)
+    d.y -= h + 10
     d.save()
 
 

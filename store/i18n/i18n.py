@@ -105,12 +105,14 @@ class Parser:
                 self.i += 2
                 expr = self.code(end_char="}")
                 self.i += 1
-                args.append(expr.strip()); cur.append(f"%{len(args)}"); continue
+                args.append(expr.strip()); cur.append(f"\x00{len(args)}\x00"); continue
             if c == "$" and re.match(r"[A-Za-z_]", t[self.i + 1]):
                 m = re.match(r"[A-Za-z_][A-Za-z0-9_]*", t[self.i + 1:])
-                args.append(m.group(0)); cur.append(f"%{len(args)}"); self.i += 1 + len(m.group(0)); continue
+                args.append(m.group(0)); cur.append(f"\x00{len(args)}\x00"); self.i += 1 + len(m.group(0)); continue
             cur.append(c); self.i += 1
-        raw = "".join(cur)
+        # reperes uniques \x00N\x00 pendant le travail (un %1 dans une expression imbriquee ne gene plus)
+        brut = "".join(cur)
+        raw = re.sub(r"\x00(\d+)\x00", r"%\1", brut)
         original = t[start:self.i]
         line = self.line_of(start)
         before = t[max(0, start - 6):start]
@@ -119,14 +121,14 @@ class Parser:
         if ENUM_LINE.match(line) or (0 <= a < start < b):
             if not args and is_ui(unescape(raw)):
                 self.keys.append(unescape(raw))
-            return self.rebuild(original, raw, args, translate=False)
+            return self.rebuild(original, brut, args, translate=False)
         if before.endswith("Tr.t(") or SKIP_LINE.search(line):
-            return self.rebuild(original, raw, args, translate=False)
+            return self.rebuild(original, brut, args, translate=False)
         if self.mode == "lines" and not LINE_ONLY.search(line):
-            return self.rebuild(original, raw, args, translate=False)
+            return self.rebuild(original, brut, args, translate=False)
         static = re.sub(r"%\d+", "", raw)
         if not is_ui(unescape(static)):
-            return self.rebuild(original, raw, args, translate=False)
+            return self.rebuild(original, brut, args, translate=False)
         self.keys.append(unescape(raw))
         return self.rebuild(original, raw, args, translate=True)
 
@@ -135,10 +137,7 @@ class Parser:
             if not args:
                 return original
             # on remet le texte avec ses ${...} (les expressions ont peut-etre ete transformees)
-            s = raw
-            for k in range(len(args), 0, -1):
-                s = s.replace(f"%{k}", "${" + args[k - 1] + "}")
-            return '"' + s + '"'
+            return '"' + re.sub(r"\x00(\d+)\x00", lambda m: "${" + args[int(m.group(1)) - 1] + "}", raw) + '"'
         if args:
             return 'Tr.t("' + raw + '", ' + ", ".join(args) + ")"
         return 'Tr.t("' + raw + '")'
