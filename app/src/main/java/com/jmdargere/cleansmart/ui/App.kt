@@ -74,7 +74,7 @@ import com.jmdargere.cleansmart.data.fmtNum
 import com.jmdargere.cleansmart.data.plural
 
 /** Les ecrans de l'appli (navigation simple, sans bibliotheque). */
-private enum class Ecran { ACCUEIL, GUIDE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL }
+private enum class Ecran { ACCUEIL, GUIDE, GOOGLE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL }
 
 private fun mediaPerms(): Array<String> =
     if (Build.VERSION.SDK_INT >= 33) arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
@@ -247,6 +247,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                     Text(when (ecran) {
                         Ecran.ACCUEIL -> "CLEAN SMART"
                         Ecran.GUIDE -> "🧭 Ménage guidé"
+                        Ecran.GOOGLE -> "📦 Quitter Google Photos"
                         Ecran.CATEGORIE -> cat.emoji + " " + cat.title
                         Ecran.TRI -> "👆 Tri rapide"
                         Ecran.MAILS -> "✉️ Mails"
@@ -279,12 +280,14 @@ fun CleanSmartApp(vm: AppViewModel) {
                 Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai, ::viderCorbeille, ::annuler, ::souvenir,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
                     openGuide = { ecran = Ecran.GUIDE },
+                    openGoogle = { ecran = Ecran.GOOGLE },
                     openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
                     chooseFolder = { folderLauncher.launch(null) },
                     ask = { confirm = it })
                 Ecran.CATEGORIE -> Categorie(vm, cat, envoyer = ::envoyer, proteger = ::proteger, compresser = ::compresser)
+                Ecran.GOOGLE -> GooglePhotos(vm, ask = { confirm = it })
                 Ecran.GUIDE -> MenageGuide(vm,
                     analyser = ::analyser,
                     nettoyerSur = {
@@ -339,6 +342,7 @@ private fun Accueil(
     souvenir: (Int) -> Unit,
     openCat: (Cat) -> Unit,
     openGuide: () -> Unit,
+    openGoogle: () -> Unit,
     openTri: () -> Unit,
     openMail: () -> Unit,
     openManual: () -> Unit,
@@ -385,6 +389,9 @@ private fun Accueil(
             // le Menage guide : la facon la plus simple de tout faire, dans le bon ordre
             CatTile("🧭", "Ménage guidé", "Trier, garder, sauvegarder, libérer",
                 "4 étapes", "CONSEILLÉ", Vert, Modifier.fillMaxWidth(), onClick = openGuide)
+            Gap(10)
+            CatTile("📦", "Quitter Google Photos", "Toutes tes photos sur une clé ou un disque, par année, sans doublon",
+                if (vm.gpTotal.zips > 0) "étape ${vm.gpEtape} / 7" else "7 étapes", "", Rouge, Modifier.fillMaxWidth(), onClick = openGoogle)
             Gap()
             BigButton(if (m == null) "🔍 Analyser mon téléphone" else "🔄 Analyser à nouveau", color = Bleu, onClick = analyser)
             Gap()

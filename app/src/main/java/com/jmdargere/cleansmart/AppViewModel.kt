@@ -413,6 +413,47 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress("Mise à jour")) }
     }
 
+    // ------------------------------------------------------------------ quitter Google Photos (export Takeout)
+
+    val google = com.jmdargere.cleansmart.data.GoogleExport(app)
+    var gpEtape by mutableIntStateOf(google.etape); private set
+    var gpTotal by mutableStateOf(google.total()); private set
+    var gpTaille by mutableIntStateOf(google.tailleGoogleGo); private set
+    var gpDest by mutableStateOf(google.nomDestination()); private set
+    var gpDernier by mutableStateOf<Pair<String, com.jmdargere.cleansmart.data.ExportStats>?>(null); private set
+
+    fun gpAller(n: Int) { gpEtape = n; google.etape = n }
+    fun gpSetTaille(go: Int) { gpTaille = go; google.tailleGoogleGo = go }
+    fun gpSetDest(uri: android.net.Uri) { google.destination = uri; gpDest = google.nomDestination() }
+
+    /** Traite un fichier ZIP de l'export Google : rangement par annee, doublons, rafales, verification. */
+    /** Probleme detecte avant de commencer (telephone plein, disque plein ou debranche...) : affiche avec les conseils. */
+    var gpProbleme by mutableStateOf<String?>(null)
+
+    fun gpTraiter(zip: android.net.Uri, onFini: (android.net.Uri) -> Unit) = run("Fichier Google Photos") {
+        val pb = withContext(Dispatchers.IO) { google.verifierAvant(zip) }
+        if (pb != null) { gpProbleme = pb; return@run }
+        val nom = google.nomDe(zip)
+        upd("Fichier Google Photos", "Ouverture de $nom…", 0)
+        val s = withContext(Dispatchers.IO) { google.traiterZip(zip, progress("$nom")) }
+        gpDernier = nom to s
+        gpTotal = google.total()
+        onFini(zip)
+    }
+
+    fun gpSupprimerZip(zip: android.net.Uri) {
+        viewModelScope.launch {
+            val ok = withContext(Dispatchers.IO) { google.supprimerZip(zip) }
+            say(if (ok) "🗑️ Fichier supprimé du téléphone : place libre pour le suivant"
+                else "Supprime ce fichier toi-même dans Téléchargements pour faire de la place.")
+        }
+    }
+
+    fun gpRecommencer() {
+        google.remettreAZero()
+        gpEtape = 1; gpTotal = google.total(); gpTaille = 0; gpDest = google.nomDestination(); gpDernier = null
+    }
+
     // ------------------------------------------------------------------ menage guide des mails (4 etapes)
 
     var mailGuideDone by mutableStateOf(setOf<Int>()); private set

@@ -11,6 +11,16 @@
   mails → corbeille du compte (IMAP MOVE), contacts → export .vcf avant suppression si la sauvegarde est active.
 - Code : `data/` (moteur : MediaScanner, MailCleaner, ContactsCleaner, Backup, Settings), `AppViewModel.kt`, `ui/` (écrans).
 
+## Version 1.6 : onglet « Quitter Google Photos » (`data/GoogleExport.kt`, `ui/GooglePhotos.kt`)
+- Google n'autorise plus la lecture de toute la photothèque par une appli : on passe par Google Takeout (ZIP de 2 Go).
+- 7 écrans : bienvenue, place nécessaire, disque, export Takeout, traitement ZIP par ZIP, rapport, libérer (manuel).
+- Range par année (`Google Photos/AAAA/AAAA-MM-JJ_nom`), dates depuis les .json Google (sinon EXIF), doublons par MD5,
+  rafales (15 s + dHash) : la plus nette gardée, chaque copie relue et comparée, Gmail .mbox → `Mails Gmail/AAAA` + PDF + index.html.
+- Sécurités : vérifs avant (téléphone ≥ 300 Mo, place disque ≥ taille ZIP, disque accessible, batterie), vidéos copiées
+  directement sur le disque, empreintes mémorisées une par une (reprise sans doublon), arrêt propre si plein, ZIP abîmé détecté,
+  écran gardé allumé, ZIP supprimable seulement si tout est vérifié, écran « Si ça bloque ».
+- Idées proposées non faites : interface anglaise, « Quitter iCloud Photos », mode démo, widget, yeux fermés, vérif mensuelle.
+
 ## Version 1.5
 - Interface claire comme Mail Simple / Photo Simple : bandeau bleu, grandes tuiles de couleur, sablier avec
   temps passé / restant / %, bandeau vert « TERMINÉ ».

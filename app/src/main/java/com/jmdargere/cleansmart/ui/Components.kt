@@ -178,6 +178,12 @@ fun BusyDialog(b: Busy) {
     LaunchedEffect(Unit) { while (true) { now = System.currentTimeMillis(); kotlinx.coroutines.delay(500) } }
     val passe = now - b.start
     val reste = if (b.pct in 3..99) passe * (100 - b.pct) / b.pct else -1L
+    // l'ecran reste allume pendant le travail (le telephone ne se met pas en veille)
+    val vue = androidx.compose.ui.platform.LocalView.current
+    androidx.compose.runtime.DisposableEffect(Unit) {
+        vue.keepScreenOn = true
+        onDispose { vue.keepScreenOn = false }
+    }
 
     Dialog(onDismissRequest = {}, properties = DialogProperties(dismissOnBackPress = false, dismissOnClickOutside = false)) {
         Card(shape = RoundedCornerShape(24.dp), colors = CardDefaults.cardColors(containerColor = Carte)) {

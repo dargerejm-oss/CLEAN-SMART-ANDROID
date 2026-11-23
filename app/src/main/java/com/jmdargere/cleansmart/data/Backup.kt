@@ -49,6 +49,11 @@ document.getElementById('q').addEventListener('input',show);show();
 
 class Backup(private val ctx: Context) {
 
+    companion object {
+        /** La page de recherche des mails, remplie avec la liste (JSON). */
+        fun indexHtml(json: String): String = INDEX_HTML.replace("/*DATA*/[]", json.replace("</", "<\\/"))
+    }
+
     private val cr = ctx.contentResolver
 
     fun folderLabel(tree: Uri?): String {
