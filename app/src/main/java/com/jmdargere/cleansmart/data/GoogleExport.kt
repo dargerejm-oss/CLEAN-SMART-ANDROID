@@ -58,6 +58,12 @@ data class Disque(val nom: String, val libre: Long, val total: Long, val amovibl
 /** Etat d'un fichier de l'export Google (001, 002...). */
 enum class EtatZip { A_FAIRE, OK, A_REPRENDRE }
 
+/** D'ou viennent les photos : Google Photos (Google Takeout) ou iCloud Photos (export Apple). */
+enum class SourceExport(val prefs: String, val empreintes: String, val dossierPhotos: String, val nom: String) {
+    GOOGLE("google_photos", "google_photos_hashes.txt", "Google Photos", "Google Photos"),
+    ICLOUD("icloud_photos", "icloud_photos_hashes.txt", "iCloud Photos", "iCloud Photos"),
+}
+
 /**
  * « Quitter Google Photos » : on lit l'export officiel Google Takeout (fichiers ZIP de 2 Go),
  * un fichier a la fois, et on copie sur le disque choisi :
@@ -72,11 +78,11 @@ enum class EtatZip { A_FAIRE, OK, A_REPRENDRE }
  * - l'empreinte de chaque fichier verifie est memorisee tout de suite : une reprise ne recopie rien.
  * Rien n'est jamais supprime dans Google Photos par l'appli.
  */
-class GoogleExport(private val ctx: Context) {
+class GoogleExport(private val ctx: Context, val source: SourceExport = SourceExport.GOOGLE) {
 
     private val cr = ctx.contentResolver
-    private val hashFile = File(ctx.filesDir, "google_photos_hashes.txt")
-    private val prefs = ctx.getSharedPreferences("google_photos", Context.MODE_PRIVATE)
+    private val hashFile = File(ctx.filesDir, source.empreintes)
+    private val prefs = ctx.getSharedPreferences(source.prefs, Context.MODE_PRIVATE)
 
     private val MEDIA = setOf("jpg", "jpeg", "png", "heic", "heif", "webp", "gif", "bmp", "dng", "raf", "cr2", "nef", "arw",
         "mp4", "mov", "3gp", "m4v", "mkv", "avi", "webm")
@@ -117,8 +123,18 @@ class GoogleExport(private val ctx: Context) {
         prefs.edit().putString("etats", m.entries.joinToString(";") { "${it.key}=${it.value.name}" }).apply()
     }
 
-    /** Le numero du fichier d'apres son nom (takeout-20261123T101010Z-003.zip -> 3), 0 si inconnu. */
-    fun numero(nom: String): Int = Regex("-(\\d{1,3})\\.zip$", RegexOption.IGNORE_CASE).find(nom)?.groupValues?.get(1)?.toIntOrNull() ?: 0
+    /**
+     * Le numero du fichier d'apres son nom, 0 si inconnu :
+     *   Google : takeout-20261123T101010Z-003.zip -> 3
+     *   Apple  : iCloud Photos Part 3 of 12.zip   -> 3
+     */
+    fun numero(nom: String): Int =
+        Regex("Part (\\d+) of (\\d+)", RegexOption.IGNORE_CASE).find(nom)?.groupValues?.get(1)?.toIntOrNull()
+            ?: Regex("-(\\d{1,3})\\.zip$", RegexOption.IGNORE_CASE).find(nom)?.groupValues?.get(1)?.toIntOrNull() ?: 0
+
+    /** Apple ecrit le nombre total dans le nom (Part 3 of 12) : on le reprend tout seul. */
+    fun totalDansNom(nom: String): Int =
+        Regex("Part (\\d+) of (\\d+)", RegexOption.IGNORE_CASE).find(nom)?.groupValues?.get(2)?.toIntOrNull() ?: 0
 
     fun total(): ExportStats = ExportStats(
         prefs.getInt("photos", 0), prefs.getInt("videos", 0), prefs.getInt("doublons", 0), prefs.getInt("rafales", 0),
@@ -207,7 +223,7 @@ class GoogleExport(private val ctx: Context) {
     /** Tout ce qu'il faut pour traiter les fichiers d'un ZIP, quelle que soit la facon de le lire. */
     private inner class Lot(val racine: DocumentFile, val dates: Map<String, Long>) {
         val vus = chargerHashes()
-        val photosDir: DocumentFile by lazy { dossier(racine, "Google Photos") }
+        val photosDir: DocumentFile by lazy { dossier(racine, source.dossierPhotos) }
         /** dossier de chaque annee + les noms deja presents (garde en memoire : pas de relecture du dossier) */
         val annees = HashMap<String, Pair<DocumentFile, HashSet<String>>>()
         val rafales = ArrayList<Rafale>()
@@ -365,7 +381,7 @@ class GoogleExport(private val ctx: Context) {
                     // 1. les dates (petits fichiers .json), lues directement
                     progress("Lecture des dates des photos…", 2)
                     val dates = HashMap<String, Long>()
-                    for (e in toutes) if (!e.isDirectory && e.name.endsWith(".json", true)) runCatching {
+                    for (e in toutes) if (!e.isDirectory && estMeta(e.name)) runCatching {
                         zf.getInputStream(e).use { lireDate(e.name, it.readBytes(), dates) }
                     }
                     // 2. les photos, videos et mails, dans l'ordre du fichier (lecture continue = rapide)
@@ -373,7 +389,7 @@ class GoogleExport(private val ctx: Context) {
                     val total = toutes.sumOf { it.compressedSize.coerceAtLeast(0) }.coerceAtLeast(1)
                     var lu = 0L
                     for (e in java.util.Collections.list(zf.entriesInPhysicalOrder)) {
-                        if (e.isDirectory || e.name.endsWith(".json", true)) { lu += e.compressedSize.coerceAtLeast(0); continue }
+                        if (e.isDirectory || estMeta(e.name)) { lu += e.compressedSize.coerceAtLeast(0); continue }
                         val pct = (5 + 85 * lu / total).toInt().coerceIn(5, 90)
                         try {
                             zf.getInputStream(e).use { inp -> lot.entree(e.name, inp) { txt -> progress(txt, pct) } }
@@ -397,7 +413,7 @@ class GoogleExport(private val ctx: Context) {
         ZipInputStream(cr.openInputStream(zip)!!.buffered(BUF)).use { z ->
             while (true) {
                 val e = runCatching { z.nextEntry }.getOrNull() ?: break
-                if (!e.isDirectory && e.name.endsWith(".json", true)) runCatching { lireDate(e.name, z.readBytes(), dates) }
+                if (!e.isDirectory && estMeta(e.name)) runCatching { lireDate(e.name, z.readBytes(), dates) }
             }
         }
         val lot = Lot(racine, dates)
@@ -419,7 +435,18 @@ class GoogleExport(private val ctx: Context) {
         return lot.finir()
     }
 
+    /** Fichier de description des photos : .json (Google) ou « Photo Details.csv » (Apple). */
+    private fun estMeta(nom: String) = nom.endsWith(".json", true) ||
+            (nom.endsWith(".csv", true) && nom.substringAfterLast('/').startsWith("Photo Details", true))
+
+    private val dateApple = listOf(
+        SimpleDateFormat("EEEE MMMM d,yyyy h:mm a z", Locale.US),
+        SimpleDateFormat("EEEE MMMM d, yyyy h:mm a z", Locale.US),
+        SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US),
+    )
+
     private fun lireDate(chemin: String, bytes: ByteArray, dates: HashMap<String, Long>) {
+        if (chemin.endsWith(".csv", true)) { lireCsvApple(bytes, dates); return }
         val js = JSONObject(bytes.toString(Charsets.UTF_8))
         val titre = js.optString("title")
         val ts = js.optJSONObject("photoTakenTime")?.optString("timestamp")?.toLongOrNull()
@@ -427,6 +454,39 @@ class GoogleExport(private val ctx: Context) {
             dates[titre.lowercase()] = ts * 1000
             dates[(chemin.substringBeforeLast('/') + "/" + titre).lowercase()] = ts * 1000
         }
+    }
+
+    /**
+     * Export Apple : « Photo Details.csv » = une ligne par photo :
+     * imgName,fileChecksum,favorite,hidden,deleted,originalCreationDate,viewCount,importDate
+     */
+    private fun lireCsvApple(bytes: ByteArray, dates: HashMap<String, Long>) {
+        val lignes = bytes.toString(Charsets.UTF_8).lines().filter { it.isNotBlank() }
+        if (lignes.isEmpty()) return
+        val entete = decouper(lignes[0]).map { it.trim().lowercase() }
+        val iNom = entete.indexOf("imgname").takeIf { it >= 0 } ?: 0
+        val iDate = entete.indexOf("originalcreationdate").takeIf { it >= 0 } ?: return
+        for (l in lignes.drop(1)) {
+            val c = decouper(l)
+            val nom = c.getOrNull(iNom)?.trim() ?: continue
+            val txt = c.getOrNull(iDate)?.trim() ?: continue
+            val ms = dateApple.firstNotNullOfOrNull { f -> runCatching { f.parse(txt)?.time }.getOrNull() } ?: continue
+            dates[nom.lowercase()] = ms
+        }
+    }
+
+    /** Decoupe une ligne CSV (les champs entre guillemets peuvent contenir des virgules). */
+    private fun decouper(l: String): List<String> {
+        val out = ArrayList<String>(); val cur = StringBuilder(); var guil = false
+        for (ch in l) {
+            when {
+                ch == '"' -> guil = !guil
+                ch == ',' && !guil -> { out += cur.toString(); cur.clear() }
+                else -> cur.append(ch)
+            }
+        }
+        out += cur.toString()
+        return out
     }
 
     /** Essaie de supprimer le ZIP du telephone une fois traite (pour faire de la place au suivant). */
@@ -453,15 +513,17 @@ class GoogleExport(private val ctx: Context) {
     /** Conseils si ca bloque (affiches dans l'appli). */
     val conseils = listOf(
         "📱" to "Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.",
-        "📦" to "Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.",
+        "📦" to (if (source == SourceExport.GOOGLE) "Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place."
+                 else "Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place."),
         "⬇️" to "Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.",
         "💾" to "Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.",
         "🔌" to "Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).",
         "🔋" to "Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.",
         "⚠️" to "« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.",
         "🔁" to "Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.",
-        "⏳" to "Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).",
-    )
+        "⏳" to (if (source == SourceExport.GOOGLE) "Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon)."
+                 else "Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon)."),
+    ).map { (e, t) -> e to com.jmdargere.cleansmart.Tr.t(t) }
 
     // ------------------------------------------------------------------ mails (export Gmail au format .mbox)
 

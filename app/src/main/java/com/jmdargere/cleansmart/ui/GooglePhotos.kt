@@ -124,6 +124,10 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
     }
     fun ouvrir(url: String) { runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) } }
 
+    // Google Photos ou iCloud Photos : memes etapes, textes et liens differents
+    val g = vm.gpSource == com.jmdargere.cleansmart.data.SourceExport.GOOGLE
+    val qui = if (g) "Google" else "Apple"
+
     // ----- ou en est-on ?
     val faites = setOfNotNull(
         1.takeIf { vm.gpTaille > 0 },
@@ -136,7 +140,7 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
 
     LazyColumn(contentPadding = PaddingValues(16.dp, 10.dp, 16.dp, 28.dp)) {
         item {
-            Circuit(phase = when { maintenant <= 3 -> 0; maintenant == 4 -> 1; else -> 2 })
+            Circuit(phase = when { maintenant <= 3 -> 0; maintenant == 4 -> 1; else -> 2 }, origine = if (g) "Google" else "iCloud")
             Gap(8)
             // la jauge
             Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Carte),
@@ -160,14 +164,19 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
 
             // ---------------------------------------------------------------- 1. la place
             EtapeGP(1, "📏", "Combien de place faut-il ?",
-                if (vm.gpTaille > 0) "${vm.gpTaille} Go dans Google · prévois ${fmtBytes(vm.google.placeNecessaire())}" else "Regarder la taille de Google Photos",
+                if (vm.gpTaille > 0) "${vm.gpTaille} Go · prévois ${fmtBytes(vm.google.placeNecessaire())}" else "Regarder la taille de ${vm.gpSource.nom}",
                 faites, maintenant, affichee, { ouverte = if (affichee == 1) -1 else 1 }) {
-                Txt("Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).")
-                BigButton("Voir ma place Google", color = Bleu) { ouvrir("https://one.google.com/storage") }
+                if (g) {
+                    Txt("Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).")
+                    BigButton("Voir ma place Google", color = Bleu) { ouvrir("https://one.google.com/storage") }
+                } else {
+                    Txt("Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).")
+                    BigButton("Voir ma place iCloud", color = Bleu) { ouvrir("https://www.icloud.com/settings/") }
+                }
                 Gap(8)
-                var saisie by rememberSaveable { mutableStateOf(if (vm.gpTaille > 0) vm.gpTaille.toString() else "") }
+                var saisie by rememberSaveable(vm.gpSource) { mutableStateOf(if (vm.gpTaille > 0) vm.gpTaille.toString() else "") }
                 OutlinedTextField(saisie, { saisie = it.filter { c -> c.isDigit() }.take(5) },
-                    label = { Text("Taille de Google Photos (Go)") }, singleLine = true,
+                    label = { Text("Taille de ${vm.gpSource.nom} (Go)") }, singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number), modifier = Modifier.fillMaxWidth())
                 saisie.toIntOrNull()?.takeIf { it > 0 }?.let { go ->
                     Gap(6)
@@ -205,24 +214,31 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
             }
 
             // ---------------------------------------------------------------- 3. demander l'export
-            EtapeGP(3, "📨", "Demander la copie à Google",
-                if (vm.gpDemande) "Demandée · attends le mail de Google" else "Sur Google Takeout, en 1 minute",
+            EtapeGP(3, "📨", "Demander la copie à $qui",
+                if (vm.gpDemande) "Demandée · attends le mail de $qui" else if (g) "Sur Google Takeout, en 1 minute" else "Sur privacy.apple.com, en 2 minutes",
                 faites, maintenant, affichee, { ouverte = if (affichee == 3) -1 else 3 }) {
-                Txt("Google prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :")
-                TakeoutModele()
-                BigButton("Ouvrir Google Takeout", color = Orange) { ouvrir("https://takeout.google.com/") }
-                Encadre("Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.", Bleu)
+                Txt("$qui prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :")
+                if (g) {
+                    TakeoutModele()
+                    BigButton("Ouvrir Google Takeout", color = Orange) { ouvrir("https://takeout.google.com/") }
+                    Encadre("Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.", Bleu)
+                } else {
+                    AppleModele()
+                    BigButton("Ouvrir privacy.apple.com", color = Orange) { ouvrir("https://privacy.apple.com/") }
+                    Encadre("Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).", Bleu)
+                }
                 BoutonVert("J'ai demandé la copie") { vm.gpSetDemande(true); ouverte = 0 }
             }
 
             // ---------------------------------------------------------------- 4. les fichiers un par un
             EtapeGP(4, "⚙️", "Copier les fichiers un par un",
                 if (vm.gpTermine) "${plural(vm.gpEtats.count { it.value == EtatZip.OK }, "fichier copié et vérifié", "fichiers copiés et vérifiés")}"
-                else if (vm.gpNb > 0) "${vm.gpEtats.count { it.value == EtatZip.OK }} sur ${vm.gpNb} fichiers faits" else "Quand le mail de Google est arrivé",
+                else if (vm.gpNb > 0) "${vm.gpEtats.count { it.value == EtatZip.OK }} sur ${vm.gpNb} fichiers faits" else "Quand le mail de $qui est arrivé",
                 faites, maintenant, affichee, { ouverte = if (affichee == 4) -1 else 4 }) {
-                // combien de fichiers dans le mail ?
-                var nb by rememberSaveable { mutableStateOf(if (vm.gpNb > 0) vm.gpNb.toString() else "") }
-                Txt("Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.")
+                // combien de fichiers ?
+                var nb by rememberSaveable(vm.gpSource) { mutableStateOf(if (vm.gpNb > 0) vm.gpNb.toString() else "") }
+                Txt(if (g) "Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers."
+                    else "Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.")
                 OutlinedTextField(nb, { nb = it.filter { c -> c.isDigit() }.take(3); nb.toIntOrNull()?.let(vm::gpSetNb) },
                     label = { Text("Nombre de fichiers dans le mail") }, singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number), modifier = Modifier.fillMaxWidth())
@@ -247,7 +263,8 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                     }
                     Gap(8)
                     if (prochain != null) {
-                        Encadre("👉 Maintenant : dans le mail de Google, télécharge le fichier ${"%03d".format(prochain)} (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.", Bleu)
+                        Encadre(if (g) "👉 Maintenant : dans le mail de Google, télécharge le fichier ${"%03d".format(prochain)} (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements."
+                            else "👉 Maintenant : sur privacy.apple.com, télécharge « Part $prochain » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.", Bleu)
                     }
                 }
                 // le dernier resultat
@@ -282,8 +299,8 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
             }
 
             // ---------------------------------------------------------------- 5. bilan et liberer
-            EtapeGP(5, "🎉", "Vérifier, puis libérer Google (si tu veux)",
-                "Le bilan, et comment libérer ton compte Google",
+            EtapeGP(5, "🎉", "Vérifier, puis libérer ${if (g) "Google" else "iCloud"} (si tu veux)",
+                "Le bilan, et comment libérer ton compte ${if (g) "Google" else "iCloud"}",
                 faites, maintenant, affichee, { ouverte = if (affichee == 5) -1 else 5 }) {
                 val t = vm.gpTotal
                 Encadre("📸 ${fmtNum(t.photos)} photos et ${fmtNum(t.videos)} vidéos copiées et vérifiées, rangées par année\n" +
@@ -291,15 +308,20 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                         (if (t.mails > 0) "✉️ ${fmtNum(t.mails)} mails (dossier « Mails Gmail », ouvre index.html)\n" else "") +
                         "💾 ${fmtBytes(t.octets)} sur « ${vm.gpDest} »", Vert)
                 if (t.erreurs > 0) Encadre("⚠️ ${plural(t.erreurs, "fichier")} en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.", Rouge)
-                Txt("Libérer Google Photos est facultatif. Google n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.")
+                Txt("Libérer ${vm.gpSource.nom} est facultatif. $qui n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.")
                 var verifie by rememberSaveable { mutableStateOf(false) }
                 var copie2 by rememberSaveable { mutableStateOf(false) }
                 Coche(verifie, "J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.") { verifie = it }
                 Coche(copie2, "Conseillé : j'ai fait une 2e copie (autre disque ou PC).") { copie2 = it }
                 if (verifie) {
-                    Txt("Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.")
-                    BigButton("Ouvrir Google Photos", color = Rouge) { ouvrir("https://photos.google.com/") }
-                } else Encadre("🛡️ On ne libère jamais Google avant d'avoir vérifié la copie : coche d'abord la première case.", Vert)
+                    if (g) {
+                        Txt("Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.")
+                        BigButton("Ouvrir Google Photos", color = Rouge) { ouvrir("https://photos.google.com/") }
+                    } else {
+                        Txt("Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.")
+                        BigButton("Ouvrir iCloud Photos", color = Rouge) { ouvrir("https://www.icloud.com/photos/") }
+                    }
+                } else Encadre("🛡️ On ne libère jamais ${if (g) "Google" else "iCloud"} avant d'avoir vérifié la copie : coche d'abord la première case.", Vert)
                 TextButton(onClick = {
                     ask(Confirm("Recommencer depuis le début ?",
                         "Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.", "Recommencer") { vm.gpRecommencer() })
@@ -343,7 +365,7 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
 
 /** Le circuit : ☁️ Google -> 📱 telephone -> 💾 disque, avec un point qui avance sur le trajet en cours. */
 @Composable
-private fun Circuit(phase: Int) {
+private fun Circuit(phase: Int, origine: String) {
     val anim = rememberInfiniteTransition(label = "circuit")
     val t by anim.animateFloat(0f, 1f, infiniteRepeatable(tween(1400, easing = LinearEasing)), label = "point")
     Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Bleu), modifier = Modifier.fillMaxWidth()) {
@@ -360,7 +382,7 @@ private fun Circuit(phase: Int) {
                 if (phase < 2) drawCircle(Color(0xFFFFD54F), 9f, Offset(a + (b - a) * t, y))
             }
             Row(Modifier.fillMaxWidth().height(120.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-                Lieu("☁️", "Google", phase == 0)
+                Lieu("☁️", origine, phase == 0)
                 Lieu("📱", "Téléphone", phase == 1)
                 Lieu("💾", "Disque", phase == 2)
             }
@@ -438,6 +460,24 @@ private fun TakeoutModele() {
             LigneModele(3, "Envoyer le lien par e-mail · Exporter une fois", true)
             LigneModele(4, "Type : .zip   ·   Taille : 2 Go", true, important = true)
             LigneModele(5, "Créer une exportation", false, lien = true)
+        }
+    }
+}
+
+/** Modele de la demande Apple (privacy.apple.com) : ce qu'il faut cocher. */
+@Composable
+private fun AppleModele() {
+    Card(shape = RoundedCornerShape(14.dp), colors = CardDefaults.cardColors(containerColor = Color.White),
+        border = BorderStroke(1.dp, Color(0xFFDADCE0)), modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
+        Column(Modifier.padding(12.dp)) {
+            Text("Apple · Données et confidentialité", fontWeight = FontWeight.Bold, color = Color(0xFF1D1D1F), fontSize = 15.sp)
+            Gap(6)
+            LigneModele(1, "Se connecter avec ton identifiant Apple", false, lien = true)
+            LigneModele(2, "Demander une copie de tes données", false, lien = true)
+            LigneModele(3, "Photos iCloud", true)
+            LigneModele(0, "Les autres cases : inutile", false, faible = true)
+            LigneModele(4, "Taille maximale des fichiers : 1 Go ou 2 Go", true, important = true)
+            LigneModele(5, "Terminer la demande", false, lien = true)
         }
     }
 }

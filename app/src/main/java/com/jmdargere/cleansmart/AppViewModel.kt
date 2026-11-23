@@ -77,8 +77,34 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var mailResult by mutableStateOf<MailResult?>(null); private set
     var freed by mutableLongStateOf(prefs.getLong("freed", 0)); private set
 
+    // ------------------------------------------------------------------ mode demonstration
+
+    /** Mode demonstration : fausses photos / mails / contacts, toutes les actions sont simulees. */
+    var demo by mutableStateOf(prefs.getBoolean("demo", false)); private set
+
+    fun setDemo(on: Boolean) {
+        demo = on
+        prefs.edit().putBoolean("demo", on).apply()
+        media = null; contacts = null; mailResult = null; selected = emptySet()
+        swipeList = null; swipeTrash = emptyList(); swipeKeep = emptyList()
+        guideDone = emptySet(); mailGuideDone = emptySet(); lastTrashed = emptyList()
+        trash = emptyList()
+        mailAccount = if (on) com.jmdargere.cleansmart.data.Demo.compte else mail.account()
+        refreshStorage()
+        if (!on) refreshTrash()
+        say(if (on) "🎬 Mode démonstration : rien n'est touché sur le téléphone" else "Mode démonstration terminé")
+    }
+
+    /** Petite progression factice pour la demonstration (le sablier tourne quelques secondes). */
+    private suspend fun demoAttente(titre: String) {
+        for (p in 0..100 step 10) { upd(titre, Tr.t("Démonstration…"), p); kotlinx.coroutines.delay(180) }
+    }
+
     /** Elements en attente de la confirmation Android pour la corbeille. */
     private var pendingTrash: List<MediaItem> = emptyList()
+
+    /** Le widget demande d'ouvrir directement le Menage guide. */
+    var ouvrirGuide by mutableStateOf(false)
 
     /** Nom de la nouvelle version disponible sur GitHub (null = a jour). */
     var nouvelleVersion by mutableStateOf<String?>(null); private set
@@ -95,10 +121,13 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         Night.schedule(app, settings)
         verifierMiseAJour(false)
         refreshStorage()
-        viewModelScope.launch { mailAccount = withContext(Dispatchers.IO) { mail.account() } }
+        viewModelScope.launch {
+            mailAccount = if (demo) com.jmdargere.cleansmart.data.Demo.compte else withContext(Dispatchers.IO) { mail.account() }
+        }
     }
 
     fun refreshStorage() {
+        if (demo) { storage = Storage(128_000_000_000, 9_500_000_000 + freed); return }
         storage = runCatching {
             val st = StatFs(Environment.getDataDirectory().path)
             Storage(st.totalBytes, st.availableBytes)
@@ -139,7 +168,14 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     fun analyse(withContacts: Boolean) = run("Analyse du téléphone") {
         val p = progress("Analyse du téléphone")
-        val r = withContext(Dispatchers.IO) { scanner.scan(settings, p) }
+        if (demo) demoAttente("Analyse du téléphone")
+        val r = if (demo) com.jmdargere.cleansmart.data.Demo.media() else withContext(Dispatchers.IO) { scanner.scan(settings, p) }
+        if (demo) {
+            media = r
+            selected = (r.duplicates + r.similar).flatMap { g -> g.items.filter { it.key != g.keep }.map { it.key } }.toSet()
+            contacts = com.jmdargere.cleansmart.data.Demo.contacts()
+            return@run
+        }
         media = r
         // pre-selection : seulement les copies et les photos ratees (jamais celle a garder)
         selected = (r.duplicates + r.similar).flatMap { g -> g.items.filter { it.key != g.keep }.map { it.key } }.toSet()
@@ -183,7 +219,12 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         trashItems(selected.mapNotNull { m[it] }, onReady)
     }
 
-    private fun trashItems(items: List<MediaItem>, onReady: (IntentSender) -> Unit) = run("Préparation") {
+    private fun trashItems(items: List<MediaItem>, onReady: (IntentSender) -> Unit) {
+        if (demo) { pendingTrash = items; onTrashResult(items.isNotEmpty()); return }
+        trashItemsVrai(items, onReady)
+    }
+
+    private fun trashItemsVrai(items: List<MediaItem>, onReady: (IntentSender) -> Unit) = run("Préparation") {
         if (items.isEmpty()) return@run
         val tree = settings.backupTree
         if (settings.backupBeforeDelete && backup.isUsable(tree)) {
@@ -239,6 +280,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     /** Remet dans la galerie les fichiers de la derniere mise a la corbeille. */
     fun prepareUndo(onReady: (IntentSender) -> Unit) {
         if (lastTrashed.isEmpty()) return
+        if (demo) { onUndoResult(true); return }
         runCatching { MediaStore.createTrashRequest(ctx.contentResolver, lastTrashed, false) }
             .onSuccess { onReady(it.intentSender) }
             .onFailure { say("Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.") }
@@ -262,6 +304,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun prepareProtect(items: List<MediaItem>, onReady: (IntentSender) -> Unit) {
         if (items.isEmpty()) return
         pendingProtect = items
+        if (demo) { onProtectResult(true); return }
         runCatching { MediaStore.createFavoriteRequest(ctx.contentResolver, items.map { it.uri }, true) }
             .onSuccess { onReady(it.intentSender) }
             .onFailure { say(it.message ?: "Impossible de protéger ces photos") }
@@ -293,7 +336,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var swipeKeep by mutableStateOf<List<MediaItem>>(emptyList()); private set
 
     fun loadSwipe() = run("Tri rapide") {
-        swipeList = withContext(Dispatchers.IO) { scanner.recentPhotos(settings, 1000) }
+        swipeList = if (demo) com.jmdargere.cleansmart.data.Demo.recentes()
+            else withContext(Dispatchers.IO) { scanner.recentPhotos(settings, 1000) }
         swipeIndex = 0
         swipeTrash = emptyList()
         swipeKeep = emptyList()
@@ -333,6 +377,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var trash by mutableStateOf<List<MediaItem>>(emptyList()); private set
 
     fun refreshTrash() {
+        if (demo) return
         viewModelScope.launch {
             trash = withContext(Dispatchers.IO) { runCatching { scanner.trashed() }.getOrDefault(emptyList()) }
         }
@@ -360,6 +405,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     // ------------------------------------------------------------------ contacts
 
     fun deleteDuplicateContacts() = run("Contacts en double") {
+        if (demo) { demoAttente("Contacts en double"); contacts = ContactsResult(642, emptyList()); say(Tr.t("✅ Doublons supprimés (démonstration)")); return@run }
         val r = contacts ?: return@run
         val ids = r.groups.flatMap { it.remove }
         if (ids.isEmpty()) return@run
@@ -375,6 +421,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     // ------------------------------------------------------------------ mails
 
     fun connectMail(p: Provider, host: String, email: String, password: String, onOk: () -> Unit) = run("Connexion à la messagerie") {
+        if (demo) { mailAccount = com.jmdargere.cleansmart.data.Demo.compte; onOk(); return@run }
         withContext(Dispatchers.IO) { mail.saveAndTest(p, host.ifBlank { p.host }, email, password) }
         mailAccount = withContext(Dispatchers.IO) { mail.account() }
         mailResult = null
@@ -389,6 +436,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun analyseMail() = run("Analyse de la boîte mail") {
+        if (demo) { demoAttente("Analyse de la boîte mail"); mailResult = com.jmdargere.cleansmart.data.Demo.mails(); return@run }
         mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress("Analyse de la boîte mail")) }
     }
 
@@ -403,6 +451,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var mailTrashSel by mutableStateOf(setOf<Long>()); private set
 
     fun loadMailTrash() = run("Corbeille de la messagerie") {
+        if (demo) {
+            mailTrash = listOf(com.jmdargere.cleansmart.data.TrashedMail(1, "Boutique Mode", "Soldes d'hiver", System.currentTimeMillis()),
+                com.jmdargere.cleansmart.data.TrashedMail(2, "Paul", "Photos du week-end", System.currentTimeMillis() - 86_400_000))
+            return@run
+        }
         mailTrash = withContext(Dispatchers.IO) { mail.listTrash() }
         mailTrashSel = emptySet()
     }
@@ -410,6 +463,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun toggleMailTrash(uid: Long) { mailTrashSel = if (uid in mailTrashSel) mailTrashSel - uid else mailTrashSel + uid }
 
     fun restoreMails() = run("Remettre des mails") {
+        if (demo) { mailTrash = mailTrash?.filter { it.uid !in mailTrashSel }; mailTrashSel = emptySet(); say(Tr.t("↩️ Mails remis (démonstration)")); return@run }
         val n = withContext(Dispatchers.IO) { mail.restore(mailTrashSel.toList()) }
         say("↩️ ${plural(n, "mail remis", "mails remis")} dans la boîte de réception")
         mailTrash = withContext(Dispatchers.IO) { mail.listTrash() }
@@ -428,7 +482,18 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     // ------------------------------------------------------------------ quitter Google Photos (export Takeout)
 
-    val google = com.jmdargere.cleansmart.data.GoogleExport(app)
+    /** Un suivi separe pour Google Photos et pour iCloud Photos. */
+    private val exports = com.jmdargere.cleansmart.data.SourceExport.entries.associateWith { com.jmdargere.cleansmart.data.GoogleExport(app, it) }
+    var google = exports.getValue(com.jmdargere.cleansmart.data.SourceExport.GOOGLE); private set
+    var gpSource by mutableStateOf(com.jmdargere.cleansmart.data.SourceExport.GOOGLE); private set
+
+    /** Choisit l'onglet : Google Photos ou iCloud Photos. */
+    fun gpUtiliser(s: com.jmdargere.cleansmart.data.SourceExport) {
+        google = exports.getValue(s); gpSource = s
+        gpTotal = google.total(); gpTaille = google.tailleGoogleGo; gpDest = google.nomDestination(); gpDestOk = google.destinationOk()
+        gpNb = google.nbFichiers; gpDemande = google.exportDemande; gpTermine = google.termine; gpEtats = google.etats(); gpDernier = null
+    }
+
     var gpTotal by mutableStateOf(google.total()); private set
     var gpTaille by mutableIntStateOf(google.tailleGoogleGo); private set
     var gpDest by mutableStateOf(google.nomDestination()); private set
@@ -453,17 +518,19 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var gpProbleme by mutableStateOf<String?>(null)
 
     /** Traite un fichier ZIP de l'export Google : rangement par annee, doublons, rafales, verification. */
-    fun gpTraiter(zip: android.net.Uri, onFini: (android.net.Uri) -> Unit) = run("Fichier Google Photos") {
+    fun gpTraiter(zip: android.net.Uri, onFini: (android.net.Uri) -> Unit) = run(Tr.t("Fichier %1", gpSource.nom)) {
+        if (demo) { say(Tr.t("En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.")); return@run }
         val pb = withContext(Dispatchers.IO) { google.verifierAvant(zip) }
         if (pb != null) { gpProbleme = pb; return@run }
         val nom = google.nomDe(zip)
-        upd("Fichier Google Photos", "Ouverture de $nom…", 0)
+        upd(Tr.t("Fichier %1", gpSource.nom), Tr.t("Ouverture de %1…", nom), 0)
         val s = withContext(Dispatchers.IO) { google.traiterZip(zip, progress(nom)) }
         gpDernier = nom to s
         gpTotal = google.total()
         gpEtats = google.etats()
         val num = google.numero(nom)
-        if (num > gpNb) gpSetNb(num)
+        val annonce = google.totalDansNom(nom)          // Apple : « Part 3 of 12 » -> 12 fichiers
+        if (maxOf(num, annonce) > gpNb) gpSetNb(maxOf(num, annonce))
         // notification : utile si le telephone est pose ou l'appli en arriere-plan
         Night.notify(ctx, 10,
             if (s.sansProbleme) "✅ Fichier ${if (num > 0) "%03d".format(num) else nom} terminé" else "⚠️ Fichier ${if (num > 0) "%03d".format(num) else nom} à reprendre",
@@ -495,6 +562,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         get() = mailResult?.senders?.filter { (it.newsletter || it.notif) && !it.important } ?: emptyList()
 
     fun mailGuideClean() = run("Ménage sûr de la boîte mail") {
+        if (demo) { demoAttente("Ménage sûr de la boîte mail"); mailGuideDone = mailGuideDone + 1; say(Tr.t("✨ 1 249 mails mis à la corbeille (démonstration)")); return@run }
         val r = mailResult ?: return@run
         upd("Ménage sûr de la boîte mail", "Newsletters et notifications…", 30)
         var n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.From(mailSafeSenders.map { it.email })) }
@@ -533,6 +601,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun mailSwipeApply() = run("Tri des expéditeurs") {
+        if (demo) { mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2; say(Tr.t("✨ Mails mis à la corbeille (démonstration)")); return@run }
         upd("Tri des expéditeurs", "Mise à la corbeille…", 40)
         val n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.From(mailSwipeTrash.map { it.email })) }
         mailSwipeTrash = emptyList()
@@ -543,6 +612,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Etape 3 : mettre a l'abri l'important (banque, administration, sante, factures) et tous les mails avec un PDF. */
     fun mailGuideSave() = run("Mettre à l'abri l'important") {
+        if (demo) { demoAttente("Mettre à l'abri l'important"); mailGuideDone = mailGuideDone + 3; say(Tr.t("✅ 312 mails importants à l'abri (démonstration)")); return@run }
         val tree = settings.backupTree
         if (!backup.isUsable(tree)) { say("Choisis d'abord un dossier de sauvegarde (Options)."); return@run }
         val r = mailResult ?: return@run
@@ -561,6 +631,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Etape 4 : liberer la boite (vieux mails, jamais les importants). */
     fun mailGuideFree() = run("Libérer la boîte mail") {
+        if (demo) { demoAttente("Libérer la boîte mail"); mailGuideDone = mailGuideDone + 4; say(Tr.t("✨ Vieux mails mis à la corbeille (démonstration)")); return@run }
         upd("Libérer la boîte mail", "Vieux mails vers la corbeille…", 50)
         val n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.Old(settings.oldMailYears)) }
         mailGuideDone = mailGuideDone + 4
@@ -574,6 +645,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var mailFilesSel by mutableStateOf(setOf<Long>()); private set
 
     fun findMailAttachments() = run("Mails avec pièces jointes") {
+        if (demo) {
+            mailFiles = listOf(com.jmdargere.cleansmart.data.MailWithFiles(1, "Électricité", "Votre facture", System.currentTimeMillis(), 300_000, listOf("facture.pdf")),
+                com.jmdargere.cleansmart.data.MailWithFiles(2, "Paul", "Photos du week-end", System.currentTimeMillis(), 8_000_000, listOf("plage.jpg", "repas.jpg")))
+            return@run
+        }
         mailFiles = withContext(Dispatchers.IO) { mail.listWithAttachments(3000, progress("Mails avec pièces jointes")) }
         mailFilesSel = emptySet()
     }
@@ -591,6 +667,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun saveSelectedMails() = run("Sauvegarde des mails") {
+        if (demo) { demoAttente("Sauvegarde des mails"); mailFilesSel = emptySet(); say(Tr.t("✅ Mails sauvegardés (démonstration)")); return@run }
         val tree = settings.backupTree
         if (!backup.isUsable(tree)) { say("Choisis d'abord un dossier de sauvegarde."); return@run }
         val uids = mailFilesSel.toList()
@@ -605,8 +682,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     // ------------------------------------------------------------------ sauvegarde & options
 
-    fun backupFolderLabel(): String = backup.folderLabel(settings.backupTree)
-    fun backupReady(): Boolean = backup.isUsable(settings.backupTree)
+    fun backupFolderLabel(): String = if (demo) Tr.t("Clé USB (démonstration)") else backup.folderLabel(settings.backupTree)
+    fun backupReady(): Boolean = demo || backup.isUsable(settings.backupTree)
 
     /**
      * Sauvegarde INTELLIGENTE : seulement les bonnes photos. Les doublons en trop, les rafales en trop,
@@ -614,6 +691,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
      * Les favoris vont en plus dans « Mes meilleures ».
      */
     fun backupEverything() = run("Sauvegarde de mes bonnes photos") {
+        if (demo) { demoAttente("Sauvegarde de mes bonnes photos"); guideDone = guideDone + 3; say(Tr.t("✅ 7 958 bonnes photos sauvegardées (démonstration)")); return@run }
         val tree = settings.backupTree
         if (!backup.isUsable(tree)) { say("Choisis d'abord un dossier de sauvegarde (Options)."); return@run }
         if (media == null) {
@@ -697,6 +775,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var freeCandidates by mutableStateOf<List<MediaItem>?>(null); private set
 
     fun findFreeSpace() = run("Libérer la place") {
+        if (demo) { demoAttente("Libérer la place"); guideDone = guideDone + 4; addFreed(6_400_000_000); say(Tr.t("✨ 6,4 Go libérés (démonstration)")); return@run }
         val tree = settings.backupTree
         if (!backup.isUsable(tree)) { say("Choisis d'abord un dossier de sauvegarde et fais une sauvegarde."); return@run }
         val limit = System.currentTimeMillis() - settings.keepMonths * 30L * 24 * 3600 * 1000
@@ -719,6 +798,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     // ------------------------------------------------------------------ PDF souvenir
 
     fun makeSouvenir(periode: Int, onDone: (android.net.Uri) -> Unit) = run("PDF souvenir") {
+        if (demo) { demoAttente("PDF souvenir"); say(Tr.t("📕 PDF souvenir créé (démonstration)")); return@run }
         upd("PDF souvenir", "Choix des plus belles photos…", 20)
         val uri = withContext(Dispatchers.IO) { Souvenir.make(ctx, periode, settings) }
         if (uri == null) say("Pas de photos pour cette période.") else { say("📕 PDF enregistré dans Téléchargements / Clean Smart"); onDone(uri) }
@@ -728,6 +808,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Compresse les videos choisies en 720p, puis propose les originaux a la corbeille. */
     fun compressVideos(items: List<MediaItem>, onOriginals: (List<MediaItem>, Long) -> Unit) = run("Compression des vidéos") {
+        if (demo) { demoAttente("Compression des vidéos"); val v = items.filter { it.video }; onOriginals(v, (v.sumOf { it.size } * 0.75).toLong()); return@run }
         val done = ArrayList<MediaItem>()
         var gain = 0L
         items.filter { it.video }.forEachIndexed { i, v ->

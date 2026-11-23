@@ -67,6 +67,7 @@ import androidx.core.content.ContextCompat
 import com.jmdargere.cleansmart.AppViewModel
 import com.jmdargere.cleansmart.BuildConfig
 import com.jmdargere.cleansmart.Cat
+import com.jmdargere.cleansmart.Tr
 import com.jmdargere.cleansmart.data.Essai
 import com.jmdargere.cleansmart.data.Provider
 import com.jmdargere.cleansmart.data.fmtBytes
@@ -117,6 +118,9 @@ fun CleanSmartApp(vm: AppViewModel) {
         if (ecran != Ecran.TRI) depuisGuide = false
     }
     BackHandler(enabled = ecran != Ecran.ACCUEIL) { retour() }
+
+    // bouton « Menage » du widget : on ouvre directement le Menage guide
+    LaunchedEffect(vm.ouvrirGuide) { if (vm.ouvrirGuide) { ecran = Ecran.GUIDE; vm.ouvrirGuide = false } }
 
     LaunchedEffect(vm.message) {
         vm.message?.let { snack.showSnackbar(it); vm.message = null }
@@ -255,7 +259,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                     Text(when (ecran) {
                         Ecran.ACCUEIL -> "CLEAN SMART"
                         Ecran.GUIDE -> "🧭 Ménage guidé"
-                        Ecran.GOOGLE -> "📦 Quitter Google Photos"
+                        Ecran.GOOGLE -> if (vm.gpSource == com.jmdargere.cleansmart.data.SourceExport.GOOGLE) "📦 Quitter Google Photos" else "🍏 Quitter iCloud Photos"
                         Ecran.CATEGORIE -> cat.emoji + " " + cat.title
                         Ecran.TRI -> "👆 Tri rapide"
                         Ecran.MAILS -> "✉️ Mails"
@@ -288,7 +292,8 @@ fun CleanSmartApp(vm: AppViewModel) {
                 Ecran.ACCUEIL -> Accueil(vm, ::analyser, joursEssai, ::viderCorbeille, ::annuler, ::souvenir,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
                     openGuide = { ecran = Ecran.GUIDE },
-                    openGoogle = { ecran = Ecran.GOOGLE },
+                    openGoogle = { vm.gpUtiliser(com.jmdargere.cleansmart.data.SourceExport.GOOGLE); ecran = Ecran.GOOGLE },
+                    openIcloud = { vm.gpUtiliser(com.jmdargere.cleansmart.data.SourceExport.ICLOUD); ecran = Ecran.GOOGLE },
                     openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
@@ -351,6 +356,7 @@ private fun Accueil(
     openCat: (Cat) -> Unit,
     openGuide: () -> Unit,
     openGoogle: () -> Unit,
+    openIcloud: () -> Unit,
     openTri: () -> Unit,
     openMail: () -> Unit,
     openManual: () -> Unit,
@@ -359,6 +365,14 @@ private fun Accueil(
 ) {
     val m = vm.media
     LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp)) {
+        if (vm.demo) item {
+            Row(Modifier.fillMaxWidth().padding(vertical = 4.dp).background(Pourpre, RoundedCornerShape(14.dp)).padding(12.dp),
+                verticalAlignment = Alignment.CenterVertically) {
+                Text(Tr.t("🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone"), color = Color.White,
+                    fontWeight = FontWeight.Bold, fontSize = 13.sp, modifier = Modifier.weight(1f))
+                TextButton(onClick = { vm.setDemo(false) }) { Text(Tr.t("Quitter"), color = Color.White, fontWeight = FontWeight.Black) }
+            }
+        }
         vm.nouvelleVersion?.let { v ->
             item {
                 val c = LocalContext.current
@@ -408,8 +422,10 @@ private fun Accueil(
                 "4 étapes", "CONSEILLÉ", Vert, Modifier.fillMaxWidth(), onClick = openGuide)
             Gap(10)
             CatTile("📦", "Quitter Google Photos", "Toutes tes photos sur une clé ou un disque, par année, sans doublon",
-                if (vm.gpTotal.octets > 0) "${(vm.gpAvancement * 100).toInt()} % déjà à l'abri" else "pas à pas", "", Rouge,
-                Modifier.fillMaxWidth(), onClick = openGoogle)
+                "pas à pas", "", Rouge, Modifier.fillMaxWidth(), onClick = openGoogle)
+            Gap(10)
+            CatTile("🍏", "Quitter iCloud Photos", "Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon",
+                "pas à pas", "", Color(0xFF37474F), Modifier.fillMaxWidth(), onClick = openIcloud)
             Gap()
             BigButton(if (m == null) "🔍 Analyser mon téléphone" else "🔄 Analyser à nouveau", color = Bleu, onClick = analyser)
             Gap()
@@ -1094,6 +1110,9 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                 InfoRow("🎉", "Espace libéré", "Depuis l'installation", fmtBytes(vm.freed))
                 TextButton(onClick = { vm.resetFreed() }) { Text("Remettre le compteur à zéro", color = Gris) }
                 InfoRow("📖", "Mode d'emploi", "Français / English", onClick = openManual)
+                OptionSwitch("🎬 Démonstration",
+                    "Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.",
+                    vm.demo) { vm.setDemo(it) }
                 InfoRow("🆕", "Rechercher une mise à jour", "Version installée : ${BuildConfig.VERSION_NAME}",
                     onClick = { vm.verifierMiseAJour(true) })
                 InfoRow("⚙️", "Réglages de stockage Android", "", onClick = {

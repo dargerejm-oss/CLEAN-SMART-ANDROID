@@ -307,13 +307,15 @@ object Thumbs {
     fun cached(key: String): ImageBitmap? = cache.get(key)
     suspend fun load(ctx: Context, item: MediaItem): ImageBitmap? = withContext(Dispatchers.IO) {
         runCatching {
-            ctx.contentResolver.loadThumbnail(item.uri, Size(240, 240), null).asImageBitmap()
+            (if (com.jmdargere.cleansmart.data.Demo.estDemo(item.uri)) com.jmdargere.cleansmart.data.Demo.image(item.key, 240)
+            else ctx.contentResolver.loadThumbnail(item.uri, Size(240, 240), null)).asImageBitmap()
                 .also { cache.put(item.key, it) }
         }.getOrNull()
     }
 }
 
 fun openInGallery(ctx: Context, item: MediaItem) {
+    if (com.jmdargere.cleansmart.data.Demo.estDemo(item.uri)) return
     runCatching {
         ctx.startActivity(Intent(Intent.ACTION_VIEW, item.uri).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION))
     }

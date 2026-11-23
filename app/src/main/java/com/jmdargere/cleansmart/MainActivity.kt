@@ -1,5 +1,6 @@
 package com.jmdargere.cleansmart
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
@@ -22,6 +23,7 @@ class MainActivity : ComponentActivity() {
             navigationBarStyle = SystemBarStyle.light(android.graphics.Color.TRANSPARENT, android.graphics.Color.TRANSPARENT),
         )
         super.onCreate(savedInstanceState)
+        lireWidget(intent)
         setContent {
             CleanSmartTheme {
                 // option "Gros caracteres" : agrandit tous les textes de l'appli
@@ -33,8 +35,19 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    /** Le bouton « Menage » du widget ouvre directement le Menage guide. */
+    private fun lireWidget(i: Intent?) {
+        if (i?.getBooleanExtra(Widget.OUVRIR_GUIDE, false) == true) vm.ouvrirGuide = true
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        lireWidget(intent)
+    }
+
     override fun onResume() {
         super.onResume()
         vm.refreshStorage()
+        Widget.rafraichir(this)
     }
 }

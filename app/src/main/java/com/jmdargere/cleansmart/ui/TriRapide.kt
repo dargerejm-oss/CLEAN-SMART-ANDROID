@@ -118,7 +118,10 @@ private fun SwipeCard(item: MediaItem, onDecide: (Boolean) -> Unit) {
     val offset = remember(item.key) { Animatable(0f) }
     val bmp by produceState<ImageBitmap?>(null, item.key) {
         value = withContext(Dispatchers.IO) {
-            runCatching { ctx.contentResolver.loadThumbnail(item.uri, Size(1080, 1080), null).asImageBitmap() }.getOrNull()
+            runCatching {
+                (if (com.jmdargere.cleansmart.data.Demo.estDemo(item.uri)) com.jmdargere.cleansmart.data.Demo.image(item.key, 900)
+                else ctx.contentResolver.loadThumbnail(item.uri, Size(1080, 1080), null)).asImageBitmap()
+            }.getOrNull()
         }
     }
     val limit = 280f
