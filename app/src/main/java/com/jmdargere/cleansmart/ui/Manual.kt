@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.ui
 
+import com.jmdargere.cleansmart.Tr
+
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Color as AColor
@@ -45,26 +47,26 @@ import java.util.Locale
 @Composable
 fun Manual() {
     val ctx = LocalContext.current
-    var lang by rememberSaveable { mutableStateOf(if (Locale.getDefault().language == "fr") "fr" else "en") }
+    var lang by rememberSaveable { mutableStateOf(if (com.jmdargere.cleansmart.Tr.anglais) "en" else "fr") }
     var pages by remember(lang) { mutableStateOf<List<ImageBitmap>>(emptyList()) }
     var error by remember(lang) { mutableStateOf(false) }
 
     LaunchedEffect(lang) {
-        val res = withContext(Dispatchers.IO) { runCatching { render(ctx, "manuel_$lang.pdf") }.getOrNull() }
+        val res = withContext(Dispatchers.IO) { runCatching { render(ctx, "manuel_${lang}.pdf") }.getOrNull() }
         if (res == null) error = true else pages = res
     }
 
     LazyColumn(contentPadding = PaddingValues(12.dp, 4.dp, 12.dp, 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
-                listOf("fr" to "🇫🇷 Français", "en" to "🇬🇧 English").forEach { (code, label) ->
+                listOf("fr" to Tr.t("🇫🇷 Français"), "en" to Tr.t("🇬🇧 English")).forEach { (code, label) ->
                     FilterChip(selected = lang == code, onClick = { lang = code }, label = { Text(label) },
                         modifier = Modifier.padding(horizontal = 6.dp),
                         colors = FilterChipDefaults.filterChipColors(selectedContainerColor = Violet, selectedLabelColor = Color.White))
                 }
             }
         }
-        if (error) item { Text("Mode d'emploi introuvable.", color = Gris, modifier = Modifier.padding(24.dp)) }
+        if (error) item { Text(Tr.t("Mode d'emploi introuvable."), color = Gris, modifier = Modifier.padding(24.dp)) }
         itemsIndexed(pages) { _, p ->
             Column {
                 Image(p, null, contentScale = ContentScale.FillWidth,

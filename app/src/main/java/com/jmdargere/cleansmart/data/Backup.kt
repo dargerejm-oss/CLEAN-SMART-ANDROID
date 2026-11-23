@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.data
 
+import com.jmdargere.cleansmart.Tr
+
 import android.content.Context
 import android.net.Uri
 import android.provider.ContactsContract
@@ -57,7 +59,7 @@ class Backup(private val ctx: Context) {
     private val cr = ctx.contentResolver
 
     fun folderLabel(tree: Uri?): String {
-        if (tree == null) return "Aucun dossier choisi"
+        if (tree == null) return Tr.t("Aucun dossier choisi")
         val d = DocumentFile.fromTreeUri(ctx, tree)
         return d?.name ?: tree.lastPathSegment ?: "Dossier choisi"
     }
@@ -67,11 +69,11 @@ class Backup(private val ctx: Context) {
 
     private fun dir(parent: DocumentFile, name: String): DocumentFile =
         parent.findFile(name)?.takeIf { it.isDirectory } ?: parent.createDirectory(name)
-        ?: throw IllegalStateException("Impossible de créer le dossier $name")
+        ?: throw IllegalStateException(Tr.t("Impossible de créer le dossier %1", name))
 
     private fun root(tree: Uri): DocumentFile {
-        val t = DocumentFile.fromTreeUri(ctx, tree) ?: throw IllegalStateException("Dossier de sauvegarde introuvable.")
-        if (!t.canWrite()) throw IllegalStateException("Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.")
+        val t = DocumentFile.fromTreeUri(ctx, tree) ?: throw IllegalStateException(Tr.t("Dossier de sauvegarde introuvable."))
+        if (!t.canWrite()) throw IllegalStateException(Tr.t("Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau."))
         return dir(t, "CleanSmart")
     }
 
@@ -93,7 +95,7 @@ class Backup(private val ctx: Context) {
             val (folder, content) = known.getOrPut(m) { dir(photos, m).let { f -> f to listing(f) } }
             if (copyIfNeeded(folder, content, it)) copied++
             if (it.favorite) copyIfNeeded(best.first, best.second, it)
-            progress("Sauvegarde ${i + 1} / ${items.size}", 100 * (i + 1) / items.size.coerceAtLeast(1))
+            progress(Tr.t("Sauvegarde %1 / %2", i + 1, items.size), 100 * (i + 1) / items.size.coerceAtLeast(1))
         }
         return copied
     }
@@ -111,7 +113,7 @@ class Backup(private val ctx: Context) {
         try {
             cr.openInputStream(it.uri).use { input ->
                 cr.openOutputStream(dest.uri).use { out ->
-                    if (input == null || out == null) throw IllegalStateException("Lecture impossible : ${it.name}")
+                    if (input == null || out == null) throw IllegalStateException(Tr.t("Lecture impossible : %1", it.name))
                     input.copyTo(out, 1 shl 20)
                 }
             }
@@ -133,7 +135,7 @@ class Backup(private val ctx: Context) {
         val month = SimpleDateFormat("yyyy-MM", Locale.FRANCE)
         val known = HashMap<String, Map<String, Long>>()
         return items.filterIndexed { i, it ->
-            if (i % 200 == 0) progress("Vérification de la sauvegarde", 100 * i / items.size.coerceAtLeast(1))
+            if (i % 200 == 0) progress(Tr.t("Vérification de la sauvegarde"), 100 * i / items.size.coerceAtLeast(1))
             val m = month.format(Date(if (it.date > 0) it.date else 0L))
             val content = known.getOrPut(m) {
                 photos.findFile(m)?.listFiles()?.associate { f -> (f.name ?: "") to f.length() } ?: emptyMap()
@@ -160,7 +162,7 @@ class Backup(private val ctx: Context) {
         val mails = dir(dir(r, "Mails"), month)
         val emlName = "${day}_" + clean(msg.subject ?: "sans objet").take(60) + ".eml"
         if (mails.findFile(emlName) == null) {
-            val f = mails.createFile("message/rfc822", emlName) ?: throw IllegalStateException("Impossible d'écrire $emlName")
+            val f = mails.createFile("message/rfc822", emlName) ?: throw IllegalStateException("Impossible d'écrire ${emlName}")
             cr.openOutputStream(f.uri)?.use { msg.writeTo(it) }
         }
 
@@ -176,14 +178,14 @@ class Backup(private val ctx: Context) {
                 val folder = if (isPdf) pdfDir else otherDir
                 if (folder.findFile(name) == null) {
                     val mime = if (isPdf) "application/pdf" else "application/octet-stream"
-                    val f = folder.createFile(mime, name) ?: throw IllegalStateException("Impossible d'écrire $name")
+                    val f = folder.createFile(mime, name) ?: throw IllegalStateException("Impossible d'écrire ${name}")
                     cr.openOutputStream(f.uri)?.use { out -> p.inputStream.use { it.copyTo(out) } }
                 }
                 files += (if (isPdf) "../PDF/" else "../Pieces jointes/") + name
                 if (isPdf) pdf++
             }
         }
-        return SavedMail(date.time, from, msg.subject ?: "", "$month/$emlName", files, pdf)
+        return SavedMail(date.time, from, msg.subject ?: "", "${month}/${emlName}", files, pdf)
     }
 
     /**
@@ -224,9 +226,9 @@ class Backup(private val ctx: Context) {
         if (lookupKeys.isEmpty()) return null
         val folder = dir(root(tree), "Contacts")
         val name = "contacts_" + SimpleDateFormat("yyyy-MM-dd_HHmm", Locale.FRANCE).format(Date()) + ".vcf"
-        val dest = folder.createFile("text/x-vcard", name) ?: throw IllegalStateException("Impossible d'écrire $name")
+        val dest = folder.createFile("text/x-vcard", name) ?: throw IllegalStateException("Impossible d'écrire ${name}")
         cr.openOutputStream(dest.uri).use { out ->
-            if (out == null) throw IllegalStateException("Écriture impossible")
+            if (out == null) throw IllegalStateException(Tr.t("Écriture impossible"))
             lookupKeys.chunked(100).forEach { part ->
                 val uri = Uri.withAppendedPath(ContactsContract.Contacts.CONTENT_MULTI_VCARD_URI, Uri.encode(part.joinToString(":")))
                 cr.openInputStream(uri)?.use { it.copyTo(out) }

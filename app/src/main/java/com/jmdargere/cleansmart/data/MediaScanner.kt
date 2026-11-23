@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.data
 
+import com.jmdargere.cleansmart.Tr
+
 import android.content.ContentResolver
 import android.content.ContentUris
 import android.content.Context
@@ -57,10 +59,10 @@ class MediaScanner(ctx: Context) {
     private val cr: ContentResolver = ctx.contentResolver
 
     fun scan(s: Settings, progress: (String, Int) -> Unit): MediaResult {
-        progress("Lecture de la galerie", 2)
+        progress(Tr.t("Lecture de la galerie"), 2)
         val all = ArrayList<MediaItem>()
         load(MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL), false, all)
-        progress("Lecture des vidéos", 8)
+        progress(Tr.t("Lecture des vidéos"), 8)
         load(MediaStore.Video.Media.getContentUri(MediaStore.VOLUME_EXTERNAL), true, all)
 
         // Les favoris ne sont jamais proposes si l'option est active
@@ -73,7 +75,7 @@ class MediaScanner(ctx: Context) {
         val bigVideos = candidates.filter { it.video && it.size >= bigLimit }.sortedByDescending { it.size }
 
         // --- Doublons exacts : meme taille, puis meme empreinte de contenu ---
-        progress("Recherche des doublons", 15)
+        progress(Tr.t("Recherche des doublons"), 15)
         val bySize = all.filter { it.size > 0 }.groupBy { it.size }.values.filter { it.size > 1 }
         val duplicates = ArrayList<MediaGroup>()
         val dupRemovable = HashSet<String>()
@@ -90,11 +92,11 @@ class MediaScanner(ctx: Context) {
                         removable.forEach { dupRemovable += it.key }
                     }
                 }
-            if (i % 20 == 0) progress("Recherche des doublons", 15 + 20 * i / bySize.size.coerceAtLeast(1))
+            if (i % 20 == 0) progress(Tr.t("Recherche des doublons"), 15 + 20 * i / bySize.size.coerceAtLeast(1))
         }
 
         // --- Photos similaires : rafales (quelques secondes d'ecart) qui se ressemblent ---
-        progress("Recherche des photos similaires", 35)
+        progress(Tr.t("Recherche des photos similaires"), 35)
         val screenKeys = screens.map { it.key }.toHashSet()
         val photos = all.filter { !it.video && it.key !in screenKeys && it.key !in dupRemovable }.sortedBy { it.date }
         val burstMs = s.burstSeconds * 1000L
@@ -111,7 +113,7 @@ class MediaScanner(ctx: Context) {
 
         val similar = ArrayList<MediaGroup>()
         bursts.forEachIndexed { bi, burst ->
-            if (bi % 5 == 0) progress("Recherche des photos similaires", 35 + 20 * bi / bursts.size.coerceAtLeast(1))
+            if (bi % 5 == 0) progress(Tr.t("Recherche des photos similaires"), 35 + 20 * bi / bursts.size.coerceAtLeast(1))
             val sig = HashMap<String, LongArray>()
             burst.forEach { item -> signature(item)?.let { sig[item.key] = it } }
             val groups = ArrayList<MutableList<MediaItem>>()
@@ -133,12 +135,12 @@ class MediaScanner(ctx: Context) {
         }
 
         // --- Photos floues ou ratees (trop sombres / trop claires) ---
-        progress("Recherche des photos floues", 55)
+        progress(Tr.t("Recherche des photos floues"), 55)
         val blurry = findBlurry(
             candidates.filter { !it.video && it.key !in screenKeys && it.key !in dupRemovable }, s,
-        ) { pct -> progress("Recherche des photos floues", 55 + 43 * pct / 100) }
+        ) { pct -> progress(Tr.t("Recherche des photos floues"), 55 + 43 * pct / 100) }
 
-        progress("Terminé", 100)
+        progress(Tr.t("Terminé"), 100)
         return MediaResult(
             photoCount = all.count { !it.video },
             photoBytes = all.filter { !it.video }.sumOf { it.size },

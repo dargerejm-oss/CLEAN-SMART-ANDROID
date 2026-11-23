@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.ui
 
+import com.jmdargere.cleansmart.Tr
+
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -107,9 +109,9 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
         if (uri == null) return@rememberLauncherForActivityResult
         val num = vm.google.numero(vm.google.nomDe(uri))
         if (num > 0 && vm.gpEtats[num] == EtatZip.OK) {
-            ask(Confirm("Fichier ${"%03d".format(num)} déjà fait",
-                "Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (${"%03d".format(num + 1)}).",
-                "Le refaire quand même", danger = false) { vm.gpTraiter(uri) { zipFini = it } })
+            ask(Confirm(Tr.t("Fichier %1 déjà fait", "%03d".format(num)),
+                Tr.t("Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).", "%03d".format(num + 1)),
+                Tr.t("Le refaire quand même"), danger = false) { vm.gpTraiter(uri) { zipFini = it } })
         } else vm.gpTraiter(uri) { zipFini = it }
     }
     fun choisirZip() {
@@ -117,16 +119,16 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
         val niveau = bm?.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY) ?: 100
         val charge = bm?.isCharging ?: true
         val lancer = { zipLauncher.launch(arrayOf("application/zip", "application/x-zip-compressed", "application/octet-stream")) }
-        if (niveau < 30 && !charge) ask(Confirm("Batterie faible ($niveau %)",
-            "Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.",
-            "Continuer quand même", danger = false) { lancer() })
+        if (niveau < 30 && !charge) ask(Confirm(Tr.t("Batterie faible (%1 %)", niveau),
+            Tr.t("Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier."),
+            Tr.t("Continuer quand même"), danger = false) { lancer() })
         else lancer()
     }
     fun ouvrir(url: String) { runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) } }
 
     // Google Photos ou iCloud Photos : memes etapes, textes et liens differents
     val g = vm.gpSource == com.jmdargere.cleansmart.data.SourceExport.GOOGLE
-    val qui = if (g) "Google" else "Apple"
+    val qui = if (g) Tr.t("Google") else Tr.t("Apple")
 
     // ----- ou en est-on ?
     val faites = setOfNotNull(
@@ -140,7 +142,7 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
 
     LazyColumn(contentPadding = PaddingValues(16.dp, 10.dp, 16.dp, 28.dp)) {
         item {
-            Circuit(phase = when { maintenant <= 3 -> 0; maintenant == 4 -> 1; else -> 2 }, origine = if (g) "Google" else "iCloud")
+            Circuit(phase = when { maintenant <= 3 -> 0; maintenant == 4 -> 1; else -> 2 }, origine = if (g) Tr.t("Google") else "iCloud")
             Gap(8)
             // la jauge
             Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Carte),
@@ -149,49 +151,49 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                     Row(verticalAlignment = Alignment.Bottom) {
                         Text("${(vm.gpAvancement * 100).toInt()} %", fontSize = 34.sp, fontWeight = FontWeight.Black, color = Vert)
                         Spacer(Modifier.width(10.dp))
-                        Text("de ta photothèque est à l'abri", color = Gris, fontSize = 14.sp, modifier = Modifier.padding(bottom = 6.dp))
+                        Text(Tr.t("de ta photothèque est à l'abri"), color = Gris, fontSize = 14.sp, modifier = Modifier.padding(bottom = 6.dp))
                     }
                     LinearProgressIndicator(progress = { vm.gpAvancement }, color = Vert, trackColor = Carte2,
                         modifier = Modifier.fillMaxWidth().height(14.dp).clip(RoundedCornerShape(99.dp)))
                     Gap(6)
                     val t = vm.gpTotal
-                    Text("${fmtBytes(t.octets)}${if (vm.gpTaille > 0) " sur environ ${vm.gpTaille} Go" else ""} · " +
-                            "${fmtNum(t.photos)} photos · ${fmtNum(t.videos)} vidéos · ${fmtNum(t.doublons + t.rafales)} doublons et rafales écartés",
+                    Text("${fmtBytes(t.octets)}${if (vm.gpTaille > 0) Tr.t(" sur environ ${fmtBytes(t.octets)} Go", vm.gpTaille) else ""} · " +
+                            Tr.t("%1 photos · %2 vidéos · %3 doublons et rafales écartés", fmtNum(t.photos), fmtNum(t.videos), fmtNum(t.doublons + t.rafales)),
                         color = Gris, fontSize = 12.sp)
                 }
             }
             Gap(12)
 
             // ---------------------------------------------------------------- 1. la place
-            EtapeGP(1, "📏", "Combien de place faut-il ?",
-                if (vm.gpTaille > 0) "${vm.gpTaille} Go · prévois ${fmtBytes(vm.google.placeNecessaire())}" else "Regarder la taille de ${vm.gpSource.nom}",
+            EtapeGP(1, "📏", Tr.t("Combien de place faut-il ?"),
+                if (vm.gpTaille > 0) Tr.t("%1 Go · prévois %2", vm.gpTaille, fmtBytes(vm.google.placeNecessaire())) else Tr.t("Regarder la taille de %1", vm.gpSource.nom),
                 faites, maintenant, affichee, { ouverte = if (affichee == 1) -1 else 1 }) {
                 if (g) {
-                    Txt("Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).")
-                    BigButton("Voir ma place Google", color = Bleu) { ouvrir("https://one.google.com/storage") }
+                    Txt(Tr.t("Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go)."))
+                    BigButton(Tr.t("Voir ma place Google"), color = Bleu) { ouvrir("https://one.google.com/storage") }
                 } else {
-                    Txt("Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).")
-                    BigButton("Voir ma place iCloud", color = Bleu) { ouvrir("https://www.icloud.com/settings/") }
+                    Txt(Tr.t("Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go)."))
+                    BigButton(Tr.t("Voir ma place iCloud"), color = Bleu) { ouvrir("https://www.icloud.com/settings/") }
                 }
                 Gap(8)
                 var saisie by rememberSaveable(vm.gpSource) { mutableStateOf(if (vm.gpTaille > 0) vm.gpTaille.toString() else "") }
                 OutlinedTextField(saisie, { saisie = it.filter { c -> c.isDigit() }.take(5) },
-                    label = { Text("Taille de ${vm.gpSource.nom} (Go)") }, singleLine = true,
+                    label = { Text(Tr.t("Taille de %1 (Go)", vm.gpSource.nom)) }, singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number), modifier = Modifier.fillMaxWidth())
                 saisie.toIntOrNull()?.takeIf { it > 0 }?.let { go ->
                     Gap(6)
-                    Encadre("Prévois au moins ${fmtBytes((go * 1.1 * (1L shl 30)).toLong())} sur la clé ou le disque (10 % de marge). " +
-                            "Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : ${fmtBytes(vm.google.libreTelephone())}.", Bleu)
-                    BoutonVert("C'est noté") { vm.gpSetTaille(go); ouverte = 0 }
+                    Encadre(Tr.t("Prévois au moins %1 sur la clé ou le disque (10 % de marge). ", fmtBytes((go * 1.1 * (1L shl 30)).toLong())) +
+                            Tr.t("Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.", fmtBytes(vm.google.libreTelephone())), Bleu)
+                    BoutonVert(Tr.t("C'est noté")) { vm.gpSetTaille(go); ouverte = 0 }
                 }
             }
 
             // ---------------------------------------------------------------- 2. le disque
-            EtapeGP(2, "💾", "Brancher la clé ou le disque",
+            EtapeGP(2, "💾", Tr.t("Brancher la clé ou le disque"),
                 if (vm.gpDestOk) "${vm.gpDest} · ${vm.google.libreDestination()?.let { fmtBytes(it) + " libres" } ?: ""}"
-                else "Clé USB ou disque dur, avec un adaptateur USB-C",
+                else Tr.t("Clé USB ou disque dur, avec un adaptateur USB-C"),
                 faites, maintenant, affichee, { ouverte = if (affichee == 2) -1 else 2 }) {
-                Txt("Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.")
+                Txt(Tr.t("Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus."))
                 val disques = remember(vm.gpDest, affichee) { vm.google.disques() }
                 disques.forEach { d ->
                     Row(Modifier.fillMaxWidth().padding(vertical = 4.dp).background(Carte2, RoundedCornerShape(12.dp)).padding(10.dp),
@@ -199,48 +201,48 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                         Text(if (d.amovible) "💾" else "📱", fontSize = 22.sp); Spacer(Modifier.width(10.dp))
                         Column(Modifier.weight(1f)) {
                             Text(d.nom, fontWeight = FontWeight.Bold, color = Texte)
-                            Text("${fmtBytes(d.libre)} libres sur ${fmtBytes(d.total)}", color = Gris, fontSize = 12.sp)
+                            Text(Tr.t("%1 libres sur %2", fmtBytes(d.libre), fmtBytes(d.total)), color = Gris, fontSize = 12.sp)
                         }
                     }
                 }
-                if (disques.none { it.amovible }) Encadre("Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.", Orange)
+                if (disques.none { it.amovible }) Encadre(Tr.t("Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape."), Orange)
                 val libre = vm.google.libreDestination()
                 val besoin = vm.google.placeNecessaire()
                 if (vm.gpDestOk && libre != null && besoin > 0) {
-                    if (libre >= besoin) Encadre("✅ Assez de place sur « ${vm.gpDest} ».", Vert)
-                    else Encadre("⚠️ Il faut environ ${fmtBytes(besoin)}, il reste ${fmtBytes(libre)}. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.", Orange)
+                    if (libre >= besoin) Encadre(Tr.t("✅ Assez de place sur « %1 ».", vm.gpDest), Vert)
+                    else Encadre(Tr.t("⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.", fmtBytes(besoin), fmtBytes(libre)), Orange)
                 }
-                BoutonVert(if (vm.gpDestOk) "Changer de dossier" else "Choisir le dossier sur le disque") { destLauncher.launch(null) }
+                BoutonVert(if (vm.gpDestOk) Tr.t("Changer de dossier") else Tr.t("Choisir le dossier sur le disque")) { destLauncher.launch(null) }
             }
 
             // ---------------------------------------------------------------- 3. demander l'export
-            EtapeGP(3, "📨", "Demander la copie à $qui",
-                if (vm.gpDemande) "Demandée · attends le mail de $qui" else if (g) "Sur Google Takeout, en 1 minute" else "Sur privacy.apple.com, en 2 minutes",
+            EtapeGP(3, "📨", Tr.t("Demander la copie à %1", qui),
+                if (vm.gpDemande) Tr.t("Demandée · attends le mail de %1", qui) else if (g) Tr.t("Sur Google Takeout, en 1 minute") else Tr.t("Sur privacy.apple.com, en 2 minutes"),
                 faites, maintenant, affichee, { ouverte = if (affichee == 3) -1 else 3 }) {
-                Txt("$qui prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :")
+                Txt(Tr.t("%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :", qui))
                 if (g) {
                     TakeoutModele()
-                    BigButton("Ouvrir Google Takeout", color = Orange) { ouvrir("https://takeout.google.com/") }
-                    Encadre("Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.", Bleu)
+                    BigButton(Tr.t("Ouvrir Google Takeout"), color = Orange) { ouvrir("https://takeout.google.com/") }
+                    Encadre(Tr.t("Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant."), Bleu)
                 } else {
                     AppleModele()
-                    BigButton("Ouvrir privacy.apple.com", color = Orange) { ouvrir("https://privacy.apple.com/") }
-                    Encadre("Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).", Bleu)
+                    BigButton(Tr.t("Ouvrir privacy.apple.com"), color = Orange) { ouvrir("https://privacy.apple.com/") }
+                    Encadre(Tr.t("Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone)."), Bleu)
                 }
-                BoutonVert("J'ai demandé la copie") { vm.gpSetDemande(true); ouverte = 0 }
+                BoutonVert(Tr.t("J'ai demandé la copie")) { vm.gpSetDemande(true); ouverte = 0 }
             }
 
             // ---------------------------------------------------------------- 4. les fichiers un par un
-            EtapeGP(4, "⚙️", "Copier les fichiers un par un",
-                if (vm.gpTermine) "${plural(vm.gpEtats.count { it.value == EtatZip.OK }, "fichier copié et vérifié", "fichiers copiés et vérifiés")}"
-                else if (vm.gpNb > 0) "${vm.gpEtats.count { it.value == EtatZip.OK }} sur ${vm.gpNb} fichiers faits" else "Quand le mail de $qui est arrivé",
+            EtapeGP(4, "⚙️", Tr.t("Copier les fichiers un par un"),
+                if (vm.gpTermine) "${plural(vm.gpEtats.count { it.value == EtatZip.OK }, Tr.t("fichier copié et vérifié"), Tr.t("fichiers copiés et vérifiés"))}"
+                else if (vm.gpNb > 0) Tr.t("%1 sur %2 fichiers faits", vm.gpEtats.count { it.value == EtatZip.OK }, vm.gpNb) else Tr.t("Quand le mail de %1 est arrivé", qui),
                 faites, maintenant, affichee, { ouverte = if (affichee == 4) -1 else 4 }) {
                 // combien de fichiers ?
                 var nb by rememberSaveable(vm.gpSource) { mutableStateOf(if (vm.gpNb > 0) vm.gpNb.toString() else "") }
-                Txt(if (g) "Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers."
-                    else "Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.")
+                Txt(if (g) Tr.t("Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.")
+                    else Tr.t("Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul."))
                 OutlinedTextField(nb, { nb = it.filter { c -> c.isDigit() }.take(3); nb.toIntOrNull()?.let(vm::gpSetNb) },
-                    label = { Text("Nombre de fichiers dans le mail") }, singleLine = true,
+                    label = { Text(Tr.t("Nombre de fichiers dans le mail")) }, singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number), modifier = Modifier.fillMaxWidth())
                 Gap(8)
                 // la liste des fichiers
@@ -252,10 +254,10 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                             Row(Modifier.fillMaxWidth().padding(vertical = 3.dp), verticalAlignment = Alignment.CenterVertically) {
                                 Text("%03d".format(i), fontWeight = FontWeight.Black, color = Texte, modifier = Modifier.width(44.dp))
                                 Text(when {
-                                    e == EtatZip.OK -> "✅ copié et vérifié"
-                                    e == EtatZip.A_REPRENDRE -> "⚠️ à relancer"
-                                    i == prochain -> "👉 à télécharger puis traiter"
-                                    else -> "⏳ plus tard"
+                                    e == EtatZip.OK -> Tr.t("✅ copié et vérifié")
+                                    e == EtatZip.A_REPRENDRE -> Tr.t("⚠️ à relancer")
+                                    i == prochain -> Tr.t("👉 à télécharger puis traiter")
+                                    else -> Tr.t("⏳ plus tard")
                                 }, color = when { e == EtatZip.OK -> Vert; e == EtatZip.A_REPRENDRE -> Rouge; i == prochain -> Bleu; else -> Gris },
                                     fontWeight = if (i == prochain) FontWeight.Bold else FontWeight.Normal, fontSize = 14.sp)
                             }
@@ -263,74 +265,74 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                     }
                     Gap(8)
                     if (prochain != null) {
-                        Encadre(if (g) "👉 Maintenant : dans le mail de Google, télécharge le fichier ${"%03d".format(prochain)} (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements."
-                            else "👉 Maintenant : sur privacy.apple.com, télécharge « Part $prochain » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.", Bleu)
+                        Encadre(if (g) Tr.t("👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.", "%03d".format(prochain))
+                            else Tr.t("👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.", prochain), Bleu)
                     }
                 }
                 // le dernier resultat
                 vm.gpDernier?.let { (nom, s) ->
                     Encadre(
-                        (if (s.sansProbleme) "✅ $nom : terminé et vérifié.\n" else "⚠️ $nom : à relancer.\n") +
-                                "${plural(s.photos, "photo")}, ${plural(s.videos, "vidéo")}, ${plural(s.mails, "mail")} copiés · ${plural(s.doublons, "doublon")} et ${plural(s.rafales, "rafale")} écartés." +
+                        (if (s.sansProbleme) Tr.t("✅ %1 : terminé et vérifié.\n", nom) else Tr.t("⚠️ %1 : à relancer.\n", nom)) +
+                                Tr.t("%1, %2, %3 copiés · %4 et %5 écartés.", plural(s.photos, "photo"), plural(s.videos, Tr.t("vidéo")), plural(s.mails, "mail"), plural(s.doublons, "doublon"), plural(s.rafales, "rafale")) +
                                 when {
-                                    s.plein -> "\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double."
-                                    s.abime -> "\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé."
-                                    s.erreurs > 0 -> "\n\n${plural(s.erreurs, "fichier n'a", "fichiers n'ont")} pas pu être copié(s) : relance ce même fichier."
+                                    s.plein -> Tr.t("\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.")
+                                    s.abime -> Tr.t("\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.")
+                                    s.erreurs > 0 -> Tr.t("\n\n%1 pas pu être copié(s) : relance ce même fichier.", plural(s.erreurs, Tr.t("fichier n'a"), Tr.t("fichiers n'ont")))
                                     else -> ""
                                 }, if (s.sansProbleme) Vert else Rouge)
                     val z = zipFini
                     if (s.sansProbleme && z != null) {
                         OutlinedButton(onClick = {
-                            ask(Confirm("Supprimer ce fichier du téléphone ?",
-                                "Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.",
-                                "Supprimer") { vm.gpSupprimerZip(z); zipFini = null })
-                        }, modifier = Modifier.fillMaxWidth()) { Text("🗑️ Supprimer ce ZIP du téléphone (conseillé)", color = Rouge) }
+                            ask(Confirm(Tr.t("Supprimer ce fichier du téléphone ?"),
+                                Tr.t("Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos."),
+                                Tr.t("Supprimer")) { vm.gpSupprimerZip(z); zipFini = null })
+                        }, modifier = Modifier.fillMaxWidth()) { Text(Tr.t("🗑️ Supprimer ce ZIP du téléphone (conseillé)"), color = Rouge) }
                     }
                 }
-                BoutonVert("📂 Traiter un fichier ZIP") { choisirZip() }
+                BoutonVert(Tr.t("📂 Traiter un fichier ZIP")) { choisirZip() }
                 val tousFaits = vm.gpNb > 0 && (1..vm.gpNb).all { vm.gpEtats[it] == EtatZip.OK }
-                if (tousFaits) BigButton("🎉 Tous les fichiers sont faits", color = Bleu) { vm.gpSetTermine(true); ouverte = 0 }
+                if (tousFaits) BigButton(Tr.t("🎉 Tous les fichiers sont faits"), color = Bleu) { vm.gpSetTermine(true); ouverte = 0 }
                 else if (vm.gpTotal.zips > 0) TextButton(onClick = {
-                    ask(Confirm("Tous les fichiers sont traités ?",
-                        "Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.", "Oui, c'est fini", danger = false) {
+                    ask(Confirm(Tr.t("Tous les fichiers sont traités ?"),
+                        Tr.t("Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité."), Tr.t("Oui, c'est fini"), danger = false) {
                         vm.gpSetTermine(true); ouverte = 0
                     })
-                }, modifier = Modifier.fillMaxWidth()) { Text("J'ai traité tous les fichiers", color = Gris) }
+                }, modifier = Modifier.fillMaxWidth()) { Text(Tr.t("J'ai traité tous les fichiers"), color = Gris) }
             }
 
             // ---------------------------------------------------------------- 5. bilan et liberer
-            EtapeGP(5, "🎉", "Vérifier, puis libérer ${if (g) "Google" else "iCloud"} (si tu veux)",
-                "Le bilan, et comment libérer ton compte ${if (g) "Google" else "iCloud"}",
+            EtapeGP(5, "🎉", Tr.t("Vérifier, puis libérer %1 (si tu veux)", if (g) Tr.t("Google") else "iCloud"),
+                Tr.t("Le bilan, et comment libérer ton compte %1", if (g) Tr.t("Google") else "iCloud"),
                 faites, maintenant, affichee, { ouverte = if (affichee == 5) -1 else 5 }) {
                 val t = vm.gpTotal
-                Encadre("📸 ${fmtNum(t.photos)} photos et ${fmtNum(t.videos)} vidéos copiées et vérifiées, rangées par année\n" +
-                        "🧬 ${fmtNum(t.doublons)} doublons et 🎞️ ${fmtNum(t.rafales)} photos de rafale écartés\n" +
-                        (if (t.mails > 0) "✉️ ${fmtNum(t.mails)} mails (dossier « Mails Gmail », ouvre index.html)\n" else "") +
-                        "💾 ${fmtBytes(t.octets)} sur « ${vm.gpDest} »", Vert)
-                if (t.erreurs > 0) Encadre("⚠️ ${plural(t.erreurs, "fichier")} en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.", Rouge)
-                Txt("Libérer ${vm.gpSource.nom} est facultatif. $qui n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.")
+                Encadre(Tr.t("📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n", fmtNum(t.photos), fmtNum(t.videos)) +
+                        Tr.t("🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n", fmtNum(t.doublons), fmtNum(t.rafales)) +
+                        (if (t.mails > 0) Tr.t("✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n", fmtNum(t.mails)) else "") +
+                        Tr.t("💾 %1 sur « %2 »", fmtBytes(t.octets), vm.gpDest), Vert)
+                if (t.erreurs > 0) Encadre(Tr.t("⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.", plural(t.erreurs, "fichier")), Rouge)
+                Txt(Tr.t("Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.", vm.gpSource.nom, qui))
                 var verifie by rememberSaveable { mutableStateOf(false) }
                 var copie2 by rememberSaveable { mutableStateOf(false) }
-                Coche(verifie, "J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.") { verifie = it }
-                Coche(copie2, "Conseillé : j'ai fait une 2e copie (autre disque ou PC).") { copie2 = it }
+                Coche(verifie, Tr.t("J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.")) { verifie = it }
+                Coche(copie2, Tr.t("Conseillé : j'ai fait une 2e copie (autre disque ou PC).")) { copie2 = it }
                 if (verifie) {
                     if (g) {
-                        Txt("Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.")
-                        BigButton("Ouvrir Google Photos", color = Rouge) { ouvrir("https://photos.google.com/") }
+                        Txt(Tr.t("Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours."))
+                        BigButton(Tr.t("Ouvrir Google Photos"), color = Rouge) { ouvrir("https://photos.google.com/") }
                     } else {
-                        Txt("Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.")
-                        BigButton("Ouvrir iCloud Photos", color = Rouge) { ouvrir("https://www.icloud.com/photos/") }
+                        Txt(Tr.t("Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours."))
+                        BigButton(Tr.t("Ouvrir iCloud Photos"), color = Rouge) { ouvrir("https://www.icloud.com/photos/") }
                     }
-                } else Encadre("🛡️ On ne libère jamais ${if (g) "Google" else "iCloud"} avant d'avoir vérifié la copie : coche d'abord la première case.", Vert)
+                } else Encadre(Tr.t("🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.", if (g) Tr.t("Google") else "iCloud"), Vert)
                 TextButton(onClick = {
-                    ask(Confirm("Recommencer depuis le début ?",
-                        "Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.", "Recommencer") { vm.gpRecommencer() })
-                }, modifier = Modifier.fillMaxWidth()) { Text("Recommencer avec un autre compte", color = Gris) }
+                    ask(Confirm(Tr.t("Recommencer depuis le début ?"),
+                        Tr.t("Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés."), Tr.t("Recommencer")) { vm.gpRecommencer() })
+                }, modifier = Modifier.fillMaxWidth()) { Text(Tr.t("Recommencer avec un autre compte"), color = Gris) }
             }
 
             Gap(10)
             OutlinedButton(onClick = { conseils = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
-                Text("💡 Si ça bloque : tous les conseils", color = Texte, fontWeight = FontWeight.Bold)
+                Text(Tr.t("💡 Si ça bloque : tous les conseils"), color = Texte, fontWeight = FontWeight.Bold)
             }
         }
     }
@@ -338,7 +340,7 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
     if (conseils) AlertDialog(
         onDismissRequest = { conseils = false },
         containerColor = Carte,
-        title = { Text("💡 Si ça bloque", fontWeight = FontWeight.Bold) },
+        title = { Text(Tr.t("💡 Si ça bloque"), fontWeight = FontWeight.Bold) },
         text = {
             LazyColumn(Modifier.height(440.dp)) {
                 vm.google.conseils.forEach { (ico, txt) ->
@@ -346,17 +348,17 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                 }
             }
         },
-        confirmButton = { TextButton(onClick = { conseils = false }) { Text("Compris") } },
+        confirmButton = { TextButton(onClick = { conseils = false }) { Text(Tr.t("Compris")) } },
     )
 
     vm.gpProbleme?.let { p ->
         AlertDialog(
             onDismissRequest = { vm.gpProbleme = null },
             containerColor = Carte,
-            title = { Text("⚠️ On ne commence pas", fontWeight = FontWeight.Bold) },
+            title = { Text(Tr.t("⚠️ On ne commence pas"), fontWeight = FontWeight.Bold) },
             text = { Text(p, color = Texte) },
-            confirmButton = { TextButton(onClick = { vm.gpProbleme = null }) { Text("Compris") } },
-            dismissButton = { TextButton(onClick = { vm.gpProbleme = null; conseils = true }) { Text("Voir les conseils") } },
+            confirmButton = { TextButton(onClick = { vm.gpProbleme = null }) { Text(Tr.t("Compris")) } },
+            dismissButton = { TextButton(onClick = { vm.gpProbleme = null; conseils = true }) { Text(Tr.t("Voir les conseils")) } },
         )
     }
 }
@@ -383,8 +385,8 @@ private fun Circuit(phase: Int, origine: String) {
             }
             Row(Modifier.fillMaxWidth().height(120.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                 Lieu("☁️", origine, phase == 0)
-                Lieu("📱", "Téléphone", phase == 1)
-                Lieu("💾", "Disque", phase == 2)
+                Lieu("📱", Tr.t("Téléphone"), phase == 1)
+                Lieu("💾", Tr.t("Disque"), phase == 2)
             }
         }
     }
@@ -423,17 +425,17 @@ private fun EtapeGP(
             Row(Modifier.fillMaxWidth().clickable(enabled = !plusTard, onClick = onToggle), verticalAlignment = Alignment.CenterVertically) {
                 Box(Modifier.size(46.dp).background(when { faite -> Vert; estMaintenant -> Bleu; else -> Color(0xFFB8BECC) }, CircleShape),
                     contentAlignment = Alignment.Center) {
-                    Text(if (faite) "✓" else if (plusTard) "🔒" else "$n", color = Color.White, fontSize = if (plusTard) 18.sp else 22.sp, fontWeight = FontWeight.Black)
+                    Text(if (faite) "✓" else if (plusTard) "🔒" else "${n}", color = Color.White, fontSize = if (plusTard) 18.sp else 22.sp, fontWeight = FontWeight.Black)
                 }
                 Spacer(Modifier.width(12.dp))
                 Column(Modifier.weight(1f)) {
-                    Text("$emoji  $titre", fontWeight = FontWeight.ExtraBold, fontSize = 16.sp,
+                    Text("${emoji}  ${titre}", fontWeight = FontWeight.ExtraBold, fontSize = 16.sp,
                         color = when { faite -> Vert; plusTard -> Gris; else -> Texte })
-                    Text(when { estMaintenant && !ouverte -> "👉 À faire maintenant"; else -> resume }, color = Gris, fontSize = 13.sp)
+                    Text(when { estMaintenant && !ouverte -> Tr.t("👉 À faire maintenant"); else -> resume }, color = Gris, fontSize = 13.sp)
                 }
-                if (estMaintenant) Text("MAINTENANT", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Black,
+                if (estMaintenant) Text(Tr.t("MAINTENANT"), color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Black,
                     modifier = Modifier.background(Vert, RoundedCornerShape(8.dp)).padding(8.dp, 3.dp))
-                else if (faite) Text(if (ouverte) "▲" else "Modifier ▼", color = Gris, fontSize = 12.sp)
+                else if (faite) Text(if (ouverte) "▲" else Tr.t("Modifier ▼"), color = Gris, fontSize = 12.sp)
             }
             if (ouverte && !plusTard) {
                 Gap(10)
@@ -449,17 +451,17 @@ private fun TakeoutModele() {
     Card(shape = RoundedCornerShape(14.dp), colors = CardDefaults.cardColors(containerColor = Color.White),
         border = BorderStroke(1.dp, Color(0xFFDADCE0)), modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
         Column(Modifier.padding(12.dp)) {
-            Text("Google Takeout", fontWeight = FontWeight.Bold, color = Color(0xFF5F6368), fontSize = 15.sp)
+            Text(Tr.t("Google Takeout"), fontWeight = FontWeight.Bold, color = Color(0xFF5F6368), fontSize = 15.sp)
             Gap(6)
-            LigneModele(1, "Tout désélectionner", false, lien = true)
-            LigneModele(2, "Google Photos", true)
-            LigneModele(0, "Mail (facultatif, pour tes mails)", true, faible = true)
-            LigneModele(0, "Drive, YouTube, Maps…", false, faible = true)
+            LigneModele(1, Tr.t("Tout désélectionner"), false, lien = true)
+            LigneModele(2, Tr.t("Google Photos"), true)
+            LigneModele(0, Tr.t("Mail (facultatif, pour tes mails)"), true, faible = true)
+            LigneModele(0, Tr.t("Drive, YouTube, Maps…"), false, faible = true)
             Gap(4)
-            Text("puis « Étape suivante » :", color = Color(0xFF5F6368), fontSize = 12.sp)
-            LigneModele(3, "Envoyer le lien par e-mail · Exporter une fois", true)
-            LigneModele(4, "Type : .zip   ·   Taille : 2 Go", true, important = true)
-            LigneModele(5, "Créer une exportation", false, lien = true)
+            Text(Tr.t("puis « Étape suivante » :"), color = Color(0xFF5F6368), fontSize = 12.sp)
+            LigneModele(3, Tr.t("Envoyer le lien par e-mail · Exporter une fois"), true)
+            LigneModele(4, Tr.t("Type : .zip   ·   Taille : 2 Go"), true, important = true)
+            LigneModele(5, Tr.t("Créer une exportation"), false, lien = true)
         }
     }
 }
@@ -470,14 +472,14 @@ private fun AppleModele() {
     Card(shape = RoundedCornerShape(14.dp), colors = CardDefaults.cardColors(containerColor = Color.White),
         border = BorderStroke(1.dp, Color(0xFFDADCE0)), modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
         Column(Modifier.padding(12.dp)) {
-            Text("Apple · Données et confidentialité", fontWeight = FontWeight.Bold, color = Color(0xFF1D1D1F), fontSize = 15.sp)
+            Text(Tr.t("Apple · Données et confidentialité"), fontWeight = FontWeight.Bold, color = Color(0xFF1D1D1F), fontSize = 15.sp)
             Gap(6)
-            LigneModele(1, "Se connecter avec ton identifiant Apple", false, lien = true)
-            LigneModele(2, "Demander une copie de tes données", false, lien = true)
-            LigneModele(3, "Photos iCloud", true)
-            LigneModele(0, "Les autres cases : inutile", false, faible = true)
-            LigneModele(4, "Taille maximale des fichiers : 1 Go ou 2 Go", true, important = true)
-            LigneModele(5, "Terminer la demande", false, lien = true)
+            LigneModele(1, Tr.t("Se connecter avec ton identifiant Apple"), false, lien = true)
+            LigneModele(2, Tr.t("Demander une copie de tes données"), false, lien = true)
+            LigneModele(3, Tr.t("Photos iCloud"), true)
+            LigneModele(0, Tr.t("Les autres cases : inutile"), false, faible = true)
+            LigneModele(4, Tr.t("Taille maximale des fichiers : 1 Go ou 2 Go"), true, important = true)
+            LigneModele(5, Tr.t("Terminer la demande"), false, lien = true)
         }
     }
 }
@@ -488,7 +490,7 @@ private fun LigneModele(n: Int, txt: String, coche: Boolean, lien: Boolean = fal
         .then(if (important) Modifier.background(Color(0xFFFFF3E0), RoundedCornerShape(8.dp)) else Modifier).padding(4.dp),
         verticalAlignment = Alignment.CenterVertically) {
         Box(Modifier.size(22.dp).background(if (n > 0) Rouge else Color.Transparent, CircleShape), contentAlignment = Alignment.Center) {
-            if (n > 0) Text("$n", color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Black)
+            if (n > 0) Text("${n}", color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Black)
         }
         Spacer(Modifier.width(8.dp))
         if (!lien) {
@@ -516,7 +518,7 @@ private fun Encadre(t: String, c: Color) {
 @Composable
 private fun BoutonVert(t: String, onClick: () -> Unit) {
     Gap(6)
-    BigButton("$t  ›", color = Vert, onClick = onClick)
+    BigButton("${t}  ›", color = Vert, onClick = onClick)
 }
 
 @Composable

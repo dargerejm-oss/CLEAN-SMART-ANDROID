@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.ui
 
+import com.jmdargere.cleansmart.Tr
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -32,14 +34,14 @@ import kotlinx.coroutines.launch
 private data class Page(val emoji: String, val couleur: Color, val titre: String, val texte: String)
 
 private val PAGES = listOf(
-    Page("📱", Rouge, "Ton téléphone est plein ?",
-        "Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place."),
-    Page("🧭", Vert, "Un bouton, et c'est trié",
-        "Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape."),
-    Page("🛡️", Bleu, "Rien n'est perdu",
-        "Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste."),
-    Page("💾", Pourpre, "Tes photos à l'abri",
-        "Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié."),
+    Page("📱", Rouge, Tr.t("Ton téléphone est plein ?"),
+        Tr.t("Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.")),
+    Page("🧭", Vert, Tr.t("Un bouton, et c'est trié"),
+        Tr.t("Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.")),
+    Page("🛡️", Bleu, Tr.t("Rien n'est perdu"),
+        Tr.t("Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.")),
+    Page("💾", Pourpre, Tr.t("Tes photos à l'abri"),
+        Tr.t("Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.")),
 )
 
 /** Accueil de bienvenue au tout premier lancement (comme les presentations de Mail Simple et Photo Simple). */
@@ -49,7 +51,7 @@ fun Bienvenue(onFini: () -> Unit) {
     val scope = rememberCoroutineScope()
     Column(Modifier.fillMaxSize().background(Fond)) {
         Box(Modifier.fillMaxWidth().background(Bleu).statusBarsPadding().padding(vertical = 18.dp), contentAlignment = Alignment.Center) {
-            Text("CLEAN SMART", color = Color.White, fontSize = 26.sp, fontWeight = FontWeight.Black)
+            Text(Tr.t("CLEAN SMART"), color = Color.White, fontSize = 26.sp, fontWeight = FontWeight.Black)
         }
         HorizontalPager(etat, Modifier.weight(1f)) { i ->
             val p = PAGES[i]
@@ -71,10 +73,10 @@ fun Bienvenue(onFini: () -> Unit) {
         }
         Column(Modifier.fillMaxWidth().navigationBarsPadding().padding(20.dp, 0.dp, 20.dp, 16.dp)) {
             val derniere = etat.currentPage == PAGES.size - 1
-            BigButton(if (derniere) "Commencer" else "Suivant", color = Vert) {
+            BigButton(if (derniere) Tr.t("Commencer") else Tr.t("Suivant"), color = Vert) {
                 if (derniere) onFini() else scope.launch { etat.animateScrollToPage(etat.currentPage + 1) }
             }
-            if (!derniere) TextButton(onClick = onFini, modifier = Modifier.fillMaxWidth()) { Text("Passer", color = Gris) }
+            if (!derniere) TextButton(onClick = onFini, modifier = Modifier.fillMaxWidth()) { Text(Tr.t("Passer"), color = Gris) }
         }
     }
 }

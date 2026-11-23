@@ -29,7 +29,8 @@ class MainActivity : ComponentActivity() {
                 // option "Gros caracteres" : agrandit tous les textes de l'appli
                 val d = LocalDensity.current
                 CompositionLocalProvider(LocalDensity provides Density(d.density, d.fontScale * vm.settings.fontScale)) {
-                    CleanSmartApp(vm)
+                    // changer de langue redessine tout l'ecran tout de suite
+                    androidx.compose.runtime.key(vm.settings.langue) { CleanSmartApp(vm) }
                 }
             }
         }

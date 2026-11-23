@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.data
 
+import com.jmdargere.cleansmart.Tr
+
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.security.crypto.EncryptedSharedPreferences
@@ -127,7 +129,7 @@ fun attachments(mp: Multipart, onFile: (Part) -> Unit) {
     }
 }
 
-enum class Provider(val label: String, val host: String, val help: String) {
+enum class Provider(private val labelFr: String, val host: String, private val helpFr: String) {
     GMAIL("Gmail", "imap.gmail.com",
         "Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici."),
     OUTLOOK("Outlook / Hotmail", "outlook.office365.com",
@@ -139,6 +141,9 @@ enum class Provider(val label: String, val host: String, val help: String) {
     SFR("SFR", "imap.sfr.fr", "Utilise ton adresse et ton mot de passe SFR."),
     LAPOSTE("La Poste", "imap.laposte.net", "Utilise ton adresse et ton mot de passe La Poste."),
     AUTRE("Autre", "", "Indique le serveur IMAP de ta messagerie (port 993, SSL).");
+
+    val label: String get() = com.jmdargere.cleansmart.Tr.t(labelFr)
+    val help: String get() = com.jmdargere.cleansmart.Tr.t(helpFr)
 
     companion object {
         val APP_PASSWORD_URL = mapOf(GMAIL to "https://myaccount.google.com/apppasswords", ICLOUD to "https://account.apple.com")
@@ -180,7 +185,7 @@ class MailCleaner(private val ctx: Context) {
     fun saveAndTest(provider: Provider, host: String, email: String, password: String) {
         val pass = password.ifEmpty { prefs.getString("password", "") ?: "" }
         if (email.isBlank() || host.isBlank() || pass.isEmpty())
-            throw MailException("Adresse, serveur et mot de passe sont obligatoires.")
+            throw MailException(Tr.t("Adresse, serveur et mot de passe sont obligatoires."))
         connect(host.trim(), email.trim(), pass).close()
         prefs.edit()
             .putString("email", email.trim())
@@ -192,7 +197,7 @@ class MailCleaner(private val ctx: Context) {
 
     private fun connect(): Store {
         val a = account()
-        if (!a.ready) throw MailException("Aucune boîte mail connectée.")
+        if (!a.ready) throw MailException(Tr.t("Aucune boîte mail connectée."))
         return connect(a.host, a.email, prefs.getString("password", "") ?: "")
     }
 
@@ -210,18 +215,18 @@ class MailCleaner(private val ctx: Context) {
         try {
             st.connect(host, 993, email, pass)
         } catch (e: AuthenticationFailedException) {
-            throw MailException("Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.")
+            throw MailException(Tr.t("Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel."))
         } catch (e: Exception) {
             var root: Throwable = e
             while (root.cause != null && root.cause !== root) root = root.cause!!
-            if (root is UnknownHostException) throw MailException("Serveur introuvable : vérifie internet et le nom du serveur.")
-            throw MailException("Connexion impossible : " + (e.message ?: e.javaClass.simpleName))
+            if (root is UnknownHostException) throw MailException(Tr.t("Serveur introuvable : vérifie internet et le nom du serveur."))
+            throw MailException(Tr.t("Connexion impossible : ") + (e.message ?: e.javaClass.simpleName))
         }
         return st
     }
 
     fun scan(max: Int, s: Settings, progress: (String, Int) -> Unit): MailResult {
-        progress("Connexion au serveur", 2)
+        progress(Tr.t("Connexion au serveur"), 2)
         val st = connect()
         var inbox: IMAPFolder? = null
         try {
@@ -280,7 +285,7 @@ class MailCleaner(private val ctx: Context) {
                             else if (colis.size < 50 && MailTri.colis(subject)) colis += info
                             else if (voyages.size < 50 && MailTri.voyage(subject)) voyages += info
                         }
-                        val cle = "$email|$subject|$size"
+                        val cle = "${email}|${subject}|${size}"
                         val avant = vus[cle]
                         if (avant != null && kotlin.math.abs(avant - date) < 120_000) doublons += uid else vus[cle] = date
                         if (date in 1 until oldLimit) { oldCount++; oldBytes += size }
@@ -295,7 +300,7 @@ class MailCleaner(private val ctx: Context) {
                     }
                     read++
                 }
-                progress("Analyse des mails ($read / $toRead)", 5 + 90 * read / toRead.coerceAtLeast(1))
+                progress(Tr.t("Analyse des mails (%1 / %2)", read, toRead), 5 + 90 * read / toRead.coerceAtLeast(1))
                 a = b - 1
             }
 
@@ -316,7 +321,7 @@ class MailCleaner(private val ctx: Context) {
                 }
             }
 
-            progress("Terminé", 100)
+            progress(Tr.t("Terminé"), 100)
             return MailResult(total, read, bytes, news, bigCount, bigBytes, oldCount, oldBytes, top, big.sortedByDescending { it.size },
                 factures, colis, voyages, doublons, used, maxQ, aGarder)
         } finally {
@@ -330,7 +335,7 @@ class MailCleaner(private val ctx: Context) {
         val st = connect()
         var inbox: IMAPFolder? = null
         try {
-            val trash = findTrash(st) ?: throw MailException("Dossier Corbeille introuvable sur ce compte.")
+            val trash = findTrash(st) ?: throw MailException(Tr.t("Dossier Corbeille introuvable sur ce compte."))
             inbox = (st.getFolder("INBOX") as IMAPFolder).apply { open(Folder.READ_WRITE) }
             val found = LinkedHashSet<Message>()
             when (c) {
@@ -378,7 +383,7 @@ class MailCleaner(private val ctx: Context) {
         val st = connect()
         var trash: IMAPFolder? = null
         try {
-            trash = (findTrash(st) ?: throw MailException("Dossier Corbeille introuvable sur ce compte.")) as IMAPFolder
+            trash = (findTrash(st) ?: throw MailException(Tr.t("Dossier Corbeille introuvable sur ce compte."))) as IMAPFolder
             trash.open(Folder.READ_ONLY)
             val total = trash.messageCount
             if (total == 0) return emptyList()
@@ -403,7 +408,7 @@ class MailCleaner(private val ctx: Context) {
         val st = connect()
         var trash: IMAPFolder? = null
         try {
-            trash = (findTrash(st) ?: throw MailException("Dossier Corbeille introuvable.")) as IMAPFolder
+            trash = (findTrash(st) ?: throw MailException(Tr.t("Dossier Corbeille introuvable."))) as IMAPFolder
             trash.open(Folder.READ_WRITE)
             val inbox = st.getFolder("INBOX")
             val msgs = trash.getMessagesByUID(uids.toLongArray()).filterNotNull().toTypedArray()
@@ -425,7 +430,7 @@ class MailCleaner(private val ctx: Context) {
 
     /** Les mails recents qui ont des pieces jointes (sans telecharger les fichiers). */
     fun listWithAttachments(max: Int, progress: (String, Int) -> Unit): List<MailWithFiles> {
-        progress("Connexion au serveur", 2)
+        progress(Tr.t("Connexion au serveur"), 2)
         val st = connect()
         var inbox: IMAPFolder? = null
         try {
@@ -466,10 +471,10 @@ class MailCleaner(private val ctx: Context) {
                     }
                     read++
                 }
-                progress("Recherche des pièces jointes ($read / $toRead)", 5 + 90 * read / toRead.coerceAtLeast(1))
+                progress(Tr.t("Recherche des pièces jointes (%1 / %2)", read, toRead), 5 + 90 * read / toRead.coerceAtLeast(1))
                 a = b - 1
             }
-            progress("Terminé", 100)
+            progress(Tr.t("Terminé"), 100)
             return out
         } finally {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }
@@ -485,7 +490,7 @@ class MailCleaner(private val ctx: Context) {
             inbox = (st.getFolder("INBOX") as IMAPFolder).apply { open(Folder.READ_ONLY) }
             uids.forEachIndexed { i, uid ->
                 inbox.getMessageByUID(uid)?.let(block)
-                progress("Sauvegarde du mail ${i + 1} / ${uids.size}", 100 * (i + 1) / uids.size.coerceAtLeast(1))
+                progress(Tr.t("Sauvegarde du mail %1 / %2", i + 1, uids.size), 100 * (i + 1) / uids.size.coerceAtLeast(1))
             }
         } finally {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }

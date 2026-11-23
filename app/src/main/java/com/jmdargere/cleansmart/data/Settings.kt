@@ -18,6 +18,8 @@ data class Settings(
     val severity: Int = 1,
     /** Gros caracteres : 0 = normal, 1 = gros, 2 = tres gros (mode senior). */
     val textSize: Int = 0,
+    /** Langue : 0 = comme le telephone, 1 = francais, 2 = anglais. */
+    val langue: Int = 0,
     /** Chaque nuit, copier les nouvelles photos dans le dossier de sauvegarde. */
     val nightBackup: Boolean = false,
     /** Alerte "telephone presque plein" et rapport du mois (notifications). */
@@ -55,6 +57,7 @@ data class Settings(
                 protectFavorites = p.getBoolean("protectFavorites", true),
                 severity = p.getInt("severity", 1),
                 textSize = p.getInt("textSize", 0),
+                langue = p.getInt("langue", 0),
                 nightBackup = p.getBoolean("nightBackup", false),
                 alerts = p.getBoolean("alerts", true),
                 keepMonths = p.getInt("keepMonths", 3),
@@ -68,6 +71,7 @@ data class Settings(
                 .putBoolean("protectFavorites", s.protectFavorites)
                 .putInt("severity", s.severity)
                 .putInt("textSize", s.textSize)
+                .putInt("langue", s.langue)
                 .putBoolean("nightBackup", s.nightBackup)
                 .putBoolean("alerts", s.alerts)
                 .putInt("keepMonths", s.keepMonths)

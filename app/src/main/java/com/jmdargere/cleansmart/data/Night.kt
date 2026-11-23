@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.data
 
+import com.jmdargere.cleansmart.Tr
+
 import android.Manifest
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -54,7 +56,7 @@ object Night {
     fun notify(ctx: Context, id: Int, title: String, text: String) {
         if (ContextCompat.checkSelfPermission(ctx, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return
         val nm = ctx.getSystemService(NotificationManager::class.java)
-        nm.createNotificationChannel(NotificationChannel(CHANNEL, "Clean Smart", NotificationManager.IMPORTANCE_DEFAULT))
+        nm.createNotificationChannel(NotificationChannel(CHANNEL, Tr.t("Clean Smart"), NotificationManager.IMPORTANCE_DEFAULT))
         val open = PendingIntent.getActivity(ctx, 0, Intent(ctx, MainActivity::class.java),
             PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
         val n = NotificationCompat.Builder(ctx, CHANNEL)
@@ -90,10 +92,10 @@ object Night {
                     }
                     val n = runCatching { backup.saveMedia(tree!!, bonnes) { _, _ -> } }.getOrDefault(-1)
                     p.edit().putLong("lastBackup", now).putInt("lastBackupCount", n).apply()
-                    if (n > 0) notify(ctx, 1, "💾 Sauvegarde de la nuit", "${plural(n, "nouveau fichier", "nouveaux fichiers")} copié(s) dans ton dossier de sauvegarde.")
-                    if (n < 0) notify(ctx, 1, "⚠️ Sauvegarde de la nuit", "La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.")
+                    if (n > 0) notify(ctx, 1, Tr.t("💾 Sauvegarde de la nuit"), Tr.t("%1 copié(s) dans ton dossier de sauvegarde.", plural(n, Tr.t("nouveau fichier"), Tr.t("nouveaux fichiers"))))
+                    if (n < 0) notify(ctx, 1, Tr.t("⚠️ Sauvegarde de la nuit"), Tr.t("La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier."))
                 } else {
-                    notify(ctx, 1, "⚠️ Aucune sauvegarde cette nuit", "Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.")
+                    notify(ctx, 1, Tr.t("⚠️ Aucune sauvegarde cette nuit"), Tr.t("Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir."))
                 }
             }
 
@@ -102,7 +104,7 @@ object Night {
                 val free = freeBytes()
                 if (free < LOW_SPACE && now - p.getLong("lastLowAlert", 0) > 3 * 24 * 3600 * 1000L) {
                     p.edit().putLong("lastLowAlert", now).apply()
-                    notify(ctx, 2, "📱 Téléphone presque plein", "Il ne reste que ${fmtBytes(free)}. Ouvre Clean Smart pour libérer de la place en un clic.")
+                    notify(ctx, 2, Tr.t("📱 Téléphone presque plein"), Tr.t("Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.", fmtBytes(free)))
                 }
                 // 3. Rapport du mois (le 1er)
                 val cal = Calendar.getInstance()
@@ -112,9 +114,9 @@ object Night {
                     val since = now - 31L * 24 * 3600 * 1000
                     val newPhotos = runCatching { MediaScanner(ctx).allMedia().count { it.date > since } }.getOrDefault(0)
                     val freed = ctx.getSharedPreferences("compteur", Context.MODE_PRIVATE).getLong("freed", 0)
-                    notify(ctx, 3, "📅 Ton rapport du mois",
-                        "${plural(newPhotos, "photo ou vidéo prise", "photos ou vidéos prises")} ce mois-ci. " +
-                                "Espace libéré depuis le début : ${fmtBytes(freed)}. Une petite analyse ?")
+                    notify(ctx, 3, Tr.t("📅 Ton rapport du mois"),
+                        Tr.t("%1 ce mois-ci. ", plural(newPhotos, Tr.t("photo ou vidéo prise"), Tr.t("photos ou vidéos prises"))) +
+                                Tr.t("Espace libéré depuis le début : %1. Une petite analyse ?", fmtBytes(freed)))
                 }
             }
             return Result.success()

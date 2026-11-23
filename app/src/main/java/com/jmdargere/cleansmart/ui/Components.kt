@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.ui
 
+import com.jmdargere.cleansmart.Tr
+
 import android.content.Context
 import android.content.Intent
 import android.util.LruCache
@@ -108,7 +110,7 @@ fun CatTile(emoji: String, title: String, sub: String, value: String, badge: Str
             }
             Spacer(Modifier.weight(1f))
             Text(title, color = Color.White, fontWeight = FontWeight.ExtraBold, fontSize = 15.sp, maxLines = 2, lineHeight = 18.sp)
-            Text(if (value.isEmpty()) sub else "$sub · $value", color = Color(0xE6FFFFFF), fontSize = 12.sp, maxLines = 2,
+            Text(if (value.isEmpty()) sub else "${sub} · ${value}", color = Color(0xE6FFFFFF), fontSize = 12.sp, maxLines = 2,
                 overflow = TextOverflow.Ellipsis)
         }
     }
@@ -157,7 +159,7 @@ fun StorageRing(ratio: Float) {
         )
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text("${(ratio * 100).toInt()} %", fontSize = 24.sp, fontWeight = FontWeight.ExtraBold)
-            Text("utilisé", color = Gris, fontSize = 12.sp)
+            Text(Tr.t("utilisé"), color = Gris, fontSize = 12.sp)
         }
     }
 }
@@ -165,7 +167,7 @@ fun StorageRing(ratio: Float) {
 /** "1 min 05 s" */
 private fun duree(ms: Long): String {
     val s = (ms / 1000).coerceAtLeast(0)
-    return if (s < 60) "$s s" else "${s / 60} min ${"%02d".format(s % 60)} s"
+    return if (s < 60) "${s} s" else Tr.t("%1 min %2 s", s / 60, "%02d".format(s % 60))
 }
 
 /**
@@ -193,7 +195,7 @@ fun BusyDialog(b: Busy) {
                 Sablier(b.pct / 100f)
                 Spacer(Modifier.height(10.dp))
                 Text("${b.pct} %", fontWeight = FontWeight.Black, fontSize = 30.sp, color = Texte)
-                Text(b.step.ifEmpty { "Préparation…" }, color = Gris, fontSize = 14.sp, textAlign = TextAlign.Center)
+                Text(b.step.ifEmpty { Tr.t("Préparation…") }, color = Gris, fontSize = 14.sp, textAlign = TextAlign.Center)
                 Spacer(Modifier.height(12.dp))
                 LinearProgressIndicator(
                     progress = { b.pct / 100f },
@@ -203,12 +205,12 @@ fun BusyDialog(b: Busy) {
                 Spacer(Modifier.height(10.dp))
                 Row(Modifier.fillMaxWidth()) {
                     Column(Modifier.weight(1f)) {
-                        Text("Temps passé", color = Gris, fontSize = 12.sp)
+                        Text(Tr.t("Temps passé"), color = Gris, fontSize = 12.sp)
                         Text(duree(passe), fontWeight = FontWeight.Bold, fontSize = 15.sp, color = Texte)
                     }
                     Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                        Text("Temps restant", color = Gris, fontSize = 12.sp)
-                        Text(if (reste >= 0) "≈ ${duree(reste)}" else "calcul…", fontWeight = FontWeight.Bold, fontSize = 15.sp, color = Texte)
+                        Text(Tr.t("Temps restant"), color = Gris, fontSize = 12.sp)
+                        Text(if (reste >= 0) "≈ ${duree(reste)}" else Tr.t("calcul…"), fontWeight = FontWeight.Bold, fontSize = 15.sp, color = Texte)
                     }
                 }
             }
@@ -275,7 +277,7 @@ fun DoneDialog(title: String, onClose: () -> Unit) {
             modifier = Modifier.clickable(onClick = onClose)) {
             Column(Modifier.padding(26.dp).fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
                 Text("✅", fontSize = 56.sp)
-                Text("TERMINÉ", fontWeight = FontWeight.Black, fontSize = 32.sp, color = Color.White)
+                Text(Tr.t("TERMINÉ"), fontWeight = FontWeight.Black, fontSize = 32.sp, color = Color.White)
                 Text(title, color = Color(0xE6FFFFFF), fontSize = 15.sp, textAlign = TextAlign.Center)
             }
         }
@@ -296,7 +298,7 @@ fun ConfirmDialog(c: Confirm, onClose: () -> Unit) {
             Button(onClick = { onClose(); c.action() },
                 colors = ButtonDefaults.buttonColors(containerColor = if (c.danger) Rouge else Violet)) { Text(c.ok) }
         },
-        dismissButton = { TextButton(onClick = onClose) { Text("Annuler", color = Gris) } },
+        dismissButton = { TextButton(onClick = onClose) { Text(Tr.t("Annuler"), color = Gris) } },
     )
 }
 
@@ -343,12 +345,12 @@ fun Thumb(item: MediaItem, selected: Boolean, keep: Boolean, onToggle: () -> Uni
                     .background(Color(0x99000000), RoundedCornerShape(5.dp)).padding(horizontal = 5.dp, vertical = 1.dp))
         }
         if (!keep && item.note.isNotEmpty()) {
-            Text(item.note, fontSize = 10.sp, fontWeight = FontWeight.Bold, color = Color(0xFF2A1A00),
+            Text(Tr.t(item.note), fontSize = 10.sp, fontWeight = FontWeight.Bold, color = Color(0xFF2A1A00),
                 modifier = Modifier.align(Alignment.BottomStart).padding(4.dp)
                     .background(Color(0xFFFFB547), RoundedCornerShape(5.dp)).padding(horizontal = 5.dp, vertical = 1.dp))
         }
         if (keep) {
-            Text("GARDÉE", fontSize = 10.sp, fontWeight = FontWeight.ExtraBold, color = Color(0xFF002211),
+            Text(Tr.t("GARDÉE"), fontSize = 10.sp, fontWeight = FontWeight.ExtraBold, color = Color(0xFF002211),
                 modifier = Modifier.align(Alignment.BottomStart).padding(4.dp)
                     .background(Vert, RoundedCornerShape(5.dp)).padding(horizontal = 5.dp, vertical = 1.dp))
         } else {

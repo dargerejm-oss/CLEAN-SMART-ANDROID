@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.ui
 
+import com.jmdargere.cleansmart.Tr
+
 import android.util.Size
 import androidx.compose.animation.core.Animatable
 import androidx.compose.foundation.Image
@@ -65,7 +67,7 @@ fun TriRapide(vm: AppViewModel, onKeep: () -> Unit, onTrash: () -> Unit) {
     Column(Modifier.fillMaxSize().padding(16.dp, 4.dp, 16.dp, 12.dp)) {
         Text(
             "${fmtNum(minOf(vm.swipeIndex + 1, list.size))} / ${fmtNum(list.size)}  ·  " +
-                    "${plural(vm.swipeTrash.size, "à jeter", "à jeter")} (${fmtBytes(vm.swipeTrash.sumOf { it.size })})",
+                    "${plural(vm.swipeTrash.size, Tr.t("à jeter"), Tr.t("à jeter"))} (${fmtBytes(vm.swipeTrash.sumOf { it.size })})",
             color = Gris, fontSize = 14.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center,
         )
         Gap()
@@ -73,15 +75,15 @@ fun TriRapide(vm: AppViewModel, onKeep: () -> Unit, onTrash: () -> Unit) {
             if (item == null) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("🎉", fontSize = 56.sp)
-                    Text("Tri terminé !", fontSize = 22.sp, fontWeight = FontWeight.Bold)
-                    Text("${plural(vm.swipeTrash.size, "photo")} à jeter", color = Gris)
+                    Text(Tr.t("Tri terminé !"), fontSize = 22.sp, fontWeight = FontWeight.Bold)
+                    Text(Tr.t("%1 à jeter", plural(vm.swipeTrash.size, "photo")), color = Gris)
                 }
             } else {
                 SwipeCard(item, onDecide = { jeter -> vm.swipe(jeter) })
             }
         }
         Gap()
-        Text("⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡", color = Gris, fontSize = 12.sp,
+        Text(Tr.t("⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡"), color = Gris, fontSize = 12.sp,
             modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
         Gap()
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly, verticalAlignment = Alignment.CenterVertically) {
@@ -92,12 +94,12 @@ fun TriRapide(vm: AppViewModel, onKeep: () -> Unit, onTrash: () -> Unit) {
         // a la fin : proteger les gardees (favori) et jeter les autres
         if (item == null && vm.swipeKeep.any { !it.favorite }) {
             Gap()
-            BigButton("⭐ Protéger mes ${plural(vm.swipeKeep.count { !it.favorite }, "photo gardée", "photos gardées")}",
+            BigButton(Tr.t("⭐ Protéger mes %1", plural(vm.swipeKeep.count { !it.favorite }, Tr.t("photo gardée"), Tr.t("photos gardées"))),
                 color = Vert, onClick = onKeep)
         }
         if (vm.swipeTrash.isNotEmpty()) {
             Gap()
-            BigButton("🧹 Mettre ${plural(vm.swipeTrash.size, "photo")} à la corbeille", color = Rouge, onClick = onTrash)
+            BigButton(Tr.t("🧹 Mettre %1 à la corbeille", plural(vm.swipeTrash.size, "photo")), color = Rouge, onClick = onTrash)
         }
     }
 }
@@ -154,7 +156,7 @@ private fun SwipeCard(item: MediaItem, onDecide: (Boolean) -> Unit) {
         // indication pendant le glissement
         val v = offset.value
         if (abs(v) > 40f) {
-            Text(if (v < 0) "À JETER" else "À GARDER", fontSize = 26.sp, fontWeight = FontWeight.Black, color = Color.White,
+            Text(if (v < 0) Tr.t("À JETER") else Tr.t("À GARDER"), fontSize = 26.sp, fontWeight = FontWeight.Black, color = Color.White,
                 modifier = Modifier.align(Alignment.TopCenter).padding(18.dp)
                     .graphicsLayer { alpha = (abs(v) / limit).coerceIn(0f, 1f) }
                     .background(if (v < 0) Rouge else Vert, RoundedCornerShape(12.dp)).padding(14.dp, 6.dp))

@@ -1,5 +1,7 @@
 package com.jmdargere.cleansmart.data
 
+import com.jmdargere.cleansmart.Tr
+
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -204,15 +206,15 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
      * sinon le probleme et ce qu'il faut faire (on ne commence pas).
      */
     fun verifierAvant(zip: Uri): String? {
-        if (destination == null) return "Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »)."
+        if (destination == null) return Tr.t("Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).")
         if (!destinationOk())
-            return "Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau."
+            return Tr.t("Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.")
         if (libreTelephone() < 300L * 1024 * 1024)
-            return "Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché."
+            return Tr.t("Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.")
         val taille = tailleDe(zip)
         val libre = libreDestination()
         if (libre != null && taille > 0 && libre < taille + 200L * 1024 * 1024)
-            return "Le disque n'a plus assez de place : il reste ${fmtBytes(libre)}, il faut environ ${fmtBytes(taille)} pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché."
+            return Tr.t("Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.", fmtBytes(libre), fmtBytes(taille))
         return null
     }
 
@@ -243,8 +245,8 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
             if (n in noms) {
                 val base = nom.substringBeforeLast('.'); val ext = nom.substringAfterLast('.', "")
                 var k = 2
-                while ("${base}_$k.$ext" in noms) k++
-                n = "${base}_$k.$ext"
+                while ("${base}_${k}.${ext}" in noms) k++
+                n = "${base}_${k}.${ext}"
             }
             noms += n
             return n
@@ -308,7 +310,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
                             t.delete()
                         }
                     }
-                    ext == "mbox" -> mails += lireMbox(input, racine) { k -> progress("Mails Gmail : $k") }
+                    ext == "mbox" -> mails += lireMbox(input, racine) { k -> progress(Tr.t("Mails Gmail : %1", k)) }
                 }
             } catch (x: Exception) {
                 // fichier a moitie ecrit : on l'efface, rien de faux ne reste sur le disque
@@ -318,7 +320,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
             }
         }
 
-        fun resume() = "Photos : $photos · vidéos : $videos · doublons écartés : $doublons"
+        fun resume() = Tr.t("Photos : %1 · vidéos : %2 · doublons écartés : %3", photos, videos, doublons)
 
         /** Gere une erreur : retourne true s'il faut arreter de lire ce ZIP. */
         fun erreur(x: Exception): Boolean = when {
@@ -365,21 +367,21 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
             // ZIP sans table des matieres (telechargement coupe) : lecture pas a pas, plus tolerante
             traiterPasAPas(zip, racine, progress)
         }
-        progress("Terminé", 100)
+        progress(Tr.t("Terminé"), 100)
         ajouter(s)
         if (num > 0) noterEtat(num, if (s.sansProbleme) EtatZip.OK else EtatZip.A_REPRENDRE)
         return s
     }
 
     private fun traiterRapide(zip: Uri, racine: DocumentFile, progress: (String, Int) -> Unit): ExportStats {
-        val pfd = cr.openFileDescriptor(zip, "r") ?: throw IllegalStateException("Fichier illisible")
+        val pfd = cr.openFileDescriptor(zip, "r") ?: throw IllegalStateException(Tr.t("Fichier illisible"))
         pfd.use {
             FileInputStream(pfd.fileDescriptor).channel.use { ch ->
                 val zf = org.apache.commons.compress.archivers.zip.ZipFile.builder().setSeekableByteChannel(ch).get()
                 zf.use {
                     val toutes = java.util.Collections.list(zf.entries)
                     // 1. les dates (petits fichiers .json), lues directement
-                    progress("Lecture des dates des photos…", 2)
+                    progress(Tr.t("Lecture des dates des photos…"), 2)
                     val dates = HashMap<String, Long>()
                     for (e in toutes) if (!e.isDirectory && estMeta(e.name)) runCatching {
                         zf.getInputStream(e).use { lireDate(e.name, it.readBytes(), dates) }
@@ -398,7 +400,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
                         }
                         lu += e.compressedSize.coerceAtLeast(0)
                     }
-                    progress("Rafales : on garde la meilleure…", 92)
+                    progress(Tr.t("Rafales : on garde la meilleure…"), 92)
                     return lot.finir()
                 }
             }
@@ -408,7 +410,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
     /** Lecture pas a pas (ZIP incomplet ou abime) : on recupere tout ce qui est lisible. */
     private fun traiterPasAPas(zip: Uri, racine: DocumentFile, progress: (String, Int) -> Unit): ExportStats {
         val total = tailleDe(zip).coerceAtLeast(1)
-        progress("Lecture des dates des photos…", 1)
+        progress(Tr.t("Lecture des dates des photos…"), 1)
         val dates = HashMap<String, Long>()
         ZipInputStream(cr.openInputStream(zip)!!.buffered(BUF)).use { z ->
             while (true) {
@@ -431,7 +433,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
                 }
             }
         }
-        progress("Rafales : on garde la meilleure…", 92)
+        progress(Tr.t("Rafales : on garde la meilleure…"), 92)
         return lot.finir()
     }
 
@@ -510,8 +512,8 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
         return false
     }
 
-    /** Conseils si ca bloque (affiches dans l'appli). */
-    val conseils = listOf(
+    /** Conseils si ca bloque (affiches dans l'appli, traduits a chaque affichage). */
+    val conseils: List<Pair<String, String>> get() = listOf(
         "📱" to "Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.",
         "📦" to (if (source == SourceExport.GOOGLE) "Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place."
                  else "Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place."),
@@ -539,7 +541,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
 
         fun libre(noms: HashSet<String>, nom: String): String {
             var r = nom
-            if (r in noms) { val b = nom.substringBeforeLast('.'); val e = nom.substringAfterLast('.', ""); var k = 2; while ("${b}_$k.$e" in noms) k++; r = "${b}_$k.$e" }
+            if (r in noms) { val b = nom.substringBeforeLast('.'); val e = nom.substringAfterLast('.', ""); var k = 2; while ("${b}_${k}.${e}" in noms) k++; r = "${b}_${k}.${e}" }
             noms += r; return r
         }
 
@@ -561,11 +563,11 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
                         pdfDir.createFile("application/pdf", cible)?.let { f ->
                             cr.openOutputStream(f.uri)?.use { o -> p.inputStream.use { it.copyTo(o) } }
                         }
-                        fichiers += "PDF/$cible"
+                        fichiers += "PDF/${cible}"
                     }
                 }
                 val ia = msg.from?.firstOrNull() as? InternetAddress
-                index += SavedMail(d.time, ia?.personal ?: ia?.address ?: "", msg.subject ?: "", "$annee/$nom", fichiers, 0)
+                index += SavedMail(d.time, ia?.personal ?: ia?.address ?: "", msg.subject ?: "", "${annee}/${nom}", fichiers, 0)
                 n++
                 if (n % 50 == 0) progress(n)
             }
@@ -600,7 +602,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
 
     private fun dossier(parent: DocumentFile, nom: String): DocumentFile =
         parent.findFile(nom)?.takeIf { it.isDirectory } ?: parent.createDirectory(nom)
-        ?: throw IllegalStateException("Impossible de créer le dossier $nom")
+        ?: throw IllegalStateException(Tr.t("Impossible de créer le dossier %1", nom))
 
     private fun propre(s: String) = s.replace(Regex("[\\\\/:*?\"<>|\\r\\n\\t]"), "_").trim().ifEmpty { "sans_nom" }
 
