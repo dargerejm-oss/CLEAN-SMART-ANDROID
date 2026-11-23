@@ -155,6 +155,31 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
         hashFile.delete()
     }
 
+    /**
+     * « J'ai efface ma copie » : on oublie ce qui a ete copie (empreintes, compteurs, fichiers 001...),
+     * mais on garde le disque choisi, la taille et la demande d'export. Le prochain ZIP est tout recopie.
+     */
+    fun oublierCopies() {
+        hashFile.delete()
+        prefs.edit()
+            .remove("photos").remove("videos").remove("doublons").remove("rafales").remove("mails")
+            .remove("octets").remove("zips").remove("erreurs").remove("etats").remove("termine").remove("destAvecCopies")
+            .apply()
+    }
+
+    /**
+     * La copie a-t-elle disparu du disque ? Vrai si CE MEME dossier contenait deja des photos copiees
+     * et que le dossier « Google Photos » / « iCloud Photos » est maintenant absent ou vide.
+     * (Si on a juste change de disque parce que le premier etait plein, on continue sans doublon.)
+     */
+    fun copieEffacee(): Boolean {
+        val dest = destination ?: return false
+        // (versions 1.7 / 1.8 : le disque n'etait pas note, on considere que c'est le meme)
+        if (!hashFile.exists() || (prefs.getString("destAvecCopies", null) ?: dest.toString()) != dest.toString()) return false
+        val photos = DocumentFile.fromTreeUri(ctx, dest)?.findFile(source.dossierPhotos)
+        return photos == null || photos.listFiles().none { it.isDirectory && it.listFiles().isNotEmpty() }
+    }
+
     // ------------------------------------------------------------------ place
 
     /** Place a prevoir : la taille Google Photos + 10 % de marge (les doublons ecartes en feront gagner). */
@@ -523,6 +548,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
         "🔋" to "Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.",
         "⚠️" to "« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.",
         "🔁" to "Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.",
+        "🔄" to "Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.",
         "⏳" to (if (source == SourceExport.GOOGLE) "Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon)."
                  else "Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon)."),
     ).map { (e, t) -> e to com.jmdargere.cleansmart.Tr.t(t) }
@@ -654,7 +680,11 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
 
     /** Memorise l'empreinte d'un fichier copie et verifie (tout de suite, pour pouvoir reprendre apres une coupure). */
     @Synchronized
-    private fun memoriser(h: String) = hashFile.appendText(h + "\n")
+    private fun memoriser(h: String) {
+        hashFile.appendText(h + "\n")
+        // on note sur quel disque les copies ont ete faites (pour detecter une copie effacee plus tard)
+        destination?.toString()?.let { if (prefs.getString("destAvecCopies", null) != it) prefs.edit().putString("destAvecCopies", it).apply() }
+    }
 
     /** Compte les octets lus (pour le pourcentage d'avancement). */
     private class CountingStream(private val inner: InputStream) : InputStream() {

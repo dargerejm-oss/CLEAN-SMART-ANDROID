@@ -334,6 +334,15 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
             OutlinedButton(onClick = { conseils = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
                 Text(Tr.t("💡 Si ça bloque : tous les conseils"), color = Texte, fontWeight = FontWeight.Bold)
             }
+            Gap(6)
+            // toujours visible : si la copie du disque a ete effacee, on peut tout recopier
+            OutlinedButton(onClick = {
+                ask(Confirm(Tr.t("Tout recommencer ?"),
+                    Tr.t("À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.", if (g) "Google" else "Apple"),
+                    Tr.t("Tout recommencer")) { vm.gpOublierCopies() })
+            }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
+                Text(Tr.t("🔄 Tout recommencer (j'ai effacé ma copie)"), color = Rouge, fontWeight = FontWeight.Bold)
+            }
         }
     }
 

@@ -527,6 +527,12 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         if (demo) { say(Tr.t("En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.")); return@run }
         val pb = withContext(Dispatchers.IO) { google.verifierAvant(zip) }
         if (pb != null) { gpProbleme = pb; return@run }
+        // la copie a ete effacee du disque : on oublie ce qui avait ete copie, et on recopie tout
+        if (withContext(Dispatchers.IO) { google.copieEffacee() }) {
+            withContext(Dispatchers.IO) { google.oublierCopies() }
+            gpTotal = google.total(); gpEtats = google.etats(); gpTermine = false
+            say(Tr.t("La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début."))
+        }
         val nom = google.nomDe(zip)
         upd(Tr.t("Fichier %1", gpSource.nom), Tr.t("Ouverture de %1…", nom), 0)
         val s = withContext(Dispatchers.IO) { google.traiterZip(zip, progress(nom)) }
@@ -550,6 +556,13 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             say(if (ok) Tr.t("🗑️ Fichier supprimé du téléphone : place libre pour le suivant")
                 else Tr.t("Supprime ce fichier toi-même dans Téléchargements pour faire de la place."))
         }
+    }
+
+    /** « J'ai efface ma copie » : tout sera recopie, en gardant le disque et les reglages de l'onglet. */
+    fun gpOublierCopies() {
+        google.oublierCopies()
+        gpTotal = google.total(); gpEtats = google.etats(); gpTermine = false; gpDernier = null
+        say(Tr.t("C'est fait : le prochain fichier sera entièrement recopié."))
     }
 
     fun gpRecommencer() {

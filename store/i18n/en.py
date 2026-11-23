@@ -620,3 +620,12 @@ EN.update({
 "CONTACT": "CONTACT",
 "Une question, un souci, la version complète ? Écris-moi :": "A question, a problem, the full version? Write to me:",
 })
+EN.update({
+"La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.": "The copy on the disk was erased: Clean Smart copies everything again from the start.",
+"C'est fait : le prochain fichier sera entièrement recopié.": "Done: the next file will be fully copied again.",
+"Tout recommencer ?": "Start everything over?",
+"Tout recommencer": "Start over",
+"À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.": "Use this if you erased your copy on the disk: Clean Smart forgets what it already copied, and the next ZIP file will be fully copied again.\n\nThe chosen disk and your settings are kept. Nothing is erased on the disk or at %1.",
+"🔄 Tout recommencer (j'ai effacé ma copie)": "🔄 Start over (I erased my copy)",
+"Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.": "You erased your copy on the disk and nothing is copied any more? Tap \"Start over (I erased my copy)\" at the bottom of the screen, then run your ZIP files again.",
+})
