@@ -98,6 +98,14 @@ fun CleanSmartApp(vm: AppViewModel) {
     // Version d'essai terminee : plus d'acces au nettoyage
     if (Essai.actif && joursEssai == 0) { EssaiTermine(); return }
 
+    // Accueil de bienvenue au tout premier lancement
+    val prefsAccueil = remember { ctx.getSharedPreferences("accueil", Context.MODE_PRIVATE) }
+    var bienvenueVue by remember { mutableStateOf(prefsAccueil.getBoolean("vue", false)) }
+    if (!bienvenueVue) {
+        Bienvenue { prefsAccueil.edit().putBoolean("vue", true).apply(); bienvenueVue = true }
+        return
+    }
+
     var depuisGuide by rememberSaveable { mutableStateOf(false) }
     fun retour() {
         ecran = when {
@@ -351,6 +359,15 @@ private fun Accueil(
 ) {
     val m = vm.media
     LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp)) {
+        vm.nouvelleVersion?.let { v ->
+            item {
+                val c = LocalContext.current
+                CatTile("🆕", "Nouvelle version $v disponible", "Touche ici pour la télécharger, puis ouvre le fichier pour l'installer",
+                    "", "", Orange, Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
+                    runCatching { c.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(com.jmdargere.cleansmart.data.MiseAJour.lienApk))) }
+                }
+            }
+        }
         if (Essai.actif) item {
             Text("🎁 Version d'essai · ${plural(joursEssai, "jour restant", "jours restants")}",
                 color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = TextAlign.Center,
@@ -391,7 +408,8 @@ private fun Accueil(
                 "4 étapes", "CONSEILLÉ", Vert, Modifier.fillMaxWidth(), onClick = openGuide)
             Gap(10)
             CatTile("📦", "Quitter Google Photos", "Toutes tes photos sur une clé ou un disque, par année, sans doublon",
-                if (vm.gpTotal.zips > 0) "étape ${vm.gpEtape} / 7" else "7 étapes", "", Rouge, Modifier.fillMaxWidth(), onClick = openGoogle)
+                if (vm.gpTotal.octets > 0) "${(vm.gpAvancement * 100).toInt()} % déjà à l'abri" else "pas à pas", "", Rouge,
+                Modifier.fillMaxWidth(), onClick = openGoogle)
             Gap()
             BigButton(if (m == null) "🔍 Analyser mon téléphone" else "🔄 Analyser à nouveau", color = Bleu, onClick = analyser)
             Gap()
@@ -1076,6 +1094,8 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                 InfoRow("🎉", "Espace libéré", "Depuis l'installation", fmtBytes(vm.freed))
                 TextButton(onClick = { vm.resetFreed() }) { Text("Remettre le compteur à zéro", color = Gris) }
                 InfoRow("📖", "Mode d'emploi", "Français / English", onClick = openManual)
+                InfoRow("🆕", "Rechercher une mise à jour", "Version installée : ${BuildConfig.VERSION_NAME}",
+                    onClick = { vm.verifierMiseAJour(true) })
                 InfoRow("⚙️", "Réglages de stockage Android", "", onClick = {
                     runCatching { ctx.startActivity(Intent(AndroidSettings.ACTION_INTERNAL_STORAGE_SETTINGS)) }
                 })

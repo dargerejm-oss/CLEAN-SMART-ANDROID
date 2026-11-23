@@ -12,8 +12,8 @@ android {
         applicationId "com.jmdargere.cleansmart"
         minSdk 30
         targetSdk 35
-        versionCode 7
-        versionName "1.6"
+        versionCode 8
+        versionName "1.7"
     }
 
     // Cle de signature PRIVEE : fournie par GitHub (secrets KEYSTORE_B64 et KEYSTORE_PASSWORD), jamais dans le depot.
@@ -92,6 +92,8 @@ dependencies {
     implementation 'androidx.documentfile:documentfile:1.0.1'
     // Travail de nuit (sauvegarde automatique, alertes, rapport du mois)
     implementation 'androidx.work:work-runtime-ktx:2.10.0'
+    // Lecture rapide des ZIP de Google Takeout (acces direct a la table des matieres)
+    implementation 'org.apache.commons:commons-compress:1.27.1'
     // Compression des videos
     implementation 'androidx.media3:media3-transformer:1.5.1'
     implementation 'androidx.media3:media3-effect:1.5.1'

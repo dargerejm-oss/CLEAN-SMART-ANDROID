@@ -13,6 +13,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.jmdargere.cleansmart.BuildConfig
 import com.jmdargere.cleansmart.data.Backup
 import com.jmdargere.cleansmart.data.ContactsCleaner
 import com.jmdargere.cleansmart.data.ContactsResult
@@ -79,8 +80,20 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     /** Elements en attente de la confirmation Android pour la corbeille. */
     private var pendingTrash: List<MediaItem> = emptyList()
 
+    /** Nom de la nouvelle version disponible sur GitHub (null = a jour). */
+    var nouvelleVersion by mutableStateOf<String?>(null); private set
+
+    fun verifierMiseAJour(forcer: Boolean) {
+        viewModelScope.launch {
+            val v = withContext(Dispatchers.IO) { com.jmdargere.cleansmart.data.MiseAJour.verifier(ctx, forcer) }
+            nouvelleVersion = v
+            if (forcer && v == null) say("👍 Tu as déjà la dernière version (${BuildConfig.VERSION_NAME})")
+        }
+    }
+
     init {
         Night.schedule(app, settings)
+        verifierMiseAJour(false)
         refreshStorage()
         viewModelScope.launch { mailAccount = withContext(Dispatchers.IO) { mail.account() } }
     }
@@ -416,28 +429,46 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     // ------------------------------------------------------------------ quitter Google Photos (export Takeout)
 
     val google = com.jmdargere.cleansmart.data.GoogleExport(app)
-    var gpEtape by mutableIntStateOf(google.etape); private set
     var gpTotal by mutableStateOf(google.total()); private set
     var gpTaille by mutableIntStateOf(google.tailleGoogleGo); private set
     var gpDest by mutableStateOf(google.nomDestination()); private set
+    var gpDestOk by mutableStateOf(google.destinationOk()); private set
+    var gpNb by mutableIntStateOf(google.nbFichiers); private set
+    var gpDemande by mutableStateOf(google.exportDemande); private set
+    var gpTermine by mutableStateOf(google.termine); private set
+    var gpEtats by mutableStateOf(google.etats()); private set
     var gpDernier by mutableStateOf<Pair<String, com.jmdargere.cleansmart.data.ExportStats>?>(null); private set
 
-    fun gpAller(n: Int) { gpEtape = n; google.etape = n }
     fun gpSetTaille(go: Int) { gpTaille = go; google.tailleGoogleGo = go }
-    fun gpSetDest(uri: android.net.Uri) { google.destination = uri; gpDest = google.nomDestination() }
+    fun gpSetDest(uri: android.net.Uri) { google.destination = uri; gpDest = google.nomDestination(); gpDestOk = google.destinationOk() }
+    fun gpRafraichirDisque() { gpDestOk = google.destinationOk() }
+    fun gpSetNb(n: Int) { gpNb = n; google.nbFichiers = n }
+    fun gpSetDemande(v: Boolean) { gpDemande = v; google.exportDemande = v }
+    fun gpSetTermine(v: Boolean) { gpTermine = v; google.termine = v }
 
-    /** Traite un fichier ZIP de l'export Google : rangement par annee, doublons, rafales, verification. */
+    /** Avancement global : part de la phototheque deja a l'abri (0..1). */
+    val gpAvancement: Float get() = if (gpTaille > 0) (gpTotal.octets.toFloat() / (gpTaille * (1L shl 30))).coerceIn(0f, 1f) else 0f
+
     /** Probleme detecte avant de commencer (telephone plein, disque plein ou debranche...) : affiche avec les conseils. */
     var gpProbleme by mutableStateOf<String?>(null)
 
+    /** Traite un fichier ZIP de l'export Google : rangement par annee, doublons, rafales, verification. */
     fun gpTraiter(zip: android.net.Uri, onFini: (android.net.Uri) -> Unit) = run("Fichier Google Photos") {
         val pb = withContext(Dispatchers.IO) { google.verifierAvant(zip) }
         if (pb != null) { gpProbleme = pb; return@run }
         val nom = google.nomDe(zip)
         upd("Fichier Google Photos", "Ouverture de $nom…", 0)
-        val s = withContext(Dispatchers.IO) { google.traiterZip(zip, progress("$nom")) }
+        val s = withContext(Dispatchers.IO) { google.traiterZip(zip, progress(nom)) }
         gpDernier = nom to s
         gpTotal = google.total()
+        gpEtats = google.etats()
+        val num = google.numero(nom)
+        if (num > gpNb) gpSetNb(num)
+        // notification : utile si le telephone est pose ou l'appli en arriere-plan
+        Night.notify(ctx, 10,
+            if (s.sansProbleme) "✅ Fichier ${if (num > 0) "%03d".format(num) else nom} terminé" else "⚠️ Fichier ${if (num > 0) "%03d".format(num) else nom} à reprendre",
+            if (s.sansProbleme) "${plural(s.photos, "photo")} et ${plural(s.videos, "vidéo")} à l'abri. Tu peux le supprimer et télécharger le suivant."
+            else "Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.")
         onFini(zip)
     }
 
@@ -451,7 +482,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     fun gpRecommencer() {
         google.remettreAZero()
-        gpEtape = 1; gpTotal = google.total(); gpTaille = 0; gpDest = google.nomDestination(); gpDernier = null
+        gpTotal = google.total(); gpTaille = 0; gpDest = google.nomDestination(); gpDestOk = false; gpDernier = null
+        gpNb = 0; gpDemande = false; gpTermine = false; gpEtats = emptyMap()
     }
 
     // ------------------------------------------------------------------ menage guide des mails (4 etapes)

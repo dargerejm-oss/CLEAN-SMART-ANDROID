@@ -11,6 +11,15 @@
   mails → corbeille du compte (IMAP MOVE), contacts → export .vcf avant suppression si la sauvegarde est active.
 - Code : `data/` (moteur : MediaScanner, MailCleaner, ContactsCleaner, Backup, Settings), `AppViewModel.kt`, `ui/` (écrans).
 
+## Version 1.7
+- Google Photos = un seul tableau de bord (circuit animé, jauge, 5 étapes repliables, liste des fichiers 001…,
+  modèle de la page Takeout, notification de fin de fichier, fichier déjà fait détecté).
+- Moteur Google : 1 seule lecture via la table des matières (commons-compress), repli pas à pas si ZIP incomplet,
+  noms gardés en mémoire, morceaux de 1 Mo, netteté calculée en parallèle. Sauvegarde normale accélérée aussi.
+- Accueil de bienvenue (4 pages) au 1er lancement ; mise à jour en un geste (`data/MiseAJour.kt` + `version.json` publié
+  par le workflow, vérifié 1 fois par jour, bandeau orange sur l'accueil).
+- À faire ensuite (demandé « fais tout ») : interface anglaise, « Quitter iCloud Photos », mode démo, widget.
+
 ## Version 1.6 : onglet « Quitter Google Photos » (`data/GoogleExport.kt`, `ui/GooglePhotos.kt`)
 - Google n'autorise plus la lecture de toute la photothèque par une appli : on passe par Google Takeout (ZIP de 2 Go).
 - 7 écrans : bienvenue, place nécessaire, disque, export Takeout, traitement ZIP par ZIP, rapport, libérer (manuel).

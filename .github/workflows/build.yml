@@ -41,6 +41,13 @@ jobs:
           cp app/build/outputs/apk/essai/debug/app-essai-debug.apk CLEAN_SMART_TEST_30_JOURS.apk
           cp app/build/outputs/bundle/completRelease/app-complet-release.aab CLEAN_SMART.aab
 
+      - name: Fichier de version (pour la mise a jour depuis l'appli)
+        run: |
+          VC=$(grep -oP 'versionCode \K\d+' app/build.gradle)
+          VN=$(grep -oP 'versionName "\K[^"]+' app/build.gradle)
+          echo "{\"versionCode\": $VC, \"versionName\": \"$VN\"}" > version.json
+          cat version.json
+
       - name: Publier l'APK et l'AAB
         uses: softprops/action-gh-release@v2
         with:
@@ -52,3 +59,4 @@ jobs:
             CLEAN_SMART.apk
             CLEAN_SMART_TEST_30_JOURS.apk
             CLEAN_SMART.aab
+            version.json

@@ -105,13 +105,19 @@ class Backup(private val ctx: Context) {
     private fun copyIfNeeded(folder: DocumentFile, content: HashMap<String, Long>, it: MediaItem): Boolean {
         if (content[it.name] == it.size) return false
         val mime = cr.getType(it.uri) ?: if (it.video) "video/mp4" else "image/jpeg"
-        folder.findFile(it.name)?.delete()
+        // on ne relit le dossier que si un fichier de meme nom (mais incomplet) existe deja : beaucoup plus rapide
+        if (it.name in content) folder.findFile(it.name)?.delete()
         val dest = folder.createFile(mime, it.name) ?: throw IllegalStateException("Impossible d'écrire ${it.name}")
-        cr.openInputStream(it.uri).use { input ->
-            cr.openOutputStream(dest.uri).use { out ->
-                if (input == null || out == null) throw IllegalStateException("Lecture impossible : ${it.name}")
-                input.copyTo(out, 256 * 1024)
+        try {
+            cr.openInputStream(it.uri).use { input ->
+                cr.openOutputStream(dest.uri).use { out ->
+                    if (input == null || out == null) throw IllegalStateException("Lecture impossible : ${it.name}")
+                    input.copyTo(out, 1 shl 20)
+                }
             }
+        } catch (x: Exception) {
+            dest.delete()      // jamais de fichier a moitie copie dans la sauvegarde
+            throw x
         }
         content[dest.name ?: it.name] = it.size
         return true
