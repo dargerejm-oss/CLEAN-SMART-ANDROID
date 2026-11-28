@@ -22,6 +22,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -76,7 +77,7 @@ import com.jmdargere.cleansmart.data.fmtNum
 import com.jmdargere.cleansmart.data.plural
 
 /** Les ecrans de l'appli (navigation simple, sans bibliotheque). */
-private enum class Ecran { ACCUEIL, GUIDE, GOOGLE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL, INUTILES }
+private enum class Ecran { ACCUEIL, GUIDE, GOOGLE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL, INUTILES, PHOTOS }
 
 private fun mediaPerms(): Array<String> =
     if (Build.VERSION.SDK_INT >= 33) arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
@@ -112,6 +113,7 @@ fun CleanSmartApp(vm: AppViewModel) {
     fun retour() {
         ecran = when {
             ecran == Ecran.TRI && depuisGuide -> Ecran.GUIDE
+            ecran == Ecran.TRI || ecran == Ecran.CATEGORIE -> Ecran.PHOTOS
             ecran == Ecran.MAIL_TRI -> Ecran.MAIL_GUIDE
             ecran == Ecran.MAILS_SAUVER || ecran == Ecran.MAILS_CORBEILLE || ecran == Ecran.MAIL_GUIDE -> Ecran.MAILS
             else -> Ecran.ACCUEIL
@@ -245,7 +247,7 @@ fun CleanSmartApp(vm: AppViewModel) {
         }
     }
 
-    val showCleanBar = (ecran == Ecran.ACCUEIL || ecran == Ecran.CATEGORIE) && vm.selected.isNotEmpty()
+    val showCleanBar = (ecran == Ecran.PHOTOS || ecran == Ecran.CATEGORIE) && vm.selected.isNotEmpty()
 
     Scaffold(
         containerColor = Fond,
@@ -271,6 +273,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                         Ecran.OPTIONS -> Tr.t("⚙️ Options")
                         Ecran.MANUEL -> Tr.t("📖 Mode d'emploi")
                         Ecran.INUTILES -> Tr.t("🧹 Fichiers inutiles")
+                        Ecran.PHOTOS -> Tr.t("📸 Photos")
                     }, fontWeight = FontWeight.ExtraBold)
                 },
                 navigationIcon = {
@@ -300,6 +303,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                     openMail = { ecran = Ecran.MAILS },
                     openManual = { ecran = Ecran.MANUEL },
                     openInutiles = { ecran = Ecran.INUTILES },
+                    openPhotos = { ecran = Ecran.PHOTOS },
                     chooseFolder = { folderLauncher.launch(null) },
                     ask = { confirm = it })
                 Ecran.CATEGORIE -> Categorie(vm, cat, envoyer = ::envoyer, proteger = ::proteger, compresser = ::compresser)
@@ -337,6 +341,10 @@ fun CleanSmartApp(vm: AppViewModel) {
                 Ecran.OPTIONS -> Options(vm, chooseFolder = { folderLauncher.launch(null) }, openManual = { ecran = Ecran.MANUEL })
                 Ecran.MANUEL -> Manual()
                 Ecran.INUTILES -> Inutiles(vm, ask = { confirm = it })
+                Ecran.PHOTOS -> Photos(vm, ::analyser, ::souvenir,
+                    openCat = { cat = it; ecran = Ecran.CATEGORIE },
+                    openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
+                    ask = { confirm = it })
             }
         }
     }
@@ -367,6 +375,7 @@ private fun Accueil(
     openMail: () -> Unit,
     openManual: () -> Unit,
     openInutiles: () -> Unit,
+    openPhotos: () -> Unit,
     chooseFolder: () -> Unit,
     ask: (Confirm) -> Unit,
 ) {
@@ -435,23 +444,77 @@ private fun Accueil(
                 }
             }
             Gap()
-            // le Menage guide : la facon la plus simple de tout faire, dans le bon ordre
-            CatTile("🧭", Tr.t("Ménage guidé"), Tr.t("Trier, garder, sauvegarder, libérer"),
-                Tr.t("4 étapes"), Tr.t("CONSEILLÉ"), Vert, Modifier.fillMaxWidth(), onClick = openGuide)
+            // le Menage complet : photos, telephone et mails, dans le bon ordre (le plus simple)
+            CatTile("✨", Tr.t("Ménage complet"), Tr.t("Photos, téléphone et mails, étape par étape"),
+                Tr.t("le plus simple"), Tr.t("CONSEILLÉ"), Vert, Modifier.fillMaxWidth(), onClick = openGuide)
             Gap(10)
-            CatTile("🧹", Tr.t("Fichiers inutiles"), Tr.t("Fichiers temporaires, miniatures, dossiers vides, restes d'applis"),
-                Tr.t("1 bouton"), Tr.t("NOUVEAU"), Turquoise, Modifier.fillMaxWidth(), onClick = openInutiles)
-            Gap(10)
-            CatTile("📦", Tr.t("Quitter Google Photos"), Tr.t("Toutes tes photos sur une clé ou un disque, par année, sans doublon"),
-                Tr.t("pas à pas"), "", Rouge, Modifier.fillMaxWidth(), onClick = openGoogle)
-            Gap(10)
-            CatTile("🍏", Tr.t("Quitter iCloud Photos"), Tr.t("Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon"),
-                Tr.t("pas à pas"), "", Color(0xFF37474F), Modifier.fillMaxWidth(), onClick = openIcloud)
+            // ou une seule partie : 3 portes
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Porte("📸", Tr.t("Photos"), if (m == null) Tr.t("Doublons, rafales, floues") else Tr.t("%1 analysées", fmtNum(m.photoCount)),
+                    Violet, Modifier.weight(1f), openPhotos)
+                Porte("🧹", Tr.t("Téléphone"), Tr.t("Fichiers inutiles"), Turquoise, Modifier.weight(1f), openInutiles)
+                Porte("✉️", Tr.t("Mails"), if (vm.mailAccount.ready) Tr.t("Trier, protéger") else Tr.t("Connecter"),
+                    Pourpre, Modifier.weight(1f), openMail)
+            }
+            Gap(6)
+            BoxCard {
+                InfoRow("📦", Tr.t("Quitter Google Photos"), Tr.t("Toutes tes photos sur une clé ou un disque, par année, sans doublon"), onClick = openGoogle)
+                InfoRow("🍏", Tr.t("Quitter iCloud Photos"), Tr.t("Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon"), onClick = openIcloud)
+            }
+        }
+
+        // Sauvegarde
+        item {
+            SectionTitle(Tr.t("SAUVEGARDE"))
+            BoxCard {
+                val ok = vm.backupReady()
+                InfoRow("💾", if (ok) vm.backupFolderLabel() else Tr.t("Aucun dossier de sauvegarde"),
+                    if (ok) Tr.t("Carte SD, clé USB, Drive… choisis où tu veux") else Tr.t("Choisis une carte SD, une clé USB ou Google Drive"))
+                Gap()
+                if (ok) BigButton(Tr.t("💾 Sauvegarder toutes mes photos")) { vm.backupEverything() }
+                else BigButton(Tr.t("📁 Choisir un dossier"), onClick = chooseFolder)
+            }
+        }
+
+        item {
             Gap()
+            OutlinedButton(onClick = openManual, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
+                Text(Tr.t("📖 Mode d'emploi"), color = Texte)
+            }
+        }
+    }
+}
+
+/** Une des 3 portes de l'accueil : Photos, Telephone, Mails. */
+@Composable
+private fun Porte(emoji: String, titre: String, sous: String, couleur: Color, modifier: Modifier, onClick: () -> Unit) {
+    Column(modifier.height(128.dp).background(couleur, RoundedCornerShape(20.dp)).clickable(onClick = onClick).padding(10.dp),
+        horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
+        Text(emoji, fontSize = 34.sp)
+        Text(titre, color = Color.White, fontWeight = FontWeight.Black, fontSize = 16.sp, textAlign = TextAlign.Center)
+        Text(sous, color = Color(0xE6FFFFFF), fontSize = 11.sp, textAlign = TextAlign.Center, lineHeight = 13.sp, maxLines = 2)
+    }
+}
+
+// =====================================================================================
+// PHOTOS : analyser, les categories a nettoyer, le tri rapide, les outils photos
+// =====================================================================================
+
+@Composable
+private fun Photos(
+    vm: AppViewModel,
+    analyser: () -> Unit,
+    souvenir: (Int) -> Unit,
+    openCat: (Cat) -> Unit,
+    openTri: () -> Unit,
+    ask: (Confirm) -> Unit,
+) {
+    val m = vm.media
+    LazyColumn(contentPadding = PaddingValues(16.dp, 8.dp, 16.dp, 24.dp)) {
+        item {
             BigButton(if (m == null) Tr.t("🔍 Analyser mon téléphone") else Tr.t("🔄 Analyser à nouveau"), color = Bleu, onClick = analyser)
             Gap()
         }
-
         if (m == null) {
             item {
                 BoxCard {
@@ -556,39 +619,6 @@ private fun Accueil(
             }
         }
 
-        // Mails
-        item {
-            SectionTitle(Tr.t("BOÎTE MAIL"))
-            BoxCard(onClick = openMail) {
-                val a = vm.mailAccount
-                val r = vm.mailResult
-                when {
-                    !a.ready -> InfoRow("✉️", Tr.t("Connecter ma boîte mail"), Tr.t("Gmail, Outlook, Yahoo, Orange, Free…"), onClick = openMail)
-                    r == null -> InfoRow("✉️", a.email, Tr.t("Toucher pour analyser"), onClick = openMail)
-                    else -> InfoRow("✉️", a.email, Tr.t("%1 newsletters · %2 gros mails", fmtNum(r.newsletters), fmtNum(r.bigCount)), fmtBytes(r.bigBytes), onClick = openMail)
-                }
-            }
-        }
-
-        // Sauvegarde
-        item {
-            SectionTitle(Tr.t("SAUVEGARDE"))
-            BoxCard {
-                val ok = vm.backupReady()
-                InfoRow("💾", if (ok) vm.backupFolderLabel() else Tr.t("Aucun dossier de sauvegarde"),
-                    if (ok) Tr.t("Carte SD, clé USB, Drive… choisis où tu veux") else Tr.t("Choisis une carte SD, une clé USB ou Google Drive"))
-                Gap()
-                if (ok) BigButton(Tr.t("💾 Sauvegarder toutes mes photos")) { vm.backupEverything() }
-                else BigButton(Tr.t("📁 Choisir un dossier"), onClick = chooseFolder)
-            }
-        }
-
-        item {
-            Gap()
-            OutlinedButton(onClick = openManual, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
-                Text(Tr.t("📖 Mode d'emploi"), color = Texte)
-            }
-        }
     }
 }
 
