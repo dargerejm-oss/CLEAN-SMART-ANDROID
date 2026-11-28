@@ -1,5 +1,8 @@
 package com.jmdargere.cleansmart.ui
 
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.drawscope.clipPath
+import androidx.compose.ui.graphics.graphicsLayer
 import com.jmdargere.cleansmart.Tr
 
 import android.content.Context
@@ -242,13 +245,13 @@ fun BusyDialog(b: Busy) {
                 Spacer(Modifier.height(10.dp))
                 Sablier(b.pct / 100f)
                 Spacer(Modifier.height(10.dp))
-                Text("${b.pct} %", fontWeight = FontWeight.Black, fontSize = 30.sp, color = Texte)
+                Text("${b.pct} %", fontWeight = FontWeight.Black, fontSize = 34.sp, color = sableCouleur(b.pct / 100f))
                 Text(b.step.ifEmpty { Tr.t("Préparation…") }, color = Gris, fontSize = 14.sp, textAlign = TextAlign.Center)
                 Spacer(Modifier.height(12.dp))
                 LinearProgressIndicator(
                     progress = { b.pct / 100f },
                     modifier = Modifier.fillMaxWidth().height(12.dp).clip(RoundedCornerShape(99.dp)),
-                    color = Vert, trackColor = Carte2,
+                    color = sableCouleur(b.pct / 100f), trackColor = Carte2,
                 )
                 Spacer(Modifier.height(10.dp))
                 Row(Modifier.fillMaxWidth()) {
@@ -266,54 +269,101 @@ fun BusyDialog(b: Busy) {
     }
 }
 
-/** Sablier anime : le sable du haut descend avec l'avancement, un filet de sable coule. */
+/**
+ * Sablier repris de Nettoyage Pro : verre avec reflets, socles en bois, sable qui change de couleur avec
+ * l'avancement (rouge → orange → jaune → vert), filet de sable qui coule, petit balancement a la fin.
+ * Dessine dans un repere de 150 x 220 (comme le dessin d'origine), mis a l'echelle.
+ */
 @Composable
-fun Sablier(progress: Float) {
+fun Sablier(progress: Float, largeur: androidx.compose.ui.unit.Dp = 96.dp) {
+    val p = progress.coerceIn(0f, 1f)
     val anim = androidx.compose.animation.core.rememberInfiniteTransition(label = "sablier")
     val flot by anim.animateFloat(
-        initialValue = 0f, targetValue = 1f, label = "flot",
+        initialValue = 0f, targetValue = 7f, label = "flot",
         animationSpec = androidx.compose.animation.core.infiniteRepeatable(
-            androidx.compose.animation.core.tween(700, easing = androidx.compose.animation.core.LinearEasing)),
+            androidx.compose.animation.core.tween(350, easing = androidx.compose.animation.core.LinearEasing)),
     )
-    val sable = Color(0xFFF5B841)
-    val verre = Color(0xFFDCE6F5)
-    val bois = Color(0xFF8D5A2B)
-    androidx.compose.foundation.Canvas(Modifier.size(width = 84.dp, height = 110.dp)) {
-        val w = size.width; val h = size.height
-        val cx = w / 2; val haut = h * 0.08f; val bas = h * 0.92f; val mid = h / 2
-        val l = w * 0.14f; val r = w * 0.86f; val col = w * 0.05f
-        val p = progress.coerceIn(0f, 1f)
-        fun tri(a: androidx.compose.ui.geometry.Offset, b: androidx.compose.ui.geometry.Offset, c: androidx.compose.ui.geometry.Offset) =
-            androidx.compose.ui.graphics.Path().apply { moveTo(a.x, a.y); lineTo(b.x, b.y); lineTo(c.x, c.y); close() }
-        val O = { x: Float, y: Float -> androidx.compose.ui.geometry.Offset(x, y) }
-        // verre : deux trapezes qui se touchent au milieu (le col du sablier)
-        drawPath(androidx.compose.ui.graphics.Path().apply {
-            moveTo(l, haut); lineTo(r, haut); lineTo(cx + col, mid); lineTo(cx - col, mid); close()
-        }, verre)
-        drawPath(androidx.compose.ui.graphics.Path().apply {
-            moveTo(cx - col, mid); lineTo(cx + col, mid); lineTo(r, bas); lineTo(l, bas); close()
-        }, verre)
-        // sable du haut : un triangle qui diminue
-        val th = (mid - haut) * (1f - p) * 0.9f
-        if (th > 1f) {
-            val k = th / (mid - haut)
-            drawPath(tri(O(cx - (r - l) / 2 * k, mid - th), O(cx + (r - l) / 2 * k, mid - th), O(cx, mid)), sable)
+    // petit balancement quand c'est fini
+    val balance = remember { androidx.compose.animation.core.Animatable(0f) }
+    LaunchedEffect(p >= 1f) {
+        if (p >= 1f) repeat(2) {
+            balance.animateTo(-8f, androidx.compose.animation.core.tween(300))
+            balance.animateTo(8f, androidx.compose.animation.core.tween(400))
+            balance.animateTo(0f, androidx.compose.animation.core.tween(300))
         }
-        // sable du bas : un tas qui grandit
-        val bh = (bas - mid) * p * 0.9f
-        if (bh > 1f) drawPath(tri(O(cx - (r - l) / 2 * (0.35f + 0.65f * p), bas), O(cx, bas - bh), O(cx + (r - l) / 2 * (0.35f + 0.65f * p), bas)), sable)
-        // filet de sable qui coule
-        if (p < 1f) {
-            val y0 = mid + (bas - mid - bh) * flot * 0.9f
-            drawLine(sable, O(cx, mid), O(cx, mid + (bas - mid - bh)), strokeWidth = 3f)
-            drawCircle(sable, 3.5f, O(cx, y0))
-        }
-        // les deux planches de bois
-        drawRoundRect(bois, topLeft = O(w * 0.04f, 0f), size = androidx.compose.ui.geometry.Size(w * 0.92f, haut),
-            cornerRadius = androidx.compose.ui.geometry.CornerRadius(6f))
-        drawRoundRect(bois, topLeft = O(w * 0.04f, bas), size = androidx.compose.ui.geometry.Size(w * 0.92f, h - bas),
-            cornerRadius = androidx.compose.ui.geometry.CornerRadius(6f))
     }
+    val couleur = sableCouleur(p)
+    androidx.compose.foundation.Canvas(
+        Modifier.size(width = largeur, height = largeur * (220f / 150f))
+            .graphicsLayer { rotationZ = balance.value }
+    ) {
+        val k = size.width / 150f
+        fun X(v: Float) = v * k
+        fun path(bloc: androidx.compose.ui.graphics.Path.() -> Unit) = androidx.compose.ui.graphics.Path().apply(bloc)
+        val haut = path { // ampoule du haut
+            moveTo(X(30f), X(28f)); lineTo(X(120f), X(28f))
+            cubicTo(X(120f), X(70f), X(88f), X(92f), X(80f), X(110f)); lineTo(X(70f), X(110f))
+            cubicTo(X(62f), X(92f), X(30f), X(70f), X(30f), X(28f)); close()
+        }
+        val bas = path { // ampoule du bas
+            moveTo(X(70f), X(110f)); lineTo(X(80f), X(110f))
+            cubicTo(X(88f), X(128f), X(120f), X(150f), X(120f), X(192f)); lineTo(X(30f), X(192f))
+            cubicTo(X(30f), X(150f), X(62f), X(128f), X(70f), X(110f)); close()
+        }
+        val bois = androidx.compose.ui.graphics.Brush.verticalGradient(listOf(Color(0xFFA1672F), Color(0xFF7B4A1D), Color(0xFF4E2C0E)))
+        val reflet = androidx.compose.ui.graphics.Brush.radialGradient(
+            listOf(Color.White.copy(alpha = .45f), Color.Transparent), center = Offset(X(55f), X(60f)), radius = X(120f))
+
+        // ombre au sol
+        drawOval(Color.Black.copy(alpha = .22f), topLeft = Offset(X(13f), X(205f)), size = androidx.compose.ui.geometry.Size(X(124f), X(14f)))
+        // socle du bas
+        drawRoundRect(bois, topLeft = Offset(X(16f), X(196f)), size = androidx.compose.ui.geometry.Size(X(118f), X(16f)), cornerRadius = androidx.compose.ui.geometry.CornerRadius(X(6f)))
+
+        // sable du haut : il descend
+        val h = 82f * (1f - p)
+        if (h > 0.5f) clipPath(haut) {
+            drawRect(couleur, topLeft = Offset(X(20f), X(110f - h)), size = androidx.compose.ui.geometry.Size(X(110f), X(h)))
+            drawRect(reflet, topLeft = Offset(X(20f), X(110f - h)), size = androidx.compose.ui.geometry.Size(X(110f), X(h)))
+        }
+        // sable du bas : un petit tas qui monte
+        if (p > 0.005f) clipPath(bas) {
+            val tas = path {
+                moveTo(X(20f), X(192f)); lineTo(X(130f), X(192f)); lineTo(X(130f), X(192f - 58f * p))
+                quadraticTo(X(100f), X(192f - 58f * p), X(75f), X(192f - 70f * p - 6f))
+                quadraticTo(X(50f), X(192f - 58f * p), X(20f), X(192f - 58f * p)); close()
+            }
+            drawPath(tas, couleur)
+            drawPath(tas, reflet)
+        }
+        // filet de sable qui coule (pointilles qui defilent)
+        if (p > 0f && p < 1f) drawLine(couleur, Offset(X(75f), X(108f)), Offset(X(75f), X(192f - 70f * p - 6f)), strokeWidth = X(2.6f),
+            pathEffect = androidx.compose.ui.graphics.PathEffect.dashPathEffect(floatArrayOf(X(3f), X(4f)), -X(flot)))
+
+        // le verre (par-dessus) et ses reflets
+        val verre = androidx.compose.ui.graphics.Brush.horizontalGradient(
+            listOf(Color.White.copy(alpha = .75f), Color(0x40CFE9F5), Color(0x2E9FD0E8), Color.White.copy(alpha = .6f)))
+        drawPath(haut, verre); drawPath(bas, verre)
+        val trait = androidx.compose.ui.graphics.drawscope.Stroke(width = X(2.5f))
+        drawPath(haut, Color(0xFF8FB9CC), style = trait); drawPath(bas, Color(0xFF8FB9CC), style = trait)
+        val rond = androidx.compose.ui.graphics.drawscope.Stroke(width = X(5f), cap = androidx.compose.ui.graphics.StrokeCap.Round)
+        drawPath(path { moveTo(X(40f), X(36f)); cubicTo(X(42f), X(66f), X(60f), X(84f), X(66f), X(104f)) }, Color.White.copy(alpha = .75f), style = rond)
+        drawPath(path { moveTo(X(40f), X(184f)); cubicTo(X(42f), X(160f), X(52f), X(148f), X(58f), X(138f)) }, Color.White.copy(alpha = .45f),
+            style = androidx.compose.ui.graphics.drawscope.Stroke(width = X(4f), cap = androidx.compose.ui.graphics.StrokeCap.Round))
+        // socle du haut
+        drawRoundRect(bois, topLeft = Offset(X(18f), X(14f)), size = androidx.compose.ui.geometry.Size(X(114f), X(16f)), cornerRadius = androidx.compose.ui.geometry.CornerRadius(X(6f)))
+        drawRoundRect(Color.White.copy(alpha = .25f), topLeft = Offset(X(18f), X(14f)), size = androidx.compose.ui.geometry.Size(X(114f), X(4f)), cornerRadius = androidx.compose.ui.geometry.CornerRadius(X(2f)))
+        drawRoundRect(Color.White.copy(alpha = .25f), topLeft = Offset(X(16f), X(196f)), size = androidx.compose.ui.geometry.Size(X(118f), X(4f)), cornerRadius = androidx.compose.ui.geometry.CornerRadius(X(2f)))
+    }
+}
+
+/** Couleur du sable selon l'avancement : rouge, orange, jaune, puis vert a la fin (comme Nettoyage Pro). */
+fun sableCouleur(p: Float): Color {
+    val etapes = listOf(0f to Color(0xFFE53935), 0.45f to Color(0xFFFB8C00), 0.75f to Color(0xFFFDD835), 1f to Color(0xFF43A047))
+    for (i in 1 until etapes.size) if (p <= etapes[i].first) {
+        val (a, ca) = etapes[i - 1]; val (b, cb) = etapes[i]
+        return androidx.compose.ui.graphics.lerp(ca, cb, ((p - a) / (b - a)).coerceIn(0f, 1f))
+    }
+    return Color(0xFF43A047)
 }
 
 /** Grand bandeau vert « TERMINÉ » (comme Photo Simple). */
