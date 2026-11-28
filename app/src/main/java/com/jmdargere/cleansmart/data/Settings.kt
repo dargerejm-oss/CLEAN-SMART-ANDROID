@@ -26,6 +26,8 @@ data class Settings(
     val alerts: Boolean = true,
     /** "Liberer la place" : garder sur le telephone les photos des N derniers mois. */
     val keepMonths: Int = 3,
+    /** Menage automatique du dimanche (fichiers inutiles, spam, regles mails + rappel des photos a trier). */
+    val sundayClean: Boolean = false,
 ) {
     val backupTree: Uri? get() = backupUri?.let { Uri.parse(it) }
     val fontScale: Float get() = when (textSize) { 1 -> 1.2f; 2 -> 1.4f; else -> 1f }
@@ -61,6 +63,7 @@ data class Settings(
                 nightBackup = p.getBoolean("nightBackup", false),
                 alerts = p.getBoolean("alerts", true),
                 keepMonths = p.getInt("keepMonths", 3),
+                sundayClean = p.getBoolean("sundayClean", false),
             )
         }
 
@@ -75,6 +78,7 @@ data class Settings(
                 .putBoolean("nightBackup", s.nightBackup)
                 .putBoolean("alerts", s.alerts)
                 .putInt("keepMonths", s.keepMonths)
+                .putBoolean("sundayClean", s.sundayClean)
                 .apply()
         }
     }

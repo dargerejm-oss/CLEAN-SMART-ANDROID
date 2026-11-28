@@ -49,7 +49,7 @@ import com.jmdargere.cleansmart.data.fmtNum
  * Le cache des autres applis : Android l'interdit aux applis, on ouvre l'ecran d'Android prevu pour ca.
  */
 @Composable
-fun Inutiles(vm: AppViewModel, ask: (Confirm) -> Unit) {
+fun Inutiles(vm: AppViewModel, ask: (Confirm) -> Unit, openApplis: () -> Unit) {
     val ctx = LocalContext.current
     var acces by remember { mutableStateOf(vm.demo || vm.junkAcces()) }
     val vie = LocalLifecycleOwner.current
@@ -61,6 +61,11 @@ fun Inutiles(vm: AppViewModel, ask: (Confirm) -> Unit) {
     LaunchedEffect(acces) { if (acces && vm.junk == null) vm.junkChercher() }
 
     LazyColumn(contentPadding = PaddingValues(16.dp, 10.dp, 16.dp, 28.dp)) {
+        item {
+            BoxCard(onClick = openApplis) {
+                InfoRow("📱", Tr.t("Mes applis"), Tr.t("Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste"), onClick = openApplis)
+            }
+        }
         item {
             if (!acces) {
                 BoxCard {

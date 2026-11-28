@@ -571,6 +571,68 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         say(Tr.t("🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie", plural(mailProteges!!.values.sum(), "mail")))
     }
 
+    // ------------------------------------------------------------------ gestionnaire d'applis (2.0)
+
+    private val applisMoteur = com.jmdargere.cleansmart.data.Applis(app)
+    var applis by mutableStateOf<List<com.jmdargere.cleansmart.data.Appli>?>(null); private set
+    fun applisAcces() = applisMoteur.accesUsage()
+
+    fun chargerApplis() = run(Tr.t("Mes applis")) {
+        applis = withContext(Dispatchers.IO) { applisMoteur.lister() }
+    }
+
+    /** Relit la liste sans sablier (au retour de la desinstallation). */
+    fun rafraichirApplis() { viewModelScope.launch { applis = withContext(Dispatchers.IO) { applisMoteur.lister() } } }
+
+    // ------------------------------------------------------------------ note de sante (2.0)
+
+    /** Note de sante du telephone (0 a 100) et le conseil pour gagner le plus de points. */
+    data class Sante(val note: Int, val conseil: String)
+
+    val sante: Sante
+        get() {
+            val pts = ArrayList<Pair<Int, String>>()        // (points perdus, conseil)
+            var note = 0
+            // 1. place libre : 40 points (pleine note a partir de 25 % libres)
+            val libre = if (storage.total > 0) storage.free.toFloat() / storage.total else 0.25f
+            val pPlace = (40 * (libre / 0.25f).coerceIn(0f, 1f)).toInt()
+            note += pPlace; pts += (40 - pPlace) to Tr.t("libère de la place avec le Ménage complet")
+            // 2. sauvegarde : 20 points (moins de 8 jours)
+            val derniere = maxOf(prefs.getLong("lastBackup", 0), ctx.getSharedPreferences("nuit", Context.MODE_PRIVATE).getLong("lastBackup", 0))
+            val pSauv = when {
+                !backupReady() -> 0
+                System.currentTimeMillis() - derniere < 8L * 86_400_000 -> 20
+                else -> 10
+            }
+            note += pSauv; pts += (20 - pSauv) to Tr.t("sauvegarde tes photos sur une clé ou une carte SD")
+            // 3. photos a trier : 15 points
+            val m = media
+            val pPhotos = if (m == null) 10 else {
+                val aJeter = Cat.entries.filter { it != Cat.BIGGEST }.flatMap { removable(it) }.distinctBy { it.key }.sumOf { it.size }
+                val ratio = if (m.photoBytes + m.videoBytes > 0) aJeter.toFloat() / (m.photoBytes + m.videoBytes) else 0f
+                when { ratio < 0.02f -> 15; ratio < 0.10f -> 8; else -> 0 }
+            }
+            note += pPhotos; pts += (15 - pPhotos) to Tr.t("trie tes photos (doublons, rafales, floues)")
+            // 4. fichiers inutiles : 15 points
+            val j = junk
+            val pJunk = if (j == null) 8 else {
+                val surs = j.filter { it.sur }.sumOf { it.taille }
+                when { surs < 100L shl 20 -> 15; surs < 1L shl 30 -> 8; else -> 0 }
+            }
+            note += pJunk; pts += (15 - pJunk) to Tr.t("nettoie les fichiers inutiles du téléphone")
+            // 5. boite mail : 10 points
+            val r = mailResult
+            val pMail = when {
+                !mailAccount.ready || r == null || r.quotaMax <= 0 -> 7
+                r.quotaUsed.toFloat() / r.quotaMax < 0.7f -> 10
+                r.quotaUsed.toFloat() / r.quotaMax < 0.9f -> 5
+                else -> 0
+            }
+            note += pMail; pts += (10 - pMail) to Tr.t("fais le ménage de ta boîte mail")
+            val pire = pts.maxBy { it.first }
+            return Sante(note.coerceIn(0, 100), if (pire.first <= 2) Tr.t("Tout va bien, continue comme ça !") else Tr.t("Pour gagner des points : %1.", pire.second))
+        }
+
     // ------------------------------------------------------------------ fichiers inutiles (2.0, repris de Nettoyage Pro)
 
     private val inutiles = com.jmdargere.cleansmart.data.Inutiles(app)
@@ -891,6 +953,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Etape 1 : ce qui part sans hesiter (doublons, rafales en trop, photos noires/blanches, vieilles captures). */
     val safeItems: List<MediaItem>
+        get() = safeTous.filter { it.key !in safeGardees }
+
+    /** Toutes les photos du menage sur, y compris celles que l'utilisateur a decide de garder. */
+    val safeTous: List<MediaItem>
         get() {
             val r = media ?: return emptyList()
             val oldScreens = System.currentTimeMillis() - 30L * 24 * 3600 * 1000
@@ -898,6 +964,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                     r.blurry.filter { it.note == "Trop sombre" || it.note == "Trop claire" } +
                     r.screens.filter { it.date < oldScreens }).distinctBy { it.key }
         }
+
+    /** Photos du menage sur que l'utilisateur garde (touchees dans la liste a relire). */
+    var safeGardees by mutableStateOf(setOf<String>())
+    fun safeBasculer(key: String) { safeGardees = if (key in safeGardees) safeGardees - key else safeGardees + key }
 
     /** Etape 2 : le douteux, a regarder soi-meme (photos floues ou petites, photos WhatsApp, captures recentes). */
     val reviewItems: List<MediaItem>

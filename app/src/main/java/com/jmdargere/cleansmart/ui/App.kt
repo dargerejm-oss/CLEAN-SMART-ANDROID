@@ -77,7 +77,7 @@ import com.jmdargere.cleansmart.data.fmtNum
 import com.jmdargere.cleansmart.data.plural
 
 /** Les ecrans de l'appli (navigation simple, sans bibliotheque). */
-private enum class Ecran { ACCUEIL, GUIDE, GOOGLE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL, INUTILES, PHOTOS }
+private enum class Ecran { ACCUEIL, GUIDE, GOOGLE, CATEGORIE, TRI, MAILS, MAIL_GUIDE, MAIL_TRI, MAILS_SAUVER, MAILS_CORBEILLE, OPTIONS, MANUEL, INUTILES, PHOTOS, APPLIS }
 
 private fun mediaPerms(): Array<String> =
     if (Build.VERSION.SDK_INT >= 33) arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
@@ -110,10 +110,12 @@ fun CleanSmartApp(vm: AppViewModel) {
     }
 
     var depuisGuide by rememberSaveable { mutableStateOf(false) }
+    var revueSure by rememberSaveable { mutableStateOf(false) }
     fun retour() {
         ecran = when {
             ecran == Ecran.TRI && depuisGuide -> Ecran.GUIDE
             ecran == Ecran.TRI || ecran == Ecran.CATEGORIE -> Ecran.PHOTOS
+            ecran == Ecran.APPLIS -> Ecran.INUTILES
             ecran == Ecran.MAIL_TRI -> Ecran.MAIL_GUIDE
             ecran == Ecran.MAILS_SAUVER || ecran == Ecran.MAILS_CORBEILLE || ecran == Ecran.MAIL_GUIDE -> Ecran.MAILS
             else -> Ecran.ACCUEIL
@@ -262,7 +264,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                     Text(when (ecran) {
                         Ecran.ACCUEIL -> Tr.t("CLEAN SMART")
                         Ecran.GUIDE -> Tr.t("🧭 Ménage guidé")
-                        Ecran.GOOGLE -> if (vm.gpSource == com.jmdargere.cleansmart.data.SourceExport.GOOGLE) Tr.t("📦 Quitter Google Photos") else Tr.t("🍏 Quitter iCloud Photos")
+                        Ecran.GOOGLE -> if (vm.gpSource == com.jmdargere.cleansmart.data.SourceExport.GOOGLE) Tr.t("📦 Quitter Google Photos") else Tr.t("🍏 Mes photos iCloud")
                         Ecran.CATEGORIE -> cat.emoji + " " + cat.title
                         Ecran.TRI -> Tr.t("👆 Tri rapide")
                         Ecran.MAILS -> Tr.t("✉️ Mails")
@@ -274,6 +276,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                         Ecran.MANUEL -> Tr.t("📖 Mode d'emploi")
                         Ecran.INUTILES -> Tr.t("🧹 Fichiers inutiles")
                         Ecran.PHOTOS -> Tr.t("📸 Photos")
+                        Ecran.APPLIS -> Tr.t("📱 Mes applis")
                     }, fontWeight = FontWeight.ExtraBold)
                 },
                 navigationIcon = {
@@ -310,14 +313,7 @@ fun CleanSmartApp(vm: AppViewModel) {
                 Ecran.GOOGLE -> GooglePhotos(vm, ask = { confirm = it })
                 Ecran.GUIDE -> MenageGuide(vm,
                     analyser = ::analyser,
-                    nettoyerSur = {
-                        val l = vm.safeItems
-                        confirm = Confirm(
-                            Tr.t("Faire le ménage sûr ?"),
-                            Tr.t("%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).", plural(l.size, "photo"), fmtBytes(l.sumOf { it.size })),
-                            Tr.t("Nettoyer"),
-                        ) { vm.guideClean { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) } }
-                    },
+                    nettoyerSur = { revueSure = true },
                     verifier = { vm.guideReview(); depuisGuide = true; ecran = Ecran.TRI },
                     chooseFolder = { folderLauncher.launch(null) },
                     openMails = { ecran = if (vm.mailAccount.ready) Ecran.MAIL_GUIDE else Ecran.MAILS },
@@ -341,7 +337,8 @@ fun CleanSmartApp(vm: AppViewModel) {
                 Ecran.MAILS_SAUVER -> MailsSauver(vm, chooseFolder = { folderLauncher.launch(null) })
                 Ecran.OPTIONS -> Options(vm, chooseFolder = { folderLauncher.launch(null) }, openManual = { ecran = Ecran.MANUEL })
                 Ecran.MANUEL -> Manual()
-                Ecran.INUTILES -> Inutiles(vm, ask = { confirm = it })
+                Ecran.INUTILES -> Inutiles(vm, ask = { confirm = it }, openApplis = { ecran = Ecran.APPLIS })
+                Ecran.APPLIS -> Applis(vm)
                 Ecran.PHOTOS -> Photos(vm, ::analyser, ::souvenir,
                     openCat = { cat = it; ecran = Ecran.CATEGORIE },
                     openTri = { if (granted(ctx, mediaPerms())) ecran = Ecran.TRI else permLauncher.launch(mediaPerms() + contactPerms) },
@@ -351,6 +348,10 @@ fun CleanSmartApp(vm: AppViewModel) {
     }
 
     MailRevueDialog(vm)
+    if (revueSure) PhotoRevueDialog(vm, fermer = { revueSure = false }) {
+        revueSure = false
+        vm.guideClean { s -> trashLauncher.launch(IntentSenderRequest.Builder(s).build()) }
+    }
     vm.busy?.let { BusyDialog(it) }
     vm.done?.let { DoneDialog(it) { vm.done = null } }
     confirm?.let { ConfirmDialog(it) { confirm = null } }
@@ -429,6 +430,7 @@ private fun Accueil(
                     }
                 }
             }
+            NoteSante(vm, openGuide)
             if (vm.lastTrashed.isNotEmpty()) {
                 OutlinedButton(onClick = annuler, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
                     shape = RoundedCornerShape(14.dp)) {
@@ -460,7 +462,7 @@ private fun Accueil(
             Gap(6)
             BoxCard {
                 InfoRow("📦", Tr.t("Quitter Google Photos"), Tr.t("Toutes tes photos sur une clé ou un disque, par année, sans doublon"), onClick = openGoogle)
-                InfoRow("🍏", Tr.t("Quitter iCloud Photos"), Tr.t("Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon"), onClick = openIcloud)
+                InfoRow("🍏", Tr.t("Récupérer mes photos iCloud (ancien iPhone)"), Tr.t("Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque"), onClick = openIcloud)
             }
         }
 
@@ -1136,36 +1138,34 @@ private fun MailAction(emoji: String, title: String, sub: String, enabled: Boole
 private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -> Unit) {
     val s = vm.settings
     val ctx = LocalContext.current
+    val notifLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
+    fun demanderNotif() {
+        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(ctx, Manifest.permission.POST_NOTIFICATIONS)
+            != PackageManager.PERMISSION_GRANTED) notifLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+    }
+    var avance by rememberSaveable { mutableStateOf(false) }
     LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp)) {
         item {
+            // 1. l'essentiel : 3 cartes seulement
             SectionTitle(Tr.t("SAUVEGARDE"))
             BoxCard {
                 InfoRow("📁", vm.backupFolderLabel(), if (vm.backupReady()) Tr.t("Dossier de sauvegarde") else Tr.t("Carte SD, clé USB, Google Drive…"))
                 Gap()
                 BigButton(if (vm.backupReady()) Tr.t("Changer de dossier") else Tr.t("Choisir un dossier"), onClick = chooseFolder)
-                Gap()
-                OptionSwitch(Tr.t("Sauvegarder avant de supprimer"),
-                    Tr.t("Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité."), s.backupBeforeDelete) {
-                    vm.updateSettings(s.copy(backupBeforeDelete = it))
-                }
-                if (vm.backupReady()) {
-                    Gap()
-                    BigButton(Tr.t("💾 Sauvegarder toutes mes photos"), color = Carte2) { vm.backupEverything() }
-                    Text(Tr.t("Seules les nouvelles photos sont copiées à chaque fois."), color = Gris, fontSize = 12.sp)
-                }
-            }
-            SectionTitle(Tr.t("LA NUIT"))
-            BoxCard {
-                val notifLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
-                fun demanderNotif() {
-                    if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(ctx, Manifest.permission.POST_NOTIFICATIONS)
-                        != PackageManager.PERMISSION_GRANTED) notifLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-                }
                 OptionSwitch(Tr.t("Sauvegarde automatique chaque nuit"),
                     Tr.t("Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché."),
                     s.nightBackup) {
                     if (it) demanderNotif()
                     vm.updateSettings(s.copy(nightBackup = it))
+                }
+            }
+            SectionTitle(Tr.t("AUTOMATIQUE"))
+            BoxCard {
+                OptionSwitch(Tr.t("✨ Ménage automatique du dimanche"),
+                    Tr.t("Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier."),
+                    s.sundayClean) {
+                    if (it) demanderNotif()
+                    vm.updateSettings(s.copy(sundayClean = it))
                 }
                 OptionSwitch(Tr.t("Alertes et rapport du mois"),
                     Tr.t("Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois."),
@@ -1173,31 +1173,6 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                     if (it) demanderNotif()
                     vm.updateSettings(s.copy(alerts = it))
                 }
-            }
-            SectionTitle(Tr.t("LIBÉRER LA PLACE"))
-            BoxCard {
-                Text(Tr.t("Garder sur le téléphone les photos des derniers…"), fontWeight = FontWeight.Bold)
-                Gap(6)
-                val mois = listOf(1, 3, 6, 12)
-                ChipsChoix(listOf(Tr.t("1 mois"), Tr.t("3 mois"), Tr.t("6 mois"), Tr.t("12 mois")), mois.indexOf(s.keepMonths).coerceAtLeast(0)) {
-                    vm.updateSettings(s.copy(keepMonths = mois[it]))
-                }
-                Text(Tr.t("Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde."), color = Gris, fontSize = 12.sp)
-            }
-            SectionTitle(Tr.t("PROTECTION"))
-            BoxCard {
-                OptionSwitch(Tr.t("Protéger mes favoris"),
-                    Tr.t("Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées"), s.protectFavorites) {
-                    vm.updateSettings(s.copy(protectFavorites = it))
-                }
-            }
-            SectionTitle(Tr.t("RECHERCHE DES PHOTOS RATÉES"))
-            BoxCard {
-                Text(Tr.t("Sévérité"), fontWeight = FontWeight.Bold)
-                Text(Tr.t("Prudente : moins de photos proposées. Stricte : davantage."), color = Gris, fontSize = 13.sp)
-                Gap(6)
-                ChipsChoix(listOf(Tr.t("Prudente"), Tr.t("Normale"), Tr.t("Stricte")), s.severity) { vm.updateSettings(s.copy(severity = it)) }
-                Text(Tr.t("Relance l'analyse après un changement."), color = Gris, fontSize = 12.sp)
             }
             SectionTitle(Tr.t("AFFICHAGE"))
             BoxCard {
@@ -1209,27 +1184,53 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                 Gap(6)
                 ChipsChoix(listOf(Tr.t("Comme le téléphone"), "Français", "English"), s.langue) { vm.updateSettings(s.copy(langue = it)) }
             }
-            SectionTitle(Tr.t("AUTRE"))
+
+            // 2. le reste, replie
+            Gap(6)
             BoxCard {
-                InfoRow("🎉", Tr.t("Espace libéré"), Tr.t("Depuis l'installation"), fmtBytes(vm.freed))
-                TextButton(onClick = { vm.resetFreed() }) { Text(Tr.t("Remettre le compteur à zéro"), color = Gris) }
-                InfoRow("📖", Tr.t("Mode d'emploi"), Tr.t("Français / English"), onClick = openManual)
-                OptionSwitch(Tr.t("🎬 Démonstration"),
-                    Tr.t("Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart."),
-                    vm.demo) { vm.changerDemo(it) }
-                InfoRow("🆕", Tr.t("Rechercher une mise à jour"), Tr.t("Version installée : %1", BuildConfig.VERSION_NAME),
-                    onClick = { vm.verifierMiseAJour(true) })
+                InfoRow("🔧", Tr.t("Réglages avancés"), if (avance) "" else Tr.t("Sécurité, photos ratées, démonstration…"), onClick = { avance = !avance })
+                if (avance) {
+                    OptionSwitch(Tr.t("Sauvegarder avant de supprimer"),
+                        Tr.t("Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité."), s.backupBeforeDelete) {
+                        vm.updateSettings(s.copy(backupBeforeDelete = it))
+                    }
+                    OptionSwitch(Tr.t("Protéger mes favoris"),
+                        Tr.t("Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées"), s.protectFavorites) {
+                        vm.updateSettings(s.copy(protectFavorites = it))
+                    }
+                    Gap(6)
+                    Text(Tr.t("« Libérer la place » : garder sur le téléphone les photos des derniers…"), fontWeight = FontWeight.Bold)
+                    Gap(6)
+                    val mois = listOf(1, 3, 6, 12)
+                    ChipsChoix(listOf(Tr.t("1 mois"), Tr.t("3 mois"), Tr.t("6 mois"), Tr.t("12 mois")), mois.indexOf(s.keepMonths).coerceAtLeast(0)) {
+                        vm.updateSettings(s.copy(keepMonths = mois[it]))
+                    }
+                    Gap(10)
+                    Text(Tr.t("Recherche des photos ratées"), fontWeight = FontWeight.Bold)
+                    Text(Tr.t("Prudente : moins de photos proposées. Stricte : davantage."), color = Gris, fontSize = 13.sp)
+                    Gap(6)
+                    ChipsChoix(listOf(Tr.t("Prudente"), Tr.t("Normale"), Tr.t("Stricte")), s.severity) { vm.updateSettings(s.copy(severity = it)) }
+                    Gap(6)
+                    OptionSwitch(Tr.t("🎬 Démonstration"),
+                        Tr.t("Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart."),
+                        vm.demo) { vm.changerDemo(it) }
+                    InfoRow("🎉", Tr.t("Espace libéré"), Tr.t("Depuis l'installation"), fmtBytes(vm.freed))
+                    TextButton(onClick = { vm.resetFreed() }) { Text(Tr.t("Remettre le compteur à zéro"), color = Gris) }
+                    InfoRow("🆕", Tr.t("Rechercher une mise à jour"), Tr.t("Version installée : %1", BuildConfig.VERSION_NAME),
+                        onClick = { vm.verifierMiseAJour(true) })
+                    InfoRow("⚙️", Tr.t("Réglages de stockage Android"), "", onClick = {
+                        runCatching { ctx.startActivity(Intent(AndroidSettings.ACTION_INTERNAL_STORAGE_SETTINGS)) }
+                    })
+                }
             }
-            SectionTitle(Tr.t("CONTACT"))
+
+            // 3. aide et contact
             BoxCard {
+                InfoRow("📖", Tr.t("Mode d'emploi"), Tr.t("Français / English"), onClick = openManual)
+                Gap(4)
                 Text(Tr.t("Une question, un souci, la version complète ? Écris-moi :"), color = Gris, fontSize = 14.sp)
                 Gap(8)
                 BoutonsContact()
-            }
-            BoxCard {
-                InfoRow("⚙️", Tr.t("Réglages de stockage Android"), "", onClick = {
-                    runCatching { ctx.startActivity(Intent(AndroidSettings.ACTION_INTERNAL_STORAGE_SETTINGS)) }
-                })
             }
             Gap()
             Text(Tr.t("Clean Smart %1 — JM Dargère", BuildConfig.VERSION_NAME), color = Gris, fontSize = 12.sp,

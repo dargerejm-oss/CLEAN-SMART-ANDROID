@@ -40,7 +40,7 @@ object Night {
     /** Programme (ou arrete) le travail de nuit selon les options. */
     fun schedule(ctx: Context, s: Settings) {
         val wm = WorkManager.getInstance(ctx)
-        if (!s.nightBackup && !s.alerts) { wm.cancelUniqueWork(WORK); return }
+        if (!s.nightBackup && !s.alerts && !s.sundayClean) { wm.cancelUniqueWork(WORK); return }
         val now = Calendar.getInstance()
         val next = (now.clone() as Calendar).apply {
             set(Calendar.HOUR_OF_DAY, 2); set(Calendar.MINUTE, 0); set(Calendar.SECOND, 0)
@@ -72,6 +72,33 @@ object Night {
 
     fun freeBytes(): Long = runCatching { StatFs(Environment.getDataDirectory().path).availableBytes }.getOrDefault(Long.MAX_VALUE)
 
+    /**
+     * Le menage du dimanche, sans rien demander : fichiers inutiles SURS (temporaires, miniatures, caches, dossiers vides,
+     * .apk deja installes), spam vers la corbeille de la messagerie. Les photos ne peuvent pas etre jetees sans l'accord
+     * de l'utilisateur (Android) : une notification dit combien sont a trier.
+     */
+    private fun menageDuDimanche(ctx: Context, s: Settings) {
+        var libere = 0L
+        val inutiles = Inutiles(ctx)
+        if (inutiles.acces()) runCatching {
+            val surs = inutiles.chercher { _, _ -> }.filter { it.sur }
+            libere += inutiles.nettoyer(surs) { _, _ -> }.second
+        }
+        var spams = 0
+        val mc = MailCleaner(ctx)
+        if (mc.account().ready) spams = runCatching { mc.trash(MailCriteria.Spam) }.getOrDefault(0)
+        val compteur = ctx.getSharedPreferences("compteur", Context.MODE_PRIVATE)
+        compteur.edit().putLong("freed", compteur.getLong("freed", 0) + libere).apply()
+        val photos = runCatching {
+            val r = MediaScanner(ctx).scan(s) { _, _ -> }
+            (r.duplicates + r.similar).sumOf { g -> g.items.count { it.key != g.keep } }
+        }.getOrDefault(0)
+        notify(ctx, 7, Tr.t("✨ Ménage du dimanche"),
+            Tr.t("%1 libérés sur le téléphone", fmtBytes(libere)) +
+                    (if (spams > 0) Tr.t(" · %1 à la corbeille", plural(spams, "spam")) else "") +
+                    (if (photos > 0) Tr.t(". %1 en double ou en rafale à trier : touche ici.", plural(photos, "photo")) else "."))
+    }
+
     class NightWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, params) {
         override suspend fun doWork(): Result {
             val ctx = applicationContext
@@ -97,6 +124,14 @@ object Night {
                 } else {
                     notify(ctx, 1, Tr.t("⚠️ Aucune sauvegarde cette nuit"), Tr.t("Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir."))
                 }
+            }
+
+            // Menage automatique du dimanche (une fois par semaine)
+            val cal0 = Calendar.getInstance()
+            val semaine = cal0.get(Calendar.YEAR) * 100 + cal0.get(Calendar.WEEK_OF_YEAR)
+            if (s.sundayClean && cal0.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY && p.getInt("dimanche", 0) != semaine) {
+                p.edit().putInt("dimanche", semaine).apply()
+                runCatching { menageDuDimanche(ctx, s) }
             }
 
             // Mails : regles « toujours jeter » et boite protegee (si une boite mail est connectee)
