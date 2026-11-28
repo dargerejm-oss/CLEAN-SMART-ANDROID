@@ -317,13 +317,9 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                 vm.gpVerif?.let { v ->
                     when {
                         v.abimes.isNotEmpty() || v.illisibles.isNotEmpty() -> Encadre(
-                            Tr.t("⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :
-", plural(v.abimes.size + v.illisibles.size, Tr.t("fichier"))) +
-                                    (v.abimes + v.illisibles).take(8).joinToString("
-") { "• $it" } +
-                                    Tr.t("
-
-Relance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.", qui), Rouge)
+                            Tr.t("⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n", plural(v.abimes.size + v.illisibles.size, Tr.t("fichier"))) +
+                                    (v.abimes + v.illisibles).take(8).joinToString("\n") { "• $it" } +
+                                    Tr.t("\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.", qui), Rouge)
                         v.inconnus > 0 && v.ok == 0 -> Encadre(Tr.t("ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.", plural(v.inconnus, "photo")), Orange)
                         else -> Encadre(Tr.t("✅ Disque vérifié : %1 relues, aucune abîmée.", plural(v.ok + v.inconnus, Tr.t("photo ou vidéo"), Tr.t("photos ou vidéos"))), Vert)
                     }
