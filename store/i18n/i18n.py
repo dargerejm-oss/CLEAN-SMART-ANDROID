@@ -12,7 +12,7 @@ FILES = {  # fichier -> mode ("all" = tout, "lines" = seulement les lignes qui m
     "ui/Components.kt": "all", "ui/Manual.kt": "all", "ui/Bienvenue.kt": "all",
     "AppViewModel.kt": "all", "data/Night.kt": "all",
     "data/MailCleaner.kt": "lines", "data/GoogleExport.kt": "lines",
-    "data/MediaScanner.kt": "lines", "data/Backup.kt": "lines", "data/AutoGoogle.kt": "all", "data/Inutiles.kt": "lines", "ui/Inutiles.kt": "all",
+    "data/MediaScanner.kt": "lines", "data/Backup.kt": "lines", "data/AutoGoogle.kt": "all", "data/Inutiles.kt": "lines", "ui/Inutiles.kt": "all", "ui/MailsPlus.kt": "all", "data/Regles.kt": "all",
 }
 LINE_ONLY = re.compile(r'(return "|IllegalStateException\(|MailException\(|progress\(|fun resume)')
 SKIP_LINE = re.compile(r'(getSharedPreferences|putString\(|getString\(|putInt\(|getInt\(|getBoolean\(|putBoolean\(|putLong\(|getLong\(|'

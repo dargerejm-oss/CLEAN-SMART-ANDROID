@@ -253,7 +253,7 @@ def phone(c, x, y, w, h):
     c.setFillColor(ENCRE); c.setFont("UIB", 9); c.drawCentredString(cx, cy - 3, "72 %")
     # tuile verte du menage guide
     c.setFillColor(HexColor("#2E7D32")); c.roundRect(sx + 8, sy + sh - 104, sw - 16, 22, 5, stroke=0, fill=1)
-    c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + sh - 96, "Ménage guidé")
+    c.setFillColor(white); c.setFont("UIB", 6.5); c.drawCentredString(sx + sw / 2, sy + sh - 96, "Ménage complet")
     # tuiles de couleur
     yy = sy + sh - 134
     for row in ((("🧬", "#1E4FB4"), ("🎞️", "#6A1B9A")), (("🌫️", "#EF6C00"), ("🎬", "#C62828"))):
@@ -285,8 +285,8 @@ TEXTS = {
             ("💾", "vert", "5. Tout reste à l'abri", "Sauvegarde sur carte SD, clé USB ou Google Drive, et même toute seule la nuit."),
         ],
         "sections": [
-            ("🧭", "vert", "Le ménage guidé (conseillé)",
-             "La façon la plus simple de tout faire, dans le bon ordre. Le bouton VERT est toujours la prochaine étape.",
+            ("🧭", "vert", "Le ménage complet (conseillé)",
+             "L'accueil a une grande tuile verte « Ménage complet » et 3 portes : 📸 Photos, 🧹 Téléphone, ✉️ Mails. Le ménage complet fait tout dans le bon ordre ; le bouton VERT est toujours la prochaine étape.",
              [("step", "Le ménage sûr : doublons et rafales en trop (la meilleure est gardée), photos noires ou blanches, vieilles captures. Un bouton."),
               ("step", "Je vérifie le douteux : photos un peu floues, WhatsApp… Glisse à gauche pour jeter, à droite pour garder (elle devient favori)."),
               ("step", "Je mets à l'abri : seules les BONNES photos sont sauvegardées. Les favoris vont aussi dans « Mes meilleures »."),
@@ -373,7 +373,10 @@ TEXTS = {
               ("step", "Je trie par expéditeur : une carte par expéditeur. À gauche, tous ses mails partent ; à droite, on le garde."),
               ("step", "Je mets l'important à l'abri : banque, administration, santé, factures et mails avec un PDF sont sauvegardés."),
               ("step", "Je libère la boîte : les vieux mails partent à la corbeille, jamais les importants."),
-              ("step", "« Se désabonner » : pour ne plus recevoir une newsletter. Le bouton ouvre la page de désabonnement.")]),
+              ("step", "« Se désabonner » : pour ne plus recevoir une newsletter. Le bouton ouvre la page de désabonnement."),
+              ("step", "NOUVEAU 2.0 — Avant de jeter, la liste des mails s'affiche (expéditeur, objet, date) : décoche ceux à garder, puis valide."),
+              ("step", "Touche un expéditeur : 🗑️ toujours jeter (chaque nuit, tout seul), 🛡️ toujours garder, 🔔 me prévenir quand il écrit."),
+              ("step", "Boîte protégée : banque, impôts, santé, maison et famille (tes contacts) sont rangés dans « Protégés » de ta messagerie, jamais jetés. Bouton « Spam » pour vider le courrier indésirable.")]),
             ("📎", "orange", "Sauver des mails et leurs pièces jointes", "",
              [("step", "Dans Mails, touche « Sauvegarder des mails »."),
               ("step", "Coche les mails à garder (« Cocher les PDF » pour aller vite)."),
@@ -426,8 +429,8 @@ TEXTS = {
             ("💾", "vert", "5. Everything stays safe", "Backup to an SD card, USB drive or Google Drive, even on its own at night."),
         ],
         "sections": [
-            ("🧭", "vert", "Guided clean-up (recommended)",
-             "The simplest way to do everything, in the right order. The GREEN button is always the next step.",
+            ("🧭", "vert", "Complete clean-up (recommended)",
+             "The home screen has a big green \"Complete clean-up\" tile and 3 doors: 📸 Photos, 🧹 Phone, ✉️ Emails. The complete clean-up does everything in the right order; the GREEN button is always the next step.",
              [("step", "Safe clean-up: extra duplicates and bursts (the best one is kept), black or white photos, old screenshots. One button."),
               ("step", "Check the doubtful ones: slightly blurry photos, WhatsApp… Swipe left to discard, right to keep (it becomes a favourite)."),
               ("step", "Keep them safe: only GOOD photos are backed up. Favourites also go to \"Mes meilleures\" (My best)."),
@@ -514,7 +517,10 @@ TEXTS = {
               ("step", "Sort by sender: one card per sender. Left, all their emails go; right, you keep them."),
               ("step", "Keep the important safe: bank, government, health, invoices and emails with a PDF are backed up."),
               ("step", "Free the mailbox: old emails go to the bin, never the important ones."),
-              ("step", "\"Se désabonner\" (Unsubscribe): stop receiving a newsletter. The button opens the unsubscribe page.")]),
+              ("step", "\"Se désabonner\" (Unsubscribe): stop receiving a newsletter. The button opens the unsubscribe page."),
+              ("step", "NEW 2.0 — Before deleting, the list of emails is shown (sender, subject, date): untick those to keep, then confirm."),
+              ("step", "Tap a sender: 🗑️ always delete (every night, automatically), 🛡️ always keep, 🔔 notify me when they write."),
+              ("step", "Protected box: bank, taxes, health, home and family (your contacts) are filed in \"Protected\" in your mailbox, never deleted. \"Spam\" button to empty junk mail.")]),
             ("📎", "orange", "Save emails and their attachments", "",
              [("step", "In Mails, tap \"Sauvegarder des mails\" (Save emails)."),
               ("step", "Tick the emails to keep (\"Cocher les PDF\" to go fast)."),

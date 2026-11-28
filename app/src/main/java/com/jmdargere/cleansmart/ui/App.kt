@@ -320,7 +320,8 @@ fun CleanSmartApp(vm: AppViewModel) {
                     },
                     verifier = { vm.guideReview(); depuisGuide = true; ecran = Ecran.TRI },
                     chooseFolder = { folderLauncher.launch(null) },
-                    openMails = { ecran = if (vm.mailAccount.ready) Ecran.MAIL_GUIDE else Ecran.MAILS })
+                    openMails = { ecran = if (vm.mailAccount.ready) Ecran.MAIL_GUIDE else Ecran.MAILS },
+                    openInutiles = { ecran = Ecran.INUTILES })
                 Ecran.TRI -> TriRapide(vm, onKeep = {
                     vm.prepareSwipeKeep { s -> protectLauncher.launch(IntentSenderRequest.Builder(s).build()) }
                 }) {
@@ -634,6 +635,7 @@ private fun MenageGuide(
     verifier: () -> Unit,
     chooseFolder: () -> Unit,
     openMails: () -> Unit,
+    openInutiles: () -> Unit,
 ) {
     val m = vm.media
     val safe = vm.safeItems
@@ -646,13 +648,14 @@ private fun MenageGuide(
         2 !in d && review.isNotEmpty() -> 2
         3 !in d -> 3
         4 !in d -> 4
-        !mailFait(vm) -> 5
-        else -> 6
+        !telFait(vm) -> 5
+        !mailFait(vm) -> 6
+        else -> 7
     }
 
     LazyColumn(contentPadding = PaddingValues(16.dp, 8.dp, 16.dp, 24.dp)) {
         item {
-            Text(Tr.t("Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails."),
+            Text(Tr.t("Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails."),
                 color = Gris, fontSize = 15.sp, lineHeight = 21.sp, modifier = Modifier.padding(4.dp, 0.dp, 4.dp, 8.dp))
             BilanMenage(vm)
             if (m == null) {
@@ -676,19 +679,24 @@ private fun MenageGuide(
             EtapeCarte(4, "📤", Tr.t("Je libère la place"),
                 Tr.t("Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).", vm.settings.keepMonths),
                 Vert, prochaine == 4, 4 in d, Tr.t("Libérer la place")) { vm.findFreeSpace() }
-            // 5. les mails : ils sont sur le compte en ligne, pas sur le telephone
+            // 5. le telephone : fichiers inutiles
+            EtapeCarte(5, "🧹", Tr.t("Le téléphone"),
+                vm.junk?.let { j -> if (j.isEmpty()) Tr.t("Aucun fichier inutile.") else Tr.t("%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.", fmtBytes(j.sumOf { it.taille })) }
+                    ?: Tr.t("Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées."),
+                Turquoise, prochaine == 5, telFait(vm), Tr.t("Nettoyer le téléphone"), openInutiles)
+            // 6. les mails : ils sont sur le compte en ligne, pas sur le telephone
             val a = vm.mailAccount
             val r = vm.mailResult
-            EtapeCarte(5, "✉️", Tr.t("Et tes mails"),
+            EtapeCarte(6, "✉️", Tr.t("Et tes mails"),
                 when {
                     !a.ready -> Tr.t("Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.")
                     r == null -> Tr.t("Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.", a.email)
                     else -> (if (r.quotaMax > 0) Tr.t("Boîte remplie à %1 % (%2 / %3). ", (100 * r.quotaUsed / r.quotaMax).toInt(), fmtBytes(r.quotaUsed), fmtBytes(r.quotaMax)) else "") +
                             Tr.t("%1 newsletters, %2 gros mails (%3).", fmtNum(r.newsletters), fmtNum(r.bigCount), fmtBytes(r.bigBytes))
                 } + (if (vm.mailGmail) Tr.t("\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.") else ""),
-                Violet, prochaine == 5, mailFait(vm),
+                Violet, prochaine == 6, mailFait(vm),
                 if (!a.ready) Tr.t("Connecter ma boîte mail") else Tr.t("Ménage guidé des mails"), openMails)
-            if (prochaine == 6) {
+            if (prochaine == 7) {
                 Gap()
                 CatTile("🎉", Tr.t("Ménage terminé !"), Tr.t("Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri"), "", "", Vert,
                     Modifier.fillMaxWidth()) {}
@@ -696,6 +704,9 @@ private fun MenageGuide(
         }
     }
 }
+
+/** L'etape telephone est faite quand les fichiers inutiles ont ete cherches et qu'il n'en reste plus de surs. */
+private fun telFait(vm: AppViewModel) = vm.junk?.none { it.sur } == true
 
 /** L'etape mails est faite quand le menage guide des mails a ete fait (au moins le menage sur ou la liberation). */
 private fun mailFait(vm: AppViewModel) = 1 in vm.mailGuideDone || 4 in vm.mailGuideDone
