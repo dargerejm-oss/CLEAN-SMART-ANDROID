@@ -123,6 +123,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     init {
         Tr.choix = when (settings.langue) { 1 -> "fr"; 2 -> "en"; else -> null }
+        com.jmdargere.cleansmart.data.Regles.init(app)
+        com.jmdargere.cleansmart.data.AlertesMail.programmer(app)
         Night.schedule(app, settings)
         verifierMiseAJour(false)
         refreshStorage()
@@ -404,8 +406,28 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         refreshStorage()
     }
 
+    // ------------------------------------------------------------------ bilan des mails (2.0)
+
+    /** Mails mis a la corbeille et place liberee sur le compte mail, depuis le debut. */
+    var mailJetes by mutableIntStateOf(prefs.getInt("mailJetes", 0)); private set
+    var mailLibere by mutableLongStateOf(prefs.getLong("mailLibere", 0)); private set
+
+    /** Met des mails a la corbeille du compte et les compte dans le bilan. */
+    private suspend fun jeterMails(c: MailCriteria, dansSpam: Boolean = false): Int {
+        val n = withContext(Dispatchers.IO) { mail.trash(c, dansSpam) }
+        mailJetes += n; mailLibere += mail.derniersOctets
+        prefs.edit().putInt("mailJetes", mailJetes).putLong("mailLibere", mailLibere).apply()
+        return n
+    }
+
+    /** Compte Gmail : les mails et Google Photos partagent les memes 15 Go. */
+    val mailGmail: Boolean get() = mailAccount.email.endsWith("@gmail.com", true) || mailAccount.email.endsWith("@googlemail.com", true)
+
     private fun addFreed(b: Long) { freed += b; prefs.edit().putLong("freed", freed).apply() }
-    fun resetFreed() { freed = 0; prefs.edit().putLong("freed", 0).apply() }
+    fun resetFreed() {
+        freed = 0; mailJetes = 0; mailLibere = 0
+        prefs.edit().putLong("freed", 0).putInt("mailJetes", 0).putLong("mailLibere", 0).apply()
+    }
 
     // ------------------------------------------------------------------ contacts
 
@@ -446,10 +468,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun trashNewsletters() = mailResult?.senders?.filter { it.newsletter }?.map { it.email }?.let {
-        trashMail(MailCriteria.From(it))
+        mailVoir(Tr.t("📰 Newsletters et pubs"), MailCriteria.From(it))
     }
 
-    fun trashDoublons() = mailResult?.doublons?.takeIf { it.isNotEmpty() }?.let { trashMail(MailCriteria.Uids(it)) }
+    fun trashDoublons() = mailResult?.doublons?.takeIf { it.isNotEmpty() }?.let { mailVoir(Tr.t("👯 Mails en double"), MailCriteria.Uids(it)) }
 
     // corbeille de la messagerie : remettre des mails
     var mailTrash by mutableStateOf<List<com.jmdargere.cleansmart.data.TrashedMail>?>(null); private set
@@ -475,14 +497,192 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         mailTrashSel = emptySet()
     }
 
-    fun trashBigMails() = trashMail(MailCriteria.Big(settings.bigMailMb))
-    fun trashOldMails() = trashMail(MailCriteria.Old(settings.oldMailYears))
+    fun trashBigMails() = mailVoir(Tr.t("📎 Gros mails"), MailCriteria.Big(settings.bigMailMb))
+    fun trashOldMails() = mailVoir(Tr.t("🕰️ Vieux mails"), MailCriteria.Old(settings.oldMailYears))
 
     private fun trashMail(c: MailCriteria) = run(Tr.t("Nettoyage de la boîte mail")) {
         upd(Tr.t("Nettoyage de la boîte mail"), Tr.t("Déplacement vers la corbeille…"), 50)
-        val n = withContext(Dispatchers.IO) { mail.trash(c) }
+        val n = jeterMails(c)
         say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
         mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    }
+
+    // ------------------------------------------------------------------ mails : relire avant de jeter (2.0)
+
+    /** La liste a relire avant de valider (null = rien a relire). */
+    var mailRevue by mutableStateOf<com.jmdargere.cleansmart.data.MailRevue?>(null); private set
+    private var apresRevue: () -> Unit = {}
+
+    /** Cherche les mails qui partiraient avec [c] et les montre : on decoche, puis on valide. */
+    fun mailVoir(titre: String, c: MailCriteria, apres: () -> Unit = {}) = run(Tr.t("Recherche des mails")) {
+        val liste = if (demo) com.jmdargere.cleansmart.data.Demo.revue()
+                    else withContext(Dispatchers.IO) { mail.apercu(c) }
+        if (liste.isEmpty()) { apres(); say(Tr.t("🎉 Aucun mail à jeter ici.")); return@run }
+        apresRevue = apres
+        mailRevue = com.jmdargere.cleansmart.data.MailRevue(titre, c, liste, liste.map { it.uid }.toSet(), c is MailCriteria.Spam)
+    }
+
+    fun revueCocher(uid: Long) { mailRevue = mailRevue?.let { r -> r.copy(coches = if (uid in r.coches) r.coches - uid else r.coches + uid) } }
+    fun revueTout(oui: Boolean) { mailRevue = mailRevue?.let { r -> r.copy(coches = if (oui) r.mails.map { it.uid }.toSet() else emptySet()) } }
+    fun revueFermer() { mailRevue = null }
+
+    fun revueValider() = run(Tr.t("Nettoyage de la boîte mail")) {
+        val r = mailRevue ?: return@run
+        mailRevue = null
+        if (demo) { demoAttente(Tr.t("Nettoyage de la boîte mail")); apresRevue(); say(Tr.t("✨ %1 mis à la corbeille (démonstration)", plural(r.coches.size, "mail"))); return@run }
+        upd(Tr.t("Nettoyage de la boîte mail"), Tr.t("Déplacement vers la corbeille…"), 50)
+        val n = jeterMails(MailCriteria.Uids(r.coches.toList()), dansSpam = r.spam)
+        apresRevue()
+        say(Tr.t("✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)", plural(n, "mail")))
+        mailResult = withContext(Dispatchers.IO) { runCatching { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }.getOrDefault(mailResult) }
+    }
+
+    // ------------------------------------------------------------------ regles par expediteur, alertes, boite protegee, spam (2.0)
+
+    /** Change a chaque modification des regles (pour mettre l'ecran a jour). */
+    var reglesVersion by mutableIntStateOf(0); private set
+
+    fun regle(cle: String, email: String) {
+        com.jmdargere.cleansmart.data.Regles.basculer(ctx, cle, email)
+        reglesVersion++
+        val r = com.jmdargere.cleansmart.data.Regles
+        say(when (cle) {
+            "jeter" -> if (email.lowercase() in r.jeter) Tr.t("🗑️ Ses mails partiront à la corbeille chaque nuit") else Tr.t("Règle retirée")
+            "garder" -> if (r.garder(email)) Tr.t("🛡️ Ses mails ne seront jamais jetés") else Tr.t("Règle retirée")
+            else -> if (email.lowercase() in r.alertes) Tr.t("🔔 Tu seras prévenu quand il t'écrit") else Tr.t("Alerte retirée")
+        })
+    }
+
+    /** Appliquer tout de suite les regles « toujours jeter » (sinon c'est fait chaque nuit). */
+    fun appliquerRegles() = com.jmdargere.cleansmart.data.Regles.jeter.takeIf { it.isNotEmpty() }?.let {
+        mailVoir(Tr.t("🗑️ Mes expéditeurs « toujours jeter »"), MailCriteria.From(it.toList()))
+    }
+
+    fun voirSpam() = mailVoir(Tr.t("🚫 Spam"), MailCriteria.Spam)
+
+    /** Resultat du dernier rangement dans la boite protegee (dossier -> nombre de mails). */
+    var mailProteges by mutableStateOf<Map<String, Int>?>(null); private set
+
+    fun protegerMails() = run(Tr.t("Boîte protégée")) {
+        if (demo) { demoAttente(Tr.t("Boîte protégée")); mailProteges = mapOf("Banque" to 214, "Impots - Administration" to 87, "Sante" to 52, "Famille" to 431); return@run }
+        val contacts = withContext(Dispatchers.IO) { com.jmdargere.cleansmart.data.Regles.emailsContacts(ctx) }
+        mailProteges = withContext(Dispatchers.IO) { mail.proteger(contacts, progress(Tr.t("Boîte protégée"))) }
+        ctx.getSharedPreferences("mail_regles", Context.MODE_PRIVATE).edit().putBoolean("protegerAuto", true).apply()
+        say(Tr.t("🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie", plural(mailProteges!!.values.sum(), "mail")))
+    }
+
+    // ------------------------------------------------------------------ gestionnaire d'applis (2.0)
+
+    private val applisMoteur = com.jmdargere.cleansmart.data.Applis(app)
+    var applis by mutableStateOf<List<com.jmdargere.cleansmart.data.Appli>?>(null); private set
+    fun applisAcces() = applisMoteur.accesUsage()
+
+    fun chargerApplis() = run(Tr.t("Mes applis")) {
+        applis = withContext(Dispatchers.IO) { applisMoteur.lister() }
+    }
+
+    /** Relit la liste sans sablier (au retour de la desinstallation). */
+    fun rafraichirApplis() { viewModelScope.launch { applis = withContext(Dispatchers.IO) { applisMoteur.lister() } } }
+
+    // ------------------------------------------------------------------ note de sante (2.0)
+
+    /** Note de sante du telephone (0 a 100) et le conseil pour gagner le plus de points. */
+    data class Sante(val note: Int, val conseil: String)
+
+    val sante: Sante
+        get() {
+            val pts = ArrayList<Pair<Int, String>>()        // (points perdus, conseil)
+            var note = 0
+            // 1. place libre : 40 points (pleine note a partir de 25 % libres)
+            val libre = if (storage.total > 0) storage.free.toFloat() / storage.total else 0.25f
+            val pPlace = (40 * (libre / 0.25f).coerceIn(0f, 1f)).toInt()
+            note += pPlace; pts += (40 - pPlace) to Tr.t("libère de la place avec le Ménage complet")
+            // 2. sauvegarde : 20 points (moins de 8 jours)
+            val derniere = maxOf(prefs.getLong("lastBackup", 0), ctx.getSharedPreferences("nuit", Context.MODE_PRIVATE).getLong("lastBackup", 0))
+            val pSauv = when {
+                !backupReady() -> 0
+                System.currentTimeMillis() - derniere < 8L * 86_400_000 -> 20
+                else -> 10
+            }
+            note += pSauv; pts += (20 - pSauv) to Tr.t("sauvegarde tes photos sur une clé ou une carte SD")
+            // 3. photos a trier : 15 points
+            val m = media
+            val pPhotos = if (m == null) 10 else {
+                val aJeter = Cat.entries.filter { it != Cat.BIGGEST }.flatMap { removable(it) }.distinctBy { it.key }.sumOf { it.size }
+                val ratio = if (m.photoBytes + m.videoBytes > 0) aJeter.toFloat() / (m.photoBytes + m.videoBytes) else 0f
+                when { ratio < 0.02f -> 15; ratio < 0.10f -> 8; else -> 0 }
+            }
+            note += pPhotos; pts += (15 - pPhotos) to Tr.t("trie tes photos (doublons, rafales, floues)")
+            // 4. fichiers inutiles : 15 points
+            val j = junk
+            val pJunk = if (j == null) 8 else {
+                val surs = j.filter { it.sur }.sumOf { it.taille }
+                when { surs < 100L shl 20 -> 15; surs < 1L shl 30 -> 8; else -> 0 }
+            }
+            note += pJunk; pts += (15 - pJunk) to Tr.t("nettoie les fichiers inutiles du téléphone")
+            // 5. boite mail : 10 points
+            val r = mailResult
+            val pMail = when {
+                !mailAccount.ready || r == null || r.quotaMax <= 0 -> 7
+                r.quotaUsed.toFloat() / r.quotaMax < 0.7f -> 10
+                r.quotaUsed.toFloat() / r.quotaMax < 0.9f -> 5
+                else -> 0
+            }
+            note += pMail; pts += (10 - pMail) to Tr.t("fais le ménage de ta boîte mail")
+            val pire = pts.maxBy { it.first }
+            return Sante(note.coerceIn(0, 100), if (pire.first <= 2) Tr.t("Tout va bien, continue comme ça !") else Tr.t("Pour gagner des points : %1.", pire.second))
+        }
+
+    // ------------------------------------------------------------------ fichiers inutiles (2.0, repris de Nettoyage Pro)
+
+    private val inutiles = com.jmdargere.cleansmart.data.Inutiles(app)
+    var junk by mutableStateOf<List<com.jmdargere.cleansmart.data.GroupeInutile>?>(null); private set
+    var junkChoix by mutableStateOf(setOf<String>())
+    var junkCorbeille by mutableLongStateOf(0L); private set
+
+    fun junkAcces() = inutiles.acces()
+
+    fun junkChercher() = run(Tr.t("Fichiers inutiles")) {
+        if (demo) {
+            demoAttente(Tr.t("Fichiers inutiles"))
+            val f = java.io.File("demo")
+            junk = listOf(
+                com.jmdargere.cleansmart.data.GroupeInutile("temp", "🗒️", Tr.t("Fichiers temporaires"), Tr.t("Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus."), List(214) { f }, 412L shl 20, true),
+                com.jmdargere.cleansmart.data.GroupeInutile("mini", "🖼️", Tr.t("Miniatures"), Tr.t("Petites copies des photos pour l'affichage. Elles se recréent toutes seules."), List(3120) { f }, 690L shl 20, true),
+                com.jmdargere.cleansmart.data.GroupeInutile("vides", "📂", Tr.t("Dossiers vides"), Tr.t("Ils ne contiennent rien."), List(37) { f }, 0, true),
+                com.jmdargere.cleansmart.data.GroupeInutile("apk", "📦", Tr.t("Autres fichiers d'installation (.apk)"), Tr.t("Des applis téléchargées mais pas installées. À vérifier."), List(4) { f }, 180L shl 20, false),
+            )
+            junkChoix = junk!!.filter { it.sur }.map { it.cle }.toSet()
+            return@run
+        }
+        val r = withContext(Dispatchers.IO) { inutiles.chercher(progress(Tr.t("Fichiers inutiles"))) }
+        junk = r
+        junkChoix = r.filter { it.sur }.map { it.cle }.toSet()
+        junkCorbeille = withContext(Dispatchers.IO) { inutiles.tailleCorbeille() }
+    }
+
+    fun junkNettoyer() = run(Tr.t("Nettoyage des fichiers inutiles")) {
+        val choisis = junk.orEmpty().filter { it.cle in junkChoix }
+        if (demo) { demoAttente(Tr.t("Nettoyage des fichiers inutiles")); junk = junk.orEmpty() - choisis.toSet(); say(Tr.t("✨ 1,1 Go libérés (démonstration)")); return@run }
+        val (n, octets) = withContext(Dispatchers.IO) { inutiles.nettoyer(choisis, progress(Tr.t("Nettoyage des fichiers inutiles"))) }
+        val libere = choisis.filter { it.sur }.sumOf { it.taille }.coerceAtMost(octets)
+        addFreed(libere)
+        junkCorbeille = withContext(Dispatchers.IO) { inutiles.tailleCorbeille() }
+        junk = junk.orEmpty() - choisis.toSet()
+        say(Tr.t("✨ %1 nettoyés · %2 libérés", plural(n, Tr.t("élément")), fmtBytes(libere)) +
+            if (choisis.any { !it.sur }) Tr.t(" · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)") else "")
+    }
+
+    fun junkRemettre() = run(Tr.t("Remettre les fichiers")) {
+        val n = withContext(Dispatchers.IO) { inutiles.remettre() }
+        junkCorbeille = 0
+        say(Tr.t("↩️ %1 remis à leur place", plural(n, Tr.t("fichier"))))
+    }
+
+    fun junkViderCorbeille() = run(Tr.t("Vider la corbeille Clean Smart")) {
+        val t = withContext(Dispatchers.IO) { inutiles.viderCorbeille() }
+        addFreed(t); junkCorbeille = 0
+        say(Tr.t("🗑️ Corbeille vidée : %1 récupérés pour de bon", fmtBytes(t)))
     }
 
     // ------------------------------------------------------------------ quitter Google Photos (export Takeout)
@@ -494,6 +694,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Choisit l'onglet : Google Photos ou iCloud Photos. */
     fun gpUtiliser(s: com.jmdargere.cleansmart.data.SourceExport) {
+        if (s != gpSource) gpVerif = null
         google = exports.getValue(s); gpSource = s
         gpTotal = google.total(); gpTaille = google.tailleGoogleGo; gpDest = google.nomDestination(); gpDestOk = google.destinationOk()
         gpNb = google.nbFichiers; gpDemande = google.exportDemande; gpTermine = google.termine; gpEtats = google.etats(); gpDernier = null
@@ -508,6 +709,17 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var gpTermine by mutableStateOf(google.termine); private set
     var gpEtats by mutableStateOf(google.etats()); private set
     var gpDernier by mutableStateOf<Pair<String, com.jmdargere.cleansmart.data.ExportStats>?>(null); private set
+
+    /** Resultat de « Vérifier le disque » (null = pas encore fait). */
+    var gpVerif by mutableStateOf<com.jmdargere.cleansmart.data.GoogleExport.Verification?>(null); private set
+
+    fun gpVerifier() = run(Tr.t("Vérification du disque")) {
+        if (demo) { demoAttente(Tr.t("Vérification du disque")); gpVerif = com.jmdargere.cleansmart.data.GoogleExport.Verification(8412, emptyList(), emptyList(), 0); return@run }
+        gpVerif = withContext(Dispatchers.IO) { google.verifierDisque(progress(Tr.t("Vérification du disque"))) }
+    }
+
+    /** Relit l'etat de l'onglet (apres le mode automatique, qui travaille dans un service a part). */
+    fun gpRafraichir() = gpUtiliser(gpSource)
 
     fun gpSetTaille(go: Int) { gpTaille = go; google.tailleGoogleGo = go }
     fun gpSetDest(uri: android.net.Uri) { google.destination = uri; gpDest = google.nomDestination(); gpDestOk = google.destinationOk() }
@@ -579,18 +791,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     val mailSafeSenders: List<com.jmdargere.cleansmart.data.Sender>
         get() = mailResult?.senders?.filter { (it.newsletter || it.notif) && !it.important } ?: emptyList()
 
-    fun mailGuideClean() = run(Tr.t("Ménage sûr de la boîte mail")) {
-        if (demo) { demoAttente(Tr.t("Ménage sûr de la boîte mail")); mailGuideDone = mailGuideDone + 1; say(Tr.t("✨ 1 249 mails mis à la corbeille (démonstration)")); return@run }
-        val r = mailResult ?: return@run
-        upd(Tr.t("Ménage sûr de la boîte mail"), Tr.t("Newsletters et notifications…"), 30)
-        var n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.From(mailSafeSenders.map { it.email })) }
-        if (r.doublons.isNotEmpty()) {
-            upd(Tr.t("Ménage sûr de la boîte mail"), Tr.t("Mails en double…"), 70)
-            n += withContext(Dispatchers.IO) { mail.trash(MailCriteria.Uids(r.doublons)) }
-        }
-        mailGuideDone = mailGuideDone + 1
-        say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
-        mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    fun mailGuideClean() {
+        if (demo) { mailVoir(Tr.t("🧹 Ménage sûr"), MailCriteria.Uids(emptyList())) { mailGuideDone = mailGuideDone + 1 }; return }
+        val r = mailResult ?: return
+        mailVoir(Tr.t("🧹 Ménage sûr : newsletters, notifications, doublons"),
+            MailCriteria.Tous(listOf(MailCriteria.From(mailSafeSenders.map { it.email }), MailCriteria.Uids(r.doublons)))) { mailGuideDone = mailGuideDone + 1 }
     }
 
     // Etape 2 : tri par expediteur, une carte a la fois (gauche = tout jeter, droite = garder)
@@ -618,14 +823,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         mailSwipeTrash = mailSwipeTrash.filter { it.email != back.email }
     }
 
-    fun mailSwipeApply() = run(Tr.t("Tri des expéditeurs")) {
-        if (demo) { mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2; say(Tr.t("✨ Mails mis à la corbeille (démonstration)")); return@run }
-        upd(Tr.t("Tri des expéditeurs"), Tr.t("Mise à la corbeille…"), 40)
-        val n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.From(mailSwipeTrash.map { it.email })) }
-        mailSwipeTrash = emptyList()
-        mailGuideDone = mailGuideDone + 2
-        say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
-        mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    fun mailSwipeApply() {
+        if (demo) { mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2; say(Tr.t("✨ Mails mis à la corbeille (démonstration)")); return }
+        mailVoir(Tr.t("👆 Les expéditeurs que tu as jetés"), MailCriteria.From(mailSwipeTrash.map { it.email })) {
+            mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2
+        }
     }
 
     /** Etape 3 : mettre a l'abri l'important (banque, administration, sante, factures) et tous les mails avec un PDF. */
@@ -643,18 +845,20 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             mail.forEachMail(uids, progress(Tr.t("Sauvegarde des mails importants"))) { m -> saved += backup.saveMail(tree!!, m) }
             backup.updateMailIndex(tree!!, saved)
         }
+        // et dans la messagerie : la boite protegee (Banque, Impots, Sante, Maison, Famille)
+        runCatching {
+            val contacts = withContext(Dispatchers.IO) { com.jmdargere.cleansmart.data.Regles.emailsContacts(ctx) }
+            mailProteges = withContext(Dispatchers.IO) { mail.proteger(contacts, progress(Tr.t("Boîte protégée"))) }
+            ctx.getSharedPreferences("mail_regles", Context.MODE_PRIVATE).edit().putBoolean("protegerAuto", true).apply()
+        }
         mailGuideDone = mailGuideDone + 3
         say(Tr.t("✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour", fmtNum(saved.size), fmtNum(saved.sumOf { it.pdf })))
     }
 
     /** Etape 4 : liberer la boite (vieux mails, jamais les importants). */
-    fun mailGuideFree() = run(Tr.t("Libérer la boîte mail")) {
-        if (demo) { demoAttente(Tr.t("Libérer la boîte mail")); mailGuideDone = mailGuideDone + 4; say(Tr.t("✨ Vieux mails mis à la corbeille (démonstration)")); return@run }
-        upd(Tr.t("Libérer la boîte mail"), Tr.t("Vieux mails vers la corbeille…"), 50)
-        val n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.Old(settings.oldMailYears)) }
-        mailGuideDone = mailGuideDone + 4
-        say(Tr.t("✨ %1 vieux mails mis à la corbeille (les importants sont gardés)", fmtNum(n)))
-        mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    fun mailGuideFree() {
+        if (demo) { mailVoir(Tr.t("🕰️ Vieux mails"), MailCriteria.Uids(emptyList())) { mailGuideDone = mailGuideDone + 4 }; return }
+        mailVoir(Tr.t("🕰️ Vieux mails (les importants sont gardés)"), MailCriteria.Old(settings.oldMailYears)) { mailGuideDone = mailGuideDone + 4 }
     }
 
     // ------------------------------------------------------------------ sauvegarde de mails choisis
@@ -749,6 +953,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Etape 1 : ce qui part sans hesiter (doublons, rafales en trop, photos noires/blanches, vieilles captures). */
     val safeItems: List<MediaItem>
+        get() = safeTous.filter { it.key !in safeGardees }
+
+    /** Toutes les photos du menage sur, y compris celles que l'utilisateur a decide de garder. */
+    val safeTous: List<MediaItem>
         get() {
             val r = media ?: return emptyList()
             val oldScreens = System.currentTimeMillis() - 30L * 24 * 3600 * 1000
@@ -756,6 +964,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                     r.blurry.filter { it.note == "Trop sombre" || it.note == "Trop claire" } +
                     r.screens.filter { it.date < oldScreens }).distinctBy { it.key }
         }
+
+    /** Photos du menage sur que l'utilisateur garde (touchees dans la liste a relire). */
+    var safeGardees by mutableStateOf(setOf<String>())
+    fun safeBasculer(key: String) { safeGardees = if (key in safeGardees) safeGardees - key else safeGardees + key }
 
     /** Etape 2 : le douteux, a regarder soi-meme (photos floues ou petites, photos WhatsApp, captures recentes). */
     val reviewItems: List<MediaItem>

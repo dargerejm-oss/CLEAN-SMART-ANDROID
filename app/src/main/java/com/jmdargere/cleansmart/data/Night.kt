@@ -40,7 +40,7 @@ object Night {
     /** Programme (ou arrete) le travail de nuit selon les options. */
     fun schedule(ctx: Context, s: Settings) {
         val wm = WorkManager.getInstance(ctx)
-        if (!s.nightBackup && !s.alerts) { wm.cancelUniqueWork(WORK); return }
+        if (!s.nightBackup && !s.alerts && !s.sundayClean) { wm.cancelUniqueWork(WORK); return }
         val now = Calendar.getInstance()
         val next = (now.clone() as Calendar).apply {
             set(Calendar.HOUR_OF_DAY, 2); set(Calendar.MINUTE, 0); set(Calendar.SECOND, 0)
@@ -72,6 +72,33 @@ object Night {
 
     fun freeBytes(): Long = runCatching { StatFs(Environment.getDataDirectory().path).availableBytes }.getOrDefault(Long.MAX_VALUE)
 
+    /**
+     * Le menage du dimanche, sans rien demander : fichiers inutiles SURS (temporaires, miniatures, caches, dossiers vides,
+     * .apk deja installes), spam vers la corbeille de la messagerie. Les photos ne peuvent pas etre jetees sans l'accord
+     * de l'utilisateur (Android) : une notification dit combien sont a trier.
+     */
+    private fun menageDuDimanche(ctx: Context, s: Settings) {
+        var libere = 0L
+        val inutiles = Inutiles(ctx)
+        if (inutiles.acces()) runCatching {
+            val surs = inutiles.chercher { _, _ -> }.filter { it.sur }
+            libere += inutiles.nettoyer(surs) { _, _ -> }.second
+        }
+        var spams = 0
+        val mc = MailCleaner(ctx)
+        if (mc.account().ready) spams = runCatching { mc.trash(MailCriteria.Spam) }.getOrDefault(0)
+        val compteur = ctx.getSharedPreferences("compteur", Context.MODE_PRIVATE)
+        compteur.edit().putLong("freed", compteur.getLong("freed", 0) + libere).apply()
+        val photos = runCatching {
+            val r = MediaScanner(ctx).scan(s) { _, _ -> }
+            (r.duplicates + r.similar).sumOf { g -> g.items.count { it.key != g.keep } }
+        }.getOrDefault(0)
+        notify(ctx, 7, Tr.t("✨ Ménage du dimanche"),
+            Tr.t("%1 libérés sur le téléphone", fmtBytes(libere)) +
+                    (if (spams > 0) Tr.t(" · %1 à la corbeille", plural(spams, "spam")) else "") +
+                    (if (photos > 0) Tr.t(". %1 en double ou en rafale à trier : touche ici.", plural(photos, "photo")) else "."))
+    }
+
     class NightWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, params) {
         override suspend fun doWork(): Result {
             val ctx = applicationContext
@@ -99,6 +126,27 @@ object Night {
                 }
             }
 
+            // Menage automatique du dimanche (une fois par semaine)
+            val cal0 = Calendar.getInstance()
+            val semaine = cal0.get(Calendar.YEAR) * 100 + cal0.get(Calendar.WEEK_OF_YEAR)
+            if (s.sundayClean && cal0.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY && p.getInt("dimanche", 0) != semaine) {
+                p.edit().putInt("dimanche", semaine).apply()
+                runCatching { menageDuDimanche(ctx, s) }
+            }
+
+            // Mails : regles « toujours jeter » et boite protegee (si une boite mail est connectee)
+            Regles.init(ctx)
+            val mc = MailCleaner(ctx)
+            if (mc.account().ready) {
+                if (Regles.jeter.isNotEmpty()) runCatching {
+                    val n = mc.trash(MailCriteria.From(Regles.jeter.toList()))
+                    if (n > 0) notify(ctx, 6, Tr.t("🧹 Mails triés cette nuit"),
+                        Tr.t("%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).", plural(n, "mail")))
+                }
+                if (ctx.getSharedPreferences("mail_regles", Context.MODE_PRIVATE).getBoolean("protegerAuto", false))
+                    runCatching { mc.proteger(Regles.emailsContacts(ctx)) { _, _ -> } }
+            }
+
             if (s.alerts) {
                 // 2. Telephone presque plein (au plus tous les 3 jours)
                 val free = freeBytes()
@@ -106,7 +154,22 @@ object Night {
                     p.edit().putLong("lastLowAlert", now).apply()
                     notify(ctx, 2, Tr.t("📱 Téléphone presque plein"), Tr.t("Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.", fmtBytes(free)))
                 }
-                // 3. Rapport du mois (le 1er)
+                // 3. Rappel tous les 2 mois : une nouvelle copie Google / iCloud pour les nouvelles photos
+                for (src in SourceExport.entries) {
+                    val derniere = GoogleExport(ctx, src).derniereCopie
+                    val cle = "rappelCopie_" + src.name
+                    val deuxMois = 60L * 24 * 3600 * 1000
+                    if (derniere > 0 && now - maxOf(derniere, p.getLong(cle, 0)) > deuxMois) {
+                        p.edit().putLong(cle, now).apply()
+                        if (src == SourceExport.GOOGLE)
+                            notify(ctx, 4, Tr.t("📦 Ta nouvelle copie Google est peut-être prête"),
+                                Tr.t("Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon."))
+                        else
+                            notify(ctx, 5, Tr.t("🍏 Pense à une nouvelle copie iCloud"),
+                                Tr.t("Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon."))
+                    }
+                }
+                // 4. Rapport du mois (le 1er)
                 val cal = Calendar.getInstance()
                 val month = cal.get(Calendar.YEAR) * 100 + cal.get(Calendar.MONTH)
                 if (cal.get(Calendar.DAY_OF_MONTH) == 1 && p.getInt("lastReport", 0) != month) {

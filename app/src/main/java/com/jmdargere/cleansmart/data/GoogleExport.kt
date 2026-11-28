@@ -144,6 +144,7 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
 
     private fun ajouter(s: ExportStats) {
         val t = total() + s
+        if (s.photos + s.videos > 0) prefs.edit().putLong("derniereCopie", System.currentTimeMillis()).apply()
         prefs.edit().putInt("photos", t.photos).putInt("videos", t.videos).putInt("doublons", t.doublons)
             .putInt("rafales", t.rafales).putInt("mails", t.mails).putLong("octets", t.octets)
             .putInt("zips", t.zips).putInt("erreurs", t.erreurs).apply()
@@ -218,11 +219,11 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
     /** Place libre sur le telephone. */
     fun libreTelephone(): Long = runCatching { StatFs(ctx.cacheDir.path).availableBytes }.getOrDefault(0L)
 
-    fun tailleDe(uri: Uri): Long = runCatching {
+    fun tailleDe(uri: Uri): Long = if (uri.scheme == "file") File(uri.path!!).length() else runCatching {
         cr.query(uri, arrayOf(OpenableColumns.SIZE), null, null, null)?.use { if (it.moveToFirst()) it.getLong(0) else 0L } ?: 0L
     }.getOrDefault(0L)
 
-    fun nomDe(uri: Uri): String = runCatching {
+    fun nomDe(uri: Uri): String = if (uri.scheme == "file") File(uri.path!!).name else runCatching {
         cr.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { if (it.moveToFirst()) it.getString(0) else null }
     }.getOrNull() ?: "fichier.zip"
 
@@ -371,7 +372,9 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
                         if (g != null) g += r else groupes += mutableListOf(r)
                     }
                     for (g in groupes) if (g.size > 1) {
-                        val best = g.maxBy { it.nettete }
+                        // la meilleure : personne n'a les yeux fermes, puis la plus nette
+                        val fermes = g.associateWith { r -> yeuxFermesDoc(r.doc) ?: 0 }
+                        val best = g.maxWith(compareBy<Rafale>({ -fermes.getValue(it) }, { it.nettete }))
                         g.filter { it !== best }.forEach { if (it.doc.delete()) { ecartees++; photos-- } }
                     }
                 }
@@ -517,7 +520,75 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
     }
 
     /** Essaie de supprimer le ZIP du telephone une fois traite (pour faire de la place au suivant). */
-    fun supprimerZip(zip: Uri): Boolean = runCatching { DocumentsContract.deleteDocument(cr, zip) }.getOrDefault(false)
+    fun supprimerZip(zip: Uri): Boolean =
+        if (zip.scheme == "file") runCatching { File(zip.path!!).delete() }.getOrDefault(false)
+        else runCatching { DocumentsContract.deleteDocument(cr, zip) }.getOrDefault(false)
+
+    /**
+     * La copie est-elle complete et verifiee ? (pour autoriser « Liberer Google »)
+     * Vrai seulement si : au moins un fichier copie, aucun fichier « a relancer » (un fichier relance sans
+     * erreur repasse a OK), et (si le nombre de fichiers du mail est connu) tous les fichiers 001...N copies.
+     */
+    fun copieComplete(): Boolean {
+        val e = etats()
+        if (total().zips == 0 || e.values.any { it != EtatZip.OK }) return false
+        return nbFichiers <= 0 || (1..nbFichiers).all { e[it] == EtatZip.OK }
+    }
+
+    /** Date de la derniere copie (0 = jamais) : pour le rappel « nouvelle copie » tous les 2 mois. */
+    val derniereCopie: Long get() = prefs.getLong("derniereCopie", 0L)
+
+    /**
+     * « Vérifier le disque » : relit chaque photo et video du dossier « Google Photos » (ou « iCloud Photos ») et compare
+     * son empreinte a celle notee au moment de la copie. Une empreinte differente = fichier abime sur le disque.
+     */
+    data class Verification(val ok: Int, val abimes: List<String>, val illisibles: List<String>, val inconnus: Int)
+
+    fun verifierDisque(progress: (String, Int) -> Unit): Verification {
+        val racine = destination?.let { DocumentFile.fromTreeUri(ctx, it) }?.findFile(source.dossierPhotos)
+            ?: throw IllegalStateException(Tr.t("Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).", source.dossierPhotos))
+        val connus = chargerHashes()
+        val fichiers = ArrayList<DocumentFile>()
+        progress(Tr.t("Liste des photos sur le disque…"), 1)
+        fun lister(d: DocumentFile) { d.listFiles().forEach { if (it.isDirectory) lister(it) else if (it.name?.startsWith(".") == false && it.name?.substringAfterLast('.')?.lowercase() in MEDIA) fichiers += it } }
+        lister(racine)
+        var ok = 0; var inconnus = 0
+        val abimes = ArrayList<String>(); val illisibles = ArrayList<String>()
+        val buf = ByteArray(BUF)
+        fichiers.forEachIndexed { i, f ->
+            val chemin = (f.parentFile?.name?.let { "$it/" } ?: "") + (f.name ?: "?")
+            if (i % 5 == 0) progress(chemin, (2 + 97 * i / fichiers.size.coerceAtLeast(1)))
+            val h = runCatching {
+                val md = MessageDigest.getInstance("MD5")
+                cr.openInputStream(f.uri)!!.use { inp -> while (true) { val n = inp.read(buf); if (n < 0) break; md.update(buf, 0, n) } }
+                hex(md.digest())
+            }.getOrNull()
+            when {
+                h == null -> illisibles += chemin
+                h in connus -> ok++
+                connus.isEmpty() -> inconnus++
+                else -> abimes += chemin
+            }
+        }
+        progress(Tr.t("Terminé"), 100)
+        return Verification(ok, abimes, illisibles, inconnus)
+    }
+
+    /** Visages aux yeux fermes sur une photo deja copiee sur le disque (lue en petit). */
+    private fun yeuxFermesDoc(doc: DocumentFile): Int? = runCatching {
+        val o = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        cr.openInputStream(doc.uri)!!.use { BitmapFactory.decodeStream(it, null, o) }
+        var ech = 1
+        while (maxOf(o.outWidth, o.outHeight) / (ech * 2) >= 640) ech *= 2
+        val bmp = cr.openInputStream(doc.uri)!!.use { BitmapFactory.decodeStream(it, null, BitmapFactory.Options().apply { inSampleSize = ech }) }!!
+        try { Yeux.fermes(bmp) } finally { bmp.recycle() }
+    }.getOrNull()
+
+    /** Est-ce un fichier de cet export ? Google : takeout-....zip ; Apple : iCloud Photos Part 1 of 12.zip */
+    fun estFichierExport(nom: String): Boolean = nom.endsWith(".zip", true) && when (source) {
+        SourceExport.GOOGLE -> nom.startsWith("takeout", true)
+        else -> nom.contains("iCloud Photos", true)
+    }
 
     private fun dateDe(dates: Map<String, Long>, chemin: String, nom: String): Long? =
         dates[chemin.lowercase()] ?: dates[(chemin.substringBeforeLast('/') + "/" + nom).lowercase()]

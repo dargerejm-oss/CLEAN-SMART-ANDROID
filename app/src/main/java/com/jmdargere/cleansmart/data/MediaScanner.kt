@@ -126,10 +126,13 @@ class MediaScanner(ctx: Context) {
             }
             for (g in groups) {
                 if (g.size < 2) continue
-                // la meilleure = un favori, sinon la plus nette, puis la plus lourde
+                // yeux fermes : nombre de visages aux yeux fermes sur chaque photo de la rafale
+                val fermes = g.associate { item -> item.key to (yeuxFermes(item) ?: 0) }
+                // la meilleure = un favori, sinon celle ou personne n'a les yeux fermes, puis la plus nette, puis la plus lourde
                 val best = g.firstOrNull { it.favorite }
-                    ?: g.maxWith(compareBy<MediaItem>({ sig.getValue(it.key)[1] }, { it.size }))
+                    ?: g.maxWith(compareBy<MediaItem>({ -fermes.getValue(it.key) }, { sig.getValue(it.key)[1] }, { it.size }))
                 val removable = g.filter { it.key != best.key && !(s.protectFavorites && it.favorite) }
+                    .map { if (fermes.getValue(it.key) > 0 && it.note.isEmpty()) it.copy(note = "Yeux fermés") else it }
                 if (removable.isNotEmpty()) similar += MediaGroup(listOf(best) + removable, best.key)
             }
         }
@@ -319,6 +322,15 @@ class MediaScanner(ctx: Context) {
             md.digest().joinToString("") { b -> "%02x".format(b) }
         }
     } catch (e: Exception) { null }
+
+    /** Visages aux yeux fermes (sur une miniature de 640 px, suffisant pour les visages). */
+    private fun yeuxFermes(it: MediaItem): Int? {
+        var bmp: Bitmap? = null
+        return try {
+            bmp = software(cr.loadThumbnail(it.uri, Size(640, 640), null))
+            Yeux.fermes(bmp)
+        } catch (e: Exception) { null } finally { bmp?.recycle() }
+    }
 
     /** [0] = empreinte visuelle (dHash 64 bits), [1] = nettete (variance du laplacien). */
     private fun signature(it: MediaItem): LongArray? {

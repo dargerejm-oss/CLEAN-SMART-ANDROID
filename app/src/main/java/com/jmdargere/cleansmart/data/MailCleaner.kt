@@ -92,7 +92,26 @@ object MailTri {
 
     fun important(email: String, name: String): Boolean {
         val s = (email + " " + name).lowercase()
-        return IMPORTANT.any { it in s }
+        return IMPORTANT.any { it in s } || Regles.garder(email)
+    }
+
+    private val BANQUE = listOf("banque", "bank", "credit", "bnpparibas", "societegenerale", "labanquepostale", "lcl.fr", "boursorama",
+        "caisse-epargne", "creditmutuel", "cic.fr", "hellobank", "fortuneo", "revolut", "paypal")
+    private val ADMIN = listOf("gouv.fr", "impots", "caf.fr", "urssaf", "francetravail", "pole-emploi", "ants.gouv", "service-public",
+        "trésor", "tresor", "notaire", "mairie")
+    private val SANTE = listOf("ameli", "mutuelle", "doctolib", "hopital", "chu-", "pharmacie", "laboratoire", "clinique")
+    private val MAISON = listOf("assurance", "edf.fr", "engie", "totalenergies", "veolia", "suez", "orange.fr", "sfr.fr", "free.fr", "bouygues")
+
+    /** Dossier de la boite protegee : Banque, Impots - Administration, Sante, Maison (null = pas important). */
+    fun categorie(email: String, name: String): String? {
+        val s = (email + " " + name).lowercase()
+        return when {
+            BANQUE.any { it in s } -> "Banque"
+            ADMIN.any { it in s } -> "Impots - Administration"
+            SANTE.any { it in s } -> "Sante"
+            MAISON.any { it in s } && !s.contains("newsletter") -> "Maison"
+            else -> null
+        }
     }
     fun facture(subject: String) = FACTURE.containsMatchIn(subject)
     fun colis(subject: String) = COLIS.containsMatchIn(subject)
@@ -110,7 +129,14 @@ sealed class MailCriteria {
     data class Old(val years: Int) : MailCriteria()
     /** Des mails precis (par leur numero UID), ex. les doublons. */
     data class Uids(val uids: List<Long>) : MailCriteria()
+    /** Plusieurs criteres a la fois (ex. newsletters + doublons). */
+    data class Tous(val liste: List<MailCriteria>) : MailCriteria()
+    /** Tout le dossier Spam / Courrier indesirable. */
+    object Spam : MailCriteria()
 }
+
+/** Ce qui va partir, a relire avant de valider (2.0). */
+data class MailRevue(val titre: String, val critere: MailCriteria, val mails: List<BigMail>, val coches: Set<Long>, val spam: Boolean)
 
 /** Un mail de la corbeille, pour le remettre dans la boite. */
 data class TrashedMail(val uid: Long, val from: String, val subject: String, val date: Long)
@@ -330,30 +356,20 @@ class MailCleaner(private val ctx: Context) {
         }
     }
 
+    /** Taille des mails mis a la corbeille par le dernier appel a [trash] (pour le bilan « mails »). */
+    @Volatile var derniersOctets = 0L; private set
+
     /** Deplace dans la corbeille du compte les mails de la boite de reception qui correspondent. */
-    fun trash(c: MailCriteria): Int {
+    fun trash(c: MailCriteria, dansSpam: Boolean = false): Int {
+        derniersOctets = 0L
         val st = connect()
         var inbox: IMAPFolder? = null
         try {
             val trash = findTrash(st) ?: throw MailException(Tr.t("Dossier Corbeille introuvable sur ce compte."))
-            inbox = (st.getFolder("INBOX") as IMAPFolder).apply { open(Folder.READ_WRITE) }
-            val found = LinkedHashSet<Message>()
-            when (c) {
-                is MailCriteria.From -> c.emails.filter { it.isNotBlank() }.forEach { found += inbox.search(FromStringTerm(it.trim())) }
-                is MailCriteria.Big -> found += inbox.search(SizeTerm(ComparisonTerm.GT, c.minMb.coerceAtLeast(1) * 1024 * 1024))
-                is MailCriteria.Old -> {
-                    val before = Date(System.currentTimeMillis() - c.years.coerceAtLeast(1) * 365L * 24 * 3600 * 1000)
-                    found += inbox.search(ReceivedDateTerm(ComparisonTerm.LT, before))
-                }
-                is MailCriteria.Uids -> found += inbox.getMessagesByUID(c.uids.toLongArray()).filterNotNull()
-            }
-            // les mails importants (banque, administration, sante...) ne sont JAMAIS mis a la corbeille
-            val all = found.filterNot { m ->
-                runCatching {
-                    val ia = m.from?.firstOrNull() as? InternetAddress
-                    MailTri.important(ia?.address ?: "", ia?.personal ?: "")
-                }.getOrDefault(true)
-            }.toTypedArray()
+            inbox = (((if (dansSpam || c is MailCriteria.Spam) findSpam(st) else st.getFolder("INBOX"))
+                ?: throw MailException(Tr.t("Dossier Spam introuvable sur ce compte."))) as IMAPFolder).apply { open(Folder.READ_WRITE) }
+            val all = trouver(inbox, c, spam = dansSpam || c is MailCriteria.Spam).toTypedArray()
+            derniersOctets = all.sumOf { m -> runCatching { m.size.toLong().coerceAtLeast(0) }.getOrDefault(0L) }
             var needExpunge = false
             all.toList().chunked(200).forEach { part ->
                 val arr = part.toTypedArray()
@@ -370,6 +386,146 @@ class MailCleaner(private val ctx: Context) {
                 try { inbox.expunge(all) } catch (e: Exception) { inbox.expunge() }
             }
             return all.size
+        } finally {
+            runCatching { if (inbox?.isOpen == true) inbox.close(false) }
+            runCatching { st.close() }
+        }
+    }
+
+    /**
+     * Les mails qui correspondent a [c], SANS les importants (banque, administration, sante, « toujours garder »).
+     * Dans le dossier Spam, tout peut partir.
+     */
+    private fun trouver(dossier: IMAPFolder, c: MailCriteria, spam: Boolean): List<Message> {
+        val found = LinkedHashSet<Message>()
+        fun ajouter(c: MailCriteria) {
+            when (c) {
+                is MailCriteria.From -> c.emails.filter { it.isNotBlank() }.forEach { found += dossier.search(FromStringTerm(it.trim())) }
+                is MailCriteria.Big -> found += dossier.search(SizeTerm(ComparisonTerm.GT, c.minMb.coerceAtLeast(1) * 1024 * 1024))
+                is MailCriteria.Old -> {
+                    val before = Date(System.currentTimeMillis() - c.years.coerceAtLeast(1) * 365L * 24 * 3600 * 1000)
+                    found += dossier.search(ReceivedDateTerm(ComparisonTerm.LT, before))
+                }
+                is MailCriteria.Uids -> if (c.uids.isNotEmpty()) found += dossier.getMessagesByUID(c.uids.toLongArray()).filterNotNull()
+                is MailCriteria.Tous -> c.liste.forEach { ajouter(it) }
+                is MailCriteria.Spam -> found += dossier.messages
+            }
+        }
+        ajouter(c)
+        if (spam) return found.toList()
+        // les mails importants (banque, administration, sante, « toujours garder »...) ne sont JAMAIS mis a la corbeille
+        return found.filterNot { m ->
+            runCatching {
+                val ia = m.from?.firstOrNull() as? InternetAddress
+                MailTri.important(ia?.address ?: "", ia?.personal ?: "")
+            }.getOrDefault(true)
+        }
+    }
+
+    /** Ce qui partirait avec [c] : expediteur, objet, date, taille (pour le relire avant de valider). */
+    fun apercu(c: MailCriteria, max: Int = 3000): List<BigMail> {
+        val st = connect()
+        var dossier: IMAPFolder? = null
+        try {
+            val spam = c is MailCriteria.Spam
+            dossier = ((if (spam) findSpam(st) else st.getFolder("INBOX")) ?: return emptyList()) as IMAPFolder
+            dossier.open(Folder.READ_ONLY)
+            val msgs = trouver(dossier, c, spam).takeLast(max).toTypedArray()
+            dossier.fetch(msgs, FetchProfile().apply { add(FetchProfile.Item.ENVELOPE); add(FetchProfile.Item.SIZE); add(UIDFolder.FetchProfileItem.UID) })
+            return msgs.mapNotNull { m ->
+                runCatching {
+                    val ia = m.from?.firstOrNull() as? InternetAddress
+                    BigMail(ia?.personal?.takeIf { it.isNotBlank() } ?: ia?.address ?: "", m.subject ?: "",
+                        m.size.coerceAtLeast(0).toLong(), (m.receivedDate ?: m.sentDate)?.time ?: 0L, dossier.getUID(m))
+                }.getOrNull()
+            }.sortedByDescending { it.date }
+        } finally {
+            runCatching { if (dossier?.isOpen == true) dossier.close(false) }
+            runCatching { st.close() }
+        }
+    }
+
+    // ---------- Boite protegee (2.0) ----------
+
+    /**
+     * Range les mails importants dans « Protégés / Banque », « Protégés / Famille »... de la messagerie.
+     * Gmail : simple libelle ajoute (le mail reste dans la boite de reception, aucune place en plus).
+     * Autres messageries : le mail est deplace dans le dossier protege.
+     * Famille = expediteurs presents dans les contacts du telephone. Renvoie le nombre de mails ranges par dossier.
+     */
+    fun proteger(contacts: Set<String>, progress: (String, Int) -> Unit): Map<String, Int> {
+        progress(Tr.t("Connexion au serveur"), 2)
+        val st = connect()
+        var inbox: IMAPFolder? = null
+        val gmail = account().host.contains("gmail", true)
+        try {
+            inbox = (st.getFolder("INBOX") as IMAPFolder).apply { open(Folder.READ_WRITE) }
+            val total = inbox.messageCount
+            val start = maxOf(1, total - 3000 + 1)
+            val parDossier = HashMap<String, MutableList<Message>>()
+            var a = total; var lu = 0
+            while (a >= start) {
+                val b = maxOf(start, a - 299)
+                val msgs = inbox.getMessages(b, a)
+                inbox.fetch(msgs, FetchProfile().apply { add(FetchProfile.Item.ENVELOPE); add("List-Unsubscribe") })
+                for (m in msgs) runCatching {
+                    val ia = m.from?.firstOrNull() as? InternetAddress
+                    val email = ia?.address?.lowercase() ?: return@runCatching
+                    val nom = ia.personal ?: ""
+                    val news = !m.getHeader("List-Unsubscribe").isNullOrEmpty()
+                    val dossier = MailTri.categorie(email, nom)
+                        ?: (if (!news && email in contacts) "Famille" else null)
+                        ?: (if (Regles.garder(email)) "Gardes" else null)
+                    if (dossier != null) parDossier.getOrPut(dossier) { ArrayList() } += m
+                }
+                lu += msgs.size
+                progress(Tr.t("Recherche des mails importants (%1 / %2)", lu, total - start + 1), 5 + 80 * lu / (total - start + 1).coerceAtLeast(1))
+                a = b - 1
+            }
+            val sep = runCatching { st.defaultFolder.separator }.getOrDefault('/')
+            val racine = st.getFolder("Protégés")
+            if (!racine.exists()) racine.create(Folder.HOLDS_FOLDERS or Folder.HOLDS_MESSAGES)
+            val res = LinkedHashMap<String, Int>()
+            parDossier.entries.forEachIndexed { i, (nom, msgs) ->
+                progress(Tr.t("Rangement : %1", nom), 85 + 14 * i / parDossier.size.coerceAtLeast(1))
+                val f = st.getFolder("Protégés$sep$nom")
+                if (!f.exists()) f.create(Folder.HOLDS_MESSAGES)
+                val arr = msgs.toTypedArray()
+                if (gmail) inbox.copyMessages(arr, f)                       // Gmail : un libelle en plus
+                else runCatching { inbox.moveMessages(arr, f) }.getOrElse {
+                    inbox.copyMessages(arr, f); inbox.setFlags(arr, Flags(Flags.Flag.DELETED), true); inbox.expunge()
+                }
+                res[nom] = arr.size
+            }
+            progress(Tr.t("Terminé"), 100)
+            return res
+        } finally {
+            runCatching { if (inbox?.isOpen == true) inbox.close(false) }
+            runCatching { st.close() }
+        }
+    }
+
+    // ---------- Alertes (2.0) ----------
+
+    /** Les nouveaux mails des expediteurs surveilles depuis le dernier passage. Renvoie (nouvel UID max, mails). */
+    fun nouveauxDe(surveilles: Set<String>, depuisUid: Long): Pair<Long, List<BigMail>> {
+        val st = connect()
+        var inbox: IMAPFolder? = null
+        try {
+            inbox = (st.getFolder("INBOX") as IMAPFolder).apply { open(Folder.READ_ONLY) }
+            val prochain = inbox.uidNext
+            if (depuisUid <= 0 || surveilles.isEmpty()) return (prochain - 1) to emptyList()
+            val msgs = inbox.getMessagesByUID(depuisUid + 1, UIDFolder.LASTUID).filterNotNull().toTypedArray()
+            inbox.fetch(msgs, FetchProfile().apply { add(FetchProfile.Item.ENVELOPE); add(UIDFolder.FetchProfileItem.UID) })
+            val trouves = msgs.mapNotNull { m ->
+                runCatching {
+                    val ia = m.from?.firstOrNull() as? InternetAddress
+                    val e = ia?.address?.lowercase() ?: return@runCatching null
+                    if (inbox.getUID(m) <= depuisUid || e !in surveilles) null
+                    else BigMail(ia.personal?.takeIf { it.isNotBlank() } ?: e, m.subject ?: "", 0, (m.receivedDate ?: m.sentDate)?.time ?: 0L, inbox.getUID(m))
+                }.getOrNull()
+            }
+            return maxOf(depuisUid, prochain - 1) to trouves
         } finally {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }
             runCatching { st.close() }
@@ -496,6 +652,19 @@ class MailCleaner(private val ctx: Context) {
             runCatching { if (inbox?.isOpen == true) inbox.close(false) }
             runCatching { st.close() }
         }
+    }
+
+    /** Le dossier Spam / Courrier indesirable. */
+    private fun findSpam(st: Store): Folder? {
+        runCatching {
+            for (f in st.defaultFolder.list("*")) {
+                if (f is IMAPFolder && f.attributes.any { it.equals("\\Junk", true) }) return f
+            }
+        }
+        val names = listOf("[Gmail]/Spam", "[Google Mail]/Spam", "Spam", "Junk", "Junk Email", "Courrier indésirable", "Courrier indesirable",
+            "INBOX.Spam", "INBOX.Junk", "Bulk Mail", "QUARANTAINE")
+        for (n in names) runCatching { val f = st.getFolder(n); if (f.exists()) return f }
+        return null
     }
 
     private fun findTrash(st: Store): Folder? {

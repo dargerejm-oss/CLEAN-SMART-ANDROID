@@ -11,6 +11,21 @@
   mails → corbeille du compte (IMAP MOVE), contacts → export .vcf avant suppression si la sauvegarde est active.
 - Code : `data/` (moteur : MediaScanner, MailCleaner, ContactsCleaner, Backup, Settings), `AppViewModel.kt`, `ui/` (écrans).
 
+## Version 2.0 (branche claude/v2-auto, en test, pas publiée)
+- Accueil : tuile verte « Ménage complet » (photos → téléphone → mails) + 3 portes : 📸 Photos (`Ecran.PHOTOS`),
+  🧹 Téléphone (`ui/Inutiles.kt`, `data/Inutiles.kt`), ✉️ Mails. Quitter Google/iCloud dans une carte plus discrète.
+- Google/iCloud : mode « Tout automatique » (`data/AutoGoogle.kt`, service de premier plan, surveille Download, MANAGE_EXTERNAL_STORAGE),
+  « Libérer Google » bloqué tant que la copie n'est pas complète, « Vérifier le disque », rappel tous les 2 mois (Night).
+- Rafales : yeux fermés écartés (ML Kit face-detection, `data/Yeux.kt`). Sablier repris de Nettoyage Pro (`Sablier`).
+- Mails : rien ne part sans la liste à relire (`MailRevueDialog`, `vm.mailVoir`), règles par expéditeur toujours jeter /
+  toujours garder / me prévenir (`data/Regles.kt`, alertes toutes les 15 min), boîte protégée « Protégés/Banque… Famille »
+  (Gmail = libellé, autres = déplacé), Spam vers la corbeille, bilan téléphone / boîte mail.
+- Aussi : gestionnaire d'applis (`data/Applis.kt`, `ui/Applis.kt`, accès aux données d'utilisation), note de santé 0-100
+  (`vm.sante`, `ui/Sante.kt`), ménage automatique du dimanche (option `sundayClean`, `Night.menageDuDimanche`), Options
+  simplifiées (3 cartes + « Réglages avancés » replié), photos du ménage sûr visibles avant de jeter (`PhotoRevueDialog`),
+  iCloud renommé « Récupérer mes photos iCloud (ancien iPhone) ».
+- Version PC à part : `Documents/CLEAN_SMART_PC` (Python/Tkinter → .exe, publiée en pc-1.3).
+
 ## Version 1.8
 - Interface en anglais : les textes restent en français dans le code, enveloppés dans `Tr.t("...", args)` (`Tr.kt`) ;
   dictionnaire `TrEn.kt` généré. Pour un nouveau texte : `python store/i18n/i18n.py extract . cles.json`, ajouter la

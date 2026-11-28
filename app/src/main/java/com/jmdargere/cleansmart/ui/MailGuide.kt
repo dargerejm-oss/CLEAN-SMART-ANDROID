@@ -83,10 +83,8 @@ fun MailGuide(vm: AppViewModel, ask: (Confirm) -> Unit, openTri: () -> Unit, cho
             EtapeCarte(1, "🧹", Tr.t("Le ménage sûr"),
                 if (r == null) Tr.t("Newsletters, pubs, notifications et mails en double.")
                 else Tr.t("%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.", plural(nbSafe, "mail"), safe.count { it.newsletter }),
-                Rouge, prochaine == 1, 1 in d || (r != null && nbSafe == 0), Tr.t("Tout mettre à la corbeille")) {
-                ask(Confirm(Tr.t("Faire le ménage sûr ?"),
-                    Tr.t("Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés."),
-                    Tr.t("Corbeille")) { vm.mailGuideClean() })
+                Rouge, prochaine == 1, 1 in d || (r != null && nbSafe == 0), Tr.t("Voir la liste et jeter")) {
+                vm.mailGuideClean()
             }
             if (r != null && safe.any { it.unsubscribe.isNotEmpty() } && 1 !in d) {
                 Text(Tr.t("💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »)."),
@@ -97,15 +95,14 @@ fun MailGuide(vm: AppViewModel, ask: (Confirm) -> Unit, openTri: () -> Unit, cho
                 Pourpre, prochaine == 2, 2 in d, Tr.t("Trier les expéditeurs")) { vm.mailGuideReview(); openTri() }
             EtapeCarte(3, "🛡️", Tr.t("Je mets l'important à l'abri"),
                 if (!vm.backupReady()) Tr.t("Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).")
-                else Tr.t("Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC."),
+                else Tr.t("Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés »."),
                 Bleu, prochaine == 3, 3 in d,
                 if (vm.backupReady()) Tr.t("Mettre à l'abri") else Tr.t("Choisir un dossier"),
                 if (vm.backupReady()) ({ vm.mailGuideSave() }) else chooseFolder)
             EtapeCarte(4, "📤", Tr.t("Je libère la boîte"),
                 Tr.t("%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).", if (r != null) plural(r.oldCount, Tr.t("vieux mail"), Tr.t("vieux mails")) + " · " + fmtBytes(r.oldBytes) + " · " else "", vm.settings.oldMailYears),
-                Vert, prochaine == 4, 4 in d, Tr.t("Libérer la boîte")) {
-                ask(Confirm(Tr.t("Libérer la boîte mail ?"), Tr.t("Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.", vm.settings.oldMailYears),
-                    Tr.t("Corbeille")) { vm.mailGuideFree() })
+                Vert, prochaine == 4, 4 in d, Tr.t("Voir la liste et libérer")) {
+                vm.mailGuideFree()
             }
             if (prochaine == 5) {
                 Gap()
@@ -147,9 +144,7 @@ fun MailTri(vm: AppViewModel, ask: (Confirm) -> Unit) {
         if (vm.mailSwipeTrash.isNotEmpty()) {
             Gap()
             BigButton(Tr.t("🧹 Jeter les mails de %1", plural(vm.mailSwipeTrash.size, Tr.t("expéditeur"))), color = Rouge) {
-                ask(Confirm(Tr.t("Jeter ces mails ?"),
-                    Tr.t("Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.", plural(vm.mailSwipeTrash.size, Tr.t("expéditeur")), fmtNum(vm.mailSwipeTrash.sumOf { it.count })),
-                    Tr.t("Corbeille")) { vm.mailSwipeApply() })
+                vm.mailSwipeApply()
             }
         }
     }

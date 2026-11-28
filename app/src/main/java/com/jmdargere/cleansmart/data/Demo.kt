@@ -54,6 +54,18 @@ object Demo {
 
     val compte = MailAccount("demo@exemple.fr", "imap.exemple.fr", "GMAIL", true)
 
+    /** Liste de mails a relire avant de jeter (demonstration). */
+    fun revue(): List<BigMail> {
+        val j = 86_400_000L; val now = System.currentTimeMillis()
+        return listOf(
+            BigMail("Boutique Mode", "Soldes : -50 % sur tout le site", 84_000, now - j, 1),
+            BigMail("Voyages Promo", "Vos vacances à petit prix", 120_000, now - 2 * j, 2),
+            BigMail("Réseau social", "Vous avez 12 nouvelles notifications", 41_000, now - 3 * j, 3),
+            BigMail("Supermarché", "Votre catalogue de la semaine", 2_300_000, now - 5 * j, 4),
+            BigMail("Magazine Déco", "Les tendances de l'automne", 310_000, now - 9 * j, 5),
+        )
+    }
+
     fun mails() = MailResult(
         total = 18452, scanned = 3000, bytes = 2_400_000_000, newsletters = 1240, bigCount = 37, bigBytes = 612_000_000,
         oldCount = 5210, oldBytes = 820_000_000,
