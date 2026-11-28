@@ -20,6 +20,10 @@
 - Mails : rien ne part sans la liste à relire (`MailRevueDialog`, `vm.mailVoir`), règles par expéditeur toujours jeter /
   toujours garder / me prévenir (`data/Regles.kt`, alertes toutes les 15 min), boîte protégée « Protégés/Banque… Famille »
   (Gmail = libellé, autres = déplacé), Spam vers la corbeille, bilan téléphone / boîte mail.
+- Aussi : gestionnaire d'applis (`data/Applis.kt`, `ui/Applis.kt`, accès aux données d'utilisation), note de santé 0-100
+  (`vm.sante`, `ui/Sante.kt`), ménage automatique du dimanche (option `sundayClean`, `Night.menageDuDimanche`), Options
+  simplifiées (3 cartes + « Réglages avancés » replié), photos du ménage sûr visibles avant de jeter (`PhotoRevueDialog`),
+  iCloud renommé « Récupérer mes photos iCloud (ancien iPhone) ».
 - Version PC à part : `Documents/CLEAN_SMART_PC` (Python/Tkinter → .exe, publiée en pc-1.3).
 
 ## Version 1.8
