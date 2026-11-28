@@ -341,6 +341,7 @@ fun CleanSmartApp(vm: AppViewModel) {
         }
     }
 
+    MailRevueDialog(vm)
     vm.busy?.let { BusyDialog(it) }
     vm.done?.let { DoneDialog(it) { vm.done = null } }
     confirm?.let { ConfirmDialog(it) { confirm = null } }
@@ -889,6 +890,7 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                     InfoRow("💾", Tr.t("Sauvegarder des mails"), Tr.t("Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part"), onClick = openSave)
                     InfoRow("↩️", Tr.t("Remettre des mails"), Tr.t("Récupère des mails mis à la corbeille de ta messagerie"), onClick = openTrash)
                 }
+                MailsOutils(vm)
             }
             vm.mailResult?.let { r ->
                 item {
@@ -907,21 +909,12 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                         Text(Tr.t("🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille."),
                             color = Vert, fontSize = 12.sp)
                         Gap(6)
-                        MailAction("📰", Tr.t("Newsletters et pubs"), plural(r.newsletters, "mail"), r.newsletters > 0) {
-                            val n = r.senders.count { it.newsletter }
-                            ask(Confirm(Tr.t("Jeter les newsletters ?"),
-                                Tr.t("Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.", n),
-                                Tr.t("Corbeille")) { vm.trashNewsletters() })
-                        }
-                        MailAction("📎", Tr.t("Gros mails (+ 5 Mo)"), "${plural(r.bigCount, "mail")} · ${fmtBytes(r.bigBytes)}", r.bigCount > 0) {
-                            ask(Confirm(Tr.t("Jeter les gros mails ?"), Tr.t("Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie."), Tr.t("Corbeille")) { vm.trashBigMails() })
-                        }
-                        MailAction("🕰️", Tr.t("Mails de plus de 2 ans"), "${plural(r.oldCount, "mail")} · ${fmtBytes(r.oldBytes)}", r.oldCount > 0) {
-                            ask(Confirm(Tr.t("Jeter les vieux mails ?"), Tr.t("Les mails de plus de 2 ans vont dans la corbeille de ta messagerie."), Tr.t("Corbeille")) { vm.trashOldMails() })
-                        }
-                        MailAction("👯", Tr.t("Mails en double"), Tr.t("Reçus plusieurs fois à quelques secondes d'écart : %1", plural(r.doublons.size, "copie")), r.doublons.isNotEmpty()) {
-                            ask(Confirm(Tr.t("Jeter les copies ?"), Tr.t("%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.", plural(r.doublons.size, "copie")), Tr.t("Corbeille")) { vm.trashDoublons() })
-                        }
+                        Text(Tr.t("👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides."),
+                            color = Gris, fontSize = 12.sp)
+                        MailAction("📰", Tr.t("Newsletters et pubs"), plural(r.newsletters, "mail"), r.newsletters > 0) { vm.trashNewsletters() }
+                        MailAction("📎", Tr.t("Gros mails (+ 5 Mo)"), "${plural(r.bigCount, "mail")} · ${fmtBytes(r.bigBytes)}", r.bigCount > 0) { vm.trashBigMails() }
+                        MailAction("🕰️", Tr.t("Mails de plus de 2 ans"), "${plural(r.oldCount, "mail")} · ${fmtBytes(r.oldBytes)}", r.oldCount > 0) { vm.trashOldMails() }
+                        MailAction("👯", Tr.t("Mails en double"), Tr.t("Reçus plusieurs fois à quelques secondes d'écart : %1", plural(r.doublons.size, "copie")), r.doublons.isNotEmpty()) { vm.trashDoublons() }
                     }
                     // Lecture seule : retrouver vite l'important
                     if (r.factures.isNotEmpty() || r.colis.isNotEmpty() || r.voyages.isNotEmpty()) {
@@ -934,17 +927,21 @@ private fun Mails(vm: AppViewModel, ask: (Confirm) -> Unit, openSave: () -> Unit
                     }
                     if (r.senders.isNotEmpty()) {
                         SectionTitle(Tr.t("QUI T'ÉCRIT LE PLUS"))
+                        @Suppress("UNUSED_VARIABLE") val v = vm.reglesVersion
+                        var choisi by remember { mutableStateOf<com.jmdargere.cleansmart.data.Sender?>(null) }
                         BoxCard {
-                            r.senders.take(15).forEach { s ->
+                            Text(Tr.t("Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner."), color = Gris, fontSize = 12.sp)
+                            r.senders.take(25).forEach { s ->
+                                val e = s.email.lowercase()
+                                val regles = (if (e in com.jmdargere.cleansmart.data.Regles.jeter) "🗑️" else "") +
+                                        (if (com.jmdargere.cleansmart.data.Regles.garder(e)) "🛡️" else "") +
+                                        (if (e in com.jmdargere.cleansmart.data.Regles.alertes) "🔔" else "")
                                 InfoRow(when { s.important -> "🛡️"; s.newsletter -> "📰"; s.notif -> "🔔"; else -> "👤" },
-                                    s.name.ifEmpty { s.email }, s.email, fmtNum(s.count))
-                                if (s.unsubscribe.isNotEmpty() && !s.important) {
-                                    TextButton(onClick = { desabonner(ctx, s) }, modifier = Modifier.padding(start = 50.dp)) {
-                                        Text(Tr.t("🚫 Se désabonner"), color = Rouge, fontWeight = FontWeight.Bold, fontSize = 13.sp)
-                                    }
-                                }
+                                    s.name.ifEmpty { s.email }, (if (regles.isNotEmpty()) "$regles  " else "") + s.email, fmtNum(s.count),
+                                    onClick = { choisi = s })
                             }
                         }
+                        choisi?.let { s -> ExpediteurDialog(vm, s) { choisi = null } }
                     }
                 }
             }

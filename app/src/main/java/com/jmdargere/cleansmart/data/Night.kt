@@ -99,6 +99,19 @@ object Night {
                 }
             }
 
+            // Mails : regles « toujours jeter » et boite protegee (si une boite mail est connectee)
+            Regles.init(ctx)
+            val mc = MailCleaner(ctx)
+            if (mc.account().ready) {
+                if (Regles.jeter.isNotEmpty()) runCatching {
+                    val n = mc.trash(MailCriteria.From(Regles.jeter.toList()))
+                    if (n > 0) notify(ctx, 6, Tr.t("🧹 Mails triés cette nuit"),
+                        Tr.t("%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).", plural(n, "mail")))
+                }
+                if (ctx.getSharedPreferences("mail_regles", Context.MODE_PRIVATE).getBoolean("protegerAuto", false))
+                    runCatching { mc.proteger(Regles.emailsContacts(ctx)) { _, _ -> } }
+            }
+
             if (s.alerts) {
                 // 2. Telephone presque plein (au plus tous les 3 jours)
                 val free = freeBytes()

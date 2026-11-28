@@ -123,6 +123,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     init {
         Tr.choix = when (settings.langue) { 1 -> "fr"; 2 -> "en"; else -> null }
+        com.jmdargere.cleansmart.data.Regles.init(app)
+        com.jmdargere.cleansmart.data.AlertesMail.programmer(app)
         Night.schedule(app, settings)
         verifierMiseAJour(false)
         refreshStorage()
@@ -411,8 +413,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var mailLibere by mutableLongStateOf(prefs.getLong("mailLibere", 0)); private set
 
     /** Met des mails a la corbeille du compte et les compte dans le bilan. */
-    private suspend fun jeterMails(c: MailCriteria): Int {
-        val n = withContext(Dispatchers.IO) { mail.trash(c) }
+    private suspend fun jeterMails(c: MailCriteria, dansSpam: Boolean = false): Int {
+        val n = withContext(Dispatchers.IO) { mail.trash(c, dansSpam) }
         mailJetes += n; mailLibere += mail.derniersOctets
         prefs.edit().putInt("mailJetes", mailJetes).putLong("mailLibere", mailLibere).apply()
         return n
@@ -466,10 +468,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun trashNewsletters() = mailResult?.senders?.filter { it.newsletter }?.map { it.email }?.let {
-        trashMail(MailCriteria.From(it))
+        mailVoir(Tr.t("📰 Newsletters et pubs"), MailCriteria.From(it))
     }
 
-    fun trashDoublons() = mailResult?.doublons?.takeIf { it.isNotEmpty() }?.let { trashMail(MailCriteria.Uids(it)) }
+    fun trashDoublons() = mailResult?.doublons?.takeIf { it.isNotEmpty() }?.let { mailVoir(Tr.t("👯 Mails en double"), MailCriteria.Uids(it)) }
 
     // corbeille de la messagerie : remettre des mails
     var mailTrash by mutableStateOf<List<com.jmdargere.cleansmart.data.TrashedMail>?>(null); private set
@@ -495,14 +497,78 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         mailTrashSel = emptySet()
     }
 
-    fun trashBigMails() = trashMail(MailCriteria.Big(settings.bigMailMb))
-    fun trashOldMails() = trashMail(MailCriteria.Old(settings.oldMailYears))
+    fun trashBigMails() = mailVoir(Tr.t("📎 Gros mails"), MailCriteria.Big(settings.bigMailMb))
+    fun trashOldMails() = mailVoir(Tr.t("🕰️ Vieux mails"), MailCriteria.Old(settings.oldMailYears))
 
     private fun trashMail(c: MailCriteria) = run(Tr.t("Nettoyage de la boîte mail")) {
         upd(Tr.t("Nettoyage de la boîte mail"), Tr.t("Déplacement vers la corbeille…"), 50)
         val n = jeterMails(c)
         say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
         mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    }
+
+    // ------------------------------------------------------------------ mails : relire avant de jeter (2.0)
+
+    /** La liste a relire avant de valider (null = rien a relire). */
+    var mailRevue by mutableStateOf<com.jmdargere.cleansmart.data.MailRevue?>(null); private set
+    private var apresRevue: () -> Unit = {}
+
+    /** Cherche les mails qui partiraient avec [c] et les montre : on decoche, puis on valide. */
+    fun mailVoir(titre: String, c: MailCriteria, apres: () -> Unit = {}) = run(Tr.t("Recherche des mails")) {
+        val liste = if (demo) com.jmdargere.cleansmart.data.Demo.revue()
+                    else withContext(Dispatchers.IO) { mail.apercu(c) }
+        if (liste.isEmpty()) { apres(); say(Tr.t("🎉 Aucun mail à jeter ici.")); return@run }
+        apresRevue = apres
+        mailRevue = com.jmdargere.cleansmart.data.MailRevue(titre, c, liste, liste.map { it.uid }.toSet(), c is MailCriteria.Spam)
+    }
+
+    fun revueCocher(uid: Long) { mailRevue = mailRevue?.let { r -> r.copy(coches = if (uid in r.coches) r.coches - uid else r.coches + uid) } }
+    fun revueTout(oui: Boolean) { mailRevue = mailRevue?.let { r -> r.copy(coches = if (oui) r.mails.map { it.uid }.toSet() else emptySet()) } }
+    fun revueFermer() { mailRevue = null }
+
+    fun revueValider() = run(Tr.t("Nettoyage de la boîte mail")) {
+        val r = mailRevue ?: return@run
+        mailRevue = null
+        if (demo) { demoAttente(Tr.t("Nettoyage de la boîte mail")); apresRevue(); say(Tr.t("✨ %1 mis à la corbeille (démonstration)", plural(r.coches.size, "mail"))); return@run }
+        upd(Tr.t("Nettoyage de la boîte mail"), Tr.t("Déplacement vers la corbeille…"), 50)
+        val n = jeterMails(MailCriteria.Uids(r.coches.toList()), dansSpam = r.spam)
+        apresRevue()
+        say(Tr.t("✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)", plural(n, "mail")))
+        mailResult = withContext(Dispatchers.IO) { runCatching { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }.getOrDefault(mailResult) }
+    }
+
+    // ------------------------------------------------------------------ regles par expediteur, alertes, boite protegee, spam (2.0)
+
+    /** Change a chaque modification des regles (pour mettre l'ecran a jour). */
+    var reglesVersion by mutableIntStateOf(0); private set
+
+    fun regle(cle: String, email: String) {
+        com.jmdargere.cleansmart.data.Regles.basculer(ctx, cle, email)
+        reglesVersion++
+        val r = com.jmdargere.cleansmart.data.Regles
+        say(when (cle) {
+            "jeter" -> if (email.lowercase() in r.jeter) Tr.t("🗑️ Ses mails partiront à la corbeille chaque nuit") else Tr.t("Règle retirée")
+            "garder" -> if (r.garder(email)) Tr.t("🛡️ Ses mails ne seront jamais jetés") else Tr.t("Règle retirée")
+            else -> if (email.lowercase() in r.alertes) Tr.t("🔔 Tu seras prévenu quand il t'écrit") else Tr.t("Alerte retirée")
+        })
+    }
+
+    /** Appliquer tout de suite les regles « toujours jeter » (sinon c'est fait chaque nuit). */
+    fun appliquerRegles() = com.jmdargere.cleansmart.data.Regles.jeter.takeIf { it.isNotEmpty() }?.let {
+        mailVoir(Tr.t("🗑️ Mes expéditeurs « toujours jeter »"), MailCriteria.From(it.toList()))
+    }
+
+    fun voirSpam() = mailVoir(Tr.t("🚫 Spam"), MailCriteria.Spam)
+
+    /** Resultat du dernier rangement dans la boite protegee (dossier -> nombre de mails). */
+    var mailProteges by mutableStateOf<Map<String, Int>?>(null); private set
+
+    fun protegerMails() = run(Tr.t("Boîte protégée")) {
+        if (demo) { demoAttente(Tr.t("Boîte protégée")); mailProteges = mapOf("Banque" to 214, "Impots - Administration" to 87, "Sante" to 52, "Famille" to 431); return@run }
+        val contacts = withContext(Dispatchers.IO) { com.jmdargere.cleansmart.data.Regles.emailsContacts(ctx) }
+        mailProteges = withContext(Dispatchers.IO) { mail.proteger(contacts, progress(Tr.t("Boîte protégée"))) }
+        ctx.getSharedPreferences("mail_regles", Context.MODE_PRIVATE).edit().putBoolean("protegerAuto", true).apply()
+        say(Tr.t("🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie", plural(mailProteges!!.values.sum(), "mail")))
     }
 
     // ------------------------------------------------------------------ fichiers inutiles (2.0, repris de Nettoyage Pro)
@@ -663,18 +729,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     val mailSafeSenders: List<com.jmdargere.cleansmart.data.Sender>
         get() = mailResult?.senders?.filter { (it.newsletter || it.notif) && !it.important } ?: emptyList()
 
-    fun mailGuideClean() = run(Tr.t("Ménage sûr de la boîte mail")) {
-        if (demo) { demoAttente(Tr.t("Ménage sûr de la boîte mail")); mailGuideDone = mailGuideDone + 1; say(Tr.t("✨ 1 249 mails mis à la corbeille (démonstration)")); return@run }
-        val r = mailResult ?: return@run
-        upd(Tr.t("Ménage sûr de la boîte mail"), Tr.t("Newsletters et notifications…"), 30)
-        var n = jeterMails(MailCriteria.From(mailSafeSenders.map { it.email }))
-        if (r.doublons.isNotEmpty()) {
-            upd(Tr.t("Ménage sûr de la boîte mail"), Tr.t("Mails en double…"), 70)
-            n += jeterMails(MailCriteria.Uids(r.doublons))
-        }
-        mailGuideDone = mailGuideDone + 1
-        say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
-        mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    fun mailGuideClean() {
+        if (demo) { mailVoir(Tr.t("🧹 Ménage sûr"), MailCriteria.Uids(emptyList())) { mailGuideDone = mailGuideDone + 1 }; return }
+        val r = mailResult ?: return
+        mailVoir(Tr.t("🧹 Ménage sûr : newsletters, notifications, doublons"),
+            MailCriteria.Tous(listOf(MailCriteria.From(mailSafeSenders.map { it.email }), MailCriteria.Uids(r.doublons)))) { mailGuideDone = mailGuideDone + 1 }
     }
 
     // Etape 2 : tri par expediteur, une carte a la fois (gauche = tout jeter, droite = garder)
@@ -702,14 +761,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         mailSwipeTrash = mailSwipeTrash.filter { it.email != back.email }
     }
 
-    fun mailSwipeApply() = run(Tr.t("Tri des expéditeurs")) {
-        if (demo) { mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2; say(Tr.t("✨ Mails mis à la corbeille (démonstration)")); return@run }
-        upd(Tr.t("Tri des expéditeurs"), Tr.t("Mise à la corbeille…"), 40)
-        val n = jeterMails(MailCriteria.From(mailSwipeTrash.map { it.email }))
-        mailSwipeTrash = emptyList()
-        mailGuideDone = mailGuideDone + 2
-        say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
-        mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    fun mailSwipeApply() {
+        if (demo) { mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2; say(Tr.t("✨ Mails mis à la corbeille (démonstration)")); return }
+        mailVoir(Tr.t("👆 Les expéditeurs que tu as jetés"), MailCriteria.From(mailSwipeTrash.map { it.email })) {
+            mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2
+        }
     }
 
     /** Etape 3 : mettre a l'abri l'important (banque, administration, sante, factures) et tous les mails avec un PDF. */
@@ -727,18 +783,20 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             mail.forEachMail(uids, progress(Tr.t("Sauvegarde des mails importants"))) { m -> saved += backup.saveMail(tree!!, m) }
             backup.updateMailIndex(tree!!, saved)
         }
+        // et dans la messagerie : la boite protegee (Banque, Impots, Sante, Maison, Famille)
+        runCatching {
+            val contacts = withContext(Dispatchers.IO) { com.jmdargere.cleansmart.data.Regles.emailsContacts(ctx) }
+            mailProteges = withContext(Dispatchers.IO) { mail.proteger(contacts, progress(Tr.t("Boîte protégée"))) }
+            ctx.getSharedPreferences("mail_regles", Context.MODE_PRIVATE).edit().putBoolean("protegerAuto", true).apply()
+        }
         mailGuideDone = mailGuideDone + 3
         say(Tr.t("✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour", fmtNum(saved.size), fmtNum(saved.sumOf { it.pdf })))
     }
 
     /** Etape 4 : liberer la boite (vieux mails, jamais les importants). */
-    fun mailGuideFree() = run(Tr.t("Libérer la boîte mail")) {
-        if (demo) { demoAttente(Tr.t("Libérer la boîte mail")); mailGuideDone = mailGuideDone + 4; say(Tr.t("✨ Vieux mails mis à la corbeille (démonstration)")); return@run }
-        upd(Tr.t("Libérer la boîte mail"), Tr.t("Vieux mails vers la corbeille…"), 50)
-        val n = jeterMails(MailCriteria.Old(settings.oldMailYears))
-        mailGuideDone = mailGuideDone + 4
-        say(Tr.t("✨ %1 vieux mails mis à la corbeille (les importants sont gardés)", fmtNum(n)))
-        mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    fun mailGuideFree() {
+        if (demo) { mailVoir(Tr.t("🕰️ Vieux mails"), MailCriteria.Uids(emptyList())) { mailGuideDone = mailGuideDone + 4 }; return }
+        mailVoir(Tr.t("🕰️ Vieux mails (les importants sont gardés)"), MailCriteria.Old(settings.oldMailYears)) { mailGuideDone = mailGuideDone + 4 }
     }
 
     // ------------------------------------------------------------------ sauvegarde de mails choisis
