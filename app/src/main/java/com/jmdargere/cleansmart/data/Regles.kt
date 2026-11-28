@@ -74,6 +74,7 @@ object AlertesMail {
     class Travail(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, params) {
         override suspend fun doWork(): Result {
             val ctx = applicationContext
+            Tr.init(ctx); Tr.choix = Tr.CODES.getOrNull(Settings.load(ctx).langue - 1)
             Regles.init(ctx)
             val mail = MailCleaner(ctx)
             if (!mail.account().ready || Regles.alertes.isEmpty()) return Result.success()

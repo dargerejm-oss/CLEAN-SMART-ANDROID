@@ -1182,7 +1182,7 @@ private fun Options(vm: AppViewModel, chooseFolder: () -> Unit, openManual: () -
                 Gap(12)
                 Text("🌍 " + Tr.t("Langue") + " / Language", fontWeight = FontWeight.Bold)
                 Gap(6)
-                ChipsChoix(listOf(Tr.t("Comme le téléphone"), "Français", "English"), s.langue) { vm.updateSettings(s.copy(langue = it)) }
+                ChipsChoix(listOf(Tr.t("Comme le téléphone")) + Tr.CODES.indices.map { Tr.NOMS[it] }, s.langue) { vm.updateSettings(s.copy(langue = it)) }
             }
 
             // 2. le reste, replie

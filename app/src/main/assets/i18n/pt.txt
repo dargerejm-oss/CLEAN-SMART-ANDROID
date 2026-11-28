@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 não foi possível copiar: execute de novo este mesmo arquivo.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 «para verificar» vão para a lixeira do Clean Smart: pode recuperá-los durante 7 dias.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nAtenção: a eliminação é sincronizada com a sua conta (Google…).
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nO disco ou o telemóvel está cheio: liberte espaço (ou mude de disco no passo 2) e execute ESTE arquivo de novo. Nada será copiado duas vezes.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nO arquivo está danificado ou incompleto: descarregue-o de novo a partir do e-mail da Google e execute-o outra vez. O que já foi copiado é mantido.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nAs cópias são primeiro exportadas num ficheiro .vcf na sua pasta de cópia de segurança.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nExecute de novo o ficheiro ZIP que os continha (ou o modo automático): serão copiados de novo. Não apague nada em %1 antes.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nPrimeiro é feita uma cópia na sua pasta de cópia de segurança.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Na Google, os e-mails e o Google Fotos partilham os mesmos 15 GB: limpar os e-mails também liberta espaço para as suas fotos.
+ sur environ %1 Go	 de cerca de %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 duplicados, rajadas ou falhadas sem cópia
+ · %1 à la corbeille	 · %1 para a lixeira
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · os ficheiros «para verificar» estão na lixeira do Clean Smart (7 dias)
+ · va dans la corbeille Clean Smart	 · vai para a lixeira do Clean Smart
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): duplicados a mais, rajadas a mais, fotos pretas ou brancas, capturas com mais de um mês.\n\nVão para a lixeira da Galeria (30 dias para as recuperar).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) serão apagados DEFINITIVAMENTE para libertar o espaço já.\n\nNão poderão ser recuperados.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 para deitar fora
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: newsletters e publicidade (%2 remetentes), notificações, e-mails duplicados.
+%1 Go · prévois %2	%1 GB · preveja %2
+%1 analysées	%1 analisadas
+%1 avec pièces jointes (dont %2 avec PDF)	%1 com anexos (%2 com PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 com sucesso. Ao enviar os originais para a lixeira, ganha %2.
+%1 ce mois-ci. 	%1 este mês.
+%1 copié(s) dans ton dossier de sauvegarde.	%1 copiado(s) para a sua pasta de cópia de segurança.
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 de ficheiros inúteis: temporários, miniaturas, pastas vazias, restos de apps.
+%1 de plus de %2 mois 	%1 com mais de %2 meses
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	%1 dos seus remetentes «deitar sempre fora» enviados para a lixeira (recuperáveis 30 dias).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 duplicados vão para a lixeira. O primeiro exemplar de cada e-mail é mantido.
+%1 et %2 copiées et vérifiées.	%1 e %2 copiadas e verificadas.
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 e %2 em segurança. Pode apagá-lo e descarregar o seguinte.
+%1 fichier(s) sauvegardé(s)	%1 ficheiro(s) guardado(s)
+%1 jetés	%1 deitados fora
+%1 libres sur %2	%1 livres de %2
+%1 libérés sur le téléphone	%1 libertados no telemóvel
+%1 mails dans la boîte · %2 analysés	%1 e-mails na caixa · %2 analisados
+%1 min %2 s	%1 min %2 s
+%1 newsletters · %2 gros mails	%1 newsletters · %2 e-mails grandes
+%1 newsletters, %2 gros mails (%3).	%1 newsletters, %2 e-mails grandes (%3).
+%1 photos trouvées	%1 fotos encontradas
+%1 photos · %2 vidéos analysées	%1 fotos · %2 vídeos analisados
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 fotos · %2 vídeos · %3 duplicados e rajadas afastados
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 prepara uma cópia de todas as suas fotos. Faça exatamente como neste modelo:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 serão apagados: já não servem ou recriam-se sozinhos.
+%1 seront supprimés pour de bon.	%1 serão apagados para sempre.
+%1 sur %2 choisis · %3	%1 de %2 escolhidos · %3
+%1 sur %2 fichiers faits	%1 de %2 ficheiros feitos
+%1 sur %2 · %3	%1 de %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 vão para a lixeira da Galeria (recuperáveis 30 dias).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 vão para a lixeira da Galeria (recuperáveis 30 dias).
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: duplicados, rajadas a mais, fotos pretas ou brancas, capturas com mais de um mês. As melhores são mantidas.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	%1 · %2 no total. Toque numa app para a desinstalar ou limpar a cache.
+%1 à jeter	%1 para deitar fora
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 para ver uma a uma. Deslize para a esquerda para deitar fora, para a direita para manter (passa a favorita ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	%1, %2, %3 copiados · %4 e %5 afastados.
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1os e-mails com mais de %2 anos vão para a lixeira (exceto os importantes).
+(sans objet)	(sem assunto)
+. %1 en double ou en rafale à trier : touche ici.	. %1 duplicadas ou em rajada para ordenar: toque aqui.
+1 bouton	1 botão
+1 mois	1 mês
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. Desliguei a cópia: app Google Fotos › a sua foto no canto superior direito › Definições do Fotos › Cópia de segurança › desligar.
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. No iPhone, desliguei «Fotografias em iCloud» (Definições › o seu nome › iCloud › Fotografias).
+12 mois	12 meses
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. Abri o disco num PC e vejo bem as minhas fotos, ano a ano.
+3 mois	3 meses
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. Recomendado: fiz uma 2.ª cópia (outro disco ou PC).
+4 étapes	4 passos
+6 mois	6 meses
+AFFICHAGE	ECRÃ
+AUTOMATIQUE	AUTOMÁTICO
+AUTRE	OUTROS
+Adresse mail	Endereço de e-mail
+Adresse, serveur et mot de passe sont obligatoires.	Endereço, servidor e palavra-passe são obrigatórios.
+Alerte retirée	Alerta removido
+Alertes et rapport du mois	Alertas e relatório do mês
+Analyse de la boîte mail	Análise da caixa de correio
+Analyse des 3 000 mails les plus récents de la boîte de réception.	Analisa os 3 000 e-mails mais recentes da caixa de entrada.
+Analyse des mails (%1 / %2)	Análise dos e-mails (%1 / %2)
+Analyse du téléphone	Análise do telemóvel
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	Analise a sua caixa «%1»: newsletters, e-mails grandes, e-mails antigos. Os importantes são sempre mantidos.
+Analyser ma boîte mail	Analisar a minha caixa de correio
+Analyser mon téléphone	Analisar o meu telemóvel
+Annuler	Cancelar
+Annuler, ne rien jeter	Cancelar, não deitar nada fora
+Appeler	Ligar
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	A Apple verifica o pedido e depois envia um e-mail, geralmente em 3 a 7 dias. Os ficheiros descarregam-se depois em privacy.apple.com (inicie sessão a partir do telemóvel).
+Apple · Données et confidentialité	Apple · Dados e privacidade
+Appliquer « toujours jeter » maintenant	Aplicar «deitar sempre fora» agora
+Arrêt après le fichier en cours…	Paragem após o ficheiro em curso…
+Arrêter	Parar
+Arrêter le mode automatique ?	Parar o modo automático?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Parado. Os ficheiros já copiados estão em segurança; os outros estarão da próxima vez, sem duplicados.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	Dica: em Definições › Apps, toque numa app (Chrome, Facebook…) › Armazenamento › «Limpar cache».
+Aucun contact en double	Nenhum contacto duplicado
+Aucun dossier choisi	Nenhuma pasta escolhida
+Aucun dossier de sauvegarde	Nenhuma pasta de cópia
+Aucun fichier inutile.	Nenhum ficheiro inútil.
+Aucune boîte mail connectée.	Nenhuma caixa de correio ligada.
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	Nenhuma pen nem disco detetado. Ligue-o (adaptador USB-C) e volte a abrir este passo.
+Aucune vidéo n'a pu être réduite davantage.	Nenhum vídeo pôde ser reduzido mais.
+Autre	Outro
+Autres fichiers d'installation (.apk)	Outros ficheiros de instalação (.apk)
+Avant tout : analyser	Antes de tudo: analisar
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	Com «Acesso aos dados de utilização», o Clean Smart vê o espaço real de cada app e há quanto tempo não a abre. Nada é enviado para lado nenhum.
+BOÎTE MAIL	CAIXA DE CORREIO
+Banque	Banco
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	Banco, administração, saúde, faturas e todos os e-mails com PDF: guardados, PDF reunidos, arquivo index.html no PC.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	Banco, administração, saúde, faturas e todos os e-mails com PDF: guardados, PDF reunidos, arquivo index.html no PC. No seu correio, ficam em «Protegidos».
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	Banco, impostos, saúde, casa, família (os seus contactos): guardados à parte, nunca deitados fora
+Batterie faible (%1 %)	Bateria fraca (%1 %)
+Bonjour	Olá
+Boutique Mode	Loja de moda
+Boîte mail en ordre !	Caixa de correio em ordem!
+Boîte mail remplie à %1 % (%2 / %3)	Caixa cheia a %1 % (%2 / %3)
+Boîte protégée	Caixa protegida
+Boîte remplie à %1 % (%2 / %3). 	Caixa cheia a %1 % (%2 / %3).
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	Ligue o carregador: um ficheiro pode demorar 10 a 30 minutos.\n\nSe o telemóvel se desligar, nada se perde: basta executar de novo o mesmo ficheiro.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	Ligue o carregador durante o tratamento: um ficheiro grande pode demorar 10 a 30 minutos. O ecrã fica ligado.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	Ligue a sua pen ou o seu disco ao telemóvel e escolha (ou crie) uma pasta nele.
+Brancher la clé ou le disque	Ligar a pen ou o disco
+C'est fait : le prochain fichier sera entièrement recopié.	Feito: o próximo ficheiro será copiado de novo por inteiro.
+C'est noté	Anotado
+CONSEILLÉ	RECOMENDADO
+CONTACT	CONTACTO
+CONTACTS	CONTACTOS
+Captures d'écran	Capturas de ecrã
+Carte SD, clé USB, Drive… choisis où tu veux	Cartão SD, pen USB, Drive… escolha onde quiser
+Carte SD, clé USB, Google Drive…	Cartão SD, pen USB, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	Este ficheiro já está copiado e verificado. Repeti-lo não cria duplicados, mas é inútil.\n\nProvavelmente queria o seguinte (%1).
+Ce mois-ci	Este mês
+Cette année	Este ano
+Changer de compte	Mudar de conta
+Changer de dossier	Mudar de pasta
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	Todos os domingos, os ficheiros inúteis seguros e o spam saem sozinhos. Uma notificação diz quanto espaço foi libertado e se há fotos para ordenar.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	Cada e-mail escolhido é guardado na sua pasta de cópia:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	Cada vídeo é refeito em 720p, muitas vezes 3 a 5 vezes mais leve, e guardado em Filmes / Clean Smart.
+Choisir le dossier sur le disque	Escolher a pasta no disco
+Choisir un dossier	Escolher uma pasta
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	Escolha primeiro a pasta na sua pen ou disco (passo 2).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	Escolha primeiro a pasta na sua pen ou disco (passo «O disco»).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	Escolha primeiro uma pasta: cartão SD, pen USB ou Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	Escolha primeiro uma pasta de cópia (Opções).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	Escolha primeiro uma pasta de cópia (cartão SD, pen USB, Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	Escolha primeiro uma pasta de cópia e faça uma cópia.
+Choisis d'abord un dossier de sauvegarde.	Escolha primeiro uma pasta de cópia.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	Escolha os seus e-mails: são guardados com os anexos, os PDF numa pasta à parte
+Choisis une carte SD, une clé USB ou Google Drive	Escolha um cartão SD, uma pen USB ou o Google Drive
+Choix des plus belles photos…	Escolha das fotos mais bonitas…
+Clean Smart : copie automatique	Clean Smart: cópia automática
+Clean Smart attend les fichiers dans Download…	O Clean Smart espera os ficheiros em Download…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	O Clean Smart lê os últimos 3 000 e-mails (nada é apagado).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	O Clean Smart vê todas as suas fotos (nada é apagado).
+Clean Smart trouve en un clic :	O Clean Smart encontra num toque:
+Clé USB (démonstration)	Pen USB (demonstração)
+Clé USB ou disque dur, avec un adaptateur USB-C	Pen USB ou disco rígido, com um adaptador USB-C
+Colis et livraisons	Encomendas e entregas
+Combien de place faut-il ?	Quanto espaço é preciso?
+Comme le téléphone	Como o telemóvel
+Commencer	Começar
+Compresser	Comprimir
+Compresser %1 ?	Comprimir %1?
+Compression des vidéos	Compressão dos vídeos
+Compris	Entendido
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	Ligue a sua caixa de correio (Gmail, Outlook, Yahoo, Orange, Free…): newsletters, e-mails grandes e antigos para ordenar; os importantes são sempre mantidos.
+Connecter	Ligar
+Connecter ma boîte mail	Ligar a minha caixa de correio
+Connexion au serveur	Ligação ao servidor
+Connexion impossible : 	Ligação impossível:
+Connexion à la messagerie	Ligação ao correio
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	Recomendado: fiz uma 2.ª cópia (outro disco ou PC).
+Contacts en double	Contactos duplicados
+Continuer quand même	Continuar mesmo assim
+Copie automatique	Cópia automática
+Copier les fichiers un par un	Copiar os ficheiros um a um
+Copies identiques — l'original est gardé	Cópias idênticas — o original é mantido
+Corbeille	Lixeira
+Corbeille : %1	Lixeira: %1
+Corbeille Clean Smart	Lixeira do Clean Smart
+Corbeille de la messagerie	Lixeira do correio
+Correct, mais peut mieux faire	Razoável, mas pode melhorar
+Créer une exportation	Criar exportação
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	No Google Fotos: mantenha premida uma foto, marque dias inteiros e depois «Eliminar». A lixeira da Google guarda tudo 60 dias.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	No Google Takeout, escolha ficheiros de 2 GB: tratamo-los um a um, o telemóvel nunca precisa de muito espaço.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	No pedido à Apple, escolha ficheiros de 1 ou 2 GB: tratamo-los um a um, o telemóvel nunca precisa de muito espaço.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	No e-mail da Google, conte os botões «Transferir»: é o número de ficheiros.
+Demander la copie à %1	Pedir a cópia a %1
+Demander une copie de tes données	Pedir uma cópia dos seus dados
+Demandée · attends le mail de %1	Pedida · espere pelo e-mail de %1
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Desde o Android 11, nenhuma app de limpeza pode limpar a cache de outras apps nem os ficheiros do sistema. É o próprio Android que o faz: este botão abre o ecrã «Libertar espaço».
+Depuis l'installation	Desde a instalação
+Dernière vérification	Última verificação
+Des applis téléchargées mais pas installées. À vérifier.	Apps descarregadas mas não instaladas. Para verificar.
+Disque	Disco
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	Disco não reconhecido: use um adaptador USB-C (OTG). Uma pen formatada em exFAT funciona em todo o lado (FAT32 recusa ficheiros com mais de 4 GB).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	Disco cheio: ligue um disco maior e escolha-o no passo «O disco». Continuamos onde estávamos, sem duplicados.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	Documentos de Transferências não alterados há 6 meses. Para verificar.
+Dossier Corbeille introuvable sur ce compte.	Pasta Lixeira não encontrada nesta conta.
+Dossier Corbeille introuvable.	Pasta Lixeira não encontrada.
+Dossier Spam introuvable sur ce compte.	Pasta Spam não encontrada nesta conta.
+Dossier de sauvegarde	Pasta de cópia
+Dossier de sauvegarde introuvable.	Pasta de cópia não encontrada.
+Dossiers cache	Pastas de cache
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	Pastas deixadas por apps que já não estão no telemóvel. Para verificar.
+Dossiers vides	Pastas vazias
+Dossiers vides…	Pastas vazias…
+Doublons	Duplicados
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	Duplicados e rajadas a mais (a melhor foto é mantida), fotos pretas ou brancas, capturas antigas. Toque numa foto para a manter. Tudo vai para a lixeira da Galeria (30 dias).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	Duplicados, rajadas a mais, fotos pretas ou brancas, capturas antigas.
+Doublons, rafales, floues	Duplicados, rajadas, desfocadas
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	Desmarque os e-mails que quer manter. Os e-mails do seu banco, dos impostos, da saúde e dos remetentes «manter sempre» nunca estão nesta lista. Tudo vai para a lixeira do seu correio (recuperável).
+Démonstration…	Demonstração…
+Déplacement vers la corbeille…	A mover para a lixeira…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	Desligado por defeito. Se o ligar, as fotos (e os contactos em .vcf) são copiados para a pasta antes de cada limpeza, por segurança.
+Elles sont déjà toutes en favori 👍	Já são todas favoritas 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	Em demonstração, nenhum ficheiro é tratado. Saia da demonstração (Opções) para o fazer a sério.
+En pleine forme	Em plena forma
+Envoyer %1	Enviar %1
+Envoyer le PDF souvenir	Enviar o PDF de recordação
+Envoyer le lien par e-mail · Exporter une fois	Enviar link de transferência por e-mail · Exportar uma vez
+Erreur inattendue	Erro inesperado
+Espace libéré	Espaço libertado
+Espace libéré depuis le début : %1. Une petite analyse ?	Espaço libertado desde o início: %1. Uma pequena análise?
+Espace à récupérer	Espaço a recuperar
+Et tes mails	E os seus e-mails
+Factures et papiers	Faturas e papéis
+Faire le ménage sûr ?	Fazer a limpeza segura?
+Fait ✔	Feito ✔
+Famille	Família
+Fermer	Fechar
+Fichier %1	Ficheiro %1
+Fichier %1 déjà fait	Ficheiro %1 já feito
+Fichier illisible	Ficheiro ilegível
+Fichiers d'installation déjà installés	Ficheiros de instalação já instalados
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	Ficheiros de trabalho das apps, no armazenamento do telemóvel. Recriam-se se for preciso.
+Fichiers inutiles	Ficheiros inúteis
+Fichiers mis de côté, vidée toute seule après 7 jours	Ficheiros postos de lado, esvaziada sozinha após 7 dias
+Fichiers temporaires	Ficheiros temporários
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	Ficheiros temporários, miniaturas, pastas vazias, restos de apps
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	Ficheiros temporários, miniaturas, pastas vazias, restos de apps. As fotos e a música nunca são tocadas.
+Floue	Desfocada
+Floues, trop sombres ou trop claires — vérifie avant de cocher	Desfocadas, demasiado escuras ou claras — verifique antes de marcar
+GARDÉE	MANTIDA
+Garder sur le téléphone les photos des derniers…	Manter no telemóvel as fotos dos últimos…
+Gardés	Mantidos
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	O Gmail exige uma PALAVRA-PASSE DE APLICAÇÃO (16 letras):\n1. Ative a verificação em 2 passos na sua conta Google.\n2. Abra myaccount.google.com/apppasswords\n3. Crie uma palavra-passe chamada «Clean Smart» e cole-a aqui.
+Google Photos	Google Fotos
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	A Google envia um e-mail quando estiver pronto: em algumas horas ou alguns dias. Pode fechar a app entretanto.
+Gros	Grande
+Gros mails (+ 5 Mo)	E-mails grandes (+ 5 MB)
+Grosses vidéos	Vídeos grandes
+Groupe %1 · %2 photos	Grupo %1 · %2 fotos
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	Acesso recusado. Gmail, Yahoo ou iCloud precisam de uma PALAVRA-PASSE DE APLICAÇÃO, não da sua palavra-passe habitual.
+Il a besoin d'un bon ménage	Precisa de uma boa limpeza
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	Restam apenas %1. Abra o Clean Smart para libertar espaço num toque.
+Ils ne contiennent rien.	Não contêm nada.
+Ils prennent encore de la place pendant 30 jours	Ainda ocupam espaço durante 30 dias
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	Ficam na pasta «Protegidos» do seu correio. Repetido todas as noites.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	Impossível anular: os ficheiros talvez já tenham sido apagados definitivamente.
+Impossible de créer le dossier %1	Impossível criar a pasta %1
+Impossible de protéger ces photos	Impossível proteger estas fotos
+Impossible de vider la corbeille	Impossível esvaziar a lixeira
+Impôts	Impostos
+Impôts - Administration	Impostos - Administração
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	Indique o servidor IMAP do seu correio (porta 993, SSL).
+J'ai demandé la copie	Pedi a cópia
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	Abri o disco num PC e vejo bem as minhas fotos, ano a ano.
+J'ai traité tous les fichiers	Tratei todos os ficheiros
+Jamais jetés, rangés dans « Protégés »	Nunca deitados fora, guardados em «Protegidos»
+Je libère la boîte	Liberto a caixa
+Je libère la place	Liberto espaço
+Je mets l'important à l'abri	Ponho o importante em segurança
+Je mets à l'abri les bonnes	Ponho as boas em segurança
+Je trie par expéditeur	Ordeno por remetente
+Je vérifie le douteux	Verifico o duvidoso
+Jeter %1 ?	Deitar fora %1?
+Jeter ces mails ?	Deitar fora estes e-mails?
+Jeter les copies ?	Deitar fora as cópias?
+Jeter les gros mails ?	Deitar fora os e-mails grandes?
+Jeter les newsletters ?	Deitar fora as newsletters?
+Jeter les originaux ?	Deitar fora os originais?
+Jeter les vieux mails ?	Deitar fora os e-mails antigos?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	Registos, cópias temporárias, transferências abandonadas. Já não servem.
+L'adresse et le mot de passe seront effacés du téléphone.	O endereço e a palavra-passe serão apagados do telemóvel.
+L'important est à l'abri, le reste est parti	O importante está em segurança, o resto foi-se
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	O original não é tocado: depois proponho enviá-lo para a lixeira.\n\nPode demorar alguns minutos.
+LA NUIT	À NOITE
+LIBÉRER LA PLACE	LIBERTAR ESPAÇO
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	A cópia no disco foi apagada: o Clean Smart copia tudo de novo desde o início.
+La corbeille est vide.	A lixeira está vazia.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	O espaço dos e-mails liberta-se quando a lixeira do seu correio é esvaziada (geralmente em 30 dias).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	Não foi possível fazer a cópia. Abra o Clean Smart para verificar a pasta.
+Langue	Idioma
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	A limpeza guiada faz tudo pela ordem certa. O botão verde é sempre o passo seguinte.
+Le bilan, et comment libérer ton compte %1	O resumo, e como libertar a sua conta %1
+Le contact d'origine est gardé.	O contacto original é mantido.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	O disco (ou o telemóvel) está cheio: a cópia parou de forma limpa.\n\nLigue um disco maior, escolha-o no passo 2 e execute de novo o modo automático: continuamos sem duplicados.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	O disco não tem espaço suficiente: restam %1, são precisos cerca de %2 para este ficheiro.\n\n• Liberte espaço no disco, ou\n• ligue um disco maior e escolha-o no passo «O disco» (continuamos onde estamos).\n\nNada foi tocado.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	O disco não está acessível.\n\n• Verifique se está bem ligado (adaptador USB-C).\n• No passo «O disco», escolha a pasta de novo.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	A pasta de cópia não está acessível. Abra Clean Smart > Opções para a escolher.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	A pasta de cópia já não está acessível. Escolha-a de novo.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	A pasta «%1» não foi encontrada no disco. Verifique se o disco está ligado (passo 2).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Primeiro termina o ficheiro em curso. Os ficheiros já copiados estão em segurança; os outros estarão da próxima vez, sem duplicados.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	O link do e-mail da Google expira após cerca de uma semana: se for o caso, peça uma nova exportação (nada se perde, continuamos sem duplicados).
+Le mois dernier	O mês passado
+Le ménage sûr	A limpeza segura
+Le refaire quand même	Repetir mesmo assim
+Le téléphone	O telemóvel
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	O telemóvel está quase cheio (são precisos pelo menos 300 MB livres para trabalhar).\n\n• Esvazie a lixeira da Galeria.\n• Apague os ZIP já tratados (Transferências).\n• Faça a limpeza guiada do Clean Smart.\n\nNada foi tocado.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	O telemóvel desligou-se ou o disco foi desligado? Execute de novo o mesmo ZIP: o Clean Smart continua sem perder nem duplicar nada.
+Lecture de la galerie	Leitura da galeria
+Lecture des dates des photos…	Leitura das datas das fotos…
+Lecture des vidéos	Leitura dos vídeos
+Lecture impossible : %1	Leitura impossível: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	Os .apk de apps já instaladas: já não servem.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	Os 200 últimos e-mails da lixeira do seu correio. Marque os que quer devolver à caixa de entrada.
+Les 30 photos et vidéos qui prennent le plus de place	As 30 fotos e vídeos que ocupam mais espaço
+Les autres cases : inutile	As outras opções: não é preciso
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Os ficheiros da Apple ficam disponíveis cerca de 2 semanas em privacy.apple.com: se já passou, faça um novo pedido (nada se perde, continuamos sem duplicados).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	Os ficheiros já enviados para a lixeira podem ser recuperados na Galeria.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	Os e-mails com mais de %1 anos vão para a lixeira do seu correio. Os importantes são mantidos.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	Os e-mails com mais de 2 anos vão para a lixeira do seu correio.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	Os e-mails com mais de 5 MB vão para a lixeira do seu correio.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	As newsletters, publicidade, notificações e e-mails duplicados vão para a lixeira do seu correio (toda a caixa de entrada).\n\nOs e-mails importantes nunca são tocados.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	Primeiro as fotos (ordenar, manter o melhor, guardar, libertar), depois os ficheiros inúteis do telemóvel, depois os e-mails.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	As fotos com mais de %1 meses já guardadas saem do telemóvel (lixeira, 30 dias).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	As fotos favoritas (ou protegidas com o botão 🛡️) nunca são propostas
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	Fotos um pouco desfocadas, WhatsApp, capturas recentes: decide você.
+Les photos, vidéos et musiques ne sont jamais touchées.	As fotos, os vídeos e a música nunca são tocados.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	As mais antigas só são propostas para a lixeira se já estiverem na sua cópia.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	As fotos mais bonitas do mês ou do ano, para enviar a alguém querido
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	As maiores e as que já não abre: desinstale-as num gesto
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	O spam vai para a lixeira do seu correio. Desmarque um e-mail se não for spam.
+Libérer	Libertar
+Libérer %1 ?	Libertar %1?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	Libertar %1 é opcional. %2 não deixa nenhuma app apagar as suas fotos: é você que o faz, quando tiver a certeza.
+Libérer la boîte	Libertar a caixa
+Libérer la boîte mail	A libertar a caixa de correio
+Libérer la boîte mail ?	Libertar a caixa de correio?
+Libérer la place	Libertar espaço
+Libérer la place, PDF souvenir…	Libertar espaço, PDF de recordação…
+Liste des photos sur le disque…	Lista das fotos no disco…
+MAINTENANT	AGORA
+Mail (facultatif, pour tes mails)	Correio (opcional, para os seus e-mails)
+Mails	E-mails
+Mails Gmail : %1	E-mails Gmail: %1
+Mails avec pièces jointes	E-mails com anexos
+Mails de plus de 2 ans	E-mails com mais de 2 anos
+Mails en double	E-mails duplicados
+Mails en double…	E-mails duplicados…
+Maison	Casa
+Me prévenir	Avisar-me
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Obrigado por experimentar o Clean Smart! Instale a versão completa para continuar a limpar o seu telemóvel.
+Mes applis	As minhas apps
+Mes plus gros fichiers	Os meus maiores ficheiros
+Mes règles	As minhas regras
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	Envia para a lixeira as fotos com mais de %1 meses já guardadas
+Mettre à l'abri	Pôr em segurança
+Mettre à l'abri l'important	A pôr o importante em segurança
+Miniatures	Miniaturas
+Mise à jour	Atualização
+Mise à la corbeille…	A enviar para a lixeira…
+Mode d'emploi	Manual de utilização
+Mode d'emploi introuvable.	Manual de utilização não encontrado.
+Mode démonstration terminé	Modo de demonstração terminado
+Modifier ▼	Alterar ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	Mostra a app com fotos, e-mails e contactos falsos. Nada é tocado no telemóvel: ideal para apresentar o Clean Smart.
+Mot de passe (vide = garder l'actuel)	Palavra-passe (vazia = manter a atual)
+Mot de passe d'application	Palavra-passe de aplicação
+Médias WhatsApp	Ficheiros do WhatsApp
+Ménage complet	Limpeza completa
+Ménage guidé	Limpeza guiada
+Ménage guidé des mails	Limpeza guiada dos e-mails
+Ménage sûr de la boîte mail	Limpeza segura da caixa de correio
+Ménage terminé !	Limpeza terminada!
+NOUVEAU	NOVO
+Nettoyage de la boîte mail	Limpeza da caixa de correio
+Nettoyage des fichiers inutiles	Limpeza dos ficheiros inúteis
+Nettoyer	Limpar
+Nettoyer %1 ?	Limpar %1?
+Nettoyer le téléphone	Limpar o telemóvel
+Nettoyer les fichiers inutiles ?	Limpar os ficheiros inúteis?
+Newsletters et notifications…	Newsletters e notificações…
+Newsletters et pubs	Newsletters e publicidade
+Newsletters, pubs, notifications et mails en double.	Newsletters, publicidade, notificações e e-mails duplicados.
+Nombre de fichiers dans le mail	Número de ficheiros no e-mail
+Normale	Normal
+Nouvelle version %1 disponible	Nova versão %1 disponível
+Oublier	Esquecer
+Oublier ce compte ?	Esquecer esta conta?
+Oui, c'est fini	Sim, está terminado
+Ouverte aujourd'hui	Aberta hoje
+Ouverte il y a %1	Aberta há %1
+Ouverture de %1…	A abrir %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Abra o Clean Smart para ver o que fazer. Nada se perde.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Abra a sua página Google e veja o espaço usado pelo Google Fotos. Escreva-o aqui (em GB).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	Abra «Vídeos grandes», marque-os e depois «Comprimir»
+Ouvrir	Abrir
+Ouvrir Google Photos	Abrir o Google Fotos
+Ouvrir Google Takeout	Abrir o Google Takeout
+Ouvrir iCloud Photos	Abrir Fotografias em iCloud
+Ouvrir la page du mot de passe d'application	Abrir a página da palavra-passe de aplicação
+Ouvrir privacy.apple.com	Abrir privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	Abrir «Libertar espaço» do Android
+PDF souvenir	PDF de recordação
+PHOTOS ET VIDÉOS	FOTOS E VÍDEOS
+PROTECTION	PROTEÇÃO
+Pas de photos pour cette période.	Não há fotos para este período.
+Pas ouverte depuis plus d'un an	Não aberta há mais de um ano
+Passer	Saltar
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	Pequenas cópias das fotos para mostrar. Recriam-se sozinhas.
+Photos	Fotos
+Photos : %1 · vidéos : %2 · doublons écartés : %3	Fotos: %1 · vídeos: %2 · duplicados afastados: %3
+Photos du week-end	Fotos do fim de semana
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	Fotos duplicadas, rajadas, fotos falhadas, vídeos grandes, e-mails inúteis… tudo ocupa espaço.
+Photos et vidéos reçues ou envoyées	Fotos e vídeos recebidos ou enviados
+Photos floues ou ratées	Fotos desfocadas ou falhadas
+Photos iCloud	Fotografias em iCloud
+Photos similaires	Fotos parecidas
+Photos, téléphone et mails, étape par étape	Fotos, telemóvel e e-mails, passo a passo
+Place prise : %1	Espaço ocupado: %1
+Plus d'outils	Mais ferramentas
+Plus de 100 Mo chacune	Mais de 100 MB cada
+Pour gagner des points : %1.	Para ganhar pontos: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Para obter a versão completa do Clean Smart, ou para qualquer pergunta, escreva-me:
+Pour obtenir la version complète, écris-moi :	Para obter a versão completa, escreva-me:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	Para encontrar os ficheiros inúteis, o Clean Smart precisa de ver o armazenamento do telemóvel: autorize «Acesso a todos os ficheiros». Nada é enviado para lado nenhum.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	Para outra conta ou outro disco. Os ficheiros já copiados no disco não são tocados.
+Protéger mes favoris	Proteger as minhas favoritas
+Prudente	Prudente
+Prudente : moins de photos proposées. Stricte : davantage.	Prudente: menos fotos propostas. Estrita: mais.
+Préparation	Preparação
+Préparation…	Preparação…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	Avise-me se o telemóvel quase não tiver espaço (menos de 1 GB), e um pequeno resumo no dia 1 do mês.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	Preveja pelo menos %1 na pen ou no disco (10 % de margem).
+QUI T'ÉCRIT LE PLUS	QUEM LHE ESCREVE MAIS
+Quand le mail de %1 est arrivé	Quando o e-mail de %1 tiver chegado
+Quitter	Sair
+Quitter Google Photos	Deixar o Google Fotos
+Quitter iCloud Photos	Deixar Fotografias em iCloud
+RECHERCHE DES PHOTOS RATÉES	PROCURA DE FOTOS FALHADAS
+Rafales : on garde la meilleure…	Rajadas: mantemos a melhor…
+Rafales — la plus nette est gardée	Rajadas — a mais nítida é mantida
+Rangement : %1	A arrumar: %1
+Recherche des doublons	Procura de duplicados
+Recherche des fichiers inutiles…	Procura de ficheiros inúteis…
+Recherche des mails	Procura de e-mails
+Recherche des mails avec PDF	Procura de e-mails com PDF
+Recherche des mails importants (%1 / %2)	Procura de e-mails importantes (%1 / %2)
+Recherche des photos floues	Procura de fotos desfocadas
+Recherche des photos ratées	Procura de fotos falhadas
+Recherche des photos similaires	Procura de fotos parecidas
+Recherche des pièces jointes (%1 / %2)	Procura de anexos (%1 / %2)
+Rechercher une mise à jour	Procurar uma atualização
+Recommencer	Recomeçar
+Recommencer avec un autre compte	Recomeçar com outra conta
+Recommencer depuis le début ?	Recomeçar desde o início?
+Regarder la taille de %1	Ver o tamanho de %1
+Relance l'analyse après un changement.	Volte a analisar após uma alteração.
+Remettre des mails	Recuperar e-mails
+Remettre le compteur à zéro	Pôr o contador a zero
+Remettre les fichiers	A devolver os ficheiros
+Restes d'applis désinstallées	Restos de apps desinstaladas
+Restes d'applis désinstallées…	Restos de apps desinstaladas…
+Reçus plusieurs fois à quelques secondes d'écart : %1	Recebidos várias vezes com segundos de diferença: %1
+Rien	Nada
+Rien n'a été supprimé.	Nada foi apagado.
+Rien n'est perdu	Nada se perde
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	Nada é apagado sem o seu acordo: tudo passa pela lixeira.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	Nada a libertar: nenhuma foto antiga está ainda na cópia. Execute primeiro «Guardar todas as minhas fotos».
+RÉSULTAT	RESULTADO
+Règle retirée	Regra removida
+Récupère des mails mis à la corbeille de ta messagerie	Recupere e-mails enviados para a lixeira do seu correio
+Récupérer mes photos iCloud (ancien iPhone)	Recuperar as minhas fotos do iCloud (antigo iPhone)
+Réduire mes vidéos	Reduzir os meus vídeos
+Réglages avancés	Definições avançadas
+Réglages de stockage Android	Definições de armazenamento do Android
+SAUVEGARDE	CÓPIA DE SEGURANÇA
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	Sem acesso às fotos, o Clean Smart não pode analisar nada.
+Santé	Saúde
+Sauvegarde %1 / %2	Cópia %1 / %2
+Sauvegarde automatique chaque nuit	Cópia automática todas as noites
+Sauvegarde avant suppression	Cópia antes de apagar
+Sauvegarde de mes bonnes photos	A guardar as minhas boas fotos
+Sauvegarde des mails	A guardar e-mails
+Sauvegarde des mails importants	A guardar e-mails importantes
+Sauvegarde du mail %1 / %2	A guardar o e-mail %1 / %2
+Sauvegarder avant de supprimer	Guardar antes de apagar
+Sauvegarder des mails	Guardar e-mails
+Sauvegarder mes bonnes photos	Guardar as minhas boas fotos
+Se connecter avec ton identifiant Apple	Iniciar sessão com o seu ID Apple
+Serveur IMAP	Servidor IMAP
+Serveur introuvable : vérifie internet et le nom du serveur.	Servidor não encontrado: verifique a internet e o nome do servidor.
+Ses mails partent à la corbeille chaque nuit, tout seuls	Os e-mails dele vão para a lixeira todas as noites, sozinhos
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	Só as boas fotos: nunca duplicados, rajadas a mais ou falhadas. As favoritas vão também para «Mes meilleures» (As minhas melhores).
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	Só as boas fotos são guardadas, numa pen, num disco ou no Google Drive. Até o Google Fotos pode ser recuperado.
+Seules les nouvelles photos sont copiées à chaque fois.	Só as fotos novas são copiadas de cada vez.
+Seuls les 20 premiers fichiers sont envoyés.	Só os 20 primeiros ficheiros são enviados.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	Se a ligação for recusada, crie uma palavra-passe de aplicação na segurança da conta Microsoft (verificação em 2 passos necessária).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	Senão o iPhone volta a enviar as fotos para o iCloud, e apagar no iCloud também pode apagá-las do iPhone.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	Senão o telemóvel volta a enviar as fotos para a Google, e apagar na Google também pode apagá-las deste telemóvel.
+Soldes d'hiver	Saldos de inverno
+Souvent inutiles après coup	Muitas vezes inúteis depois
+Stockage du téléphone	Armazenamento do telemóvel
+Stricte	Estrita
+Suivant	Seguinte
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	Apague este ficheiro você mesmo em Transferências para fazer espaço.
+Supprimer	Apagar
+Supprimer %1 ?	Apagar %1?
+Supprimer ce fichier du téléphone ?	Apagar este ficheiro do telemóvel?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	Apagar cada ficheiro do telemóvel depois de copiado e verificado (recomendado: liberta espaço)
+Supprimer les doublons	Apagar os duplicados
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	No Gmail, ficam na caixa de entrada e recebem uma etiqueta «Protegidos». Repetido todas as noites.
+Sur Google Takeout, en 1 minute	No Google Takeout, em 1 minuto
+Sur account.apple.com → Mots de passe pour applications → en créer un.	Em account.apple.com → Palavras-passe específicas da app → criar uma.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	No iPhone: Definições › o seu nome › iCloud: aparece o espaço usado por «Fotografias». Ou veja em icloud.com. Escreva-o aqui (em GB).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	No iPhone ou em icloud.com/photos: selecione fotos e depois «Apagar». O álbum «Apagados recentemente» guarda-as 30 dias.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	Na página que se abre: Armazenamento › «Limpar cache». O Android exige-o, o Clean Smart não o pode fazer por si.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	No telemóvel bastam 2 a 3 GB livres: um só ficheiro de cada vez. Livre agora: %1.
+Sur privacy.apple.com, en 2 minutes	Em privacy.apple.com, em 2 minutos
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	Em privacy.apple.com, os ficheiros chamam-se «iCloud Photos Part 1 of 12»: o último número (aqui 12) é o número de ficheiros. O Clean Smart também o lê sozinho.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	Segurança da conta → Gerar palavra-passe de aplicação e cole-a aqui.
+Sécurité, photos ratées, démonstration…	Segurança, fotos falhadas, demonstração…
+Sévérité	Severidade
+TERMINÉ	TERMINADO
+Ta messagerie	O seu correio
+Ta période d'essai de 30 jours est terminée.	O seu período de teste de 30 dias terminou.
+Taille de %1 (Go)	Tamanho de %1 (GB)
+Taille du texte	Tamanho do texto
+Taille maximale des fichiers : 1 Go ou 2 Go	Tamanho máximo dos ficheiros: 1 GB ou 2 GB
+Temps passé	Tempo decorrido
+Temps restant	Tempo restante
+Terminer la demande	Concluir o pedido
+Terminé	Terminado
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	As fotos do seu iPhone numa pen ou num disco, por ano, sem duplicados
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	As suas fotos dos 2 últimos meses ainda não estão no disco. Peça uma nova cópia no Google Takeout e o modo automático só acrescenta as fotos novas, sem duplicados.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	As suas fotos dos 2 últimos meses ainda não estão no disco. Peça uma nova cópia à Apple: o Clean Smart só acrescenta as fotos novas, sem duplicados.
+Tes photos à l'abri	As suas fotos em segurança
+Tes réglages et ta boîte mail seront conservés.	As suas definições e a sua caixa de correio serão mantidas.
+Ton téléphone est plein ?	O seu telemóvel está cheio?
+Ton téléphone est propre et tes photos sont à l'abri	O seu telemóvel está limpo e as suas fotos em segurança
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	O seu telemóvel e a sua caixa de correio estão limpos, as suas fotos em segurança
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	Toque aqui para a descarregar e depois abra o ficheiro para a instalar
+Touche ici pour la version complète ou une question	Toque aqui para a versão completa ou uma pergunta
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Basta tocar nos links «Transferir» do e-mail da Google. O Clean Smart copia cada ficheiro para o disco assim que chega a Download, mesmo enquanto os outros se transferem.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	Toque num remetente: deitar sempre fora, manter sempre, avisar-me, cancelar subscrição.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	Toque num remetente em «Quem lhe escreve mais» para escolher
+Touche une image pour la cocher · appui long pour la voir en grand	Toque numa imagem para a marcar · toque longo para a ver em grande
+Toucher pour analyser	Tocar para analisar
+Toucher pour voir	Tocar para ver
+Toujours garder	Manter sempre
+Toujours jeter	Deitar sempre fora
+Tous les fichiers sont traités ?	Todos os ficheiros foram tratados?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	Todos os e-mails de %1 (pelo menos %2 e-mails) vão para a lixeira do seu correio.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	Todos os e-mails de %1 remetente(s) de newsletters vão para a lixeira do seu correio (toda a caixa de entrada, não só os analisados).\n\nPode recuperá-los na lixeira.
+Tout cocher	Marcar tudo
+Tout décocher	Desmarcar tudo
+Tout désélectionner	Desselecionar tudo
+Tout mettre à la corbeille	Enviar tudo para a lixeira
+Tout nettoyer	Limpar tudo
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	Tudo passa pela lixeira: 30 dias para recuperar. E «Enganei-me» anula num gesto.
+Tout recommencer	Recomeçar tudo
+Tout recommencer ?	Recomeçar tudo?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	Todo o seu conteúdo está copiado e verificado no disco. Apagá-lo faz espaço para o seguinte.\n\nAs suas fotos também ficam no Google Fotos.
+Tout va bien, continue comme ça !	Está tudo bem, continue assim!
+Tout était déjà sauvegardé 👍	Já estava tudo guardado 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	Todas as suas fotos numa pen ou num disco, por ano, sem duplicados
+Tri avant la sauvegarde	Ordenação antes da cópia
+Tri des expéditeurs	Ordenação dos remetentes
+Tri rapide	Ordenação rápida
+Tri terminé !	Ordenação terminada!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	Primeiro ordenar, manter o melhor, guardar só as boas fotos, libertar espaço e depois limpar os e-mails.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	Primeiro ordenar, manter o melhor, guardar só as boas fotos e depois libertar espaço.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	Primeiro ordenar, pôr o importante em segurança e depois esvaziar a caixa. Os e-mails do seu banco, da administração ou da saúde nunca são deitados fora.
+Trier en glissant	Ordenar deslizando
+Trier les expéditeurs	Ordenar os remetentes
+Trier, garder, sauvegarder, libérer	Ordenar, manter, guardar, libertar
+Trier, mettre l'important à l'abri, vider la boîte	Ordenar, pôr o importante em segurança, esvaziar a caixa
+Trier, protéger	Ordenar, proteger
+Trop claire	Demasiado clara
+Trop petite	Demasiado pequena
+Trop sombre	Demasiado escura
+Très gros	Muito grande
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	Apagou a sua cópia do disco e já nada é copiado? Toque em «Recomeçar tudo (apaguei a minha cópia)» no fundo do ecrã e execute de novo os seus ficheiros ZIP.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	Tinha um iPhone? As suas fotos do iCloud numa pen ou num disco
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	Pode sair da app para tocar nos links: a cópia continua (notificação «Cópia automática»).
+Type : .zip   ·   Taille : 2 Go	Tipo: .zip   ·   Tamanho: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	Transfira UM só ZIP de cada vez, em Wi-Fi. Trate-o, apague-o e depois transfira o seguinte.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	Basta transferir os ficheiros em privacy.apple.com. O Clean Smart copia cada ficheiro para o disco assim que chega a Download.
+Téléphone	Telemóvel
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	Telemóvel cheio: esvazie a lixeira da Galeria, apague os ZIP já tratados, faça a limpeza guiada. São precisos pelo menos 300 MB livres.
+Un bouton, et c'est trié	Um botão e está ordenado
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	Um cartão por remetente: deslize para a esquerda para deitar fora TODOS os e-mails dele, para a direita para o manter.
+Une notification quand il t'écrit	Uma notificação quando ele lhe escreve
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	Uma foto de cada vez: deslize para a esquerda para deitar fora, para a direita para manter
+Une question, un souci, la version complète ? Écris-moi :	Uma pergunta, um problema, a versão completa? Escreva-me:
+Utilise ton adresse et ton mot de passe Free.	Use o seu endereço e a sua palavra-passe Free.
+Utilise ton adresse et ton mot de passe La Poste.	Use o seu endereço e a sua palavra-passe La Poste.
+Utilise ton adresse et ton mot de passe Orange.	Use o seu endereço e a sua palavra-passe Orange.
+Utilise ton adresse et ton mot de passe SFR.	Use o seu endereço e a sua palavra-passe SFR.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	Por volta das 2 h, as fotos novas são copiadas para a sua pasta de cópia. Uma notificação avisa-o se não tiver funcionado.
+Version complète	Versão completa
+Version installée : %1	Versão instalada: %1
+Vider	Esvaziar
+Vider la corbeille ?	Esvaziar a lixeira?
+Vider la corbeille Clean Smart	Esvaziar a lixeira do Clean Smart
+Vider la corbeille Clean Smart ?	Esvaziar a lixeira do Clean Smart?
+Vider la corbeille maintenant	Esvaziar a lixeira agora
+Vider maintenant	Esvaziar agora
+Vieux mails vers la corbeille…	E-mails antigos para a lixeira…
+Vieux téléchargements (plus de 6 mois)	Transferências antigas (mais de 6 meses)
+Voir la liste et jeter	Ver a lista e deitar fora
+Voir la liste et libérer	Ver a lista e libertar
+Voir le courrier indésirable puis le mettre à la corbeille	Ver o correio não solicitado e enviá-lo para a lixeira
+Voir les conseils	Ver os conselhos
+Voir ma place Google	Ver o meu espaço Google
+Voir ma place iCloud	Ver o meu espaço iCloud
+Votre facture	A sua fatura
+Voyages et réservations	Viagens e reservas
+Vérification de la sauvegarde	Verificação da cópia
+Vérification du disque	Verificação do disco
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Verifique no e-mail da Google que cada ficheiro (001, 002, 003…) foi tratado.
+Vérifier, puis libérer %1 (si tu veux)	Verificar e depois libertar %1 (se quiser)
+Yeux fermés	Olhos fechados
+appli	app
+applis	apps
+calcul…	a calcular…
+compression impossible	compressão impossível
+contact en double	contacto duplicado
+contacts en double	contactos duplicados
+copie	cópia
+copies	cópias
+de ta photothèque est à l'abri	da sua fototeca está em segurança
+derniers fichiers	últimos ficheiros
+doublon	duplicado
+doublons	duplicados
+erreur	erro
+erreurs	erros
+expéditeur	remetente
+expéditeurs	remetentes
+fais le ménage de ta boîte mail	limpe a sua caixa de correio
+fichier	ficheiro
+fichier copié	ficheiro copiado
+fichier copié et vérifié	ficheiro copiado e verificado
+fichier n'a	ficheiro não foi
+fichiers	ficheiros
+fichiers copiés	ficheiros copiados
+fichiers copiés et vérifiés	ficheiros copiados e verificados
+fichiers n'ont	ficheiros não foram
+iCloud Photos	Fotografias em iCloud
+jour	dia
+jour restant	dia restante
+jours	dias
+jours restants	dias restantes
+le plus simple	o mais simples
+libres · %1 % utilisé	livres · %1 % usado
+libère de la place avec le Ménage complet	liberte espaço com a Limpeza completa
+libérés	libertados
+mail	e-mail
+mail remis	e-mail recuperado
+mails	e-mails
+mails remis	e-mails recuperados
+nettoie les fichiers inutiles du téléphone	limpe os ficheiros inúteis do telemóvel
+nouveau fichier	ficheiro novo
+nouveaux fichiers	ficheiros novos
+pas à pas	passo a passo
+photo	foto
+photo gardée	foto mantida
+photo ou vidéo	foto ou vídeo
+photo ou vidéo prise	foto ou vídeo tirado
+photo protégée	foto protegida
+photos	fotos
+photos gardées	fotos mantidas
+photos ou vidéos	fotos ou vídeos
+photos ou vidéos prises	fotos ou vídeos tirados
+photos protégées	fotos protegidas
+puis « Étape suivante » :	depois «Passo seguinte»:
+rafale	rajada
+rafales	rajadas
+sauvegarde tes photos sur une clé ou une carte SD	guarde as suas fotos numa pen ou num cartão SD
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	já estão em segurança na sua cópia (mesmo nome, mesmo tamanho).\n\nVão para a lixeira da Galeria (recuperáveis 30 dias). As mais recentes ficam no telemóvel.
+sur %1 contacts	de %1 contactos
+trie tes photos (doublons, rafales, floues)	ordene as suas fotos (duplicados, rajadas, desfocadas)
+téléchargement	transferência
+téléchargements	transferências
+utilisé	usado
+vidéo	vídeo
+vidéo compressée	vídeo comprimido
+vidéos	vídeos
+vidéos compressées	vídeos comprimidos
+vieux mail	e-mail antigo
+vieux mails	e-mails antigos
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«Ficheiro danificado»: a transferência foi cortada. Transfira de novo este ZIP a partir do e-mail da Google e execute-o outra vez: o que já foi copiado não será copiado de novo.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«Libertar espaço»: manter no telemóvel as fotos dos últimos…
+À GARDER	MANTER
+À JETER	DEITAR FORA
+À RETROUVER VITE	PARA ENCONTRAR DEPRESSA
+À nettoyer	Para limpar
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	Use isto se apagou a sua cópia do disco: o Clean Smart esquece o que já copiou e o próximo ficheiro ZIP será copiado de novo por inteiro.\n\nO disco escolhido e as suas definições são mantidos. Nada é apagado no disco nem em %1.
+Écriture impossible	Escrita impossível
+Électricité	Eletricidade
+à jeter	para deitar fora
+élément	elemento
+éléments	elementos
+… et %1 autres mails du même genre (cochés).	… e mais %1 e-mails do mesmo tipo (marcados).
+‹ Retour	‹ Voltar
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1 lidas sem erro. As impressões digitais da cópia já não estão neste telemóvel: impossível comparar.
+↩️ %1 dans la boîte de réception	↩️ %1 na caixa de entrada
+↩️ %1 remis dans la galerie	↩️ %1 devolvidos à galeria
+↩️ %1 remis à leur place	↩️ %1 devolvidos ao seu lugar
+↩️ J'ai fait une bêtise : remettre les %1	↩️ Enganei-me: devolver os %1
+↩️ Mails remis (démonstration)	↩️ E-mails recuperados (demonstração)
+↩️ Remettre %1 dans ma boîte	↩️ Devolver %1 à minha caixa
+↩️ Remettre des mails	↩️ Recuperar e-mails
+↩️ Tout remettre à sa place	↩️ Devolver tudo ao seu lugar
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ À espera do próximo ficheiro em Download. Toque nos links «Transferir» do e-mail.
+⏳ En attente du prochain fichier dans Download…	⏳ À espera do próximo ficheiro em Download…
+⏳ copie en cours…	⏳ a copiar…
+⏳ plus tard	⏳ mais tarde
+⏹ Arrêter	⏹ Parar
+☑️ Tout cocher	☑️ Marcar tudo
+⚙️ Cache des applis et fichiers système	⚙️ Cache das apps e ficheiros do sistema
+⚙️ Options	⚙️ Opções
+⚠️ %1 : à relancer.\n	⚠️ %1: executar de novo.\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 com erro: execute de novo os ZIP marcados «executar de novo» antes de continuar.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ %1 no disco já não é idêntico ou já não se lê:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ Nenhuma cópia esta noite
+⚠️ Fichier %1 à reprendre	⚠️ Ficheiro %1 a repetir
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ São precisos cerca de %1, restam %2. Pode começar: quando estiver cheio, liga outro disco e continuamos sem duplicados.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ A cópia parou: %1\n\nNada se perde: execute de novo o modo automático, continuamos sem duplicados.
+⚠️ On ne commence pas	⚠️ Não começamos
+⚠️ Sauvegarde de la nuit	⚠️ Cópia da noite
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ danificado: transfira-o de novo a partir do e-mail, será copiado sozinho
+⚠️ disque plein	⚠️ disco cheio
+⚠️ pas commencé	⚠️ não começado
+⚠️ à relancer	⚠️ executar de novo
+⚠️ à relancer (%1)	⚠️ executar de novo (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ A cópia não está completa (ficheiro danificado, a repetir ou ainda não copiado). Termine primeiro a cópia: não apague nada em %1.
+✅ %1 : terminé et vérifié.\n	✅ %1: terminado e verificado.\n
+✅ %1 doublon(s) supprimé(s)	✅ %1 duplicado(s) apagado(s)
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ %1 e-mail(s) guardado(s) · %2 PDF · arquivo CleanSmart/Mails/index.html atualizado
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 e-mails importantes em segurança · %2 PDF reunidos · arquivo index.html atualizado
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ %1 foto(s) nova(s) guardada(s)
+✅ %1 · depuis %2	✅ %1 · há %2
+✅ %1 à l'abri	✅ %1 em segurança
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 e-mails importantes em segurança (demonstração)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 7 958 boas fotos guardadas (demonstração)
+✅ Assez de place sur « %1 ».	✅ Espaço suficiente em «%1».
+✅ Boîte mail connectée	✅ Caixa de correio ligada
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ Disco verificado: %1 relidas, nenhuma danificada.
+✅ Doublons supprimés (démonstration)	✅ Duplicados apagados (demonstração)
+✅ Fichier %1 terminé	✅ Ficheiro %1 terminado
+✅ La copie sur le disque est complète et vérifiée.	✅ A cópia no disco está completa e verificada.
+✅ Mails sauvegardés (démonstration)	✅ E-mails guardados (demonstração)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ cópia completa e verificada\n✅ cópia do telemóvel desligada\n✅ fotos vistas no disco\n\nAbrir %1? É você que escolhe o que apagar.
+✅ copié et vérifié	✅ copiado e verificado
+✅ copié, vérifié, supprimé du téléphone	✅ copiado, verificado, apagado do telemóvel
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 deitados fora · %2 libertados na sua caixa de correio
+✉️ %1 mails	✉️ %1 e-mails
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 e-mails (pasta «Mails Gmail», abra index.html)\n
+✉️ Boîte mail	✉️ Caixa de correio
+✉️ Mails	✉️ E-mails
+✉️ Mails de %1	✉️ E-mails de %1
+✓ %1 choisi	✓ %1 escolhido
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 libertados (recuperáveis 30 dias na lixeira da Galeria)
+✨ %1 mails mis à la corbeille	✨ %1 e-mails enviados para a lixeira
+✨ %1 mis à la corbeille (démonstration)	✨ %1 enviados para a lixeira (demonstração)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 enviados para a lixeira do seu correio (recuperáveis com «Recuperar e-mails»)
+✨ %1 nettoyés · %2 libérés	✨ %1 limpos · %2 libertados
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 e-mails antigos para a lixeira (os importantes são mantidos)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1 249 e-mails para a lixeira (demonstração)
+✨ 1,1 Go libérés (démonstration)	✨ 1,1 GB libertados (demonstração)
+✨ 6,4 Go libérés (démonstration)	✨ 6,4 GB libertados (demonstração)
+✨ Mails mis à la corbeille (démonstration)	✨ E-mails para a lixeira (demonstração)
+✨ Ménage automatique du dimanche	✨ Limpeza automática ao domingo
+✨ Ménage du dimanche	✨ Limpeza de domingo
+✨ Vieux mails mis à la corbeille (démonstration)	✨ E-mails antigos para a lixeira (demonstração)
+❤️ Santé du téléphone : %1 / 100	❤️ Saúde do telemóvel: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ Deslize para a esquerda: todos os e-mails dele para a lixeira   ·   Deslize para a direita: mantém-se ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ Deslize para a esquerda para deitar fora   ·   Deslize para a direita para manter ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 em curso: a cópia começa assim que terminar.
+⬜ Tout décocher	⬜ Desmarcar tudo
+⭐ Protéger mes %1	⭐ Proteger as minhas %1
+🍏 Mes photos iCloud	🍏 As minhas fotos do iCloud
+🍏 Pense à une nouvelle copie iCloud	🍏 Pense numa nova cópia do iCloud
+🍏 Quitter iCloud Photos	🍏 Deixar Fotografias em iCloud
+🎁 Version d'essai · %1	🎁 Versão de teste · %1
+🎉 %1 libérés au total	🎉 %1 libertados no total
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 Nenhum ficheiro inútil: o telemóvel está limpo!
+🎉 Aucun mail à jeter ici.	🎉 Nenhum e-mail para deitar fora aqui.
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 Nenhuma app esquecida: usa-as todas!
+🎉 Plus rien ici.	🎉 Já não há nada aqui.
+🎉 Rien à nettoyer, tout est propre !	🎉 Nada para limpar, está tudo limpo!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 Terminado: %1 copiados e verificados. No total no disco: %2 e %3.
+🎉 Tous les fichiers sont faits	🎉 Todos os ficheiros estão feitos
+🎬 Démonstration	🎬 Demonstração
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 MODO DE DEMONSTRAÇÃO: nada é tocado no telemóvel
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 Modo de demonstração: nada é tocado no telemóvel
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 Cada botão mostra primeiro a lista dos e-mails: desmarca os que quer manter e valida.
+👀 Voir et jeter ses mails maintenant	👀 Ver e deitar fora os e-mails dele agora
+👆 Les expéditeurs que tu as jetés	👆 Os remetentes que deitou fora
+👆 Tri des expéditeurs	👆 Ordenação dos remetentes
+👆 Tri rapide	👆 Ordenação rápida
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Agora: no e-mail da Google, transfira o ficheiro %1 (em Wi-Fi). Depois toque no botão verde e escolha-o em Transferências.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Agora: em privacy.apple.com, transfira «Part %1» (em Wi-Fi). Depois toque no botão verde e escolha-o em Transferências.
+👉 À faire maintenant	👉 A fazer agora
+👉 à télécharger puis traiter	👉 a transferir e depois tratar
+👍 Tu as déjà la dernière version (%1)	👍 Já tem a última versão (%1)
+👯 Mails en double	👯 E-mails duplicados
+💡 Aide	💡 Ajuda
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 Dica: cancele a subscrição para deixar de os receber (botão na lista «Quem lhe escreve mais»).
+💡 Si ça bloque	💡 Se bloquear
+💡 Si ça bloque : tous les conseils	💡 Se bloquear: todos os conselhos
+💾 %1 sur « %2 »	💾 %1 em «%2»
+💾 Sauvegarde de la nuit	💾 Cópia da noite
+💾 Sauvegarder %1	💾 Guardar %1
+💾 Sauvegarder toutes mes photos	💾 Guardar todas as minhas fotos
+💾 Sauver des mails	💾 Guardar e-mails
+📁 Choisir le dossier de sauvegarde	📁 Escolher a pasta de cópia
+📁 Choisir un dossier	📁 Escolher uma pasta
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: o e-mail completo (.eml)\n📕 CleanSmart / PDF: todos os PDF reunidos\n📎 CleanSmart / Pieces jointes: os outros ficheiros
+📁 Dossier de sauvegarde enregistré	📁 Pasta de cópia guardada
+📂 Traiter un fichier ZIP	📂 Tratar um ficheiro ZIP
+📂 Traiter un fichier ZIP à la main	📂 Tratar um ficheiro ZIP à mão
+📅 Ton rapport du mois	📅 O seu relatório do mês
+📎 Gros mails	📎 E-mails grandes
+📕 Cocher les PDF	📕 Marcar os PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF guardado em Transferências / Clean Smart
+📕 PDF souvenir créé (démonstration)	📕 PDF de recordação criado (demonstração)
+📖 Mode d'emploi	📖 Manual de utilização
+📤 Envoyer (%1)	📤 Enviar (%1)
+📦 Les plus grosses	📦 As maiores
+📦 Quitter Google Photos	📦 Deixar o Google Fotos
+📦 Ta nouvelle copie Google est peut-être prête	📦 A sua nova cópia Google pode estar pronta
+📧 Ouvrir le mail de Google	📧 Abrir o e-mail da Google
+📰 Newsletters et pubs	📰 Newsletters e publicidade
+📱 Mes applis	📱 As minhas apps
+📱 Ouvrir l'app Google Photos	📱 Abrir a app Google Fotos
+📱 Téléphone	📱 Telemóvel
+📱 Téléphone presque plein	📱 Telemóvel quase cheio
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 %1 fotos e %2 vídeos copiados e verificados, arrumados por ano\n
+📸 Photos	📸 Fotos
+🔄 Analyser à nouveau	🔄 Analisar de novo
+🔄 Chercher à nouveau	🔄 Procurar de novo
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 Recomeçar tudo (apaguei a minha cópia)
+🔍 Analyser ma boîte mail	🔍 Analisar a minha caixa de correio
+🔍 Analyser mon téléphone	🔍 Analisar o meu telemóvel
+🔍 Chercher les mails avec pièces jointes	🔍 Procurar e-mails com anexos
+🔎 Vérifier le disque (relit chaque photo)	🔎 Verificar o disco (relê cada foto)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 A sua palavra-passe fica cifrada no telemóvel. Só é enviada ao servidor do seu correio.
+🔓 Autoriser	🔓 Autorizar
+🔓 Autoriser l'accès aux fichiers	🔓 Autorizar o acesso aos ficheiros
+🔓 Une autorisation pour en savoir plus	🔓 Uma autorização para saber mais
+🔓 Une autorisation, une seule fois	🔓 Uma autorização, uma só vez
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 Uma só vez: autorize «Acesso a todos os ficheiros» para que o Clean Smart veja a pasta Download. Só lê os ficheiros de %1.
+🔔 Mail de %1	🔔 E-mail de %1
+🔔 Tu seras prévenu quand il t'écrit	🔔 Será avisado quando ele lhe escrever
+🕰️ Vieux mails	🕰️ E-mails antigos
+🕰️ Vieux mails (les importants sont gardés)	🕰️ E-mails antigos (os importantes são mantidos)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ Lixeira esvaziada: %1 recuperados de vez
+🗑️ Désinstaller	🗑️ Desinstalar
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ Ficheiro apagado do telemóvel: espaço livre para o seguinte
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ Os meus remetentes «deitar sempre fora»
+🗑️ Mettre %1 à la corbeille	🗑️ Enviar %1 para a lixeira
+🗑️ Ouvrir %1 pour effacer	🗑️ Abrir %1 para apagar
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ Os e-mails dele irão para a lixeira todas as noites
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ Apagar este ZIP do telemóvel (recomendado)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ Deitar sempre fora: %1   🛡️ Manter sempre: %2   🔔 Avisar-me: %3
+🗜️ Compresser (%1)	🗜️ Comprimir (%1)
+😴 Pas ouvertes depuis 3 mois	😴 Não abertas há 3 meses
+🚫 Se désabonner	🚫 Cancelar subscrição
+🛡️ %1 (mises en favori)	🛡️ %1 (marcadas como favoritas)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 arrumados na pasta «Protegidos» do seu correio
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ Remetente importante (banco, administração, saúde…): os e-mails dele nunca são deitados fora.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ O botão para apagar aparece quando a cópia está completa e as opções 1 e 2 estão marcadas.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ Os e-mails do seu banco, da administração ou da saúde nunca vão para a lixeira.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ Nunca se liberta %1 antes de verificar a cópia: marque primeiro a primeira opção.
+🛡️ Protéger (%1)	🛡️ Proteger (%1)
+🛡️ Ranger mes mails importants	🛡️ Arrumar os meus e-mails importantes
+🛡️ Ses mails ne seront jamais jetés	🛡️ Os e-mails dele nunca serão deitados fora
+🤖 Copie automatique de tes photos	🤖 Cópia automática das suas fotos
+🤖 Démarrer le mode automatique	🤖 Iniciar o modo automático
+🤖 Tout automatique (le plus simple)	🤖 Tudo automático (o mais simples)
+🧊 Vider son cache	🧊 Limpar a cache
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 %1 duplicados e 🎞️ %2 fotos de rajada afastados\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 os duplicados   🎞️ as fotos falhadas em rajada\n📱 as capturas de ecrã   🎬 os vídeos grandes\n💬 os ficheiros do WhatsApp   👥 os contactos duplicados\n✉️ as newsletters e e-mails grandes
+🧭 Ménage	🧭 Limpeza
+🧭 Ménage des mails	🧭 Limpeza dos e-mails
+🧭 Ménage guidé	🧭 Limpeza guiada
+🧹 Fichiers inutiles	🧹 Ficheiros inúteis
+🧹 Jeter les mails de %1	🧹 Deitar fora os e-mails de %1
+🧹 Le ménage sûr	🧹 A limpeza segura
+🧹 Mails triés cette nuit	🧹 E-mails ordenados esta noite
+🧹 Mettre %1 à la corbeille	🧹 Enviar %1 para a lixeira
+🧹 Ménage sûr	🧹 Limpeza segura
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 Limpeza segura: newsletters, notificações, duplicados
+🧹 Nettoyer · %1	🧹 Limpar · %1
+🧹 Nettoyer · %1 · %2	🧹 Limpar · %1 · %2

@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 không sao chép được: hãy chạy lại chính tệp này.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 «cần kiểm tra» sẽ vào thùng rác Clean Smart: bạn có thể khôi phục trong 7 ngày.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nLưu ý: việc xóa được đồng bộ với tài khoản của bạn (Google…).
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nỔ đĩa hoặc điện thoại đã đầy: hãy giải phóng dung lượng (hoặc đổi ổ đĩa ở bước 2), rồi chạy lại tệp NÀY. Không có gì bị sao chép hai lần.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nTệp bị hỏng hoặc không đầy đủ: hãy tải lại từ email của Google, rồi chạy lại. Phần đã sao chép được giữ lại.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nCác bản sao được xuất trước thành tệp .vcf vào thư mục sao lưu của bạn.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nHãy chạy lại tệp ZIP chứa chúng (hoặc chế độ tự động): chúng sẽ được sao chép lại. Đừng xóa gì trên %1 trước đó.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nMột bản sao được tạo trước trong thư mục sao lưu của bạn.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Ở Google, email và Google Ảnh dùng chung 15 GB: dọn email cũng giải phóng chỗ cho ảnh của bạn.
+ sur environ %1 Go	 trên khoảng %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 ảnh trùng, chụp liên tiếp hoặc hỏng không được sao lưu
+ · %1 à la corbeille	 · %1 vào thùng rác
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · các tệp «cần kiểm tra» nằm trong thùng rác Clean Smart (7 ngày)
+ · va dans la corbeille Clean Smart	 · vào thùng rác Clean Smart
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): ảnh trùng thừa, ảnh liên tiếp thừa, ảnh đen hoặc trắng, ảnh chụp màn hình quá một tháng.\n\nChúng vào thùng rác của Thư viện (30 ngày để khôi phục).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) sẽ bị xóa VĨNH VIỄN để giải phóng dung lượng ngay.\n\nKhông thể khôi phục.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 cần bỏ
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: bản tin và quảng cáo (%2 người gửi), thông báo, email trùng.
+%1 Go · prévois %2	%1 GB · dự trù %2
+%1 analysées	Đã phân tích %1
+%1 avec pièces jointes (dont %2 avec PDF)	%1 có tệp đính kèm (%2 có PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 thành công. Bỏ bản gốc vào thùng rác, bạn tiết kiệm %2.
+%1 ce mois-ci. 	%1 trong tháng này.
+%1 copié(s) dans ton dossier de sauvegarde.	Đã sao chép %1 vào thư mục sao lưu của bạn.
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 tệp vô ích: tạm thời, ảnh thu nhỏ, thư mục trống, phần còn lại của ứng dụng.
+%1 de plus de %2 mois 	%1 cũ hơn %2 tháng
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	%1 từ người gửi «luôn bỏ» đã vào thùng rác (khôi phục được trong 30 ngày).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 bản trùng vào thùng rác. Bản đầu tiên của mỗi email được giữ lại.
+%1 et %2 copiées et vérifiées.	%1 và %2 đã sao chép và kiểm tra.
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 và %2 đã an toàn. Bạn có thể xóa nó và tải tệp tiếp theo.
+%1 fichier(s) sauvegardé(s)	Đã sao lưu %1 tệp
+%1 jetés	Đã bỏ %1
+%1 libres sur %2	Còn trống %1 trên %2
+%1 libérés sur le téléphone	Đã giải phóng %1 trên điện thoại
+%1 mails dans la boîte · %2 analysés	%1 email trong hộp thư · đã phân tích %2
+%1 min %2 s	%1 phút %2 giây
+%1 newsletters · %2 gros mails	%1 bản tin · %2 email lớn
+%1 newsletters, %2 gros mails (%3).	%1 bản tin, %2 email lớn (%3).
+%1 photos trouvées	Tìm thấy %1 ảnh
+%1 photos · %2 vidéos analysées	Đã phân tích %1 ảnh · %2 video
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 ảnh · %2 video · đã loại %3 ảnh trùng và liên tiếp
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 chuẩn bị bản sao tất cả ảnh của bạn. Làm đúng như mẫu này:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 sẽ bị xóa: chúng không còn cần thiết hoặc tự tạo lại.
+%1 seront supprimés pour de bon.	%1 sẽ bị xóa vĩnh viễn.
+%1 sur %2 choisis · %3	Đã chọn %1 trên %2 · %3
+%1 sur %2 fichiers faits	Xong %1 trên %2 tệp
+%1 sur %2 · %3	%1 trên %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 sẽ vào thùng rác của Thư viện (khôi phục được trong 30 ngày).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 vào thùng rác của Thư viện (khôi phục được trong 30 ngày).
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: ảnh trùng, ảnh liên tiếp thừa, ảnh đen hoặc trắng, ảnh chụp màn hình quá một tháng. Những ảnh đẹp nhất được giữ lại.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	Tổng cộng %1 · %2. Chạm vào một ứng dụng để gỡ cài đặt hoặc xóa bộ nhớ đệm.
+%1 à jeter	%1 cần bỏ
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 để xem từng tấm. Vuốt trái để bỏ, vuốt phải để giữ (thành ảnh yêu thích ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	Đã sao chép %1, %2, %3 · đã loại %4 và %5.
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1email cũ hơn %2 năm vào thùng rác (trừ email quan trọng).
+(sans objet)	(không có tiêu đề)
+. %1 en double ou en rafale à trier : touche ici.	. %1 ảnh trùng hoặc liên tiếp cần sắp xếp: chạm vào đây.
+1 bouton	1 nút
+1 mois	1 tháng
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. Tôi đã tắt sao lưu: ứng dụng Google Ảnh › ảnh của bạn ở góc trên bên phải › Cài đặt Ảnh › Sao lưu › tắt.
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. Trên iPhone, tôi đã tắt «Ảnh iCloud» (Cài đặt › tên bạn › iCloud › Ảnh).
+12 mois	12 tháng
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. Tôi đã mở ổ đĩa trên máy tính và thấy rõ ảnh của mình, theo từng năm.
+3 mois	3 tháng
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. Nên làm: tôi đã tạo bản sao thứ 2 (ổ đĩa hoặc máy tính khác).
+4 étapes	4 bước
+6 mois	6 tháng
+AFFICHAGE	HIỂN THỊ
+AUTOMATIQUE	TỰ ĐỘNG
+AUTRE	KHÁC
+Adresse mail	Địa chỉ email
+Adresse, serveur et mot de passe sont obligatoires.	Địa chỉ, máy chủ và mật khẩu là bắt buộc.
+Alerte retirée	Đã gỡ thông báo
+Alertes et rapport du mois	Cảnh báo và báo cáo hằng tháng
+Analyse de la boîte mail	Đang phân tích hộp thư
+Analyse des 3 000 mails les plus récents de la boîte de réception.	Phân tích 3.000 email mới nhất trong hộp thư đến.
+Analyse des mails (%1 / %2)	Đang phân tích email (%1 / %2)
+Analyse du téléphone	Đang phân tích điện thoại
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	Phân tích hộp thư «%1»: bản tin, email lớn, email cũ. Email quan trọng luôn được giữ lại.
+Analyser ma boîte mail	Phân tích hộp thư của tôi
+Analyser mon téléphone	Phân tích điện thoại của tôi
+Annuler	Hủy
+Annuler, ne rien jeter	Hủy, không bỏ gì cả
+Appeler	Gọi
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple kiểm tra yêu cầu rồi gửi email, thường trong 3 đến 7 ngày. Sau đó tệp được tải về trên privacy.apple.com (đăng nhập từ điện thoại).
+Apple · Données et confidentialité	Apple · Dữ liệu và quyền riêng tư
+Appliquer « toujours jeter » maintenant	Áp dụng «luôn bỏ» ngay
+Arrêt après le fichier en cours…	Dừng sau tệp hiện tại…
+Arrêter	Dừng
+Arrêter le mode automatique ?	Dừng chế độ tự động?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Đã dừng. Các tệp đã sao chép đều an toàn; các tệp còn lại sẽ được sao chép lần sau, không trùng lặp.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	Mẹo: trong Cài đặt › Ứng dụng, chạm vào một ứng dụng (Chrome, Facebook…) › Bộ nhớ › «Xóa bộ nhớ đệm».
+Aucun contact en double	Không có danh bạ trùng
+Aucun dossier choisi	Chưa chọn thư mục
+Aucun dossier de sauvegarde	Chưa có thư mục sao lưu
+Aucun fichier inutile.	Không có tệp vô ích.
+Aucune boîte mail connectée.	Chưa kết nối hộp thư.
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	Không phát hiện USB hay ổ đĩa. Hãy cắm vào (bộ chuyển USB-C), rồi mở lại bước này.
+Aucune vidéo n'a pu être réduite davantage.	Không video nào có thể thu nhỏ thêm.
+Autre	Khác
+Autres fichiers d'installation (.apk)	Tệp cài đặt khác (.apk)
+Avant tout : analyser	Trước tiên: phân tích
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	Với «Quyền truy cập dữ liệu sử dụng», Clean Smart thấy dung lượng thật của từng ứng dụng và bao lâu bạn chưa mở. Không gì được gửi đi đâu cả.
+BOÎTE MAIL	HỘP THƯ
+Banque	Ngân hàng
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	Ngân hàng, cơ quan nhà nước, y tế, hóa đơn và mọi email có PDF: đã lưu, gom PDF, tệp lưu trữ index.html trên máy tính.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	Ngân hàng, cơ quan nhà nước, y tế, hóa đơn và mọi email có PDF: đã lưu, gom PDF, tệp lưu trữ index.html trên máy tính. Trong hộp thư, chúng được xếp vào «Được bảo vệ».
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	Ngân hàng, thuế, y tế, nhà cửa, gia đình (danh bạ của bạn): xếp riêng, không bao giờ bỏ
+Batterie faible (%1 %)	Pin yếu (%1 %)
+Bonjour	Xin chào
+Boutique Mode	Cửa hàng thời trang
+Boîte mail en ordre !	Hộp thư gọn gàng!
+Boîte mail remplie à %1 % (%2 / %3)	Hộp thư đầy %1 % (%2 / %3)
+Boîte protégée	Hộp thư được bảo vệ
+Boîte remplie à %1 % (%2 / %3). 	Hộp thư đầy %1 % (%2 / %3).
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	Hãy cắm sạc: một tệp có thể mất 10 đến 30 phút.\n\nNếu điện thoại tắt, không mất gì cả: chỉ cần chạy lại cùng tệp đó.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	Hãy cắm sạc trong khi xử lý: một tệp lớn có thể mất 10 đến 30 phút. Màn hình luôn sáng.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	Cắm USB hoặc ổ đĩa vào điện thoại, rồi chọn (hoặc tạo) một thư mục trên đó.
+Brancher la clé ou le disque	Cắm USB hoặc ổ đĩa
+C'est fait : le prochain fichier sera entièrement recopié.	Xong: tệp tiếp theo sẽ được sao chép lại toàn bộ.
+C'est noté	Đã ghi nhận
+CONSEILLÉ	NÊN DÙNG
+CONTACT	LIÊN HỆ
+CONTACTS	DANH BẠ
+Captures d'écran	Ảnh chụp màn hình
+Carte SD, clé USB, Drive… choisis où tu veux	Thẻ SD, USB, Drive… chọn nơi bạn muốn
+Carte SD, clé USB, Google Drive…	Thẻ SD, USB, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	Tệp này đã được sao chép và kiểm tra. Làm lại không tạo bản trùng, nhưng không cần thiết.\n\nCó lẽ bạn muốn tệp tiếp theo (%1).
+Ce mois-ci	Tháng này
+Cette année	Năm nay
+Changer de compte	Đổi tài khoản
+Changer de dossier	Đổi thư mục
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	Mỗi Chủ nhật, các tệp vô ích an toàn và thư rác tự biến mất. Một thông báo cho bạn biết đã giải phóng bao nhiêu và có ảnh nào cần sắp xếp không.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	Mỗi email được chọn được lưu vào thư mục sao lưu của bạn:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	Mỗi video được làm lại ở 720p, thường nhẹ hơn 3 đến 5 lần, và lưu vào Phim / Clean Smart.
+Choisir le dossier sur le disque	Chọn thư mục trên ổ đĩa
+Choisir un dossier	Chọn một thư mục
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	Hãy chọn thư mục trên USB hoặc ổ đĩa trước (bước 2).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	Hãy chọn thư mục trên USB hoặc ổ đĩa trước (bước «Ổ đĩa»).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	Hãy chọn một thư mục trước: thẻ SD, USB hoặc Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	Hãy chọn thư mục sao lưu trước (Tùy chọn).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	Hãy chọn thư mục sao lưu trước (thẻ SD, USB, Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	Hãy chọn thư mục sao lưu và sao lưu trước.
+Choisis d'abord un dossier de sauvegarde.	Hãy chọn thư mục sao lưu trước.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	Chọn email của bạn: được lưu cùng tệp đính kèm, PDF ở thư mục riêng
+Choisis une carte SD, une clé USB ou Google Drive	Chọn thẻ SD, USB hoặc Google Drive
+Choix des plus belles photos…	Đang chọn những ảnh đẹp nhất…
+Clean Smart : copie automatique	Clean Smart: sao chép tự động
+Clean Smart attend les fichiers dans Download…	Clean Smart đang chờ tệp trong Download…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart đọc 3.000 email gần nhất (không xóa gì cả).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart xem tất cả ảnh của bạn (không xóa gì cả).
+Clean Smart trouve en un clic :	Clean Smart tìm ra chỉ với một chạm:
+Clé USB (démonstration)	USB (bản minh họa)
+Clé USB ou disque dur, avec un adaptateur USB-C	USB hoặc ổ cứng, với bộ chuyển USB-C
+Colis et livraisons	Bưu kiện và giao hàng
+Combien de place faut-il ?	Cần bao nhiêu dung lượng?
+Comme le téléphone	Giống điện thoại
+Commencer	Bắt đầu
+Compresser	Nén
+Compresser %1 ?	Nén %1?
+Compression des vidéos	Đang nén video
+Compris	Đã hiểu
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	Kết nối hộp thư của bạn (Gmail, Outlook, Yahoo, Orange, Free…): bản tin, email lớn và cũ để sắp xếp, email quan trọng luôn được giữ.
+Connecter	Kết nối
+Connecter ma boîte mail	Kết nối hộp thư của tôi
+Connexion au serveur	Đang kết nối máy chủ
+Connexion impossible : 	Không thể kết nối:
+Connexion à la messagerie	Đang kết nối dịch vụ email
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	Nên làm: tôi đã tạo bản sao thứ 2 (ổ đĩa hoặc máy tính khác).
+Contacts en double	Danh bạ trùng
+Continuer quand même	Vẫn tiếp tục
+Copie automatique	Sao chép tự động
+Copier les fichiers un par un	Sao chép từng tệp một
+Copies identiques — l'original est gardé	Bản sao giống hệt — bản gốc được giữ lại
+Corbeille	Thùng rác
+Corbeille : %1	Thùng rác: %1
+Corbeille Clean Smart	Thùng rác Clean Smart
+Corbeille de la messagerie	Thùng rác email
+Correct, mais peut mieux faire	Tạm được, nhưng có thể tốt hơn
+Créer une exportation	Tạo bản xuất
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Trong Google Ảnh: nhấn giữ một ảnh, chọn cả ngày, rồi «Xóa». Thùng rác Google giữ mọi thứ 60 ngày.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Trong Google Takeout, chọn tệp 2 GB: chúng tôi xử lý từng tệp, điện thoại không bao giờ cần nhiều chỗ.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Trong yêu cầu gửi Apple, chọn tệp 1 hoặc 2 GB: chúng tôi xử lý từng tệp, điện thoại không bao giờ cần nhiều chỗ.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Trong email của Google, đếm các nút «Tải xuống»: đó là số tệp.
+Demander la copie à %1	Yêu cầu %1 gửi bản sao
+Demander une copie de tes données	Yêu cầu bản sao dữ liệu của bạn
+Demandée · attends le mail de %1	Đã yêu cầu · chờ email từ %1
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Từ Android 11, không ứng dụng dọn dẹp nào được xóa bộ nhớ đệm của ứng dụng khác hay tệp hệ thống. Android tự làm việc đó: nút này mở màn hình «Giải phóng dung lượng».
+Depuis l'installation	Từ khi cài đặt
+Dernière vérification	Kiểm tra lần cuối
+Des applis téléchargées mais pas installées. À vérifier.	Ứng dụng đã tải nhưng chưa cài. Cần kiểm tra.
+Disque	Ổ đĩa
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	Không nhận ổ đĩa: hãy dùng bộ chuyển USB-C (OTG). USB định dạng exFAT dùng được ở mọi nơi (FAT32 không nhận tệp trên 4 GB).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	Ổ đĩa đầy: cắm ổ lớn hơn và chọn nó ở bước «Ổ đĩa». Ta tiếp tục từ chỗ đang dở, không trùng lặp.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	Tài liệu trong Tải xuống không đụng tới đã 6 tháng. Cần kiểm tra.
+Dossier Corbeille introuvable sur ce compte.	Không tìm thấy thư mục Thùng rác trong tài khoản này.
+Dossier Corbeille introuvable.	Không tìm thấy thư mục Thùng rác.
+Dossier Spam introuvable sur ce compte.	Không tìm thấy thư mục Thư rác trong tài khoản này.
+Dossier de sauvegarde	Thư mục sao lưu
+Dossier de sauvegarde introuvable.	Không tìm thấy thư mục sao lưu.
+Dossiers cache	Thư mục bộ nhớ đệm
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	Thư mục do các ứng dụng không còn trên điện thoại để lại. Cần kiểm tra.
+Dossiers vides	Thư mục trống
+Dossiers vides…	Thư mục trống…
+Doublons	Ảnh trùng
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	Ảnh trùng và ảnh liên tiếp thừa (giữ ảnh đẹp nhất), ảnh đen hoặc trắng, ảnh chụp màn hình cũ. Chạm vào ảnh để giữ lại. Tất cả vào thùng rác của Thư viện (30 ngày).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	Ảnh trùng, ảnh liên tiếp thừa, ảnh đen hoặc trắng, ảnh chụp màn hình cũ.
+Doublons, rafales, floues	Ảnh trùng, liên tiếp, mờ
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	Bỏ chọn các email bạn muốn giữ. Email từ ngân hàng, thuế, y tế và người gửi «luôn giữ» không bao giờ có trong danh sách này. Tất cả vào thùng rác email (khôi phục được).
+Démonstration…	Minh họa…
+Déplacement vers la corbeille…	Đang chuyển vào thùng rác…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	Tắt theo mặc định. Nếu bật, ảnh (và danh bạ dạng .vcf) được sao chép vào thư mục trước mỗi lần dọn, để an toàn.
+Elles sont déjà toutes en favori 👍	Tất cả đã là ảnh yêu thích 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	Ở chế độ minh họa, không tệp nào được xử lý. Hãy thoát minh họa (Tùy chọn) để làm thật.
+En pleine forme	Rất khỏe
+Envoyer %1	Gửi %1
+Envoyer le PDF souvenir	Gửi tệp PDF kỷ niệm
+Envoyer le lien par e-mail · Exporter une fois	Gửi liên kết tải xuống qua email · Xuất một lần
+Erreur inattendue	Lỗi không mong muốn
+Espace libéré	Dung lượng đã giải phóng
+Espace libéré depuis le début : %1. Une petite analyse ?	Dung lượng đã giải phóng từ đầu: %1. Phân tích nhanh nhé?
+Espace à récupérer	Dung lượng có thể lấy lại
+Et tes mails	Và email của bạn
+Factures et papiers	Hóa đơn và giấy tờ
+Faire le ménage sûr ?	Dọn dẹp an toàn?
+Fait ✔	Xong ✔
+Famille	Gia đình
+Fermer	Đóng
+Fichier %1	Tệp %1
+Fichier %1 déjà fait	Tệp %1 đã xong
+Fichier illisible	Tệp không đọc được
+Fichiers d'installation déjà installés	Tệp cài đặt của ứng dụng đã cài
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	Tệp làm việc của ứng dụng trong bộ nhớ điện thoại. Chúng tự tạo lại khi cần.
+Fichiers inutiles	Tệp vô ích
+Fichiers mis de côté, vidée toute seule après 7 jours	Tệp được để riêng, tự xóa sau 7 ngày
+Fichiers temporaires	Tệp tạm thời
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	Tệp tạm thời, ảnh thu nhỏ, thư mục trống, phần còn lại của ứng dụng
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	Tệp tạm thời, ảnh thu nhỏ, thư mục trống, phần còn lại của ứng dụng. Ảnh và nhạc không bao giờ bị đụng tới.
+Floue	Mờ
+Floues, trop sombres ou trop claires — vérifie avant de cocher	Mờ, quá tối hoặc quá sáng — kiểm tra trước khi chọn
+GARDÉE	ĐÃ GIỮ
+Garder sur le téléphone les photos des derniers…	Giữ trên điện thoại ảnh của … gần nhất
+Gardés	Đã giữ
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail yêu cầu MẬT KHẨU ỨNG DỤNG (16 chữ cái):\n1. Bật Xác minh 2 bước trên tài khoản Google.\n2. Mở myaccount.google.com/apppasswords\n3. Tạo mật khẩu tên «Clean Smart» và dán vào đây.
+Google Photos	Google Ảnh
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	Google gửi email khi sẵn sàng: trong vài giờ hoặc vài ngày. Bạn có thể đóng ứng dụng trong lúc chờ.
+Gros	Lớn
+Gros mails (+ 5 Mo)	Email lớn (trên 5 MB)
+Grosses vidéos	Video lớn
+Groupe %1 · %2 photos	Nhóm %1 · %2 ảnh
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	Đăng nhập bị từ chối. Gmail, Yahoo và iCloud cần MẬT KHẨU ỨNG DỤNG, không phải mật khẩu thường của bạn.
+Il a besoin d'un bon ménage	Cần dọn dẹp kỹ
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	Chỉ còn %1. Mở Clean Smart để giải phóng dung lượng chỉ với một chạm.
+Ils ne contiennent rien.	Chúng không chứa gì.
+Ils prennent encore de la place pendant 30 jours	Chúng vẫn chiếm chỗ trong 30 ngày
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	Chúng được xếp vào thư mục «Được bảo vệ» trong hộp thư. Làm lại mỗi đêm.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	Không thể hoàn tác: có thể tệp đã bị xóa vĩnh viễn.
+Impossible de créer le dossier %1	Không thể tạo thư mục %1
+Impossible de protéger ces photos	Không thể bảo vệ những ảnh này
+Impossible de vider la corbeille	Không thể dọn thùng rác
+Impôts	Thuế
+Impôts - Administration	Thuế - Cơ quan nhà nước
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	Nhập máy chủ IMAP của dịch vụ email (cổng 993, SSL).
+J'ai demandé la copie	Tôi đã yêu cầu bản sao
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	Tôi đã mở ổ đĩa trên máy tính và thấy rõ ảnh của mình, theo từng năm.
+J'ai traité tous les fichiers	Tôi đã xử lý tất cả các tệp
+Jamais jetés, rangés dans « Protégés »	Không bao giờ bỏ, xếp vào «Được bảo vệ»
+Je libère la boîte	Tôi dọn hộp thư
+Je libère la place	Tôi giải phóng dung lượng
+Je mets l'important à l'abri	Tôi cất giữ những gì quan trọng
+Je mets à l'abri les bonnes	Tôi cất giữ ảnh đẹp
+Je trie par expéditeur	Tôi sắp xếp theo người gửi
+Je vérifie le douteux	Tôi kiểm tra ảnh đáng ngờ
+Jeter %1 ?	Bỏ %1?
+Jeter ces mails ?	Bỏ những email này?
+Jeter les copies ?	Bỏ các bản sao?
+Jeter les gros mails ?	Bỏ các email lớn?
+Jeter les newsletters ?	Bỏ các bản tin?
+Jeter les originaux ?	Bỏ các bản gốc?
+Jeter les vieux mails ?	Bỏ các email cũ?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	Nhật ký, bản sao lưu tạm, tải xuống bị bỏ dở. Không còn cần.
+L'adresse et le mot de passe seront effacés du téléphone.	Địa chỉ và mật khẩu sẽ bị xóa khỏi điện thoại.
+L'important est à l'abri, le reste est parti	Những gì quan trọng đã an toàn, phần còn lại đã đi
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	Bản gốc không bị đụng tới: sau đó tôi sẽ đề nghị bỏ nó vào thùng rác.\n\nCó thể mất vài phút.
+LA NUIT	BAN ĐÊM
+LIBÉRER LA PLACE	GIẢI PHÓNG DUNG LƯỢNG
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	Bản sao trên ổ đĩa đã bị xóa: Clean Smart sao chép lại mọi thứ từ đầu.
+La corbeille est vide.	Thùng rác trống.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	Dung lượng email được giải phóng khi thùng rác email được dọn (thường trong 30 ngày).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	Không sao lưu được. Mở Clean Smart để kiểm tra thư mục.
+Langue	Ngôn ngữ
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	Dọn dẹp có hướng dẫn làm mọi thứ theo đúng thứ tự. Nút xanh luôn là bước tiếp theo.
+Le bilan, et comment libérer ton compte %1	Tổng kết, và cách giải phóng tài khoản %1
+Le contact d'origine est gardé.	Danh bạ gốc được giữ lại.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	Ổ đĩa (hoặc điện thoại) đã đầy: việc sao chép đã dừng gọn gàng.\n\nCắm ổ lớn hơn, chọn ở bước 2, rồi chạy lại chế độ tự động: ta tiếp tục không trùng lặp.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	Ổ đĩa không đủ chỗ: còn %1, cần khoảng %2 cho tệp này.\n\n• Giải phóng chỗ trên ổ đĩa, hoặc\n• cắm ổ lớn hơn và chọn ở bước «Ổ đĩa» (ta tiếp tục từ chỗ hiện tại).\n\nChưa đụng tới gì.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	Không truy cập được ổ đĩa.\n\n• Kiểm tra đã cắm chắc (bộ chuyển USB-C).\n• Ở bước «Ổ đĩa», chọn lại thư mục.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	Không truy cập được thư mục sao lưu. Mở Clean Smart > Tùy chọn để chọn.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	Thư mục sao lưu không còn truy cập được. Hãy chọn lại.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	Không tìm thấy thư mục «%1» trên ổ đĩa. Kiểm tra ổ đĩa đã được cắm (bước 2).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Tệp hiện tại được hoàn tất trước. Các tệp đã sao chép đều an toàn; các tệp còn lại lần sau, không trùng lặp.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Liên kết trong email của Google hết hạn sau khoảng một tuần: nếu vậy, hãy yêu cầu xuất lại (không mất gì, ta tiếp tục không trùng lặp).
+Le mois dernier	Tháng trước
+Le ménage sûr	Dọn dẹp an toàn
+Le refaire quand même	Vẫn làm lại
+Le téléphone	Điện thoại
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	Điện thoại gần đầy (cần ít nhất 300 MB trống để làm việc).\n\n• Dọn thùng rác của Thư viện.\n• Xóa các tệp ZIP đã xử lý (Tải xuống).\n• Thực hiện dọn dẹp có hướng dẫn của Clean Smart.\n\nChưa đụng tới gì.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	Điện thoại tắt hay ổ đĩa bị rút? Chỉ cần chạy lại cùng tệp ZIP: Clean Smart tiếp tục mà không mất hay nhân đôi gì.
+Lecture de la galerie	Đang đọc thư viện
+Lecture des dates des photos…	Đang đọc ngày chụp ảnh…
+Lecture des vidéos	Đang đọc video
+Lecture impossible : %1	Không đọc được: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	Các tệp .apk của ứng dụng đã cài: không còn cần.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	200 email gần nhất trong thùng rác email. Chọn những email muốn đưa lại hộp thư đến.
+Les 30 photos et vidéos qui prennent le plus de place	30 ảnh và video chiếm nhiều chỗ nhất
+Les autres cases : inutile	Các ô khác: không cần
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Tệp của Apple có sẵn khoảng 2 tuần trên privacy.apple.com: nếu đã quá hạn, hãy gửi yêu cầu mới (không mất gì, ta tiếp tục không trùng lặp).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	Các tệp đã bỏ vào thùng rác vẫn khôi phục được trong Thư viện.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	Email cũ hơn %1 năm vào thùng rác email. Email quan trọng được giữ lại.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	Email cũ hơn 2 năm vào thùng rác email.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	Email trên 5 MB vào thùng rác email.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	Bản tin, quảng cáo, thông báo và email trùng vào thùng rác email (toàn bộ hộp thư đến).\n\nEmail quan trọng không bao giờ bị đụng tới.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	Ảnh trước (sắp xếp, giữ ảnh đẹp nhất, sao lưu, giải phóng), rồi tệp vô ích trên điện thoại, rồi email.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	Ảnh cũ hơn %1 tháng đã sao lưu sẽ rời điện thoại (thùng rác, 30 ngày).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	Ảnh yêu thích (hoặc được bảo vệ bằng nút 🛡️) không bao giờ được đề xuất
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	Ảnh hơi mờ, WhatsApp, ảnh chụp màn hình mới: bạn quyết định.
+Les photos, vidéos et musiques ne sont jamais touchées.	Ảnh, video và nhạc không bao giờ bị đụng tới.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	Ảnh cũ chỉ được đề xuất bỏ nếu đã có trong bản sao lưu.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	Những ảnh đẹp nhất của tháng hoặc năm, để gửi cho người thân
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	Những ứng dụng lớn nhất và ít mở nhất: gỡ cài đặt chỉ với một chạm
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	Thư rác vào thùng rác email. Bỏ chọn nếu email không phải thư rác.
+Libérer	Giải phóng
+Libérer %1 ?	Giải phóng %1?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	Giải phóng %1 là tùy chọn. %2 không cho ứng dụng nào xóa ảnh của bạn: bạn tự làm, khi đã chắc chắn.
+Libérer la boîte	Dọn hộp thư
+Libérer la boîte mail	Đang dọn hộp thư
+Libérer la boîte mail ?	Dọn hộp thư?
+Libérer la place	Giải phóng dung lượng
+Libérer la place, PDF souvenir…	Giải phóng dung lượng, PDF kỷ niệm…
+Liste des photos sur le disque…	Đang liệt kê ảnh trên ổ đĩa…
+MAINTENANT	NGAY BÂY GIỜ
+Mail (facultatif, pour tes mails)	Email (tùy chọn, cho email của bạn)
+Mails	Email
+Mails Gmail : %1	Email Gmail: %1
+Mails avec pièces jointes	Email có tệp đính kèm
+Mails de plus de 2 ans	Email cũ hơn 2 năm
+Mails en double	Email trùng
+Mails en double…	Email trùng…
+Maison	Nhà cửa
+Me prévenir	Báo cho tôi
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Cảm ơn bạn đã dùng thử Clean Smart! Hãy cài bản đầy đủ để tiếp tục dọn điện thoại.
+Mes applis	Ứng dụng của tôi
+Mes plus gros fichiers	Tệp lớn nhất của tôi
+Mes règles	Quy tắc của tôi
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	Bỏ vào thùng rác ảnh cũ hơn %1 tháng đã sao lưu
+Mettre à l'abri	Cất giữ
+Mettre à l'abri l'important	Đang cất giữ những gì quan trọng
+Miniatures	Ảnh thu nhỏ
+Mise à jour	Đang cập nhật
+Mise à la corbeille…	Đang chuyển vào thùng rác…
+Mode d'emploi	Hướng dẫn sử dụng
+Mode d'emploi introuvable.	Không tìm thấy hướng dẫn sử dụng.
+Mode démonstration terminé	Đã kết thúc chế độ minh họa
+Modifier ▼	Sửa ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	Hiển thị ứng dụng với ảnh, email và danh bạ giả. Không đụng tới gì trên điện thoại: lý tưởng để giới thiệu Clean Smart.
+Mot de passe (vide = garder l'actuel)	Mật khẩu (để trống = giữ mật khẩu hiện tại)
+Mot de passe d'application	Mật khẩu ứng dụng
+Médias WhatsApp	Tệp WhatsApp
+Ménage complet	Dọn dẹp toàn bộ
+Ménage guidé	Dọn dẹp có hướng dẫn
+Ménage guidé des mails	Dọn email có hướng dẫn
+Ménage sûr de la boîte mail	Dọn hộp thư an toàn
+Ménage terminé !	Đã dọn xong!
+NOUVEAU	MỚI
+Nettoyage de la boîte mail	Đang dọn hộp thư
+Nettoyage des fichiers inutiles	Đang dọn tệp vô ích
+Nettoyer	Dọn dẹp
+Nettoyer %1 ?	Dọn %1?
+Nettoyer le téléphone	Dọn điện thoại
+Nettoyer les fichiers inutiles ?	Dọn tệp vô ích?
+Newsletters et notifications…	Bản tin và thông báo…
+Newsletters et pubs	Bản tin và quảng cáo
+Newsletters, pubs, notifications et mails en double.	Bản tin, quảng cáo, thông báo và email trùng.
+Nombre de fichiers dans le mail	Số tệp trong email
+Normale	Bình thường
+Nouvelle version %1 disponible	Có phiên bản mới %1
+Oublier	Quên
+Oublier ce compte ?	Quên tài khoản này?
+Oui, c'est fini	Vâng, đã xong
+Ouverte aujourd'hui	Đã mở hôm nay
+Ouverte il y a %1	Đã mở %1 trước
+Ouverture de %1…	Đang mở %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Mở Clean Smart để xem cần làm gì. Không mất gì cả.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Mở trang Google của bạn và xem dung lượng Google Ảnh đang dùng. Ghi vào đây (tính bằng GB).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	Mở «Video lớn», chọn chúng rồi «Nén»
+Ouvrir	Mở
+Ouvrir Google Photos	Mở Google Ảnh
+Ouvrir Google Takeout	Mở Google Takeout
+Ouvrir iCloud Photos	Mở Ảnh iCloud
+Ouvrir la page du mot de passe d'application	Mở trang mật khẩu ứng dụng
+Ouvrir privacy.apple.com	Mở privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	Mở «Giải phóng dung lượng» của Android
+PDF souvenir	PDF kỷ niệm
+PHOTOS ET VIDÉOS	ẢNH VÀ VIDEO
+PROTECTION	BẢO VỆ
+Pas de photos pour cette période.	Không có ảnh trong khoảng thời gian này.
+Pas ouverte depuis plus d'un an	Chưa mở hơn một năm
+Passer	Bỏ qua
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	Bản sao nhỏ của ảnh để hiển thị. Chúng tự tạo lại.
+Photos	Ảnh
+Photos : %1 · vidéos : %2 · doublons écartés : %3	Ảnh: %1 · video: %2 · ảnh trùng đã loại: %3
+Photos du week-end	Ảnh cuối tuần
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	Ảnh trùng, ảnh liên tiếp, ảnh hỏng, video lớn, email vô ích… tất cả đều chiếm chỗ.
+Photos et vidéos reçues ou envoyées	Ảnh và video đã nhận hoặc đã gửi
+Photos floues ou ratées	Ảnh mờ hoặc hỏng
+Photos iCloud	Ảnh iCloud
+Photos similaires	Ảnh giống nhau
+Photos, téléphone et mails, étape par étape	Ảnh, điện thoại và email, từng bước một
+Place prise : %1	Dung lượng chiếm: %1
+Plus d'outils	Thêm công cụ
+Plus de 100 Mo chacune	Mỗi tệp trên 100 MB
+Pour gagner des points : %1.	Để được thêm điểm: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Để có bản đầy đủ của Clean Smart, hoặc cho mọi câu hỏi, hãy viết cho tôi:
+Pour obtenir la version complète, écris-moi :	Để có bản đầy đủ, hãy viết cho tôi:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	Để tìm tệp vô ích, Clean Smart cần xem bộ nhớ điện thoại: hãy cho phép «Truy cập tất cả tệp». Không gì được gửi đi đâu cả.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	Cho tài khoản hoặc ổ đĩa khác. Các tệp đã sao chép trên ổ đĩa không bị đụng tới.
+Protéger mes favoris	Bảo vệ ảnh yêu thích của tôi
+Prudente	Thận trọng
+Prudente : moins de photos proposées. Stricte : davantage.	Thận trọng: đề xuất ít ảnh hơn. Nghiêm ngặt: nhiều hơn.
+Préparation	Chuẩn bị
+Préparation…	Đang chuẩn bị…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	Báo cho tôi khi điện thoại gần hết chỗ (dưới 1 GB), và một bản tổng kết nhỏ vào ngày 1 hằng tháng.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	Dự trù ít nhất %1 trên USB hoặc ổ đĩa (dư 10 %).
+QUI T'ÉCRIT LE PLUS	AI GỬI EMAIL CHO BẠN NHIỀU NHẤT
+Quand le mail de %1 est arrivé	Khi email của %1 đã đến
+Quitter	Thoát
+Quitter Google Photos	Rời Google Ảnh
+Quitter iCloud Photos	Rời Ảnh iCloud
+RECHERCHE DES PHOTOS RATÉES	TÌM ẢNH HỎNG
+Rafales : on garde la meilleure…	Ảnh liên tiếp: giữ ảnh đẹp nhất…
+Rafales — la plus nette est gardée	Ảnh liên tiếp — giữ ảnh nét nhất
+Rangement : %1	Đang sắp xếp: %1
+Recherche des doublons	Đang tìm ảnh trùng
+Recherche des fichiers inutiles…	Đang tìm tệp vô ích…
+Recherche des mails	Đang tìm email
+Recherche des mails avec PDF	Đang tìm email có PDF
+Recherche des mails importants (%1 / %2)	Đang tìm email quan trọng (%1 / %2)
+Recherche des photos floues	Đang tìm ảnh mờ
+Recherche des photos ratées	Đang tìm ảnh hỏng
+Recherche des photos similaires	Đang tìm ảnh giống nhau
+Recherche des pièces jointes (%1 / %2)	Đang tìm tệp đính kèm (%1 / %2)
+Rechercher une mise à jour	Kiểm tra cập nhật
+Recommencer	Làm lại
+Recommencer avec un autre compte	Làm lại với tài khoản khác
+Recommencer depuis le début ?	Làm lại từ đầu?
+Regarder la taille de %1	Xem dung lượng của %1
+Relance l'analyse après un changement.	Phân tích lại sau khi thay đổi.
+Remettre des mails	Khôi phục email
+Remettre le compteur à zéro	Đặt lại bộ đếm
+Remettre les fichiers	Đang đưa tệp về chỗ cũ
+Restes d'applis désinstallées	Phần còn lại của ứng dụng đã gỡ
+Restes d'applis désinstallées…	Phần còn lại của ứng dụng đã gỡ…
+Reçus plusieurs fois à quelques secondes d'écart : %1	Nhận nhiều lần cách nhau vài giây: %1
+Rien	Không có
+Rien n'a été supprimé.	Không có gì bị xóa.
+Rien n'est perdu	Không mất gì cả
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	Không gì bị xóa khi chưa có sự đồng ý của bạn: mọi thứ đều qua thùng rác.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	Không có gì để giải phóng: chưa có ảnh cũ nào trong bản sao lưu. Hãy chạy «Sao lưu tất cả ảnh của tôi» trước.
+RÉSULTAT	KẾT QUẢ
+Règle retirée	Đã gỡ quy tắc
+Récupère des mails mis à la corbeille de ta messagerie	Khôi phục email đã bỏ vào thùng rác email
+Récupérer mes photos iCloud (ancien iPhone)	Lấy ảnh iCloud của tôi (iPhone cũ)
+Réduire mes vidéos	Thu nhỏ video của tôi
+Réglages avancés	Cài đặt nâng cao
+Réglages de stockage Android	Cài đặt bộ nhớ Android
+SAUVEGARDE	SAO LƯU
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	Không có quyền truy cập ảnh, Clean Smart không thể phân tích gì.
+Santé	Y tế
+Sauvegarde %1 / %2	Sao lưu %1 / %2
+Sauvegarde automatique chaque nuit	Tự động sao lưu mỗi đêm
+Sauvegarde avant suppression	Sao lưu trước khi xóa
+Sauvegarde de mes bonnes photos	Đang sao lưu ảnh đẹp của tôi
+Sauvegarde des mails	Đang sao lưu email
+Sauvegarde des mails importants	Đang sao lưu email quan trọng
+Sauvegarde du mail %1 / %2	Đang lưu email %1 / %2
+Sauvegarder avant de supprimer	Sao lưu trước khi xóa
+Sauvegarder des mails	Lưu email
+Sauvegarder mes bonnes photos	Sao lưu ảnh đẹp của tôi
+Se connecter avec ton identifiant Apple	Đăng nhập bằng ID Apple của bạn
+Serveur IMAP	Máy chủ IMAP
+Serveur introuvable : vérifie internet et le nom du serveur.	Không tìm thấy máy chủ: kiểm tra internet và tên máy chủ.
+Ses mails partent à la corbeille chaque nuit, tout seuls	Email của người này tự vào thùng rác mỗi đêm
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	Chỉ những ảnh đẹp: không bao giờ có ảnh trùng, ảnh liên tiếp thừa hay ảnh hỏng. Ảnh yêu thích cũng vào «Mes meilleures» (Ảnh đẹp nhất của tôi).
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	Chỉ ảnh đẹp được sao lưu, vào USB, ổ đĩa hoặc Google Drive. Ngay cả Google Ảnh cũng có thể lấy về.
+Seules les nouvelles photos sont copiées à chaque fois.	Mỗi lần chỉ sao chép ảnh mới.
+Seuls les 20 premiers fichiers sont envoyés.	Chỉ gửi 20 tệp đầu tiên.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	Nếu đăng nhập bị từ chối, hãy tạo mật khẩu ứng dụng trong mục bảo mật tài khoản Microsoft (cần xác minh 2 bước).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	Nếu không, iPhone sẽ gửi lại ảnh lên iCloud, và xóa trên iCloud cũng có thể xóa chúng khỏi iPhone.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	Nếu không, điện thoại sẽ gửi lại ảnh lên Google, và xóa trên Google cũng có thể xóa chúng khỏi điện thoại này.
+Soldes d'hiver	Giảm giá mùa đông
+Souvent inutiles après coup	Thường vô ích sau đó
+Stockage du téléphone	Bộ nhớ điện thoại
+Stricte	Nghiêm ngặt
+Suivant	Tiếp
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	Tự xóa tệp này trong Tải xuống để có chỗ trống.
+Supprimer	Xóa
+Supprimer %1 ?	Xóa %1?
+Supprimer ce fichier du téléphone ?	Xóa tệp này khỏi điện thoại?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	Xóa từng tệp khỏi điện thoại sau khi đã sao chép và kiểm tra (nên làm: giữ chỗ trống)
+Supprimer les doublons	Xóa ảnh trùng
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Trên Gmail, chúng vẫn ở hộp thư đến và được gắn nhãn «Được bảo vệ». Làm lại mỗi đêm.
+Sur Google Takeout, en 1 minute	Trên Google Takeout, trong 1 phút
+Sur account.apple.com → Mots de passe pour applications → en créer un.	Trên account.apple.com → Mật khẩu cho ứng dụng → tạo một mật khẩu.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	Trên iPhone: Cài đặt › tên bạn › iCloud: hiển thị dung lượng «Ảnh» đang dùng. Hoặc xem trên icloud.com. Ghi vào đây (tính bằng GB).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	Trên iPhone hoặc icloud.com/photos: chọn ảnh rồi «Xóa». Album «Đã xóa gần đây» giữ chúng 30 ngày.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	Trên trang vừa mở: Bộ nhớ › «Xóa bộ nhớ đệm». Android yêu cầu vậy, Clean Smart không thể làm thay bạn.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	Trên điện thoại, chỉ cần 2 đến 3 GB trống: mỗi lần một tệp. Đang trống: %1.
+Sur privacy.apple.com, en 2 minutes	Trên privacy.apple.com, trong 2 phút
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	Trên privacy.apple.com, tệp có tên «iCloud Photos Part 1 of 12»: số cuối (ở đây là 12) là số tệp. Clean Smart cũng tự đọc được.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	Bảo mật tài khoản → Tạo mật khẩu ứng dụng, rồi dán vào đây.
+Sécurité, photos ratées, démonstration…	Bảo mật, ảnh hỏng, minh họa…
+Sévérité	Mức độ nghiêm ngặt
+TERMINÉ	XONG
+Ta messagerie	Dịch vụ email của bạn
+Ta période d'essai de 30 jours est terminée.	Thời gian dùng thử 30 ngày đã kết thúc.
+Taille de %1 (Go)	Dung lượng %1 (GB)
+Taille du texte	Cỡ chữ
+Taille maximale des fichiers : 1 Go ou 2 Go	Kích thước tệp tối đa: 1 GB hoặc 2 GB
+Temps passé	Thời gian đã qua
+Temps restant	Thời gian còn lại
+Terminer la demande	Hoàn tất yêu cầu
+Terminé	Xong
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	Ảnh iPhone của bạn trên USB hoặc ổ đĩa, theo năm, không trùng lặp
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	Ảnh 2 tháng gần nhất của bạn chưa có trên ổ đĩa. Hãy yêu cầu bản sao mới trên Google Takeout, rồi chế độ tự động chỉ thêm ảnh mới, không trùng lặp.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	Ảnh 2 tháng gần nhất của bạn chưa có trên ổ đĩa. Hãy yêu cầu Apple bản sao mới: Clean Smart chỉ thêm ảnh mới, không trùng lặp.
+Tes photos à l'abri	Ảnh của bạn đã an toàn
+Tes réglages et ta boîte mail seront conservés.	Cài đặt và hộp thư của bạn sẽ được giữ lại.
+Ton téléphone est plein ?	Điện thoại của bạn đầy rồi?
+Ton téléphone est propre et tes photos sont à l'abri	Điện thoại của bạn sạch và ảnh đã an toàn
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	Điện thoại và hộp thư đều sạch, ảnh của bạn đã an toàn
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	Chạm vào đây để tải xuống, rồi mở tệp để cài đặt
+Touche ici pour la version complète ou une question	Chạm vào đây để có bản đầy đủ hoặc đặt câu hỏi
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Chỉ cần chạm vào các liên kết «Tải xuống» trong email của Google. Clean Smart sao chép từng tệp vào ổ đĩa ngay khi nó vào Download, kể cả khi các tệp khác đang tải.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	Chạm vào người gửi: luôn bỏ, luôn giữ, báo cho tôi, hủy đăng ký.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	Chạm vào người gửi trong «Ai gửi email cho bạn nhiều nhất» để chọn
+Touche une image pour la cocher · appui long pour la voir en grand	Chạm vào ảnh để chọn · nhấn giữ để xem lớn
+Toucher pour analyser	Chạm để phân tích
+Toucher pour voir	Chạm để xem
+Toujours garder	Luôn giữ
+Toujours jeter	Luôn bỏ
+Tous les fichiers sont traités ?	Đã xử lý tất cả tệp chưa?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	Mọi email của %1 (ít nhất %2 email) vào thùng rác email.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	Mọi email của %1 người gửi bản tin vào thùng rác email (toàn bộ hộp thư đến, không chỉ những email đã phân tích).\n\nBạn có thể khôi phục từ thùng rác.
+Tout cocher	Chọn tất cả
+Tout décocher	Bỏ chọn tất cả
+Tout désélectionner	Bỏ chọn tất cả
+Tout mettre à la corbeille	Bỏ tất cả vào thùng rác
+Tout nettoyer	Dọn tất cả
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	Mọi thứ đều qua thùng rác: 30 ngày để khôi phục. Và «Tôi nhầm rồi» hoàn tác chỉ với một chạm.
+Tout recommencer	Làm lại tất cả
+Tout recommencer ?	Làm lại tất cả?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	Toàn bộ nội dung đã được sao chép và kiểm tra trên ổ đĩa. Xóa nó sẽ có chỗ cho tệp tiếp theo.\n\nẢnh của bạn cũng vẫn còn trong Google Ảnh.
+Tout va bien, continue comme ça !	Mọi thứ đều tốt, cứ thế nhé!
+Tout était déjà sauvegardé 👍	Mọi thứ đã được sao lưu 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	Tất cả ảnh của bạn trên USB hoặc ổ đĩa, theo năm, không trùng lặp
+Tri avant la sauvegarde	Sắp xếp trước khi sao lưu
+Tri des expéditeurs	Sắp xếp người gửi
+Tri rapide	Sắp xếp nhanh
+Tri terminé !	Đã sắp xếp xong!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	Sắp xếp trước, giữ ảnh đẹp nhất, chỉ sao lưu ảnh đẹp, giải phóng dung lượng, rồi dọn email.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	Sắp xếp trước, giữ ảnh đẹp nhất, chỉ sao lưu ảnh đẹp, rồi giải phóng dung lượng.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	Sắp xếp trước, cất giữ những gì quan trọng, rồi dọn hộp thư. Email từ ngân hàng, cơ quan nhà nước hay y tế không bao giờ bị bỏ.
+Trier en glissant	Sắp xếp bằng cách vuốt
+Trier les expéditeurs	Sắp xếp người gửi
+Trier, garder, sauvegarder, libérer	Sắp xếp, giữ, sao lưu, giải phóng
+Trier, mettre l'important à l'abri, vider la boîte	Sắp xếp, cất giữ điều quan trọng, dọn hộp thư
+Trier, protéger	Sắp xếp, bảo vệ
+Trop claire	Quá sáng
+Trop petite	Quá nhỏ
+Trop sombre	Quá tối
+Très gros	Rất lớn
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	Bạn đã xóa bản sao trên ổ đĩa và không còn gì được sao chép? Chạm «Làm lại tất cả (tôi đã xóa bản sao)» ở cuối màn hình, rồi chạy lại các tệp ZIP.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	Trước đây dùng iPhone? Ảnh iCloud của bạn trên USB hoặc ổ đĩa
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	Bạn có thể thoát ứng dụng để chạm vào liên kết: việc sao chép vẫn tiếp tục (thông báo «Sao chép tự động»).
+Type : .zip   ·   Taille : 2 Go	Loại: .zip   ·   Kích thước: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	Mỗi lần chỉ tải MỘT tệp ZIP, qua Wi-Fi. Xử lý, xóa, rồi tải tệp tiếp theo.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	Chỉ cần tải tệp trên privacy.apple.com. Clean Smart sao chép từng tệp vào ổ đĩa ngay khi nó vào Download.
+Téléphone	Điện thoại
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	Điện thoại đầy: dọn thùng rác của Thư viện, xóa ZIP đã xử lý, làm dọn dẹp có hướng dẫn. Cần ít nhất 300 MB trống.
+Un bouton, et c'est trié	Một nút, thế là gọn
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	Một thẻ cho mỗi người gửi: vuốt trái để bỏ TẤT CẢ email của họ, vuốt phải để giữ.
+Une notification quand il t'écrit	Một thông báo khi người này gửi email cho bạn
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	Mỗi lần một ảnh: vuốt trái để bỏ, vuốt phải để giữ
+Une question, un souci, la version complète ? Écris-moi :	Có câu hỏi, vấn đề, hay muốn bản đầy đủ? Hãy viết cho tôi:
+Utilise ton adresse et ton mot de passe Free.	Dùng địa chỉ và mật khẩu Free của bạn.
+Utilise ton adresse et ton mot de passe La Poste.	Dùng địa chỉ và mật khẩu La Poste của bạn.
+Utilise ton adresse et ton mot de passe Orange.	Dùng địa chỉ và mật khẩu Orange của bạn.
+Utilise ton adresse et ton mot de passe SFR.	Dùng địa chỉ và mật khẩu SFR của bạn.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	Khoảng 2 giờ sáng, ảnh mới được sao chép vào thư mục sao lưu. Một thông báo cho bạn biết nếu không thành công.
+Version complète	Bản đầy đủ
+Version installée : %1	Phiên bản đã cài: %1
+Vider	Dọn
+Vider la corbeille ?	Dọn thùng rác?
+Vider la corbeille Clean Smart	Dọn thùng rác Clean Smart
+Vider la corbeille Clean Smart ?	Dọn thùng rác Clean Smart?
+Vider la corbeille maintenant	Dọn thùng rác ngay
+Vider maintenant	Dọn ngay
+Vieux mails vers la corbeille…	Email cũ vào thùng rác…
+Vieux téléchargements (plus de 6 mois)	Tải xuống cũ (trên 6 tháng)
+Voir la liste et jeter	Xem danh sách rồi bỏ
+Voir la liste et libérer	Xem danh sách rồi giải phóng
+Voir le courrier indésirable puis le mettre à la corbeille	Xem thư rác, rồi bỏ vào thùng rác
+Voir les conseils	Xem mẹo
+Voir ma place Google	Xem dung lượng Google của tôi
+Voir ma place iCloud	Xem dung lượng iCloud của tôi
+Votre facture	Hóa đơn của bạn
+Voyages et réservations	Du lịch và đặt chỗ
+Vérification de la sauvegarde	Đang kiểm tra bản sao lưu
+Vérification du disque	Đang kiểm tra ổ đĩa
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Kiểm tra trong email của Google rằng mỗi tệp (001, 002, 003…) đã được xử lý.
+Vérifier, puis libérer %1 (si tu veux)	Kiểm tra, rồi giải phóng %1 (nếu muốn)
+Yeux fermés	Nhắm mắt
+appli	ứng dụng
+applis	ứng dụng
+calcul…	đang tính…
+compression impossible	không nén được
+contact en double	danh bạ trùng
+contacts en double	danh bạ trùng
+copie	bản sao
+copies	bản sao
+de ta photothèque est à l'abri	thư viện ảnh của bạn đã an toàn
+derniers fichiers	tệp gần nhất
+doublon	ảnh trùng
+doublons	ảnh trùng
+erreur	lỗi
+erreurs	lỗi
+expéditeur	người gửi
+expéditeurs	người gửi
+fais le ménage de ta boîte mail	dọn hộp thư của bạn
+fichier	tệp
+fichier copié	tệp đã sao chép
+fichier copié et vérifié	tệp đã sao chép và kiểm tra
+fichier n'a	tệp không
+fichiers	tệp
+fichiers copiés	tệp đã sao chép
+fichiers copiés et vérifiés	tệp đã sao chép và kiểm tra
+fichiers n'ont	tệp không
+iCloud Photos	Ảnh iCloud
+jour	ngày
+jour restant	ngày còn lại
+jours	ngày
+jours restants	ngày còn lại
+le plus simple	dễ nhất
+libres · %1 % utilisé	trống · đã dùng %1 %
+libère de la place avec le Ménage complet	giải phóng dung lượng bằng Dọn dẹp toàn bộ
+libérés	đã giải phóng
+mail	email
+mail remis	email đã khôi phục
+mails	email
+mails remis	email đã khôi phục
+nettoie les fichiers inutiles du téléphone	dọn tệp vô ích trên điện thoại
+nouveau fichier	tệp mới
+nouveaux fichiers	tệp mới
+pas à pas	từng bước
+photo	ảnh
+photo gardée	ảnh đã giữ
+photo ou vidéo	ảnh hoặc video
+photo ou vidéo prise	ảnh hoặc video đã chụp
+photo protégée	ảnh được bảo vệ
+photos	ảnh
+photos gardées	ảnh đã giữ
+photos ou vidéos	ảnh hoặc video
+photos ou vidéos prises	ảnh hoặc video đã chụp
+photos protégées	ảnh được bảo vệ
+puis « Étape suivante » :	rồi «Bước tiếp theo»:
+rafale	chụp liên tiếp
+rafales	chụp liên tiếp
+sauvegarde tes photos sur une clé ou une carte SD	sao lưu ảnh vào USB hoặc thẻ SD
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	đã an toàn trong bản sao lưu (cùng tên, cùng kích thước).\n\nChúng vào thùng rác của Thư viện (khôi phục được trong 30 ngày). Những ảnh mới nhất ở lại trên điện thoại.
+sur %1 contacts	trên %1 danh bạ
+trie tes photos (doublons, rafales, floues)	sắp xếp ảnh (ảnh trùng, liên tiếp, mờ)
+téléchargement	tải xuống
+téléchargements	tải xuống
+utilisé	đã dùng
+vidéo	video
+vidéo compressée	video đã nén
+vidéos	video
+vidéos compressées	video đã nén
+vieux mail	email cũ
+vieux mails	email cũ
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«Tệp bị hỏng»: việc tải bị ngắt. Hãy tải lại ZIP này từ email của Google rồi chạy lại: phần đã sao chép sẽ không sao chép lại.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«Giải phóng dung lượng»: giữ trên điện thoại ảnh của … gần nhất
+À GARDER	GIỮ
+À JETER	BỎ
+À RETROUVER VITE	TÌM NHANH
+À nettoyer	Cần dọn
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	Dùng khi bạn đã xóa bản sao trên ổ đĩa: Clean Smart quên những gì đã sao chép, và tệp ZIP tiếp theo sẽ được sao chép lại toàn bộ.\n\nỔ đĩa đã chọn và cài đặt của bạn được giữ. Không xóa gì trên ổ đĩa hay trên %1.
+Écriture impossible	Không ghi được
+Électricité	Điện
+à jeter	cần bỏ
+élément	mục
+éléments	mục
+… et %1 autres mails du même genre (cochés).	… và %1 email cùng loại khác (đã chọn).
+‹ Retour	‹ Quay lại
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ Đã đọc %1 không lỗi. Dấu vân tay của bản sao không còn trên điện thoại này: không thể so sánh.
+↩️ %1 dans la boîte de réception	↩️ %1 trong hộp thư đến
+↩️ %1 remis dans la galerie	↩️ Đã đưa %1 về thư viện
+↩️ %1 remis à leur place	↩️ Đã đưa %1 về chỗ cũ
+↩️ J'ai fait une bêtise : remettre les %1	↩️ Tôi nhầm rồi: đưa %1 về
+↩️ Mails remis (démonstration)	↩️ Đã khôi phục email (minh họa)
+↩️ Remettre %1 dans ma boîte	↩️ Đưa %1 về hộp thư của tôi
+↩️ Remettre des mails	↩️ Khôi phục email
+↩️ Tout remettre à sa place	↩️ Đưa tất cả về chỗ cũ
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Đang chờ tệp tiếp theo trong Download. Chạm vào các liên kết «Tải xuống» trong email.
+⏳ En attente du prochain fichier dans Download…	⏳ Đang chờ tệp tiếp theo trong Download…
+⏳ copie en cours…	⏳ đang sao chép…
+⏳ plus tard	⏳ sau
+⏹ Arrêter	⏹ Dừng
+☑️ Tout cocher	☑️ Chọn tất cả
+⚙️ Cache des applis et fichiers système	⚙️ Bộ nhớ đệm ứng dụng và tệp hệ thống
+⚙️ Options	⚙️ Tùy chọn
+⚠️ %1 : à relancer.\n	⚠️ %1: cần chạy lại.\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 bị lỗi: hãy chạy lại các ZIP có dấu «cần chạy lại» trước khi tiếp tục.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ %1 trên ổ đĩa không còn giống hoặc không đọc được:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ Không sao lưu đêm nay
+⚠️ Fichier %1 à reprendre	⚠️ Tệp %1 cần làm lại
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ Cần khoảng %1, còn %2. Bạn có thể bắt đầu: khi đầy, cắm ổ khác và ta tiếp tục không trùng lặp.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ Việc sao chép đã dừng: %1\n\nKhông mất gì cả: chạy lại chế độ tự động, ta sẽ tiếp tục không trùng lặp.
+⚠️ On ne commence pas	⚠️ Chưa bắt đầu
+⚠️ Sauvegarde de la nuit	⚠️ Sao lưu ban đêm
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ bị hỏng: tải lại từ email, nó sẽ tự được sao chép
+⚠️ disque plein	⚠️ ổ đĩa đầy
+⚠️ pas commencé	⚠️ chưa bắt đầu
+⚠️ à relancer	⚠️ cần chạy lại
+⚠️ à relancer (%1)	⚠️ cần chạy lại (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ Bản sao chưa đầy đủ (tệp hỏng, cần chạy lại hoặc chưa sao chép). Hãy hoàn tất bản sao trước: đừng xóa gì trên %1.
+✅ %1 : terminé et vérifié.\n	✅ %1: xong và đã kiểm tra.\n
+✅ %1 doublon(s) supprimé(s)	✅ Đã xóa %1 ảnh trùng
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ Đã lưu %1 email · %2 PDF · tệp lưu trữ CleanSmart/Mails/index.html đã cập nhật
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 email quan trọng đã an toàn · gom %2 PDF · tệp lưu trữ index.html đã cập nhật
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ Đã sao lưu %1 ảnh mới
+✅ %1 · depuis %2	✅ %1 · từ %2
+✅ %1 à l'abri	✅ %1 đã an toàn
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 email quan trọng đã an toàn (minh họa)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ Đã sao lưu 7.958 ảnh đẹp (minh họa)
+✅ Assez de place sur « %1 ».	✅ Đủ chỗ trên «%1».
+✅ Boîte mail connectée	✅ Đã kết nối hộp thư
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ Đã kiểm tra ổ đĩa: đọc lại %1, không hỏng ảnh nào.
+✅ Doublons supprimés (démonstration)	✅ Đã xóa ảnh trùng (minh họa)
+✅ Fichier %1 terminé	✅ Tệp %1 đã xong
+✅ La copie sur le disque est complète et vérifiée.	✅ Bản sao trên ổ đĩa đầy đủ và đã kiểm tra.
+✅ Mails sauvegardés (démonstration)	✅ Đã lưu email (minh họa)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ bản sao đầy đủ và đã kiểm tra\n✅ đã tắt sao lưu trên điện thoại\n✅ đã xem ảnh trên ổ đĩa\n\nMở %1? Bạn tự chọn cần xóa gì.
+✅ copié et vérifié	✅ đã sao chép và kiểm tra
+✅ copié, vérifié, supprimé du téléphone	✅ đã sao chép, kiểm tra, xóa khỏi điện thoại
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ Đã bỏ %1 · giải phóng %2 trong hộp thư
+✉️ %1 mails	✉️ %1 email
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 email (thư mục «Mails Gmail», mở index.html)\n
+✉️ Boîte mail	✉️ Hộp thư
+✉️ Mails	✉️ Email
+✉️ Mails de %1	✉️ Email của %1
+✓ %1 choisi	✓ Đã chọn %1
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ Đã giải phóng %1 (khôi phục được trong 30 ngày ở thùng rác Thư viện)
+✨ %1 mails mis à la corbeille	✨ Đã bỏ %1 email vào thùng rác
+✨ %1 mis à la corbeille (démonstration)	✨ Đã bỏ %1 vào thùng rác (minh họa)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ Đã bỏ %1 vào thùng rác email (khôi phục bằng «Khôi phục email»)
+✨ %1 nettoyés · %2 libérés	✨ Đã dọn %1 · giải phóng %2
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 email cũ vào thùng rác (giữ email quan trọng)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1.249 email vào thùng rác (minh họa)
+✨ 1,1 Go libérés (démonstration)	✨ Đã giải phóng 1,1 GB (minh họa)
+✨ 6,4 Go libérés (démonstration)	✨ Đã giải phóng 6,4 GB (minh họa)
+✨ Mails mis à la corbeille (démonstration)	✨ Email vào thùng rác (minh họa)
+✨ Ménage automatique du dimanche	✨ Tự động dọn dẹp ngày Chủ nhật
+✨ Ménage du dimanche	✨ Dọn dẹp ngày Chủ nhật
+✨ Vieux mails mis à la corbeille (démonstration)	✨ Email cũ vào thùng rác (minh họa)
+❤️ Santé du téléphone : %1 / 100	❤️ Sức khỏe điện thoại: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ Vuốt trái: mọi email của họ vào thùng rác   ·   Vuốt phải: giữ lại ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ Vuốt trái để bỏ   ·   Vuốt phải để giữ ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 đang tải: việc sao chép sẽ bắt đầu ngay khi xong.
+⬜ Tout décocher	⬜ Bỏ chọn tất cả
+⭐ Protéger mes %1	⭐ Bảo vệ %1 của tôi
+🍏 Mes photos iCloud	🍏 Ảnh iCloud của tôi
+🍏 Pense à une nouvelle copie iCloud	🍏 Đến lúc tạo bản sao iCloud mới
+🍏 Quitter iCloud Photos	🍏 Rời Ảnh iCloud
+🎁 Version d'essai · %1	🎁 Bản dùng thử · %1
+🎉 %1 libérés au total	🎉 Tổng cộng đã giải phóng %1
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 Không có tệp vô ích: điện thoại sạch!
+🎉 Aucun mail à jeter ici.	🎉 Không có email nào cần bỏ ở đây.
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 Không có ứng dụng bị bỏ quên: bạn dùng tất cả!
+🎉 Plus rien ici.	🎉 Ở đây không còn gì.
+🎉 Rien à nettoyer, tout est propre !	🎉 Không có gì cần dọn, mọi thứ đều sạch!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 Xong: đã sao chép và kiểm tra %1. Tổng cộng trên ổ đĩa: %2 và %3.
+🎉 Tous les fichiers sont faits	🎉 Tất cả tệp đã xong
+🎬 Démonstration	🎬 Minh họa
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 CHẾ ĐỘ MINH HỌA: không đụng tới gì trên điện thoại
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 Chế độ minh họa: không đụng tới gì trên điện thoại
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 Mỗi nút hiển thị trước danh sách email: bạn bỏ chọn những email muốn giữ, rồi xác nhận.
+👀 Voir et jeter ses mails maintenant	👀 Xem và bỏ email của họ ngay
+👆 Les expéditeurs que tu as jetés	👆 Những người gửi bạn đã bỏ
+👆 Tri des expéditeurs	👆 Sắp xếp người gửi
+👆 Tri rapide	👆 Sắp xếp nhanh
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Bây giờ: trong email của Google, tải tệp %1 (qua Wi-Fi). Rồi chạm nút xanh và chọn nó trong Tải xuống.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Bây giờ: trên privacy.apple.com, tải «Part %1» (qua Wi-Fi). Rồi chạm nút xanh và chọn nó trong Tải xuống.
+👉 À faire maintenant	👉 Việc cần làm ngay
+👉 à télécharger puis traiter	👉 cần tải rồi xử lý
+👍 Tu as déjà la dernière version (%1)	👍 Bạn đã có phiên bản mới nhất (%1)
+👯 Mails en double	👯 Email trùng
+💡 Aide	💡 Trợ giúp
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 Mẹo: hủy đăng ký để không nhận nữa (nút trong danh sách «Ai gửi email cho bạn nhiều nhất»).
+💡 Si ça bloque	💡 Nếu bị kẹt
+💡 Si ça bloque : tous les conseils	💡 Nếu bị kẹt: mọi lời khuyên
+💾 %1 sur « %2 »	💾 %1 trên «%2»
+💾 Sauvegarde de la nuit	💾 Sao lưu ban đêm
+💾 Sauvegarder %1	💾 Lưu %1
+💾 Sauvegarder toutes mes photos	💾 Sao lưu tất cả ảnh của tôi
+💾 Sauver des mails	💾 Lưu email
+📁 Choisir le dossier de sauvegarde	📁 Chọn thư mục sao lưu
+📁 Choisir un dossier	📁 Chọn một thư mục
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: email đầy đủ (.eml)\n📕 CleanSmart / PDF: gom mọi PDF\n📎 CleanSmart / Pieces jointes: các tệp khác
+📁 Dossier de sauvegarde enregistré	📁 Đã lưu thư mục sao lưu
+📂 Traiter un fichier ZIP	📂 Xử lý một tệp ZIP
+📂 Traiter un fichier ZIP à la main	📂 Xử lý thủ công một tệp ZIP
+📅 Ton rapport du mois	📅 Báo cáo tháng của bạn
+📎 Gros mails	📎 Email lớn
+📕 Cocher les PDF	📕 Chọn các PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 Đã lưu PDF trong Tải xuống / Clean Smart
+📕 PDF souvenir créé (démonstration)	📕 Đã tạo PDF kỷ niệm (minh họa)
+📖 Mode d'emploi	📖 Hướng dẫn sử dụng
+📤 Envoyer (%1)	📤 Gửi (%1)
+📦 Les plus grosses	📦 Lớn nhất
+📦 Quitter Google Photos	📦 Rời Google Ảnh
+📦 Ta nouvelle copie Google est peut-être prête	📦 Bản sao Google mới của bạn có thể đã sẵn sàng
+📧 Ouvrir le mail de Google	📧 Mở email của Google
+📰 Newsletters et pubs	📰 Bản tin và quảng cáo
+📱 Mes applis	📱 Ứng dụng của tôi
+📱 Ouvrir l'app Google Photos	📱 Mở ứng dụng Google Ảnh
+📱 Téléphone	📱 Điện thoại
+📱 Téléphone presque plein	📱 Điện thoại gần đầy
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 Đã sao chép và kiểm tra %1 ảnh và %2 video, sắp xếp theo năm\n
+📸 Photos	📸 Ảnh
+🔄 Analyser à nouveau	🔄 Phân tích lại
+🔄 Chercher à nouveau	🔄 Tìm lại
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 Làm lại tất cả (tôi đã xóa bản sao)
+🔍 Analyser ma boîte mail	🔍 Phân tích hộp thư của tôi
+🔍 Analyser mon téléphone	🔍 Phân tích điện thoại của tôi
+🔍 Chercher les mails avec pièces jointes	🔍 Tìm email có tệp đính kèm
+🔎 Vérifier le disque (relit chaque photo)	🔎 Kiểm tra ổ đĩa (đọc lại từng ảnh)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 Mật khẩu của bạn được mã hóa trên điện thoại. Nó chỉ được gửi tới máy chủ email của bạn.
+🔓 Autoriser	🔓 Cho phép
+🔓 Autoriser l'accès aux fichiers	🔓 Cho phép truy cập tệp
+🔓 Une autorisation pour en savoir plus	🔓 Một quyền để biết thêm
+🔓 Une autorisation, une seule fois	🔓 Một quyền, chỉ một lần
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 Chỉ một lần: cho phép «Truy cập tất cả tệp» để Clean Smart thấy thư mục Download. Ứng dụng chỉ đọc tệp của %1.
+🔔 Mail de %1	🔔 Email từ %1
+🔔 Tu seras prévenu quand il t'écrit	🔔 Bạn sẽ được báo khi người này gửi email
+🕰️ Vieux mails	🕰️ Email cũ
+🕰️ Vieux mails (les importants sont gardés)	🕰️ Email cũ (giữ email quan trọng)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ Đã dọn thùng rác: lấy lại vĩnh viễn %1
+🗑️ Désinstaller	🗑️ Gỡ cài đặt
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ Đã xóa tệp khỏi điện thoại: có chỗ cho tệp tiếp theo
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ Người gửi «luôn bỏ» của tôi
+🗑️ Mettre %1 à la corbeille	🗑️ Bỏ %1 vào thùng rác
+🗑️ Ouvrir %1 pour effacer	🗑️ Mở %1 để xóa
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ Email của người này sẽ vào thùng rác mỗi đêm
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ Xóa ZIP này khỏi điện thoại (nên làm)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ Luôn bỏ: %1   🛡️ Luôn giữ: %2   🔔 Báo cho tôi: %3
+🗜️ Compresser (%1)	🗜️ Nén (%1)
+😴 Pas ouvertes depuis 3 mois	😴 Chưa mở 3 tháng
+🚫 Se désabonner	🚫 Hủy đăng ký
+🛡️ %1 (mises en favori)	🛡️ %1 (đã đặt làm yêu thích)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ Đã xếp %1 vào thư mục «Được bảo vệ» trong hộp thư
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ Người gửi quan trọng (ngân hàng, cơ quan nhà nước, y tế…): email của họ không bao giờ bị bỏ.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ Nút xóa xuất hiện khi bản sao đầy đủ và ô 1, ô 2 đã được chọn.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ Email từ ngân hàng, cơ quan nhà nước hay y tế không bao giờ vào thùng rác.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ Không bao giờ giải phóng %1 trước khi kiểm tra bản sao: hãy chọn ô đầu tiên trước.
+🛡️ Protéger (%1)	🛡️ Bảo vệ (%1)
+🛡️ Ranger mes mails importants	🛡️ Xếp gọn email quan trọng của tôi
+🛡️ Ses mails ne seront jamais jetés	🛡️ Email của người này sẽ không bao giờ bị bỏ
+🤖 Copie automatique de tes photos	🤖 Tự động sao chép ảnh của bạn
+🤖 Démarrer le mode automatique	🤖 Bắt đầu chế độ tự động
+🤖 Tout automatique (le plus simple)	🤖 Hoàn toàn tự động (dễ nhất)
+🧊 Vider son cache	🧊 Xóa bộ nhớ đệm
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 Đã loại %1 ảnh trùng và 🎞️ %2 ảnh liên tiếp\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 ảnh trùng   🎞️ ảnh chụp liên tiếp hỏng\n📱 ảnh chụp màn hình   🎬 video lớn\n💬 tệp WhatsApp   👥 danh bạ trùng\n✉️ bản tin và email lớn
+🧭 Ménage	🧭 Dọn dẹp
+🧭 Ménage des mails	🧭 Dọn email
+🧭 Ménage guidé	🧭 Dọn dẹp có hướng dẫn
+🧹 Fichiers inutiles	🧹 Tệp vô ích
+🧹 Jeter les mails de %1	🧹 Bỏ email của %1
+🧹 Le ménage sûr	🧹 Dọn dẹp an toàn
+🧹 Mails triés cette nuit	🧹 Đã sắp xếp email đêm nay
+🧹 Mettre %1 à la corbeille	🧹 Bỏ %1 vào thùng rác
+🧹 Ménage sûr	🧹 Dọn dẹp an toàn
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 Dọn dẹp an toàn: bản tin, thông báo, ảnh trùng
+🧹 Nettoyer · %1	🧹 Dọn · %1
+🧹 Nettoyer · %1 · %2	🧹 Dọn · %1 · %2

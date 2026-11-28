@@ -1,0 +1,636 @@
+{
+ "subtitle": "User guide",
+ "tag": "More space on your phone,\nsimply and safely.",
+ "credit": "Created by JM Dargère",
+ "footer": "CLEAN SMART — Created by JM Dargère",
+ "how_title": "How does it work?",
+ "how": [
+  [
+   "📱",
+   "rouge",
+   "1. Is your phone full?",
+   "Duplicate photos, failed shots, huge videos, useless emails… all take space."
+  ],
+  [
+   "🔍",
+   "bleu",
+   "2. Clean Smart searches for you",
+   "One single button. Nothing is deleted during the scan."
+  ],
+  [
+   "✅",
+   "violet",
+   "3. You choose",
+   "What is safe is already ticked for you. For the rest, you decide."
+  ],
+  [
+   "🗑️",
+   "orange",
+   "4. Nothing is lost",
+   "Everything goes through the bin: 30 days to get a photo or an email back."
+  ],
+  [
+   "💾",
+   "vert",
+   "5. Everything stays safe",
+   "Backup to an SD card, USB drive or Google Drive, even on its own at night."
+  ]
+ ],
+ "sections": [
+  [
+   "🧭",
+   "vert",
+   "Complete clean-up (recommended)",
+   "The home screen has a big green \"Complete clean-up\" tile and 3 doors: 📸 Photos, 🧹 Phone, ✉️ Emails. The complete clean-up does everything in the right order; the GREEN button is always the next step.",
+   [
+    [
+     "step",
+     "Safe clean-up: extra duplicates and bursts (the best one is kept), black or white photos, old screenshots. One button."
+    ],
+    [
+     "step",
+     "Check the doubtful ones: slightly blurry photos, WhatsApp… Swipe left to discard, right to keep (it becomes a favourite)."
+    ],
+    [
+     "step",
+     "Keep them safe: only GOOD photos are backed up. Favourites also go to \"Mes meilleures\" (My best)."
+    ],
+    [
+     "step",
+     "Free up space: old photos already backed up leave the phone."
+    ],
+    [
+     "step",
+     "NEW 2.0 — And your emails: your mailbox space, newsletters and large emails, then the guided mailbox clean-up. At Google, emails and Google Photos share the same 15 GB."
+    ],
+    [
+     "step",
+     "The summary shows what is freed on the phone AND in the mailbox. In bursts, the photo where nobody has their eyes closed is kept."
+    ]
+   ]
+  ],
+  [
+   "🧹",
+   "turquoise",
+   "Junk files (NEW 2.0)",
+   "Temporary files, thumbnails, cache folders, empty folders, installation files, leftovers of uninstalled apps. Photos, videos and music are never touched.",
+   [
+    [
+     "step",
+     "Just once: allow \"All files access\". The search starts by itself."
+    ],
+    [
+     "step",
+     "Safe groups are ticked: they are recreated automatically or no longer needed. \"Clean\" and you're done."
+    ],
+    [
+     "step",
+     "\"To check\" groups (other .apk, app leftovers, old downloads) go to the Clean Smart bin: \"Put everything back\" for 7 days."
+    ],
+    [
+     "step",
+     "Other apps' cache: Android forbids apps from clearing it since Android 11. The button opens Android's \"Free up space\" screen."
+    ],
+    [
+     "step",
+     "📱 My apps: the biggest ones and those not opened for 3 months. Tap one to uninstall it or clear its cache."
+    ]
+   ]
+  ],
+  [
+   "❤️",
+   "vert",
+   "Health score and Sunday clean-up (NEW 2.0)",
+   "On the home screen, a score from 0 to 100 sums up the phone: free space, backup, photos to sort, junk files, mailbox. It also tells you what to do to earn points.",
+   [
+    [
+     "step",
+     "In Options › Automatic, turn on \"Automatic Sunday clean-up\": safe junk files and spam are removed automatically, a notification sums it up."
+    ],
+    [
+     "step",
+     "Photos never leave on their own: the notification says how many to sort, you tap and choose."
+    ],
+    [
+     "step",
+     "Simpler options: Backup, Automatic, Display. The rest is in \"Advanced settings\"."
+    ]
+   ]
+  ],
+  [
+   "📦",
+   "rouge",
+   "Leave Google Photos",
+   "All your Google Photos on a USB drive or hard disk, sorted by year, without duplicates. One single dashboard: the \"MAINTENANT\" (now) step is open, with the green button.",
+   [
+    [
+     "step",
+     "Space: note the size of Google Photos, Clean Smart works out the space to plan."
+    ],
+    [
+     "step",
+     "The disk: plug in the USB drive or disk (USB-C adapter) and choose a folder on it."
+    ],
+    [
+     "step",
+     "Ask Google for a copy: the model shows exactly what to tick (.zip files of 2 GB)."
+    ],
+    [
+     "step",
+     "The files: the 001, 002… list tells you which one to download. \"Traiter un fichier\", then delete it. A notification tells you when it is done."
+    ],
+    [
+     "step",
+     "Each photo is sorted by year, duplicates and extra bursts are left out, everything is re-read and checked. The gauge shows how much is safe."
+    ],
+    [
+     "step",
+     "Problem (phone or disk full, damaged file): nothing is lost, run the same file again. \"Si ça bloque\" button."
+    ],
+    [
+     "step",
+     "NEW 2.0 — \"Fully automatic\": allow \"All files access\" once, start, then just tap the links in Google's email. Each file is copied as soon as it arrives in Download, then deleted from the phone once verified."
+    ],
+    [
+     "step",
+     "Free up Google: the button only appears when the copy is complete, phone backup is off and you have checked your photos on the drive. You do the deleting; Google's bin keeps everything for 60 days."
+    ],
+    [
+     "step",
+     "\"Check the drive\" re-reads every copied photo and reports any damaged one. Every 2 months, a notification reminds you to request a new copy: only new photos are added."
+    ]
+   ]
+  ],
+  [
+   "🍏",
+   "indigo",
+   "Get my iCloud photos (former iPhone)",
+   "For iPhone photos: the same dashboard as Google Photos, with Apple's official export.",
+   [
+    [
+     "step",
+     "Space: on the iPhone, Settings › your name › iCloud. Clean Smart works out the space to plan."
+    ],
+    [
+     "step",
+     "The disk: plug in the USB drive or disk and choose a folder on it."
+    ],
+    [
+     "step",
+     "On privacy.apple.com: \"Request a copy of your data\", tick \"iCloud Photos\", files of 1 or 2 GB."
+    ],
+    [
+     "step",
+     "Apple sends an email within a few days. Download \"Part 1\", process it, delete it, then \"Part 2\"…"
+    ],
+    [
+     "step",
+     "Everything is sorted by year in \"iCloud Photos\", without duplicates, the best photo of each burst kept."
+    ]
+   ]
+  ],
+  [
+   "🔍",
+   "vert",
+   "Scan my phone",
+   "It is the big button on the home screen. Nothing to set up.",
+   [
+    [
+     "step",
+     "Tap \"Analyser mon téléphone\" (Scan my phone)."
+    ],
+    [
+     "step",
+     "The first time, Android asks for access to photos and contacts: allow it."
+    ],
+    [
+     "step",
+     "A bar shows the progress. Then Clean Smart shows in big how much space you can get back."
+    ]
+   ]
+  ],
+  [
+   "📸",
+   "bleu",
+   "What Clean Smart finds",
+   "",
+   [
+    [
+     "item",
+     "🧬",
+     "Duplicates",
+     "Identical copies. The original is kept."
+    ],
+    [
+     "item",
+     "🎞️",
+     "Similar photos",
+     "Bursts taken seconds apart. The sharpest one is kept."
+    ],
+    [
+     "item",
+     "🌫️",
+     "Failed photos",
+     "Blurry, too dark, too bright or too small."
+    ],
+    [
+     "item",
+     "📱",
+     "Screenshots",
+     "Often useless afterwards."
+    ],
+    [
+     "item",
+     "🎬",
+     "Large videos",
+     "Over 100 MB each."
+    ],
+    [
+     "item",
+     "💬",
+     "WhatsApp media",
+     "Photos and videos received or sent."
+    ],
+    [
+     "item",
+     "🐘",
+     "My biggest files",
+     "The 30 heaviest photos and videos."
+    ],
+    [
+     "item",
+     "👥",
+     "Duplicate contacts",
+     "Same name and same number."
+    ]
+   ]
+  ],
+  [
+   "🧹",
+   "rouge",
+   "Choose and clean",
+   "",
+   [
+    [
+     "step",
+     "Tap a category to see the photos."
+    ],
+    [
+     "step",
+     "Tap a photo to tick it. Long press: view it full screen."
+    ],
+    [
+     "step",
+     "\"GARDÉE\" (kept): the photo Clean Smart advises you to keep."
+    ],
+    [
+     "step",
+     "Tap the red \"Nettoyer\" (Clean) button at the bottom."
+    ],
+    [
+     "step",
+     "Android asks for a final confirmation. Photos go to the bin: 30 days to restore them."
+    ]
+   ]
+  ],
+  [
+   "👆",
+   "violet",
+   "Quick sort",
+   "To sort your recent photos one by one, without thinking.",
+   [
+    [
+     "step",
+     "On the home screen, tap \"Tri rapide\" (Quick sort)."
+    ],
+    [
+     "step",
+     "Swipe the photo LEFT to discard it, RIGHT to keep it."
+    ],
+    [
+     "step",
+     "The small round button in the middle goes back to the previous photo."
+    ],
+    [
+     "step",
+     "At the end, the red button sends the discarded photos to the bin."
+    ]
+   ]
+  ],
+  [
+   "🗑️",
+   "orange",
+   "The bin and \"I made a mistake\"",
+   "",
+   [
+    [
+     "step",
+     "Photos in the bin still take space for 30 days."
+    ],
+    [
+     "step",
+     "\"Vider la corbeille maintenant\" (Empty the bin now) frees the space right away (careful: it is final)."
+    ],
+    [
+     "step",
+     "\"J'ai fait une bêtise\" (I made a mistake) puts the last discarded files back in the gallery."
+    ]
+   ]
+  ],
+  [
+   "🛡️",
+   "violet",
+   "Protect and send",
+   "In a category, tick photos then:",
+   [
+    [
+     "item",
+     "🛡️",
+     "Protect",
+     "The photo becomes a favourite: it will never be suggested again."
+    ],
+    [
+     "item",
+     "📤",
+     "Send",
+     "By WhatsApp, email… (20 photos max). Nothing leaves the phone."
+    ],
+    [
+     "item",
+     "🗜️",
+     "Compress",
+     "For videos: remade in 720p, often 3 to 5 times lighter."
+    ]
+   ]
+  ],
+  [
+   "💾",
+   "bleu",
+   "Backup",
+   "Your photos safe on an SD card, a USB drive or Google Drive.",
+   [
+    [
+     "step",
+     "In \"Sauvegarde\" (Backup), tap \"Choisir un dossier\" (Choose a folder)."
+    ],
+    [
+     "step",
+     "\"Back up all my photos\" copies your photos, sorted by month."
+    ],
+    [
+     "step",
+     "Next times, only new photos are copied."
+    ],
+    [
+     "step",
+     "In Options, \"Automatic backup every night\" does it on its own."
+    ]
+   ]
+  ],
+  [
+   "🧰",
+   "vert",
+   "More tools",
+   "On the home screen, tap \"Plus d'outils\" (More tools):",
+   [
+    [
+     "item",
+     "🧹",
+     "Free up space",
+     "Photos older than 3 months ALREADY backed up go to the bin. Never a photo that is not safe."
+    ],
+    [
+     "item",
+     "📕",
+     "Souvenir PDF",
+     "The best photos of the month or year in a PDF, to send to a loved one."
+    ],
+    [
+     "item",
+     "🗜️",
+     "Shrink my videos",
+     "Open \"Grosses vidéos\" (Large videos), tick them, then \"Compresser\"."
+    ]
+   ]
+  ],
+  [
+   "✉️",
+   "bleu",
+   "My mailbox",
+   "Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…",
+   [
+    [
+     "step",
+     "Tap \"Connecter ma boîte mail\" (Connect my mailbox) and choose your provider."
+    ],
+    [
+     "step",
+     "Gmail, Yahoo and iCloud require an APP PASSWORD. Clean Smart opens the right page."
+    ],
+    [
+     "step",
+     "Scan your mailbox, then one button for: newsletters, large emails, old emails, duplicate emails."
+    ],
+    [
+     "step",
+     "Emails go to your mailbox bin. Those from your bank, government or health services are NEVER touched."
+    ]
+   ]
+  ],
+  [
+   "🧭",
+   "vert",
+   "Guided mailbox clean-up",
+   "In Mails, tap the big green tile. Same idea: the green button is the next step.",
+   [
+    [
+     "step",
+     "Safe clean-up: newsletters, ads, notifications and duplicate emails go to the bin."
+    ],
+    [
+     "step",
+     "Sort by sender: one card per sender. Left, all their emails go; right, you keep them."
+    ],
+    [
+     "step",
+     "Keep the important safe: bank, government, health, invoices and emails with a PDF are backed up."
+    ],
+    [
+     "step",
+     "Free the mailbox: old emails go to the bin, never the important ones."
+    ],
+    [
+     "step",
+     "\"Se désabonner\" (Unsubscribe): stop receiving a newsletter. The button opens the unsubscribe page."
+    ],
+    [
+     "step",
+     "NEW 2.0 — Before deleting, the list of emails is shown (sender, subject, date): untick those to keep, then confirm."
+    ],
+    [
+     "step",
+     "Tap a sender: 🗑️ always delete (every night, automatically), 🛡️ always keep, 🔔 notify me when they write."
+    ],
+    [
+     "step",
+     "Protected box: bank, taxes, health, home and family (your contacts) are filed in \"Protected\" in your mailbox, never deleted. \"Spam\" button to empty junk mail."
+    ]
+   ]
+  ],
+  [
+   "📎",
+   "orange",
+   "Save emails and their attachments",
+   "",
+   [
+    [
+     "step",
+     "In Mails, tap \"Sauvegarder des mails\" (Save emails)."
+    ],
+    [
+     "step",
+     "Tick the emails to keep (\"Cocher les PDF\" to go fast)."
+    ],
+    [
+     "step",
+     "Tap \"Sauvegarder\": the full email, and all PDFs gathered in a PDF folder."
+    ],
+    [
+     "step",
+     "On the PC, open CleanSmart/Mails/index.html: type a word, a name or a PDF to find everything."
+    ]
+   ]
+  ],
+  [
+   "↩️",
+   "vert",
+   "Restore emails",
+   "",
+   [
+    [
+     "step",
+     "In Mails, tap \"Remettre des mails\" (Restore emails)."
+    ],
+    [
+     "step",
+     "Tick the emails in the bin you want back."
+    ],
+    [
+     "step",
+     "Tap \"Remettre\": they come back to your inbox."
+    ]
+   ]
+  ],
+  [
+   "👥",
+   "violet",
+   "Duplicate contacts",
+   "",
+   [
+    [
+     "step",
+     "After the scan, the \"Contacts\" card shows duplicates (same name, same number)."
+    ],
+    [
+     "step",
+     "\"Supprimer les doublons\" keeps the original contact."
+    ],
+    [
+     "step",
+     "Careful: deletion is also done on your Google account."
+    ]
+   ]
+  ]
+ ],
+ "options_title": "Options explained",
+ "options": [
+  [
+   "🌙",
+   "Automatic backup every night",
+   "Around 2 am, new photos are copied to your backup folder.",
+   "Good to know: a notification tells you if it did not work."
+  ],
+  [
+   "🔔",
+   "Alerts and monthly report",
+   "Alert when less than 1 GB is left, and a short summary on the 1st of the month.",
+   "Good to know: at most one alert every 3 days."
+  ],
+  [
+   "💾",
+   "Back up before deleting",
+   "Copies photos (and contacts) to your folder before each clean-up.",
+   "Good to know: off by default, useless for duplicates and failed photos."
+  ],
+  [
+   "🛡️",
+   "Protect my favourites",
+   "Favourite photos are never suggested.",
+   "Good to know: on by default."
+  ],
+  [
+   "⚖️",
+   "Severity",
+   "Careful: fewer photos suggested. Normal. Strict: more.",
+   "Good to know: scan again after a change."
+  ],
+  [
+   "🧹",
+   "Free up space",
+   "Keep on the phone the photos of the last 1, 3, 6 or 12 months.",
+   "Good to know: only photos already backed up are suggested."
+  ],
+  [
+   "🔠",
+   "Text size",
+   "Normal, large or very large.",
+   "Good to know: a bit more scrolling."
+  ],
+  [
+   "🌍",
+   "Language",
+   "Same as phone, French or English.",
+   "Good to know: the change applies right away."
+  ],
+  [
+   "🎬",
+   "Demo mode",
+   "Shows the app with fake photos, emails and contacts.",
+   "Good to know: nothing is touched on the phone. Ideal to present the app."
+  ],
+  [
+   "📲",
+   "Widget",
+   "On the phone's home screen: long press > Widgets > Clean Smart. It shows free space and opens the guided clean-up.",
+   "Good to know: it updates on its own."
+  ]
+ ],
+ "contact": "A question, or the full version? Write to me: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42",
+ "faq_title": "Frequently asked questions",
+ "faq": [
+  [
+   "Are my photos deleted right away?",
+   "No. They go to the Gallery bin: 30 days to restore them, or \"I made a mistake\"."
+  ],
+  [
+   "Do my photos go on the Internet?",
+   "No. Everything happens on the phone. Only the backup goes where you chose (SD card, USB, Drive)."
+  ],
+  [
+   "Why an app password?",
+   "Gmail, Yahoo and iCloud require it for mail apps. It stays encrypted on your phone."
+  ],
+  [
+   "The space does not come back after cleaning?",
+   "The bin keeps photos for 30 days. Tap \"Empty the bin now\" on the home screen."
+  ],
+  [
+   "I erased my copy on the disk, nothing is copied any more?",
+   "In the Google Photos or iCloud Photos tab, tap \"Start over (I erased my copy)\" at the bottom of the screen, then run your ZIP files again."
+  ],
+  [
+   "How do I get the latest version?",
+   "When a new version exists, an orange banner appears on the home screen: tap it, then open the downloaded file. Or Options > \"Rechercher une mise à jour\" (Check for updates)."
+  ]
+ ]
+}

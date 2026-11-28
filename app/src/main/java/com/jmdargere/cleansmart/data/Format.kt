@@ -7,7 +7,7 @@ import java.util.Date
 import java.util.Locale
 
 /** La langue d'affichage des nombres et des dates (suit la langue de l'interface). */
-private val loc: Locale get() = if (Tr.anglais) Locale.UK else Locale.FRANCE
+private val loc: Locale get() = Tr.locale
 
 /** 1 536 000 000 -> "1,4 Go" (ou "1.4 GB" en anglais) */
 fun fmtBytes(b: Long): String {

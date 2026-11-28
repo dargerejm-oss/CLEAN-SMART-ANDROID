@@ -47,7 +47,9 @@ import java.util.Locale
 @Composable
 fun Manual() {
     val ctx = LocalContext.current
-    var lang by rememberSaveable { mutableStateOf(if (com.jmdargere.cleansmart.Tr.anglais) "en" else "fr") }
+    // le mode d'emploi dans la langue de l'appli (anglais si cette langue n'a pas encore son PDF)
+    val dispo = remember { (ctx.assets.list("") ?: emptyArray()).filter { it.startsWith("manuel_") && it.endsWith(".pdf") }.map { it.removePrefix("manuel_").removeSuffix(".pdf") }.toSet() }
+    var lang by rememberSaveable { mutableStateOf(com.jmdargere.cleansmart.Tr.langue.let { if (it in dispo) it else "en" }) }
     var pages by remember(lang) { mutableStateOf<List<ImageBitmap>>(emptyList()) }
     var error by remember(lang) { mutableStateOf(false) }
 
@@ -59,7 +61,8 @@ fun Manual() {
     LazyColumn(contentPadding = PaddingValues(12.dp, 4.dp, 12.dp, 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
-                listOf("fr" to Tr.t("🇫🇷 Français"), "en" to Tr.t("🇬🇧 English")).forEach { (code, label) ->
+                // langue de l'appli + francais + anglais
+                listOf(com.jmdargere.cleansmart.Tr.langue, "fr", "en").distinct().filter { it in dispo }.map { it to Tr.NOMS[Tr.CODES.indexOf(it)] }.forEach { (code, label) ->
                     FilterChip(selected = lang == code, onClick = { lang = code }, label = { Text(label) },
                         modifier = Modifier.padding(horizontal = 6.dp),
                         colors = FilterChipDefaults.filterChipColors(selectedContainerColor = Violet, selectedLabelColor = Color.White))

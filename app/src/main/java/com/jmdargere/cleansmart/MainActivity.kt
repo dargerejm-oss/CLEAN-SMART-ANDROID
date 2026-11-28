@@ -30,7 +30,13 @@ class MainActivity : ComponentActivity() {
                 val d = LocalDensity.current
                 CompositionLocalProvider(LocalDensity provides Density(d.density, d.fontScale * vm.settings.fontScale)) {
                     // changer de langue redessine tout l'ecran tout de suite
-                    androidx.compose.runtime.key(vm.settings.langue) { CleanSmartApp(vm) }
+                    androidx.compose.runtime.key(vm.settings.langue) {
+                        // l'arabe s'affiche de droite a gauche
+                        CompositionLocalProvider(androidx.compose.ui.platform.LocalLayoutDirection provides
+                                if (Tr.rtl) androidx.compose.ui.unit.LayoutDirection.Rtl else androidx.compose.ui.unit.LayoutDirection.Ltr) {
+                            CleanSmartApp(vm)
+                        }
+                    }
                 }
             }
         }
@@ -50,5 +56,7 @@ class MainActivity : ComponentActivity() {
         super.onResume()
         vm.refreshStorage()
         Widget.rafraichir(this)
+        // nouvelle version ? (bandeau orange sur l'accueil, version complete et version d'essai)
+        vm.verifierMiseAJour(false)
     }
 }

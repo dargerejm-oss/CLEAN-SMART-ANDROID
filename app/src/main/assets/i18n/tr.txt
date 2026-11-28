@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 kopyalanamadı: aynı dosyayı yeniden başlat.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 «kontrol edilecek» Clean Smart çöp kutusuna gidecek: 7 gün boyunca geri alabilirsin.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nDikkat: silme işlemi hesabınla (Google…) eşitlenir.
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nDisk veya telefon dolu: yer aç (veya 2. adımda diski değiştir), sonra BU dosyayı yeniden başlat. Hiçbir şey iki kez kopyalanmaz.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nDosya bozuk veya eksik: Google e-postasından yeniden indir ve tekrar başlat. Kopyalanmış olanlar korunur.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nKopyalar önce yedekleme klasörüne .vcf dosyası olarak aktarılır.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nOnları içeren ZIP dosyasını (veya otomatik modu) yeniden başlat: tekrar kopyalanacaklar. Öncesinde %1 tarafında hiçbir şey silme.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nÖnce yedekleme klasörüne bir kopya yapılır.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Google'da e-postalar ve Google Fotoğraflar aynı 15 GB'ı paylaşır: e-postaları temizlemek fotoğrafların için de yer açar.
+ sur environ %1 Go	 / yaklaşık %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 kopya, seri çekim veya başarısız fotoğraf yedeklenmedi
+ · %1 à la corbeille	 · %1 çöp kutusuna
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · «kontrol edilecek» dosyalar Clean Smart çöp kutusunda (7 gün)
+ · va dans la corbeille Clean Smart	 · Clean Smart çöp kutusuna gider
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): fazla kopyalar, fazla seri çekimler, siyah veya beyaz fotoğraflar, bir aydan eski ekran görüntüleri.\n\nGaleri çöp kutusuna giderler (geri almak için 30 gün).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) yeri hemen açmak için KALICI olarak silinecek.\n\nGeri alınamazlar.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 atılacak
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: bültenler ve reklamlar (%2 gönderen), bildirimler, kopya e-postalar.
+%1 Go · prévois %2	%1 GB · %2 öngör
+%1 analysées	%1 incelendi
+%1 avec pièces jointes (dont %2 avec PDF)	%1 ekli (%2 tanesi PDF'li)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 başarıyla. Orijinalleri çöp kutusuna atarak %2 kazanırsın.
+%1 ce mois-ci. 	Bu ay %1.
+%1 copié(s) dans ton dossier de sauvegarde.	%1 yedekleme klasörüne kopyalandı.
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 gereksiz dosya: geçici, küçük resimler, boş klasörler, uygulama kalıntıları.
+%1 de plus de %2 mois 	%2 aydan eski %1
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	«Her zaman at» gönderenlerinden %1 çöp kutusuna taşındı (30 gün geri alınabilir).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 kopya çöp kutusuna gider. Her e-postanın ilk örneği korunur.
+%1 et %2 copiées et vérifiées.	%1 ve %2 kopyalandı ve doğrulandı.
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 ve %2 güvende. Silebilir ve sonrakini indirebilirsin.
+%1 fichier(s) sauvegardé(s)	%1 dosya yedeklendi
+%1 jetés	%1 atıldı
+%1 libres sur %2	%1 boş / %2
+%1 libérés sur le téléphone	Telefonda %1 açıldı
+%1 mails dans la boîte · %2 analysés	Kutuda %1 e-posta · %2 incelendi
+%1 min %2 s	%1 dk %2 sn
+%1 newsletters · %2 gros mails	%1 bülten · %2 büyük e-posta
+%1 newsletters, %2 gros mails (%3).	%1 bülten, %2 büyük e-posta (%3).
+%1 photos trouvées	%1 fotoğraf bulundu
+%1 photos · %2 vidéos analysées	%1 fotoğraf · %2 video incelendi
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 fotoğraf · %2 video · %3 kopya ve seri çekim ayrıldı
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 tüm fotoğraflarının bir kopyasını hazırlar. Tam olarak bu örnekteki gibi yap:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 silinecek: artık gerekmiyorlar veya kendiliğinden yeniden oluşurlar.
+%1 seront supprimés pour de bon.	%1 kalıcı olarak silinecek.
+%1 sur %2 choisis · %3	%1 / %2 seçildi · %3
+%1 sur %2 fichiers faits	%1 / %2 dosya tamam
+%1 sur %2 · %3	%1 / %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 Galeri çöp kutusuna gidecek (30 gün geri alınabilir).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 Galeri çöp kutusuna gider (30 gün geri alınabilir).
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: kopyalar, fazla seri çekimler, siyah veya beyaz fotoğraflar, bir aydan eski ekran görüntüleri. En iyileri korunur.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	Toplam %1 · %2. Kaldırmak veya önbelleğini temizlemek için bir uygulamaya dokun.
+%1 à jeter	%1 atılacak
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	Tek tek bakılacak %1. Atmak için sola, tutmak için sağa kaydır (favori olur ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	%1, %2, %3 kopyalandı · %4 ve %5 ayrıldı.
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1%2 yıldan eski e-postalar çöp kutusuna gider (önemliler hariç).
+(sans objet)	(konu yok)
+. %1 en double ou en rafale à trier : touche ici.	. Ayıklanacak %1 kopya veya seri çekim: buraya dokun.
+1 bouton	1 düğme
+1 mois	1 ay
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. Yedeklemeyi kapattım: Google Fotoğraflar uygulaması › sağ üstteki fotoğrafın › Fotoğraflar ayarları › Yedekleme › kapalı.
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. iPhone'da «iCloud Fotoğrafları»nı kapattım (Ayarlar › adın › iCloud › Fotoğraflar).
+12 mois	12 ay
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. Diski bir bilgisayarda açtım ve fotoğraflarımı yıl yıl görüyorum.
+3 mois	3 ay
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. Önerilen: 2. bir kopya yaptım (başka disk veya bilgisayar).
+4 étapes	4 adım
+6 mois	6 ay
+AFFICHAGE	GÖRÜNÜM
+AUTOMATIQUE	OTOMATİK
+AUTRE	DİĞER
+Adresse mail	E-posta adresi
+Adresse, serveur et mot de passe sont obligatoires.	Adres, sunucu ve parola zorunludur.
+Alerte retirée	Uyarı kaldırıldı
+Alertes et rapport du mois	Uyarılar ve aylık rapor
+Analyse de la boîte mail	Posta kutusu inceleniyor
+Analyse des 3 000 mails les plus récents de la boîte de réception.	Gelen kutusundaki en yeni 3.000 e-posta incelenir.
+Analyse des mails (%1 / %2)	E-postalar inceleniyor (%1 / %2)
+Analyse du téléphone	Telefon inceleniyor
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	«%1» kutunu incele: bültenler, büyük e-postalar, eski e-postalar. Önemliler her zaman korunur.
+Analyser ma boîte mail	Posta kutumu incele
+Analyser mon téléphone	Telefonumu incele
+Annuler	İptal
+Annuler, ne rien jeter	İptal, hiçbir şey atma
+Appeler	Ara
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple talebi kontrol eder ve genellikle 3-7 gün içinde e-posta gönderir. Dosyalar sonra privacy.apple.com'dan indirilir (telefondan oturum aç).
+Apple · Données et confidentialité	Apple · Veriler ve Gizlilik
+Appliquer « toujours jeter » maintenant	«Her zaman at»ı şimdi uygula
+Arrêt après le fichier en cours…	Geçerli dosyadan sonra durduruluyor…
+Arrêter	Durdur
+Arrêter le mode automatique ?	Otomatik mod durdurulsun mu?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Durduruldu. Kopyalanmış dosyalar güvende; diğerleri bir dahaki sefere, kopyasız.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	İpucu: Ayarlar › Uygulamalar'da bir uygulamaya dokun (Chrome, Facebook…) › Depolama › «Önbelleği temizle».
+Aucun contact en double	Kopya kişi yok
+Aucun dossier choisi	Klasör seçilmedi
+Aucun dossier de sauvegarde	Yedekleme klasörü yok
+Aucun fichier inutile.	Gereksiz dosya yok.
+Aucune boîte mail connectée.	Bağlı posta kutusu yok.
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	USB bellek veya disk algılanmadı. Tak (USB-C adaptör), sonra bu adımı yeniden aç.
+Aucune vidéo n'a pu être réduite davantage.	Hiçbir video daha fazla küçültülemedi.
+Autre	Diğer
+Autres fichiers d'installation (.apk)	Diğer kurulum dosyaları (.apk)
+Avant tout : analyser	Önce: incele
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	«Kullanım verilerine erişim» ile Clean Smart her uygulamanın gerçek boyutunu ve en son ne zaman açtığını görür. Hiçbir şey hiçbir yere gönderilmez.
+BOÎTE MAIL	POSTA KUTUSU
+Banque	Banka
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	Banka, resmi kurumlar, sağlık, faturalar ve PDF'li tüm e-postalar: yedeklendi, PDF'ler toplandı, bilgisayarda index.html arşivi.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	Banka, resmi kurumlar, sağlık, faturalar ve PDF'li tüm e-postalar: yedeklendi, PDF'ler toplandı, bilgisayarda index.html arşivi. Posta kutunda «Korunanlar»a konur.
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	Banka, vergi, sağlık, ev, aile (kişilerin): ayrı tutulur, asla atılmaz
+Batterie faible (%1 %)	Pil zayıf (%1 %)
+Bonjour	Merhaba
+Boutique Mode	Moda Mağazası
+Boîte mail en ordre !	Posta kutusu düzende!
+Boîte mail remplie à %1 % (%2 / %3)	Posta kutusu %1 % dolu (%2 / %3)
+Boîte protégée	Korunan kutu
+Boîte remplie à %1 % (%2 / %3). 	Kutu %1 % dolu (%2 / %3).
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	Şarj aletini tak: bir dosya 10-30 dakika sürebilir.\n\nTelefon kapanırsa hiçbir şey kaybolmaz: aynı dosyayı yeniden başlatman yeterli.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	İşlem sırasında şarj aletini tak: büyük bir dosya 10-30 dakika sürebilir. Ekran açık kalır.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	USB belleğini veya diskini telefona tak, sonra üzerinde bir klasör seç (veya oluştur).
+Brancher la clé ou le disque	USB belleği veya diski tak
+C'est fait : le prochain fichier sera entièrement recopié.	Tamam: sonraki dosya baştan tamamen kopyalanacak.
+C'est noté	Not edildi
+CONSEILLÉ	ÖNERİLEN
+CONTACT	İLETİŞİM
+CONTACTS	KİŞİLER
+Captures d'écran	Ekran görüntüleri
+Carte SD, clé USB, Drive… choisis où tu veux	SD kart, USB bellek, Drive… istediğin yeri seç
+Carte SD, clé USB, Google Drive…	SD kart, USB bellek, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	Bu dosya zaten kopyalandı ve doğrulandı. Tekrarlamak kopya oluşturmaz ama gereksizdir.\n\nMuhtemelen sonrakini (%1) istedin.
+Ce mois-ci	Bu ay
+Cette année	Bu yıl
+Changer de compte	Hesap değiştir
+Changer de dossier	Klasör değiştir
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	Her pazar güvenli gereksiz dosyalar ve spam kendiliğinden gider. Bir bildirim ne kadar yer açıldığını ve ayıklanacak fotoğraf olup olmadığını söyler.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	Seçilen her e-posta yedekleme klasörüne kaydedilir:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	Her video 720p olarak yeniden yapılır, çoğu zaman 3-5 kat daha hafif, ve Filmler / Clean Smart'a kaydedilir.
+Choisir le dossier sur le disque	Diskteki klasörü seç
+Choisir un dossier	Bir klasör seç
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	Önce USB bellekteki veya diskteki klasörü seç (2. adım).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	Önce USB bellekteki veya diskteki klasörü seç («Disk» adımı).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	Önce bir klasör seç: SD kart, USB bellek veya Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	Önce bir yedekleme klasörü seç (Seçenekler).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	Önce bir yedekleme klasörü seç (SD kart, USB bellek, Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	Önce bir yedekleme klasörü seç ve yedek al.
+Choisis d'abord un dossier de sauvegarde.	Önce bir yedekleme klasörü seç.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	E-postalarını seç: ekleriyle birlikte saklanır, PDF'ler ayrı bir klasörde
+Choisis une carte SD, une clé USB ou Google Drive	Bir SD kart, USB bellek veya Google Drive seç
+Choix des plus belles photos…	En güzel fotoğraflar seçiliyor…
+Clean Smart : copie automatique	Clean Smart: otomatik kopya
+Clean Smart attend les fichiers dans Download…	Clean Smart, Download'daki dosyaları bekliyor…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart son 3.000 e-postayı okur (hiçbir şey silinmez).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart tüm fotoğraflarına bakar (hiçbir şey silinmez).
+Clean Smart trouve en un clic :	Clean Smart tek dokunuşla bulur:
+Clé USB (démonstration)	USB bellek (tanıtım)
+Clé USB ou disque dur, avec un adaptateur USB-C	USB bellek veya harici disk, USB-C adaptörle
+Colis et livraisons	Kargolar ve teslimatlar
+Combien de place faut-il ?	Ne kadar yer gerekiyor?
+Comme le téléphone	Telefondaki gibi
+Commencer	Başla
+Compresser	Sıkıştır
+Compresser %1 ?	%1 sıkıştırılsın mı?
+Compression des vidéos	Videolar sıkıştırılıyor
+Compris	Anladım
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	Posta kutunu bağla (Gmail, Outlook, Yahoo, Orange, Free…): ayıklanacak bültenler, büyük ve eski e-postalar; önemliler her zaman korunur.
+Connecter	Bağlan
+Connecter ma boîte mail	Posta kutumu bağla
+Connexion au serveur	Sunucuya bağlanılıyor
+Connexion impossible : 	Bağlanılamıyor:
+Connexion à la messagerie	E-posta sağlayıcısına bağlanılıyor
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	Önerilen: 2. bir kopya yaptım (başka disk veya bilgisayar).
+Contacts en double	Kopya kişiler
+Continuer quand même	Yine de devam et
+Copie automatique	Otomatik kopya
+Copier les fichiers un par un	Dosyaları tek tek kopyala
+Copies identiques — l'original est gardé	Aynı kopyalar — orijinal korunur
+Corbeille	Çöp kutusu
+Corbeille : %1	Çöp kutusu: %1
+Corbeille Clean Smart	Clean Smart çöp kutusu
+Corbeille de la messagerie	E-posta çöp kutusu
+Correct, mais peut mieux faire	İdare eder, daha iyi olabilir
+Créer une exportation	Dışa aktarma oluştur
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Google Fotoğraflar'da: bir fotoğrafa uzun bas, tüm günleri işaretle, sonra «Sil». Google çöp kutusu her şeyi 60 gün saklar.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Google Takeout'ta 2 GB'lık dosyalar seç: onları tek tek işleriz, telefonun asla çok yere ihtiyacı olmaz.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Apple talebinde 1 veya 2 GB'lık dosyalar seç: onları tek tek işleriz, telefonun asla çok yere ihtiyacı olmaz.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Google e-postasında «İndir» düğmelerini say: dosya sayısı budur.
+Demander la copie à %1	%1'dan kopyayı iste
+Demander une copie de tes données	Verilerinin bir kopyasını iste
+Demandée · attends le mail de %1	İstendi · %1 e-postasını bekle
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Android 11'den beri hiçbir temizleme uygulaması diğer uygulamaların önbelleğini veya sistem dosyalarını temizleyemez. Bunu Android kendisi yapar: bu düğme «Yer aç» ekranını açar.
+Depuis l'installation	Kurulumdan beri
+Dernière vérification	Son kontrol
+Des applis téléchargées mais pas installées. À vérifier.	İndirilmiş ama kurulmamış uygulamalar. Kontrol edilecek.
+Disque	Disk
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	Disk tanınmadı: USB-C (OTG) adaptör kullan. exFAT biçimli bir bellek her yerde çalışır (FAT32 4 GB üzeri dosyaları reddeder).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	Disk dolu: daha büyük bir disk tak ve «Disk» adımında seç. Kaldığımız yerden kopyasız devam ederiz.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	İndirilenler'de 6 aydır dokunulmamış belgeler. Kontrol edilecek.
+Dossier Corbeille introuvable sur ce compte.	Bu hesapta Çöp kutusu klasörü bulunamadı.
+Dossier Corbeille introuvable.	Çöp kutusu klasörü bulunamadı.
+Dossier Spam introuvable sur ce compte.	Bu hesapta Spam klasörü bulunamadı.
+Dossier de sauvegarde	Yedekleme klasörü
+Dossier de sauvegarde introuvable.	Yedekleme klasörü bulunamadı.
+Dossiers cache	Önbellek klasörleri
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	Artık telefonda olmayan uygulamalardan kalan klasörler. Kontrol edilecek.
+Dossiers vides	Boş klasörler
+Dossiers vides…	Boş klasörler…
+Doublons	Kopyalar
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	Fazla kopyalar ve seri çekimler (en iyi fotoğraf korunur), siyah veya beyaz fotoğraflar, eski ekran görüntüleri. Tutmak için bir fotoğrafa dokun. Hepsi Galeri çöp kutusuna gider (30 gün).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	Kopyalar, fazla seri çekimler, siyah veya beyaz fotoğraflar, eski ekran görüntüleri.
+Doublons, rafales, floues	Kopyalar, seri çekimler, bulanıklar
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	Tutmak istediğin e-postaların işaretini kaldır. Bankandan, vergiden, sağlıktan gelenler ve «her zaman tut» gönderenleri bu listede asla yer almaz. Hepsi e-posta çöp kutuna gider (geri alınabilir).
+Démonstration…	Tanıtım…
+Déplacement vers la corbeille…	Çöp kutusuna taşınıyor…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	Varsayılan olarak kapalı. Açarsan, fotoğraflar (ve .vcf olarak kişiler) güvenlik için her temizlikten önce klasöre kopyalanır.
+Elles sont déjà toutes en favori 👍	Hepsi zaten favori 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	Tanıtım modunda hiçbir dosya işlenmez. Gerçekten yapmak için tanıtımdan çık (Seçenekler).
+En pleine forme	Formunda
+Envoyer %1	%1 gönder
+Envoyer le PDF souvenir	Anı PDF'ini gönder
+Envoyer le lien par e-mail · Exporter une fois	İndirme bağlantısını e-postayla gönder · Bir kez dışa aktar
+Erreur inattendue	Beklenmeyen hata
+Espace libéré	Açılan yer
+Espace libéré depuis le début : %1. Une petite analyse ?	Baştan beri açılan yer: %1. Küçük bir inceleme?
+Espace à récupérer	Kazanılacak yer
+Et tes mails	Ve e-postaların
+Factures et papiers	Faturalar ve belgeler
+Faire le ménage sûr ?	Güvenli temizlik yapılsın mı?
+Fait ✔	Tamam ✔
+Famille	Aile
+Fermer	Kapat
+Fichier %1	Dosya %1
+Fichier %1 déjà fait	Dosya %1 zaten yapıldı
+Fichier illisible	Okunamayan dosya
+Fichiers d'installation déjà installés	Zaten kurulu uygulamaların kurulum dosyaları
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	Uygulamaların telefon deposundaki çalışma dosyaları. Gerekirse yeniden oluşurlar.
+Fichiers inutiles	Gereksiz dosyalar
+Fichiers mis de côté, vidée toute seule après 7 jours	Kenara ayrılan dosyalar, 7 gün sonra kendiliğinden boşalır
+Fichiers temporaires	Geçici dosyalar
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	Geçici dosyalar, küçük resimler, boş klasörler, uygulama kalıntıları
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	Geçici dosyalar, küçük resimler, boş klasörler, uygulama kalıntıları. Fotoğraflara ve müziğe asla dokunulmaz.
+Floue	Bulanık
+Floues, trop sombres ou trop claires — vérifie avant de cocher	Bulanık, çok karanlık veya çok aydınlık — işaretlemeden önce kontrol et
+GARDÉE	TUTULDU
+Garder sur le téléphone les photos des derniers…	Telefonda son … içindeki fotoğrafları tut
+Gardés	Tutulanlar
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail bir UYGULAMA ŞİFRESİ ister (16 harf):\n1. Google hesabında 2 Adımlı Doğrulama'yı aç.\n2. myaccount.google.com/apppasswords adresini aç\n3. «Clean Smart» adlı bir şifre oluştur ve buraya yapıştır.
+Google Photos	Google Fotoğraflar
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	Google hazır olduğunda e-posta gönderir: birkaç saat veya birkaç gün içinde. Bu arada uygulamayı kapatabilirsin.
+Gros	Büyük
+Gros mails (+ 5 Mo)	Büyük e-postalar (5 MB+)
+Grosses vidéos	Büyük videolar
+Groupe %1 · %2 photos	Grup %1 · %2 fotoğraf
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	Giriş reddedildi. Gmail, Yahoo ve iCloud normal şifren değil, bir UYGULAMA ŞİFRESİ ister.
+Il a besoin d'un bon ménage	İyi bir temizliğe ihtiyacı var
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	Yalnızca %1 kaldı. Tek dokunuşla yer açmak için Clean Smart'ı aç.
+Ils ne contiennent rien.	Hiçbir şey içermiyorlar.
+Ils prennent encore de la place pendant 30 jours	30 gün boyunca hâlâ yer kaplarlar
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	E-postanın «Korunanlar» klasörüne konurlar. Her gece yeniden.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	Geri alınamıyor: dosyalar kalıcı olarak silinmiş olabilir.
+Impossible de créer le dossier %1	%1 klasörü oluşturulamıyor
+Impossible de protéger ces photos	Bu fotoğraflar korunamıyor
+Impossible de vider la corbeille	Çöp kutusu boşaltılamıyor
+Impôts	Vergi
+Impôts - Administration	Vergi - Resmi kurumlar
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	E-posta sağlayıcının IMAP sunucusunu gir (bağlantı noktası 993, SSL).
+J'ai demandé la copie	Kopyayı istedim
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	Diski bir bilgisayarda açtım ve fotoğraflarımı yıl yıl görüyorum.
+J'ai traité tous les fichiers	Tüm dosyaları işledim
+Jamais jetés, rangés dans « Protégés »	Asla atılmaz, «Korunanlar»a konur
+Je libère la boîte	Kutuyu boşaltıyorum
+Je libère la place	Yer açıyorum
+Je mets l'important à l'abri	Önemlileri güvene alıyorum
+Je mets à l'abri les bonnes	İyileri güvene alıyorum
+Je trie par expéditeur	Gönderene göre ayıklıyorum
+Je vérifie le douteux	Şüphelileri kontrol ediyorum
+Jeter %1 ?	%1 atılsın mı?
+Jeter ces mails ?	Bu e-postalar atılsın mı?
+Jeter les copies ?	Kopyalar atılsın mı?
+Jeter les gros mails ?	Büyük e-postalar atılsın mı?
+Jeter les newsletters ?	Bültenler atılsın mı?
+Jeter les originaux ?	Orijinaller atılsın mı?
+Jeter les vieux mails ?	Eski e-postalar atılsın mı?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	Günlükler, geçici yedekler, yarım kalan indirmeler. Artık gerekmiyor.
+L'adresse et le mot de passe seront effacés du téléphone.	Adres ve şifre telefondan silinecek.
+L'important est à l'abri, le reste est parti	Önemliler güvende, gerisi gitti
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	Orijinale dokunulmaz: ardından onu çöp kutusuna atmayı önereceğim.\n\nBirkaç dakika sürebilir.
+LA NUIT	GECE
+LIBÉRER LA PLACE	YER AÇ
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	Diskteki kopya silindi: Clean Smart her şeyi baştan yeniden kopyalıyor.
+La corbeille est vide.	Çöp kutusu boş.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	E-postaların yeri, e-posta çöp kutun boşaltılınca açılır (genellikle 30 gün içinde).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	Yedek alınamadı. Klasörü kontrol etmek için Clean Smart'ı aç.
+Langue	Dil
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	Rehberli temizlik her şeyi doğru sırayla yapar. Yeşil düğme her zaman bir sonraki adımdır.
+Le bilan, et comment libérer ton compte %1	Özet ve %1 hesabını nasıl boşaltacağın
+Le contact d'origine est gardé.	Orijinal kişi korunur.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	Disk (veya telefon) dolu: kopyalama düzgünce durdu.\n\nDaha büyük bir disk tak, 2. adımda seç, sonra otomatik modu yeniden başlat: kopyasız devam ederiz.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	Diskte yeterli yer yok: %1 kaldı, bu dosya için yaklaşık %2 gerekiyor.\n\n• Diskte yer aç, veya\n• daha büyük bir disk tak ve «Disk» adımında seç (kaldığımız yerden devam ederiz).\n\nHiçbir şeye dokunulmadı.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	Diske erişilemiyor.\n\n• Düzgün takılı olduğunu kontrol et (USB-C adaptör).\n• «Disk» adımında klasörü yeniden seç.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	Yedekleme klasörüne erişilemiyor. Seçmek için Clean Smart > Seçenekler'i aç.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	Yedekleme klasörüne artık erişilemiyor. Yeniden seç.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	«%1» klasörü diskte bulunamadı. Diskin takılı olduğunu kontrol et (2. adım).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Önce geçerli dosya biter. Kopyalanmış dosyalar güvende; diğerleri bir dahaki sefere, kopyasız.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Google e-postasındaki bağlantı yaklaşık bir hafta sonra sona erer: öyleyse yeni bir dışa aktarma iste (hiçbir şey kaybolmaz, kopyasız devam ederiz).
+Le mois dernier	Geçen ay
+Le ménage sûr	Güvenli temizlik
+Le refaire quand même	Yine de tekrarla
+Le téléphone	Telefon
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	Telefon neredeyse dolu (çalışmak için en az 300 MB boş yer gerekir).\n\n• Galeri çöp kutusunu boşalt.\n• İşlenmiş ZIP dosyalarını sil (İndirilenler).\n• Clean Smart'ın rehberli temizliğini yap.\n\nHiçbir şeye dokunulmadı.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	Telefon kapandı veya disk çıkarıldı mı? Aynı ZIP'i yeniden başlat: Clean Smart hiçbir şey kaybetmeden veya çiftlemeden devam eder.
+Lecture de la galerie	Galeri okunuyor
+Lecture des dates des photos…	Fotoğraf tarihleri okunuyor…
+Lecture des vidéos	Videolar okunuyor
+Lecture impossible : %1	Okunamıyor: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	Zaten kurulu uygulamaların .apk dosyaları: artık gerekmiyor.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	E-posta çöp kutundaki son 200 e-posta. Gelen kutusuna geri koymak istediklerini işaretle.
+Les 30 photos et vidéos qui prennent le plus de place	En çok yer kaplayan 30 fotoğraf ve video
+Les autres cases : inutile	Diğer kutucuklar: gerek yok
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Apple'ın dosyaları privacy.apple.com'da yaklaşık 2 hafta durur: süre geçtiyse yeni bir talep yap (hiçbir şey kaybolmaz, kopyasız devam ederiz).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	Çöp kutusuna atılmış dosyalar Galeri'den geri alınabilir.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	%1 yıldan eski e-postalar e-posta çöp kutuna gider. Önemliler korunur.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	2 yıldan eski e-postalar e-posta çöp kutuna gider.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	5 MB'tan büyük e-postalar e-posta çöp kutuna gider.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	Bültenler, reklamlar, bildirimler ve kopya e-postalar e-posta çöp kutuna gider (tüm gelen kutusu).\n\nÖnemli e-postalara asla dokunulmaz.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	Önce fotoğraflar (ayıkla, en iyisini tut, yedekle, yer aç), sonra telefonun gereksiz dosyaları, sonra e-postalar.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	Yedeklenmiş %1 aydan eski fotoğraflar telefondan çıkar (çöp kutusu, 30 gün).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	Favori fotoğraflar (veya 🛡️ düğmesiyle korunanlar) asla önerilmez
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	Biraz bulanık fotoğraflar, WhatsApp, yeni ekran görüntüleri: sen karar verirsin.
+Les photos, vidéos et musiques ne sont jamais touchées.	Fotoğraflara, videolara ve müziğe asla dokunulmaz.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	Eskiler yalnızca zaten yedeğindeyse çöp kutusuna önerilir.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	Ayın veya yılın en güzel fotoğrafları, sevdiğin birine göndermek için
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	En büyükleri ve artık açmadıkların: tek hareketle kaldır
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	Spam e-posta çöp kutuna gider. Spam değilse e-postanın işaretini kaldır.
+Libérer	Yer aç
+Libérer %1 ?	%1 açılsın mı?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	%1 boşaltmak isteğe bağlı. %2 hiçbir uygulamanın fotoğraflarını silmesine izin vermez: emin olduğunda bunu sen yaparsın.
+Libérer la boîte	Kutuyu boşalt
+Libérer la boîte mail	Posta kutusu boşaltılıyor
+Libérer la boîte mail ?	Posta kutusu boşaltılsın mı?
+Libérer la place	Yer aç
+Libérer la place, PDF souvenir…	Yer aç, anı PDF'i…
+Liste des photos sur le disque…	Diskteki fotoğraflar listeleniyor…
+MAINTENANT	ŞİMDİ
+Mail (facultatif, pour tes mails)	Posta (isteğe bağlı, e-postaların için)
+Mails	E-postalar
+Mails Gmail : %1	Gmail e-postaları: %1
+Mails avec pièces jointes	Ekli e-postalar
+Mails de plus de 2 ans	2 yıldan eski e-postalar
+Mails en double	Kopya e-postalar
+Mails en double…	Kopya e-postalar…
+Maison	Ev
+Me prévenir	Bana haber ver
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Clean Smart'ı denediğin için teşekkürler! Telefonunu temizlemeye devam etmek için tam sürümü kur.
+Mes applis	Uygulamalarım
+Mes plus gros fichiers	En büyük dosyalarım
+Mes règles	Kurallarım
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	Yedeklenmiş %1 aydan eski fotoğrafları çöp kutusuna atar
+Mettre à l'abri	Güvene al
+Mettre à l'abri l'important	Önemliler güvene alınıyor
+Miniatures	Küçük resimler
+Mise à jour	Güncelleme
+Mise à la corbeille…	Çöp kutusuna taşınıyor…
+Mode d'emploi	Kullanım kılavuzu
+Mode d'emploi introuvable.	Kullanım kılavuzu bulunamadı.
+Mode démonstration terminé	Tanıtım modu bitti
+Modifier ▼	Değiştir ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	Uygulamayı sahte fotoğraf, e-posta ve kişilerle gösterir. Telefonda hiçbir şeye dokunulmaz: Clean Smart'ı tanıtmak için ideal.
+Mot de passe (vide = garder l'actuel)	Şifre (boş = mevcut şifreyi koru)
+Mot de passe d'application	Uygulama şifresi
+Médias WhatsApp	WhatsApp medyası
+Ménage complet	Tam temizlik
+Ménage guidé	Rehberli temizlik
+Ménage guidé des mails	Rehberli e-posta temizliği
+Ménage sûr de la boîte mail	Güvenli posta kutusu temizliği
+Ménage terminé !	Temizlik bitti!
+NOUVEAU	YENİ
+Nettoyage de la boîte mail	Posta kutusu temizleniyor
+Nettoyage des fichiers inutiles	Gereksiz dosyalar temizleniyor
+Nettoyer	Temizle
+Nettoyer %1 ?	%1 temizlensin mi?
+Nettoyer le téléphone	Telefonu temizle
+Nettoyer les fichiers inutiles ?	Gereksiz dosyalar temizlensin mi?
+Newsletters et notifications…	Bültenler ve bildirimler…
+Newsletters et pubs	Bültenler ve reklamlar
+Newsletters, pubs, notifications et mails en double.	Bültenler, reklamlar, bildirimler ve kopya e-postalar.
+Nombre de fichiers dans le mail	E-postadaki dosya sayısı
+Normale	Normal
+Nouvelle version %1 disponible	Yeni sürüm %1 hazır
+Oublier	Unut
+Oublier ce compte ?	Bu hesap unutulsun mu?
+Oui, c'est fini	Evet, bitti
+Ouverte aujourd'hui	Bugün açıldı
+Ouverte il y a %1	%1 önce açıldı
+Ouverture de %1…	%1 açılıyor…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Ne yapacağını görmek için Clean Smart'ı aç. Hiçbir şey kaybolmaz.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Google sayfanı aç ve Google Fotoğraflar'ın kullandığı yere bak. Buraya yaz (GB olarak).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	«Büyük videolar»ı aç, işaretle, sonra «Sıkıştır»
+Ouvrir	Aç
+Ouvrir Google Photos	Google Fotoğraflar'ı aç
+Ouvrir Google Takeout	Google Takeout'u aç
+Ouvrir iCloud Photos	iCloud Fotoğrafları'nı aç
+Ouvrir la page du mot de passe d'application	Uygulama şifresi sayfasını aç
+Ouvrir privacy.apple.com	privacy.apple.com'u aç
+Ouvrir « Libérer de l'espace » d'Android	Android'in «Yer aç» ekranını aç
+PDF souvenir	Anı PDF'i
+PHOTOS ET VIDÉOS	FOTOĞRAFLAR VE VİDEOLAR
+PROTECTION	KORUMA
+Pas de photos pour cette période.	Bu dönem için fotoğraf yok.
+Pas ouverte depuis plus d'un an	Bir yıldan fazladır açılmadı
+Passer	Atla
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	Gösterim için fotoğrafların küçük kopyaları. Kendiliğinden yeniden oluşurlar.
+Photos	Fotoğraflar
+Photos : %1 · vidéos : %2 · doublons écartés : %3	Fotoğraflar: %1 · videolar: %2 · ayrılan kopyalar: %3
+Photos du week-end	Hafta sonu fotoğrafları
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	Kopya fotoğraflar, seri çekimler, başarısız kareler, büyük videolar, gereksiz e-postalar… hepsi yer kaplar.
+Photos et vidéos reçues ou envoyées	Alınan veya gönderilen fotoğraf ve videolar
+Photos floues ou ratées	Bulanık veya başarısız fotoğraflar
+Photos iCloud	iCloud Fotoğrafları
+Photos similaires	Benzer fotoğraflar
+Photos, téléphone et mails, étape par étape	Fotoğraflar, telefon ve e-postalar, adım adım
+Place prise : %1	Kapladığı yer: %1
+Plus d'outils	Daha fazla araç
+Plus de 100 Mo chacune	Her biri 100 MB'tan büyük
+Pour gagner des points : %1.	Puan kazanmak için: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Clean Smart'ın tam sürümü için veya her türlü sorun için bana yaz:
+Pour obtenir la version complète, écris-moi :	Tam sürüm için bana yaz:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	Gereksiz dosyaları bulmak için Clean Smart'ın telefon deposunu görebilmesi gerekir: «Tüm dosyalara erişim»e izin ver. Hiçbir şey hiçbir yere gönderilmez.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	Başka bir hesap veya disk için. Diske kopyalanmış dosyalara dokunulmaz.
+Protéger mes favoris	Favorilerimi koru
+Prudente	Temkinli
+Prudente : moins de photos proposées. Stricte : davantage.	Temkinli: daha az fotoğraf önerilir. Katı: daha fazla.
+Préparation	Hazırlık
+Préparation…	Hazırlık…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	Telefonda neredeyse yer kalmazsa (1 GB'tan az) beni uyar, ve ayın 1'inde küçük bir özet.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	USB bellekte veya diskte en az %1 öngör (10 % pay).
+QUI T'ÉCRIT LE PLUS	SANA EN ÇOK KİM YAZIYOR
+Quand le mail de %1 est arrivé	%1 e-postası geldiğinde
+Quitter	Çık
+Quitter Google Photos	Google Fotoğraflar'dan ayrıl
+Quitter iCloud Photos	iCloud Fotoğrafları'ndan ayrıl
+RECHERCHE DES PHOTOS RATÉES	BAŞARISIZ FOTOĞRAF ARAMA
+Rafales : on garde la meilleure…	Seri çekimler: en iyisini tutuyoruz…
+Rafales — la plus nette est gardée	Seri çekimler — en net olan korunur
+Rangement : %1	Yerleştiriliyor: %1
+Recherche des doublons	Kopyalar aranıyor
+Recherche des fichiers inutiles…	Gereksiz dosyalar aranıyor…
+Recherche des mails	E-postalar aranıyor
+Recherche des mails avec PDF	PDF'li e-postalar aranıyor
+Recherche des mails importants (%1 / %2)	Önemli e-postalar aranıyor (%1 / %2)
+Recherche des photos floues	Bulanık fotoğraflar aranıyor
+Recherche des photos ratées	Başarısız fotoğraflar aranıyor
+Recherche des photos similaires	Benzer fotoğraflar aranıyor
+Recherche des pièces jointes (%1 / %2)	Ekler aranıyor (%1 / %2)
+Rechercher une mise à jour	Güncelleme ara
+Recommencer	Baştan başla
+Recommencer avec un autre compte	Başka bir hesapla baştan başla
+Recommencer depuis le début ?	En baştan başlansın mı?
+Regarder la taille de %1	%1 boyutuna bak
+Relance l'analyse après un changement.	Bir değişiklikten sonra yeniden incele.
+Remettre des mails	E-postaları geri al
+Remettre le compteur à zéro	Sayacı sıfırla
+Remettre les fichiers	Dosyalar geri konuyor
+Restes d'applis désinstallées	Kaldırılmış uygulama kalıntıları
+Restes d'applis désinstallées…	Kaldırılmış uygulama kalıntıları…
+Reçus plusieurs fois à quelques secondes d'écart : %1	Saniyeler arayla birkaç kez alındı: %1
+Rien	Hiçbiri
+Rien n'a été supprimé.	Hiçbir şey silinmedi.
+Rien n'est perdu	Hiçbir şey kaybolmaz
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	İznin olmadan hiçbir şey silinmez: her şey çöp kutusundan geçer.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	Açılacak yer yok: hiçbir eski fotoğraf henüz yedekte değil. Önce «Tüm fotoğraflarımı yedekle»yi çalıştır.
+RÉSULTAT	SONUÇ
+Règle retirée	Kural kaldırıldı
+Récupère des mails mis à la corbeille de ta messagerie	E-posta çöp kutuna atılan e-postaları geri al
+Récupérer mes photos iCloud (ancien iPhone)	iCloud fotoğraflarımı al (eski iPhone)
+Réduire mes vidéos	Videolarımı küçült
+Réglages avancés	Gelişmiş ayarlar
+Réglages de stockage Android	Android depolama ayarları
+SAUVEGARDE	YEDEKLEME
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	Fotoğraflara erişim olmadan Clean Smart hiçbir şeyi inceleyemez.
+Santé	Sağlık
+Sauvegarde %1 / %2	Yedek %1 / %2
+Sauvegarde automatique chaque nuit	Her gece otomatik yedek
+Sauvegarde avant suppression	Silmeden önce yedek
+Sauvegarde de mes bonnes photos	İyi fotoğraflarım yedekleniyor
+Sauvegarde des mails	E-postalar yedekleniyor
+Sauvegarde des mails importants	Önemli e-postalar yedekleniyor
+Sauvegarde du mail %1 / %2	E-posta kaydediliyor %1 / %2
+Sauvegarder avant de supprimer	Silmeden önce yedekle
+Sauvegarder des mails	E-postaları kaydet
+Sauvegarder mes bonnes photos	İyi fotoğraflarımı yedekle
+Se connecter avec ton identifiant Apple	Apple Kimliğinle oturum aç
+Serveur IMAP	IMAP sunucusu
+Serveur introuvable : vérifie internet et le nom du serveur.	Sunucu bulunamadı: interneti ve sunucu adını kontrol et.
+Ses mails partent à la corbeille chaque nuit, tout seuls	E-postaları her gece kendiliğinden çöp kutusuna gider
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	Yalnızca iyi fotoğraflar: asla kopyalar, fazla seri çekimler veya başarısızlar değil. Favoriler ayrıca «Mes meilleures» (En iyilerim) klasörüne gider.
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	Yalnızca iyi fotoğraflar yedeklenir; USB bellek, disk veya Google Drive'a. Google Fotoğraflar bile geri alınabilir.
+Seules les nouvelles photos sont copiées à chaque fois.	Her seferinde yalnızca yeni fotoğraflar kopyalanır.
+Seuls les 20 premiers fichiers sont envoyés.	Yalnızca ilk 20 dosya gönderilir.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	Bağlantı reddedilirse, Microsoft hesabının güvenlik bölümünde bir uygulama şifresi oluştur (2 adımlı doğrulama gerekir).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	Yoksa iPhone fotoğrafları yeniden iCloud'a gönderir ve iCloud'da silmek onları iPhone'dan da silebilir.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	Yoksa telefon fotoğrafları yeniden Google'a gönderir ve Google'da silmek onları bu telefondan da silebilir.
+Soldes d'hiver	Kış indirimleri
+Souvent inutiles après coup	Sonradan çoğu zaman gereksiz
+Stockage du téléphone	Telefon deposu
+Stricte	Katı
+Suivant	İleri
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	Yer açmak için bu dosyayı İndirilenler'den kendin sil.
+Supprimer	Sil
+Supprimer %1 ?	%1 silinsin mi?
+Supprimer ce fichier du téléphone ?	Bu dosya telefondan silinsin mi?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	Her dosyayı kopyalanıp doğrulandıktan sonra telefondan sil (önerilen: yer açık kalır)
+Supprimer les doublons	Kopyaları sil
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Gmail'de gelen kutusunda kalırlar ve «Korunanlar» etiketi alırlar. Her gece yeniden.
+Sur Google Takeout, en 1 minute	Google Takeout'ta, 1 dakikada
+Sur account.apple.com → Mots de passe pour applications → en créer un.	account.apple.com → Uygulamaya özel parolalar → bir tane oluştur.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	iPhone'da: Ayarlar › adın › iCloud: «Fotoğraflar»ın kullandığı yer görünür. Ya da icloud.com'a bak. Buraya yaz (GB olarak).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	iPhone'da veya icloud.com/photos'ta: fotoğrafları seç, sonra «Sil». «Son Silinenler» albümü onları 30 gün saklar.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	Açılan sayfada: Depolama › «Önbelleği temizle». Android bunu ister, Clean Smart senin yerine yapamaz.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	Telefonda 2-3 GB boş yer yeter: bir seferde tek dosya. Şu an boş: %1.
+Sur privacy.apple.com, en 2 minutes	privacy.apple.com'da, 2 dakikada
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	privacy.apple.com'da dosyaların adı «iCloud Photos Part 1 of 12»: son sayı (burada 12) dosya sayısıdır. Clean Smart bunu kendisi de okur.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	Hesap güvenliği → Uygulama şifresi oluştur, sonra buraya yapıştır.
+Sécurité, photos ratées, démonstration…	Güvenlik, başarısız fotoğraflar, tanıtım…
+Sévérité	Katılık
+TERMINÉ	BİTTİ
+Ta messagerie	E-posta sağlayıcın
+Ta période d'essai de 30 jours est terminée.	30 günlük deneme süren bitti.
+Taille de %1 (Go)	%1 boyutu (GB)
+Taille du texte	Yazı boyutu
+Taille maximale des fichiers : 1 Go ou 2 Go	En büyük dosya boyutu: 1 GB veya 2 GB
+Temps passé	Geçen süre
+Temps restant	Kalan süre
+Terminer la demande	Talebi tamamla
+Terminé	Bitti
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	iPhone fotoğrafların USB bellekte veya diskte, yıla göre, kopyasız
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	Son 2 ayın fotoğrafları henüz diskte değil. Google Takeout'tan yeni bir kopya iste, otomatik mod yalnızca yeni fotoğrafları ekler, kopyasız.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	Son 2 ayın fotoğrafları henüz diskte değil. Apple'dan yeni bir kopya iste: Clean Smart yalnızca yeni fotoğrafları ekler, kopyasız.
+Tes photos à l'abri	Fotoğrafların güvende
+Tes réglages et ta boîte mail seront conservés.	Ayarların ve posta kutun korunacak.
+Ton téléphone est plein ?	Telefonun dolu mu?
+Ton téléphone est propre et tes photos sont à l'abri	Telefonun temiz, fotoğrafların güvende
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	Telefonun ve posta kutun temiz, fotoğrafların güvende
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	İndirmek için buraya dokun, sonra kurmak için dosyayı aç
+Touche ici pour la version complète ou une question	Tam sürüm veya bir soru için buraya dokun
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Google e-postasındaki «İndir» bağlantılarına dokunman yeterli. Clean Smart her dosyayı Download'a ulaşır ulaşmaz diske kopyalar, diğerleri inerken bile.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	Bir gönderene dokun: her zaman at, her zaman tut, bana haber ver, abonelikten çık.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	Seçmek için «Sana en çok kim yazıyor» bölümünde bir gönderene dokun
+Touche une image pour la cocher · appui long pour la voir en grand	İşaretlemek için bir resme dokun · büyük görmek için uzun bas
+Toucher pour analyser	İncelemek için dokun
+Toucher pour voir	Görmek için dokun
+Toujours garder	Her zaman tut
+Toujours jeter	Her zaman at
+Tous les fichiers sont traités ?	Tüm dosyalar işlendi mi?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	%1 gönderenin tüm e-postaları (en az %2 e-posta) e-posta çöp kutuna gider.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	%1 bülten gönderenin tüm e-postaları e-posta çöp kutuna gider (yalnızca incelenenler değil, tüm gelen kutusu).\n\nÇöp kutusundan geri alabilirsin.
+Tout cocher	Tümünü işaretle
+Tout décocher	Tüm işaretleri kaldır
+Tout désélectionner	Seçimi kaldır
+Tout mettre à la corbeille	Hepsini çöp kutusuna at
+Tout nettoyer	Hepsini temizle
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	Her şey çöp kutusundan geçer: geri almak için 30 gün. Ve «Hata yaptım» tek dokunuşla geri alır.
+Tout recommencer	Her şeye baştan başla
+Tout recommencer ?	Her şeye baştan başlansın mı?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	Tüm içeriği diske kopyalandı ve doğrulandı. Silmek sonraki için yer açar.\n\nFotoğrafların Google Fotoğraflar'da da kalır.
+Tout va bien, continue comme ça !	Her şey yolunda, böyle devam!
+Tout était déjà sauvegardé 👍	Her şey zaten yedeklenmişti 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	Tüm fotoğrafların USB bellekte veya diskte, yıla göre, kopyasız
+Tri avant la sauvegarde	Yedeklemeden önce ayıklama
+Tri des expéditeurs	Gönderenler ayıklanıyor
+Tri rapide	Hızlı ayıklama
+Tri terminé !	Ayıklama bitti!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	Önce ayıkla, en iyisini tut, yalnızca iyi fotoğrafları yedekle, yer aç, sonra e-postaları temizle.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	Önce ayıkla, en iyisini tut, yalnızca iyi fotoğrafları yedekle, sonra yer aç.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	Önce ayıkla, önemlileri güvene al, sonra kutuyu boşalt. Banka, resmi kurum veya sağlık e-postaları asla atılmaz.
+Trier en glissant	Kaydırarak ayıkla
+Trier les expéditeurs	Gönderenleri ayıkla
+Trier, garder, sauvegarder, libérer	Ayıkla, tut, yedekle, yer aç
+Trier, mettre l'important à l'abri, vider la boîte	Ayıkla, önemlileri güvene al, kutuyu boşalt
+Trier, protéger	Ayıkla, koru
+Trop claire	Çok aydınlık
+Trop petite	Çok küçük
+Trop sombre	Çok karanlık
+Très gros	Çok büyük
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	Diskteki kopyanı sildin ve artık hiçbir şey kopyalanmıyor mu? Ekranın altındaki «Her şeye baştan başla (kopyamı sildim)»e dokun, sonra ZIP dosyalarını yeniden başlat.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	iPhone'un mu vardı? iCloud fotoğrafların USB bellekte veya diskte
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	Bağlantılara dokunmak için uygulamadan çıkabilirsin: kopyalama devam eder («Otomatik kopya» bildirimi).
+Type : .zip   ·   Taille : 2 Go	Tür: .zip   ·   Boyut: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	Bir seferde yalnızca TEK ZIP indir, Wi-Fi'de. İşle, sil, sonra sonrakini indir.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	Dosyaları privacy.apple.com'dan indirmen yeterli. Clean Smart her dosyayı Download'a ulaşır ulaşmaz diske kopyalar.
+Téléphone	Telefon
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	Telefon dolu: Galeri çöp kutusunu boşalt, işlenmiş ZIP'leri sil, rehberli temizliği yap. En az 300 MB boş yer gerekir.
+Un bouton, et c'est trié	Tek düğme, ve ayıklandı
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	Her gönderen için bir kart: TÜM e-postalarını atmak için sola, tutmak için sağa kaydır.
+Une notification quand il t'écrit	Sana yazdığında bir bildirim
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	Her seferinde bir fotoğraf: atmak için sola, tutmak için sağa kaydır
+Une question, un souci, la version complète ? Écris-moi :	Bir soru, bir sorun, tam sürüm? Bana yaz:
+Utilise ton adresse et ton mot de passe Free.	Free adresini ve şifreni kullan.
+Utilise ton adresse et ton mot de passe La Poste.	La Poste adresini ve şifreni kullan.
+Utilise ton adresse et ton mot de passe Orange.	Orange adresini ve şifreni kullan.
+Utilise ton adresse et ton mot de passe SFR.	SFR adresini ve şifreni kullan.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	Gece 2 civarında yeni fotoğraflar yedekleme klasörüne kopyalanır. Olmazsa bir bildirim seni uyarır.
+Version complète	Tam sürüm
+Version installée : %1	Kurulu sürüm: %1
+Vider	Boşalt
+Vider la corbeille ?	Çöp kutusu boşaltılsın mı?
+Vider la corbeille Clean Smart	Clean Smart çöp kutusunu boşalt
+Vider la corbeille Clean Smart ?	Clean Smart çöp kutusu boşaltılsın mı?
+Vider la corbeille maintenant	Çöp kutusunu şimdi boşalt
+Vider maintenant	Şimdi boşalt
+Vieux mails vers la corbeille…	Eski e-postalar çöp kutusuna…
+Vieux téléchargements (plus de 6 mois)	Eski indirmeler (6 aydan eski)
+Voir la liste et jeter	Listeyi gör ve at
+Voir la liste et libérer	Listeyi gör ve yer aç
+Voir le courrier indésirable puis le mettre à la corbeille	İstenmeyen e-postaları gör, sonra çöp kutusuna at
+Voir les conseils	İpuçlarını gör
+Voir ma place Google	Google alanımı gör
+Voir ma place iCloud	iCloud alanımı gör
+Votre facture	Faturanız
+Voyages et réservations	Seyahatler ve rezervasyonlar
+Vérification de la sauvegarde	Yedek kontrol ediliyor
+Vérification du disque	Disk kontrol ediliyor
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Google e-postasında her dosyanın (001, 002, 003…) işlendiğini kontrol et.
+Vérifier, puis libérer %1 (si tu veux)	Kontrol et, sonra %1 alanını boşalt (istersen)
+Yeux fermés	Gözler kapalı
+appli	uygulama
+applis	uygulama
+calcul…	hesaplanıyor…
+compression impossible	sıkıştırma başarısız
+contact en double	kopya kişi
+contacts en double	kopya kişi
+copie	kopya
+copies	kopya
+de ta photothèque est à l'abri	fotoğraf arşivinin güvende
+derniers fichiers	son dosya
+doublon	kopya
+doublons	kopya
+erreur	hata
+erreurs	hata
+expéditeur	gönderen
+expéditeurs	gönderen
+fais le ménage de ta boîte mail	posta kutunu temizle
+fichier	dosya
+fichier copié	dosya kopyalandı
+fichier copié et vérifié	dosya kopyalandı ve doğrulandı
+fichier n'a	dosya
+fichiers	dosya
+fichiers copiés	dosya kopyalandı
+fichiers copiés et vérifiés	dosya kopyalandı ve doğrulandı
+fichiers n'ont	dosya
+iCloud Photos	iCloud Fotoğrafları
+jour	gün
+jour restant	gün kaldı
+jours	gün
+jours restants	gün kaldı
+le plus simple	en kolayı
+libres · %1 % utilisé	boş · %1 % kullanılıyor
+libère de la place avec le Ménage complet	Tam temizlik ile yer aç
+libérés	açıldı
+mail	e-posta
+mail remis	e-posta geri alındı
+mails	e-posta
+mails remis	e-posta geri alındı
+nettoie les fichiers inutiles du téléphone	telefonun gereksiz dosyalarını temizle
+nouveau fichier	yeni dosya
+nouveaux fichiers	yeni dosya
+pas à pas	adım adım
+photo	fotoğraf
+photo gardée	tutulan fotoğraf
+photo ou vidéo	fotoğraf veya video
+photo ou vidéo prise	çekilen fotoğraf veya video
+photo protégée	korunan fotoğraf
+photos	fotoğraf
+photos gardées	tutulan fotoğraf
+photos ou vidéos	fotoğraf veya video
+photos ou vidéos prises	çekilen fotoğraf veya video
+photos protégées	korunan fotoğraf
+puis « Étape suivante » :	sonra «Sonraki adım»:
+rafale	seri çekim
+rafales	seri çekim
+sauvegarde tes photos sur une clé ou une carte SD	fotoğraflarını USB belleğe veya SD karta yedekle
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	zaten yedeğinde güvende (aynı ad, aynı boyut).\n\nGaleri çöp kutusuna giderler (30 gün geri alınabilir). En yeniler telefonda kalır.
+sur %1 contacts	%1 kişiden
+trie tes photos (doublons, rafales, floues)	fotoğraflarını ayıkla (kopyalar, seri çekimler, bulanıklar)
+téléchargement	indirme
+téléchargements	indirme
+utilisé	kullanılıyor
+vidéo	video
+vidéo compressée	sıkıştırılmış video
+vidéos	video
+vidéos compressées	sıkıştırılmış video
+vieux mail	eski e-posta
+vieux mails	eski e-posta
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«Bozuk dosya»: indirme kesildi. Bu ZIP'i Google e-postasından yeniden indir ve tekrar başlat: kopyalanmış olanlar yeniden kopyalanmaz.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«Yer aç»: telefonda son … içindeki fotoğrafları tut
+À GARDER	TUT
+À JETER	AT
+À RETROUVER VITE	HIZLI BUL
+À nettoyer	Temizlenecek
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	Diskteki kopyanı sildiysen bunu kullan: Clean Smart kopyaladıklarını unutur ve sonraki ZIP dosyası tamamen yeniden kopyalanır.\n\nSeçilen disk ve ayarların korunur. Diskte veya %1 tarafında hiçbir şey silinmez.
+Écriture impossible	Yazılamıyor
+Électricité	Elektrik
+à jeter	atılacak
+élément	öğe
+éléments	öğe
+… et %1 autres mails du même genre (cochés).	… ve aynı türden %1 e-posta daha (işaretli).
+‹ Retour	‹ Geri
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1 hatasız okundu. Kopyanın parmak izleri artık bu telefonda değil: karşılaştırma yapılamıyor.
+↩️ %1 dans la boîte de réception	↩️ %1 gelen kutusunda
+↩️ %1 remis dans la galerie	↩️ %1 galeriye geri konuldu
+↩️ %1 remis à leur place	↩️ %1 yerine geri konuldu
+↩️ J'ai fait une bêtise : remettre les %1	↩️ Hata yaptım: %1 geri koy
+↩️ Mails remis (démonstration)	↩️ E-postalar geri alındı (tanıtım)
+↩️ Remettre %1 dans ma boîte	↩️ %1 gelen kutuma geri koy
+↩️ Remettre des mails	↩️ E-postaları geri al
+↩️ Tout remettre à sa place	↩️ Her şeyi yerine koy
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Download'da sonraki dosya bekleniyor. E-postadaki «İndir» bağlantılarına dokun.
+⏳ En attente du prochain fichier dans Download…	⏳ Download'da sonraki dosya bekleniyor…
+⏳ copie en cours…	⏳ kopyalanıyor…
+⏳ plus tard	⏳ sonra
+⏹ Arrêter	⏹ Durdur
+☑️ Tout cocher	☑️ Tümünü işaretle
+⚙️ Cache des applis et fichiers système	⚙️ Uygulama önbelleği ve sistem dosyaları
+⚙️ Options	⚙️ Seçenekler
+⚠️ %1 : à relancer.\n	⚠️ %1: yeniden başlatılacak.\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 hatalı: devam etmeden önce «yeniden başlatılacak» işaretli ZIP'leri yeniden başlat.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ Diskteki %1 artık aynı değil veya okunamıyor:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ Bu gece yedek yok
+⚠️ Fichier %1 à reprendre	⚠️ Dosya %1 yeniden yapılacak
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ Yaklaşık %1 gerekiyor, %2 kaldı. Başlayabilirsin: dolunca başka bir disk takarsın ve kopyasız devam ederiz.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ Kopyalama durdu: %1\n\nHiçbir şey kaybolmaz: otomatik modu yeniden başlat, kopyasız devam ederiz.
+⚠️ On ne commence pas	⚠️ Başlamıyoruz
+⚠️ Sauvegarde de la nuit	⚠️ Gece yedeği
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ bozuk: e-postadan yeniden indir, kendiliğinden kopyalanacak
+⚠️ disque plein	⚠️ disk dolu
+⚠️ pas commencé	⚠️ başlamadı
+⚠️ à relancer	⚠️ yeniden başlatılacak
+⚠️ à relancer (%1)	⚠️ yeniden başlatılacak (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ Kopya tam değil (bozuk dosya, yeniden başlatılacak veya henüz kopyalanmadı). Önce kopyayı bitir: %1 tarafında hiçbir şey silme.
+✅ %1 : terminé et vérifié.\n	✅ %1: bitti ve doğrulandı.\n
+✅ %1 doublon(s) supprimé(s)	✅ %1 kopya silindi
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ %1 e-posta kaydedildi · %2 PDF · CleanSmart/Mails/index.html arşivi güncel
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 önemli e-posta güvende · %2 PDF toplandı · index.html arşivi güncel
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ %1 yeni fotoğraf yedeklendi
+✅ %1 · depuis %2	✅ %1 · %2 süredir
+✅ %1 à l'abri	✅ %1 güvende
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 önemli e-posta güvende (tanıtım)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 7.958 iyi fotoğraf yedeklendi (tanıtım)
+✅ Assez de place sur « %1 ».	✅ «%1» üzerinde yeterli yer var.
+✅ Boîte mail connectée	✅ Posta kutusu bağlandı
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ Disk kontrol edildi: %1 yeniden okundu, hiçbiri bozuk değil.
+✅ Doublons supprimés (démonstration)	✅ Kopyalar silindi (tanıtım)
+✅ Fichier %1 terminé	✅ Dosya %1 bitti
+✅ La copie sur le disque est complète et vérifiée.	✅ Diskteki kopya tam ve doğrulandı.
+✅ Mails sauvegardés (démonstration)	✅ E-postalar kaydedildi (tanıtım)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ kopya tam ve doğrulandı\n✅ telefon yedeklemesi kapatıldı\n✅ fotoğraflar diskte kontrol edildi\n\n%1 açılsın mı? Neyi sileceğini sen seçersin.
+✅ copié et vérifié	✅ kopyalandı ve doğrulandı
+✅ copié, vérifié, supprimé du téléphone	✅ kopyalandı, doğrulandı, telefondan silindi
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 atıldı · posta kutunda %2 açıldı
+✉️ %1 mails	✉️ %1 e-posta
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 e-posta («Mails Gmail» klasörü, index.html'i aç)\n
+✉️ Boîte mail	✉️ Posta kutusu
+✉️ Mails	✉️ E-postalar
+✉️ Mails de %1	✉️ %1 e-postaları
+✓ %1 choisi	✓ %1 seçildi
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 açıldı (Galeri çöp kutusunda 30 gün geri alınabilir)
+✨ %1 mails mis à la corbeille	✨ %1 e-posta çöp kutusuna taşındı
+✨ %1 mis à la corbeille (démonstration)	✨ %1 çöp kutusuna taşındı (tanıtım)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 e-posta çöp kutuna taşındı («E-postaları geri al» ile geri alınabilir)
+✨ %1 nettoyés · %2 libérés	✨ %1 temizlendi · %2 açıldı
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 eski e-posta çöp kutusuna (önemliler korundu)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1.249 e-posta çöp kutusuna (tanıtım)
+✨ 1,1 Go libérés (démonstration)	✨ 1,1 GB açıldı (tanıtım)
+✨ 6,4 Go libérés (démonstration)	✨ 6,4 GB açıldı (tanıtım)
+✨ Mails mis à la corbeille (démonstration)	✨ E-postalar çöp kutusuna (tanıtım)
+✨ Ménage automatique du dimanche	✨ Otomatik pazar temizliği
+✨ Ménage du dimanche	✨ Pazar temizliği
+✨ Vieux mails mis à la corbeille (démonstration)	✨ Eski e-postalar çöp kutusuna (tanıtım)
+❤️ Santé du téléphone : %1 / 100	❤️ Telefon sağlığı: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ Sola kaydır: tüm e-postaları çöp kutusuna   ·   Sağa kaydır: tutulur ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ Atmak için sola kaydır   ·   Tutmak için sağa kaydır ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 sürüyor: bitince kopyalama başlayacak.
+⬜ Tout décocher	⬜ Tüm işaretleri kaldır
+⭐ Protéger mes %1	⭐ %1 koru
+🍏 Mes photos iCloud	🍏 iCloud fotoğraflarım
+🍏 Pense à une nouvelle copie iCloud	🍏 Yeni bir iCloud kopyası zamanı
+🍏 Quitter iCloud Photos	🍏 iCloud Fotoğrafları'ndan ayrıl
+🎁 Version d'essai · %1	🎁 Deneme sürümü · %1
+🎉 %1 libérés au total	🎉 Toplam %1 açıldı
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 Gereksiz dosya yok: telefon temiz!
+🎉 Aucun mail à jeter ici.	🎉 Burada atılacak e-posta yok.
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 Unutulmuş uygulama yok: hepsini kullanıyorsun!
+🎉 Plus rien ici.	🎉 Burada artık hiçbir şey yok.
+🎉 Rien à nettoyer, tout est propre !	🎉 Temizlenecek bir şey yok, her şey temiz!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 Bitti: %1 kopyalandı ve doğrulandı. Diskte toplam: %2 ve %3.
+🎉 Tous les fichiers sont faits	🎉 Tüm dosyalar tamam
+🎬 Démonstration	🎬 Tanıtım
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 TANITIM MODU: telefonda hiçbir şeye dokunulmaz
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 Tanıtım modu: telefonda hiçbir şeye dokunulmaz
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 Her düğme önce e-posta listesini gösterir: tutmak istediklerinin işaretini kaldırır, sonra onaylarsın.
+👀 Voir et jeter ses mails maintenant	👀 E-postalarını şimdi gör ve at
+👆 Les expéditeurs que tu as jetés	👆 Attığın gönderenler
+👆 Tri des expéditeurs	👆 Gönderenler ayıklanıyor
+👆 Tri rapide	👆 Hızlı ayıklama
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Şimdi: Google e-postasında %1 dosyasını indir (Wi-Fi'de). Sonra yeşil düğmeye dokun ve İndirilenler'den seç.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Şimdi: privacy.apple.com'da «Part %1» dosyasını indir (Wi-Fi'de). Sonra yeşil düğmeye dokun ve İndirilenler'den seç.
+👉 À faire maintenant	👉 Şimdi yapılacak
+👉 à télécharger puis traiter	👉 indirilip işlenecek
+👍 Tu as déjà la dernière version (%1)	👍 Zaten en son sürüm sende (%1)
+👯 Mails en double	👯 Kopya e-postalar
+💡 Aide	💡 Yardım
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 İpucu: artık almamak için abonelikten çık («Sana en çok kim yazıyor» listesindeki düğme).
+💡 Si ça bloque	💡 Takılırsan
+💡 Si ça bloque : tous les conseils	💡 Takılırsan: tüm ipuçları
+💾 %1 sur « %2 »	💾 «%2» üzerinde %1
+💾 Sauvegarde de la nuit	💾 Gece yedeği
+💾 Sauvegarder %1	💾 %1 kaydet
+💾 Sauvegarder toutes mes photos	💾 Tüm fotoğraflarımı yedekle
+💾 Sauver des mails	💾 E-postaları kaydet
+📁 Choisir le dossier de sauvegarde	📁 Yedekleme klasörünü seç
+📁 Choisir un dossier	📁 Bir klasör seç
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: e-postanın tamamı (.eml)\n📕 CleanSmart / PDF: tüm PDF'ler bir arada\n📎 CleanSmart / Pieces jointes: diğer dosyalar
+📁 Dossier de sauvegarde enregistré	📁 Yedekleme klasörü kaydedildi
+📂 Traiter un fichier ZIP	📂 Bir ZIP dosyası işle
+📂 Traiter un fichier ZIP à la main	📂 Bir ZIP dosyasını elle işle
+📅 Ton rapport du mois	📅 Aylık raporun
+📎 Gros mails	📎 Büyük e-postalar
+📕 Cocher les PDF	📕 PDF'leri işaretle
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF İndirilenler / Clean Smart'a kaydedildi
+📕 PDF souvenir créé (démonstration)	📕 Anı PDF'i oluşturuldu (tanıtım)
+📖 Mode d'emploi	📖 Kullanım kılavuzu
+📤 Envoyer (%1)	📤 Gönder (%1)
+📦 Les plus grosses	📦 En büyükler
+📦 Quitter Google Photos	📦 Google Fotoğraflar'dan ayrıl
+📦 Ta nouvelle copie Google est peut-être prête	📦 Yeni Google kopyan hazır olabilir
+📧 Ouvrir le mail de Google	📧 Google e-postasını aç
+📰 Newsletters et pubs	📰 Bültenler ve reklamlar
+📱 Mes applis	📱 Uygulamalarım
+📱 Ouvrir l'app Google Photos	📱 Google Fotoğraflar uygulamasını aç
+📱 Téléphone	📱 Telefon
+📱 Téléphone presque plein	📱 Telefon neredeyse dolu
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 %1 fotoğraf ve %2 video kopyalandı ve doğrulandı, yıla göre düzenlendi\n
+📸 Photos	📸 Fotoğraflar
+🔄 Analyser à nouveau	🔄 Yeniden incele
+🔄 Chercher à nouveau	🔄 Yeniden ara
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 Her şeye baştan başla (kopyamı sildim)
+🔍 Analyser ma boîte mail	🔍 Posta kutumu incele
+🔍 Analyser mon téléphone	🔍 Telefonumu incele
+🔍 Chercher les mails avec pièces jointes	🔍 Ekli e-postaları ara
+🔎 Vérifier le disque (relit chaque photo)	🔎 Diski kontrol et (her fotoğrafı yeniden okur)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 Şifren telefonunda şifreli kalır. Yalnızca e-posta sağlayıcının sunucusuna gönderilir.
+🔓 Autoriser	🔓 İzin ver
+🔓 Autoriser l'accès aux fichiers	🔓 Dosyalara erişime izin ver
+🔓 Une autorisation pour en savoir plus	🔓 Daha fazlası için bir izin
+🔓 Une autorisation, une seule fois	🔓 Bir izin, yalnızca bir kez
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 Yalnızca bir kez: Clean Smart'ın Download klasörünü görmesi için «Tüm dosyalara erişim»e izin ver. Yalnızca %1 dosyalarını okur.
+🔔 Mail de %1	🔔 %1 e-postası
+🔔 Tu seras prévenu quand il t'écrit	🔔 Sana yazdığında haber verilecek
+🕰️ Vieux mails	🕰️ Eski e-postalar
+🕰️ Vieux mails (les importants sont gardés)	🕰️ Eski e-postalar (önemliler korunur)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ Çöp kutusu boşaltıldı: %1 kalıcı olarak kazanıldı
+🗑️ Désinstaller	🗑️ Kaldır
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ Dosya telefondan silindi: sonraki için yer açıldı
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ «Her zaman at» gönderenlerim
+🗑️ Mettre %1 à la corbeille	🗑️ %1 çöp kutusuna at
+🗑️ Ouvrir %1 pour effacer	🗑️ Silmek için %1 aç
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ E-postaları her gece çöp kutusuna gidecek
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ Bu ZIP'i telefondan sil (önerilen)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ Her zaman at: %1   🛡️ Her zaman tut: %2   🔔 Bana haber ver: %3
+🗜️ Compresser (%1)	🗜️ Sıkıştır (%1)
+😴 Pas ouvertes depuis 3 mois	😴 3 aydır açılmadı
+🚫 Se désabonner	🚫 Abonelikten çık
+🛡️ %1 (mises en favori)	🛡️ %1 (favori yapıldı)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 e-postanın «Korunanlar» klasörüne konuldu
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ Önemli gönderen (banka, resmi kurum, sağlık…): e-postaları asla atılmaz.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ Silme düğmesi, kopya tamamlandığında ve 1 ile 2 numaralı kutular işaretlendiğinde görünür.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ Bankandan, resmi kurumlardan veya sağlıktan gelen e-postalar asla çöp kutusuna gitmez.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ Kopya kontrol edilmeden %1 asla boşaltılmaz: önce ilk kutuyu işaretle.
+🛡️ Protéger (%1)	🛡️ Koru (%1)
+🛡️ Ranger mes mails importants	🛡️ Önemli e-postalarımı yerleştir
+🛡️ Ses mails ne seront jamais jetés	🛡️ E-postaları asla atılmayacak
+🤖 Copie automatique de tes photos	🤖 Fotoğraflarının otomatik kopyası
+🤖 Démarrer le mode automatique	🤖 Otomatik modu başlat
+🤖 Tout automatique (le plus simple)	🤖 Tamamen otomatik (en kolayı)
+🧊 Vider son cache	🧊 Önbelleğini temizle
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 %1 kopya ve 🎞️ %2 seri çekim fotoğrafı ayrıldı\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 kopyalar   🎞️ başarısız seri çekimler\n📱 ekran görüntüleri   🎬 büyük videolar\n💬 WhatsApp medyası   👥 kopya kişiler\n✉️ bültenler ve büyük e-postalar
+🧭 Ménage	🧭 Temizlik
+🧭 Ménage des mails	🧭 E-posta temizliği
+🧭 Ménage guidé	🧭 Rehberli temizlik
+🧹 Fichiers inutiles	🧹 Gereksiz dosyalar
+🧹 Jeter les mails de %1	🧹 %1 e-postalarını at
+🧹 Le ménage sûr	🧹 Güvenli temizlik
+🧹 Mails triés cette nuit	🧹 E-postalar bu gece ayıklandı
+🧹 Mettre %1 à la corbeille	🧹 %1 çöp kutusuna at
+🧹 Ménage sûr	🧹 Güvenli temizlik
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 Güvenli temizlik: bültenler, bildirimler, kopyalar
+🧹 Nettoyer · %1	🧹 Temizle · %1
+🧹 Nettoyer · %1 · %2	🧹 Temizle · %1 · %2

@@ -1,0 +1,897 @@
+0	\n\n%1 non copiato: rilancia lo stesso file.
+1	\n\n%1 «da controllare» andranno nel cestino di Clean Smart: potrai recuperarli per 7 giorni.
+2	\n\nAttenzione: l'eliminazione è sincronizzata con il tuo account (Google…).
+3	\n\nIl disco o il telefono è pieno: libera spazio (o cambia disco al passo 2), poi rilancia QUESTO file. Niente verrà copiato due volte.
+4	\n\nIl file è danneggiato o incompleto: scaricalo di nuovo dall'email di Google, poi rilancialo. Quanto già copiato viene mantenuto.
+5	\n\nLe copie vengono prima esportate in un file .vcf nella tua cartella di backup.
+6	\n\nRilancia il file ZIP che li conteneva (o la modalità automatica): verranno ricopiati. Non cancellare niente su %1 prima.
+7	\n\nPrima viene fatta una copia nella tua cartella di backup.
+8	\n💡 In Google, email e Google Foto condividono gli stessi 15 GB: pulire le email libera spazio anche per le foto.
+9	 su circa %1 GB
+10	 · %1 doppioni, raffiche o venute male non salvate
+11	 · %1 nel cestino
+12	 · i file «da controllare» sono nel cestino di Clean Smart (7 giorni)
+13	 · va nel cestino di Clean Smart
+14	%1 (%2): doppioni in più, raffiche in più, foto nere o bianche, screenshot di oltre un mese.\n\nVanno nel cestino della Galleria (30 giorni per recuperarle).
+15	%1 (%2) saranno eliminati DEFINITIVAMENTE per liberare subito lo spazio.\n\nNon potranno più essere recuperati.
+16	%1 / %2  ·  %3 da buttare
+17	%1: %2 %
+18	%1: newsletter e pubblicità (%2 mittenti), notifiche, email doppie.
+19	%1 GB · prevedi %2
+20	%1 analizzate
+21	%1 con allegati (%2 con PDF)
+22	%1 con successo. Mettendo gli originali nel cestino guadagni %2.
+23	%1 questo mese.
+24	%1 copiato/i nella tua cartella di backup.
+25	%1 di file inutili: temporanei, miniature, cartelle vuote, resti di app.
+26	%1 di oltre %2 mesi
+27	%1 dai tuoi mittenti «butta sempre» messe nel cestino (recuperabili 30 giorni).
+28	%1 doppioni vanno nel cestino. La prima copia di ogni email viene mantenuta.
+29	%1 e %2 copiate e verificate.
+30	%1 e %2 al sicuro. Puoi eliminarlo e scaricare il successivo.
+31	%1 file salvato/i
+32	%1 buttati
+33	%1 liberi su %2
+34	%1 liberati sul telefono
+35	%1 email nella casella · %2 analizzate
+36	%1 min %2 s
+37	%1 newsletter · %2 email grandi
+38	%1 newsletter, %2 email grandi (%3).
+39	%1 foto trovate
+40	%1 foto · %2 video analizzati
+41	%1 foto · %2 video · %3 doppioni e raffiche scartati
+42	%1 prepara una copia di tutte le tue foto. Fai esattamente come in questo modello:
+43	%1 saranno eliminati: non servono più o si ricreano da soli.
+44	%1 saranno eliminati per sempre.
+45	%1 su %2 scelti · %3
+46	%1 su %2 file fatti
+47	%1 su %2 · %3
+48	%1 andranno nel cestino della Galleria (recuperabili 30 giorni).
+49	%1 vanno nel cestino della Galleria (recuperabili 30 giorni).
+51	%1 · %2: doppioni, raffiche in più, foto nere o bianche, screenshot di oltre un mese. Le migliori vengono tenute.
+52	%1 · %2 in totale. Tocca un'app per disinstallarla o svuotarne la cache.
+53	%1 da buttare
+54	%1 da guardare una per una. Scorri a sinistra per buttare, a destra per tenere (diventa preferita ⭐).
+55	%1, %2, %3 copiati · %4 e %5 scartati.
+56	%1le email di oltre %2 anni vanno nel cestino (tranne le importanti).
+57	(nessun oggetto)
+58	. %1 doppie o in raffica da ordinare: tocca qui.
+59	1 tasto
+60	1 mese
+61	1. Ho disattivato il backup: app Google Foto › la tua foto in alto a destra › Impostazioni di Foto › Backup › disattiva.
+62	1. Sull'iPhone ho disattivato «Foto di iCloud» (Impostazioni › il tuo nome › iCloud › Foto).
+63	12 mesi
+64	2. Ho aperto il disco su un PC e vedo bene le mie foto, anno per anno.
+65	3 mesi
+66	3. Consigliato: ho fatto una 2ª copia (altro disco o PC).
+67	4 passi
+68	6 mesi
+69	VISUALIZZAZIONE
+70	AUTOMATICO
+71	ALTRO
+72	Indirizzo email
+73	Indirizzo, server e password sono obbligatori.
+74	Avviso rimosso
+75	Avvisi e resoconto del mese
+76	Analisi della casella
+77	Analisi delle 3.000 email più recenti della posta in arrivo.
+78	Analisi delle email (%1 / %2)
+79	Analisi del telefono
+80	Analizza la tua casella «%1»: newsletter, email grandi, email vecchie. Le importanti sono sempre tenute.
+81	Analizza la mia casella
+82	Analizza il mio telefono
+83	Annulla
+84	Annulla, non buttare niente
+85	Chiama
+87	Apple controlla la richiesta e poi invia un'email, di solito entro 3-7 giorni. I file si scaricano poi su privacy.apple.com (accedi dal telefono).
+88	Apple · Dati e privacy
+89	Applica «butta sempre» ora
+90	Arresto dopo il file in corso…
+91	Ferma
+92	Fermare la modalità automatica?
+93	Fermato. I file già copiati sono al sicuro; gli altri lo saranno la prossima volta, senza doppioni.
+94	Suggerimento: in Impostazioni › App, tocca un'app (Chrome, Facebook…) › Spazio di archiviazione › «Svuota cache».
+95	Nessun contatto doppio
+96	Nessuna cartella scelta
+97	Nessuna cartella di backup
+98	Nessun file inutile.
+99	Nessuna casella collegata.
+100	Nessuna chiavetta né disco rilevato. Collegalo (adattatore USB-C), poi riapri questo passo.
+101	Nessun video è stato ridotto ulteriormente.
+102	Altro
+103	Altri file d'installazione (.apk)
+104	Prima di tutto: analizzare
+105	Con «Accesso ai dati di utilizzo», Clean Smart vede lo spazio reale di ogni app e da quanto non la apri. Non viene inviato niente da nessuna parte.
+106	CASELLA EMAIL
+107	Banca
+108	Banca, amministrazione, salute, fatture e tutte le email con PDF: salvate, PDF riuniti, archivio index.html sul PC.
+109	Banca, amministrazione, salute, fatture e tutte le email con PDF: salvate, PDF riuniti, archivio index.html sul PC. Nella tua casella sono in «Protette».
+110	Banca, tasse, salute, casa, famiglia (i tuoi contatti): messe da parte, mai buttate
+111	Batteria scarica (%1 %)
+112	Ciao
+113	Negozio di moda
+114	Casella in ordine!
+115	Casella piena al %1 % (%2 / %3)
+116	Casella protetta
+117	Casella piena al %1 % (%2 / %3).
+118	Collega il caricatore: un file può richiedere da 10 a 30 minuti.\n\nSe il telefono si spegne, non si perde niente: basta rilanciare lo stesso file.
+119	Collega il caricatore durante l'elaborazione: un file grande può richiedere da 10 a 30 minuti. Lo schermo resta acceso.
+120	Collega la chiavetta o il disco al telefono, poi scegli (o crea) una cartella al suo interno.
+121	Collegare la chiavetta o il disco
+122	Fatto: il prossimo file sarà ricopiato per intero.
+123	Preso nota
+125	CONSIGLIATO
+126	CONTATTO
+127	CONTATTI
+128	Screenshot
+129	Scheda SD, chiavetta USB, Drive… scegli dove vuoi
+130	Scheda SD, chiavetta USB, Google Drive…
+131	Questo file è già copiato e verificato. Rifarlo non crea doppioni, ma è inutile.\n\nForse volevi prendere il successivo (%1).
+132	Questo mese
+133	Quest'anno
+134	Cambia account
+135	Cambia cartella
+136	Ogni domenica i file inutili sicuri e lo spam se ne vanno da soli. Una notifica ti dice quanto spazio è stato liberato e se ci sono foto da ordinare.
+137	Ogni email scelta viene salvata nella tua cartella di backup:
+138	Ogni video viene rifatto in 720p, spesso da 3 a 5 volte più leggero, e salvato in Film / Clean Smart.
+139	Scegli la cartella sul disco
+140	Scegli una cartella
+141	Scegli prima la cartella sulla chiavetta o sul disco (passo 2).
+142	Scegli prima la cartella sulla chiavetta o sul disco (passo «Il disco»).
+143	Scegli prima una cartella: scheda SD, chiavetta USB o Google Drive.
+144	Scegli prima una cartella di backup (Opzioni).
+145	Scegli prima una cartella di backup (scheda SD, chiavetta USB, Drive).
+146	Scegli prima una cartella di backup e fai un backup.
+147	Scegli prima una cartella di backup.
+148	Scegli le tue email: vengono salvate con gli allegati, i PDF in una cartella a parte
+149	Scegli una scheda SD, una chiavetta USB o Google Drive
+150	Scelta delle foto più belle…
+153	Clean Smart: copia automatica
+154	Clean Smart aspetta i file in Download…
+155	Clean Smart legge le ultime 3.000 email (non viene eliminato niente).
+156	Clean Smart guarda tutte le tue foto (non viene eliminato niente).
+157	Clean Smart trova con un tocco:
+158	Chiavetta USB (demo)
+159	Chiavetta USB o disco rigido, con un adattatore USB-C
+160	Pacchi e consegne
+161	Quanto spazio serve?
+162	Come il telefono
+163	Inizia
+164	Comprimi
+165	Comprimere %1?
+166	Compressione dei video
+167	Capito
+168	Collega la tua casella (Gmail, Outlook, Yahoo, Orange, Free…): newsletter, email grandi e vecchie da ordinare, le importanti sono sempre tenute.
+169	Collega
+170	Collega la mia casella
+171	Connessione al server
+172	Connessione impossibile:
+173	Connessione alla posta
+174	Consigliato: ho fatto una 2ª copia (altro disco o PC).
+175	Contatti doppi
+176	Continua comunque
+177	Copia automatica
+178	Copia i file uno per uno
+179	Copie identiche — l'originale viene tenuto
+180	Cestino
+181	Cestino: %1
+182	Cestino di Clean Smart
+183	Cestino della posta
+184	Discreto, ma può migliorare
+185	Crea esportazione
+186	In Google Foto: tieni premuta una foto, seleziona giorni interi, poi «Elimina». Il cestino di Google conserva tutto per 60 giorni.
+187	In Google Takeout scegli file da 2 GB: li elaboriamo uno per uno, il telefono non ha mai bisogno di molto spazio.
+188	Nella richiesta Apple scegli file da 1 o 2 GB: li elaboriamo uno per uno, il telefono non ha mai bisogno di molto spazio.
+189	Nell'email di Google conta i pulsanti «Scarica»: è il numero di file.
+190	Chiedi la copia a %1
+191	Richiedi una copia dei tuoi dati
+192	Richiesta · aspetta l'email di %1
+193	Da Android 11 nessuna app di pulizia può svuotare la cache delle altre app né i file di sistema. Lo fa Android stesso: questo pulsante apre la sua schermata «Libera spazio».
+194	Dall'installazione
+195	Ultimo controllo
+196	App scaricate ma non installate. Da controllare.
+197	Disco
+198	Disco non riconosciuto: usa un adattatore USB-C (OTG). Una chiavetta in exFAT funziona ovunque (FAT32 rifiuta i file oltre 4 GB).
+199	Disco pieno: collega un disco più grande e sceglilo al passo «Il disco». Riprendiamo da dove eravamo, senza doppioni.
+200	Documenti in Download non toccati da 6 mesi. Da controllare.
+201	Cartella Cestino non trovata su questo account.
+202	Cartella Cestino non trovata.
+203	Cartella Spam non trovata su questo account.
+204	Cartella di backup
+205	Cartella di backup non trovata.
+206	Cartelle cache
+207	Cartelle lasciate da app che non sono più sul telefono. Da controllare.
+208	Cartelle vuote
+209	Cartelle vuote…
+210	Doppioni
+211	Doppioni e raffiche in più (la foto migliore viene tenuta), foto nere o bianche, vecchi screenshot. Tocca una foto per tenerla. Tutto va nel cestino della Galleria (30 giorni).
+212	Doppioni, raffiche in più, foto nere o bianche, vecchi screenshot.
+213	Doppioni, raffiche, sfocate
+215	Togli la spunta alle email da tenere. Le email della banca, delle tasse, della salute e dei mittenti «tieni sempre» non sono mai in questa lista. Tutto va nel cestino della tua posta (recuperabile).
+216	Demo…
+217	Spostamento nel cestino…
+218	Disattivato per impostazione predefinita. Se lo attivi, le foto (e i contatti in .vcf) vengono copiati nella cartella prima di ogni pulizia, per sicurezza.
+219	Sono già tutte preferite 👍
+220	In modalità demo nessun file viene elaborato. Esci dalla demo (Opzioni) per farlo davvero.
+221	In gran forma
+222	Invia %1
+223	Invia il PDF ricordo
+224	Invia link per il download via email · Esporta una volta
+225	Errore imprevisto
+226	Spazio liberato
+227	Spazio liberato dall'inizio: %1. Una piccola analisi?
+228	Spazio da recuperare
+229	E le tue email
+230	Fatture e documenti
+231	Fare la pulizia sicura?
+232	Fatto ✔
+233	Famiglia
+234	Chiudi
+235	File %1
+236	File %1 già fatto
+237	File illeggibile
+238	File d'installazione già installati
+239	File di lavoro delle app, nella memoria del telefono. Si ricreano se serve.
+240	File inutili
+241	File messi da parte, svuotato da solo dopo 7 giorni
+242	File temporanei
+243	File temporanei, miniature, cartelle vuote, resti di app
+244	File temporanei, miniature, cartelle vuote, resti di app. Foto e musica non vengono mai toccate.
+245	Sfocata
+246	Sfocate, troppo scure o troppo chiare — controlla prima di spuntare
+249	TENUTA
+250	Tieni sul telefono le foto degli ultimi…
+251	Tenute
+253	Gmail richiede una PASSWORD PER LE APP (16 lettere):\n1. Attiva la verifica in 2 passaggi sul tuo account Google.\n2. Apri myaccount.google.com/apppasswords\n3. Crea una password chiamata «Clean Smart» e incollala qui.
+256	Google Foto
+258	Google invia un'email quando è pronto: in poche ore o pochi giorni. Nel frattempo puoi chiudere l'app.
+259	Grande
+260	Email grandi (+ 5 MB)
+261	Video grandi
+262	Gruppo %1 · %2 foto
+263	Accesso rifiutato. Gmail, Yahoo o iCloud richiedono una PASSWORD PER LE APP, non la tua password abituale.
+264	Ha bisogno di una bella pulizia
+265	Restano solo %1. Apri Clean Smart per liberare spazio con un tocco.
+266	Non contengono niente.
+267	Occupano ancora spazio per 30 giorni
+268	Sono nella cartella «Protette» della tua posta. Ripetuto ogni notte.
+269	Impossibile annullare: forse i file sono già stati eliminati definitivamente.
+270	Impossibile creare la cartella %1
+271	Impossibile proteggere queste foto
+272	Impossibile svuotare il cestino
+273	Tasse
+274	Tasse - Amministrazione
+275	Indica il server IMAP della tua posta (porta 993, SSL).
+276	Ho richiesto la copia
+277	Ho aperto il disco su un PC e vedo bene le mie foto, anno per anno.
+278	Ho elaborato tutti i file
+279	Mai buttate, messe in «Protette»
+280	Libero la casella
+281	Libero spazio
+282	Metto al sicuro l'importante
+283	Metto al sicuro le buone
+284	Ordino per mittente
+285	Controllo i dubbi
+286	Buttare %1?
+287	Buttare queste email?
+288	Buttare le copie?
+289	Buttare le email grandi?
+290	Buttare le newsletter?
+291	Buttare gli originali?
+292	Buttare le email vecchie?
+293	Log, backup temporanei, download abbandonati. Non servono più.
+294	L'indirizzo e la password verranno cancellati dal telefono.
+295	L'importante è al sicuro, il resto è andato
+296	L'originale non viene toccato: poi ti proporrò di metterlo nel cestino.\n\nPuò richiedere qualche minuto.
+297	DI NOTTE
+298	LIBERA SPAZIO
+300	La copia sul disco è stata cancellata: Clean Smart ricopia tutto dall'inizio.
+301	Il cestino è vuoto.
+302	Lo spazio delle email si libera quando si svuota il cestino della tua posta (di solito entro 30 giorni).
+303	Il backup non è riuscito. Apri Clean Smart per controllare la cartella.
+304	Lingua
+305	La pulizia guidata fa tutto nell'ordine giusto. Il pulsante verde è sempre il passo successivo.
+306	Il resoconto, e come liberare il tuo account %1
+307	Il contatto originale viene tenuto.
+308	Il disco (o il telefono) è pieno: la copia si è fermata in modo pulito.\n\nCollega un disco più grande, sceglilo al passo 2, poi rilancia la modalità automatica: continuiamo senza doppioni.
+309	Il disco non ha più spazio sufficiente: restano %1, servono circa %2 per questo file.\n\n• Libera spazio sul disco, oppure\n• collega un disco più grande e sceglilo al passo «Il disco» (riprenderemo da dove siamo).\n\nNon è stato toccato niente.
+310	Il disco non è accessibile.\n\n• Controlla che sia ben collegato (adattatore USB-C).\n• Al passo «Il disco», scegli di nuovo la cartella.
+311	La cartella di backup non è accessibile. Apri Clean Smart > Opzioni per sceglierla.
+312	La cartella di backup non è più accessibile. Sceglila di nuovo.
+313	La cartella «%1» non si trova sul disco. Controlla che il disco sia collegato (passo 2).
+314	Prima si finisce il file in corso. I file già copiati sono al sicuro; gli altri lo saranno la prossima volta, senza doppioni.
+315	Il link dell'email di Google scade dopo circa una settimana: in tal caso, richiedi di nuovo l'esportazione (non si perde niente, continuiamo senza doppioni).
+316	Il mese scorso
+317	La pulizia sicura
+318	Rifallo comunque
+319	Il telefono
+320	Il telefono è quasi pieno (servono almeno 300 MB liberi per lavorare).\n\n• Svuota il cestino della Galleria.\n• Elimina i file ZIP già elaborati (Download).\n• Fai la pulizia guidata di Clean Smart.\n\nNon è stato toccato niente.
+321	Il telefono si è spento o il disco è stato scollegato? Rilancia lo stesso ZIP: Clean Smart riprende senza perdere né raddoppiare niente.
+322	Lettura della galleria
+323	Lettura delle date delle foto…
+324	Lettura dei video
+325	Lettura impossibile: %1
+326	Gli .apk di app già installate: non servono più.
+327	Le ultime 200 email del cestino della tua posta. Spunta quelle da rimettere nella posta in arrivo.
+328	Le 30 foto e video che occupano più spazio
+329	Le altre caselle: non servono
+330	I file di Apple restano disponibili circa 2 settimane su privacy.apple.com: se è passato il termine, fai una nuova richiesta (non si perde niente, continuiamo senza doppioni).
+331	I file già messi nel cestino restano recuperabili nella Galleria.
+332	Le email di oltre %1 anni vanno nel cestino della tua posta. Le importanti vengono tenute.
+333	Le email di oltre 2 anni vanno nel cestino della tua posta.
+334	Le email di oltre 5 MB vanno nel cestino della tua posta.
+335	Newsletter, pubblicità, notifiche ed email doppie vanno nel cestino della tua posta (tutta la posta in arrivo).\n\nLe email importanti non vengono mai toccate.
+336	Prima le foto (ordinare, tenere il meglio, salvare, liberare), poi i file inutili del telefono, poi le email.
+337	Le foto di oltre %1 mesi già salvate lasciano il telefono (cestino, 30 giorni).
+338	Le foto preferite (o protette con il pulsante 🛡️) non vengono mai proposte
+339	Foto un po' sfocate, WhatsApp, screenshot recenti: decidi tu.
+340	Foto, video e musica non vengono mai toccati.
+341	Le più vecchie vengono proposte per il cestino solo se sono già nel tuo backup.
+342	Le foto più belle del mese o dell'anno, da inviare a una persona cara
+343	Le più grandi e quelle che non apri più: disinstallale con un gesto
+344	Lo spam va nel cestino della tua posta. Togli la spunta se un'email non è spam.
+345	Libera
+346	Liberare %1?
+347	Liberare %1 è facoltativo. %2 non permette a nessuna app di cancellare le tue foto: lo fai tu, quando sei sicuro.
+348	Libera la casella
+349	Liberazione della casella
+350	Liberare la casella?
+351	Libera spazio
+352	Libera spazio, PDF ricordo…
+353	Elenco delle foto sul disco…
+354	ADESSO
+355	Posta (facoltativo, per le tue email)
+356	Email
+357	Email Gmail: %1
+358	Email con allegati
+359	Email di oltre 2 anni
+360	Email doppie
+361	Email doppie…
+362	Casa
+363	Avvisami
+364	Grazie per aver provato Clean Smart! Installa la versione completa per continuare a pulire il telefono.
+365	Le mie app
+366	I miei file più grandi
+367	Le mie regole
+368	Mette nel cestino le foto di oltre %1 mesi già salvate
+369	Metti al sicuro
+370	L'importante viene messo al sicuro
+371	Miniature
+372	Aggiornamento
+373	Spostamento nel cestino…
+374	Istruzioni
+375	Istruzioni non trovate.
+376	Modalità demo terminata
+377	Modifica ▼
+378	Mostra l'app con foto, email e contatti finti. Sul telefono non si tocca niente: ideale per presentare Clean Smart.
+379	Password (vuota = tieni quella attuale)
+380	Password per le app
+381	Media di WhatsApp
+382	Pulizia completa
+383	Pulizia guidata
+384	Pulizia guidata delle email
+385	Pulizia sicura della casella
+386	Pulizia terminata!
+387	NUOVO
+388	Pulizia della casella
+389	Pulizia dei file inutili
+390	Pulisci
+391	Pulire %1?
+392	Pulisci il telefono
+393	Pulire i file inutili?
+394	Newsletter e notifiche…
+395	Newsletter e pubblicità
+396	Newsletter, pubblicità, notifiche ed email doppie.
+397	Numero di file nell'email
+398	Normale
+399	Nuova versione %1 disponibile
+401	Dimentica
+402	Dimenticare questo account?
+403	Sì, è finito
+405	Aperta oggi
+406	Aperta %1 fa
+407	Apertura di %1…
+408	Apri Clean Smart per vedere cosa fare. Non si perde niente.
+409	Apri la tua pagina Google e guarda lo spazio usato da Google Foto. Scrivilo qui (in GB).
+410	Apri «Video grandi», spuntali, poi «Comprimi»
+411	Apri
+412	Apri Google Foto
+413	Apri Google Takeout
+414	Apri Foto di iCloud
+415	Apri la pagina della password per le app
+416	Apri privacy.apple.com
+417	Apri «Libera spazio» di Android
+418	PDF ricordo
+419	FOTO E VIDEO
+420	PROTEZIONE
+421	Nessuna foto per questo periodo.
+422	Non aperta da oltre un anno
+423	Salta
+425	Piccole copie delle foto per la visualizzazione. Si ricreano da sole.
+426	Foto
+427	Foto: %1 · video: %2 · doppioni scartati: %3
+428	Foto del fine settimana
+429	Foto doppie, raffiche, foto venute male, video grandi, email inutili… tutto occupa spazio.
+430	Foto e video ricevuti o inviati
+431	Foto sfocate o venute male
+432	Foto di iCloud
+433	Foto simili
+434	Foto, telefono ed email, passo dopo passo
+435	Spazio occupato: %1
+436	Altri strumenti
+437	Oltre 100 MB ciascuno
+438	Per guadagnare punti: %1.
+439	Per avere la versione completa di Clean Smart, o per qualsiasi domanda, scrivimi:
+440	Per avere la versione completa, scrivimi:
+441	Per trovare i file inutili, Clean Smart deve poter vedere la memoria del telefono: consenti «Accesso a tutti i file». Non viene inviato niente da nessuna parte.
+442	Per un altro account o un altro disco. I file già copiati sul disco non vengono toccati.
+443	Proteggi le mie preferite
+444	Prudente
+445	Prudente: meno foto proposte. Severa: di più.
+446	Preparazione
+447	Preparazione…
+448	Avvisami se il telefono ha poco spazio (meno di 1 GB), e un piccolo resoconto il 1° del mese.
+449	Prevedi almeno %1 sulla chiavetta o sul disco (10 % di margine).
+450	CHI TI SCRIVE DI PIÙ
+451	Quando è arrivata l'email di %1
+452	Esci
+453	Lasciare Google Foto
+454	Lasciare Foto di iCloud
+455	RICERCA DELLE FOTO VENUTE MALE
+456	Raffiche: teniamo la migliore…
+457	Raffiche — viene tenuta la più nitida
+458	Riordino: %1
+459	Ricerca dei doppioni
+460	Ricerca dei file inutili…
+461	Ricerca delle email
+462	Ricerca delle email con PDF
+463	Ricerca delle email importanti (%1 / %2)
+464	Ricerca delle foto sfocate
+465	Ricerca delle foto venute male
+466	Ricerca delle foto simili
+467	Ricerca degli allegati (%1 / %2)
+468	Cerca un aggiornamento
+469	Ricomincia
+470	Ricomincia con un altro account
+471	Ricominciare dall'inizio?
+472	Guarda la dimensione di %1
+473	Rilancia l'analisi dopo una modifica.
+474	Recupera email
+475	Azzera il contatore
+476	Ripristino dei file
+477	Resti di app disinstallate
+478	Resti di app disinstallate…
+479	Ricevute più volte a pochi secondi di distanza: %1
+480	Niente
+481	Non è stato eliminato niente.
+482	Non si perde niente
+483	Niente viene eliminato senza il tuo consenso: tutto passa dal cestino.
+484	Niente da liberare: nessuna foto vecchia è ancora nel backup. Lancia prima «Salva tutte le mie foto».
+485	RISULTATO
+486	Regola rimossa
+487	Recupera email messe nel cestino della tua posta
+488	Recupera le mie foto iCloud (vecchio iPhone)
+489	Riduci i miei video
+490	Impostazioni avanzate
+491	Impostazioni memoria di Android
+492	BACKUP
+494	Senza accesso alle foto, Clean Smart non può analizzare niente.
+495	Salute
+496	Backup %1 / %2
+497	Backup automatico ogni notte
+498	Backup prima di eliminare
+499	Backup delle mie foto buone
+500	Backup delle email
+501	Backup delle email importanti
+502	Salvataggio dell'email %1 / %2
+503	Salva prima di eliminare
+504	Salva email
+505	Salva le mie foto buone
+506	Accedi con il tuo ID Apple
+507	Server IMAP
+508	Server non trovato: controlla internet e il nome del server.
+509	Le sue email vanno nel cestino ogni notte, da sole
+510	Solo le foto buone: mai doppioni, raffiche in più o venute male. Le preferite vanno anche in «Mes meilleures» (Le mie migliori).
+511	Vengono salvate solo le foto buone, su una chiavetta, un disco o Google Drive. Anche Google Foto può essere recuperato.
+512	Ogni volta vengono copiate solo le foto nuove.
+513	Vengono inviati solo i primi 20 file.
+514	Se la connessione viene rifiutata, crea una password per le app nella sicurezza dell'account Microsoft (serve la verifica in 2 passaggi).
+515	Altrimenti l'iPhone rimanda le foto su iCloud, e cancellarle su iCloud può cancellarle anche dall'iPhone.
+516	Altrimenti il telefono rimanda le foto a Google, e cancellarle su Google può cancellarle anche da questo telefono.
+517	Saldi invernali
+518	Spesso inutili dopo
+520	Memoria del telefono
+521	Severa
+522	Avanti
+523	Elimina tu stesso questo file in Download per fare spazio.
+524	Elimina
+525	Eliminare %1?
+526	Eliminare questo file dal telefono?
+527	Elimina ogni file dal telefono una volta copiato e verificato (consigliato: lascia spazio libero)
+528	Elimina i doppioni
+529	Su Gmail restano nella posta in arrivo e ricevono un'etichetta «Protette». Ripetuto ogni notte.
+530	Su Google Takeout, in 1 minuto
+531	Su account.apple.com → Password specifiche per le app → creane una.
+532	Sull'iPhone: Impostazioni › il tuo nome › iCloud: appare lo spazio usato da «Foto». Oppure guarda su icloud.com. Scrivilo qui (in GB).
+533	Sull'iPhone o su icloud.com/photos: seleziona le foto, poi «Elimina». L'album «Eliminati di recente» le conserva 30 giorni.
+534	Nella pagina che si apre: Spazio di archiviazione › «Svuota cache». Lo richiede Android, Clean Smart non può farlo al posto tuo.
+535	Sul telefono bastano 2-3 GB liberi: un solo file alla volta. Libero ora: %1.
+536	Su privacy.apple.com, in 2 minuti
+537	Su privacy.apple.com i file si chiamano «iCloud Photos Part 1 of 12»: l'ultimo numero (qui 12) è il numero di file. Clean Smart lo legge anche da solo.
+538	Sicurezza dell'account → Genera password per le app, poi incollala qui.
+539	Sicurezza, foto venute male, demo…
+540	Severità
+541	FINITO
+542	La tua posta
+543	Il tuo periodo di prova di 30 giorni è terminato.
+544	Dimensione di %1 (GB)
+545	Dimensione del testo
+546	Dimensione massima dei file: 1 GB o 2 GB
+547	Tempo trascorso
+548	Tempo rimanente
+549	Completa la richiesta
+550	Finito
+551	Le foto del tuo iPhone su una chiavetta o un disco, per anno, senza doppioni
+552	Le tue foto degli ultimi 2 mesi non sono ancora sul disco. Richiedi una nuova copia su Google Takeout, poi la modalità automatica aggiungerà solo le foto nuove, senza doppioni.
+553	Le tue foto degli ultimi 2 mesi non sono ancora sul disco. Richiedi una nuova copia ad Apple: Clean Smart aggiungerà solo le foto nuove, senza doppioni.
+554	Le tue foto al sicuro
+555	Le tue impostazioni e la tua casella verranno mantenute.
+556	Il tuo telefono è pieno?
+557	Il tuo telefono è pulito e le tue foto sono al sicuro
+558	Il tuo telefono e la tua casella sono puliti, le tue foto sono al sicuro
+559	Tocca qui per scaricarla, poi apri il file per installarla
+560	Tocca qui per la versione completa o una domanda
+561	Tocca semplicemente i link «Scarica» dell'email di Google. Clean Smart copia ogni file sul disco appena arriva in Download, anche mentre gli altri si scaricano.
+562	Tocca un mittente: butta sempre, tieni sempre, avvisami, annulla l'iscrizione.
+563	Tocca un mittente in «Chi ti scrive di più» per scegliere
+564	Tocca un'immagine per spuntarla · pressione lunga per vederla in grande
+565	Tocca per analizzare
+566	Tocca per vedere
+567	Tieni sempre
+568	Butta sempre
+569	Tutti i file sono stati elaborati?
+570	Tutte le email di %1 (almeno %2 email) vanno nel cestino della tua posta.
+571	Tutte le email di %1 mittente/i di newsletter vanno nel cestino della tua posta (tutta la posta in arrivo, non solo quelle analizzate).\n\nPuoi recuperarle dal cestino.
+572	Spunta tutto
+573	Togli tutte le spunte
+574	Deseleziona tutto
+575	Metti tutto nel cestino
+576	Pulisci tutto
+577	Tutto passa dal cestino: 30 giorni per recuperare. E «Ho fatto un pasticcio» annulla con un gesto.
+578	Ricomincia tutto
+579	Ricominciare tutto?
+580	Tutto il suo contenuto è copiato e verificato sul disco. Eliminarlo fa spazio per il successivo.\n\nLe tue foto restano anche in Google Foto.
+581	Va tutto bene, continua così!
+582	Era già tutto salvato 👍
+583	Tutte le tue foto su una chiavetta o un disco, per anno, senza doppioni
+584	Ordinamento prima del backup
+585	Ordinamento dei mittenti
+586	Ordinamento rapido
+587	Ordinamento finito!
+588	Prima ordinare, tenere il meglio, salvare solo le foto buone, liberare spazio, poi pulire le email.
+589	Prima ordinare, tenere il meglio, salvare solo le foto buone, poi liberare spazio.
+590	Prima ordinare, mettere al sicuro l'importante, poi svuotare la casella. Le email di banca, amministrazione o salute non vengono mai buttate.
+591	Ordina scorrendo
+592	Ordina i mittenti
+593	Ordina, tieni, salva, libera
+594	Ordina, metti al sicuro l'importante, svuota la casella
+595	Ordina, proteggi
+596	Troppo chiara
+597	Troppo piccola
+598	Troppo scura
+599	Molto grande
+600	Hai cancellato la tua copia sul disco e non viene più copiato niente? Tocca «Ricomincia tutto (ho cancellato la mia copia)» in fondo allo schermo, poi rilancia i tuoi file ZIP.
+601	Avevi un iPhone? Le tue foto iCloud su una chiavetta o un disco
+602	Puoi uscire dall'app per toccare i link: la copia continua (notifica «Copia automatica»).
+603	Tipo: .zip   ·   Dimensione: 2 GB
+604	Scarica UN solo ZIP alla volta, in Wi-Fi. Elaboralo, eliminalo, poi scarica il successivo.
+605	Scarica semplicemente i file su privacy.apple.com. Clean Smart copia ogni file sul disco appena arriva in Download.
+606	Telefono
+607	Telefono pieno: svuota il cestino della Galleria, elimina gli ZIP già elaborati, fai la pulizia guidata. Servono almeno 300 MB liberi.
+608	Un tasto, ed è tutto ordinato
+609	Una scheda per mittente: scorri a sinistra per buttare TUTTE le sue email, a destra per tenerlo.
+610	Una notifica quando ti scrive
+611	Una foto alla volta: scorri a sinistra per buttare, a destra per tenere
+612	Una domanda, un problema, la versione completa? Scrivimi:
+613	Usa il tuo indirizzo e la tua password Free.
+614	Usa il tuo indirizzo e la tua password La Poste.
+615	Usa il tuo indirizzo e la tua password Orange.
+616	Usa il tuo indirizzo e la tua password SFR.
+617	Verso le 2, le foto nuove vengono copiate nella tua cartella di backup. Una notifica ti avvisa se non ha funzionato.
+618	Versione completa
+619	Versione installata: %1
+620	Svuota
+621	Svuotare il cestino?
+622	Svuota il cestino di Clean Smart
+623	Svuotare il cestino di Clean Smart?
+624	Svuota il cestino ora
+625	Svuota ora
+626	Email vecchie nel cestino…
+627	Vecchi download (oltre 6 mesi)
+628	Vedi l'elenco e butta
+629	Vedi l'elenco e libera
+630	Vedi la posta indesiderata, poi mettila nel cestino
+631	Vedi i consigli
+632	Vedi il mio spazio Google
+633	Vedi il mio spazio iCloud
+634	La tua fattura
+635	Viaggi e prenotazioni
+636	Verifica del backup
+637	Verifica del disco
+638	Controlla nell'email di Google che ogni file (001, 002, 003…) sia stato elaborato.
+639	Verifica, poi libera %1 (se vuoi)
+641	Occhi chiusi
+642	app
+643	app
+644	calcolo…
+645	compressione impossibile
+646	contatto doppio
+647	contatti doppi
+648	copia
+649	copie
+650	della tua fototeca è al sicuro
+651	ultimi file
+652	doppione
+653	doppioni
+654	errore
+655	errori
+656	mittente
+657	mittenti
+658	pulisci la tua casella email
+659	file
+660	file copiato
+661	file copiato e verificato
+662	file non è stato
+663	file
+664	file copiati
+665	file copiati e verificati
+666	file non sono stati
+667	Foto di iCloud
+668	giorno
+669	giorno rimasto
+670	giorni
+671	giorni rimasti
+672	il più semplice
+673	liberi · %1 % usato
+674	libera spazio con la Pulizia completa
+675	liberati
+676	email
+677	email recuperata
+678	email
+679	email recuperate
+680	pulisci i file inutili del telefono
+681	nuovo file
+682	nuovi file
+683	passo dopo passo
+684	foto
+685	foto tenuta
+686	foto o video
+687	foto o video scattato
+688	foto protetta
+689	foto
+690	foto tenute
+691	foto o video
+692	foto o video scattati
+693	foto protette
+694	poi «Passaggio successivo»:
+695	raffica
+696	raffiche
+697	salva le tue foto su una chiavetta o una scheda SD
+698	sono già al sicuro nel tuo backup (stesso nome, stessa dimensione).\n\nVanno nel cestino della Galleria (recuperabili 30 giorni). Le più recenti restano sul telefono.
+701	su %1 contatti
+702	ordina le tue foto (doppioni, raffiche, sfocate)
+703	download
+704	download
+705	usato
+706	video
+707	video compresso
+708	video
+709	video compressi
+710	email vecchia
+711	email vecchie
+712	«File danneggiato»: il download si è interrotto. Scarica di nuovo questo ZIP dall'email di Google e rilancialo: quanto già copiato non verrà ricopiato.
+713	«Libera spazio»: tieni sul telefono le foto degli ultimi…
+714	DA TENERE
+715	DA BUTTARE
+716	DA TROVARE IN FRETTA
+717	Da pulire
+718	Da usare se hai cancellato la tua copia sul disco: Clean Smart dimentica ciò che ha già copiato e il prossimo file ZIP sarà ricopiato per intero.\n\nIl disco scelto e le tue impostazioni vengono mantenuti. Non viene cancellato niente sul disco né su %1.
+719	Scrittura impossibile
+720	Elettricità
+721	da buttare
+722	elemento
+723	elementi
+724	… e altre %1 email dello stesso tipo (spuntate).
+725	‹ Indietro
+726	ℹ️ %1 lette senza errori. Le impronte della copia non sono più su questo telefono: impossibile confrontare.
+727	↩️ %1 nella posta in arrivo
+728	↩️ %1 rimessi nella galleria
+729	↩️ %1 rimessi al loro posto
+730	↩️ Ho fatto un pasticcio: rimetti i %1
+731	↩️ Email recuperate (demo)
+732	↩️ Rimetti %1 nella mia casella
+733	↩️ Recupera email
+734	↩️ Rimetti tutto al suo posto
+735	⏳ In attesa del prossimo file in Download. Tocca i link «Scarica» dell'email.
+736	⏳ In attesa del prossimo file in Download…
+737	⏳ copia in corso…
+738	⏳ più tardi
+739	⏹ Ferma
+740	☑️ Spunta tutto
+741	⚙️ Cache delle app e file di sistema
+742	⚙️ Opzioni
+743	⚠️ %1: da rilanciare.\n
+744	⚠️ %1 in errore: rilancia gli ZIP segnati «da rilanciare» prima di andare avanti.
+745	⚠️ %1 sul disco non è più identico o non si legge più:\n
+746	⚠️ Nessun backup stanotte
+747	⚠️ File %1 da riprendere
+748	⚠️ Servono circa %1, restano %2. Puoi iniziare: quando sarà pieno, collegherai un altro disco e continueremo senza doppioni.
+749	⚠️ La copia si è fermata: %1\n\nNon si perde niente: rilancia la modalità automatica, riprenderemo senza doppioni.
+750	⚠️ Non si comincia
+751	⚠️ Backup della notte
+752	⚠️ danneggiato: scaricalo di nuovo dall'email, verrà copiato da solo
+753	⚠️ disco pieno
+754	⚠️ non iniziato
+755	⚠️ da rilanciare
+756	⚠️ da rilanciare (%1)
+757	⛔ La copia non è completa (file danneggiato, da rilanciare o non ancora copiato). Finisci prima la copia: non cancellare niente su %1.
+758	✅ %1: finito e verificato.\n
+759	✅ %1 doppione/i eliminato/i
+760	✅ %1 email salvata/e · %2 PDF · archivio CleanSmart/Mails/index.html aggiornato
+761	✅ %1 email importanti al sicuro · %2 PDF riuniti · archivio index.html aggiornato
+762	✅ %1 nuova/e foto salvata/e
+763	✅ %1 · da %2
+764	✅ %1 al sicuro
+765	✅ 312 email importanti al sicuro (demo)
+766	✅ 7.958 foto buone salvate (demo)
+767	✅ Spazio sufficiente su «%1».
+768	✅ Casella collegata
+769	✅ Disco verificato: %1 rilette, nessuna danneggiata.
+770	✅ Doppioni eliminati (demo)
+771	✅ File %1 finito
+772	✅ La copia sul disco è completa e verificata.
+773	✅ Email salvate (demo)
+774	✅ copia completa e verificata\n✅ backup del telefono disattivato\n✅ foto controllate sul disco\n\nAprire %1? Sarai tu a scegliere cosa cancellare.
+775	✅ copiato e verificato
+776	✅ copiato, verificato, eliminato dal telefono
+777	✉️ %1 buttate · %2 liberati nella tua casella
+778	✉️ %1 email
+779	✉️ %1 email (cartella «Mails Gmail», apri index.html)\n
+780	✉️ Casella email
+781	✉️ Email
+782	✉️ Email di %1
+783	✓ %1 scelto
+784	✨ %1 liberati (recuperabili 30 giorni nel cestino della Galleria)
+785	✨ %1 email messe nel cestino
+786	✨ %1 messe nel cestino (demo)
+787	✨ %1 messe nel cestino della tua posta (recuperabili con «Recupera email»)
+788	✨ %1 puliti · %2 liberati
+789	✨ %1 email vecchie nel cestino (le importanti sono tenute)
+790	✨ 1.249 email nel cestino (demo)
+791	✨ 1,1 GB liberati (demo)
+792	✨ 6,4 GB liberati (demo)
+793	✨ Email nel cestino (demo)
+794	✨ Pulizia automatica della domenica
+795	✨ Pulizia della domenica
+796	✨ Email vecchie nel cestino (demo)
+797	❤️ Salute del telefono: %1 / 100
+798	⬅ Scorri a sinistra: tutte le sue email nel cestino   ·   Scorri a destra: si tiene ➡
+799	⬅ Scorri a sinistra per buttare   ·   Scorri a destra per tenere ➡
+800	⬇️ %1 in corso: la copia inizierà appena finito.
+801	⬜ Togli tutte le spunte
+802	⭐ Proteggi le mie %1
+805	🍏 Le mie foto iCloud
+806	🍏 Pensa a una nuova copia iCloud
+807	🍏 Lasciare Foto di iCloud
+808	🎁 Versione di prova · %1
+809	🎉 %1 liberati in totale
+810	🎉 Nessun file inutile: il telefono è pulito!
+811	🎉 Nessuna email da buttare qui.
+812	🎉 Nessuna app dimenticata: le usi tutte!
+813	🎉 Qui non c'è più niente.
+814	🎉 Niente da pulire, è tutto in ordine!
+815	🎉 Finito: %1 copiati e verificati. In totale sul disco: %2 e %3.
+816	🎉 Tutti i file sono fatti
+817	🎬 Demo
+818	🎬 MODALITÀ DEMO: sul telefono non si tocca niente
+819	🎬 Modalità demo: sul telefono non si tocca niente
+820	👀 Ogni pulsante mostra prima l'elenco delle email: togli la spunta a quelle da tenere, poi confermi.
+821	👀 Vedi e butta le sue email ora
+822	👆 I mittenti che hai buttato
+823	👆 Ordinamento dei mittenti
+824	👆 Ordinamento rapido
+825	👉 Adesso: nell'email di Google, scarica il file %1 (in Wi-Fi). Poi tocca il pulsante verde e sceglilo in Download.
+826	👉 Adesso: su privacy.apple.com, scarica «Part %1» (in Wi-Fi). Poi tocca il pulsante verde e sceglilo in Download.
+827	👉 Da fare ora
+828	👉 da scaricare poi elaborare
+829	👍 Hai già l'ultima versione (%1)
+830	👯 Email doppie
+831	💡 Aiuto
+832	💡 Suggerimento: annulla l'iscrizione per non riceverle più (pulsante nell'elenco «Chi ti scrive di più»).
+833	💡 Se si blocca
+834	💡 Se si blocca: tutti i consigli
+835	💾 %1 su «%2»
+836	💾 Backup della notte
+837	💾 Salva %1
+838	💾 Salva tutte le mie foto
+839	💾 Salva email
+840	📁 Scegli la cartella di backup
+841	📁 Scegli una cartella
+842	📁 CleanSmart / Mails: l'email completa (.eml)\n📕 CleanSmart / PDF: tutti i PDF riuniti\n📎 CleanSmart / Pieces jointes: gli altri file
+843	📁 Cartella di backup salvata
+844	📂 Elabora un file ZIP
+845	📂 Elabora un file ZIP a mano
+846	📅 Il tuo resoconto del mese
+847	📎 Email grandi
+848	📕 Spunta i PDF
+849	📕 PDF salvato in Download / Clean Smart
+850	📕 PDF ricordo creato (demo)
+851	📖 Istruzioni
+852	📤 Invia (%1)
+853	📦 Le più grandi
+854	📦 Lasciare Google Foto
+855	📦 La tua nuova copia Google forse è pronta
+856	📧 Apri l'email di Google
+857	📰 Newsletter e pubblicità
+858	📱 Le mie app
+859	📱 Apri l'app Google Foto
+860	📱 Telefono
+861	📱 Telefono quasi pieno
+862	📸 %1 foto e %2 video copiati e verificati, ordinati per anno\n
+863	📸 Foto
+864	🔄 Analizza di nuovo
+865	🔄 Cerca di nuovo
+866	🔄 Ricomincia tutto (ho cancellato la mia copia)
+867	🔍 Analizza la mia casella
+868	🔍 Analizza il mio telefono
+869	🔍 Cerca le email con allegati
+870	🔎 Verifica il disco (rilegge ogni foto)
+871	🔒 La tua password resta cifrata sul telefono. Viene inviata solo al server della tua posta.
+872	🔓 Consenti
+873	🔓 Consenti l'accesso ai file
+874	🔓 Un'autorizzazione per saperne di più
+875	🔓 Un'autorizzazione, una sola volta
+876	🔓 Una sola volta: consenti «Accesso a tutti i file» perché Clean Smart veda la cartella Download. Legge solo i file di %1.
+877	🔔 Email di %1
+878	🔔 Sarai avvisato quando ti scrive
+879	🕰️ Email vecchie
+880	🕰️ Email vecchie (le importanti sono tenute)
+881	🗑️ Cestino svuotato: %1 recuperati per sempre
+882	🗑️ Disinstalla
+883	🗑️ File eliminato dal telefono: spazio libero per il successivo
+884	🗑️ I miei mittenti «butta sempre»
+885	🗑️ Metti %1 nel cestino
+886	🗑️ Apri %1 per cancellare
+887	🗑️ Le sue email andranno nel cestino ogni notte
+888	🗑️ Elimina questo ZIP dal telefono (consigliato)
+889	🗑️ Butta sempre: %1   🛡️ Tieni sempre: %2   🔔 Avvisami: %3
+890	🗜️ Comprimi (%1)
+891	😴 Non aperte da 3 mesi
+892	🚫 Annulla l'iscrizione
+894	🛡️ %1 (messe tra le preferite)
+895	🛡️ %1 messe nella cartella «Protette» della tua posta
+896	🛡️ Mittente importante (banca, amministrazione, salute…): le sue email non vengono mai buttate.
+897	🛡️ Il pulsante per cancellare appare quando la copia è completa e le caselle 1 e 2 sono spuntate.
+898	🛡️ Le email della tua banca, dell'amministrazione o della salute non vanno mai nel cestino.
+899	🛡️ Non si libera mai %1 prima di aver verificato la copia: spunta prima la prima casella.
+900	🛡️ Proteggi (%1)
+901	🛡️ Metti da parte le mie email importanti
+902	🛡️ Le sue email non verranno mai buttate
+903	🤖 Copia automatica delle tue foto
+904	🤖 Avvia la modalità automatica
+905	🤖 Tutto automatico (il più semplice)
+906	🧊 Svuota la cache
+907	🧬 %1 doppioni e 🎞️ %2 foto di raffica scartati\n
+908	🧬 i doppioni   🎞️ le foto venute male in raffica\n📱 gli screenshot   🎬 i video grandi\n💬 i media di WhatsApp   👥 i contatti doppi\n✉️ le newsletter e le email grandi
+909	🧭 Pulizia
+910	🧭 Pulizia delle email
+911	🧭 Pulizia guidata
+912	🧹 File inutili
+913	🧹 Butta le email di %1
+914	🧹 La pulizia sicura
+915	🧹 Email ordinate stanotte
+916	🧹 Metti %1 nel cestino
+917	🧹 Pulizia sicura
+918	🧹 Pulizia sicura: newsletter, notifiche, doppioni
+919	🧹 Pulisci · %1
+920	🧹 Pulisci · %1 · %2

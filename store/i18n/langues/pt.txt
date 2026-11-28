@@ -1,0 +1,897 @@
+0	\n\n%1 não foi possível copiar: execute de novo este mesmo arquivo.
+1	\n\n%1 «para verificar» vão para a lixeira do Clean Smart: pode recuperá-los durante 7 dias.
+2	\n\nAtenção: a eliminação é sincronizada com a sua conta (Google…).
+3	\n\nO disco ou o telemóvel está cheio: liberte espaço (ou mude de disco no passo 2) e execute ESTE arquivo de novo. Nada será copiado duas vezes.
+4	\n\nO arquivo está danificado ou incompleto: descarregue-o de novo a partir do e-mail da Google e execute-o outra vez. O que já foi copiado é mantido.
+5	\n\nAs cópias são primeiro exportadas num ficheiro .vcf na sua pasta de cópia de segurança.
+6	\n\nExecute de novo o ficheiro ZIP que os continha (ou o modo automático): serão copiados de novo. Não apague nada em %1 antes.
+7	\n\nPrimeiro é feita uma cópia na sua pasta de cópia de segurança.
+8	\n💡 Na Google, os e-mails e o Google Fotos partilham os mesmos 15 GB: limpar os e-mails também liberta espaço para as suas fotos.
+9	 de cerca de %1 GB
+10	 · %1 duplicados, rajadas ou falhadas sem cópia
+11	 · %1 para a lixeira
+12	 · os ficheiros «para verificar» estão na lixeira do Clean Smart (7 dias)
+13	 · vai para a lixeira do Clean Smart
+14	%1 (%2): duplicados a mais, rajadas a mais, fotos pretas ou brancas, capturas com mais de um mês.\n\nVão para a lixeira da Galeria (30 dias para as recuperar).
+15	%1 (%2) serão apagados DEFINITIVAMENTE para libertar o espaço já.\n\nNão poderão ser recuperados.
+16	%1 / %2  ·  %3 para deitar fora
+17	%1: %2 %
+18	%1: newsletters e publicidade (%2 remetentes), notificações, e-mails duplicados.
+19	%1 GB · preveja %2
+20	%1 analisadas
+21	%1 com anexos (%2 com PDF)
+22	%1 com sucesso. Ao enviar os originais para a lixeira, ganha %2.
+23	%1 este mês.
+24	%1 copiado(s) para a sua pasta de cópia de segurança.
+25	%1 de ficheiros inúteis: temporários, miniaturas, pastas vazias, restos de apps.
+26	%1 com mais de %2 meses
+27	%1 dos seus remetentes «deitar sempre fora» enviados para a lixeira (recuperáveis 30 dias).
+28	%1 duplicados vão para a lixeira. O primeiro exemplar de cada e-mail é mantido.
+29	%1 e %2 copiadas e verificadas.
+30	%1 e %2 em segurança. Pode apagá-lo e descarregar o seguinte.
+31	%1 ficheiro(s) guardado(s)
+32	%1 deitados fora
+33	%1 livres de %2
+34	%1 libertados no telemóvel
+35	%1 e-mails na caixa · %2 analisados
+36	%1 min %2 s
+37	%1 newsletters · %2 e-mails grandes
+38	%1 newsletters, %2 e-mails grandes (%3).
+39	%1 fotos encontradas
+40	%1 fotos · %2 vídeos analisados
+41	%1 fotos · %2 vídeos · %3 duplicados e rajadas afastados
+42	%1 prepara uma cópia de todas as suas fotos. Faça exatamente como neste modelo:
+43	%1 serão apagados: já não servem ou recriam-se sozinhos.
+44	%1 serão apagados para sempre.
+45	%1 de %2 escolhidos · %3
+46	%1 de %2 ficheiros feitos
+47	%1 de %2 · %3
+48	%1 vão para a lixeira da Galeria (recuperáveis 30 dias).
+49	%1 vão para a lixeira da Galeria (recuperáveis 30 dias).
+51	%1 · %2: duplicados, rajadas a mais, fotos pretas ou brancas, capturas com mais de um mês. As melhores são mantidas.
+52	%1 · %2 no total. Toque numa app para a desinstalar ou limpar a cache.
+53	%1 para deitar fora
+54	%1 para ver uma a uma. Deslize para a esquerda para deitar fora, para a direita para manter (passa a favorita ⭐).
+55	%1, %2, %3 copiados · %4 e %5 afastados.
+56	%1os e-mails com mais de %2 anos vão para a lixeira (exceto os importantes).
+57	(sem assunto)
+58	. %1 duplicadas ou em rajada para ordenar: toque aqui.
+59	1 botão
+60	1 mês
+61	1. Desliguei a cópia: app Google Fotos › a sua foto no canto superior direito › Definições do Fotos › Cópia de segurança › desligar.
+62	1. No iPhone, desliguei «Fotografias em iCloud» (Definições › o seu nome › iCloud › Fotografias).
+63	12 meses
+64	2. Abri o disco num PC e vejo bem as minhas fotos, ano a ano.
+65	3 meses
+66	3. Recomendado: fiz uma 2.ª cópia (outro disco ou PC).
+67	4 passos
+68	6 meses
+69	ECRÃ
+70	AUTOMÁTICO
+71	OUTROS
+72	Endereço de e-mail
+73	Endereço, servidor e palavra-passe são obrigatórios.
+74	Alerta removido
+75	Alertas e relatório do mês
+76	Análise da caixa de correio
+77	Analisa os 3 000 e-mails mais recentes da caixa de entrada.
+78	Análise dos e-mails (%1 / %2)
+79	Análise do telemóvel
+80	Analise a sua caixa «%1»: newsletters, e-mails grandes, e-mails antigos. Os importantes são sempre mantidos.
+81	Analisar a minha caixa de correio
+82	Analisar o meu telemóvel
+83	Cancelar
+84	Cancelar, não deitar nada fora
+85	Ligar
+87	A Apple verifica o pedido e depois envia um e-mail, geralmente em 3 a 7 dias. Os ficheiros descarregam-se depois em privacy.apple.com (inicie sessão a partir do telemóvel).
+88	Apple · Dados e privacidade
+89	Aplicar «deitar sempre fora» agora
+90	Paragem após o ficheiro em curso…
+91	Parar
+92	Parar o modo automático?
+93	Parado. Os ficheiros já copiados estão em segurança; os outros estarão da próxima vez, sem duplicados.
+94	Dica: em Definições › Apps, toque numa app (Chrome, Facebook…) › Armazenamento › «Limpar cache».
+95	Nenhum contacto duplicado
+96	Nenhuma pasta escolhida
+97	Nenhuma pasta de cópia
+98	Nenhum ficheiro inútil.
+99	Nenhuma caixa de correio ligada.
+100	Nenhuma pen nem disco detetado. Ligue-o (adaptador USB-C) e volte a abrir este passo.
+101	Nenhum vídeo pôde ser reduzido mais.
+102	Outro
+103	Outros ficheiros de instalação (.apk)
+104	Antes de tudo: analisar
+105	Com «Acesso aos dados de utilização», o Clean Smart vê o espaço real de cada app e há quanto tempo não a abre. Nada é enviado para lado nenhum.
+106	CAIXA DE CORREIO
+107	Banco
+108	Banco, administração, saúde, faturas e todos os e-mails com PDF: guardados, PDF reunidos, arquivo index.html no PC.
+109	Banco, administração, saúde, faturas e todos os e-mails com PDF: guardados, PDF reunidos, arquivo index.html no PC. No seu correio, ficam em «Protegidos».
+110	Banco, impostos, saúde, casa, família (os seus contactos): guardados à parte, nunca deitados fora
+111	Bateria fraca (%1 %)
+112	Olá
+113	Loja de moda
+114	Caixa de correio em ordem!
+115	Caixa cheia a %1 % (%2 / %3)
+116	Caixa protegida
+117	Caixa cheia a %1 % (%2 / %3).
+118	Ligue o carregador: um ficheiro pode demorar 10 a 30 minutos.\n\nSe o telemóvel se desligar, nada se perde: basta executar de novo o mesmo ficheiro.
+119	Ligue o carregador durante o tratamento: um ficheiro grande pode demorar 10 a 30 minutos. O ecrã fica ligado.
+120	Ligue a sua pen ou o seu disco ao telemóvel e escolha (ou crie) uma pasta nele.
+121	Ligar a pen ou o disco
+122	Feito: o próximo ficheiro será copiado de novo por inteiro.
+123	Anotado
+125	RECOMENDADO
+126	CONTACTO
+127	CONTACTOS
+128	Capturas de ecrã
+129	Cartão SD, pen USB, Drive… escolha onde quiser
+130	Cartão SD, pen USB, Google Drive…
+131	Este ficheiro já está copiado e verificado. Repeti-lo não cria duplicados, mas é inútil.\n\nProvavelmente queria o seguinte (%1).
+132	Este mês
+133	Este ano
+134	Mudar de conta
+135	Mudar de pasta
+136	Todos os domingos, os ficheiros inúteis seguros e o spam saem sozinhos. Uma notificação diz quanto espaço foi libertado e se há fotos para ordenar.
+137	Cada e-mail escolhido é guardado na sua pasta de cópia:
+138	Cada vídeo é refeito em 720p, muitas vezes 3 a 5 vezes mais leve, e guardado em Filmes / Clean Smart.
+139	Escolher a pasta no disco
+140	Escolher uma pasta
+141	Escolha primeiro a pasta na sua pen ou disco (passo 2).
+142	Escolha primeiro a pasta na sua pen ou disco (passo «O disco»).
+143	Escolha primeiro uma pasta: cartão SD, pen USB ou Google Drive.
+144	Escolha primeiro uma pasta de cópia (Opções).
+145	Escolha primeiro uma pasta de cópia (cartão SD, pen USB, Drive).
+146	Escolha primeiro uma pasta de cópia e faça uma cópia.
+147	Escolha primeiro uma pasta de cópia.
+148	Escolha os seus e-mails: são guardados com os anexos, os PDF numa pasta à parte
+149	Escolha um cartão SD, uma pen USB ou o Google Drive
+150	Escolha das fotos mais bonitas…
+153	Clean Smart: cópia automática
+154	O Clean Smart espera os ficheiros em Download…
+155	O Clean Smart lê os últimos 3 000 e-mails (nada é apagado).
+156	O Clean Smart vê todas as suas fotos (nada é apagado).
+157	O Clean Smart encontra num toque:
+158	Pen USB (demonstração)
+159	Pen USB ou disco rígido, com um adaptador USB-C
+160	Encomendas e entregas
+161	Quanto espaço é preciso?
+162	Como o telemóvel
+163	Começar
+164	Comprimir
+165	Comprimir %1?
+166	Compressão dos vídeos
+167	Entendido
+168	Ligue a sua caixa de correio (Gmail, Outlook, Yahoo, Orange, Free…): newsletters, e-mails grandes e antigos para ordenar; os importantes são sempre mantidos.
+169	Ligar
+170	Ligar a minha caixa de correio
+171	Ligação ao servidor
+172	Ligação impossível:
+173	Ligação ao correio
+174	Recomendado: fiz uma 2.ª cópia (outro disco ou PC).
+175	Contactos duplicados
+176	Continuar mesmo assim
+177	Cópia automática
+178	Copiar os ficheiros um a um
+179	Cópias idênticas — o original é mantido
+180	Lixeira
+181	Lixeira: %1
+182	Lixeira do Clean Smart
+183	Lixeira do correio
+184	Razoável, mas pode melhorar
+185	Criar exportação
+186	No Google Fotos: mantenha premida uma foto, marque dias inteiros e depois «Eliminar». A lixeira da Google guarda tudo 60 dias.
+187	No Google Takeout, escolha ficheiros de 2 GB: tratamo-los um a um, o telemóvel nunca precisa de muito espaço.
+188	No pedido à Apple, escolha ficheiros de 1 ou 2 GB: tratamo-los um a um, o telemóvel nunca precisa de muito espaço.
+189	No e-mail da Google, conte os botões «Transferir»: é o número de ficheiros.
+190	Pedir a cópia a %1
+191	Pedir uma cópia dos seus dados
+192	Pedida · espere pelo e-mail de %1
+193	Desde o Android 11, nenhuma app de limpeza pode limpar a cache de outras apps nem os ficheiros do sistema. É o próprio Android que o faz: este botão abre o ecrã «Libertar espaço».
+194	Desde a instalação
+195	Última verificação
+196	Apps descarregadas mas não instaladas. Para verificar.
+197	Disco
+198	Disco não reconhecido: use um adaptador USB-C (OTG). Uma pen formatada em exFAT funciona em todo o lado (FAT32 recusa ficheiros com mais de 4 GB).
+199	Disco cheio: ligue um disco maior e escolha-o no passo «O disco». Continuamos onde estávamos, sem duplicados.
+200	Documentos de Transferências não alterados há 6 meses. Para verificar.
+201	Pasta Lixeira não encontrada nesta conta.
+202	Pasta Lixeira não encontrada.
+203	Pasta Spam não encontrada nesta conta.
+204	Pasta de cópia
+205	Pasta de cópia não encontrada.
+206	Pastas de cache
+207	Pastas deixadas por apps que já não estão no telemóvel. Para verificar.
+208	Pastas vazias
+209	Pastas vazias…
+210	Duplicados
+211	Duplicados e rajadas a mais (a melhor foto é mantida), fotos pretas ou brancas, capturas antigas. Toque numa foto para a manter. Tudo vai para a lixeira da Galeria (30 dias).
+212	Duplicados, rajadas a mais, fotos pretas ou brancas, capturas antigas.
+213	Duplicados, rajadas, desfocadas
+215	Desmarque os e-mails que quer manter. Os e-mails do seu banco, dos impostos, da saúde e dos remetentes «manter sempre» nunca estão nesta lista. Tudo vai para a lixeira do seu correio (recuperável).
+216	Demonstração…
+217	A mover para a lixeira…
+218	Desligado por defeito. Se o ligar, as fotos (e os contactos em .vcf) são copiados para a pasta antes de cada limpeza, por segurança.
+219	Já são todas favoritas 👍
+220	Em demonstração, nenhum ficheiro é tratado. Saia da demonstração (Opções) para o fazer a sério.
+221	Em plena forma
+222	Enviar %1
+223	Enviar o PDF de recordação
+224	Enviar link de transferência por e-mail · Exportar uma vez
+225	Erro inesperado
+226	Espaço libertado
+227	Espaço libertado desde o início: %1. Uma pequena análise?
+228	Espaço a recuperar
+229	E os seus e-mails
+230	Faturas e papéis
+231	Fazer a limpeza segura?
+232	Feito ✔
+233	Família
+234	Fechar
+235	Ficheiro %1
+236	Ficheiro %1 já feito
+237	Ficheiro ilegível
+238	Ficheiros de instalação já instalados
+239	Ficheiros de trabalho das apps, no armazenamento do telemóvel. Recriam-se se for preciso.
+240	Ficheiros inúteis
+241	Ficheiros postos de lado, esvaziada sozinha após 7 dias
+242	Ficheiros temporários
+243	Ficheiros temporários, miniaturas, pastas vazias, restos de apps
+244	Ficheiros temporários, miniaturas, pastas vazias, restos de apps. As fotos e a música nunca são tocadas.
+245	Desfocada
+246	Desfocadas, demasiado escuras ou claras — verifique antes de marcar
+249	MANTIDA
+250	Manter no telemóvel as fotos dos últimos…
+251	Mantidos
+253	O Gmail exige uma PALAVRA-PASSE DE APLICAÇÃO (16 letras):\n1. Ative a verificação em 2 passos na sua conta Google.\n2. Abra myaccount.google.com/apppasswords\n3. Crie uma palavra-passe chamada «Clean Smart» e cole-a aqui.
+256	Google Fotos
+258	A Google envia um e-mail quando estiver pronto: em algumas horas ou alguns dias. Pode fechar a app entretanto.
+259	Grande
+260	E-mails grandes (+ 5 MB)
+261	Vídeos grandes
+262	Grupo %1 · %2 fotos
+263	Acesso recusado. Gmail, Yahoo ou iCloud precisam de uma PALAVRA-PASSE DE APLICAÇÃO, não da sua palavra-passe habitual.
+264	Precisa de uma boa limpeza
+265	Restam apenas %1. Abra o Clean Smart para libertar espaço num toque.
+266	Não contêm nada.
+267	Ainda ocupam espaço durante 30 dias
+268	Ficam na pasta «Protegidos» do seu correio. Repetido todas as noites.
+269	Impossível anular: os ficheiros talvez já tenham sido apagados definitivamente.
+270	Impossível criar a pasta %1
+271	Impossível proteger estas fotos
+272	Impossível esvaziar a lixeira
+273	Impostos
+274	Impostos - Administração
+275	Indique o servidor IMAP do seu correio (porta 993, SSL).
+276	Pedi a cópia
+277	Abri o disco num PC e vejo bem as minhas fotos, ano a ano.
+278	Tratei todos os ficheiros
+279	Nunca deitados fora, guardados em «Protegidos»
+280	Liberto a caixa
+281	Liberto espaço
+282	Ponho o importante em segurança
+283	Ponho as boas em segurança
+284	Ordeno por remetente
+285	Verifico o duvidoso
+286	Deitar fora %1?
+287	Deitar fora estes e-mails?
+288	Deitar fora as cópias?
+289	Deitar fora os e-mails grandes?
+290	Deitar fora as newsletters?
+291	Deitar fora os originais?
+292	Deitar fora os e-mails antigos?
+293	Registos, cópias temporárias, transferências abandonadas. Já não servem.
+294	O endereço e a palavra-passe serão apagados do telemóvel.
+295	O importante está em segurança, o resto foi-se
+296	O original não é tocado: depois proponho enviá-lo para a lixeira.\n\nPode demorar alguns minutos.
+297	À NOITE
+298	LIBERTAR ESPAÇO
+300	A cópia no disco foi apagada: o Clean Smart copia tudo de novo desde o início.
+301	A lixeira está vazia.
+302	O espaço dos e-mails liberta-se quando a lixeira do seu correio é esvaziada (geralmente em 30 dias).
+303	Não foi possível fazer a cópia. Abra o Clean Smart para verificar a pasta.
+304	Idioma
+305	A limpeza guiada faz tudo pela ordem certa. O botão verde é sempre o passo seguinte.
+306	O resumo, e como libertar a sua conta %1
+307	O contacto original é mantido.
+308	O disco (ou o telemóvel) está cheio: a cópia parou de forma limpa.\n\nLigue um disco maior, escolha-o no passo 2 e execute de novo o modo automático: continuamos sem duplicados.
+309	O disco não tem espaço suficiente: restam %1, são precisos cerca de %2 para este ficheiro.\n\n• Liberte espaço no disco, ou\n• ligue um disco maior e escolha-o no passo «O disco» (continuamos onde estamos).\n\nNada foi tocado.
+310	O disco não está acessível.\n\n• Verifique se está bem ligado (adaptador USB-C).\n• No passo «O disco», escolha a pasta de novo.
+311	A pasta de cópia não está acessível. Abra Clean Smart > Opções para a escolher.
+312	A pasta de cópia já não está acessível. Escolha-a de novo.
+313	A pasta «%1» não foi encontrada no disco. Verifique se o disco está ligado (passo 2).
+314	Primeiro termina o ficheiro em curso. Os ficheiros já copiados estão em segurança; os outros estarão da próxima vez, sem duplicados.
+315	O link do e-mail da Google expira após cerca de uma semana: se for o caso, peça uma nova exportação (nada se perde, continuamos sem duplicados).
+316	O mês passado
+317	A limpeza segura
+318	Repetir mesmo assim
+319	O telemóvel
+320	O telemóvel está quase cheio (são precisos pelo menos 300 MB livres para trabalhar).\n\n• Esvazie a lixeira da Galeria.\n• Apague os ZIP já tratados (Transferências).\n• Faça a limpeza guiada do Clean Smart.\n\nNada foi tocado.
+321	O telemóvel desligou-se ou o disco foi desligado? Execute de novo o mesmo ZIP: o Clean Smart continua sem perder nem duplicar nada.
+322	Leitura da galeria
+323	Leitura das datas das fotos…
+324	Leitura dos vídeos
+325	Leitura impossível: %1
+326	Os .apk de apps já instaladas: já não servem.
+327	Os 200 últimos e-mails da lixeira do seu correio. Marque os que quer devolver à caixa de entrada.
+328	As 30 fotos e vídeos que ocupam mais espaço
+329	As outras opções: não é preciso
+330	Os ficheiros da Apple ficam disponíveis cerca de 2 semanas em privacy.apple.com: se já passou, faça um novo pedido (nada se perde, continuamos sem duplicados).
+331	Os ficheiros já enviados para a lixeira podem ser recuperados na Galeria.
+332	Os e-mails com mais de %1 anos vão para a lixeira do seu correio. Os importantes são mantidos.
+333	Os e-mails com mais de 2 anos vão para a lixeira do seu correio.
+334	Os e-mails com mais de 5 MB vão para a lixeira do seu correio.
+335	As newsletters, publicidade, notificações e e-mails duplicados vão para a lixeira do seu correio (toda a caixa de entrada).\n\nOs e-mails importantes nunca são tocados.
+336	Primeiro as fotos (ordenar, manter o melhor, guardar, libertar), depois os ficheiros inúteis do telemóvel, depois os e-mails.
+337	As fotos com mais de %1 meses já guardadas saem do telemóvel (lixeira, 30 dias).
+338	As fotos favoritas (ou protegidas com o botão 🛡️) nunca são propostas
+339	Fotos um pouco desfocadas, WhatsApp, capturas recentes: decide você.
+340	As fotos, os vídeos e a música nunca são tocados.
+341	As mais antigas só são propostas para a lixeira se já estiverem na sua cópia.
+342	As fotos mais bonitas do mês ou do ano, para enviar a alguém querido
+343	As maiores e as que já não abre: desinstale-as num gesto
+344	O spam vai para a lixeira do seu correio. Desmarque um e-mail se não for spam.
+345	Libertar
+346	Libertar %1?
+347	Libertar %1 é opcional. %2 não deixa nenhuma app apagar as suas fotos: é você que o faz, quando tiver a certeza.
+348	Libertar a caixa
+349	A libertar a caixa de correio
+350	Libertar a caixa de correio?
+351	Libertar espaço
+352	Libertar espaço, PDF de recordação…
+353	Lista das fotos no disco…
+354	AGORA
+355	Correio (opcional, para os seus e-mails)
+356	E-mails
+357	E-mails Gmail: %1
+358	E-mails com anexos
+359	E-mails com mais de 2 anos
+360	E-mails duplicados
+361	E-mails duplicados…
+362	Casa
+363	Avisar-me
+364	Obrigado por experimentar o Clean Smart! Instale a versão completa para continuar a limpar o seu telemóvel.
+365	As minhas apps
+366	Os meus maiores ficheiros
+367	As minhas regras
+368	Envia para a lixeira as fotos com mais de %1 meses já guardadas
+369	Pôr em segurança
+370	A pôr o importante em segurança
+371	Miniaturas
+372	Atualização
+373	A enviar para a lixeira…
+374	Manual de utilização
+375	Manual de utilização não encontrado.
+376	Modo de demonstração terminado
+377	Alterar ▼
+378	Mostra a app com fotos, e-mails e contactos falsos. Nada é tocado no telemóvel: ideal para apresentar o Clean Smart.
+379	Palavra-passe (vazia = manter a atual)
+380	Palavra-passe de aplicação
+381	Ficheiros do WhatsApp
+382	Limpeza completa
+383	Limpeza guiada
+384	Limpeza guiada dos e-mails
+385	Limpeza segura da caixa de correio
+386	Limpeza terminada!
+387	NOVO
+388	Limpeza da caixa de correio
+389	Limpeza dos ficheiros inúteis
+390	Limpar
+391	Limpar %1?
+392	Limpar o telemóvel
+393	Limpar os ficheiros inúteis?
+394	Newsletters e notificações…
+395	Newsletters e publicidade
+396	Newsletters, publicidade, notificações e e-mails duplicados.
+397	Número de ficheiros no e-mail
+398	Normal
+399	Nova versão %1 disponível
+401	Esquecer
+402	Esquecer esta conta?
+403	Sim, está terminado
+405	Aberta hoje
+406	Aberta há %1
+407	A abrir %1…
+408	Abra o Clean Smart para ver o que fazer. Nada se perde.
+409	Abra a sua página Google e veja o espaço usado pelo Google Fotos. Escreva-o aqui (em GB).
+410	Abra «Vídeos grandes», marque-os e depois «Comprimir»
+411	Abrir
+412	Abrir o Google Fotos
+413	Abrir o Google Takeout
+414	Abrir Fotografias em iCloud
+415	Abrir a página da palavra-passe de aplicação
+416	Abrir privacy.apple.com
+417	Abrir «Libertar espaço» do Android
+418	PDF de recordação
+419	FOTOS E VÍDEOS
+420	PROTEÇÃO
+421	Não há fotos para este período.
+422	Não aberta há mais de um ano
+423	Saltar
+425	Pequenas cópias das fotos para mostrar. Recriam-se sozinhas.
+426	Fotos
+427	Fotos: %1 · vídeos: %2 · duplicados afastados: %3
+428	Fotos do fim de semana
+429	Fotos duplicadas, rajadas, fotos falhadas, vídeos grandes, e-mails inúteis… tudo ocupa espaço.
+430	Fotos e vídeos recebidos ou enviados
+431	Fotos desfocadas ou falhadas
+432	Fotografias em iCloud
+433	Fotos parecidas
+434	Fotos, telemóvel e e-mails, passo a passo
+435	Espaço ocupado: %1
+436	Mais ferramentas
+437	Mais de 100 MB cada
+438	Para ganhar pontos: %1.
+439	Para obter a versão completa do Clean Smart, ou para qualquer pergunta, escreva-me:
+440	Para obter a versão completa, escreva-me:
+441	Para encontrar os ficheiros inúteis, o Clean Smart precisa de ver o armazenamento do telemóvel: autorize «Acesso a todos os ficheiros». Nada é enviado para lado nenhum.
+442	Para outra conta ou outro disco. Os ficheiros já copiados no disco não são tocados.
+443	Proteger as minhas favoritas
+444	Prudente
+445	Prudente: menos fotos propostas. Estrita: mais.
+446	Preparação
+447	Preparação…
+448	Avise-me se o telemóvel quase não tiver espaço (menos de 1 GB), e um pequeno resumo no dia 1 do mês.
+449	Preveja pelo menos %1 na pen ou no disco (10 % de margem).
+450	QUEM LHE ESCREVE MAIS
+451	Quando o e-mail de %1 tiver chegado
+452	Sair
+453	Deixar o Google Fotos
+454	Deixar Fotografias em iCloud
+455	PROCURA DE FOTOS FALHADAS
+456	Rajadas: mantemos a melhor…
+457	Rajadas — a mais nítida é mantida
+458	A arrumar: %1
+459	Procura de duplicados
+460	Procura de ficheiros inúteis…
+461	Procura de e-mails
+462	Procura de e-mails com PDF
+463	Procura de e-mails importantes (%1 / %2)
+464	Procura de fotos desfocadas
+465	Procura de fotos falhadas
+466	Procura de fotos parecidas
+467	Procura de anexos (%1 / %2)
+468	Procurar uma atualização
+469	Recomeçar
+470	Recomeçar com outra conta
+471	Recomeçar desde o início?
+472	Ver o tamanho de %1
+473	Volte a analisar após uma alteração.
+474	Recuperar e-mails
+475	Pôr o contador a zero
+476	A devolver os ficheiros
+477	Restos de apps desinstaladas
+478	Restos de apps desinstaladas…
+479	Recebidos várias vezes com segundos de diferença: %1
+480	Nada
+481	Nada foi apagado.
+482	Nada se perde
+483	Nada é apagado sem o seu acordo: tudo passa pela lixeira.
+484	Nada a libertar: nenhuma foto antiga está ainda na cópia. Execute primeiro «Guardar todas as minhas fotos».
+485	RESULTADO
+486	Regra removida
+487	Recupere e-mails enviados para a lixeira do seu correio
+488	Recuperar as minhas fotos do iCloud (antigo iPhone)
+489	Reduzir os meus vídeos
+490	Definições avançadas
+491	Definições de armazenamento do Android
+492	CÓPIA DE SEGURANÇA
+494	Sem acesso às fotos, o Clean Smart não pode analisar nada.
+495	Saúde
+496	Cópia %1 / %2
+497	Cópia automática todas as noites
+498	Cópia antes de apagar
+499	A guardar as minhas boas fotos
+500	A guardar e-mails
+501	A guardar e-mails importantes
+502	A guardar o e-mail %1 / %2
+503	Guardar antes de apagar
+504	Guardar e-mails
+505	Guardar as minhas boas fotos
+506	Iniciar sessão com o seu ID Apple
+507	Servidor IMAP
+508	Servidor não encontrado: verifique a internet e o nome do servidor.
+509	Os e-mails dele vão para a lixeira todas as noites, sozinhos
+510	Só as boas fotos: nunca duplicados, rajadas a mais ou falhadas. As favoritas vão também para «Mes meilleures» (As minhas melhores).
+511	Só as boas fotos são guardadas, numa pen, num disco ou no Google Drive. Até o Google Fotos pode ser recuperado.
+512	Só as fotos novas são copiadas de cada vez.
+513	Só os 20 primeiros ficheiros são enviados.
+514	Se a ligação for recusada, crie uma palavra-passe de aplicação na segurança da conta Microsoft (verificação em 2 passos necessária).
+515	Senão o iPhone volta a enviar as fotos para o iCloud, e apagar no iCloud também pode apagá-las do iPhone.
+516	Senão o telemóvel volta a enviar as fotos para a Google, e apagar na Google também pode apagá-las deste telemóvel.
+517	Saldos de inverno
+518	Muitas vezes inúteis depois
+520	Armazenamento do telemóvel
+521	Estrita
+522	Seguinte
+523	Apague este ficheiro você mesmo em Transferências para fazer espaço.
+524	Apagar
+525	Apagar %1?
+526	Apagar este ficheiro do telemóvel?
+527	Apagar cada ficheiro do telemóvel depois de copiado e verificado (recomendado: liberta espaço)
+528	Apagar os duplicados
+529	No Gmail, ficam na caixa de entrada e recebem uma etiqueta «Protegidos». Repetido todas as noites.
+530	No Google Takeout, em 1 minuto
+531	Em account.apple.com → Palavras-passe específicas da app → criar uma.
+532	No iPhone: Definições › o seu nome › iCloud: aparece o espaço usado por «Fotografias». Ou veja em icloud.com. Escreva-o aqui (em GB).
+533	No iPhone ou em icloud.com/photos: selecione fotos e depois «Apagar». O álbum «Apagados recentemente» guarda-as 30 dias.
+534	Na página que se abre: Armazenamento › «Limpar cache». O Android exige-o, o Clean Smart não o pode fazer por si.
+535	No telemóvel bastam 2 a 3 GB livres: um só ficheiro de cada vez. Livre agora: %1.
+536	Em privacy.apple.com, em 2 minutos
+537	Em privacy.apple.com, os ficheiros chamam-se «iCloud Photos Part 1 of 12»: o último número (aqui 12) é o número de ficheiros. O Clean Smart também o lê sozinho.
+538	Segurança da conta → Gerar palavra-passe de aplicação e cole-a aqui.
+539	Segurança, fotos falhadas, demonstração…
+540	Severidade
+541	TERMINADO
+542	O seu correio
+543	O seu período de teste de 30 dias terminou.
+544	Tamanho de %1 (GB)
+545	Tamanho do texto
+546	Tamanho máximo dos ficheiros: 1 GB ou 2 GB
+547	Tempo decorrido
+548	Tempo restante
+549	Concluir o pedido
+550	Terminado
+551	As fotos do seu iPhone numa pen ou num disco, por ano, sem duplicados
+552	As suas fotos dos 2 últimos meses ainda não estão no disco. Peça uma nova cópia no Google Takeout e o modo automático só acrescenta as fotos novas, sem duplicados.
+553	As suas fotos dos 2 últimos meses ainda não estão no disco. Peça uma nova cópia à Apple: o Clean Smart só acrescenta as fotos novas, sem duplicados.
+554	As suas fotos em segurança
+555	As suas definições e a sua caixa de correio serão mantidas.
+556	O seu telemóvel está cheio?
+557	O seu telemóvel está limpo e as suas fotos em segurança
+558	O seu telemóvel e a sua caixa de correio estão limpos, as suas fotos em segurança
+559	Toque aqui para a descarregar e depois abra o ficheiro para a instalar
+560	Toque aqui para a versão completa ou uma pergunta
+561	Basta tocar nos links «Transferir» do e-mail da Google. O Clean Smart copia cada ficheiro para o disco assim que chega a Download, mesmo enquanto os outros se transferem.
+562	Toque num remetente: deitar sempre fora, manter sempre, avisar-me, cancelar subscrição.
+563	Toque num remetente em «Quem lhe escreve mais» para escolher
+564	Toque numa imagem para a marcar · toque longo para a ver em grande
+565	Tocar para analisar
+566	Tocar para ver
+567	Manter sempre
+568	Deitar sempre fora
+569	Todos os ficheiros foram tratados?
+570	Todos os e-mails de %1 (pelo menos %2 e-mails) vão para a lixeira do seu correio.
+571	Todos os e-mails de %1 remetente(s) de newsletters vão para a lixeira do seu correio (toda a caixa de entrada, não só os analisados).\n\nPode recuperá-los na lixeira.
+572	Marcar tudo
+573	Desmarcar tudo
+574	Desselecionar tudo
+575	Enviar tudo para a lixeira
+576	Limpar tudo
+577	Tudo passa pela lixeira: 30 dias para recuperar. E «Enganei-me» anula num gesto.
+578	Recomeçar tudo
+579	Recomeçar tudo?
+580	Todo o seu conteúdo está copiado e verificado no disco. Apagá-lo faz espaço para o seguinte.\n\nAs suas fotos também ficam no Google Fotos.
+581	Está tudo bem, continue assim!
+582	Já estava tudo guardado 👍
+583	Todas as suas fotos numa pen ou num disco, por ano, sem duplicados
+584	Ordenação antes da cópia
+585	Ordenação dos remetentes
+586	Ordenação rápida
+587	Ordenação terminada!
+588	Primeiro ordenar, manter o melhor, guardar só as boas fotos, libertar espaço e depois limpar os e-mails.
+589	Primeiro ordenar, manter o melhor, guardar só as boas fotos e depois libertar espaço.
+590	Primeiro ordenar, pôr o importante em segurança e depois esvaziar a caixa. Os e-mails do seu banco, da administração ou da saúde nunca são deitados fora.
+591	Ordenar deslizando
+592	Ordenar os remetentes
+593	Ordenar, manter, guardar, libertar
+594	Ordenar, pôr o importante em segurança, esvaziar a caixa
+595	Ordenar, proteger
+596	Demasiado clara
+597	Demasiado pequena
+598	Demasiado escura
+599	Muito grande
+600	Apagou a sua cópia do disco e já nada é copiado? Toque em «Recomeçar tudo (apaguei a minha cópia)» no fundo do ecrã e execute de novo os seus ficheiros ZIP.
+601	Tinha um iPhone? As suas fotos do iCloud numa pen ou num disco
+602	Pode sair da app para tocar nos links: a cópia continua (notificação «Cópia automática»).
+603	Tipo: .zip   ·   Tamanho: 2 GB
+604	Transfira UM só ZIP de cada vez, em Wi-Fi. Trate-o, apague-o e depois transfira o seguinte.
+605	Basta transferir os ficheiros em privacy.apple.com. O Clean Smart copia cada ficheiro para o disco assim que chega a Download.
+606	Telemóvel
+607	Telemóvel cheio: esvazie a lixeira da Galeria, apague os ZIP já tratados, faça a limpeza guiada. São precisos pelo menos 300 MB livres.
+608	Um botão e está ordenado
+609	Um cartão por remetente: deslize para a esquerda para deitar fora TODOS os e-mails dele, para a direita para o manter.
+610	Uma notificação quando ele lhe escreve
+611	Uma foto de cada vez: deslize para a esquerda para deitar fora, para a direita para manter
+612	Uma pergunta, um problema, a versão completa? Escreva-me:
+613	Use o seu endereço e a sua palavra-passe Free.
+614	Use o seu endereço e a sua palavra-passe La Poste.
+615	Use o seu endereço e a sua palavra-passe Orange.
+616	Use o seu endereço e a sua palavra-passe SFR.
+617	Por volta das 2 h, as fotos novas são copiadas para a sua pasta de cópia. Uma notificação avisa-o se não tiver funcionado.
+618	Versão completa
+619	Versão instalada: %1
+620	Esvaziar
+621	Esvaziar a lixeira?
+622	Esvaziar a lixeira do Clean Smart
+623	Esvaziar a lixeira do Clean Smart?
+624	Esvaziar a lixeira agora
+625	Esvaziar agora
+626	E-mails antigos para a lixeira…
+627	Transferências antigas (mais de 6 meses)
+628	Ver a lista e deitar fora
+629	Ver a lista e libertar
+630	Ver o correio não solicitado e enviá-lo para a lixeira
+631	Ver os conselhos
+632	Ver o meu espaço Google
+633	Ver o meu espaço iCloud
+634	A sua fatura
+635	Viagens e reservas
+636	Verificação da cópia
+637	Verificação do disco
+638	Verifique no e-mail da Google que cada ficheiro (001, 002, 003…) foi tratado.
+639	Verificar e depois libertar %1 (se quiser)
+641	Olhos fechados
+642	app
+643	apps
+644	a calcular…
+645	compressão impossível
+646	contacto duplicado
+647	contactos duplicados
+648	cópia
+649	cópias
+650	da sua fototeca está em segurança
+651	últimos ficheiros
+652	duplicado
+653	duplicados
+654	erro
+655	erros
+656	remetente
+657	remetentes
+658	limpe a sua caixa de correio
+659	ficheiro
+660	ficheiro copiado
+661	ficheiro copiado e verificado
+662	ficheiro não foi
+663	ficheiros
+664	ficheiros copiados
+665	ficheiros copiados e verificados
+666	ficheiros não foram
+667	Fotografias em iCloud
+668	dia
+669	dia restante
+670	dias
+671	dias restantes
+672	o mais simples
+673	livres · %1 % usado
+674	liberte espaço com a Limpeza completa
+675	libertados
+676	e-mail
+677	e-mail recuperado
+678	e-mails
+679	e-mails recuperados
+680	limpe os ficheiros inúteis do telemóvel
+681	ficheiro novo
+682	ficheiros novos
+683	passo a passo
+684	foto
+685	foto mantida
+686	foto ou vídeo
+687	foto ou vídeo tirado
+688	foto protegida
+689	fotos
+690	fotos mantidas
+691	fotos ou vídeos
+692	fotos ou vídeos tirados
+693	fotos protegidas
+694	depois «Passo seguinte»:
+695	rajada
+696	rajadas
+697	guarde as suas fotos numa pen ou num cartão SD
+698	já estão em segurança na sua cópia (mesmo nome, mesmo tamanho).\n\nVão para a lixeira da Galeria (recuperáveis 30 dias). As mais recentes ficam no telemóvel.
+701	de %1 contactos
+702	ordene as suas fotos (duplicados, rajadas, desfocadas)
+703	transferência
+704	transferências
+705	usado
+706	vídeo
+707	vídeo comprimido
+708	vídeos
+709	vídeos comprimidos
+710	e-mail antigo
+711	e-mails antigos
+712	«Ficheiro danificado»: a transferência foi cortada. Transfira de novo este ZIP a partir do e-mail da Google e execute-o outra vez: o que já foi copiado não será copiado de novo.
+713	«Libertar espaço»: manter no telemóvel as fotos dos últimos…
+714	MANTER
+715	DEITAR FORA
+716	PARA ENCONTRAR DEPRESSA
+717	Para limpar
+718	Use isto se apagou a sua cópia do disco: o Clean Smart esquece o que já copiou e o próximo ficheiro ZIP será copiado de novo por inteiro.\n\nO disco escolhido e as suas definições são mantidos. Nada é apagado no disco nem em %1.
+719	Escrita impossível
+720	Eletricidade
+721	para deitar fora
+722	elemento
+723	elementos
+724	… e mais %1 e-mails do mesmo tipo (marcados).
+725	‹ Voltar
+726	ℹ️ %1 lidas sem erro. As impressões digitais da cópia já não estão neste telemóvel: impossível comparar.
+727	↩️ %1 na caixa de entrada
+728	↩️ %1 devolvidos à galeria
+729	↩️ %1 devolvidos ao seu lugar
+730	↩️ Enganei-me: devolver os %1
+731	↩️ E-mails recuperados (demonstração)
+732	↩️ Devolver %1 à minha caixa
+733	↩️ Recuperar e-mails
+734	↩️ Devolver tudo ao seu lugar
+735	⏳ À espera do próximo ficheiro em Download. Toque nos links «Transferir» do e-mail.
+736	⏳ À espera do próximo ficheiro em Download…
+737	⏳ a copiar…
+738	⏳ mais tarde
+739	⏹ Parar
+740	☑️ Marcar tudo
+741	⚙️ Cache das apps e ficheiros do sistema
+742	⚙️ Opções
+743	⚠️ %1: executar de novo.\n
+744	⚠️ %1 com erro: execute de novo os ZIP marcados «executar de novo» antes de continuar.
+745	⚠️ %1 no disco já não é idêntico ou já não se lê:\n
+746	⚠️ Nenhuma cópia esta noite
+747	⚠️ Ficheiro %1 a repetir
+748	⚠️ São precisos cerca de %1, restam %2. Pode começar: quando estiver cheio, liga outro disco e continuamos sem duplicados.
+749	⚠️ A cópia parou: %1\n\nNada se perde: execute de novo o modo automático, continuamos sem duplicados.
+750	⚠️ Não começamos
+751	⚠️ Cópia da noite
+752	⚠️ danificado: transfira-o de novo a partir do e-mail, será copiado sozinho
+753	⚠️ disco cheio
+754	⚠️ não começado
+755	⚠️ executar de novo
+756	⚠️ executar de novo (%1)
+757	⛔ A cópia não está completa (ficheiro danificado, a repetir ou ainda não copiado). Termine primeiro a cópia: não apague nada em %1.
+758	✅ %1: terminado e verificado.\n
+759	✅ %1 duplicado(s) apagado(s)
+760	✅ %1 e-mail(s) guardado(s) · %2 PDF · arquivo CleanSmart/Mails/index.html atualizado
+761	✅ %1 e-mails importantes em segurança · %2 PDF reunidos · arquivo index.html atualizado
+762	✅ %1 foto(s) nova(s) guardada(s)
+763	✅ %1 · há %2
+764	✅ %1 em segurança
+765	✅ 312 e-mails importantes em segurança (demonstração)
+766	✅ 7 958 boas fotos guardadas (demonstração)
+767	✅ Espaço suficiente em «%1».
+768	✅ Caixa de correio ligada
+769	✅ Disco verificado: %1 relidas, nenhuma danificada.
+770	✅ Duplicados apagados (demonstração)
+771	✅ Ficheiro %1 terminado
+772	✅ A cópia no disco está completa e verificada.
+773	✅ E-mails guardados (demonstração)
+774	✅ cópia completa e verificada\n✅ cópia do telemóvel desligada\n✅ fotos vistas no disco\n\nAbrir %1? É você que escolhe o que apagar.
+775	✅ copiado e verificado
+776	✅ copiado, verificado, apagado do telemóvel
+777	✉️ %1 deitados fora · %2 libertados na sua caixa de correio
+778	✉️ %1 e-mails
+779	✉️ %1 e-mails (pasta «Mails Gmail», abra index.html)\n
+780	✉️ Caixa de correio
+781	✉️ E-mails
+782	✉️ E-mails de %1
+783	✓ %1 escolhido
+784	✨ %1 libertados (recuperáveis 30 dias na lixeira da Galeria)
+785	✨ %1 e-mails enviados para a lixeira
+786	✨ %1 enviados para a lixeira (demonstração)
+787	✨ %1 enviados para a lixeira do seu correio (recuperáveis com «Recuperar e-mails»)
+788	✨ %1 limpos · %2 libertados
+789	✨ %1 e-mails antigos para a lixeira (os importantes são mantidos)
+790	✨ 1 249 e-mails para a lixeira (demonstração)
+791	✨ 1,1 GB libertados (demonstração)
+792	✨ 6,4 GB libertados (demonstração)
+793	✨ E-mails para a lixeira (demonstração)
+794	✨ Limpeza automática ao domingo
+795	✨ Limpeza de domingo
+796	✨ E-mails antigos para a lixeira (demonstração)
+797	❤️ Saúde do telemóvel: %1 / 100
+798	⬅ Deslize para a esquerda: todos os e-mails dele para a lixeira   ·   Deslize para a direita: mantém-se ➡
+799	⬅ Deslize para a esquerda para deitar fora   ·   Deslize para a direita para manter ➡
+800	⬇️ %1 em curso: a cópia começa assim que terminar.
+801	⬜ Desmarcar tudo
+802	⭐ Proteger as minhas %1
+805	🍏 As minhas fotos do iCloud
+806	🍏 Pense numa nova cópia do iCloud
+807	🍏 Deixar Fotografias em iCloud
+808	🎁 Versão de teste · %1
+809	🎉 %1 libertados no total
+810	🎉 Nenhum ficheiro inútil: o telemóvel está limpo!
+811	🎉 Nenhum e-mail para deitar fora aqui.
+812	🎉 Nenhuma app esquecida: usa-as todas!
+813	🎉 Já não há nada aqui.
+814	🎉 Nada para limpar, está tudo limpo!
+815	🎉 Terminado: %1 copiados e verificados. No total no disco: %2 e %3.
+816	🎉 Todos os ficheiros estão feitos
+817	🎬 Demonstração
+818	🎬 MODO DE DEMONSTRAÇÃO: nada é tocado no telemóvel
+819	🎬 Modo de demonstração: nada é tocado no telemóvel
+820	👀 Cada botão mostra primeiro a lista dos e-mails: desmarca os que quer manter e valida.
+821	👀 Ver e deitar fora os e-mails dele agora
+822	👆 Os remetentes que deitou fora
+823	👆 Ordenação dos remetentes
+824	👆 Ordenação rápida
+825	👉 Agora: no e-mail da Google, transfira o ficheiro %1 (em Wi-Fi). Depois toque no botão verde e escolha-o em Transferências.
+826	👉 Agora: em privacy.apple.com, transfira «Part %1» (em Wi-Fi). Depois toque no botão verde e escolha-o em Transferências.
+827	👉 A fazer agora
+828	👉 a transferir e depois tratar
+829	👍 Já tem a última versão (%1)
+830	👯 E-mails duplicados
+831	💡 Ajuda
+832	💡 Dica: cancele a subscrição para deixar de os receber (botão na lista «Quem lhe escreve mais»).
+833	💡 Se bloquear
+834	💡 Se bloquear: todos os conselhos
+835	💾 %1 em «%2»
+836	💾 Cópia da noite
+837	💾 Guardar %1
+838	💾 Guardar todas as minhas fotos
+839	💾 Guardar e-mails
+840	📁 Escolher a pasta de cópia
+841	📁 Escolher uma pasta
+842	📁 CleanSmart / Mails: o e-mail completo (.eml)\n📕 CleanSmart / PDF: todos os PDF reunidos\n📎 CleanSmart / Pieces jointes: os outros ficheiros
+843	📁 Pasta de cópia guardada
+844	📂 Tratar um ficheiro ZIP
+845	📂 Tratar um ficheiro ZIP à mão
+846	📅 O seu relatório do mês
+847	📎 E-mails grandes
+848	📕 Marcar os PDF
+849	📕 PDF guardado em Transferências / Clean Smart
+850	📕 PDF de recordação criado (demonstração)
+851	📖 Manual de utilização
+852	📤 Enviar (%1)
+853	📦 As maiores
+854	📦 Deixar o Google Fotos
+855	📦 A sua nova cópia Google pode estar pronta
+856	📧 Abrir o e-mail da Google
+857	📰 Newsletters e publicidade
+858	📱 As minhas apps
+859	📱 Abrir a app Google Fotos
+860	📱 Telemóvel
+861	📱 Telemóvel quase cheio
+862	📸 %1 fotos e %2 vídeos copiados e verificados, arrumados por ano\n
+863	📸 Fotos
+864	🔄 Analisar de novo
+865	🔄 Procurar de novo
+866	🔄 Recomeçar tudo (apaguei a minha cópia)
+867	🔍 Analisar a minha caixa de correio
+868	🔍 Analisar o meu telemóvel
+869	🔍 Procurar e-mails com anexos
+870	🔎 Verificar o disco (relê cada foto)
+871	🔒 A sua palavra-passe fica cifrada no telemóvel. Só é enviada ao servidor do seu correio.
+872	🔓 Autorizar
+873	🔓 Autorizar o acesso aos ficheiros
+874	🔓 Uma autorização para saber mais
+875	🔓 Uma autorização, uma só vez
+876	🔓 Uma só vez: autorize «Acesso a todos os ficheiros» para que o Clean Smart veja a pasta Download. Só lê os ficheiros de %1.
+877	🔔 E-mail de %1
+878	🔔 Será avisado quando ele lhe escrever
+879	🕰️ E-mails antigos
+880	🕰️ E-mails antigos (os importantes são mantidos)
+881	🗑️ Lixeira esvaziada: %1 recuperados de vez
+882	🗑️ Desinstalar
+883	🗑️ Ficheiro apagado do telemóvel: espaço livre para o seguinte
+884	🗑️ Os meus remetentes «deitar sempre fora»
+885	🗑️ Enviar %1 para a lixeira
+886	🗑️ Abrir %1 para apagar
+887	🗑️ Os e-mails dele irão para a lixeira todas as noites
+888	🗑️ Apagar este ZIP do telemóvel (recomendado)
+889	🗑️ Deitar sempre fora: %1   🛡️ Manter sempre: %2   🔔 Avisar-me: %3
+890	🗜️ Comprimir (%1)
+891	😴 Não abertas há 3 meses
+892	🚫 Cancelar subscrição
+894	🛡️ %1 (marcadas como favoritas)
+895	🛡️ %1 arrumados na pasta «Protegidos» do seu correio
+896	🛡️ Remetente importante (banco, administração, saúde…): os e-mails dele nunca são deitados fora.
+897	🛡️ O botão para apagar aparece quando a cópia está completa e as opções 1 e 2 estão marcadas.
+898	🛡️ Os e-mails do seu banco, da administração ou da saúde nunca vão para a lixeira.
+899	🛡️ Nunca se liberta %1 antes de verificar a cópia: marque primeiro a primeira opção.
+900	🛡️ Proteger (%1)
+901	🛡️ Arrumar os meus e-mails importantes
+902	🛡️ Os e-mails dele nunca serão deitados fora
+903	🤖 Cópia automática das suas fotos
+904	🤖 Iniciar o modo automático
+905	🤖 Tudo automático (o mais simples)
+906	🧊 Limpar a cache
+907	🧬 %1 duplicados e 🎞️ %2 fotos de rajada afastados\n
+908	🧬 os duplicados   🎞️ as fotos falhadas em rajada\n📱 as capturas de ecrã   🎬 os vídeos grandes\n💬 os ficheiros do WhatsApp   👥 os contactos duplicados\n✉️ as newsletters e e-mails grandes
+909	🧭 Limpeza
+910	🧭 Limpeza dos e-mails
+911	🧭 Limpeza guiada
+912	🧹 Ficheiros inúteis
+913	🧹 Deitar fora os e-mails de %1
+914	🧹 A limpeza segura
+915	🧹 E-mails ordenados esta noite
+916	🧹 Enviar %1 para a lixeira
+917	🧹 Limpeza segura
+918	🧹 Limpeza segura: newsletters, notificações, duplicados
+919	🧹 Limpar · %1
+920	🧹 Limpar · %1 · %2

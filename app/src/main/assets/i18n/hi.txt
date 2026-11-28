@@ -1,0 +1,896 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 कॉपी नहीं हो सकीं: यही फ़ाइल फिर से खोलें
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 «जाँचने योग्य» Clean Smart के कूड़ेदान में जाएँगी: 7 दिन तक वापस ला सकते हैं
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nध्यान दें: हटाना आपके खाते (Google…) के साथ सिंक होता है
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nडिस्क या फ़ोन भरा है: जगह खाली करें (या चरण 2 में डिस्क बदलें) और यही फ़ाइल फिर खोलें। कुछ भी दोबारा कॉपी नहीं होगा।
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nफ़ाइल खराब या अधूरी है: Google के ईमेल से फिर डाउनलोड करें और दोबारा खोलें। जो कॉपी हो चुका है वह बना रहेगा।
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nपहले एक कॉपी .vcf फ़ाइल के रूप में बैकअप फ़ोल्डर में सहेजी जाएगी।
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nउन फ़ोटो वाली ZIP फिर से खोलें (या स्वचालित मोड): वे दोबारा कॉपी होंगी। तब तक %1 पर कुछ न हटाएँ।
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nपहले बैकअप फ़ोल्डर में एक कॉपी बनाई जाएगी।
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Google में ईमेल और Google Photos 15 GB साझा करते हैं: ईमेल साफ़ करने से फ़ोटो के लिए भी जगह बनती है।
+ sur environ %1 Go	 लगभग %1 GB में से
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 डुप्लिकेट, बर्स्ट या खराब फ़ोटो का बैकअप नहीं
+ · %1 à la corbeille	 · %1 कूड़ेदान में
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · «जाँचने योग्य» फ़ाइलें Clean Smart के कूड़ेदान में (7 दिन)
+ · va dans la corbeille Clean Smart	 · Clean Smart के कूड़ेदान में
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): अतिरिक्त डुप्लिकेट, अतिरिक्त बर्स्ट, काली या सफ़ेद फ़ोटो, एक महीने से पुराने स्क्रीनशॉट।\n\nये गैलरी के कूड़ेदान में जाएँगी (30 दिन तक वापस ला सकते हैं)।
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) तुरंत जगह बनाने के लिए हमेशा के लिए हटाई जाएँगी।\n\nवापस नहीं आ सकतीं।
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 फेंकी गईं
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: न्यूज़लेटर और विज्ञापन (%2 प्रेषक), सूचनाएँ, डुप्लिकेट ईमेल।
+%1 Go · prévois %2	%1 GB · %2 तैयार करें
+%1 analysées	%1 का विश्लेषण हुआ
+%1 avec pièces jointes (dont %2 avec PDF)	%1 में अटैचमेंट (%2 में PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 सफल। मूल फ़ाइलें कूड़ेदान में डालकर %2 बचाएँ।
+%1 ce mois-ci. 	इस महीने %1
+%1 copié(s) dans ton dossier de sauvegarde.	%1 बैकअप फ़ोल्डर में कॉपी हुईं
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 बेकार फ़ाइलें: अस्थायी फ़ाइलें, थंबनेल, खाली फ़ोल्डर, ऐप्स के अवशेष।
+%1 de plus de %2 mois 	%2 महीने से पुरानी %1
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	«हमेशा फेंकें» प्रेषकों की %1 कूड़ेदान में गईं (30 दिन तक वापस ला सकते हैं)।
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 डुप्लिकेट ईमेल कूड़ेदान में जाएँगे। हर ईमेल की पहली प्रति रखी जाएगी।
+%1 et %2 copiées et vérifiées.	%1 और %2 कॉपी और जाँच हो गईं
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 और %2 सुरक्षित हैं। आप इसे हटाकर अगली फ़ाइल डाउनलोड कर सकते हैं।
+%1 fichier(s) sauvegardé(s)	%1 फ़ाइलों का बैकअप हुआ
+%1 jetés	%1 फेंकी गईं
+%1 libres sur %2	%2 में से %1 खाली
+%1 libérés sur le téléphone	फ़ोन पर %1 जगह बनी
+%1 mails dans la boîte · %2 analysés	इनबॉक्स में %1 ईमेल · %2 का विश्लेषण
+%1 min %2 s	%1 मिनट %2 सेकंड
+%1 newsletters · %2 gros mails	%1 न्यूज़लेटर · %2 बड़े ईमेल
+%1 newsletters, %2 gros mails (%3).	%1 न्यूज़लेटर, %2 बड़े ईमेल (%3)
+%1 photos trouvées	%1 फ़ोटो मिलीं
+%1 photos · %2 vidéos analysées	%1 फ़ोटो · %2 वीडियो का विश्लेषण
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 फ़ोटो · %2 वीडियो · %3 डुप्लिकेट और बर्स्ट हटाए
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 आपकी सभी फ़ोटो की कॉपी तैयार करेगा। इस उदाहरण का बिल्कुल पालन करें:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 हटाई जाएँगी: बेकार हैं या अपने आप फिर बन जाती हैं।
+%1 seront supprimés pour de bon.	%1 हमेशा के लिए हटाई जाएँगी।
+%1 sur %2 choisis · %3	%2 में से %1 चुनी · %3
+%1 sur %2 fichiers faits	%2 में से %1 फ़ाइलें पूरी
+%1 sur %2 · %3	%2 में से %1 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 गैलरी के कूड़ेदान में जाएँगी (30 दिन तक वापस ला सकते हैं)।
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 गैलरी के कूड़ेदान में (30 दिन तक वापस ला सकते हैं)
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: डुप्लिकेट, अतिरिक्त बर्स्ट, काली या सफ़ेद फ़ोटो, एक महीने से पुराने स्क्रीनशॉट। सबसे अच्छी फ़ोटो रखी जाती है।
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	कुल %1 · %2। किसी ऐप को अनइंस्टॉल करने या उसका कैश साफ़ करने के लिए टैप करें।
+%1 à jeter	%1 फेंकें
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 एक-एक करके देखें। बाईं ओर स्वाइप करें तो फेंकें, दाईं ओर तो रखें (पसंदीदा ⭐)।
+%1, %2, %3 copiés · %4 et %5 écartés.	%1, %2, %3 कॉपी · %4 और %5 हटाए
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1%2 साल से पुराने ईमेल कूड़ेदान में जाएँगे (ज़रूरी ईमेल छोड़कर)।
+(sans objet)	(कोई विषय नहीं)
+. %1 en double ou en rafale à trier : touche ici.	. %1 डुप्लिकेट या बर्स्ट छाँटने हैं: यहाँ टैप करें।
+1 bouton	1 बटन
+1 mois	1 महीना
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. मैंने बैकअप बंद कर दिया: Google Photos ऐप › ऊपर दाईं ओर प्रोफ़ाइल फ़ोटो › Photos सेटिंग › बैकअप › बंद
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. iPhone पर मैंने «iCloud फ़ोटो» बंद कर दी (सेटिंग › आपका नाम › iCloud › फ़ोटो)
+12 mois	12 महीने
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. मैंने कंप्यूटर पर डिस्क खोलकर अपनी फ़ोटो साल के अनुसार देख लीं
+3 mois	3 महीने
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. सुझाव: मैंने दूसरी कॉपी बना ली (दूसरी डिस्क या कंप्यूटर)
+4 étapes	4 चरण
+6 mois	6 महीने
+AFFICHAGE	दिखावट
+AUTOMATIQUE	स्वचालित
+AUTRE	अन्य
+Adresse mail	ईमेल पता
+Adresse, serveur et mot de passe sont obligatoires.	पता, सर्वर और पासवर्ड ज़रूरी हैं
+Alerte retirée	अलर्ट रद्द हुआ
+Alertes et rapport du mois	अलर्ट और मासिक रिपोर्ट
+Analyse de la boîte mail	मेलबॉक्स का विश्लेषण
+Analyse des 3 000 mails les plus récents de la boîte de réception.	इनबॉक्स के पिछले 3,000 ईमेल का विश्लेषण
+Analyse des mails (%1 / %2)	ईमेल का विश्लेषण (%1 / %2)
+Analyse du téléphone	फ़ोन का विश्लेषण
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	मेलबॉक्स «%1» का विश्लेषण करें: न्यूज़लेटर, बड़े ईमेल, पुराने ईमेल। ज़रूरी ईमेल हमेशा रखे जाते हैं।
+Analyser ma boîte mail	मेरे मेलबॉक्स का विश्लेषण करें
+Analyser mon téléphone	मेरे फ़ोन का विश्लेषण करें
+Annuler	रद्द करें
+Annuler, ne rien jeter	रद्द करें, कुछ न फेंकें
+Appeler	कॉल करें
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple अनुरोध की जाँच करके ईमेल भेजता है, आमतौर पर 3 से 7 दिन में। फिर privacy.apple.com पर फ़ाइलें डाउनलोड करें (फ़ोन से साइन इन करें)।
+Apple · Données et confidentialité	Apple · डेटा और गोपनीयता
+Appliquer « toujours jeter » maintenant	अभी «हमेशा फेंकें» लागू करें
+Arrêt après le fichier en cours…	मौजूदा फ़ाइल के बाद रुकेगा…
+Arrêter	रोकें
+Arrêter le mode automatique ?	स्वचालित मोड रोकें?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	रोका गया। कॉपी हुई फ़ाइलें सुरक्षित हैं, बाकी अगली बार बिना दोहराव के कॉपी होंगी।
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	सुझाव: सेटिंग › ऐप्स में किसी ऐप (Chrome, Facebook…) पर टैप करें › स्टोरेज › «कैश साफ़ करें»।
+Aucun contact en double	कोई डुप्लिकेट संपर्क नहीं
+Aucun dossier choisi	कोई फ़ोल्डर नहीं चुना
+Aucun dossier de sauvegarde	कोई बैकअप फ़ोल्डर नहीं
+Aucun fichier inutile.	कोई बेकार फ़ाइल नहीं
+Aucune boîte mail connectée.	कोई मेलबॉक्स जुड़ा नहीं
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	कोई USB या डिस्क नहीं मिली। उसे लगाएँ (USB-C एडेप्टर) और यह चरण फिर खोलें।
+Aucune vidéo n'a pu être réduite davantage.	कोई वीडियो और छोटा नहीं हो सकता
+Autre	अन्य
+Autres fichiers d'installation (.apk)	अन्य इंस्टॉलेशन फ़ाइलें (.apk)
+Avant tout : analyser	सबसे पहले: विश्लेषण
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	«उपयोग डेटा तक पहुँच» चालू करने पर Clean Smart हर ऐप का असली आकार और आपने उसे आखिरी बार कब खोला, देख सकता है। कुछ भी कहीं नहीं भेजा जाता।
+BOÎTE MAIL	मेलबॉक्स
+Banque	बैंक
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	बैंक, सरकारी दफ़्तर, स्वास्थ्य, बिल और PDF वाले सभी ईमेल: बैकअप होते हैं, PDF एक जगह इकट्ठा, कंप्यूटर के लिए index.html संग्रह के साथ।
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	बैंक, सरकारी दफ़्तर, स्वास्थ्य, बिल और PDF वाले सभी ईमेल: बैकअप होते हैं, PDF एक जगह इकट्ठा, कंप्यूटर के लिए index.html संग्रह के साथ। मेलबॉक्स में ये «सुरक्षित» में रखे जाते हैं।
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	बैंक, कर, स्वास्थ्य, घर, परिवार (आपके संपर्क): अलग रखे जाते हैं, कभी नहीं फेंके जाते।
+Batterie faible (%1 %)	बैटरी कम (%1 %)
+Bonjour	नमस्ते
+Boutique Mode	फ़ैशन स्टोर
+Boîte mail en ordre !	मेलबॉक्स व्यवस्थित!
+Boîte mail remplie à %1 % (%2 / %3)	मेलबॉक्स %1 % भरा (%2 / %3)
+Boîte protégée	सुरक्षित मेलबॉक्स
+Boîte remplie à %1 % (%2 / %3). 	%1 % भरा (%2 / %3)
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	चार्जर लगाएँ: एक फ़ाइल में 10 से 30 मिनट लग सकते हैं।\n\nअगर फ़ोन बंद हो जाए तो कुछ नहीं खोता: बस वही फ़ाइल फिर खोलें।
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	काम के दौरान चार्जर लगाएँ: बड़ी फ़ाइल में 10 से 30 मिनट लगते हैं। स्क्रीन चालू रहेगी।
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	फ़ोन में USB या डिस्क लगाएँ, फिर उस पर एक फ़ोल्डर चुनें (या बनाएँ)।
+Brancher la clé ou le disque	USB या डिस्क लगाएँ
+C'est fait : le prochain fichier sera entièrement recopié.	हो गया: अगली फ़ाइल पूरी फिर से कॉपी होगी।
+C'est noté	समझ गया
+CONSEILLÉ	सुझाया गया
+CONTACT	संपर्क
+CONTACTS	संपर्क
+Captures d'écran	स्क्रीनशॉट
+Carte SD, clé USB, Drive… choisis où tu veux	SD कार्ड, USB, Drive… आपकी मर्ज़ी।
+Carte SD, clé USB, Google Drive…	SD कार्ड, USB, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	यह फ़ाइल पहले ही कॉपी और जाँची जा चुकी है। दोबारा करने से डुप्लिकेट नहीं बनेंगे, पर ज़रूरत नहीं।\n\nशायद आप अगली फ़ाइल (%1) चाहते हैं।
+Ce mois-ci	यह महीना
+Cette année	यह साल
+Changer de compte	खाता बदलें
+Changer de dossier	फ़ोल्डर बदलें
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	हर रविवार सुरक्षित बेकार फ़ाइलें और स्पैम अपने आप साफ़ होते हैं। एक सूचना बताती है कितनी जगह बनी और क्या कोई फ़ोटो छाँटनी है।
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	हर चुना गया ईमेल बैकअप फ़ोल्डर में सहेजा जाता है:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	हर वीडियो 720p में फिर से बनाया जाता है, अक्सर 3 से 5 गुना छोटा, और Movies / Clean Smart में सहेजा जाता है।
+Choisir le dossier sur le disque	डिस्क पर एक फ़ोल्डर चुनें
+Choisir un dossier	एक फ़ोल्डर चुनें
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	पहले USB या डिस्क पर एक फ़ोल्डर चुनें (चरण 2)।
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	पहले USB या डिस्क पर एक फ़ोल्डर चुनें («डिस्क» चरण)।
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	पहले एक फ़ोल्डर चुनें: SD कार्ड, USB या Google Drive।
+Choisis d'abord un dossier de sauvegarde (Options).	पहले एक बैकअप फ़ोल्डर चुनें (विकल्प)।
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	पहले एक बैकअप फ़ोल्डर चुनें (SD कार्ड, USB, Drive)।
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	पहले बैकअप फ़ोल्डर चुनें और बैकअप लें।
+Choisis d'abord un dossier de sauvegarde.	पहले एक बैकअप फ़ोल्डर चुनें।
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	अपने ईमेल चुनें: अटैचमेंट के साथ सहेजे जाएँगे, PDF अलग फ़ोल्डर में।
+Choisis une carte SD, une clé USB ou Google Drive	SD कार्ड, USB या Google Drive चुनें
+Choix des plus belles photos…	सबसे सुंदर फ़ोटो चुनी जा रही हैं…
+Clean Smart : copie automatique	Clean Smart: स्वचालित कॉपी
+Clean Smart attend les fichiers dans Download…	Clean Smart Download में फ़ाइल का इंतज़ार कर रहा है…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart आपके पिछले 3,000 ईमेल पढ़ता है (कुछ नहीं हटाता)।
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart आपकी सभी फ़ोटो देखता है (कुछ नहीं हटाता)।
+Clean Smart trouve en un clic :	Clean Smart एक टैप में ढूँढता है:
+Clé USB (démonstration)	USB ड्राइव (डेमो)
+Clé USB ou disque dur, avec un adaptateur USB-C	USB-C एडेप्टर के साथ USB या हार्ड डिस्क
+Colis et livraisons	पार्सल और डिलीवरी
+Combien de place faut-il ?	कितनी जगह चाहिए?
+Comme le téléphone	फ़ोन के अनुसार
+Commencer	शुरू करें
+Compresser	कंप्रेस करें
+Compresser %1 ?	%1 कंप्रेस करें?
+Compression des vidéos	वीडियो कंप्रेस हो रहे हैं
+Compris	समझ गया
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	मेलबॉक्स जोड़ें (Gmail, Outlook, Yahoo, Orange, Free…): न्यूज़लेटर, बड़े और पुराने ईमेल छाँटें। ज़रूरी ईमेल हमेशा रखे जाते हैं।
+Connecter	जोड़ें
+Connecter ma boîte mail	मेरा मेलबॉक्स जोड़ें
+Connexion au serveur	सर्वर से जुड़ रहा है
+Connexion impossible : 	जुड़ नहीं सका:
+Connexion à la messagerie	ईमेल सेवा से जुड़ रहा है
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	सुझाव: मैंने दूसरी कॉपी बना ली (दूसरी डिस्क या कंप्यूटर)
+Contacts en double	डुप्लिकेट संपर्क
+Continuer quand même	जारी रखें
+Copie automatique	स्वचालित कॉपी
+Copier les fichiers un par un	फ़ाइलें एक-एक करके कॉपी करें
+Copies identiques — l'original est gardé	एक जैसी कॉपियाँ — मूल रखी जाती है
+Corbeille	कूड़ेदान
+Corbeille : %1	कूड़ेदान: %1
+Corbeille Clean Smart	Clean Smart कूड़ेदान
+Corbeille de la messagerie	ईमेल कूड़ेदान
+Correct, mais peut mieux faire	ठीक है, पर बेहतर हो सकता है
+Créer une exportation	एक्सपोर्ट बनाएँ
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Google Photos में: किसी फ़ोटो को दबाकर रखें, पूरा दिन चुनें, फिर «हटाएँ»। Google का कूड़ेदान सब कुछ 60 दिन रखता है।
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Google Takeout में 2 GB की फ़ाइलें चुनें: हम एक-एक फ़ाइल करते हैं, फ़ोन को ज़्यादा जगह नहीं चाहिए।
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Apple अनुरोध में 1 या 2 GB की फ़ाइलें चुनें: हम एक-एक फ़ाइल करते हैं, फ़ोन को ज़्यादा जगह नहीं चाहिए।
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Google के ईमेल में «डाउनलोड» बटन गिनें: यही फ़ाइलों की संख्या है।
+Demander la copie à %1	%1 से एक कॉपी माँगें
+Demander une copie de tes données	अपने डेटा की कॉपी माँगें
+Demandée · attends le mail de %1	माँगी गई · %1 के ईमेल का इंतज़ार
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Android 11 से कोई क्लीनर ऐप दूसरे ऐप्स का कैश या सिस्टम फ़ाइलें साफ़ नहीं कर सकता। यह Android खुद करता है: यह बटन उसकी «जगह खाली करें» स्क्रीन खोलता है।
+Depuis l'installation	इंस्टॉल होने के बाद से
+Dernière vérification	आखिरी जाँच
+Des applis téléchargées mais pas installées. À vérifier.	डाउनलोड किए गए पर इंस्टॉल न हुए ऐप्स, जाँचने योग्य।
+Disque	डिस्क
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	डिस्क पहचानी नहीं गई: USB-C (OTG) एडेप्टर इस्तेमाल करें। exFAT में फ़ॉर्मेट की USB हर जगह काम करती है (FAT32 में 4 GB से बड़ी फ़ाइलें नहीं जातीं)।
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	डिस्क भरी है: बड़ी डिस्क लगाएँ और «डिस्क» चरण में चुनें। हम वहीं से बिना दोहराव के आगे बढ़ते हैं।
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	Download में 6 महीने से न छुए दस्तावेज़, जाँचने योग्य।
+Dossier Corbeille introuvable sur ce compte.	इस खाते में कूड़ेदान फ़ोल्डर नहीं मिला
+Dossier Corbeille introuvable.	कूड़ेदान फ़ोल्डर नहीं मिला
+Dossier Spam introuvable sur ce compte.	इस खाते में स्पैम फ़ोल्डर नहीं मिला
+Dossier de sauvegarde	बैकअप फ़ोल्डर
+Dossier de sauvegarde introuvable.	बैकअप फ़ोल्डर नहीं मिला
+Dossiers cache	कैश फ़ोल्डर
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	उन ऐप्स के छोड़े फ़ोल्डर जो अब फ़ोन पर नहीं हैं, जाँचने योग्य।
+Dossiers vides	खाली फ़ोल्डर
+Dossiers vides…	खाली फ़ोल्डर…
+Doublons	डुप्लिकेट
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	डुप्लिकेट और अतिरिक्त बर्स्ट (सबसे अच्छी रखी जाती है), काली या सफ़ेद फ़ोटो, पुराने स्क्रीनशॉट। रखने के लिए फ़ोटो पर टैप करें। सब गैलरी के कूड़ेदान में जाता है (30 दिन)।
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	डुप्लिकेट, अतिरिक्त बर्स्ट, काली या सफ़ेद फ़ोटो, पुराने स्क्रीनशॉट
+Doublons, rafales, floues	डुप्लिकेट, बर्स्ट, धुंधली
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	जो ईमेल रखने हैं उनका निशान हटाएँ। बैंक, कर, स्वास्थ्य और «हमेशा रखें» प्रेषकों के ईमेल इस सूची में नहीं हैं। सब ईमेल कूड़ेदान में जाता है (वापस ला सकते हैं)।
+Démonstration…	डेमो…
+Déplacement vers la corbeille…	कूड़ेदान में भेज रहा है…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	डिफ़ॉल्ट रूप से बंद। चालू करने पर हर सफ़ाई से पहले फ़ोटो (और .vcf में संपर्क) इस फ़ोल्डर में कॉपी होती हैं, सुरक्षा के लिए।
+Elles sont déjà toutes en favori 👍	सभी फ़ोटो पहले से पसंदीदा हैं 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	डेमो मोड में कोई फ़ाइल प्रोसेस नहीं होती। असली काम के लिए डेमो मोड से बाहर निकलें (विकल्प)।
+En pleine forme	बहुत अच्छी हालत
+Envoyer %1	%1 भेजें
+Envoyer le PDF souvenir	यादों की PDF भेजें
+Envoyer le lien par e-mail · Exporter une fois	ईमेल से डाउनलोड लिंक भेजता है · एक बार का एक्सपोर्ट
+Erreur inattendue	अनपेक्षित त्रुटि
+Espace libéré	बची जगह
+Espace libéré depuis le début : %1. Une petite analyse ?	शुरुआत से बची जगह: %1। एक छोटा विश्लेषण करें?
+Espace à récupérer	बचने वाली जगह
+Et tes mails	और आपके ईमेल
+Factures et papiers	बिल और दस्तावेज़
+Faire le ménage sûr ?	सुरक्षित सफ़ाई करें?
+Fait ✔	हो गया ✔
+Famille	परिवार
+Fermer	बंद करें
+Fichier %1	फ़ाइल %1
+Fichier %1 déjà fait	फ़ाइल %1 पूरी
+Fichier illisible	फ़ाइल पढ़ी नहीं जा सकती
+Fichiers d'installation déjà installés	पहले से इंस्टॉल ऐप्स की इंस्टॉलेशन फ़ाइलें।
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	फ़ोन स्टोरेज में ऐप्स की काम की फ़ाइलें, ज़रूरत पर फिर बन जाती हैं।
+Fichiers inutiles	बेकार फ़ाइलें
+Fichiers mis de côté, vidée toute seule après 7 jours	अलग रखी फ़ाइलें, 7 दिन बाद अपने आप साफ़।
+Fichiers temporaires	अस्थायी फ़ाइलें
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	अस्थायी फ़ाइलें, थंबनेल, खाली फ़ोल्डर, ऐप्स के अवशेष
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	अस्थायी फ़ाइलें, थंबनेल, खाली फ़ोल्डर, ऐप्स के अवशेष। फ़ोटो और संगीत को कभी नहीं छुआ जाता।
+Floue	धुंधली
+Floues, trop sombres ou trop claires — vérifie avant de cocher	धुंधली, बहुत गहरी या बहुत चमकीली — चुनने से पहले जाँचें
+GARDÉE	रखें
+Garder sur le téléphone les photos des derniers…	हाल की फ़ोटो फ़ोन पर रखें…
+Gardés	रखें
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail को ऐप पासवर्ड (16 अक्षर) चाहिए:\n1. Google खाते में 2-चरणीय सत्यापन चालू करें\n2. myaccount.google.com/apppasswords खोलें\n3. «Clean Smart» नाम का पासवर्ड बनाएँ और यहाँ चिपकाएँ
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	तैयार होने पर Google ईमेल भेजता है: कुछ घंटों से कुछ दिनों में। तब तक ऐप बंद कर सकते हैं।
+Gros	बड़ा
+Gros mails (+ 5 Mo)	बड़े ईमेल (5 MB+)
+Grosses vidéos	बड़े वीडियो
+Groupe %1 · %2 photos	समूह %1 · %2 फ़ोटो
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	लॉगिन अस्वीकार। Gmail, Yahoo और iCloud को ऐप पासवर्ड चाहिए, आपका सामान्य पासवर्ड नहीं।
+Il a besoin d'un bon ménage	बड़ी सफ़ाई की ज़रूरत
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	सिर्फ़ %1 बचा। एक टैप में जगह बनाने के लिए Clean Smart खोलें।
+Ils ne contiennent rien.	अंदर कुछ नहीं है।
+Ils prennent encore de la place pendant 30 jours	ये अभी भी 30 दिन जगह लेती हैं।
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	ये मेलबॉक्स के «सुरक्षित» फ़ोल्डर में रखे जाते हैं। हर रात दोहराया जाता है।
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	पूर्ववत नहीं हो सका: फ़ाइलें शायद हमेशा के लिए हट चुकी हैं।
+Impossible de créer le dossier %1	फ़ोल्डर %1 नहीं बन सका
+Impossible de protéger ces photos	इन फ़ोटो को सुरक्षित नहीं कर सका
+Impossible de vider la corbeille	कूड़ेदान खाली नहीं कर सका
+Impôts	कर
+Impôts - Administration	कर - सरकारी दफ़्तर
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	अपनी ईमेल सेवा का IMAP सर्वर बताएँ (पोर्ट 993, SSL)।
+J'ai demandé la copie	मैंने कॉपी माँग ली
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	मैंने कंप्यूटर पर डिस्क खोलकर अपनी फ़ोटो साल के अनुसार देख लीं
+J'ai traité tous les fichiers	मैंने सारी फ़ाइलें प्रोसेस कर लीं
+Jamais jetés, rangés dans « Protégés »	कभी नहीं फेंके जाते, «सुरक्षित» में रखे जाते हैं।
+Je libère la boîte	मैं मेलबॉक्स साफ़ करता हूँ
+Je libère la place	मैं जगह बनाता हूँ
+Je mets l'important à l'abri	मैं ज़रूरी चीज़ें सुरक्षित करता हूँ
+Je mets à l'abri les bonnes	मैं अच्छी फ़ोटो सुरक्षित करता हूँ
+Je trie par expéditeur	मैं प्रेषक छाँटता हूँ
+Je vérifie le douteux	मैं संदिग्ध फ़ोटो जाँचता हूँ
+Jeter %1 ?	%1 फेंकें?
+Jeter ces mails ?	ये ईमेल फेंकें?
+Jeter les copies ?	कॉपियाँ फेंकें?
+Jeter les gros mails ?	बड़े ईमेल फेंकें?
+Jeter les newsletters ?	न्यूज़लेटर फेंकें?
+Jeter les originaux ?	मूल फेंकें?
+Jeter les vieux mails ?	पुराने ईमेल फेंकें?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	लॉग, अस्थायी बैकअप, अधूरे डाउनलोड। अब बेकार।
+L'adresse et le mot de passe seront effacés du téléphone.	पता और पासवर्ड फ़ोन से हटा दिए जाएँगे।
+L'important est à l'abri, le reste est parti	ज़रूरी चीज़ें सुरक्षित हैं, बाकी व्यवस्थित।
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	मूल को छुआ नहीं जाता: फिर आपसे पूछा जाएगा कि क्या उन्हें कूड़ेदान में डालना है।\n\nकुछ मिनट लग सकते हैं।
+LA NUIT	रात में
+LIBÉRER LA PLACE	जगह खाली करें
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	डिस्क की कॉपी हट गई: Clean Smart सब कुछ शुरू से फिर कॉपी करेगा।
+La corbeille est vide.	कूड़ेदान खाली है।
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	ईमेल की जगह तब खाली होती है जब ईमेल कूड़ेदान खाली होता है (आमतौर पर 30 दिन में)।
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	बैकअप विफल। फ़ोल्डर जाँचने के लिए Clean Smart खोलें।
+Langue	भाषा
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	निर्देशित सफ़ाई सब कुछ सही क्रम में करती है। हरा बटन हमेशा अगला चरण होता है।
+Le bilan, et comment libérer ton compte %1	सारांश, और आपके %1 खाते को साफ़ करने का तरीका
+Le contact d'origine est gardé.	मूल संपर्क रखा जाता है।
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	डिस्क (या फ़ोन) भरा है: कॉपी ठीक से रुक गई।\n\nबड़ी डिस्क लगाएँ, चरण 2 में चुनें, फिर स्वचालित मोड दोबारा शुरू करें: बिना दोहराव के जारी रहेगा।
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	डिस्क में जगह कम है: %1 बची, इस फ़ाइल को लगभग %2 चाहिए।\n\n• डिस्क पर जगह खाली करें, या\n• बड़ी डिस्क लगाएँ और «डिस्क» चरण में चुनें (यहीं से जारी रहेगा)।\n\nअभी कुछ नहीं छुआ गया।
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	डिस्क तक पहुँच नहीं।\n\n• जाँचें कि ठीक से लगी है (USB-C एडेप्टर)।\n• «डिस्क» चरण में फ़ोल्डर फिर से चुनें।
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	बैकअप फ़ोल्डर तक पहुँच नहीं। उसे चुनने के लिए Clean Smart > विकल्प खोलें।
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	बैकअप फ़ोल्डर अब उपलब्ध नहीं है। उसे फिर से चुनें।
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	डिस्क पर फ़ोल्डर «%1» नहीं मिला। जाँचें कि डिस्क लगी है (चरण 2)।
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	पहले मौजूदा फ़ाइल पूरी होगी। कॉपी हुई फ़ाइलें सुरक्षित हैं, बाकी अगली बार बिना दोहराव के।
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Google के ईमेल के लिंक लगभग एक हफ़्ते बाद समाप्त हो जाते हैं: ऐसा हो तो नया एक्सपोर्ट माँगें (कुछ नहीं खोता, बिना दोहराव के जारी)।
+Le mois dernier	पिछला महीना
+Le ménage sûr	सुरक्षित सफ़ाई
+Le refaire quand même	फिर भी दोबारा करें
+Le téléphone	फ़ोन
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	फ़ोन लगभग भरा है (काम के लिए कम से कम 300 MB खाली चाहिए)।\n\n• गैलरी का कूड़ेदान खाली करें\n• प्रोसेस हो चुकी ZIP हटाएँ (Download)\n• Clean Smart की निर्देशित सफ़ाई चलाएँ\n\nअभी कुछ नहीं छुआ गया।
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	फ़ोन बंद हो गया या डिस्क निकल गई? बस वही ZIP फिर खोलें: Clean Smart बिना कुछ खोए और बिना दोहराव के जारी रखता है।
+Lecture de la galerie	गैलरी पढ़ी जा रही है
+Lecture des dates des photos…	फ़ोटो की तारीख़ें पढ़ी जा रही हैं…
+Lecture des vidéos	वीडियो पढ़े जा रहे हैं
+Lecture impossible : %1	पढ़ा नहीं जा सका: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	पहले से इंस्टॉल ऐप्स की .apk फ़ाइलें: अब बेकार।
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	ईमेल कूड़ेदान के आखिरी 200 ईमेल। इनबॉक्स में वापस लाने वाले चुनें।
+Les 30 photos et vidéos qui prennent le plus de place	सबसे ज़्यादा जगह लेने वाली 30 फ़ोटो और वीडियो
+Les autres cases : inutile	अन्य टाइल: बेकार
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Apple की फ़ाइलें privacy.apple.com पर लगभग 2 हफ़्ते डाउनलोड के लिए रहती हैं: बीत जाएँ तो नया अनुरोध करें (कुछ नहीं खोता, बिना दोहराव के जारी)।
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	कूड़ेदान में डाली फ़ाइलें अभी भी गैलरी से वापस आ सकती हैं।
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	%1 साल से पुराने ईमेल ईमेल कूड़ेदान में जाते हैं। ज़रूरी ईमेल रखे जाते हैं।
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	2 साल से पुराने ईमेल ईमेल कूड़ेदान में जाते हैं।
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	5 MB से बड़े ईमेल ईमेल कूड़ेदान में जाते हैं।
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	न्यूज़लेटर, विज्ञापन, सूचनाएँ और डुप्लिकेट ईमेल कूड़ेदान में जाते हैं (पूरा इनबॉक्स)।\n\nज़रूरी ईमेल को कभी नहीं छुआ जाता।
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	पहले फ़ोटो (छाँटें, सबसे अच्छी रखें, बैकअप, जगह बनाएँ), फिर फ़ोन की बेकार फ़ाइलें, फिर ईमेल।
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	%1 महीने से पुरानी और बैकअप हो चुकी फ़ोटो फ़ोन से हटेंगी (कूड़ेदान 30 दिन)।
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	पसंदीदा फ़ोटो (या 🛡️ बटन से सुरक्षित) कभी हटाने के लिए नहीं सुझाई जातीं।
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	थोड़ी धुंधली फ़ोटो, WhatsApp, हाल के स्क्रीनशॉट: आप तय करें।
+Les photos, vidéos et musiques ne sont jamais touchées.	फ़ोटो, वीडियो और संगीत को कभी नहीं छुआ जाता।
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	पुरानी फ़ोटो तभी फेंकने के लिए सुझाई जाती हैं जब वे बैकअप में हों।
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	महीने या साल की सबसे सुंदर फ़ोटो, अपनों को भेजने के लिए।
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	सबसे बड़े ऐप्स और वे जिन्हें अब नहीं खोलते: एक टैप में अनइंस्टॉल।
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	स्पैम ईमेल कूड़ेदान में जाते हैं। अगर ईमेल स्पैम नहीं है तो निशान हटाएँ।
+Libérer	जगह बनाएँ
+Libérer %1 ?	%1 जगह बनाएँ?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	%1 की सफ़ाई वैकल्पिक है। %2 किसी ऐप को आपकी फ़ोटो हटाने नहीं देता: पक्का होने पर आप खुद हटाते हैं।
+Libérer la boîte	मेलबॉक्स साफ़ करें
+Libérer la boîte mail	मेलबॉक्स साफ़ हो रहा है
+Libérer la boîte mail ?	मेलबॉक्स साफ़ करें?
+Libérer la place	जगह खाली करें
+Libérer la place, PDF souvenir…	जगह खाली करना, यादों की PDF…
+Liste des photos sur le disque…	डिस्क पर फ़ोटो की सूची बनाई जा रही है…
+MAINTENANT	अभी
+Mail (facultatif, pour tes mails)	ईमेल (वैकल्पिक, आपके ईमेल के लिए)
+Mails	ईमेल
+Mails Gmail : %1	Gmail ईमेल: %1
+Mails avec pièces jointes	अटैचमेंट वाले ईमेल
+Mails de plus de 2 ans	2 साल से पुराने ईमेल
+Mails en double	डुप्लिकेट ईमेल
+Mails en double…	डुप्लिकेट ईमेल…
+Maison	घर
+Me prévenir	मुझे बताएँ
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Clean Smart आज़माने के लिए धन्यवाद! अपना फ़ोन साफ़ करते रहने के लिए पूरा संस्करण इंस्टॉल करें।
+Mes applis	मेरे ऐप्स
+Mes plus gros fichiers	मेरी सबसे बड़ी फ़ाइलें
+Mes règles	मेरे नियम
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	बैकअप हो चुकी %1 महीने से पुरानी फ़ोटो कूड़ेदान में डालें
+Mettre à l'abri	सुरक्षित करें
+Mettre à l'abri l'important	ज़रूरी चीज़ें सुरक्षित हो रही हैं
+Miniatures	थंबनेल
+Mise à jour	अपडेट
+Mise à la corbeille…	कूड़ेदान में भेज रहा है…
+Mode d'emploi	उपयोगकर्ता पुस्तिका
+Mode d'emploi introuvable.	उपयोगकर्ता पुस्तिका नहीं मिली
+Mode démonstration terminé	डेमो मोड बंद
+Modifier ▼	बदलें ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	नकली फ़ोटो, ईमेल और संपर्कों के साथ ऐप दिखाता है। फ़ोन पर कुछ नहीं छूता: Clean Smart दिखाने के लिए बढ़िया।
+Mot de passe (vide = garder l'actuel)	पासवर्ड (खाली = वही रखें)
+Mot de passe d'application	ऐप पासवर्ड
+Médias WhatsApp	WhatsApp मीडिया
+Ménage complet	पूरी सफ़ाई
+Ménage guidé	निर्देशित सफ़ाई
+Ménage guidé des mails	निर्देशित ईमेल सफ़ाई
+Ménage sûr de la boîte mail	सुरक्षित मेलबॉक्स सफ़ाई
+Ménage terminé !	सफ़ाई पूरी!
+NOUVEAU	नया
+Nettoyage de la boîte mail	मेलबॉक्स साफ़ हो रहा है
+Nettoyage des fichiers inutiles	बेकार फ़ाइलें साफ़ हो रही हैं
+Nettoyer	साफ़ करें
+Nettoyer %1 ?	%1 साफ़ करें?
+Nettoyer le téléphone	फ़ोन साफ़ करें
+Nettoyer les fichiers inutiles ?	बेकार फ़ाइलें साफ़ करें?
+Newsletters et notifications…	न्यूज़लेटर और सूचनाएँ…
+Newsletters et pubs	न्यूज़लेटर और विज्ञापन
+Newsletters, pubs, notifications et mails en double.	न्यूज़लेटर, विज्ञापन, सूचनाएँ और डुप्लिकेट ईमेल
+Nombre de fichiers dans le mail	ईमेल में फ़ाइलों की संख्या
+Normale	सामान्य
+Nouvelle version %1 disponible	नया संस्करण %1 उपलब्ध
+Oublier	खाता हटाएँ
+Oublier ce compte ?	यह खाता हटाएँ?
+Oui, c'est fini	हाँ, हो गया
+Ouverte aujourd'hui	आज खोला
+Ouverte il y a %1	%1 पहले खोला
+Ouverture de %1…	%1 खुल रहा है…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	क्या करना है देखने के लिए Clean Smart खोलें। कुछ नहीं खोता।
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	अपना Google पेज खोलें और देखें कि Google Photos कितनी जगह ले रहा है। यहाँ लिखें (GB में)।
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	«बड़े वीडियो» खोलें, चुनें, फिर «कंप्रेस करें»।
+Ouvrir	खोलें
+Ouvrir Google Photos	Google Photos खोलें
+Ouvrir Google Takeout	Google Takeout खोलें
+Ouvrir iCloud Photos	iCloud फ़ोटो खोलें
+Ouvrir la page du mot de passe d'application	ऐप पासवर्ड पेज खोलें
+Ouvrir privacy.apple.com	privacy.apple.com खोलें
+Ouvrir « Libérer de l'espace » d'Android	Android की «जगह खाली करें» खोलें
+PDF souvenir	यादों की PDF
+PHOTOS ET VIDÉOS	फ़ोटो और वीडियो
+PROTECTION	सुरक्षा
+Pas de photos pour cette période.	इस अवधि में कोई फ़ोटो नहीं
+Pas ouverte depuis plus d'un an	एक साल से ज़्यादा से नहीं खोला
+Passer	छोड़ें
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	दिखाने के लिए फ़ोटो की छोटी कॉपियाँ, अपने आप फिर बनती हैं।
+Photos	फ़ोटो
+Photos : %1 · vidéos : %2 · doublons écartés : %3	फ़ोटो: %1 · वीडियो: %2 · डुप्लिकेट हटाए: %3
+Photos du week-end	वीकेंड की फ़ोटो
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	डुप्लिकेट, बर्स्ट, खराब फ़ोटो, भारी वीडियो, बेकार ईमेल… सब जगह खाता है।
+Photos et vidéos reçues ou envoyées	मिली या भेजी गई फ़ोटो और वीडियो।
+Photos floues ou ratées	धुंधली या खराब फ़ोटो
+Photos iCloud	iCloud फ़ोटो
+Photos similaires	मिलती-जुलती फ़ोटो
+Photos, téléphone et mails, étape par étape	फ़ोटो, फ़ोन और ईमेल, चरण दर चरण।
+Place prise : %1	इस्तेमाल जगह: %1
+Plus d'outils	और औज़ार
+Plus de 100 Mo chacune	हर फ़ाइल 100 MB से ज़्यादा
+Pour gagner des points : %1.	स्कोर बढ़ाने के लिए: %1।
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Clean Smart का पूरा संस्करण पाने या कोई सवाल पूछने के लिए मुझे लिखें:
+Pour obtenir la version complète, écris-moi :	पूरा संस्करण पाने के लिए मुझे लिखें:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	बेकार फ़ाइलें ढूँढने के लिए Clean Smart को फ़ोन का स्टोरेज देखना होगा: «सभी फ़ाइलों तक पहुँच» की अनुमति दें। कुछ भी कहीं नहीं भेजा जाता।
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	दूसरे खाते या दूसरी डिस्क के लिए। डिस्क पर पहले से कॉपी फ़ाइलों को नहीं छुआ जाता।
+Protéger mes favoris	मेरी पसंदीदा फ़ोटो सुरक्षित करें
+Prudente	सावधान
+Prudente : moins de photos proposées. Stricte : davantage.	सावधान: कम फ़ोटो सुझाई जाती हैं। सख़्त: ज़्यादा।
+Préparation	तैयारी
+Préparation…	तैयारी…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	फ़ोन लगभग भरा हो (1 GB से कम) तो सूचित करें, और हर महीने की 1 तारीख़ को छोटा सारांश।
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	USB या डिस्क पर कम से कम %1 जगह रखें (10 % अतिरिक्त के साथ)।
+QUI T'ÉCRIT LE PLUS	कौन आपको सबसे ज़्यादा लिखता है
+Quand le mail de %1 est arrivé	जब %1 का ईमेल आए
+Quitter	बाहर निकलें
+Quitter Google Photos	Google Photos छोड़ें
+Quitter iCloud Photos	iCloud फ़ोटो छोड़ें
+RECHERCHE DES PHOTOS RATÉES	खराब फ़ोटो ढूँढें
+Rafales : on garde la meilleure…	बर्स्ट: सबसे अच्छी रखें…
+Rafales — la plus nette est gardée	बर्स्ट — सबसे साफ़ रखी जाती है
+Rangement : %1	संग्रह: %1
+Recherche des doublons	डुप्लिकेट ढूँढ रहा है
+Recherche des fichiers inutiles…	बेकार फ़ाइलें ढूँढ रहा है…
+Recherche des mails	ईमेल ढूँढ रहा है
+Recherche des mails avec PDF	PDF वाले ईमेल ढूँढ रहा है
+Recherche des mails importants (%1 / %2)	ज़रूरी ईमेल ढूँढ रहा है (%1 / %2)
+Recherche des photos floues	धुंधली फ़ोटो ढूँढ रहा है
+Recherche des photos ratées	खराब फ़ोटो ढूँढ रहा है
+Recherche des photos similaires	मिलती-जुलती फ़ोटो ढूँढ रहा है
+Recherche des pièces jointes (%1 / %2)	अटैचमेंट ढूँढ रहा है (%1 / %2)
+Rechercher une mise à jour	अपडेट खोजें
+Recommencer	फिर से शुरू करें
+Recommencer avec un autre compte	दूसरे खाते के साथ फिर शुरू करें
+Recommencer depuis le début ?	शुरू से फिर शुरू करें?
+Regarder la taille de %1	%1 का आकार देखें
+Relance l'analyse après un changement.	सेटिंग बदलने के बाद फिर से विश्लेषण करें।
+Remettre des mails	ईमेल वापस लाएँ
+Remettre le compteur à zéro	गिनती रीसेट करें
+Remettre les fichiers	फ़ाइलें वापस रखी जा रही हैं
+Restes d'applis désinstallées	अनइंस्टॉल ऐप्स के अवशेष
+Restes d'applis désinstallées…	अनइंस्टॉल ऐप्स के अवशेष…
+Reçus plusieurs fois à quelques secondes d'écart : %1	कुछ सेकंड के अंतर में कई बार मिले: %1।
+Rien	कोई नहीं
+Rien n'a été supprimé.	कुछ नहीं हटाया गया
+Rien n'est perdu	कुछ नहीं खोता।
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	बिना सहमति के कुछ नहीं हटता: सब कुछ कूड़ेदान से होकर जाता है।
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	जगह बनाने को कुछ नहीं: बैकअप में अभी कोई पुरानी फ़ोटो नहीं। पहले «मेरी सभी फ़ोटो का बैकअप» चलाएँ।
+RÉSULTAT	परिणाम
+Règle retirée	नियम रद्द
+Récupère des mails mis à la corbeille de ta messagerie	ईमेल कूड़ेदान में डाले ईमेल वापस लाएँ।
+Récupérer mes photos iCloud (ancien iPhone)	मेरी iCloud फ़ोटो वापस लाएँ (पुराना iPhone)
+Réduire mes vidéos	मेरे वीडियो छोटे करें
+Réglages avancés	उन्नत सेटिंग
+Réglages de stockage Android	Android स्टोरेज सेटिंग
+SAUVEGARDE	बैकअप
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	फ़ोटो तक पहुँच के बिना Clean Smart कुछ विश्लेषण नहीं कर सकता।
+Santé	स्वास्थ्य
+Sauvegarde %1 / %2	बैकअप %1 / %2
+Sauvegarde automatique chaque nuit	हर रात स्वचालित बैकअप
+Sauvegarde avant suppression	हटाने से पहले बैकअप
+Sauvegarde de mes bonnes photos	मेरी अच्छी फ़ोटो का बैकअप हो रहा है
+Sauvegarde des mails	ईमेल का बैकअप हो रहा है
+Sauvegarde des mails importants	ज़रूरी ईमेल का बैकअप हो रहा है
+Sauvegarde du mail %1 / %2	ईमेल %1 / %2 सहेजा जा रहा है
+Sauvegarder avant de supprimer	हटाने से पहले बैकअप
+Sauvegarder des mails	ईमेल सहेजें
+Sauvegarder mes bonnes photos	मेरी अच्छी फ़ोटो का बैकअप
+Se connecter avec ton identifiant Apple	अपनी Apple ID से साइन इन करें।
+Serveur IMAP	IMAP सर्वर
+Serveur introuvable : vérifie internet et le nom du serveur.	सर्वर नहीं मिला: इंटरनेट और सर्वर का नाम जाँचें।
+Ses mails partent à la corbeille chaque nuit, tout seuls	इस प्रेषक के ईमेल हर रात अपने आप कूड़ेदान में जाते हैं।
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	सिर्फ़ अच्छी फ़ोटो: कोई डुप्लिकेट, अतिरिक्त बर्स्ट या खराब फ़ोटो नहीं। पसंदीदा फ़ोटो «Mes meilleures» (मेरी सबसे अच्छी) में भी होती हैं।
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	सिर्फ़ अच्छी फ़ोटो का बैकअप, USB, डिस्क या Google Drive पर। Google Photos भी वापस लाया जा सकता है।
+Seules les nouvelles photos sont copiées à chaque fois.	हर बार सिर्फ़ नई फ़ोटो कॉपी होती हैं।
+Seuls les 20 premiers fichiers sont envoyés.	सिर्फ़ पहली 20 फ़ाइलें भेजी जाती हैं।
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	अगर लॉगिन अस्वीकार हो, तो Microsoft खाते की सुरक्षा में ऐप पासवर्ड बनाएँ (2-चरणीय सत्यापन ज़रूरी)।
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	वरना iPhone फ़ोटो iCloud पर फिर भेज देगा, और iCloud में हटाने से वे iPhone से भी हट सकती हैं।
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	वरना फ़ोन फ़ोटो Google पर फिर भेज देगा, और Google में हटाने से वे इस फ़ोन से भी हट सकती हैं।
+Soldes d'hiver	सर्दियों की सेल
+Souvent inutiles après coup	अक्सर बाद में काम नहीं आते।
+Stockage du téléphone	फ़ोन स्टोरेज
+Stricte	सख़्त
+Suivant	अगला
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	जगह बनाने के लिए यह फ़ाइल Download में खुद हटाएँ।
+Supprimer	हटाएँ
+Supprimer %1 ?	%1 हटाएँ?
+Supprimer ce fichier du téléphone ?	यह फ़ाइल फ़ोन से हटाएँ?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	कॉपी और जाँच के बाद हर फ़ाइल फ़ोन से हटाएँ (सुझाव: जगह खाली रहती है)।
+Supprimer les doublons	डुप्लिकेट हटाएँ
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Gmail में ईमेल इनबॉक्स में रहते हैं और «सुरक्षित» लेबल पाते हैं। हर रात दोहराया जाता है।
+Sur Google Takeout, en 1 minute	Google Takeout पर, 1 मिनट में
+Sur account.apple.com → Mots de passe pour applications → en créer un.	account.apple.com पर → ऐप-विशिष्ट पासवर्ड → एक बनाएँ।
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	iPhone पर: सेटिंग › आपका नाम › iCloud: «फ़ोटो» की जगह दिखती है। या icloud.com पर। यहाँ लिखें (GB में)।
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	iPhone या icloud.com/photos पर: फ़ोटो चुनें फिर «हटाएँ»। «हाल ही में हटाया गया» एल्बम उन्हें 30 दिन रखता है।
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	खुलने वाले पेज पर: स्टोरेज › «कैश साफ़ करें»। यह Android तय करता है, Clean Smart आपकी जगह नहीं कर सकता।
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	फ़ोन पर 2 से 3 GB खाली काफ़ी है: एक बार में एक फ़ाइल। अभी खाली: %1।
+Sur privacy.apple.com, en 2 minutes	privacy.apple.com पर, 2 मिनट में
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	privacy.apple.com पर फ़ाइलों के नाम «iCloud Photos Part 1 of 12» होते हैं: आखिरी संख्या (यहाँ 12) फ़ाइलों की संख्या है। Clean Smart इसे खुद भी पढ़ लेता है।
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	खाता सुरक्षा → ऐप पासवर्ड बनाएँ, फिर यहाँ चिपकाएँ।
+Sécurité, photos ratées, démonstration…	सुरक्षा, खराब फ़ोटो, डेमो…
+Sévérité	सख़्ती
+TERMINÉ	हो गया
+Ta messagerie	आपकी ईमेल सेवा
+Ta période d'essai de 30 jours est terminée.	30 दिन का ट्रायल समाप्त
+Taille de %1 (Go)	%1 का आकार (GB)
+Taille du texte	टेक्स्ट का आकार
+Taille maximale des fichiers : 1 Go ou 2 Go	अधिकतम फ़ाइल आकार: 1 GB या 2 GB
+Temps passé	बीता समय
+Temps restant	बचा समय
+Terminer la demande	अनुरोध पूरा करें
+Terminé	पूरा
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	आपकी iPhone फ़ोटो USB या डिस्क पर, साल के अनुसार, बिना डुप्लिकेट।
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	आपकी पिछले 2 महीने की फ़ोटो अभी डिस्क पर नहीं हैं। Google Takeout में नई कॉपी माँगें, स्वचालित मोड बिना दोहराव के सिर्फ़ नई जोड़ेगा।
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	आपकी पिछले 2 महीने की फ़ोटो अभी डिस्क पर नहीं हैं। Apple से नई कॉपी माँगें: Clean Smart बिना दोहराव के सिर्फ़ नई जोड़ेगा।
+Tes photos à l'abri	आपकी फ़ोटो सुरक्षित हैं।
+Tes réglages et ta boîte mail seront conservés.	आपकी सेटिंग और मेलबॉक्स रखे जाते हैं।
+Ton téléphone est plein ?	फ़ोन भरा है?
+Ton téléphone est propre et tes photos sont à l'abri	आपका फ़ोन साफ़ है और फ़ोटो सुरक्षित हैं।
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	आपका फ़ोन और मेलबॉक्स साफ़ हैं, फ़ोटो सुरक्षित हैं।
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	डाउनलोड के लिए यहाँ टैप करें, फिर इंस्टॉल के लिए फ़ाइल खोलें
+Touche ici pour la version complète ou une question	पूरा संस्करण या सवाल पूछने के लिए यहाँ टैप करें
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	बस Google के ईमेल में «डाउनलोड» लिंक पर टैप करें। Clean Smart हर फ़ाइल Download में आते ही डिस्क पर कॉपी कर देता है, भले बाकी अभी डाउनलोड हो रही हों।
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	किसी प्रेषक पर टैप करें: हमेशा फेंकें, हमेशा रखें, मुझे बताएँ, सदस्यता छोड़ें।
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	चुनने के लिए «कौन आपको सबसे ज़्यादा लिखता है» में किसी प्रेषक पर टैप करें।
+Touche une image pour la cocher · appui long pour la voir en grand	चुनने के लिए फ़ोटो पर टैप करें · बड़ा देखने के लिए दबाकर रखें
+Toucher pour analyser	विश्लेषण के लिए टैप करें
+Toucher pour voir	देखने के लिए टैप करें
+Toujours garder	हमेशा रखें
+Toujours jeter	हमेशा फेंकें
+Tous les fichiers sont traités ?	सारी फ़ाइलें प्रोसेस हो गईं?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	%1 के सारे ईमेल (कम से कम %2) ईमेल कूड़ेदान में जाते हैं।
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	%1 न्यूज़लेटर प्रेषकों के सारे ईमेल कूड़ेदान में जाते हैं (पूरा इनबॉक्स, सिर्फ़ विश्लेषित नहीं)।\n\nकूड़ेदान से वापस ला सकते हैं।
+Tout cocher	सब चुनें
+Tout décocher	सब हटाएँ
+Tout désélectionner	सारा चयन हटाएँ
+Tout mettre à la corbeille	सब कूड़ेदान में डालें
+Tout nettoyer	पूरी सफ़ाई
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	सब कूड़ेदान से होकर जाता है: 30 दिन तक वापस, और «मुझसे गलती हुई» एक टैप में पूर्ववत करता है।
+Tout recommencer	सब शुरू से
+Tout recommencer ?	सब शुरू से करें?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	सारी सामग्री डिस्क पर कॉपी और जाँची गई है। हटाने से अगली फ़ाइल के लिए जगह बनती है।\n\nआपकी फ़ोटो Google Photos में भी रहती हैं।
+Tout va bien, continue comme ça !	सब ठीक है, ऐसे ही चलते रहें!
+Tout était déjà sauvegardé 👍	सबका पहले से बैकअप है 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	आपकी सभी फ़ोटो USB या डिस्क पर, साल के अनुसार, बिना डुप्लिकेट।
+Tri avant la sauvegarde	बैकअप से पहले छाँटें
+Tri des expéditeurs	प्रेषक छाँटे जा रहे हैं
+Tri rapide	झटपट छँटाई
+Tri terminé !	छँटाई पूरी!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	पहले छाँटें, सबसे अच्छी रखें, सिर्फ़ अच्छी का बैकअप, जगह बनाएँ, फिर ईमेल साफ़ करें।
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	पहले छाँटें, सबसे अच्छी रखें, सिर्फ़ अच्छी का बैकअप, फिर जगह बनाएँ।
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	पहले छाँटें, ज़रूरी चीज़ें सुरक्षित करें, फिर मेलबॉक्स साफ़ करें। बैंक, सरकारी दफ़्तर या स्वास्थ्य के ईमेल कभी नहीं फेंके जाते।
+Trier en glissant	स्वाइप से छाँटें
+Trier les expéditeurs	प्रेषक छाँटें
+Trier, garder, sauvegarder, libérer	छाँटें, रखें, बैकअप, जगह बनाएँ
+Trier, mettre l'important à l'abri, vider la boîte	छाँटें, ज़रूरी सुरक्षित करें, मेलबॉक्स साफ़ करें
+Trier, protéger	छाँटें, सुरक्षित करें
+Trop claire	बहुत चमकीली
+Trop petite	बहुत छोटी
+Trop sombre	बहुत गहरी
+Très gros	बहुत बड़ी
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	डिस्क की कॉपी हटाई और अब कुछ कॉपी नहीं होता? स्क्रीन के नीचे «सब शुरू से (मैंने कॉपी हटा दी)» पर टैप करें, फिर ZIP फ़ाइलें फिर खोलें।
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	पहले iPhone था? आपकी iCloud फ़ोटो USB या डिस्क पर।
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	लिंक टैप करने के लिए ऐप छोड़ सकते हैं: कॉपी जारी रहती है (सूचना «स्वचालित कॉपी»)।
+Type : .zip   ·   Taille : 2 Go	प्रकार: .zip   ·   आकार: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	एक बार में एक ZIP डाउनलोड करें, वाई-फ़ाई पर। प्रोसेस करें, हटाएँ, फिर अगली डाउनलोड करें।
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	बस privacy.apple.com पर फ़ाइलें डाउनलोड करें। Clean Smart हर फ़ाइल Download में आते ही डिस्क पर कॉपी करता है।
+Téléphone	फ़ोन
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	फ़ोन भरा: गैलरी का कूड़ेदान खाली करें, प्रोसेस हुई ZIP हटाएँ, निर्देशित सफ़ाई चलाएँ। कम से कम 300 MB खाली चाहिए।
+Un bouton, et c'est trié	एक बटन, सब व्यवस्थित
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	हर प्रेषक का एक कार्ड: बाईं ओर स्वाइप से उसके सारे ईमेल फेंकें, दाईं ओर से रखें।
+Une notification quand il t'écrit	जब वह आपको लिखे तो सूचना
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	एक-एक फ़ोटो: बाईं ओर स्वाइप करें तो फेंकें, दाईं ओर तो रखें।
+Une question, un souci, la version complète ? Écris-moi :	कोई सवाल, समस्या, या पूरा संस्करण चाहिए? मुझे लिखें:
+Utilise ton adresse et ton mot de passe Free.	अपना Free पता और पासवर्ड इस्तेमाल करें।
+Utilise ton adresse et ton mot de passe La Poste.	अपना La Poste पता और पासवर्ड इस्तेमाल करें।
+Utilise ton adresse et ton mot de passe Orange.	अपना Orange पता और पासवर्ड इस्तेमाल करें।
+Utilise ton adresse et ton mot de passe SFR.	अपना SFR पता और पासवर्ड इस्तेमाल करें।
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	रात लगभग 2 बजे नई फ़ोटो बैकअप फ़ोल्डर में कॉपी होती हैं। विफल होने पर सूचना मिलती है।
+Version complète	पूरा संस्करण
+Version installée : %1	इंस्टॉल संस्करण: %1
+Vider	खाली करें
+Vider la corbeille ?	कूड़ेदान खाली करें?
+Vider la corbeille Clean Smart	Clean Smart कूड़ेदान खाली करें
+Vider la corbeille Clean Smart ?	Clean Smart कूड़ेदान खाली करें?
+Vider la corbeille maintenant	अभी कूड़ेदान खाली करें
+Vider maintenant	अभी खाली करें
+Vieux mails vers la corbeille…	पुराने ईमेल कूड़ेदान में…
+Vieux téléchargements (plus de 6 mois)	पुराने डाउनलोड (6 महीने से ज़्यादा)
+Voir la liste et jeter	सूची देखें और फेंकें
+Voir la liste et libérer	सूची देखें और जगह बनाएँ
+Voir le courrier indésirable puis le mettre à la corbeille	स्पैम ईमेल देखें, फिर कूड़ेदान में डालें।
+Voir les conseils	गाइड देखें
+Voir ma place Google	मेरी Google जगह देखें
+Voir ma place iCloud	मेरी iCloud जगह देखें
+Votre facture	आपका बिल
+Voyages et réservations	यात्रा और बुकिंग
+Vérification de la sauvegarde	बैकअप की जाँच
+Vérification du disque	डिस्क की जाँच
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Google के ईमेल में जाँचें कि हर फ़ाइल (001, 002, 003…) प्रोसेस हो चुकी है।
+Vérifier, puis libérer %1 (si tu veux)	जाँचें, फिर %1 साफ़ करें (चाहें तो)
+Yeux fermés	आँखें बंद
+appli	ऐप
+applis	ऐप्स
+calcul…	गणना हो रही है…
+compression impossible	कंप्रेस नहीं हो सका
+contact en double	डुप्लिकेट संपर्क
+contacts en double	डुप्लिकेट संपर्क
+copie	कॉपी
+copies	कॉपियाँ
+de ta photothèque est à l'abri	आपकी फ़ोटो लाइब्रेरी का सुरक्षित
+derniers fichiers	हाल की फ़ाइल
+doublon	डुप्लिकेट
+doublons	डुप्लिकेट
+erreur	त्रुटि
+erreurs	त्रुटियाँ
+expéditeur	प्रेषक
+expéditeurs	प्रेषक
+fais le ménage de ta boîte mail	अपना मेलबॉक्स साफ़ करें
+fichier	फ़ाइल
+fichier copié	फ़ाइल कॉपी हुई
+fichier copié et vérifié	फ़ाइल कॉपी और जाँची गई
+fichier n'a	फ़ाइलें
+fichiers	फ़ाइलें
+fichiers copiés	फ़ाइलें कॉपी हुईं
+fichiers copiés et vérifiés	फ़ाइलें कॉपी और जाँची गईं
+fichiers n'ont	फ़ाइलें
+iCloud Photos	iCloud फ़ोटो
+jour	दिन
+jour restant	दिन बचा
+jours	दिन
+jours restants	दिन बचे
+le plus simple	सबसे आसान
+libres · %1 % utilisé	खाली · %1 % इस्तेमाल
+libère de la place avec le Ménage complet	पूरी सफ़ाई से जगह बनाएँ
+libérés	बची
+mail	ईमेल
+mail remis	ईमेल वापस लाया गया
+mails	ईमेल
+mails remis	ईमेल वापस लाए गए
+nettoie les fichiers inutiles du téléphone	फ़ोन की बेकार फ़ाइलें साफ़ करें
+nouveau fichier	नई फ़ाइल
+nouveaux fichiers	नई फ़ाइलें
+pas à pas	चरण दर चरण
+photo	फ़ोटो
+photo gardée	फ़ोटो रखी गई
+photo ou vidéo	फ़ोटो या वीडियो
+photo ou vidéo prise	ली गई फ़ोटो या वीडियो
+photo protégée	फ़ोटो सुरक्षित
+photos	फ़ोटो
+photos gardées	फ़ोटो रखी गईं
+photos ou vidéos	फ़ोटो या वीडियो
+photos ou vidéos prises	ली गई फ़ोटो या वीडियो
+photos protégées	फ़ोटो सुरक्षित
+puis « Étape suivante » :	फिर «अगला चरण»:
+rafale	बर्स्ट सीरीज़
+rafales	बर्स्ट सीरीज़
+sauvegarde tes photos sur une clé ou une carte SD	फ़ोटो का USB या SD कार्ड पर बैकअप
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	पहले से बैकअप में सुरक्षित (वही नाम, वही आकार)।\n\nये गैलरी के कूड़ेदान में जाएँगी (30 दिन तक वापस)। हाल की फ़ोटो फ़ोन पर रहती हैं।
+sur %1 contacts	%1 संपर्कों का
+trie tes photos (doublons, rafales, floues)	अपनी फ़ोटो छाँटें (डुप्लिकेट, बर्स्ट, धुंधली)
+téléchargement	डाउनलोड
+téléchargements	डाउनलोड
+utilisé	इस्तेमाल
+vidéo	वीडियो
+vidéo compressée	वीडियो कंप्रेस हुआ
+vidéos	वीडियो
+vidéos compressées	वीडियो कंप्रेस हुए
+vieux mail	पुराना ईमेल
+vieux mails	पुराने ईमेल
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«खराब फ़ाइल»: डाउनलोड बीच में कट गया। यह ZIP Google के ईमेल से फिर डाउनलोड करें और दोबारा खोलें: जो कॉपी हो चुका है वह दोबारा कॉपी नहीं होगा।
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«जगह खाली करें»: हाल की फ़ोटो फ़ोन पर रखें…
+À GARDER	रखें
+À JETER	फेंकें
+À RETROUVER VITE	जल्दी मिल जाता है
+À nettoyer	साफ़ करने को
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	जब आपने डिस्क की कॉपी हटा दी हो तब इस्तेमाल करें: Clean Smart भूल जाता है कि क्या कॉपी हो चुका है, और अगली ZIP फ़ाइलें पूरी फिर कॉपी होंगी।\n\nचुनी गई डिस्क और आपकी सेटिंग बनी रहती हैं। डिस्क पर या %1 पर कुछ नहीं हटता।
+Écriture impossible	लिखा नहीं जा सकता
+Électricité	बिजली का बिल
+à jeter	फेंकने को
+élément	आइटम
+éléments	आइटम
+… et %1 autres mails du même genre (cochés).	… और इसी तरह के %1 और ईमेल (पहले से चुने)
+‹ Retour	‹ वापस
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1 बिना त्रुटि के पढ़ी गईं। कॉपियों की पहचान अब इस फ़ोन पर नहीं है: तुलना संभव नहीं।
+↩️ %1 dans la boîte de réception	↩️ इनबॉक्स में %1
+↩️ %1 remis dans la galerie	↩️ %1 गैलरी में वापस
+↩️ %1 remis à leur place	↩️ %1 वापस रखी गईं
+↩️ J'ai fait une bêtise : remettre les %1	↩️ मुझसे गलती हुई: %1 वापस लाएँ
+↩️ Mails remis (démonstration)	↩️ ईमेल वापस लाए गए (डेमो)
+↩️ Remettre %1 dans ma boîte	↩️ %1 मेलबॉक्स में वापस
+↩️ Remettre des mails	↩️ ईमेल वापस लाएँ
+↩️ Tout remettre à sa place	↩️ सब वापस रखें
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Download में अगली फ़ाइल का इंतज़ार। ईमेल में «डाउनलोड» लिंक पर टैप करें।
+⏳ En attente du prochain fichier dans Download…	⏳ Download में अगली फ़ाइल का इंतज़ार…
+⏳ copie en cours…	⏳ कॉपी हो रही है…
+⏳ plus tard	⏳ बाद में
+⏹ Arrêter	⏹ रोकें
+☑️ Tout cocher	☑️ सब चुनें
+⚙️ Cache des applis et fichiers système	⚙️ ऐप्स का कैश और सिस्टम फ़ाइलें
+⚙️ Options	⚙️ विकल्प
+⚠️ %1 : à relancer.\n	⚠️ %1: फिर खोलें\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 में त्रुटियाँ: आगे बढ़ने से पहले «फिर खोलें» वाली ZIP दोबारा खोलें।
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ डिस्क पर %1 अब वैसी नहीं हैं या पढ़ी नहीं जा सकतीं:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ आज रात बैकअप नहीं हुआ
+⚠️ Fichier %1 à reprendre	⚠️ %1 फ़ाइलें फिर से करनी हैं
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ लगभग %1 चाहिए, %2 बची। आप शुरू कर सकते हैं: भरने पर दूसरी डिस्क लगाएँ, हम बिना दोहराव के जारी रखेंगे।
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ कॉपी रुकी: %1\n\nकुछ नहीं खोया: स्वचालित मोड फिर शुरू करें, हम बिना दोहराव के जारी रखेंगे।
+⚠️ On ne commence pas	⚠️ शुरू नहीं हुआ
+⚠️ Sauvegarde de la nuit	⚠️ रात का बैकअप
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ खराब: ईमेल से फिर डाउनलोड करें, अपने आप कॉपी होगी
+⚠️ disque plein	⚠️ डिस्क भरी
+⚠️ pas commencé	⚠️ शुरू नहीं हुआ
+⚠️ à relancer	⚠️ फिर खोलें
+⚠️ à relancer (%1)	⚠️ फिर खोलें (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ कॉपी अधूरी है (खराब फ़ाइलें, फिर खोलनी हैं या अभी कॉपी नहीं हुईं)। पहले कॉपी पूरी करें: %1 पर कुछ न हटाएँ।
+✅ %1 : terminé et vérifié.\n	✅ %1: पूरी और जाँची गई\n
+✅ %1 doublon(s) supprimé(s)	✅ %1 डुप्लिकेट हटाए
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ %1 ईमेल सहेजे · %2 PDF · संग्रह CleanSmart/Mails/index.html अपडेट
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 ज़रूरी ईमेल सुरक्षित · %2 PDF इकट्ठा · संग्रह index.html अपडेट
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ %1 नई फ़ोटो का बैकअप हुआ
+✅ %1 · depuis %2	✅ %1 · %2 आईं
+✅ %1 à l'abri	✅ %1 सुरक्षित
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 ज़रूरी ईमेल सुरक्षित (डेमो)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 7,958 अच्छी फ़ोटो का बैकअप (डेमो)
+✅ Assez de place sur « %1 ».	✅ «%1» पर पर्याप्त जगह
+✅ Boîte mail connectée	✅ मेलबॉक्स जुड़ा
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ डिस्क जाँची गई: %1 फिर पढ़ी गईं, कोई खराब फ़ाइल नहीं।
+✅ Doublons supprimés (démonstration)	✅ डुप्लिकेट हटाए (डेमो)
+✅ Fichier %1 terminé	✅ फ़ाइल %1 पूरी
+✅ La copie sur le disque est complète et vérifiée.	✅ डिस्क पर कॉपी पूरी और जाँची गई
+✅ Mails sauvegardés (démonstration)	✅ ईमेल सहेजे गए (डेमो)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ कॉपी पूरी और जाँची गई\n✅ फ़ोन बैकअप बंद\n✅ डिस्क पर फ़ोटो देख लीं\n\n%1 खोलें? क्या हटाना है आप तय करते हैं।
+✅ copié et vérifié	✅ कॉपी और जाँच हुई
+✅ copié, vérifié, supprimé du téléphone	✅ कॉपी, जाँच और फ़ोन से हटाई गई
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 फेंके · मेलबॉक्स में %2 बचे
+✉️ %1 mails	✉️ %1 ईमेल
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 ईमेल (फ़ोल्डर «Mails Gmail», index.html खोलें)\n
+✉️ Boîte mail	✉️ मेलबॉक्स
+✉️ Mails	✉️ ईमेल
+✉️ Mails de %1	✉️ %1 का ईमेल
+✓ %1 choisi	✓ %1 चुनी गईं
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 जगह बनी (गैलरी के कूड़ेदान में 30 दिन तक वापस)
+✨ %1 mails mis à la corbeille	✨ %1 ईमेल कूड़ेदान में
+✨ %1 mis à la corbeille (démonstration)	✨ %1 कूड़ेदान में (डेमो)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 ईमेल कूड़ेदान में («ईमेल वापस लाएँ» से वापस ला सकते हैं)
+✨ %1 nettoyés · %2 libérés	✨ %1 साफ़ · %2 बचे
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 पुराने ईमेल कूड़ेदान में (ज़रूरी रखे गए)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1,249 ईमेल कूड़ेदान में (डेमो)
+✨ 1,1 Go libérés (démonstration)	✨ 1.1 GB जगह बनी (डेमो)
+✨ 6,4 Go libérés (démonstration)	✨ 6.4 GB जगह बनी (डेमो)
+✨ Mails mis à la corbeille (démonstration)	✨ ईमेल कूड़ेदान में (डेमो)
+✨ Ménage automatique du dimanche	✨ रविवार की स्वचालित सफ़ाई
+✨ Ménage du dimanche	✨ रविवार की सफ़ाई
+✨ Vieux mails mis à la corbeille (démonstration)	✨ पुराने ईमेल कूड़ेदान में (डेमो)
+❤️ Santé du téléphone : %1 / 100	❤️ फ़ोन का स्वास्थ्य: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ बाईं ओर: उसके सारे ईमेल कूड़ेदान में   ·   दाईं ओर: रखें ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ बाईं ओर स्वाइप फेंकने के लिए   ·   दाईं ओर रखने के लिए ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 डाउनलोड हो रही है: खत्म होते ही कॉपी शुरू होगी
+⬜ Tout décocher	⬜ सब हटाएँ
+⭐ Protéger mes %1	⭐ मेरी %1 सुरक्षित करें
+🍏 Mes photos iCloud	🍏 मेरी iCloud फ़ोटो
+🍏 Pense à une nouvelle copie iCloud	🍏 iCloud की नई कॉपी का समय
+🍏 Quitter iCloud Photos	🍏 iCloud फ़ोटो छोड़ें
+🎁 Version d'essai · %1	🎁 ट्रायल संस्करण · %1
+🎉 %1 libérés au total	🎉 कुल %1 जगह बनी
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 कोई बेकार फ़ाइल नहीं: फ़ोन साफ़ है!
+🎉 Aucun mail à jeter ici.	🎉 यहाँ फेंकने को कोई ईमेल नहीं
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 कोई भूला ऐप नहीं: आप सब इस्तेमाल करते हैं!
+🎉 Plus rien ici.	🎉 यहाँ अब कुछ नहीं बचा
+🎉 Rien à nettoyer, tout est propre !	🎉 साफ़ करने को कुछ नहीं, सब साफ़ है!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 हो गया: %1 कॉपी और जाँची गईं। डिस्क पर कुल: %2 और %3।
+🎉 Tous les fichiers sont faits	🎉 सारी फ़ाइलें पूरी
+🎬 Démonstration	🎬 डेमो
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 डेमो मोड: फ़ोन पर कुछ नहीं छुआ जाता
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 डेमो मोड: फ़ोन पर कुछ नहीं छुआ जाता।
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 हर बटन पहले ईमेल की सूची दिखाता है: रखने वालों का निशान हटाएँ, फिर पुष्टि करें।
+👀 Voir et jeter ses mails maintenant	👀 उसके ईमेल अभी देखें और फेंकें
+👆 Les expéditeurs que tu as jetés	👆 आपने जो प्रेषक फेंके
+👆 Tri des expéditeurs	👆 प्रेषक छाँटे जा रहे हैं
+👆 Tri rapide	👆 झटपट छँटाई
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 अभी: Google के ईमेल में फ़ाइल %1 डाउनलोड करें (वाई-फ़ाई पर), फिर हरे बटन पर टैप करके Download में उसे चुनें।
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 अभी: privacy.apple.com पर «Part %1» डाउनलोड करें (वाई-फ़ाई पर), फिर हरे बटन पर टैप करके Download में उसे चुनें।
+👉 À faire maintenant	👉 अभी क्या करें
+👉 à télécharger puis traiter	👉 डाउनलोड करें फिर प्रोसेस करें
+👍 Tu as déjà la dernière version (%1)	👍 आपके पास नवीनतम संस्करण है (%1)
+👯 Mails en double	👯 डुप्लिकेट ईमेल
+💡 Aide	💡 मदद
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 सुझाव: फिर न पाने के लिए सदस्यता छोड़ें («कौन आपको सबसे ज़्यादा लिखता है» सूची में बटन)।
+💡 Si ça bloque	💡 अगर अटक जाएँ
+💡 Si ça bloque : tous les conseils	💡 अगर अटक जाएँ: पूरी गाइड
+💾 %1 sur « %2 »	💾 «%2» पर %1
+💾 Sauvegarde de la nuit	💾 रात का बैकअप
+💾 Sauvegarder %1	💾 %1 सहेजें
+💾 Sauvegarder toutes mes photos	💾 मेरी सभी फ़ोटो का बैकअप
+💾 Sauver des mails	💾 ईमेल सहेजें
+📁 Choisir le dossier de sauvegarde	📁 बैकअप फ़ोल्डर चुनें
+📁 Choisir un dossier	📁 फ़ोल्डर चुनें
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: पूरे ईमेल (.eml)\n📕 CleanSmart / PDF: सारी PDF इकट्ठा\n📎 CleanSmart / Pieces jointes: बाकी फ़ाइलें
+📁 Dossier de sauvegarde enregistré	📁 बैकअप फ़ोल्डर सहेजा गया
+📂 Traiter un fichier ZIP	📂 ZIP फ़ाइल प्रोसेस करें
+📂 Traiter un fichier ZIP à la main	📂 ZIP फ़ाइल हाथ से प्रोसेस करें
+📅 Ton rapport du mois	📅 आपकी मासिक रिपोर्ट
+📎 Gros mails	📎 बड़े ईमेल
+📕 Cocher les PDF	📕 PDF चुनें
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF डाउनलोड / Clean Smart में सहेजी गई
+📕 PDF souvenir créé (démonstration)	📕 यादों की PDF बनी (डेमो)
+📖 Mode d'emploi	📖 उपयोगकर्ता पुस्तिका
+📤 Envoyer (%1)	📤 भेजें (%1)
+📦 Les plus grosses	📦 सबसे बड़ी
+📦 Quitter Google Photos	📦 Google Photos छोड़ें
+📦 Ta nouvelle copie Google est peut-être prête	📦 आपकी नई Google कॉपी शायद तैयार है
+📧 Ouvrir le mail de Google	📧 Google का ईमेल खोलें
+📰 Newsletters et pubs	📰 न्यूज़लेटर और विज्ञापन
+📱 Mes applis	📱 मेरे ऐप्स
+📱 Ouvrir l'app Google Photos	📱 Google Photos ऐप खोलें
+📱 Téléphone	📱 फ़ोन
+📱 Téléphone presque plein	📱 फ़ोन लगभग भरा
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 %1 फ़ोटो और %2 वीडियो कॉपी और जाँचे गए, साल के अनुसार।\n
+📸 Photos	📸 फ़ोटो
+🔄 Analyser à nouveau	🔄 फिर विश्लेषण करें
+🔄 Chercher à nouveau	🔄 फिर खोजें
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 सब शुरू से (मैंने कॉपी हटा दी)
+🔍 Analyser ma boîte mail	🔍 मेरे मेलबॉक्स का विश्लेषण करें
+🔍 Analyser mon téléphone	🔍 मेरे फ़ोन का विश्लेषण करें
+🔍 Chercher les mails avec pièces jointes	🔍 अटैचमेंट वाले ईमेल ढूँढें
+🔎 Vérifier le disque (relit chaque photo)	🔎 डिस्क जाँचें (हर फ़ोटो फिर पढ़ें)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 आपका पासवर्ड फ़ोन पर एन्क्रिप्ट रहता है। यह सिर्फ़ आपके ईमेल सर्वर को भेजा जाता है।
+🔓 Autoriser	🔓 अनुमति दें
+🔓 Autoriser l'accès aux fichiers	🔓 फ़ाइलों तक पहुँच दें
+🔓 Une autorisation pour en savoir plus	🔓 और देखने के लिए एक बार अनुमति दें
+🔓 Une autorisation, une seule fois	🔓 एक बार अनुमति दें
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 एक बार: «सभी फ़ाइलों तक पहुँच» दें ताकि Clean Smart Download फ़ोल्डर देख सके। यह सिर्फ़ %1 की फ़ाइलें पढ़ता है।
+🔔 Mail de %1	🔔 %1 का ईमेल
+🔔 Tu seras prévenu quand il t'écrit	🔔 जब वह आपको लिखेगा, आपको सूचना मिलेगी
+🕰️ Vieux mails	🕰️ पुराने ईमेल
+🕰️ Vieux mails (les importants sont gardés)	🕰️ पुराने ईमेल (ज़रूरी रखे जाते हैं)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ कूड़ेदान खाली: %1 हमेशा के लिए बचे
+🗑️ Désinstaller	🗑️ अनइंस्टॉल करें
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ फ़ाइल फ़ोन से हटाई गई: अगली के लिए जगह
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ मेरे «हमेशा फेंकें» प्रेषक
+🗑️ Mettre %1 à la corbeille	🗑️ %1 कूड़ेदान में डालें
+🗑️ Ouvrir %1 pour effacer	🗑️ हटाने के लिए %1 खोलें
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ उसके ईमेल हर रात कूड़ेदान में जाएँगे
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ यह ZIP फ़ोन से हटाएँ (सुझाव)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ हमेशा फेंकें: %1   🛡️ हमेशा रखें: %2   🔔 मुझे बताएँ: %3
+🗜️ Compresser (%1)	🗜️ कंप्रेस करें (%1)
+😴 Pas ouvertes depuis 3 mois	😴 3 महीने से नहीं खोला
+🚫 Se désabonner	🚫 सदस्यता छोड़ें
+🛡️ %1 (mises en favori)	🛡️ %1 (पसंदीदा बनाई गईं)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 मेलबॉक्स के «सुरक्षित» फ़ोल्डर में रखे गए
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ ज़रूरी प्रेषक (बैंक, सरकारी दफ़्तर, स्वास्थ्य…): उनके ईमेल कभी नहीं फेंके जाते।
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ हटाने का बटन तब दिखता है जब कॉपी पूरी हो और बॉक्स 1 और 2 पर निशान हो।
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ बैंक, सरकारी दफ़्तर या स्वास्थ्य के ईमेल कभी कूड़ेदान में नहीं जाते।
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ कॉपी जाँचे बिना %1 साफ़ नहीं करेंगे: पहले पहले बॉक्स पर निशान लगाएँ।
+🛡️ Protéger (%1)	🛡️ सुरक्षित करें (%1)
+🛡️ Ranger mes mails importants	🛡️ मेरे ज़रूरी ईमेल व्यवस्थित करें
+🛡️ Ses mails ne seront jamais jetés	🛡️ उसके ईमेल कभी नहीं फेंके जाएँगे
+🤖 Copie automatique de tes photos	🤖 अपनी फ़ोटो स्वचालित रूप से कॉपी करें
+🤖 Démarrer le mode automatique	🤖 स्वचालित मोड शुरू करें
+🤖 Tout automatique (le plus simple)	🤖 सब स्वचालित (सबसे आसान)
+🧊 Vider son cache	🧊 कैश साफ़ करें
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 %1 डुप्लिकेट और 🎞️ %2 बर्स्ट हटाए।\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 डुप्लिकेट   🎞️ खराब बर्स्ट\n📱 स्क्रीनशॉट   🎬 भारी वीडियो\n💬 WhatsApp मीडिया   👥 डुप्लिकेट संपर्क\n✉️ न्यूज़लेटर और बड़े ईमेल
+🧭 Ménage	🧭 सफ़ाई
+🧭 Ménage des mails	🧭 ईमेल सफ़ाई
+🧭 Ménage guidé	🧭 निर्देशित सफ़ाई
+🧹 Fichiers inutiles	🧹 बेकार फ़ाइलें
+🧹 Jeter les mails de %1	🧹 %1 के ईमेल फेंकें
+🧹 Le ménage sûr	🧹 सुरक्षित सफ़ाई
+🧹 Mails triés cette nuit	🧹 आज रात ईमेल छाँटे गए
+🧹 Mettre %1 à la corbeille	🧹 %1 कूड़ेदान में डालें
+🧹 Ménage sûr	🧹 सुरक्षित सफ़ाई
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 सुरक्षित सफ़ाई: न्यूज़लेटर, सूचनाएँ, डुप्लिकेट
+🧹 Nettoyer · %1	🧹 सफ़ाई · %1
+🧹 Nettoyer · %1 · %2	🧹 सफ़ाई · %1 · %2

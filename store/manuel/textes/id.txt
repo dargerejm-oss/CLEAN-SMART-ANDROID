@@ -1,0 +1,187 @@
+0	Panduan penggunaan
+1	Lebih banyak ruang di ponselmu,\nmudah dan aman.
+2	Dibuat oleh JM Dargère
+3	CLEAN SMART — Dibuat oleh JM Dargère
+4	Bagaimana cara kerjanya?
+5	1. Ponselmu penuh?
+6	Foto ganda, foto gagal, video besar, email tak berguna… semuanya memakan ruang.
+7	2. Clean Smart mencari sendiri
+8	Satu tombol saja. Selama analisis, tidak ada yang dihapus.
+9	3. Kamu yang memilih
+10	Yang aman sudah dicentang untukmu. Sisanya, kamu yang memutuskan.
+11	4. Tidak ada yang hilang
+12	Semua lewat tempat sampah: 30 hari untuk mengembalikan foto atau email.
+13	5. Semua tetap aman
+14	Cadangan ke kartu SD, flashdisk USB, atau Google Drive, bahkan otomatis di malam hari.
+15	Bersih-bersih lengkap (disarankan)
+16	Layar utama punya ubin hijau besar «Bersih-bersih lengkap» dan 3 pintu: 📸 Foto, 🧹 Ponsel, ✉️ Email. Bersih-bersih lengkap melakukan semuanya dengan urutan yang benar; tombol HIJAU selalu langkah berikutnya.
+17	Bersih-bersih aman: duplikat dan foto beruntun berlebih (yang terbaik disimpan), foto hitam atau putih, tangkapan layar lama. Satu tombol.
+18	Saya periksa yang meragukan: foto agak buram, WhatsApp… Geser ke kiri untuk membuang, ke kanan untuk menyimpan (jadi favorit).
+19	Saya amankan: hanya foto yang BAGUS dicadangkan. Favorit juga masuk ke «Mes meilleures» (Terbaikku).
+20	Saya kosongkan ruang: foto lama yang sudah dicadangkan keluar dari ponsel.
+21	BARU 2.0 — Dan emailmu: ruang kotak surat, buletin dan email besar, lalu bersih-bersih email terpandu. Di Google, email dan Google Foto berbagi 15 GB yang sama.
+22	Ringkasan menunjukkan ruang yang dibebaskan di ponsel DAN di kotak surat. Pada foto beruntun, foto di mana tidak ada yang memejamkan mata yang disimpan.
+23	File tak berguna (BARU 2.0)
+24	File sementara, gambar mini, folder cache, folder kosong, file instalasi, sisa aplikasi yang sudah dihapus. Foto, video, dan musik tidak pernah disentuh.
+25	Sekali saja: izinkan «Akses ke semua file». Pencarian dimulai sendiri.
+26	Kelompok yang aman sudah dicentang: dibuat ulang otomatis atau tidak berguna lagi. «Bersihkan» dan selesai.
+27	Kelompok «perlu diperiksa» (.apk lain, sisa aplikasi, unduhan lama) masuk ke tempat sampah Clean Smart: «Kembalikan semua» selama 7 hari.
+28	Cache aplikasi lain: Android melarangnya untuk aplikasi sejak Android 11. Tombol ini membuka layar «Kosongkan ruang» Android.
+29	📱 Aplikasiku: yang terbesar dan yang tidak kamu buka selama 3 bulan. Ketuk satu untuk menghapusnya atau mengosongkan cache-nya.
+30	Skor kesehatan dan bersih-bersih hari Minggu (BARU 2.0)
+31	Di layar utama, skor 0 sampai 100 merangkum kondisi ponsel: ruang kosong, cadangan, foto yang perlu dipilah, file tak berguna, kotak surat. Juga memberi tahu apa yang bisa dilakukan untuk menambah poin.
+32	Di Opsi › Otomatis, aktifkan «Bersih-bersih otomatis hari Minggu»: file tak berguna yang aman dan spam pergi sendiri, notifikasi memberi ringkasan.
+33	Foto tidak pernah pergi sendiri: notifikasi memberi tahu berapa yang perlu dipilah, kamu ketuk dan pilih.
+34	Opsi yang lebih sederhana: Cadangan, Otomatis, Tampilan. Sisanya ada di «Pengaturan lanjutan».
+35	Meninggalkan Google Foto
+36	Semua foto Google Foto-mu di flashdisk atau hard disk, diurutkan per tahun, tanpa duplikat. Satu dasbor saja: langkah «SEKARANG» terbuka, dengan tombol hijau.
+37	Ruang: catat ukuran Google Foto, Clean Smart menghitung ruang yang dibutuhkan.
+38	Disk: colokkan flashdisk atau disk (adaptor USB-C) lalu pilih sebuah folder di dalamnya.
+39	Minta salinan ke Google: contoh menunjukkan persis apa yang harus dicentang (file .zip 2 GB).
+40	File: daftar 001, 002… memberi tahu mana yang harus diunduh. «Proses file ZIP», lalu hapus. Notifikasi memberi tahu saat selesai.
+41	Setiap foto diurutkan per tahun, duplikat dan foto beruntun berlebih disisihkan, semuanya dibaca ulang dan diperiksa. Meteran menunjukkan berapa yang aman.
+42	Masalah (ponsel atau disk penuh, file rusak): tidak ada yang hilang, buka lagi file yang sama. Tombol «Jika macet».
+43	BARU 2.0 — «Serba otomatis»: izinkan «Akses ke semua file» sekali, mulai, lalu cukup ketuk tautan di email Google. Setiap file disalin begitu tiba di Download, lalu dihapus dari ponsel setelah diperiksa.
+44	Kosongkan Google: tombol hanya muncul jika salinan lengkap, cadangan ponsel sudah dimatikan, dan kamu sudah melihat fotomu di disk. Kamu yang menghapus; tempat sampah Google menyimpan semuanya 60 hari.
+45	«Periksa disk» membaca ulang setiap foto yang disalin dan menandai yang rusak. Setiap 2 bulan, notifikasi mengingatkan untuk meminta salinan baru: hanya foto baru yang ditambahkan.
+46	Ambil foto iCloud-ku (iPhone lama)
+47	Untuk foto iPhone: dasbor yang sama dengan Google Foto, dengan ekspor resmi dari Apple.
+48	Ruang: di iPhone, Pengaturan › namamu › iCloud. Clean Smart menghitung ruang yang dibutuhkan.
+49	Disk: colokkan flashdisk atau disk lalu pilih sebuah folder di dalamnya.
+50	Di privacy.apple.com: «Minta salinan datamu», centang «Foto iCloud», file 1 atau 2 GB.
+51	Apple mengirim email dalam beberapa hari. Unduh «Part 1», proses, hapus, lalu «Part 2»…
+52	Semuanya diurutkan per tahun di «iCloud Photos», tanpa duplikat, foto terbaik dari tiap rangkaian disimpan.
+53	Analisis ponselku
+54	Ini tombol besar di layar utama. Tidak ada yang perlu diatur.
+55	Ketuk «Analisis ponselku».
+56	Pertama kali, Android meminta akses ke foto dan kontak: izinkan.
+57	Sebuah bilah menunjukkan kemajuan. Lalu Clean Smart menampilkan dengan besar ruang yang bisa kamu dapatkan kembali.
+58	Yang ditemukan Clean Smart
+60	Duplikat
+61	Salinan identik. Aslinya disimpan.
+62	Foto mirip
+63	Foto beruntun yang diambil berselang detik. Yang paling tajam disimpan.
+64	Foto gagal
+65	Buram, terlalu gelap, terlalu terang, atau terlalu kecil.
+66	Tangkapan layar
+67	Sering tidak berguna setelahnya.
+68	Video besar
+69	Masing-masing lebih dari 100 MB.
+70	Media WhatsApp
+71	Foto dan video yang diterima atau dikirim.
+72	File terbesarku
+73	30 foto dan video paling berat.
+74	Kontak ganda
+75	Nama sama dan nomor sama.
+76	Memilih dan membersihkan
+78	Ketuk sebuah kategori untuk melihat fotonya.
+79	Ketuk foto untuk mencentangnya. Tekan lama: lihat dalam ukuran besar.
+80	«DISIMPAN»: foto yang disarankan Clean Smart untuk disimpan.
+81	Tekan tombol merah «Bersihkan» di bawah layar.
+82	Android meminta konfirmasi terakhir. Foto masuk ke tempat sampah: 30 hari untuk mengembalikannya.
+83	Pilah cepat
+84	Untuk memilah foto terbaru satu per satu, tanpa berpikir.
+85	Di layar utama, ketuk «Pilah cepat».
+86	Geser foto ke KIRI untuk membuang, ke KANAN untuk menyimpan.
+87	Tombol bulat kecil di tengah kembali ke foto sebelumnya.
+88	Di akhir, tombol merah mengirim foto yang dibuang ke tempat sampah.
+89	Tempat sampah dan «Saya salah»
+91	Foto di tempat sampah masih memakan ruang selama 30 hari.
+92	«Kosongkan tempat sampah sekarang» langsung membebaskan ruang (hati-hati: permanen).
+93	«Saya salah» mengembalikan file terakhir yang dibuang ke galeri.
+94	Lindungi dan kirim
+95	Dalam sebuah kategori, centang foto lalu:
+96	Lindungi
+97	Foto menjadi favorit: tidak akan pernah diusulkan lagi.
+98	Kirim
+99	Lewat WhatsApp, email… (maksimal 20 foto). Tidak ada yang keluar dari ponsel.
+100	Kompres
+101	Untuk video: dibuat ulang dalam 720p, sering 3 sampai 5 kali lebih ringan.
+102	Cadangan
+103	Fotomu aman di kartu SD, flashdisk USB, atau Google Drive.
+104	Di «Cadangan», ketuk «Pilih folder».
+105	«Cadangkan semua fotoku» menyalin fotomu, diurutkan per bulan.
+106	Selanjutnya, hanya foto baru yang disalin.
+107	Di Opsi, «Cadangan otomatis setiap malam» melakukannya sendiri.
+108	Alat lainnya
+109	Di layar utama, ketuk «Alat lainnya»:
+110	Kosongkan ruang
+111	Foto lebih dari 3 bulan yang SUDAH dicadangkan masuk ke tempat sampah. Tidak pernah foto yang belum aman.
+112	PDF kenangan
+113	Foto terindah bulan ini atau tahun ini dalam PDF, untuk dikirim ke orang tersayang.
+114	Perkecil videoku
+115	Buka «Video besar», centang, lalu «Kompres».
+116	Kotak suratku
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	Ketuk «Hubungkan kotak suratku» dan pilih layanan emailmu.
+119	Gmail, Yahoo, dan iCloud meminta SANDI APLIKASI. Clean Smart membuka halaman yang tepat.
+120	«Analisis kotak suratku», lalu satu tombol untuk: buletin, email besar, email lama, email ganda.
+121	Email masuk ke tempat sampah layanan emailmu. Email dari bank, instansi pemerintah, atau kesehatan TIDAK PERNAH disentuh.
+122	Bersih-bersih email terpandu
+123	Di Email, ketuk ubin hijau besar. Prinsip yang sama: tombol hijau adalah langkah berikutnya.
+124	Bersih-bersih aman: buletin, iklan, notifikasi, dan email ganda masuk ke tempat sampah.
+125	Saya pilah per pengirim: satu kartu per pengirim. Ke kiri, semua emailnya pergi; ke kanan, disimpan.
+126	Saya amankan yang penting: bank, instansi, kesehatan, tagihan, dan email dengan PDF dicadangkan.
+127	Saya kosongkan kotak surat: email lama masuk ke tempat sampah, tidak pernah yang penting.
+128	«Berhenti berlangganan»: agar tidak menerima buletin lagi. Tombol membuka halaman berhenti berlangganan.
+129	BARU 2.0 — Sebelum membuang, daftar email ditampilkan (pengirim, subjek, tanggal): hapus centang yang ingin disimpan, lalu konfirmasi.
+130	Ketuk pengirim: 🗑️ selalu buang (setiap malam, otomatis), 🛡️ selalu simpan, 🔔 beri tahu saya saat ia menulis.
+131	Kotak terlindungi: bank, pajak, kesehatan, rumah, dan keluarga (kontakmu) disimpan di «Terlindungi» di emailmu, tidak pernah dibuang. Tombol «Spam» untuk mengosongkan surat sampah.
+132	Simpan email dan lampirannya
+134	Di Email, ketuk «Simpan email».
+135	Centang email yang ingin disimpan («Centang PDF» agar cepat).
+136	Ketuk «Simpan»: email lengkap, dan semua PDF dikumpulkan dalam folder PDF.
+137	Di PC, buka CleanSmart/Mails/index.html: ketik kata, nama, atau PDF untuk menemukan semuanya.
+138	Kembalikan email
+140	Di Email, ketuk «Kembalikan email».
+141	Centang email di tempat sampah yang ingin dikembalikan.
+142	Ketuk «Kembalikan»: email kembali ke kotak masuk.
+143	Kontak ganda
+145	Setelah analisis, kartu «Kontak» menunjukkan duplikat (nama sama, nomor sama).
+146	«Hapus duplikat» menyimpan kontak aslinya.
+147	Hati-hati: penghapusan juga terjadi di akun Google-mu.
+148	Penjelasan opsi
+149	Cadangan otomatis setiap malam
+150	Sekitar pukul 2 pagi, foto baru disalin ke folder cadanganmu.
+151	Perlu diketahui: notifikasi memberi tahu jika gagal.
+152	Peringatan dan laporan bulanan
+153	Peringatan jika tersisa kurang dari 1 GB, dan ringkasan kecil setiap tanggal 1.
+154	Perlu diketahui: paling banyak satu peringatan setiap 3 hari.
+155	Cadangkan sebelum menghapus
+156	Menyalin foto (dan kontak) ke foldermu sebelum setiap pembersihan.
+157	Perlu diketahui: mati secara bawaan, tidak perlu untuk duplikat dan foto gagal.
+158	Lindungi favoritku
+159	Foto favorit tidak pernah diusulkan.
+160	Perlu diketahui: aktif secara bawaan.
+161	Ketegasan
+162	Hati-hati: lebih sedikit foto diusulkan. Normal. Ketat: lebih banyak.
+163	Perlu diketahui: analisis ulang setelah perubahan.
+164	Kosongkan ruang
+165	Simpan di ponsel foto 1, 3, 6, atau 12 bulan terakhir.
+166	Perlu diketahui: hanya foto yang sudah dicadangkan yang diusulkan.
+167	Ukuran teks
+168	Normal, besar, atau sangat besar.
+169	Perlu diketahui: sedikit lebih banyak menggulir.
+170	Bahasa
+171	Seperti ponsel, atau salah satu dari 16 bahasa (Indonesia, Inggris, Prancis, Yunani, Arab, Mandarin…).
+172	Perlu diketahui: perubahan langsung berlaku.
+173	Demo
+174	Menampilkan aplikasi dengan foto, email, dan kontak palsu.
+175	Perlu diketahui: tidak ada yang disentuh di ponsel. Cocok untuk memperkenalkan aplikasi.
+176	Widget
+177	Di layar utama ponsel: tekan lama > Widget > Clean Smart. Menampilkan ruang kosong dan membuka bersih-bersih terpandu.
+178	Perlu diketahui: diperbarui sendiri.
+179	Ada pertanyaan, atau ingin versi lengkap? Tulis kepada saya: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Pertanyaan umum
+181	Apakah fotoku langsung dihapus?
+182	Tidak. Foto masuk ke tempat sampah Galeri: 30 hari untuk mengembalikannya, atau «Saya salah».
+183	Apakah fotoku dikirim ke Internet?
+184	Tidak. Semua terjadi di ponsel. Hanya cadangan yang pergi ke tempat yang kamu pilih (kartu SD, flashdisk, Drive).
+185	Mengapa perlu sandi aplikasi?
+186	Gmail, Yahoo, dan iCloud mewajibkannya untuk aplikasi email. Sandi tetap terenkripsi di ponselmu.
+187	Ruang tidak kembali setelah dibersihkan?
+188	Tempat sampah menyimpan foto 30 hari. Ketuk «Kosongkan tempat sampah sekarang» di layar utama.
+189	Saya menghapus salinan di disk, tidak ada lagi yang disalin?
+190	Di tab Google Foto atau Foto iCloud, ketuk «Mulai ulang semua (saya menghapus salinan)» di bawah layar, lalu buka lagi file ZIP-mu.
+191	Bagaimana mendapatkan versi terbaru?
+192	Jika ada versi baru, spanduk oranye muncul di layar utama: ketuk, lalu buka file yang diunduh. Atau Opsi > «Cari pembaruan».

@@ -103,6 +103,7 @@ object Night {
         override suspend fun doWork(): Result {
             val ctx = applicationContext
             val s = Settings.load(ctx)
+            Tr.init(ctx); Tr.choix = Tr.CODES.getOrNull(s.langue - 1)
             val p = ctx.getSharedPreferences("nuit", Context.MODE_PRIVATE)
             val now = System.currentTimeMillis()
 

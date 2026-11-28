@@ -97,6 +97,7 @@ class AutoService : Service() {
     override fun onBind(intent: Intent?): IBinder? = null
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        Tr.init(this)
         if (intent?.action == ARRETER) {
             if (job?.isActive == true) {
                 job?.cancel()                                  // s'arrete a la fin du fichier en cours (jamais au milieu)

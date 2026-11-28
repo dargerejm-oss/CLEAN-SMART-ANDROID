@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 未能复制：请重新运行同一个文件。
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 个「待检查」项将进入 Clean Smart 回收站：7 天内可恢复。
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\n注意：删除会与你的账号（Google 等）同步。
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\n磁盘或手机已满：请腾出空间（或在第 2 步更换磁盘），然后重新运行这个文件。不会重复复制。
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\n文件已损坏或不完整：请从 Google 邮件重新下载并重新运行。已复制的内容会保留。
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\n副本会先以 .vcf 文件导出到你的备份文件夹。
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\n重新运行包含它们的 ZIP 文件（或自动模式）：会重新复制。在此之前不要在 %1 删除任何内容。
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\n会先在你的备份文件夹中复制一份。
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 在 Google，邮件和 Google 相册共用同样的 15 GB：清理邮件也能为照片腾出空间。
+ sur environ %1 Go	 （约 %1 GB）
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 张重复、连拍或失败照片不备份
+ · %1 à la corbeille	 · %1 移至回收站
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · 「待检查」文件在 Clean Smart 回收站中（7 天）
+ · va dans la corbeille Clean Smart	 · 进入 Clean Smart 回收站
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1（%2）：多余的重复、多余的连拍、全黑或全白照片、超过一个月的截图。\n\n它们会进入相册回收站（30 天内可恢复）。
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1（%2）将被永久删除，以立即释放空间。\n\n无法恢复。
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  待删除 %3
+%1 : %2 %	%1：%2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1：订阅邮件和广告（%2 个发件人）、通知、重复邮件。
+%1 Go · prévois %2	%1 GB · 预留 %2
+%1 analysées	已分析 %1
+%1 avec pièces jointes (dont %2 avec PDF)	%1 封带附件（其中 %2 封带 PDF）
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 成功。把原文件放入回收站可节省 %2。
+%1 ce mois-ci. 	本月 %1。
+%1 copié(s) dans ton dossier de sauvegarde.	已将 %1 复制到你的备份文件夹。
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 无用文件：临时文件、缩略图、空文件夹、应用残留。
+%1 de plus de %2 mois 	超过 %2 个月的 %1
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	已将「总是删除」发件人的 %1 移至回收站（30 天内可恢复）。
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 封重复邮件进入回收站。每封邮件的第一份会保留。
+%1 et %2 copiées et vérifiées.	%1 和 %2 已复制并核对。
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 和 %2 已安全保存。你可以删除它并下载下一个。
+%1 fichier(s) sauvegardé(s)	已备份 %1 个文件
+%1 jetés	已删除 %1
+%1 libres sur %2	%2 中剩余 %1
+%1 libérés sur le téléphone	手机上已释放 %1
+%1 mails dans la boîte · %2 analysés	邮箱中有 %1 封邮件 · 已分析 %2
+%1 min %2 s	%1 分 %2 秒
+%1 newsletters · %2 gros mails	%1 封订阅邮件 · %2 封大邮件
+%1 newsletters, %2 gros mails (%3).	%1 封订阅邮件，%2 封大邮件（%3）。
+%1 photos trouvées	找到 %1 张照片
+%1 photos · %2 vidéos analysées	已分析 %1 张照片 · %2 个视频
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 张照片 · %2 个视频 · 已排除 %3 张重复和连拍
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 会准备你所有照片的副本。请完全按照此示例操作：
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 将被删除：已不再需要或会自动重新生成。
+%1 seront supprimés pour de bon.	%1 将被永久删除。
+%1 sur %2 choisis · %3	已选 %1 / %2 · %3
+%1 sur %2 fichiers faits	已完成 %1 / %2 个文件
+%1 sur %2 · %3	%1 / %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 将进入相册回收站（30 天内可恢复）。
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 进入相册回收站（30 天内可恢复）。
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2：重复、多余连拍、全黑或全白照片、超过一个月的截图。最好的会保留。
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	共 %1 · %2。点一下应用即可卸载或清除缓存。
+%1 à jeter	待删除 %1
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 逐张查看。向左滑删除，向右滑保留（设为收藏 ⭐）。
+%1, %2, %3 copiés · %4 et %5 écartés.	已复制 %1、%2、%3 · 已排除 %4 和 %5。
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1超过 %2 年的邮件进入回收站（重要邮件除外）。
+(sans objet)	（无主题）
+. %1 en double ou en rafale à trier : touche ici.	。%1 张重复或连拍待整理：点这里。
+1 bouton	1 个按钮
+1 mois	1 个月
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. 我已关闭备份：Google 相册应用 › 右上角头像 › 相册设置 › 备份 › 关闭。
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. 我已在 iPhone 上关闭「iCloud 照片」（设置 › 你的姓名 › iCloud › 照片）。
+12 mois	12 个月
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. 我已在电脑上打开磁盘，能按年份看到我的照片。
+3 mois	3 个月
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. 建议：我已做了第 2 份副本（另一块磁盘或电脑）。
+4 étapes	4 步
+6 mois	6 个月
+AFFICHAGE	显示
+AUTOMATIQUE	自动
+AUTRE	其他
+Adresse mail	邮箱地址
+Adresse, serveur et mot de passe sont obligatoires.	地址、服务器和密码为必填项。
+Alerte retirée	已取消提醒
+Alertes et rapport du mois	提醒和月度报告
+Analyse de la boîte mail	正在分析邮箱
+Analyse des 3 000 mails les plus récents de la boîte de réception.	分析收件箱中最近的 3,000 封邮件。
+Analyse des mails (%1 / %2)	正在分析邮件（%1 / %2）
+Analyse du téléphone	正在分析手机
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	分析你的邮箱「%1」：订阅邮件、大邮件、旧邮件。重要邮件始终保留。
+Analyser ma boîte mail	分析我的邮箱
+Analyser mon téléphone	分析我的手机
+Annuler	取消
+Annuler, ne rien jeter	取消，不删除任何内容
+Appeler	拨打电话
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple 会核实请求，通常在 3 到 7 天内发送邮件。之后在 privacy.apple.com 下载文件（在手机上登录）。
+Apple · Données et confidentialité	Apple · 数据与隐私
+Appliquer « toujours jeter » maintenant	立即执行「总是删除」
+Arrêt après le fichier en cours…	当前文件完成后停止…
+Arrêter	停止
+Arrêter le mode automatique ?	停止自动模式？
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	已停止。已复制的文件都安全；其余文件下次复制，不会重复。
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	提示：在设置 › 应用中，点一个应用（Chrome、Facebook…）› 存储 › 「清除缓存」。
+Aucun contact en double	没有重复联系人
+Aucun dossier choisi	未选择文件夹
+Aucun dossier de sauvegarde	没有备份文件夹
+Aucun fichier inutile.	没有无用文件。
+Aucune boîte mail connectée.	未连接邮箱。
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	未检测到 U 盘或磁盘。请插上（USB-C 转接头），然后重新打开此步骤。
+Aucune vidéo n'a pu être réduite davantage.	没有可以再压缩的视频。
+Autre	其他
+Autres fichiers d'installation (.apk)	其他安装文件（.apk）
+Avant tout : analyser	首先：分析
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	开启「使用情况访问权限」后，Clean Smart 能看到每个应用的实际大小以及你多久没打开它。不会向任何地方发送任何内容。
+BOÎTE MAIL	邮箱
+Banque	银行
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	银行、政府、医疗、账单以及所有带 PDF 的邮件：已备份，PDF 已汇总，电脑上有 index.html 存档。
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	银行、政府、医疗、账单以及所有带 PDF 的邮件：已备份，PDF 已汇总，电脑上有 index.html 存档。在你的邮箱中，它们归入「受保护」。
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	银行、税务、医疗、家居、家人（你的联系人）：单独归档，永不删除
+Batterie faible (%1 %)	电量低（%1 %）
+Bonjour	你好
+Boutique Mode	时装店
+Boîte mail en ordre !	邮箱已整理好！
+Boîte mail remplie à %1 % (%2 / %3)	邮箱已用 %1 %（%2 / %3）
+Boîte protégée	受保护邮箱
+Boîte remplie à %1 % (%2 / %3). 	已用 %1 %（%2 / %3）。
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	请接上充电器：一个文件可能需要 10 到 30 分钟。\n\n如果手机关机，什么都不会丢失：重新运行同一个文件即可。
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	处理期间请接上充电器：大文件可能需要 10 到 30 分钟。屏幕会保持常亮。
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	把 U 盘或磁盘插到手机上，然后在上面选择（或新建）一个文件夹。
+Brancher la clé ou le disque	插上 U 盘或磁盘
+C'est fait : le prochain fichier sera entièrement recopié.	完成：下一个文件会重新完整复制。
+C'est noté	记下了
+CONSEILLÉ	推荐
+CONTACT	联系方式
+CONTACTS	联系人
+Captures d'écran	截图
+Carte SD, clé USB, Drive… choisis où tu veux	SD 卡、U 盘、Drive… 随你选择
+Carte SD, clé USB, Google Drive…	SD 卡、U 盘、Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	此文件已复制并核对。重新运行不会产生重复，但没有必要。\n\n你可能想处理下一个（%1）。
+Ce mois-ci	本月
+Cette année	今年
+Changer de compte	更换账号
+Changer de dossier	更换文件夹
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	每个星期日，安全的无用文件和垃圾邮件会自动清除。通知会告诉你释放了多少空间，以及是否有照片需要整理。
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	每封选中的邮件都会保存到你的备份文件夹：
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	每个视频以 720p 重新生成，通常小 3 到 5 倍，保存在 影片 / Clean Smart。
+Choisir le dossier sur le disque	选择磁盘上的文件夹
+Choisir un dossier	选择文件夹
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	请先选择 U 盘或磁盘上的文件夹（第 2 步）。
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	请先选择 U 盘或磁盘上的文件夹（「磁盘」步骤）。
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	请先选择一个文件夹：SD 卡、U 盘或 Google Drive。
+Choisis d'abord un dossier de sauvegarde (Options).	请先选择备份文件夹（选项）。
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	请先选择备份文件夹（SD 卡、U 盘、Drive）。
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	请先选择备份文件夹并进行备份。
+Choisis d'abord un dossier de sauvegarde.	请先选择备份文件夹。
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	选择你的邮件：连同附件一起保存，PDF 放在单独的文件夹
+Choisis une carte SD, une clé USB ou Google Drive	选择 SD 卡、U 盘或 Google Drive
+Choix des plus belles photos…	正在挑选最美的照片…
+Clean Smart : copie automatique	Clean Smart：自动复制
+Clean Smart attend les fichiers dans Download…	Clean Smart 正在等待 Download 中的文件…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart 读取最近的 3,000 封邮件（不会删除任何内容）。
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart 查看你的所有照片（不会删除任何内容）。
+Clean Smart trouve en un clic :	Clean Smart 一键找出：
+Clé USB (démonstration)	U 盘（演示）
+Clé USB ou disque dur, avec un adaptateur USB-C	U 盘或硬盘，配合 USB-C 转接头
+Colis et livraisons	包裹和快递
+Combien de place faut-il ?	需要多少空间？
+Comme le téléphone	跟随手机
+Commencer	开始
+Compresser	压缩
+Compresser %1 ?	压缩 %1？
+Compression des vidéos	正在压缩视频
+Compris	知道了
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	连接你的邮箱（Gmail、Outlook、Yahoo、Orange、Free…）：整理订阅邮件、大邮件和旧邮件，重要邮件始终保留。
+Connecter	连接
+Connecter ma boîte mail	连接我的邮箱
+Connexion au serveur	正在连接服务器
+Connexion impossible : 	无法连接：
+Connexion à la messagerie	正在连接邮件服务
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	建议：我已做了第 2 份副本（另一块磁盘或电脑）。
+Contacts en double	重复联系人
+Continuer quand même	仍然继续
+Copie automatique	自动复制
+Copier les fichiers un par un	逐个复制文件
+Copies identiques — l'original est gardé	完全相同的副本 — 保留原件
+Corbeille	回收站
+Corbeille : %1	回收站：%1
+Corbeille Clean Smart	Clean Smart 回收站
+Corbeille de la messagerie	邮箱回收站
+Correct, mais peut mieux faire	还行，但可以更好
+Créer une exportation	创建导出
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	在 Google 相册中：长按一张照片，勾选整天，然后「删除」。Google 回收站会保留所有内容 60 天。
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	在 Google Takeout 中选择 2 GB 的文件：我们逐个处理，手机从不需要很多空间。
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	在 Apple 请求中选择 1 或 2 GB 的文件：我们逐个处理，手机从不需要很多空间。
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	在 Google 邮件中数一数「下载」按钮：这就是文件数量。
+Demander la copie à %1	向 %1 申请副本
+Demander une copie de tes données	申请你的数据副本
+Demandée · attends le mail de %1	已申请 · 请等待 %1 的邮件
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	从 Android 11 开始，清理类应用不能清除其他应用的缓存或系统文件。由 Android 自己完成：此按钮会打开「释放空间」页面。
+Depuis l'installation	自安装以来
+Dernière vérification	最后检查
+Des applis téléchargées mais pas installées. À vérifier.	已下载但未安装的应用。待检查。
+Disque	磁盘
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	无法识别磁盘：请使用 USB-C（OTG）转接头。exFAT 格式的 U 盘到处可用（FAT32 不支持超过 4 GB 的文件）。
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	磁盘已满：插上更大的磁盘并在「磁盘」步骤中选择。我们会从中断处继续，不会重复。
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	下载中 6 个月未动过的文件。待检查。
+Dossier Corbeille introuvable sur ce compte.	此账号中找不到回收站文件夹。
+Dossier Corbeille introuvable.	找不到回收站文件夹。
+Dossier Spam introuvable sur ce compte.	此账号中找不到垃圾邮件文件夹。
+Dossier de sauvegarde	备份文件夹
+Dossier de sauvegarde introuvable.	找不到备份文件夹。
+Dossiers cache	缓存文件夹
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	已不在手机上的应用留下的文件夹。待检查。
+Dossiers vides	空文件夹
+Dossiers vides…	空文件夹…
+Doublons	重复
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	多余的重复和连拍（保留最好的照片）、全黑或全白照片、旧截图。点一下照片即可保留。全部进入相册回收站（30 天）。
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	重复、多余连拍、全黑或全白照片、旧截图。
+Doublons, rafales, floues	重复、连拍、模糊
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	取消勾选你想保留的邮件。银行、税务、医疗以及「总是保留」发件人的邮件永远不会出现在此列表中。全部进入邮箱回收站（可恢复）。
+Démonstration…	演示…
+Déplacement vers la corbeille…	正在移至回收站…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	默认关闭。开启后，每次清理前都会把照片（和 .vcf 联系人）复制到文件夹，以防万一。
+Elles sont déjà toutes en favori 👍	它们都已是收藏 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	演示模式下不会处理任何文件。退出演示（选项）后才能真正执行。
+En pleine forme	状态极佳
+Envoyer %1	发送 %1
+Envoyer le PDF souvenir	发送纪念 PDF
+Envoyer le lien par e-mail · Exporter une fois	通过电子邮件发送下载链接 · 导出一次
+Erreur inattendue	意外错误
+Espace libéré	已释放空间
+Espace libéré depuis le début : %1. Une petite analyse ?	开始以来已释放：%1。来个快速分析？
+Espace à récupérer	可回收的空间
+Et tes mails	还有你的邮件
+Factures et papiers	账单和文件
+Faire le ménage sûr ?	执行安全清理？
+Fait ✔	完成 ✔
+Famille	家人
+Fermer	关闭
+Fichier %1	文件 %1
+Fichier %1 déjà fait	文件 %1 已完成
+Fichier illisible	无法读取的文件
+Fichiers d'installation déjà installés	已安装应用的安装文件
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	应用在手机存储中的工作文件。需要时会重新生成。
+Fichiers inutiles	无用文件
+Fichiers mis de côté, vidée toute seule après 7 jours	暂存的文件，7 天后自动清空
+Fichiers temporaires	临时文件
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	临时文件、缩略图、空文件夹、应用残留
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	临时文件、缩略图、空文件夹、应用残留。照片和音乐永远不会被触碰。
+Floue	模糊
+Floues, trop sombres ou trop claires — vérifie avant de cocher	模糊、太暗或太亮 — 勾选前请检查
+GARDÉE	已保留
+Garder sur le téléphone les photos des derniers…	手机上保留最近…的照片
+Gardés	已保留
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail 需要应用专用密码（16 个字母）：\n1. 在 Google 账号中开启两步验证。\n2. 打开 myaccount.google.com/apppasswords\n3. 创建一个名为「Clean Smart」的密码并粘贴到这里。
+Google Photos	Google 相册
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	准备好后 Google 会发送邮件：几小时或几天内。期间你可以关闭应用。
+Gros	大
+Gros mails (+ 5 Mo)	大邮件（5 MB 以上）
+Grosses vidéos	大视频
+Groupe %1 · %2 photos	第 %1 组 · %2 张照片
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	登录被拒绝。Gmail、Yahoo 和 iCloud 需要应用专用密码，而不是你平常的密码。
+Il a besoin d'un bon ménage	需要好好清理一下
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	只剩 %1。打开 Clean Smart 一键释放空间。
+Ils ne contiennent rien.	它们是空的。
+Ils prennent encore de la place pendant 30 jours	30 天内仍占用空间
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	它们会归入你邮箱的「受保护」文件夹。每晚重复。
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	无法撤销：文件可能已被永久删除。
+Impossible de créer le dossier %1	无法创建文件夹 %1
+Impossible de protéger ces photos	无法保护这些照片
+Impossible de vider la corbeille	无法清空回收站
+Impôts	税务
+Impôts - Administration	税务 - 政府
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	输入你的邮件服务 IMAP 服务器（端口 993，SSL）。
+J'ai demandé la copie	我已申请副本
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	我已在电脑上打开磁盘，能按年份看到我的照片。
+J'ai traité tous les fichiers	我已处理所有文件
+Jamais jetés, rangés dans « Protégés »	永不删除，归入「受保护」
+Je libère la boîte	我清空邮箱
+Je libère la place	我释放空间
+Je mets l'important à l'abri	我保护重要内容
+Je mets à l'abri les bonnes	我保护好照片
+Je trie par expéditeur	我按发件人整理
+Je vérifie le douteux	我检查有疑问的
+Jeter %1 ?	删除 %1？
+Jeter ces mails ?	删除这些邮件？
+Jeter les copies ?	删除副本？
+Jeter les gros mails ?	删除大邮件？
+Jeter les newsletters ?	删除订阅邮件？
+Jeter les originaux ?	删除原文件？
+Jeter les vieux mails ?	删除旧邮件？
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	日志、临时备份、中断的下载。已不再需要。
+L'adresse et le mot de passe seront effacés du téléphone.	地址和密码将从手机上删除。
+L'important est à l'abri, le reste est parti	重要的已安全，其他的已清走
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	原文件不会被触碰：之后我会建议你把它放入回收站。\n\n可能需要几分钟。
+LA NUIT	夜间
+LIBÉRER LA PLACE	释放空间
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	磁盘上的副本已被删除：Clean Smart 会从头重新复制所有内容。
+La corbeille est vide.	回收站是空的。
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	邮件的空间会在邮箱回收站清空后释放（通常 30 天内）。
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	备份未能完成。打开 Clean Smart 检查文件夹。
+Langue	语言
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	引导式清理会按正确顺序完成所有步骤。绿色按钮永远是下一步。
+Le bilan, et comment libérer ton compte %1	总结，以及如何清空你的 %1 账号
+Le contact d'origine est gardé.	保留原始联系人。
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	磁盘（或手机）已满：复制已安全停止。\n\n插上更大的磁盘，在第 2 步选择它，然后重新运行自动模式：我们会继续，不会重复。
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	磁盘空间不足：剩余 %1，这个文件约需 %2。\n\n• 在磁盘上释放空间，或\n• 插上更大的磁盘并在「磁盘」步骤中选择（我们会从当前位置继续）。\n\n未改动任何内容。
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	无法访问磁盘。\n\n• 检查是否插好（USB-C 转接头）。\n• 在「磁盘」步骤中重新选择文件夹。
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	无法访问备份文件夹。打开 Clean Smart > 选项进行选择。
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	备份文件夹已无法访问。请重新选择。
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	磁盘上找不到「%1」文件夹。检查磁盘是否已插好（第 2 步）。
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	先完成当前文件。已复制的文件都安全；其余的下次复制，不会重复。
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Google 邮件中的链接约一周后失效：如果失效，请重新申请导出（什么都不会丢失，会继续且不重复）。
+Le mois dernier	上个月
+Le ménage sûr	安全清理
+Le refaire quand même	仍然重做
+Le téléphone	手机
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	手机快满了（至少需要 300 MB 空闲空间才能工作）。\n\n• 清空相册回收站。\n• 删除已处理的 ZIP 文件（下载）。\n• 进行 Clean Smart 的引导式清理。\n\n未改动任何内容。
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	手机关机或磁盘被拔出？重新运行同一个 ZIP 即可：Clean Smart 会继续，不丢失也不重复。
+Lecture de la galerie	正在读取相册
+Lecture des dates des photos…	正在读取照片日期…
+Lecture des vidéos	正在读取视频
+Lecture impossible : %1	无法读取：%1
+Les .apk d'applis déjà installées : ils ne servent plus.	已安装应用的 .apk：已不再需要。
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	邮箱回收站中最近的 200 封邮件。勾选要放回收件箱的邮件。
+Les 30 photos et vidéos qui prennent le plus de place	占用空间最多的 30 张照片和视频
+Les autres cases : inutile	其他选项：不需要
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Apple 的文件在 privacy.apple.com 上保留约 2 周：如果已过期，请重新申请（什么都不会丢失，会继续且不重复）。
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	已放入回收站的文件仍可在相册中恢复。
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	超过 %1 年的邮件进入邮箱回收站。重要邮件会保留。
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	超过 2 年的邮件进入邮箱回收站。
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	超过 5 MB 的邮件进入邮箱回收站。
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	订阅邮件、广告、通知和重复邮件进入邮箱回收站（整个收件箱）。\n\n重要邮件永远不会被触碰。
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	先照片（整理、保留最好的、备份、释放），然后是手机上的无用文件，最后是邮件。
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	已备份的超过 %1 个月的照片会离开手机（回收站，30 天）。
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	收藏的照片（或用 🛡️ 按钮保护的）永远不会被建议删除
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	稍微模糊的照片、WhatsApp、最近的截图：由你决定。
+Les photos, vidéos et musiques ne sont jamais touchées.	照片、视频和音乐永远不会被触碰。
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	较旧的照片只有在已备份时才会被建议放入回收站。
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	本月或今年最美的照片，发给亲人
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	最大的和不再打开的应用：一键卸载
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	垃圾邮件进入邮箱回收站。如果某封不是垃圾邮件，请取消勾选。
+Libérer	释放
+Libérer %1 ?	释放 %1？
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	清空 %1 是可选的。%2 不允许任何应用删除你的照片：确认无误后由你自己操作。
+Libérer la boîte	清空邮箱
+Libérer la boîte mail	正在清空邮箱
+Libérer la boîte mail ?	清空邮箱？
+Libérer la place	释放空间
+Libérer la place, PDF souvenir…	释放空间、纪念 PDF…
+Liste des photos sur le disque…	正在列出磁盘上的照片…
+MAINTENANT	现在
+Mail (facultatif, pour tes mails)	邮件（可选，用于你的邮件）
+Mails	邮件
+Mails Gmail : %1	Gmail 邮件：%1
+Mails avec pièces jointes	带附件的邮件
+Mails de plus de 2 ans	超过 2 年的邮件
+Mails en double	重复邮件
+Mails en double…	重复邮件…
+Maison	家居
+Me prévenir	提醒我
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	感谢试用 Clean Smart！安装完整版即可继续清理手机。
+Mes applis	我的应用
+Mes plus gros fichiers	我最大的文件
+Mes règles	我的规则
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	把已备份的超过 %1 个月的照片放入回收站
+Mettre à l'abri	妥善保存
+Mettre à l'abri l'important	正在保存重要内容
+Miniatures	缩略图
+Mise à jour	正在更新
+Mise à la corbeille…	正在移至回收站…
+Mode d'emploi	使用说明
+Mode d'emploi introuvable.	找不到使用说明。
+Mode démonstration terminé	演示模式已结束
+Modifier ▼	修改 ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	用虚构的照片、邮件和联系人展示应用。不会触碰手机上的任何内容：非常适合介绍 Clean Smart。
+Mot de passe (vide = garder l'actuel)	密码（留空 = 保留当前密码）
+Mot de passe d'application	应用专用密码
+Médias WhatsApp	WhatsApp 媒体
+Ménage complet	全面清理
+Ménage guidé	引导式清理
+Ménage guidé des mails	邮件引导式清理
+Ménage sûr de la boîte mail	邮箱安全清理
+Ménage terminé !	清理完成！
+NOUVEAU	新
+Nettoyage de la boîte mail	正在清理邮箱
+Nettoyage des fichiers inutiles	正在清理无用文件
+Nettoyer	清理
+Nettoyer %1 ?	清理 %1？
+Nettoyer le téléphone	清理手机
+Nettoyer les fichiers inutiles ?	清理无用文件？
+Newsletters et notifications…	订阅邮件和通知…
+Newsletters et pubs	订阅邮件和广告
+Newsletters, pubs, notifications et mails en double.	订阅邮件、广告、通知和重复邮件。
+Nombre de fichiers dans le mail	邮件中的文件数
+Normale	正常
+Nouvelle version %1 disponible	新版本 %1 可用
+Oublier	移除
+Oublier ce compte ?	移除此账号？
+Oui, c'est fini	是的，完成了
+Ouverte aujourd'hui	今天打开过
+Ouverte il y a %1	%1前打开过
+Ouverture de %1…	正在打开 %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	打开 Clean Smart 看看要做什么。什么都没有丢失。
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	打开你的 Google 页面，查看 Google 相册占用的空间，填在这里（单位 GB）。
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	打开「大视频」，勾选后点「压缩」
+Ouvrir	打开
+Ouvrir Google Photos	打开 Google 相册
+Ouvrir Google Takeout	打开 Google Takeout
+Ouvrir iCloud Photos	打开 iCloud 照片
+Ouvrir la page du mot de passe d'application	打开应用专用密码页面
+Ouvrir privacy.apple.com	打开 privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	打开 Android 的「释放空间」
+PDF souvenir	纪念 PDF
+PHOTOS ET VIDÉOS	照片和视频
+PROTECTION	保护
+Pas de photos pour cette période.	这个时段没有照片。
+Pas ouverte depuis plus d'un an	超过一年未打开
+Passer	跳过
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	用于显示的照片小副本。会自动重新生成。
+Photos	照片
+Photos : %1 · vidéos : %2 · doublons écartés : %3	照片：%1 · 视频：%2 · 已排除重复：%3
+Photos du week-end	周末照片
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	重复照片、连拍、失败照片、大视频、无用邮件… 都在占用空间。
+Photos et vidéos reçues ou envoyées	收到或发送的照片和视频
+Photos floues ou ratées	模糊或失败的照片
+Photos iCloud	iCloud 照片
+Photos similaires	相似照片
+Photos, téléphone et mails, étape par étape	照片、手机和邮件，一步一步来
+Place prise : %1	占用空间：%1
+Plus d'outils	更多工具
+Plus de 100 Mo chacune	每个超过 100 MB
+Pour gagner des points : %1.	想得更高分：%1。
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	获取 Clean Smart 完整版或有任何问题，请联系我：
+Pour obtenir la version complète, écris-moi :	获取完整版，请联系我：
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	要找到无用文件，Clean Smart 需要查看手机存储：请允许「所有文件访问权限」。不会向任何地方发送任何内容。
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	用于其他账号或其他磁盘。已复制到磁盘的文件不会被触碰。
+Protéger mes favoris	保护我的收藏
+Prudente	谨慎
+Prudente : moins de photos proposées. Stricte : davantage.	谨慎：建议的照片较少。严格：较多。
+Préparation	准备
+Préparation…	准备中…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	手机空间快用完时（少于 1 GB）提醒我，并在每月 1 日给我一份简短总结。
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	请在 U 盘或磁盘上预留至少 %1（留 10 % 余量）。
+QUI T'ÉCRIT LE PLUS	给你发邮件最多的人
+Quand le mail de %1 est arrivé	%1 的邮件到达后
+Quitter	退出
+Quitter Google Photos	离开 Google 相册
+Quitter iCloud Photos	离开 iCloud 照片
+RECHERCHE DES PHOTOS RATÉES	查找失败照片
+Rafales : on garde la meilleure…	连拍：保留最好的一张…
+Rafales — la plus nette est gardée	连拍 — 保留最清晰的
+Rangement : %1	正在归档：%1
+Recherche des doublons	正在查找重复
+Recherche des fichiers inutiles…	正在查找无用文件…
+Recherche des mails	正在查找邮件
+Recherche des mails avec PDF	正在查找带 PDF 的邮件
+Recherche des mails importants (%1 / %2)	正在查找重要邮件（%1 / %2）
+Recherche des photos floues	正在查找模糊照片
+Recherche des photos ratées	正在查找失败照片
+Recherche des photos similaires	正在查找相似照片
+Recherche des pièces jointes (%1 / %2)	正在查找附件（%1 / %2）
+Rechercher une mise à jour	检查更新
+Recommencer	重新开始
+Recommencer avec un autre compte	用其他账号重新开始
+Recommencer depuis le début ?	从头开始？
+Regarder la taille de %1	查看 %1 的大小
+Relance l'analyse après un changement.	修改后请重新分析。
+Remettre des mails	恢复邮件
+Remettre le compteur à zéro	重置计数器
+Remettre les fichiers	正在放回文件
+Restes d'applis désinstallées	已卸载应用的残留
+Restes d'applis désinstallées…	已卸载应用的残留…
+Reçus plusieurs fois à quelques secondes d'écart : %1	几秒内多次收到：%1
+Rien	无
+Rien n'a été supprimé.	未删除任何内容。
+Rien n'est perdu	什么都不会丢失
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	未经你同意不会删除任何内容：一切都会经过回收站。
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	没有可释放的：备份中还没有旧照片。请先运行「备份我的所有照片」。
+RÉSULTAT	结果
+Règle retirée	已取消规则
+Récupère des mails mis à la corbeille de ta messagerie	找回放入邮箱回收站的邮件
+Récupérer mes photos iCloud (ancien iPhone)	取回我的 iCloud 照片（以前的 iPhone）
+Réduire mes vidéos	缩小我的视频
+Réglages avancés	高级设置
+Réglages de stockage Android	Android 存储设置
+SAUVEGARDE	备份
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	没有照片访问权限，Clean Smart 无法分析任何内容。
+Santé	医疗
+Sauvegarde %1 / %2	备份 %1 / %2
+Sauvegarde automatique chaque nuit	每晚自动备份
+Sauvegarde avant suppression	删除前备份
+Sauvegarde de mes bonnes photos	正在备份我的好照片
+Sauvegarde des mails	正在备份邮件
+Sauvegarde des mails importants	正在备份重要邮件
+Sauvegarde du mail %1 / %2	正在保存邮件 %1 / %2
+Sauvegarder avant de supprimer	删除前备份
+Sauvegarder des mails	保存邮件
+Sauvegarder mes bonnes photos	备份我的好照片
+Se connecter avec ton identifiant Apple	使用你的 Apple ID 登录
+Serveur IMAP	IMAP 服务器
+Serveur introuvable : vérifie internet et le nom du serveur.	找不到服务器：请检查网络和服务器名称。
+Ses mails partent à la corbeille chaque nuit, tout seuls	此人的邮件每晚自动进入回收站
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	只备份好照片：不包含重复、多余连拍或失败照片。收藏的照片还会放入「Mes meilleures」（我的最佳）。
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	只把好照片备份到 U 盘、磁盘或 Google Drive。连 Google 相册也能取回。
+Seules les nouvelles photos sont copiées à chaque fois.	每次只复制新照片。
+Seuls les 20 premiers fichiers sont envoyés.	只发送前 20 个文件。
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	如果登录被拒绝，请在 Microsoft 账号安全设置中创建应用密码（需要两步验证）。
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	否则 iPhone 会把照片重新上传到 iCloud，而在 iCloud 删除也可能把它们从 iPhone 删除。
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	否则手机会把照片重新上传到 Google，而在 Google 删除也可能把它们从这部手机删除。
+Soldes d'hiver	冬季特卖
+Souvent inutiles après coup	过后通常没用
+Stockage du téléphone	手机存储
+Stricte	严格
+Suivant	下一步
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	请自己在「下载」中删除此文件以腾出空间。
+Supprimer	删除
+Supprimer %1 ?	删除 %1？
+Supprimer ce fichier du téléphone ?	从手机删除此文件？
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	复制并核对后从手机删除每个文件（推荐：保持空间）
+Supprimer les doublons	删除重复
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	在 Gmail 中，它们留在收件箱并加上「受保护」标签。每晚重复。
+Sur Google Takeout, en 1 minute	在 Google Takeout，1 分钟
+Sur account.apple.com → Mots de passe pour applications → en créer un.	在 account.apple.com → App 专用密码 → 创建一个。
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	在 iPhone 上：设置 › 你的姓名 › iCloud：会显示「照片」占用的空间。或在 icloud.com 查看。填在这里（单位 GB）。
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	在 iPhone 或 icloud.com/photos 上：选择照片后「删除」。「最近删除」相簿会保留 30 天。
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	在打开的页面中：存储 › 「清除缓存」。这是 Android 的要求，Clean Smart 无法替你完成。
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	手机上有 2 到 3 GB 空闲空间就够了：一次一个文件。当前空闲：%1。
+Sur privacy.apple.com, en 2 minutes	在 privacy.apple.com，2 分钟
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	在 privacy.apple.com 上，文件名为「iCloud Photos Part 1 of 12」：最后的数字（这里是 12）就是文件数。Clean Smart 也会自动读取。
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	账号安全 → 生成应用专用密码，然后粘贴到这里。
+Sécurité, photos ratées, démonstration…	安全、失败照片、演示…
+Sévérité	严格程度
+TERMINÉ	完成
+Ta messagerie	你的邮件服务
+Ta période d'essai de 30 jours est terminée.	30 天试用期已结束。
+Taille de %1 (Go)	%1 的大小（GB）
+Taille du texte	文字大小
+Taille maximale des fichiers : 1 Go ou 2 Go	最大文件大小：1 GB 或 2 GB
+Temps passé	已用时间
+Temps restant	剩余时间
+Terminer la demande	完成申请
+Terminé	完成
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	把 iPhone 照片存到 U 盘或磁盘，按年份，无重复
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	你最近 2 个月的照片还不在磁盘上。在 Google Takeout 申请新副本后，自动模式只会添加新照片，不会重复。
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	你最近 2 个月的照片还不在磁盘上。向 Apple 申请新副本：Clean Smart 只会添加新照片，不会重复。
+Tes photos à l'abri	你的照片很安全
+Tes réglages et ta boîte mail seront conservés.	你的设置和邮箱会保留。
+Ton téléphone est plein ?	手机满了？
+Ton téléphone est propre et tes photos sont à l'abri	手机已清理干净，照片很安全
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	手机和邮箱都已清理干净，照片很安全
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	点这里下载，然后打开文件进行安装
+Touche ici pour la version complète ou une question	点这里获取完整版或提问
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	只需点 Google 邮件中的「下载」链接。文件一到 Download，Clean Smart 就会复制到磁盘，即使其他文件还在下载。
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	点一个发件人：总是删除、总是保留、提醒我、退订。
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	在「给你发邮件最多的人」中点一个发件人进行选择
+Touche une image pour la cocher · appui long pour la voir en grand	点图片勾选 · 长按查看大图
+Toucher pour analyser	点击分析
+Toucher pour voir	点击查看
+Toujours garder	总是保留
+Toujours jeter	总是删除
+Tous les fichiers sont traités ?	所有文件都处理完了吗？
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	%1 的所有邮件（至少 %2 封）进入邮箱回收站。
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	%1 个订阅发件人的所有邮件进入邮箱回收站（整个收件箱，不只是已分析的）。\n\n可以从回收站恢复。
+Tout cocher	全部勾选
+Tout décocher	全部取消勾选
+Tout désélectionner	取消全部选择
+Tout mettre à la corbeille	全部放入回收站
+Tout nettoyer	全部清理
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	一切都经过回收站：30 天内可恢复。「我弄错了」一键撤销。
+Tout recommencer	全部重新开始
+Tout recommencer ?	全部重新开始？
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	全部内容已复制并核对到磁盘。删除它可为下一个腾出空间。\n\n你的照片也仍在 Google 相册中。
+Tout va bien, continue comme ça !	一切正常，继续保持！
+Tout était déjà sauvegardé 👍	全部已备份 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	把你所有照片存到 U 盘或磁盘，按年份，无重复
+Tri avant la sauvegarde	备份前整理
+Tri des expéditeurs	正在整理发件人
+Tri rapide	快速整理
+Tri terminé !	整理完成！
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	先整理，保留最好的，只备份好照片，释放空间，再清理邮件。
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	先整理，保留最好的，只备份好照片，再释放空间。
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	先整理，保护重要内容，再清空邮箱。银行、政府或医疗的邮件永不删除。
+Trier en glissant	滑动整理
+Trier les expéditeurs	整理发件人
+Trier, garder, sauvegarder, libérer	整理、保留、备份、释放
+Trier, mettre l'important à l'abri, vider la boîte	整理、保护重要内容、清空邮箱
+Trier, protéger	整理、保护
+Trop claire	太亮
+Trop petite	太小
+Trop sombre	太暗
+Très gros	特大
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	删除了磁盘上的副本后什么都不再复制？点屏幕底部的「全部重新开始（我删除了副本）」，再重新运行 ZIP 文件。
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	以前用 iPhone？把 iCloud 照片存到 U 盘或磁盘
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	可以离开应用去点链接：复制会继续（「自动复制」通知）。
+Type : .zip   ·   Taille : 2 Go	类型：.zip   ·   大小：2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	每次只下载一个 ZIP，用 Wi-Fi。处理、删除后再下载下一个。
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	只需在 privacy.apple.com 下载文件。文件一到 Download，Clean Smart 就会复制到磁盘。
+Téléphone	手机
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	手机已满：清空相册回收站，删除已处理的 ZIP，进行引导式清理。至少需要 300 MB 空闲空间。
+Un bouton, et c'est trié	一个按钮，整理完毕
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	每个发件人一张卡片：向左滑删除其全部邮件，向右滑保留。
+Une notification quand il t'écrit	对方来信时提醒
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	一次一张：向左滑删除，向右滑保留
+Une question, un souci, la version complète ? Écris-moi :	有问题、遇到困难、想要完整版？请联系我：
+Utilise ton adresse et ton mot de passe Free.	使用你的 Free 地址和密码。
+Utilise ton adresse et ton mot de passe La Poste.	使用你的 La Poste 地址和密码。
+Utilise ton adresse et ton mot de passe Orange.	使用你的 Orange 地址和密码。
+Utilise ton adresse et ton mot de passe SFR.	使用你的 SFR 地址和密码。
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	凌晨 2 点左右，新照片会复制到你的备份文件夹。如果没成功，会有通知告诉你。
+Version complète	完整版
+Version installée : %1	已安装版本：%1
+Vider	清空
+Vider la corbeille ?	清空回收站？
+Vider la corbeille Clean Smart	清空 Clean Smart 回收站
+Vider la corbeille Clean Smart ?	清空 Clean Smart 回收站？
+Vider la corbeille maintenant	立即清空回收站
+Vider maintenant	立即清空
+Vieux mails vers la corbeille…	旧邮件移至回收站…
+Vieux téléchargements (plus de 6 mois)	旧下载（超过 6 个月）
+Voir la liste et jeter	查看列表并删除
+Voir la liste et libérer	查看列表并释放
+Voir le courrier indésirable puis le mettre à la corbeille	查看垃圾邮件，再放入回收站
+Voir les conseils	查看建议
+Voir ma place Google	查看我的 Google 空间
+Voir ma place iCloud	查看我的 iCloud 空间
+Votre facture	您的账单
+Voyages et réservations	旅行和预订
+Vérification de la sauvegarde	正在检查备份
+Vérification du disque	正在检查磁盘
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	在 Google 邮件中确认每个文件（001、002、003…）都已处理。
+Vérifier, puis libérer %1 (si tu veux)	检查后再清空 %1（如果你愿意）
+Yeux fermés	闭眼
+appli	个应用
+applis	个应用
+calcul…	计算中…
+compression impossible	压缩失败
+contact en double	个重复联系人
+contacts en double	个重复联系人
+copie	个副本
+copies	个副本
+de ta photothèque est à l'abri	的照片库已安全
+derniers fichiers	个最近文件
+doublon	个重复
+doublons	个重复
+erreur	个错误
+erreurs	个错误
+expéditeur	个发件人
+expéditeurs	个发件人
+fais le ménage de ta boîte mail	清理你的邮箱
+fichier	个文件
+fichier copié	个文件已复制
+fichier copié et vérifié	个文件已复制并核对
+fichier n'a	个文件
+fichiers	个文件
+fichiers copiés	个文件已复制
+fichiers copiés et vérifiés	个文件已复制并核对
+fichiers n'ont	个文件
+iCloud Photos	iCloud 照片
+jour	天
+jour restant	天剩余
+jours	天
+jours restants	天剩余
+le plus simple	最简单
+libres · %1 % utilisé	可用 · 已用 %1 %
+libère de la place avec le Ménage complet	用全面清理释放空间
+libérés	已释放
+mail	封邮件
+mail remis	封邮件已恢复
+mails	封邮件
+mails remis	封邮件已恢复
+nettoie les fichiers inutiles du téléphone	清理手机上的无用文件
+nouveau fichier	个新文件
+nouveaux fichiers	个新文件
+pas à pas	一步一步
+photo	张照片
+photo gardée	张照片已保留
+photo ou vidéo	个照片或视频
+photo ou vidéo prise	个已拍摄的照片或视频
+photo protégée	张受保护照片
+photos	张照片
+photos gardées	张照片已保留
+photos ou vidéos	个照片或视频
+photos ou vidéos prises	个已拍摄的照片或视频
+photos protégées	张受保护照片
+puis « Étape suivante » :	然后「下一步」：
+rafale	组连拍
+rafales	组连拍
+sauvegarde tes photos sur une clé ou une carte SD	把照片备份到 U 盘或 SD 卡
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	已在你的备份中（同名、同大小）。\n\n它们进入相册回收站（30 天内可恢复）。最近的照片留在手机上。
+sur %1 contacts	（共 %1 个联系人）
+trie tes photos (doublons, rafales, floues)	整理你的照片（重复、连拍、模糊）
+téléchargement	个下载
+téléchargements	个下载
+utilisé	已用
+vidéo	个视频
+vidéo compressée	个压缩视频
+vidéos	个视频
+vidéos compressées	个压缩视频
+vieux mail	封旧邮件
+vieux mails	封旧邮件
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	「文件损坏」：下载被中断。请从 Google 邮件重新下载这个 ZIP 并重新运行：已复制的内容不会再次复制。
+« Libérer la place » : garder sur le téléphone les photos des derniers…	「释放空间」：手机上保留最近…的照片
+À GARDER	保留
+À JETER	删除
+À RETROUVER VITE	快速查找
+À nettoyer	待清理
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	如果你删除了磁盘上的副本，请使用此功能：Clean Smart 会忘记已复制的记录，下一个 ZIP 文件将重新完整复制。\n\n已选择的磁盘和你的设置会保留。不会删除磁盘或 %1 上的任何内容。
+Écriture impossible	无法写入
+Électricité	电费
+à jeter	待删除
+élément	项
+éléments	项
+… et %1 autres mails du même genre (cochés).	… 以及另外 %1 封同类邮件（已勾选）。
+‹ Retour	‹ 返回
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ 已无误读取 %1。此手机上已没有副本的指纹：无法比较。
+↩️ %1 dans la boîte de réception	↩️ %1 已回到收件箱
+↩️ %1 remis dans la galerie	↩️ %1 已放回相册
+↩️ %1 remis à leur place	↩️ %1 已放回原处
+↩️ J'ai fait une bêtise : remettre les %1	↩️ 我弄错了：放回 %1
+↩️ Mails remis (démonstration)	↩️ 邮件已恢复（演示）
+↩️ Remettre %1 dans ma boîte	↩️ 把 %1 放回收件箱
+↩️ Remettre des mails	↩️ 恢复邮件
+↩️ Tout remettre à sa place	↩️ 全部放回原处
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ 正在 Download 中等待下一个文件。请点邮件中的「下载」链接。
+⏳ En attente du prochain fichier dans Download…	⏳ 正在 Download 中等待下一个文件…
+⏳ copie en cours…	⏳ 复制中…
+⏳ plus tard	⏳ 稍后
+⏹ Arrêter	⏹ 停止
+☑️ Tout cocher	☑️ 全部勾选
+⚙️ Cache des applis et fichiers système	⚙️ 应用缓存和系统文件
+⚙️ Options	⚙️ 选项
+⚠️ %1 : à relancer.\n	⚠️ %1：需重新运行。\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 出错：继续之前，请重新运行标有「需重新运行」的 ZIP。
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ 磁盘上的 %1 已不一致或无法读取：\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ 今晚没有备份
+⚠️ Fichier %1 à reprendre	⚠️ 文件 %1 需重做
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ 约需 %1，剩余 %2。可以开始：满了以后插上另一块磁盘，我们会继续且不重复。
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ 复制已停止：%1\n\n什么都没有丢失：重新运行自动模式，会继续且不重复。
+⚠️ On ne commence pas	⚠️ 不开始
+⚠️ Sauvegarde de la nuit	⚠️ 夜间备份
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ 已损坏：从邮件重新下载后会自动复制
+⚠️ disque plein	⚠️ 磁盘已满
+⚠️ pas commencé	⚠️ 未开始
+⚠️ à relancer	⚠️ 需重新运行
+⚠️ à relancer (%1)	⚠️ 需重新运行（%1）
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ 副本不完整（文件损坏、需重新运行或尚未复制）。请先完成复制：不要在 %1 删除任何内容。
+✅ %1 : terminé et vérifié.\n	✅ %1：已完成并核对。\n
+✅ %1 doublon(s) supprimé(s)	✅ 已删除 %1 个重复
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ 已保存 %1 封邮件 · %2 个 PDF · CleanSmart/Mails/index.html 存档已更新
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 封重要邮件已安全 · 已汇总 %2 个 PDF · index.html 存档已更新
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ 已备份 %1 张新照片
+✅ %1 · depuis %2	✅ %1 · 已持续 %2
+✅ %1 à l'abri	✅ %1 已安全
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 封重要邮件已安全（演示）
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 已备份 7,958 张好照片（演示）
+✅ Assez de place sur « %1 ».	✅ 「%1」上空间充足。
+✅ Boîte mail connectée	✅ 邮箱已连接
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ 磁盘已检查：重新读取 %1，无损坏。
+✅ Doublons supprimés (démonstration)	✅ 重复已删除（演示）
+✅ Fichier %1 terminé	✅ 文件 %1 已完成
+✅ La copie sur le disque est complète et vérifiée.	✅ 磁盘上的副本完整且已核对。
+✅ Mails sauvegardés (démonstration)	✅ 邮件已保存（演示）
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ 副本完整且已核对\n✅ 手机备份已关闭\n✅ 已在磁盘上查看照片\n\n打开 %1？删除什么由你自己选择。
+✅ copié et vérifié	✅ 已复制并核对
+✅ copié, vérifié, supprimé du téléphone	✅ 已复制、核对，并从手机删除
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ 已删除 %1 · 邮箱释放 %2
+✉️ %1 mails	✉️ %1 封邮件
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 封邮件（「Mails Gmail」文件夹，打开 index.html）\n
+✉️ Boîte mail	✉️ 邮箱
+✉️ Mails	✉️ 邮件
+✉️ Mails de %1	✉️ 来自 %1 的邮件
+✓ %1 choisi	✓ 已选 %1
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ 已释放 %1（30 天内可在相册回收站恢复）
+✨ %1 mails mis à la corbeille	✨ %1 封邮件已移至回收站
+✨ %1 mis à la corbeille (démonstration)	✨ %1 已移至回收站（演示）
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 已移至邮箱回收站（可用「恢复邮件」找回）
+✨ %1 nettoyés · %2 libérés	✨ 已清理 %1 · 释放 %2
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 封旧邮件已移至回收站（重要邮件已保留）
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1,249 封邮件已移至回收站（演示）
+✨ 1,1 Go libérés (démonstration)	✨ 已释放 1.1 GB（演示）
+✨ 6,4 Go libérés (démonstration)	✨ 已释放 6.4 GB（演示）
+✨ Mails mis à la corbeille (démonstration)	✨ 邮件已移至回收站（演示）
+✨ Ménage automatique du dimanche	✨ 每周日自动清理
+✨ Ménage du dimanche	✨ 周日清理
+✨ Vieux mails mis à la corbeille (démonstration)	✨ 旧邮件已移至回收站（演示）
+❤️ Santé du téléphone : %1 / 100	❤️ 手机健康：%1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ 向左滑：其全部邮件进入回收站   ·   向右滑：保留 ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ 向左滑删除   ·   向右滑保留 ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 进行中：完成后立即开始复制。
+⬜ Tout décocher	⬜ 全部取消勾选
+⭐ Protéger mes %1	⭐ 保护我的%1
+🍏 Mes photos iCloud	🍏 我的 iCloud 照片
+🍏 Pense à une nouvelle copie iCloud	🍏 该做一份新的 iCloud 副本了
+🍏 Quitter iCloud Photos	🍏 离开 iCloud 照片
+🎁 Version d'essai · %1	🎁 试用版 · %1
+🎉 %1 libérés au total	🎉 总共释放 %1
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 没有无用文件：手机很干净！
+🎉 Aucun mail à jeter ici.	🎉 这里没有要删除的邮件。
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 没有被遗忘的应用：你都在用！
+🎉 Plus rien ici.	🎉 这里什么都没有了。
+🎉 Rien à nettoyer, tout est propre !	🎉 无需清理，一切整洁！
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 完成：已复制并核对 %1。磁盘上共计：%2 和 %3。
+🎉 Tous les fichiers sont faits	🎉 所有文件均已完成
+🎬 Démonstration	🎬 演示
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 演示模式：不会触碰手机上的任何内容
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 演示模式：不会触碰手机上的任何内容
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 每个按钮都会先显示邮件列表：取消勾选要保留的，然后确认。
+👀 Voir et jeter ses mails maintenant	👀 立即查看并删除其邮件
+👆 Les expéditeurs que tu as jetés	👆 你删除的发件人
+👆 Tri des expéditeurs	👆 正在整理发件人
+👆 Tri rapide	👆 快速整理
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 现在：在 Google 邮件中下载文件 %1（用 Wi-Fi）。然后点绿色按钮，在「下载」中选择它。
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 现在：在 privacy.apple.com 下载「Part %1」（用 Wi-Fi）。然后点绿色按钮，在「下载」中选择它。
+👉 À faire maintenant	👉 现在要做的
+👉 à télécharger puis traiter	👉 先下载再处理
+👍 Tu as déjà la dernière version (%1)	👍 你已经是最新版本（%1）
+👯 Mails en double	👯 重复邮件
+💡 Aide	💡 帮助
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 提示：退订后就不会再收到（「给你发邮件最多的人」列表中的按钮）。
+💡 Si ça bloque	💡 遇到问题时
+💡 Si ça bloque : tous les conseils	💡 遇到问题时：所有建议
+💾 %1 sur « %2 »	💾 %1 在「%2」上
+💾 Sauvegarde de la nuit	💾 夜间备份
+💾 Sauvegarder %1	💾 保存 %1
+💾 Sauvegarder toutes mes photos	💾 备份我的所有照片
+💾 Sauver des mails	💾 保存邮件
+📁 Choisir le dossier de sauvegarde	📁 选择备份文件夹
+📁 Choisir un dossier	📁 选择文件夹
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails：完整邮件（.eml）\n📕 CleanSmart / PDF：所有 PDF 汇总\n📎 CleanSmart / Pieces jointes：其他文件
+📁 Dossier de sauvegarde enregistré	📁 备份文件夹已保存
+📂 Traiter un fichier ZIP	📂 处理 ZIP 文件
+📂 Traiter un fichier ZIP à la main	📂 手动处理 ZIP 文件
+📅 Ton rapport du mois	📅 你的月度报告
+📎 Gros mails	📎 大邮件
+📕 Cocher les PDF	📕 勾选 PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF 已保存到 下载 / Clean Smart
+📕 PDF souvenir créé (démonstration)	📕 已创建纪念 PDF（演示）
+📖 Mode d'emploi	📖 使用说明
+📤 Envoyer (%1)	📤 发送（%1）
+📦 Les plus grosses	📦 最大的
+📦 Quitter Google Photos	📦 离开 Google 相册
+📦 Ta nouvelle copie Google est peut-être prête	📦 你的 Google 新副本可能已准备好
+📧 Ouvrir le mail de Google	📧 打开 Google 邮件
+📰 Newsletters et pubs	📰 订阅邮件和广告
+📱 Mes applis	📱 我的应用
+📱 Ouvrir l'app Google Photos	📱 打开 Google 相册应用
+📱 Téléphone	📱 手机
+📱 Téléphone presque plein	📱 手机空间快满了
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 已复制并核对 %1 张照片和 %2 个视频，按年份整理\n
+📸 Photos	📸 照片
+🔄 Analyser à nouveau	🔄 重新分析
+🔄 Chercher à nouveau	🔄 重新查找
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 全部重新开始（我删除了副本）
+🔍 Analyser ma boîte mail	🔍 分析我的邮箱
+🔍 Analyser mon téléphone	🔍 分析我的手机
+🔍 Chercher les mails avec pièces jointes	🔍 查找带附件的邮件
+🔎 Vérifier le disque (relit chaque photo)	🔎 检查磁盘（逐张重新读取照片）
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 你的密码在手机上加密保存。只会发送到你的邮件服务器。
+🔓 Autoriser	🔓 允许
+🔓 Autoriser l'accès aux fichiers	🔓 允许访问文件
+🔓 Une autorisation pour en savoir plus	🔓 授权一次以了解更多
+🔓 Une autorisation, une seule fois	🔓 授权一次即可
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 只需一次：允许「所有文件访问权限」，让 Clean Smart 能看到 Download 文件夹。它只读取 %1 的文件。
+🔔 Mail de %1	🔔 来自 %1 的邮件
+🔔 Tu seras prévenu quand il t'écrit	🔔 对方来信时会提醒你
+🕰️ Vieux mails	🕰️ 旧邮件
+🕰️ Vieux mails (les importants sont gardés)	🕰️ 旧邮件（保留重要邮件）
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ 回收站已清空：彻底回收 %1
+🗑️ Désinstaller	🗑️ 卸载
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ 已从手机删除文件：为下一个腾出空间
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ 我的「总是删除」发件人
+🗑️ Mettre %1 à la corbeille	🗑️ 把 %1 放入回收站
+🗑️ Ouvrir %1 pour effacer	🗑️ 打开 %1 进行删除
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ 此人的邮件每晚都会进入回收站
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ 从手机删除这个 ZIP（推荐）
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ 总是删除：%1   🛡️ 总是保留：%2   🔔 提醒我：%3
+🗜️ Compresser (%1)	🗜️ 压缩（%1）
+😴 Pas ouvertes depuis 3 mois	😴 3 个月未打开
+🚫 Se désabonner	🚫 退订
+🛡️ %1 (mises en favori)	🛡️ %1（已设为收藏）
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 已归入你邮箱的「受保护」文件夹
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ 重要发件人（银行、政府、医疗…）：其邮件永不删除。
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ 当副本完整且已勾选第 1 和第 2 项时，删除按钮才会出现。
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ 银行、政府或医疗的邮件永远不会进入回收站。
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ 核对副本之前绝不清空 %1：请先勾选第一项。
+🛡️ Protéger (%1)	🛡️ 保护（%1）
+🛡️ Ranger mes mails importants	🛡️ 归档我的重要邮件
+🛡️ Ses mails ne seront jamais jetés	🛡️ 此人的邮件永不删除
+🤖 Copie automatique de tes photos	🤖 自动复制你的照片
+🤖 Démarrer le mode automatique	🤖 开始自动模式
+🤖 Tout automatique (le plus simple)	🤖 全自动（最简单）
+🧊 Vider son cache	🧊 清除缓存
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 已排除 %1 张重复和 🎞️ %2 张连拍照片\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 重复   🎞️ 失败的连拍\n📱 截图   🎬 大视频\n💬 WhatsApp 媒体   👥 重复联系人\n✉️ 订阅邮件和大邮件
+🧭 Ménage	🧭 清理
+🧭 Ménage des mails	🧭 邮件清理
+🧭 Ménage guidé	🧭 引导式清理
+🧹 Fichiers inutiles	🧹 无用文件
+🧹 Jeter les mails de %1	🧹 删除 %1 的邮件
+🧹 Le ménage sûr	🧹 安全清理
+🧹 Mails triés cette nuit	🧹 今晚已整理邮件
+🧹 Mettre %1 à la corbeille	🧹 把 %1 放入回收站
+🧹 Ménage sûr	🧹 安全清理
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 安全清理：订阅邮件、通知、重复
+🧹 Nettoyer · %1	🧹 清理 · %1
+🧹 Nettoyer · %1 · %2	🧹 清理 · %1 · %2

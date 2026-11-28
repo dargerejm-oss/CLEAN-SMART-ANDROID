@@ -1,0 +1,187 @@
+0	Kullanım kılavuzu
+1	Telefonunda daha fazla yer,\nbasit ve risksiz.
+2	JM Dargère tarafından oluşturuldu
+3	CLEAN SMART — JM Dargère tarafından oluşturuldu
+4	Nasıl çalışır?
+5	1. Telefonun dolu mu?
+6	Kopya fotoğraflar, kötü çekimler, dev videolar, gereksiz e-postalar… hepsi yer kaplar.
+7	2. Clean Smart kendi arar
+8	Tek bir düğme. Analiz sırasında hiçbir şey silinmez.
+9	3. Sen seçersin
+10	Güvenli olanlar senin için zaten işaretli. Gerisine sen karar verirsin.
+11	4. Hiçbir şey kaybolmaz
+12	Her şey çöp kutusundan geçer: bir fotoğrafı veya e-postayı geri almak için 30 gün.
+13	5. Her şey güvende kalır
+14	SD karta, USB belleğe veya Google Drive'a yedekleme, hatta geceleri kendiliğinden.
+15	Tam temizlik (önerilen)
+16	Ana ekranda büyük yeşil bir «Tam temizlik» kutucuğu ve 3 kapı var: 📸 Fotoğraflar, 🧹 Telefon, ✉️ E-postalar. Tam temizlik her şeyi doğru sırayla yapar; YEŞİL düğme her zaman bir sonraki adımdır.
+17	Güvenli temizlik: fazla kopyalar ve seri çekimler (en iyisi saklanır), siyah veya beyaz fotoğraflar, eski ekran görüntüleri. Tek düğme.
+18	Şüphelileri kontrol ederim: biraz bulanık fotoğraflar, WhatsApp… Atmak için sola, saklamak için sağa kaydır (favori olur).
+19	Güvene alırım: yalnızca İYİ fotoğraflar yedeklenir. Favoriler ayrıca «Mes meilleures» (En iyilerim) klasörüne gider.
+20	Yer açarım: zaten yedeklenmiş eski fotoğraflar telefondan çıkar.
+21	YENİ 2.0 — Ve e-postaların: posta kutusunun alanı, bültenler ve büyük e-postalar, ardından rehberli e-posta temizliği. Google'da e-posta ve Google Fotoğraflar aynı 15 GB'ı paylaşır.
+22	Özet, telefonda VE posta kutusunda açılan yeri gösterir. Seri çekimlerde kimsenin gözü kapalı olmayan fotoğraf saklanır.
+23	Gereksiz dosyalar (YENİ 2.0)
+24	Geçici dosyalar, küçük resimler, önbellek klasörleri, boş klasörler, kurulum dosyaları, kaldırılmış uygulamaların kalıntıları. Fotoğraflara, videolara ve müziğe asla dokunulmaz.
+25	Yalnızca bir kez: «Tüm dosyalara erişim» izni ver. Arama kendiliğinden başlar.
+26	Güvenli gruplar işaretlidir: kendiliğinden yeniden oluşurlar veya artık işe yaramazlar. «Temizle» ve bitti.
+27	«Kontrol edilecek» gruplar (diğer .apk'ler, uygulama kalıntıları, eski indirmeler) Clean Smart çöp kutusuna gider: 7 gün boyunca «Hepsini geri koy».
+28	Diğer uygulamaların önbelleği: Android 11'den beri Android buna izin vermiyor. Düğme Android'in «Yer aç» ekranını açar.
+29	📱 Uygulamalarım: en büyükleri ve 3 aydır açmadıkların. Kaldırmak veya önbelleğini temizlemek için birine dokun.
+30	Sağlık puanı ve pazar temizliği (YENİ 2.0)
+31	Ana ekranda 0'dan 100'e bir puan telefonun durumunu özetler: boş alan, yedek, ayıklanacak fotoğraflar, gereksiz dosyalar, posta kutusu. Puan kazanmak için ne yapılacağını da söyler.
+32	Seçenekler › Otomatik'te «Otomatik pazar temizliği»ni aç: güvenli gereksiz dosyalar ve spam kendiliğinden gider, bir bildirim özet verir.
+33	Fotoğraflar asla kendiliğinden gitmez: bildirim kaç tanesinin ayıklanacağını söyler, dokunursun ve seçersin.
+34	Sadeleştirilmiş seçenekler: Yedekleme, Otomatik, Görünüm. Gerisi «Gelişmiş ayarlar»da.
+35	Google Fotoğraflar'dan ayrıl
+36	Tüm Google Fotoğraflar'ın bir USB bellekte veya sabit diskte, yıllara göre, kopyasız. Tek bir panel: «ŞİMDİ» adımı yeşil düğmeyle açık.
+37	Alan: Google Fotoğraflar'ın boyutunu not et, Clean Smart gereken alanı hesaplar.
+38	Disk: belleği veya diski tak (USB-C adaptörü) ve üzerinde bir klasör seç.
+39	Google'dan kopya iste: örnek tam olarak neyin işaretleneceğini gösterir (2 GB'lık .zip dosyaları).
+40	Dosyalar: 001, 002… listesi hangisini indireceğini söyler. «ZIP dosyasını işle», sonra sil. İş bitince bir bildirim gelir.
+41	Her fotoğraf yıla göre sıralanır, kopyalar ve fazla seri çekimler ayrılır, her şey yeniden okunup doğrulanır. Gösterge ne kadarının güvende olduğunu gösterir.
+42	Sorun (telefon veya disk dolu, bozuk dosya): hiçbir şey kaybolmaz, aynı dosyayı yeniden aç. «Takılırsa» düğmesi.
+43	YENİ 2.0 — «Tamamen otomatik»: bir kez «Tüm dosyalara erişim» izni ver, başlat, sonra Google e-postasındaki bağlantılara dokunman yeterli. Her dosya Download'a gelir gelmez kopyalanır, doğrulandıktan sonra telefondan silinir.
+44	Google'ı boşalt: düğme yalnızca kopya tamamlandığında, telefon yedeklemesi kapalıyken ve fotoğraflarına diskte baktığında görünür. Silen sensin; Google çöp kutusu her şeyi 60 gün saklar.
+45	«Diski doğrula» kopyalanan her fotoğrafı yeniden okur ve bozuk olanları bildirir. 2 ayda bir bildirim yeni bir kopya istemeni hatırlatır: yalnızca yeni fotoğraflar eklenir.
+46	iCloud fotoğraflarımı al (eski iPhone)
+47	iPhone fotoğrafları için: Google Fotoğraflar ile aynı panel, Apple'ın resmi dışa aktarımıyla.
+48	Alan: iPhone'da Ayarlar › adın › iCloud. Clean Smart gereken alanı hesaplar.
+49	Disk: belleği veya diski tak ve üzerinde bir klasör seç.
+50	privacy.apple.com'da: «Verilerinin bir kopyasını iste», «iCloud Fotoğrafları»nı işaretle, 1 veya 2 GB'lık dosyalar.
+51	Apple birkaç gün içinde e-posta gönderir. «Part 1»i indir, işle, sil, sonra «Part 2»…
+52	Her şey «iCloud Photos» içinde yıllara göre, kopyasız sıralanır; her serinin en iyi fotoğrafı saklanır.
+53	Telefonumu analiz et
+54	Ana ekrandaki büyük düğmedir. Ayarlanacak bir şey yok.
+55	«Telefonumu analiz et»e dokun.
+56	İlk seferde Android fotoğraflara ve kişilere erişim ister: kabul et.
+57	Bir çubuk ilerlemeyi gösterir. Sonra Clean Smart geri kazanabileceğin alanı büyük gösterir.
+58	Clean Smart neler bulur
+60	Kopyalar
+61	Aynı kopyalar. Orijinal saklanır.
+62	Benzer fotoğraflar
+63	Saniyeler arayla çekilmiş seriler. En net olan saklanır.
+64	Kötü fotoğraflar
+65	Bulanık, çok karanlık, çok aydınlık veya çok küçük.
+66	Ekran görüntüleri
+67	Sonradan çoğu zaman işe yaramaz.
+68	Büyük videolar
+69	Her biri 100 MB'tan fazla.
+70	WhatsApp medyası
+71	Alınan veya gönderilen fotoğraflar ve videolar.
+72	En büyük dosyalarım
+73	En ağır 30 fotoğraf ve video.
+74	Kopya kişiler
+75	Aynı ad ve aynı numara.
+76	Seç ve temizle
+78	Fotoğrafları görmek için bir kategoriye dokun.
+79	İşaretlemek için bir fotoğrafa dokun. Uzun basış: büyük görürsün.
+80	«SAKLANDI»: Clean Smart'ın saklamanı önerdiği fotoğraf.
+81	Ekranın altındaki kırmızı «Temizle» düğmesine bas.
+82	Android son bir onay ister. Fotoğraflar çöp kutusuna gider: geri almak için 30 gün.
+83	Hızlı ayıklama
+84	Son fotoğraflarını düşünmeden tek tek ayıklamak için.
+85	Ana ekranda «Hızlı ayıklama»ya dokun.
+86	Fotoğrafı atmak için SOLA, saklamak için SAĞA kaydır.
+87	Ortadaki küçük yuvarlak düğme önceki fotoğrafa döner.
+88	Sonunda kırmızı düğme atılacak fotoğrafları çöp kutusuna gönderir.
+89	Çöp kutusu ve «Hata yaptım»
+91	Çöp kutusundaki fotoğraflar 30 gün daha yer kaplar.
+92	«Çöp kutusunu şimdi boşalt» yeri hemen açar (dikkat: kalıcıdır).
+93	«Hata yaptım» son atılan dosyaları galeriye geri koyar.
+94	Koru ve gönder
+95	Bir kategoride fotoğrafları işaretle, sonra:
+96	Koru
+97	Fotoğraf favori olur: bir daha asla önerilmez.
+98	Gönder
+99	WhatsApp, e-posta ile… (en fazla 20 fotoğraf). Telefondan hiçbir şey eksilmez.
+100	Sıkıştır
+101	Videolar için: 720p olarak yeniden yapılır, çoğu zaman 3 ila 5 kat daha hafif.
+102	Yedekleme
+103	Fotoğrafların SD kartta, USB bellekte veya Google Drive'da güvende.
+104	«Yedekleme»de «Klasör seç»e dokun.
+105	«Tüm fotoğraflarımı yedekle» fotoğraflarını aylara göre kopyalar.
+106	Sonraki seferlerde yalnızca yeni fotoğraflar kopyalanır.
+107	Seçenekler'de «Her gece otomatik yedekleme» bunu kendiliğinden yapar.
+108	Diğer araçlar
+109	Ana ekranda «Diğer araçlar»a dokun:
+110	Yer aç
+111	ZATEN yedeklenmiş 3 aydan eski fotoğraflar çöp kutusuna gider. Güvende olmayan bir fotoğraf asla.
+112	Anı PDF'i
+113	Ayın veya yılın en güzel fotoğrafları bir PDF'te, sevdiğin birine göndermek için.
+114	Videolarımı küçült
+115	«Büyük videolar»ı aç, işaretle, sonra «Sıkıştır».
+116	Posta kutum
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	«Posta kutumu bağla»ya dokun ve e-posta hizmetini seç.
+119	Gmail, Yahoo ve iCloud bir UYGULAMA ŞİFRESİ ister. Clean Smart doğru sayfayı açar.
+120	«Posta kutumu analiz et», sonra şunlar için bir düğme: bültenler, büyük e-postalar, eski e-postalar, kopya e-postalar.
+121	E-postalar posta hizmetinin çöp kutusuna gider. Bankadan, resmi kurumlardan veya sağlıktan gelenlere ASLA dokunulmaz.
+122	Rehberli e-posta temizliği
+123	E-postalar'da büyük yeşil kutucuğa dokun. Aynı fikir: yeşil düğme bir sonraki adımdır.
+124	Güvenli temizlik: bültenler, reklamlar, bildirimler ve kopya e-postalar çöp kutusuna gider.
+125	Gönderene göre ayıklarım: her gönderen için bir kart. Sola, tüm e-postaları gider; sağa, saklanır.
+126	Önemliyi güvene alırım: banka, resmi kurumlar, sağlık, faturalar ve PDF'li e-postalar yedeklenir.
+127	Posta kutusunu boşaltırım: eski e-postalar çöp kutusuna gider, önemliler asla.
+128	«Abonelikten çık»: bir bülteni artık almamak için. Düğme abonelikten çıkma sayfasını açar.
+129	YENİ 2.0 — Atmadan önce e-posta listesi gösterilir (gönderen, konu, tarih): saklamak istediklerinin işaretini kaldır, sonra onayla.
+130	Bir gönderene dokun: 🗑️ her zaman at (her gece, kendiliğinden), 🛡️ her zaman sakla, 🔔 yazdığında bana haber ver.
+131	Korumalı kutu: banka, vergiler, sağlık, ev ve aile (kişilerin) postandaki «Korumalı» klasörüne konur, asla atılmaz. İstenmeyen postaları boşaltmak için «Spam» düğmesi.
+132	E-postaları ve eklerini kaydet
+134	E-postalar'da «E-postaları kaydet»e dokun.
+135	Saklanacak e-postaları işaretle (hızlı gitmek için «PDF'leri işaretle»).
+136	«Kaydet»e dokun: e-postanın tamamı ve tüm PDF'ler bir PDF klasöründe toplanır.
+137	Bilgisayarda CleanSmart/Mails/index.html'yi aç: her şeyi bulmak için bir kelime, bir ad veya bir PDF yaz.
+138	E-postaları geri al
+140	E-postalar'da «E-postaları geri al»a dokun.
+141	Çöp kutusunda geri istediğin e-postaları işaretle.
+142	«Geri al»a dokun: gelen kutuna dönerler.
+143	Kopya kişiler
+145	Analizden sonra «Kişiler» kartı kopyaları gösterir (aynı ad, aynı numara).
+146	«Kopyaları sil» orijinal kişiyi saklar.
+147	Dikkat: silme işlemi Google hesabında da yapılır.
+148	Seçenekler açıklaması
+149	Her gece otomatik yedekleme
+150	Gece 2 civarında yeni fotoğraflar yedekleme klasörüne kopyalanır.
+151	Bilmekte fayda var: işe yaramazsa bir bildirim haber verir.
+152	Uyarılar ve aylık rapor
+153	1 GB'tan az kalırsa uyarı, ve her ayın 1'inde kısa bir özet.
+154	Bilmekte fayda var: en fazla 3 günde bir uyarı.
+155	Silmeden önce yedekle
+156	Her temizlikten önce fotoğrafları (ve kişileri) klasörüne kopyalar.
+157	Bilmekte fayda var: varsayılan olarak kapalı, kopyalar ve kötü fotoğraflar için gereksiz.
+158	Favorilerimi koru
+159	Favori fotoğraflar asla önerilmez.
+160	Bilmekte fayda var: varsayılan olarak açık.
+161	Titizlik
+162	Temkinli: daha az fotoğraf önerilir. Normal. Katı: daha fazla.
+163	Bilmekte fayda var: bir değişiklikten sonra yeniden analiz et.
+164	Yer aç
+165	Son 1, 3, 6 veya 12 ayın fotoğraflarını telefonda tut.
+166	Bilmekte fayda var: yalnızca zaten yedeklenmiş fotoğraflar önerilir.
+167	Metin boyutu
+168	Normal, büyük veya çok büyük.
+169	Bilmekte fayda var: biraz daha fazla kaydırma.
+170	Dil
+171	Telefondaki gibi, ya da 16 dilden biri (Türkçe, İngilizce, Fransızca, Yunanca, Arapça, Çince…).
+172	Bilmekte fayda var: değişiklik hemen uygulanır.
+173	Demo
+174	Uygulamayı sahte fotoğraf, e-posta ve kişilerle gösterir.
+175	Bilmekte fayda var: telefonda hiçbir şeye dokunulmaz. Uygulamayı tanıtmak için ideal.
+176	Widget
+177	Telefonun ana ekranında: uzun bas > Widget'lar > Clean Smart. Boş alanı gösterir ve rehberli temizliği açar.
+178	Bilmekte fayda var: kendiliğinden güncellenir.
+179	Bir sorun mu var, ya da tam sürüm mü istiyorsun? Bana yaz: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Sık sorulan sorular
+181	Fotoğraflarım hemen silinir mi?
+182	Hayır. Galeri çöp kutusuna giderler: geri almak için 30 gün, ya da «Hata yaptım».
+183	Fotoğraflarım İnternet'e gider mi?
+184	Hayır. Her şey telefonda olur. Yalnızca yedek, seçtiğin yere gider (SD kart, bellek, Drive).
+185	Neden bir uygulama şifresi?
+186	Gmail, Yahoo ve iCloud bunu e-posta uygulamaları için zorunlu tutar. Telefonunda şifreli kalır.
+187	Temizlikten sonra yer geri gelmiyor mu?
+188	Çöp kutusu fotoğrafları 30 gün saklar. Ana ekranda «Çöp kutusunu şimdi boşalt»a dokun.
+189	Diskteki kopyamı sildim, artık hiçbir şey kopyalanmıyor mu?
+190	Google Fotoğraflar veya iCloud Fotoğrafları sekmesinde ekranın altındaki «Her şeye baştan başla (kopyamı sildim)»e dokun, sonra ZIP dosyalarını yeniden aç.
+191	En son sürümü nasıl alırım?
+192	Yeni bir sürüm olduğunda ana ekranda turuncu bir şerit görünür: dokun, sonra indirilen dosyayı aç. Ya da Seçenekler > «Güncelleme ara».

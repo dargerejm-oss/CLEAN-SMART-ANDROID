@@ -1,0 +1,187 @@
+0	Hướng dẫn sử dụng
+1	Thêm dung lượng cho điện thoại,\nđơn giản và an toàn.
+2	Tạo bởi JM Dargère
+3	CLEAN SMART — Tạo bởi JM Dargère
+4	Hoạt động thế nào?
+5	1. Điện thoại của bạn đầy rồi?
+6	Ảnh trùng, ảnh hỏng, video khổng lồ, email vô ích… tất cả đều chiếm chỗ.
+7	2. Clean Smart tự tìm
+8	Chỉ một nút. Trong lúc phân tích không có gì bị xóa.
+9	3. Bạn chọn
+10	Những gì an toàn đã được đánh dấu sẵn. Phần còn lại do bạn quyết định.
+11	4. Không mất gì
+12	Mọi thứ đều qua thùng rác: 30 ngày để lấy lại ảnh hoặc email.
+13	5. Mọi thứ luôn an toàn
+14	Sao lưu vào thẻ SD, USB hoặc Google Drive, thậm chí tự động vào ban đêm.
+15	Dọn dẹp toàn bộ (khuyên dùng)
+16	Màn hình chính có ô xanh lá lớn «Dọn dẹp toàn bộ» và 3 cửa: 📸 Ảnh, 🧹 Điện thoại, ✉️ Email. Dọn dẹp toàn bộ làm mọi thứ đúng thứ tự; nút XANH LÁ luôn là bước tiếp theo.
+17	Dọn dẹp an toàn: ảnh trùng và ảnh chụp liên tiếp thừa (giữ lại ảnh đẹp nhất), ảnh đen hoặc trắng, ảnh chụp màn hình cũ. Một nút.
+18	Tôi kiểm tra ảnh đáng ngờ: ảnh hơi mờ, WhatsApp… Vuốt trái để bỏ, vuốt phải để giữ (thành ảnh yêu thích).
+19	Tôi cất giữ an toàn: chỉ ảnh TỐT được sao lưu. Ảnh yêu thích còn vào «Mes meilleures» (Ảnh đẹp nhất của tôi).
+20	Tôi giải phóng dung lượng: ảnh cũ đã sao lưu rời khỏi điện thoại.
+21	MỚI 2.0 — Và email của bạn: dung lượng hộp thư, bản tin và email lớn, rồi dọn dẹp email có hướng dẫn. Ở Google, email và Google Photos dùng chung 15 GB.
+22	Bản tổng kết cho thấy dung lượng được giải phóng trên điện thoại VÀ trong hộp thư. Với ảnh chụp liên tiếp, ảnh không ai nhắm mắt sẽ được giữ.
+23	Tệp vô ích (MỚI 2.0)
+24	Tệp tạm, ảnh thu nhỏ, thư mục bộ nhớ đệm, thư mục trống, tệp cài đặt, phần còn sót của ứng dụng đã gỡ. Ảnh, video và nhạc không bao giờ bị động đến.
+25	Chỉ một lần: cho phép «Quyền truy cập tất cả tệp». Việc tìm kiếm tự bắt đầu.
+26	Các nhóm an toàn đã được đánh dấu: chúng tự tạo lại hoặc không còn cần. «Dọn dẹp» là xong.
+27	Các nhóm «cần kiểm tra» (.apk khác, phần sót của ứng dụng, tệp tải về cũ) vào thùng rác Clean Smart: «Đặt lại tất cả» trong 7 ngày.
+28	Bộ nhớ đệm của ứng dụng khác: Android cấm việc này từ Android 11. Nút mở màn hình «Giải phóng dung lượng» của Android.
+29	📱 Ứng dụng của tôi: những ứng dụng lớn nhất và những ứng dụng bạn không mở 3 tháng nay. Chạm vào một ứng dụng để gỡ hoặc xóa bộ nhớ đệm.
+30	Điểm sức khỏe và dọn dẹp Chủ nhật (MỚI 2.0)
+31	Trên màn hình chính, điểm từ 0 đến 100 tóm tắt tình trạng điện thoại: dung lượng trống, sao lưu, ảnh cần sắp xếp, tệp vô ích, hộp thư. Nó cũng cho biết cần làm gì để được thêm điểm.
+32	Trong Tùy chọn › Tự động, bật «Dọn dẹp tự động Chủ nhật»: tệp vô ích an toàn và thư rác tự đi, một thông báo tổng kết.
+33	Ảnh không bao giờ tự đi: thông báo cho biết bao nhiêu ảnh cần sắp xếp, bạn chạm và chọn.
+34	Tùy chọn đơn giản hơn: Sao lưu, Tự động, Hiển thị. Phần còn lại trong «Cài đặt nâng cao».
+35	Rời Google Photos
+36	Tất cả ảnh Google Photos của bạn trên USB hoặc ổ cứng, xếp theo năm, không trùng lặp. Chỉ một bảng điều khiển: bước «BÂY GIỜ» đang mở, với nút xanh lá.
+37	Dung lượng: ghi lại kích thước Google Photos, Clean Smart tính dung lượng cần chuẩn bị.
+38	Ổ đĩa: cắm USB hoặc ổ đĩa (bộ chuyển USB-C) và chọn một thư mục trên đó.
+39	Yêu cầu Google bản sao: mẫu chỉ rõ cần đánh dấu gì (tệp .zip 2 GB).
+40	Các tệp: danh sách 001, 002… cho biết tải tệp nào. «Xử lý tệp ZIP», rồi xóa nó. Một thông báo báo khi xong.
+41	Mỗi ảnh được xếp theo năm, ảnh trùng và ảnh chụp liên tiếp thừa bị loại, mọi thứ được đọc lại và kiểm tra. Thanh đo cho biết bao nhiêu đã an toàn.
+42	Sự cố (điện thoại hoặc ổ đĩa đầy, tệp hỏng): không mất gì, mở lại cùng tệp đó. Nút «Nếu bị kẹt».
+43	MỚI 2.0 — «Tự động hoàn toàn»: cho phép «Quyền truy cập tất cả tệp» một lần, bắt đầu, rồi chỉ cần chạm các liên kết trong email của Google. Mỗi tệp được sao chép ngay khi vào Download, rồi bị xóa khỏi điện thoại sau khi kiểm tra.
+44	Giải phóng Google: nút chỉ hiện khi bản sao hoàn tất, sao lưu trên điện thoại đã tắt và bạn đã xem ảnh trên ổ đĩa. Bạn tự xóa; thùng rác Google giữ mọi thứ 60 ngày.
+45	«Kiểm tra ổ đĩa» đọc lại từng ảnh đã sao chép và báo những ảnh bị hỏng. Cứ 2 tháng, một thông báo nhắc bạn yêu cầu bản sao mới: chỉ ảnh mới được thêm vào.
+46	Lấy lại ảnh iCloud của tôi (iPhone cũ)
+47	Cho ảnh iPhone: cùng bảng điều khiển như Google Photos, với bản xuất chính thức của Apple.
+48	Dung lượng: trên iPhone, Cài đặt › tên bạn › iCloud. Clean Smart tính dung lượng cần chuẩn bị.
+49	Ổ đĩa: cắm USB hoặc ổ đĩa và chọn một thư mục trên đó.
+50	Trên privacy.apple.com: «Yêu cầu bản sao dữ liệu», đánh dấu «Ảnh iCloud», tệp 1 hoặc 2 GB.
+51	Apple gửi email trong vài ngày. Tải «Part 1», xử lý, xóa, rồi «Part 2»…
+52	Mọi thứ được xếp theo năm trong «iCloud Photos», không trùng lặp, giữ ảnh đẹp nhất của mỗi loạt.
+53	Phân tích điện thoại của tôi
+54	Đó là nút lớn trên màn hình chính. Không cần cài đặt gì.
+55	Chạm «Phân tích điện thoại của tôi».
+56	Lần đầu, Android xin quyền truy cập ảnh và danh bạ: hãy đồng ý.
+57	Một thanh hiển thị tiến độ. Sau đó Clean Smart hiển thị thật lớn dung lượng bạn có thể lấy lại.
+58	Clean Smart tìm thấy gì
+60	Ảnh trùng
+61	Bản sao giống hệt. Bản gốc được giữ.
+62	Ảnh tương tự
+63	Ảnh chụp liên tiếp cách nhau vài giây. Ảnh nét nhất được giữ.
+64	Ảnh hỏng
+65	Mờ, quá tối, quá sáng hoặc quá nhỏ.
+66	Ảnh chụp màn hình
+67	Thường vô ích về sau.
+68	Video lớn
+69	Mỗi video hơn 100 MB.
+70	Tệp WhatsApp
+71	Ảnh và video đã nhận hoặc đã gửi.
+72	Tệp lớn nhất của tôi
+73	30 ảnh và video nặng nhất.
+74	Danh bạ trùng
+75	Cùng tên và cùng số.
+76	Chọn và dọn dẹp
+78	Chạm vào một danh mục để xem ảnh.
+79	Chạm vào ảnh để đánh dấu. Nhấn giữ: xem ảnh lớn.
+80	«ĐƯỢC GIỮ»: ảnh Clean Smart khuyên bạn giữ.
+81	Nhấn nút đỏ «Dọn dẹp» ở cuối màn hình.
+82	Android hỏi xác nhận lần cuối. Ảnh vào thùng rác: 30 ngày để lấy lại.
+83	Sắp xếp nhanh
+84	Để sắp xếp ảnh gần đây từng ảnh một, không cần suy nghĩ.
+85	Trên màn hình chính, chạm «Sắp xếp nhanh».
+86	Vuốt ảnh sang TRÁI để bỏ, sang PHẢI để giữ.
+87	Nút tròn nhỏ ở giữa quay lại ảnh trước.
+88	Cuối cùng, nút đỏ đưa các ảnh cần bỏ vào thùng rác.
+89	Thùng rác và «Tôi đã nhầm»
+91	Ảnh trong thùng rác vẫn chiếm chỗ trong 30 ngày.
+92	«Dọn sạch thùng rác ngay» giải phóng dung lượng ngay lập tức (cẩn thận: vĩnh viễn).
+93	«Tôi đã nhầm» đưa các tệp vừa bỏ trở lại thư viện.
+94	Bảo vệ và gửi
+95	Trong một danh mục, đánh dấu ảnh rồi:
+96	Bảo vệ
+97	Ảnh trở thành yêu thích: sẽ không bao giờ được đề xuất nữa.
+98	Gửi
+99	Qua WhatsApp, email… (tối đa 20 ảnh). Không có gì rời khỏi điện thoại.
+100	Nén
+101	Cho video: làm lại ở 720p, thường nhẹ hơn 3 đến 5 lần.
+102	Sao lưu
+103	Ảnh của bạn an toàn trên thẻ SD, USB hoặc Google Drive.
+104	Trong «Sao lưu», chạm «Chọn thư mục».
+105	«Sao lưu tất cả ảnh của tôi» sao chép ảnh, xếp theo tháng.
+106	Những lần sau, chỉ ảnh mới được sao chép.
+107	Trong Tùy chọn, «Sao lưu tự động mỗi đêm» tự làm việc này.
+108	Thêm công cụ
+109	Trên màn hình chính, chạm «Thêm công cụ»:
+110	Giải phóng dung lượng
+111	Ảnh hơn 3 tháng ĐÃ được sao lưu vào thùng rác. Không bao giờ là ảnh chưa an toàn.
+112	PDF kỷ niệm
+113	Những ảnh đẹp nhất của tháng hoặc năm trong một PDF, để gửi cho người thân.
+114	Thu nhỏ video của tôi
+115	Mở «Video lớn», đánh dấu, rồi «Nén».
+116	Hộp thư của tôi
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	Chạm «Kết nối hộp thư của tôi» và chọn dịch vụ email.
+119	Gmail, Yahoo và iCloud yêu cầu MẬT KHẨU ỨNG DỤNG. Clean Smart mở đúng trang.
+120	«Phân tích hộp thư của tôi», rồi một nút cho: bản tin, email lớn, email cũ, email trùng.
+121	Email vào thùng rác của dịch vụ email. Email từ ngân hàng, cơ quan nhà nước hay y tế KHÔNG BAO GIỜ bị động đến.
+122	Dọn dẹp email có hướng dẫn
+123	Trong Email, chạm ô xanh lá lớn. Cùng ý tưởng: nút xanh lá là bước tiếp theo.
+124	Dọn dẹp an toàn: bản tin, quảng cáo, thông báo và email trùng vào thùng rác.
+125	Tôi sắp xếp theo người gửi: mỗi người gửi một thẻ. Sang trái, mọi email của họ đi; sang phải, giữ lại.
+126	Tôi cất giữ điều quan trọng: ngân hàng, cơ quan nhà nước, y tế, hóa đơn và email có PDF được sao lưu.
+127	Tôi giải phóng hộp thư: email cũ vào thùng rác, không bao giờ là email quan trọng.
+128	«Hủy đăng ký»: để không nhận bản tin nữa. Nút mở trang hủy đăng ký.
+129	MỚI 2.0 — Trước khi bỏ, danh sách email hiện ra (người gửi, tiêu đề, ngày): bỏ dấu những email muốn giữ, rồi xác nhận.
+130	Chạm một người gửi: 🗑️ luôn bỏ (mỗi đêm, tự động), 🛡️ luôn giữ, 🔔 báo tôi khi họ viết.
+131	Hộp được bảo vệ: ngân hàng, thuế, y tế, nhà và gia đình (danh bạ của bạn) được xếp vào «Được bảo vệ» trong hộp thư, không bao giờ bị bỏ. Nút «Thư rác» để dọn thư không mong muốn.
+132	Lưu email và tệp đính kèm
+134	Trong Email, chạm «Lưu email».
+135	Đánh dấu email cần giữ («Đánh dấu PDF» để làm nhanh).
+136	Chạm «Lưu»: email đầy đủ, và mọi PDF được gom vào thư mục PDF.
+137	Trên máy tính, mở CleanSmart/Mails/index.html: gõ một từ, một tên hoặc một PDF để tìm mọi thứ.
+138	Lấy lại email
+140	Trong Email, chạm «Lấy lại email».
+141	Đánh dấu email trong thùng rác muốn lấy lại.
+142	Chạm «Lấy lại»: chúng quay về hộp thư đến.
+143	Danh bạ trùng
+145	Sau khi phân tích, thẻ «Danh bạ» hiển thị các mục trùng (cùng tên, cùng số).
+146	«Xóa mục trùng» giữ lại liên hệ gốc.
+147	Cẩn thận: việc xóa cũng diễn ra trên tài khoản Google của bạn.
+148	Giải thích các tùy chọn
+149	Sao lưu tự động mỗi đêm
+150	Khoảng 2 giờ sáng, ảnh mới được sao chép vào thư mục sao lưu.
+151	Nên biết: một thông báo cho bạn biết nếu không thành công.
+152	Cảnh báo và báo cáo tháng
+153	Cảnh báo khi còn dưới 1 GB, và bản tóm tắt nhỏ vào ngày 1 hàng tháng.
+154	Nên biết: tối đa một cảnh báo mỗi 3 ngày.
+155	Sao lưu trước khi xóa
+156	Sao chép ảnh (và danh bạ) vào thư mục trước mỗi lần dọn dẹp.
+157	Nên biết: tắt theo mặc định, không cần cho ảnh trùng và ảnh hỏng.
+158	Bảo vệ ảnh yêu thích
+159	Ảnh yêu thích không bao giờ được đề xuất.
+160	Nên biết: bật theo mặc định.
+161	Mức nghiêm ngặt
+162	Thận trọng: ít ảnh được đề xuất hơn. Bình thường. Nghiêm ngặt: nhiều hơn.
+163	Nên biết: phân tích lại sau khi thay đổi.
+164	Giải phóng dung lượng
+165	Giữ trên điện thoại ảnh của 1, 3, 6 hoặc 12 tháng gần nhất.
+166	Nên biết: chỉ ảnh đã sao lưu được đề xuất.
+167	Cỡ chữ
+168	Bình thường, lớn hoặc rất lớn.
+169	Nên biết: phải cuộn nhiều hơn một chút.
+170	Ngôn ngữ
+171	Theo điện thoại, hoặc một trong 16 ngôn ngữ (Việt, Anh, Pháp, Hy Lạp, Ả Rập, Trung…).
+172	Nên biết: thay đổi áp dụng ngay.
+173	Chế độ demo
+174	Hiển thị ứng dụng với ảnh, email và danh bạ giả.
+175	Nên biết: không động gì đến điện thoại. Lý tưởng để giới thiệu ứng dụng.
+176	Widget
+177	Trên màn hình chính điện thoại: nhấn giữ > Widget > Clean Smart. Hiển thị dung lượng trống và mở dọn dẹp có hướng dẫn.
+178	Nên biết: tự cập nhật.
+179	Có câu hỏi, hay muốn bản đầy đủ? Viết cho tôi: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Câu hỏi thường gặp
+181	Ảnh của tôi có bị xóa ngay không?
+182	Không. Ảnh vào thùng rác của Thư viện: 30 ngày để lấy lại, hoặc «Tôi đã nhầm».
+183	Ảnh của tôi có lên Internet không?
+184	Không. Mọi thứ diễn ra trên điện thoại. Chỉ bản sao lưu đi đến nơi bạn đã chọn (thẻ SD, USB, Drive).
+185	Vì sao cần mật khẩu ứng dụng?
+186	Gmail, Yahoo và iCloud yêu cầu nó cho ứng dụng email. Nó được mã hóa trên điện thoại của bạn.
+187	Dung lượng không trở lại sau khi dọn?
+188	Thùng rác giữ ảnh 30 ngày. Chạm «Dọn sạch thùng rác ngay» trên màn hình chính.
+189	Tôi đã xóa bản sao trên ổ đĩa, không còn gì được sao chép?
+190	Trong thẻ Google Photos hoặc Ảnh iCloud, chạm «Bắt đầu lại tất cả (tôi đã xóa bản sao)» ở cuối màn hình, rồi mở lại các tệp ZIP.
+191	Làm sao có phiên bản mới nhất?
+192	Khi có phiên bản mới, một dải màu cam hiện trên màn hình chính: chạm vào, rồi mở tệp đã tải. Hoặc Tùy chọn > «Tìm bản cập nhật».

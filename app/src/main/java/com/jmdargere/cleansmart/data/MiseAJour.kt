@@ -7,7 +7,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 /**
- * Mise a jour en un geste : une fois par jour, l'appli regarde sur GitHub le numero de la derniere version
+ * Mise a jour en un geste : a chaque retour dans l'appli (au plus toutes les 3 heures), l'appli regarde sur GitHub le numero de la derniere version
  * (petit fichier version.json publie avec l'APK). Aucune donnee personnelle n'est envoyee.
  * Si une version plus recente existe, un bandeau propose de la telecharger directement.
  */
@@ -22,7 +22,8 @@ object MiseAJour {
     fun verifier(ctx: Context, forcer: Boolean = false): String? {
         val p = ctx.getSharedPreferences("mise_a_jour", Context.MODE_PRIVATE)
         val maintenant = System.currentTimeMillis()
-        if (!forcer && maintenant - p.getLong("dernier", 0) < 24L * 3600 * 1000) {
+        // toutes les 3 heures au plus (avant : une fois par jour, une nouvelle version pouvait rester invisible un jour entier)
+        if (!forcer && maintenant - p.getLong("dernier", 0) < 3L * 3600 * 1000) {
             return p.getString("nouvelle", null)?.takeIf { p.getInt("code", 0) > BuildConfig.VERSION_CODE }
         }
         return runCatching {

@@ -1,0 +1,187 @@
+0	Manuale d'uso
+1	Più spazio sul tuo telefono,\nin modo semplice e sicuro.
+2	Creato da JM Dargère
+3	CLEAN SMART — Creato da JM Dargère
+4	Come funziona?
+5	1. Il tuo telefono è pieno?
+6	Foto doppie, foto venute male, video enormi, e-mail inutili… tutto occupa spazio.
+7	2. Clean Smart cerca da solo
+8	Un solo pulsante. Durante l'analisi non viene cancellato nulla.
+9	3. Scegli tu
+10	Ciò che è sicuro è già spuntato per te. Per il resto, decidi tu.
+11	4. Non si perde nulla
+12	Tutto passa dal cestino: 30 giorni per recuperare una foto o un'e-mail.
+13	5. Tutto resta al sicuro
+14	Backup su scheda SD, chiavetta USB o Google Drive, anche da solo di notte.
+15	Pulizia completa (consigliata)
+16	La schermata iniziale ha una grande tessera verde «Pulizia completa» e 3 porte: 📸 Foto, 🧹 Telefono, ✉️ E-mail. La pulizia completa fa tutto nell'ordine giusto; il pulsante VERDE è sempre il passo successivo.
+17	Pulizia sicura: doppioni e raffiche in più (la migliore viene tenuta), foto nere o bianche, vecchi screenshot. Un pulsante.
+18	Controllo i dubbi: foto un po' sfocate, WhatsApp… Scorri a sinistra per buttare, a destra per tenere (diventa preferita).
+19	Metto al sicuro: solo le foto BUONE vengono salvate. Le preferite vanno anche in «Mes meilleures» (Le mie migliori).
+20	Libero spazio: le foto vecchie già salvate lasciano il telefono.
+21	NUOVO 2.0 — E le tue e-mail: lo spazio della casella, newsletter e e-mail grandi, poi la pulizia guidata della posta. Su Google, posta e Google Foto condividono gli stessi 15 GB.
+22	Il riepilogo mostra cosa è stato liberato sul telefono E nella casella. Nelle raffiche viene tenuta la foto in cui nessuno ha gli occhi chiusi.
+23	File inutili (NUOVO 2.0)
+24	File temporanei, miniature, cartelle cache, cartelle vuote, file d'installazione, resti di app disinstallate. Foto, video e musica non vengono mai toccati.
+25	Una volta sola: consenti «Accesso a tutti i file». La ricerca parte da sola.
+26	I gruppi sicuri sono spuntati: si ricreano da soli o non servono più. «Pulisci» ed è fatto.
+27	I gruppi «da controllare» (altri .apk, resti di app, vecchi download) vanno nel cestino di Clean Smart: «Rimetti tutto» per 7 giorni.
+28	La cache delle altre app: Android lo vieta alle app da Android 11. Il pulsante apre la schermata «Libera spazio» di Android.
+29	📱 Le mie app: le più grandi e quelle che non apri da 3 mesi. Toccane una per disinstallarla o svuotarne la cache.
+30	Voto di salute e pulizia della domenica (NUOVO 2.0)
+31	Nella schermata iniziale, un voto da 0 a 100 riassume lo stato del telefono: spazio libero, backup, foto da ordinare, file inutili, casella e-mail. Dice anche cosa fare per guadagnare punti.
+32	In Opzioni › Automatico, attiva «Pulizia automatica della domenica»: file inutili sicuri e spam se ne vanno da soli, una notifica fa il riepilogo.
+33	Le foto non se ne vanno mai da sole: la notifica dice quante sono da ordinare, tocchi e scegli.
+34	Opzioni semplificate: Backup, Automatico, Aspetto. Il resto è in «Impostazioni avanzate».
+35	Lasciare Google Foto
+36	Tutte le tue foto di Google Foto su una chiavetta o un disco, ordinate per anno, senza doppioni. Un solo pannello: il passo «ADESSO» è aperto, con il pulsante verde.
+37	Lo spazio: annota la dimensione di Google Foto, Clean Smart calcola lo spazio necessario.
+38	Il disco: collega la chiavetta o il disco (adattatore USB-C) e scegli una cartella.
+39	Chiedere la copia a Google: il modello mostra esattamente cosa spuntare (file .zip da 2 GB).
+40	I file: l'elenco 001, 002… ti dice quale scaricare. «Elabora un file ZIP», poi cancellalo. Una notifica avvisa alla fine.
+41	Ogni foto viene ordinata per anno, i doppioni e le raffiche in più vengono scartati, tutto viene riletto e verificato. L'indicatore mostra quanto è al sicuro.
+42	Problema (telefono o disco pieno, file danneggiato): non si perde nulla, riapri lo stesso file. Pulsante «Se si blocca».
+43	NUOVO 2.0 — «Tutto automatico»: consenti una volta «Accesso a tutti i file», avvia, poi tocca semplicemente i link dell'e-mail di Google. Ogni file viene copiato appena arriva in Download, poi cancellato dal telefono una volta verificato.
+44	Liberare Google: il pulsante appare solo se la copia è completa, il backup del telefono è disattivato e hai guardato le foto sul disco. Sei tu a cancellare; il cestino di Google tiene tutto 60 giorni.
+45	«Verifica il disco» rilegge ogni foto copiata e segnala quelle danneggiate. Ogni 2 mesi una notifica ricorda di chiedere una nuova copia: vengono aggiunte solo le foto nuove.
+46	Recuperare le mie foto iCloud (vecchio iPhone)
+47	Per le foto dell'iPhone: lo stesso pannello di Google Foto, con l'esportazione ufficiale di Apple.
+48	Lo spazio: sull'iPhone, Impostazioni › il tuo nome › iCloud. Clean Smart calcola lo spazio necessario.
+49	Il disco: collega la chiavetta o il disco e scegli una cartella.
+50	Su privacy.apple.com: «Richiedi una copia dei tuoi dati», spunta «Foto di iCloud», file da 1 o 2 GB.
+51	Apple invia un'e-mail entro qualche giorno. Scarica «Part 1», elaboralo, cancellalo, poi «Part 2»…
+52	Tutto viene ordinato per anno in «iCloud Photos», senza doppioni, tenendo la foto migliore di ogni raffica.
+53	Analizza il mio telefono
+54	È il grande pulsante della schermata iniziale. Niente da impostare.
+55	Tocca «Analizza il mio telefono».
+56	La prima volta Android chiede l'accesso a foto e contatti: accetta.
+57	Una barra mostra l'avanzamento. Poi Clean Smart mostra in grande lo spazio che puoi recuperare.
+58	Cosa trova Clean Smart
+60	Doppioni
+61	Copie identiche. L'originale viene tenuto.
+62	Foto simili
+63	Raffiche scattate a pochi secondi. La più nitida viene tenuta.
+64	Foto venute male
+65	Sfocate, troppo scure, troppo chiare o troppo piccole.
+66	Screenshot
+67	Spesso inutili dopo.
+68	Video grandi
+69	Oltre 100 MB ciascuno.
+70	Media di WhatsApp
+71	Foto e video ricevuti o inviati.
+72	I miei file più grandi
+73	Le 30 foto e video più pesanti.
+74	Contatti doppi
+75	Stesso nome e stesso numero.
+76	Scegliere e pulire
+78	Tocca una categoria per vedere le foto.
+79	Tocca una foto per spuntarla. Pressione lunga: la vedi in grande.
+80	«TENUTA»: la foto che Clean Smart ti consiglia di tenere.
+81	Premi il pulsante rosso «Pulisci» in fondo allo schermo.
+82	Android chiede un'ultima conferma. Le foto vanno nel cestino: 30 giorni per recuperarle.
+83	L'ordinamento rapido
+84	Per ordinare le foto recenti una per una, senza pensarci.
+85	Nella schermata iniziale, tocca «Ordinamento rapido».
+86	Scorri la foto a SINISTRA per buttarla, a DESTRA per tenerla.
+87	Il piccolo pulsante rotondo al centro torna alla foto precedente.
+88	Alla fine il pulsante rosso manda nel cestino le foto da buttare.
+89	Il cestino e «Ho sbagliato»
+91	Le foto nel cestino occupano ancora spazio per 30 giorni.
+92	«Svuota il cestino ora» libera subito lo spazio (attenzione: è definitivo).
+93	«Ho sbagliato» rimette nella galleria gli ultimi file buttati.
+94	Proteggere e inviare
+95	In una categoria, spunta delle foto e poi:
+96	Proteggi
+97	La foto diventa preferita: non verrà più proposta.
+98	Invia
+99	Con WhatsApp, e-mail… (massimo 20 foto). Nulla lascia il telefono.
+100	Comprimi
+101	Per i video: rifatti in 720p, spesso da 3 a 5 volte più leggeri.
+102	Il backup
+103	Le tue foto al sicuro su scheda SD, chiavetta USB o Google Drive.
+104	In «Backup», tocca «Scegli una cartella».
+105	«Salva tutte le mie foto» copia le foto, ordinate per mese.
+106	Le volte successive vengono copiate solo le foto nuove.
+107	Nelle Opzioni, il «Backup automatico ogni notte» lo fa da solo.
+108	Altri strumenti
+109	Nella schermata iniziale, tocca «Altri strumenti»:
+110	Liberare spazio
+111	Le foto di oltre 3 mesi GIÀ salvate vanno nel cestino. Mai una foto che non sia al sicuro.
+112	PDF ricordo
+113	Le foto più belle del mese o dell'anno in un PDF, da inviare a una persona cara.
+114	Ridurre i miei video
+115	Apri «Video grandi», spuntali e poi «Comprimi».
+116	La mia casella e-mail
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	Tocca «Collega la mia casella» e scegli il tuo servizio di posta.
+119	Gmail, Yahoo e iCloud chiedono una PASSWORD PER LE APP. Clean Smart apre la pagina giusta.
+120	«Analizza la mia casella», poi un pulsante per: newsletter, e-mail grandi, e-mail vecchie, e-mail doppie.
+121	Le e-mail vanno nel cestino della tua posta. Quelle della banca, dell'amministrazione o della salute non vengono MAI toccate.
+122	La pulizia guidata della posta
+123	In E-mail, tocca la grande tessera verde. Stessa idea: il pulsante verde è il passo successivo.
+124	Pulizia sicura: newsletter, pubblicità, notifiche ed e-mail doppie vanno nel cestino.
+125	Ordino per mittente: una scheda per mittente. A sinistra se ne vanno tutte le sue e-mail; a destra lo tieni.
+126	Metto al sicuro l'importante: banca, amministrazione, salute, fatture ed e-mail con PDF vengono salvate.
+127	Libero la casella: le e-mail vecchie vanno nel cestino, mai quelle importanti.
+128	«Annulla iscrizione»: per non ricevere più una newsletter. Il pulsante apre la pagina di disiscrizione.
+129	NUOVO 2.0 — Prima di buttare, compare l'elenco delle e-mail (mittente, oggetto, data): togli la spunta a quelle da tenere, poi conferma.
+130	Tocca un mittente: 🗑️ butta sempre (ogni notte, da solo), 🛡️ tieni sempre, 🔔 avvisami quando scrive.
+131	Casella protetta: banca, tasse, salute, casa e famiglia (i tuoi contatti) vengono messi in «Protetti» nella tua posta, mai buttati. Pulsante «Spam» per svuotare la posta indesiderata.
+132	Salvare e-mail e allegati
+134	In E-mail, tocca «Salva e-mail».
+135	Spunta le e-mail da tenere («Spunta i PDF» per fare in fretta).
+136	Tocca «Salva»: l'e-mail completa, e tutti i PDF riuniti in una cartella PDF.
+137	Sul PC, apri CleanSmart/Mails/index.html: scrivi una parola, un nome o un PDF per ritrovare tutto.
+138	Recuperare e-mail
+140	In E-mail, tocca «Recupera e-mail».
+141	Spunta le e-mail del cestino da recuperare.
+142	Tocca «Recupera»: tornano nella posta in arrivo.
+143	Contatti doppi
+145	Dopo l'analisi, la scheda «Contatti» mostra i doppioni (stesso nome, stesso numero).
+146	«Elimina i doppioni» tiene il contatto originale.
+147	Attenzione: l'eliminazione avviene anche sul tuo account Google.
+148	Le opzioni spiegate
+149	Backup automatico ogni notte
+150	Verso le 2, le foto nuove vengono copiate nella tua cartella di backup.
+151	Da sapere: una notifica ti avvisa se non ha funzionato.
+152	Avvisi e rapporto mensile
+153	Avviso se resta meno di 1 GB, e un piccolo riepilogo il 1° del mese.
+154	Da sapere: al massimo un avviso ogni 3 giorni.
+155	Backup prima di cancellare
+156	Copia le foto (e i contatti) nella tua cartella prima di ogni pulizia.
+157	Da sapere: disattivato per impostazione predefinita, inutile per doppioni e foto venute male.
+158	Proteggi le mie preferite
+159	Le foto preferite non vengono mai proposte.
+160	Da sapere: attivo per impostazione predefinita.
+161	Severità
+162	Prudente: meno foto proposte. Normale. Severa: di più.
+163	Da sapere: rianalizza dopo una modifica.
+164	Liberare spazio
+165	Tenere sul telefono le foto degli ultimi 1, 3, 6 o 12 mesi.
+166	Da sapere: vengono proposte solo foto già salvate.
+167	Dimensione del testo
+168	Normale, grande o molto grande.
+169	Da sapere: c'è un po' più da scorrere.
+170	Lingua
+171	Come il telefono, o una delle 16 lingue (italiano, inglese, francese, greco, arabo, cinese…).
+172	Da sapere: la modifica si applica subito.
+173	Dimostrazione
+174	Mostra l'app con foto, e-mail e contatti finti.
+175	Da sapere: sul telefono non viene toccato nulla. Ideale per presentare l'app.
+176	Widget
+177	Nella schermata iniziale del telefono: pressione lunga > Widget > Clean Smart. Mostra lo spazio libero e apre la pulizia guidata.
+178	Da sapere: si aggiorna da solo.
+179	Una domanda, o la versione completa? Scrivimi: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Domande frequenti
+181	Le mie foto vengono cancellate subito?
+182	No. Vanno nel cestino della Galleria: 30 giorni per recuperarle, oppure «Ho sbagliato».
+183	Le mie foto finiscono su Internet?
+184	No. Tutto avviene sul telefono. Solo il backup va dove hai scelto (scheda SD, chiavetta, Drive).
+185	Perché una password per le app?
+186	Gmail, Yahoo e iCloud la richiedono per le app di posta. Resta cifrata sul tuo telefono.
+187	Lo spazio non torna dopo la pulizia?
+188	Il cestino tiene le foto 30 giorni. Tocca «Svuota il cestino ora» nella schermata iniziale.
+189	Ho cancellato la mia copia sul disco, non viene più copiato nulla?
+190	Nella scheda Google Foto o Foto di iCloud, tocca «Ricomincia tutto (ho cancellato la mia copia)» in fondo allo schermo, poi riapri i file ZIP.
+191	Come avere l'ultima versione?
+192	Quando c'è una nuova versione, compare una barra arancione nella schermata iniziale: toccala, poi apri il file scaricato. Oppure Opzioni > «Cerca aggiornamenti».

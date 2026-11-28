@@ -25,6 +25,7 @@ class Widget : AppWidgetProvider() {
         const val OUVRIR_GUIDE = "ouvrir_guide"
 
         fun vue(ctx: Context): RemoteViews {
+            Tr.init(ctx); Tr.choix = Tr.CODES.getOrNull(com.jmdargere.cleansmart.data.Settings.load(ctx).langue - 1)
             val st = runCatching { StatFs(Environment.getDataDirectory().path) }.getOrNull()
             val total = st?.totalBytes ?: 0L
             val libre = st?.availableBytes ?: 0L

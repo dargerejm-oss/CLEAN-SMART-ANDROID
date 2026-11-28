@@ -1,0 +1,897 @@
+0	\n\n%1 konnte nicht kopiert werden: Starte dieselbe Datei erneut.
+1	\n\n%1 „zu prüfen“ kommen in den Clean-Smart-Papierkorb: Du kannst sie 7 Tage lang zurückholen.
+2	\n\nAchtung: Das Löschen wird mit deinem Konto synchronisiert (Google…).
+3	\n\nDer Datenträger oder das Handy ist voll: Gib Platz frei (oder wechsle in Schritt 2 den Datenträger) und starte DIESE Datei erneut. Nichts wird doppelt kopiert.
+4	\n\nDie Datei ist beschädigt oder unvollständig: Lade sie erneut aus der Google-Mail herunter und starte sie neu. Bereits Kopiertes bleibt erhalten.
+5	\n\nDie Kopien werden zuerst als .vcf-Datei in deinen Sicherungsordner exportiert.
+6	\n\nStarte die ZIP-Datei, die sie enthielt, erneut (oder den Automatikmodus): Sie werden neu kopiert. Lösche vorher nichts bei %1.
+7	\n\nZuerst wird eine Kopie in deinem Sicherungsordner angelegt.
+8	\n💡 Bei Google teilen sich Mails und Google Fotos dieselben 15 GB: Mails aufräumen schafft auch Platz für deine Fotos.
+9	 von etwa %1 GB
+10	 · %1 Duplikate, Serien oder misslungene nicht gesichert
+11	 · %1 in den Papierkorb
+12	 · die Dateien „zu prüfen“ liegen im Clean-Smart-Papierkorb (7 Tage)
+13	 · kommt in den Clean-Smart-Papierkorb
+14	%1 (%2): überzählige Duplikate und Serienbilder, schwarze oder weiße Fotos, Screenshots älter als ein Monat.\n\nSie kommen in den Papierkorb der Galerie (30 Tage zum Wiederherstellen).
+15	%1 (%2) werden ENDGÜLTIG gelöscht, um sofort Platz zu schaffen.\n\nSie können nicht wiederhergestellt werden.
+16	%1 / %2  ·  %3 zum Wegwerfen
+17	%1: %2 %
+18	%1: Newsletter und Werbung (%2 Absender), Benachrichtigungen, doppelte Mails.
+19	%1 GB · plane %2 ein
+20	%1 analysiert
+21	%1 mit Anhängen (davon %2 mit PDF)
+22	%1 erfolgreich. Wenn du die Originale in den Papierkorb legst, gewinnst du %2.
+23	%1 in diesem Monat.
+24	%1 in deinen Sicherungsordner kopiert.
+25	%1 unnötige Dateien: temporäre, Vorschaubilder, leere Ordner, App-Reste.
+26	%1 älter als %2 Monate
+27	%1 von deinen „immer wegwerfen“-Absendern in den Papierkorb gelegt (30 Tage wiederherstellbar).
+28	%1 Duplikate kommen in den Papierkorb. Das erste Exemplar jeder Mail bleibt erhalten.
+29	%1 und %2 kopiert und geprüft.
+30	%1 und %2 in Sicherheit. Du kannst sie löschen und die nächste herunterladen.
+31	%1 Datei(en) gesichert
+32	%1 weggeworfen
+33	%1 frei von %2
+34	%1 auf dem Handy freigegeben
+35	%1 Mails im Postfach · %2 analysiert
+36	%1 min %2 s
+37	%1 Newsletter · %2 große Mails
+38	%1 Newsletter, %2 große Mails (%3).
+39	%1 Fotos gefunden
+40	%1 Fotos · %2 Videos analysiert
+41	%1 Fotos · %2 Videos · %3 Duplikate und Serien aussortiert
+42	%1 erstellt eine Kopie all deiner Fotos. Mach es genau wie in diesem Muster:
+43	%1 werden gelöscht: Sie werden nicht mehr gebraucht oder entstehen von selbst neu.
+44	%1 werden endgültig gelöscht.
+45	%1 von %2 ausgewählt · %3
+46	%1 von %2 Dateien erledigt
+47	%1 von %2 · %3
+48	%1 kommen in den Papierkorb der Galerie (30 Tage wiederherstellbar).
+49	%1 kommen in den Papierkorb der Galerie (30 Tage wiederherstellbar).
+51	%1 · %2: Duplikate, überzählige Serienbilder, schwarze oder weiße Fotos, Screenshots älter als ein Monat. Die besten bleiben.
+52	%1 · %2 insgesamt. Tippe auf eine App, um sie zu deinstallieren oder ihren Cache zu leeren.
+53	%1 zum Wegwerfen
+54	%1 einzeln ansehen. Nach links wischen zum Wegwerfen, nach rechts zum Behalten (wird Favorit ⭐).
+55	%1, %2, %3 kopiert · %4 und %5 aussortiert.
+56	%1Mails älter als %2 Jahre kommen in den Papierkorb (außer wichtige).
+57	(kein Betreff)
+58	. %1 Duplikate oder Serienbilder zu sortieren: hier tippen.
+59	1 Taste
+60	1 Monat
+61	1. Ich habe die Sicherung ausgeschaltet: Google-Fotos-App › dein Foto oben rechts › Fotos-Einstellungen › Sicherung › aus.
+62	1. Auf dem iPhone habe ich „iCloud-Fotos“ ausgeschaltet (Einstellungen › dein Name › iCloud › Fotos).
+63	12 Monate
+64	2. Ich habe den Datenträger am PC geöffnet und sehe meine Fotos, Jahr für Jahr.
+65	3 Monate
+66	3. Empfohlen: Ich habe eine 2. Kopie gemacht (anderer Datenträger oder PC).
+67	4 Schritte
+68	6 Monate
+69	ANZEIGE
+70	AUTOMATISCH
+71	SONSTIGES
+72	E-Mail-Adresse
+73	Adresse, Server und Passwort sind Pflicht.
+74	Benachrichtigung entfernt
+75	Warnungen und Monatsbericht
+76	Postfach wird analysiert
+77	Analyse der 3.000 neuesten Mails im Posteingang.
+78	Mails werden analysiert (%1 / %2)
+79	Handy wird analysiert
+80	Analysiere dein Postfach „%1“: Newsletter, große Mails, alte Mails. Wichtige bleiben immer erhalten.
+81	Mein Postfach analysieren
+82	Mein Handy analysieren
+83	Abbrechen
+84	Abbrechen, nichts wegwerfen
+85	Anrufen
+87	Apple prüft die Anfrage und schickt dann eine Mail, meist innerhalb von 3 bis 7 Tagen. Die Dateien werden dann auf privacy.apple.com heruntergeladen (melde dich vom Handy aus an).
+88	Apple · Daten und Datenschutz
+89	„Immer wegwerfen“ jetzt anwenden
+90	Stopp nach der aktuellen Datei…
+91	Stoppen
+92	Automatikmodus stoppen?
+93	Gestoppt. Bereits kopierte Dateien sind sicher; die anderen beim nächsten Mal, ohne Duplikate.
+94	Tipp: Unter Einstellungen › Apps eine App antippen (Chrome, Facebook…) › Speicher › „Cache leeren“.
+95	Keine doppelten Kontakte
+96	Kein Ordner gewählt
+97	Kein Sicherungsordner
+98	Keine unnötigen Dateien.
+99	Kein Postfach verbunden.
+100	Kein USB-Stick und kein Datenträger erkannt. Schließe ihn an (USB-C-Adapter) und öffne diesen Schritt erneut.
+101	Kein Video konnte weiter verkleinert werden.
+102	Andere
+103	Andere Installationsdateien (.apk)
+104	Zuerst: analysieren
+105	Mit „Zugriff auf Nutzungsdaten“ sieht Clean Smart den echten Platzbedarf jeder App und seit wann du sie nicht geöffnet hast. Nichts wird irgendwohin gesendet.
+106	POSTFACH
+107	Bank
+108	Bank, Behörden, Gesundheit, Rechnungen und alle Mails mit PDF: gesichert, PDFs gesammelt, Archiv index.html am PC.
+109	Bank, Behörden, Gesundheit, Rechnungen und alle Mails mit PDF: gesichert, PDFs gesammelt, Archiv index.html am PC. In deinem Postfach liegen sie unter „Geschützt“.
+110	Bank, Steuern, Gesundheit, Haushalt, Familie (deine Kontakte): getrennt abgelegt, nie weggeworfen
+111	Akku schwach (%1 %)
+112	Hallo
+113	Modegeschäft
+114	Postfach in Ordnung!
+115	Postfach zu %1 % voll (%2 / %3)
+116	Geschütztes Postfach
+117	Postfach zu %1 % voll (%2 / %3).
+118	Schließe das Ladegerät an: Eine Datei kann 10 bis 30 Minuten dauern.\n\nWenn das Handy ausgeht, geht nichts verloren: Starte einfach dieselbe Datei erneut.
+119	Schließe während der Verarbeitung das Ladegerät an: Eine große Datei kann 10 bis 30 Minuten dauern. Der Bildschirm bleibt an.
+120	Schließe deinen USB-Stick oder Datenträger an das Handy an und wähle (oder erstelle) einen Ordner darauf.
+121	USB-Stick oder Datenträger anschließen
+122	Erledigt: Die nächste Datei wird komplett neu kopiert.
+123	Notiert
+125	EMPFOHLEN
+126	KONTAKT
+127	KONTAKTE
+128	Screenshots
+129	SD-Karte, USB-Stick, Drive… wähle, wo du willst
+130	SD-Karte, USB-Stick, Google Drive…
+131	Diese Datei ist schon kopiert und geprüft. Wiederholen erzeugt keine Duplikate, ist aber unnötig.\n\nDu wolltest wohl die nächste (%1).
+132	Diesen Monat
+133	Dieses Jahr
+134	Konto wechseln
+135	Ordner wechseln
+136	Jeden Sonntag verschwinden sichere unnötige Dateien und Spam von selbst. Eine Benachrichtigung sagt dir, wie viel Platz frei wurde und ob Fotos zu sortieren sind.
+137	Jede gewählte Mail wird in deinem Sicherungsordner gespeichert:
+138	Jedes Video wird in 720p neu erstellt, oft 3- bis 5-mal kleiner, und unter Filme / Clean Smart gespeichert.
+139	Ordner auf dem Datenträger wählen
+140	Ordner wählen
+141	Wähle zuerst den Ordner auf deinem USB-Stick oder Datenträger (Schritt 2).
+142	Wähle zuerst den Ordner auf deinem USB-Stick oder Datenträger (Schritt „Der Datenträger“).
+143	Wähle zuerst einen Ordner: SD-Karte, USB-Stick oder Google Drive.
+144	Wähle zuerst einen Sicherungsordner (Optionen).
+145	Wähle zuerst einen Sicherungsordner (SD-Karte, USB-Stick, Drive).
+146	Wähle zuerst einen Sicherungsordner und mach eine Sicherung.
+147	Wähle zuerst einen Sicherungsordner.
+148	Wähle deine Mails: Sie werden mit ihren Anhängen gespeichert, die PDFs in einem eigenen Ordner
+149	Wähle eine SD-Karte, einen USB-Stick oder Google Drive
+150	Die schönsten Fotos werden ausgewählt…
+153	Clean Smart: automatische Kopie
+154	Clean Smart wartet auf die Dateien in Download…
+155	Clean Smart liest die letzten 3.000 Mails (nichts wird gelöscht).
+156	Clean Smart schaut sich alle deine Fotos an (nichts wird gelöscht).
+157	Clean Smart findet mit einem Tipp:
+158	USB-Stick (Demo)
+159	USB-Stick oder Festplatte, mit einem USB-C-Adapter
+160	Pakete und Lieferungen
+161	Wie viel Platz wird gebraucht?
+162	Wie das Handy
+163	Loslegen
+164	Komprimieren
+165	%1 komprimieren?
+166	Videos werden komprimiert
+167	Verstanden
+168	Verbinde dein Postfach (Gmail, Outlook, Yahoo, Orange, Free…): Newsletter, große und alte Mails zum Sortieren, wichtige bleiben immer erhalten.
+169	Verbinden
+170	Mein Postfach verbinden
+171	Verbindung zum Server
+172	Verbindung nicht möglich:
+173	Verbindung zum Mailanbieter
+174	Empfohlen: Ich habe eine 2. Kopie gemacht (anderer Datenträger oder PC).
+175	Doppelte Kontakte
+176	Trotzdem fortfahren
+177	Automatische Kopie
+178	Die Dateien einzeln kopieren
+179	Identische Kopien — das Original bleibt
+180	Papierkorb
+181	Papierkorb: %1
+182	Clean-Smart-Papierkorb
+183	Papierkorb des Postfachs
+184	Okay, aber ausbaufähig
+185	Export erstellen
+186	In Google Fotos: lange auf ein Foto drücken, ganze Tage markieren, dann „Löschen“. Der Google-Papierkorb hebt alles 60 Tage auf.
+187	Wähle in Google Takeout 2-GB-Dateien: Wir verarbeiten sie einzeln, das Handy braucht nie viel Platz.
+188	Wähle in der Apple-Anfrage Dateien mit 1 oder 2 GB: Wir verarbeiten sie einzeln, das Handy braucht nie viel Platz.
+189	Zähle in der Google-Mail die Schaltflächen „Herunterladen“: Das ist die Anzahl der Dateien.
+190	Kopie bei %1 anfordern
+191	Kopie deiner Daten anfordern
+192	Angefordert · warte auf die Mail von %1
+193	Seit Android 11 darf keine Reinigungs-App den Cache anderer Apps oder Systemdateien leeren. Android macht das selbst: Diese Schaltfläche öffnet den Bildschirm „Speicherplatz freigeben“.
+194	Seit der Installation
+195	Letzte Prüfung
+196	Heruntergeladene, aber nicht installierte Apps. Zu prüfen.
+197	Datenträger
+198	Datenträger nicht erkannt: Verwende einen USB-C-(OTG-)Adapter. Ein exFAT-formatierter Stick funktioniert überall (FAT32 lehnt Dateien über 4 GB ab).
+199	Datenträger voll: Schließe einen größeren an und wähle ihn im Schritt „Der Datenträger“. Wir machen ohne Duplikate weiter.
+200	Dokumente in Downloads, seit 6 Monaten unverändert. Zu prüfen.
+201	Papierkorb-Ordner in diesem Konto nicht gefunden.
+202	Papierkorb-Ordner nicht gefunden.
+203	Spam-Ordner in diesem Konto nicht gefunden.
+204	Sicherungsordner
+205	Sicherungsordner nicht gefunden.
+206	Cache-Ordner
+207	Ordner von Apps, die nicht mehr auf dem Handy sind. Zu prüfen.
+208	Leere Ordner
+209	Leere Ordner…
+210	Duplikate
+211	Überzählige Duplikate und Serienbilder (das beste Foto bleibt), schwarze oder weiße Fotos, alte Screenshots. Tippe auf ein Foto, um es zu behalten. Alles kommt in den Papierkorb der Galerie (30 Tage).
+212	Duplikate, überzählige Serienbilder, schwarze oder weiße Fotos, alte Screenshots.
+213	Duplikate, Serien, unscharf
+215	Entferne das Häkchen bei Mails, die du behalten willst. Mails von deiner Bank, vom Finanzamt, zur Gesundheit und von „immer behalten“-Absendern sind nie in dieser Liste. Alles kommt in den Papierkorb deines Postfachs (wiederherstellbar).
+216	Demo…
+217	In den Papierkorb verschieben…
+218	Standardmäßig aus. Wenn du es einschaltest, werden Fotos (und Kontakte als .vcf) vor jeder Reinigung sicherheitshalber in den Ordner kopiert.
+219	Sie sind schon alle Favoriten 👍
+220	Im Demomodus wird keine Datei verarbeitet. Beende den Demomodus (Optionen), um es wirklich zu tun.
+221	Topfit
+222	%1 senden
+223	Das Erinnerungs-PDF senden
+224	Downloadlink per E-Mail senden · Einmal exportieren
+225	Unerwarteter Fehler
+226	Freigegebener Platz
+227	Seit Beginn freigegebener Platz: %1. Eine kleine Analyse?
+228	Platz zum Zurückgewinnen
+229	Und deine Mails
+230	Rechnungen und Unterlagen
+231	Sichere Reinigung durchführen?
+232	Erledigt ✔
+233	Familie
+234	Schließen
+235	Datei %1
+236	Datei %1 schon erledigt
+237	Datei nicht lesbar
+238	Installationsdateien bereits installierter Apps
+239	Arbeitsdateien von Apps im Handyspeicher. Sie entstehen bei Bedarf neu.
+240	Unnötige Dateien
+241	Beiseitegelegte Dateien, wird nach 7 Tagen automatisch geleert
+242	Temporäre Dateien
+243	Temporäre Dateien, Vorschaubilder, leere Ordner, App-Reste
+244	Temporäre Dateien, Vorschaubilder, leere Ordner, App-Reste. Fotos und Musik werden nie angerührt.
+245	Unscharf
+246	Unscharf, zu dunkel oder zu hell — vor dem Ankreuzen prüfen
+249	BEHALTEN
+250	Auf dem Handy die Fotos der letzten … behalten
+251	Behalten
+253	Gmail verlangt ein APP-PASSWORT (16 Buchstaben):\n1. Aktiviere die Bestätigung in zwei Schritten in deinem Google-Konto.\n2. Öffne myaccount.google.com/apppasswords\n3. Erstelle ein Passwort namens „Clean Smart“ und füge es hier ein.
+256	Google Fotos
+258	Google schickt eine Mail, wenn alles bereit ist: in ein paar Stunden oder Tagen. Du kannst die App solange schließen.
+259	Groß
+260	Große Mails (über 5 MB)
+261	Große Videos
+262	Gruppe %1 · %2 Fotos
+263	Anmeldung abgelehnt. Gmail, Yahoo und iCloud brauchen ein APP-PASSWORT, nicht dein normales Passwort.
+264	Es braucht eine gründliche Reinigung
+265	Nur noch %1 frei. Öffne Clean Smart, um mit einem Tipp Platz zu schaffen.
+266	Sie enthalten nichts.
+267	Sie belegen noch 30 Tage lang Platz
+268	Sie liegen im Ordner „Geschützt“ deines Postfachs. Jede Nacht erneut.
+269	Rückgängig nicht möglich: Die Dateien wurden vielleicht schon endgültig gelöscht.
+270	Ordner %1 kann nicht erstellt werden
+271	Diese Fotos können nicht geschützt werden
+272	Papierkorb kann nicht geleert werden
+273	Steuern
+274	Steuern - Behörden
+275	Gib den IMAP-Server deines Mailanbieters an (Port 993, SSL).
+276	Ich habe die Kopie angefordert
+277	Ich habe den Datenträger am PC geöffnet und sehe meine Fotos, Jahr für Jahr.
+278	Ich habe alle Dateien verarbeitet
+279	Nie weggeworfen, abgelegt unter „Geschützt“
+280	Ich leere das Postfach
+281	Ich gebe Platz frei
+282	Ich bringe das Wichtige in Sicherheit
+283	Ich bringe die guten in Sicherheit
+284	Ich sortiere nach Absender
+285	Ich prüfe das Zweifelhafte
+286	%1 wegwerfen?
+287	Diese Mails wegwerfen?
+288	Die Kopien wegwerfen?
+289	Die großen Mails wegwerfen?
+290	Die Newsletter wegwerfen?
+291	Die Originale wegwerfen?
+292	Die alten Mails wegwerfen?
+293	Protokolle, temporäre Sicherungen, abgebrochene Downloads. Werden nicht mehr gebraucht.
+294	Adresse und Passwort werden vom Handy gelöscht.
+295	Das Wichtige ist sicher, der Rest ist weg
+296	Das Original wird nicht angerührt: Danach schlage ich dir vor, es in den Papierkorb zu legen.\n\nDas kann ein paar Minuten dauern.
+297	IN DER NACHT
+298	PLATZ FREIGEBEN
+300	Die Kopie auf dem Datenträger wurde gelöscht: Clean Smart kopiert alles von vorne.
+301	Der Papierkorb ist leer.
+302	Der Platz der Mails wird frei, wenn der Papierkorb deines Postfachs geleert wird (meist innerhalb von 30 Tagen).
+303	Die Sicherung konnte nicht durchgeführt werden. Öffne Clean Smart, um den Ordner zu prüfen.
+304	Sprache
+305	Die geführte Reinigung erledigt alles in der richtigen Reihenfolge. Die grüne Taste ist immer der nächste Schritt.
+306	Die Bilanz, und wie du dein %1-Konto freiräumst
+307	Der ursprüngliche Kontakt bleibt erhalten.
+308	Der Datenträger (oder das Handy) ist voll: Die Kopie wurde sauber gestoppt.\n\nSchließe einen größeren Datenträger an, wähle ihn in Schritt 2 und starte den Automatikmodus neu: Wir machen ohne Duplikate weiter.
+309	Auf dem Datenträger ist nicht genug Platz: noch %1 frei, für diese Datei werden etwa %2 gebraucht.\n\n• Gib Platz auf dem Datenträger frei, oder\n• schließe einen größeren an und wähle ihn im Schritt „Der Datenträger“ (wir machen dort weiter, wo wir sind).\n\nNichts wurde angerührt.
+310	Der Datenträger ist nicht erreichbar.\n\n• Prüfe, ob er richtig angeschlossen ist (USB-C-Adapter).\n• Wähle im Schritt „Der Datenträger“ den Ordner erneut.
+311	Der Sicherungsordner ist nicht erreichbar. Öffne Clean Smart > Optionen, um ihn zu wählen.
+312	Der Sicherungsordner ist nicht mehr erreichbar. Wähle ihn erneut.
+313	Der Ordner „%1“ ist auf dem Datenträger nicht zu finden. Prüfe, ob der Datenträger angeschlossen ist (Schritt 2).
+314	Die aktuelle Datei wird zuerst fertig. Bereits kopierte Dateien sind sicher; die anderen beim nächsten Mal, ohne Duplikate.
+315	Der Link in der Google-Mail läuft nach etwa einer Woche ab: Fordere dann einen neuen Export an (nichts geht verloren, wir machen ohne Duplikate weiter).
+316	Letzten Monat
+317	Die sichere Reinigung
+318	Trotzdem wiederholen
+319	Das Handy
+320	Das Handy ist fast voll (mindestens 300 MB frei werden zum Arbeiten gebraucht).\n\n• Leere den Papierkorb der Galerie.\n• Lösche bereits verarbeitete ZIP-Dateien (Downloads).\n• Mach die geführte Reinigung von Clean Smart.\n\nNichts wurde angerührt.
+321	Das Handy ging aus oder der Datenträger wurde getrennt? Starte einfach dieselbe ZIP erneut: Clean Smart macht weiter, ohne etwas zu verlieren oder zu verdoppeln.
+322	Galerie wird gelesen
+323	Aufnahmedaten werden gelesen…
+324	Videos werden gelesen
+325	Lesen nicht möglich: %1
+326	Die .apk bereits installierter Apps: werden nicht mehr gebraucht.
+327	Die letzten 200 Mails im Papierkorb deines Postfachs. Hake die an, die zurück in den Posteingang sollen.
+328	Die 30 Fotos und Videos, die am meisten Platz belegen
+329	Die anderen Felder: nicht nötig
+330	Apples Dateien sind etwa 2 Wochen auf privacy.apple.com verfügbar: Ist das vorbei, stelle eine neue Anfrage (nichts geht verloren, wir machen ohne Duplikate weiter).
+331	Bereits gelöschte Dateien lassen sich in der Galerie wiederherstellen.
+332	Mails älter als %1 Jahre kommen in den Papierkorb deines Postfachs. Wichtige bleiben erhalten.
+333	Mails älter als 2 Jahre kommen in den Papierkorb deines Postfachs.
+334	Mails über 5 MB kommen in den Papierkorb deines Postfachs.
+335	Newsletter, Werbung, Benachrichtigungen und doppelte Mails kommen in den Papierkorb deines Postfachs (der ganze Posteingang).\n\nWichtige Mails werden nie angerührt.
+336	Zuerst die Fotos (sortieren, das Beste behalten, sichern, freigeben), dann die unnötigen Dateien des Handys, dann die Mails.
+337	Bereits gesicherte Fotos älter als %1 Monate verlassen das Handy (Papierkorb, 30 Tage).
+338	Favoriten (oder mit 🛡️ geschützte Fotos) werden nie vorgeschlagen
+339	Leicht unscharfe Fotos, WhatsApp, neue Screenshots: Du entscheidest.
+340	Fotos, Videos und Musik werden nie angerührt.
+341	Ältere werden nur zum Löschen vorgeschlagen, wenn sie schon in deiner Sicherung sind.
+342	Die schönsten Fotos des Monats oder Jahres, für einen lieben Menschen
+343	Die größten und die, die du nicht mehr öffnest: mit einem Tipp deinstallieren
+344	Spam kommt in den Papierkorb deines Postfachs. Entferne das Häkchen, wenn eine Mail kein Spam ist.
+345	Freigeben
+346	%1 freigeben?
+347	%1 freizuräumen ist freiwillig. %2 erlaubt keiner App, deine Fotos zu löschen: Das machst du selbst, wenn du sicher bist.
+348	Postfach leeren
+349	Postfach wird geleert
+350	Postfach leeren?
+351	Platz freigeben
+352	Platz freigeben, Erinnerungs-PDF…
+353	Fotos auf dem Datenträger werden aufgelistet…
+354	JETZT
+355	Mail (optional, für deine Mails)
+356	Mails
+357	Gmail-Mails: %1
+358	Mails mit Anhängen
+359	Mails älter als 2 Jahre
+360	Doppelte Mails
+361	Doppelte Mails…
+362	Haushalt
+363	Benachrichtigen
+364	Danke, dass du Clean Smart ausprobiert hast! Installiere die Vollversion, um dein Handy weiter zu reinigen.
+365	Meine Apps
+366	Meine größten Dateien
+367	Meine Regeln
+368	Legt bereits gesicherte Fotos älter als %1 Monate in den Papierkorb
+369	In Sicherheit bringen
+370	Das Wichtige wird in Sicherheit gebracht
+371	Vorschaubilder
+372	Aktualisierung
+373	In den Papierkorb…
+374	Anleitung
+375	Anleitung nicht gefunden.
+376	Demomodus beendet
+377	Ändern ▼
+378	Zeigt die App mit falschen Fotos, Mails und Kontakten. Am Handy wird nichts angerührt: ideal, um Clean Smart vorzuführen.
+379	Passwort (leer = aktuelles behalten)
+380	App-Passwort
+381	WhatsApp-Medien
+382	Komplette Reinigung
+383	Geführte Reinigung
+384	Geführte Postfach-Reinigung
+385	Sichere Postfach-Reinigung
+386	Reinigung fertig!
+387	NEU
+388	Postfach wird gereinigt
+389	Unnötige Dateien werden gereinigt
+390	Reinigen
+391	%1 reinigen?
+392	Handy reinigen
+393	Unnötige Dateien reinigen?
+394	Newsletter und Benachrichtigungen…
+395	Newsletter und Werbung
+396	Newsletter, Werbung, Benachrichtigungen und doppelte Mails.
+397	Anzahl der Dateien in der Mail
+398	Normal
+399	Neue Version %1 verfügbar
+401	Vergessen
+402	Dieses Konto vergessen?
+403	Ja, fertig
+405	Heute geöffnet
+406	Vor %1 geöffnet
+407	%1 wird geöffnet…
+408	Öffne Clean Smart, um zu sehen, was zu tun ist. Nichts geht verloren.
+409	Öffne deine Google-Seite und sieh nach, wie viel Platz Google Fotos belegt. Trag es hier ein (in GB).
+410	Öffne „Große Videos“, hake sie an, dann „Komprimieren“
+411	Öffnen
+412	Google Fotos öffnen
+413	Google Takeout öffnen
+414	iCloud-Fotos öffnen
+415	Seite für das App-Passwort öffnen
+416	privacy.apple.com öffnen
+417	„Speicherplatz freigeben“ von Android öffnen
+418	Erinnerungs-PDF
+419	FOTOS UND VIDEOS
+420	SCHUTZ
+421	Keine Fotos für diesen Zeitraum.
+422	Seit über einem Jahr nicht geöffnet
+423	Überspringen
+425	Kleine Kopien der Fotos für die Anzeige. Sie entstehen von selbst neu.
+426	Fotos
+427	Fotos: %1 · Videos: %2 · aussortierte Duplikate: %3
+428	Fotos vom Wochenende
+429	Doppelte Fotos, Serienbilder, misslungene Fotos, große Videos, unnötige Mails… alles braucht Platz.
+430	Empfangene oder gesendete Fotos und Videos
+431	Unscharfe oder misslungene Fotos
+432	iCloud-Fotos
+433	Ähnliche Fotos
+434	Fotos, Handy und Mails, Schritt für Schritt
+435	Belegter Platz: %1
+436	Mehr Werkzeuge
+437	Jeweils über 100 MB
+438	Um Punkte zu gewinnen: %1.
+439	Für die Vollversion von Clean Smart oder bei Fragen schreib mir:
+440	Für die Vollversion schreib mir:
+441	Um unnötige Dateien zu finden, muss Clean Smart den Speicher des Handys sehen: Erlaube „Zugriff auf alle Dateien“. Nichts wird irgendwohin gesendet.
+442	Für ein anderes Konto oder einen anderen Datenträger. Bereits kopierte Dateien werden nicht angerührt.
+443	Meine Favoriten schützen
+444	Vorsichtig
+445	Vorsichtig: weniger Fotos vorgeschlagen. Streng: mehr.
+446	Vorbereitung
+447	Vorbereitung…
+448	Warne mich, wenn das Handy fast voll ist (unter 1 GB), und eine kleine Bilanz am 1. des Monats.
+449	Plane mindestens %1 auf dem Stick oder Datenträger ein (10 % Reserve).
+450	WER DIR AM MEISTEN SCHREIBT
+451	Wenn die Mail von %1 angekommen ist
+452	Beenden
+453	Google Fotos verlassen
+454	iCloud-Fotos verlassen
+455	SUCHE NACH MISSLUNGENEN FOTOS
+456	Serien: Wir behalten das beste…
+457	Serien — das schärfste bleibt
+458	Ablage: %1
+459	Suche nach Duplikaten
+460	Suche nach unnötigen Dateien…
+461	Suche nach Mails
+462	Suche nach Mails mit PDF
+463	Suche nach wichtigen Mails (%1 / %2)
+464	Suche nach unscharfen Fotos
+465	Suche nach misslungenen Fotos
+466	Suche nach ähnlichen Fotos
+467	Suche nach Anhängen (%1 / %2)
+468	Nach Updates suchen
+469	Neu beginnen
+470	Mit einem anderen Konto neu beginnen
+471	Ganz von vorne beginnen?
+472	Größe von %1 ansehen
+473	Nach einer Änderung neu analysieren.
+474	Mails zurückholen
+475	Zähler zurücksetzen
+476	Dateien werden zurückgelegt
+477	Reste deinstallierter Apps
+478	Reste deinstallierter Apps…
+479	Mehrfach im Sekundenabstand erhalten: %1
+480	Nichts
+481	Nichts wurde gelöscht.
+482	Nichts geht verloren
+483	Nichts wird ohne deine Zustimmung gelöscht: Alles geht über den Papierkorb.
+484	Nichts freizugeben: Noch kein altes Foto ist in der Sicherung. Starte zuerst „Alle meine Fotos sichern“.
+485	ERGEBNIS
+486	Regel entfernt
+487	Hol Mails aus dem Papierkorb deines Postfachs zurück
+488	Meine iCloud-Fotos holen (früheres iPhone)
+489	Meine Videos verkleinern
+490	Erweiterte Einstellungen
+491	Android-Speichereinstellungen
+492	SICHERUNG
+494	Ohne Zugriff auf die Fotos kann Clean Smart nichts analysieren.
+495	Gesundheit
+496	Sicherung %1 / %2
+497	Automatische Sicherung jede Nacht
+498	Sicherung vor dem Löschen
+499	Meine guten Fotos werden gesichert
+500	Mails werden gesichert
+501	Wichtige Mails werden gesichert
+502	Mail %1 / %2 wird gesichert
+503	Vor dem Löschen sichern
+504	Mails sichern
+505	Meine guten Fotos sichern
+506	Mit deiner Apple-ID anmelden
+507	IMAP-Server
+508	Server nicht gefunden: Prüfe das Internet und den Servernamen.
+509	Seine Mails kommen jede Nacht von selbst in den Papierkorb
+510	Nur die guten Fotos: nie Duplikate, überzählige Serienbilder oder misslungene. Favoriten kommen auch nach „Mes meilleures“ (Meine besten).
+511	Nur die guten Fotos werden gesichert, auf einem Stick, einer Festplatte oder Google Drive. Sogar Google Fotos lässt sich zurückholen.
+512	Jedes Mal werden nur die neuen Fotos kopiert.
+513	Nur die ersten 20 Dateien werden gesendet.
+514	Wird die Anmeldung abgelehnt, erstelle ein App-Passwort in der Sicherheit deines Microsoft-Kontos (Bestätigung in zwei Schritten nötig).
+515	Sonst schickt das iPhone die Fotos wieder an iCloud, und Löschen in iCloud kann sie auch vom iPhone löschen.
+516	Sonst schickt das Handy die Fotos wieder an Google, und Löschen bei Google kann sie auch von diesem Handy löschen.
+517	Winterschlussverkauf
+518	Danach oft nutzlos
+520	Handyspeicher
+521	Streng
+522	Weiter
+523	Lösche diese Datei selbst in Downloads, um Platz zu schaffen.
+524	Löschen
+525	%1 löschen?
+526	Diese Datei vom Handy löschen?
+527	Jede Datei nach Kopie und Prüfung vom Handy löschen (empfohlen: hält Platz frei)
+528	Duplikate löschen
+529	Bei Gmail bleiben sie im Posteingang und bekommen das Label „Geschützt“. Jede Nacht erneut.
+530	Bei Google Takeout, in 1 Minute
+531	Auf account.apple.com → App-spezifische Passwörter → eins erstellen.
+532	Auf dem iPhone: Einstellungen › dein Name › iCloud: Der von „Fotos“ belegte Platz wird angezeigt. Oder sieh auf icloud.com nach. Trag ihn hier ein (in GB).
+533	Auf dem iPhone oder auf icloud.com/photos: Fotos auswählen, dann „Löschen“. Das Album „Zuletzt gelöscht“ hebt sie 30 Tage auf.
+534	Auf der Seite, die sich öffnet: Speicher › „Cache leeren“. Android verlangt das, Clean Smart kann es nicht für dich tun.
+535	Auf dem Handy reichen 2 bis 3 GB frei: immer nur eine Datei. Jetzt frei: %1.
+536	Auf privacy.apple.com, in 2 Minuten
+537	Auf privacy.apple.com heißen die Dateien „iCloud Photos Part 1 of 12“: Die letzte Zahl (hier 12) ist die Anzahl der Dateien. Clean Smart liest sie auch selbst.
+538	Kontosicherheit → App-Passwort erstellen, dann hier einfügen.
+539	Sicherheit, misslungene Fotos, Demo…
+540	Strenge
+541	FERTIG
+542	Dein Mailanbieter
+543	Deine 30-tägige Testphase ist zu Ende.
+544	Größe von %1 (GB)
+545	Textgröße
+546	Maximale Dateigröße: 1 GB oder 2 GB
+547	Vergangene Zeit
+548	Verbleibende Zeit
+549	Anfrage abschließen
+550	Fertig
+551	Deine iPhone-Fotos auf einem Stick oder Datenträger, nach Jahr, ohne Duplikate
+552	Deine Fotos der letzten 2 Monate sind noch nicht auf dem Datenträger. Fordere bei Google Takeout eine neue Kopie an, dann fügt der Automatikmodus nur die neuen Fotos hinzu, ohne Duplikate.
+553	Deine Fotos der letzten 2 Monate sind noch nicht auf dem Datenträger. Fordere bei Apple eine neue Kopie an: Clean Smart fügt nur die neuen Fotos hinzu, ohne Duplikate.
+554	Deine Fotos in Sicherheit
+555	Deine Einstellungen und dein Postfach bleiben erhalten.
+556	Dein Handy ist voll?
+557	Dein Handy ist sauber und deine Fotos sind sicher
+558	Dein Handy und dein Postfach sind sauber, deine Fotos sind sicher
+559	Hier tippen zum Herunterladen, dann die Datei öffnen, um sie zu installieren
+560	Hier tippen für die Vollversion oder eine Frage
+561	Tippe einfach auf die Links „Herunterladen“ in der Google-Mail. Clean Smart kopiert jede Datei auf den Datenträger, sobald sie in Download ankommt, auch während die anderen noch laden.
+562	Tippe auf einen Absender: immer wegwerfen, immer behalten, benachrichtigen, abmelden.
+563	Tippe auf einen Absender in „Wer dir am meisten schreibt“, um zu wählen
+564	Tippe auf ein Bild zum Ankreuzen · lange drücken für die große Ansicht
+565	Tippen zum Analysieren
+566	Tippen zum Ansehen
+567	Immer behalten
+568	Immer wegwerfen
+569	Sind alle Dateien verarbeitet?
+570	Alle Mails von %1 (mindestens %2 Mails) kommen in den Papierkorb deines Postfachs.
+571	Alle Mails von %1 Newsletter-Absender(n) kommen in den Papierkorb deines Postfachs (der ganze Posteingang, nicht nur die analysierten Mails).\n\nDu kannst sie aus dem Papierkorb zurückholen.
+572	Alle ankreuzen
+573	Alle abwählen
+574	Auswahl aufheben
+575	Alles in den Papierkorb
+576	Alles reinigen
+577	Alles geht über den Papierkorb: 30 Tage zum Zurückholen. Und „Ich habe mich vertan“ macht es mit einem Tipp rückgängig.
+578	Alles neu beginnen
+579	Alles neu beginnen?
+580	Der ganze Inhalt ist auf dem Datenträger kopiert und geprüft. Löschen schafft Platz für die nächste.\n\nDeine Fotos bleiben auch in Google Fotos.
+581	Alles gut, mach weiter so!
+582	Alles war schon gesichert 👍
+583	Alle deine Fotos auf einem Stick oder Datenträger, nach Jahr, ohne Duplikate
+584	Sortieren vor der Sicherung
+585	Absender sortieren
+586	Schnell sortieren
+587	Sortieren fertig!
+588	Zuerst sortieren, das Beste behalten, nur gute Fotos sichern, Platz freigeben, dann die Mails aufräumen.
+589	Zuerst sortieren, das Beste behalten, nur gute Fotos sichern, dann Platz freigeben.
+590	Zuerst sortieren, das Wichtige in Sicherheit bringen, dann das Postfach leeren. Mails von Bank, Behörden oder zur Gesundheit werden nie weggeworfen.
+591	Durch Wischen sortieren
+592	Absender sortieren
+593	Sortieren, behalten, sichern, freigeben
+594	Sortieren, das Wichtige sichern, das Postfach leeren
+595	Sortieren, schützen
+596	Zu hell
+597	Zu klein
+598	Zu dunkel
+599	Sehr groß
+600	Du hast deine Kopie auf dem Datenträger gelöscht und nichts wird mehr kopiert? Tippe unten auf „Alles neu beginnen (ich habe meine Kopie gelöscht)“ und starte deine ZIP-Dateien erneut.
+601	Hattest du ein iPhone? Deine iCloud-Fotos auf einem Stick oder Datenträger
+602	Du kannst die App verlassen, um auf die Links zu tippen: Die Kopie läuft weiter (Benachrichtigung „Automatische Kopie“).
+603	Typ: .zip   ·   Größe: 2 GB
+604	Lade immer nur EINE ZIP herunter, im WLAN. Verarbeite sie, lösche sie, dann lade die nächste.
+605	Lade die Dateien einfach auf privacy.apple.com herunter. Clean Smart kopiert jede Datei auf den Datenträger, sobald sie in Download ankommt.
+606	Handy
+607	Handy voll: Leere den Papierkorb der Galerie, lösche bereits verarbeitete ZIPs, mach die geführte Reinigung. Mindestens 300 MB frei nötig.
+608	Eine Taste, und es ist sortiert
+609	Eine Karte pro Absender: nach links wischen, um ALLE seine Mails wegzuwerfen, nach rechts, um ihn zu behalten.
+610	Eine Benachrichtigung, wenn er dir schreibt
+611	Ein Foto nach dem anderen: nach links wischen zum Wegwerfen, nach rechts zum Behalten
+612	Eine Frage, ein Problem, die Vollversion? Schreib mir:
+613	Verwende deine Free-Adresse und dein Passwort.
+614	Verwende deine La-Poste-Adresse und dein Passwort.
+615	Verwende deine Orange-Adresse und dein Passwort.
+616	Verwende deine SFR-Adresse und dein Passwort.
+617	Gegen 2 Uhr werden neue Fotos in deinen Sicherungsordner kopiert. Eine Benachrichtigung sagt dir, wenn es nicht geklappt hat.
+618	Vollversion
+619	Installierte Version: %1
+620	Leeren
+621	Papierkorb leeren?
+622	Clean-Smart-Papierkorb leeren
+623	Clean-Smart-Papierkorb leeren?
+624	Papierkorb jetzt leeren
+625	Jetzt leeren
+626	Alte Mails in den Papierkorb…
+627	Alte Downloads (über 6 Monate)
+628	Liste ansehen und wegwerfen
+629	Liste ansehen und freigeben
+630	Die Spam-Mails ansehen und in den Papierkorb legen
+631	Die Tipps ansehen
+632	Meinen Google-Speicher ansehen
+633	Meinen iCloud-Speicher ansehen
+634	Deine Rechnung
+635	Reisen und Buchungen
+636	Sicherung wird geprüft
+637	Datenträger wird geprüft
+638	Prüfe in der Google-Mail, dass jede Datei (001, 002, 003…) verarbeitet wurde.
+639	Prüfen, dann %1 freiräumen (wenn du willst)
+641	Augen geschlossen
+642	App
+643	Apps
+644	wird berechnet…
+645	Komprimieren nicht möglich
+646	doppelter Kontakt
+647	doppelte Kontakte
+648	Kopie
+649	Kopien
+650	deiner Fotomediathek sind sicher
+651	letzte Dateien
+652	Duplikat
+653	Duplikate
+654	Fehler
+655	Fehler
+656	Absender
+657	Absender
+658	räume dein Postfach auf
+659	Datei
+660	Datei kopiert
+661	Datei kopiert und geprüft
+662	Datei wurde nicht
+663	Dateien
+664	Dateien kopiert
+665	Dateien kopiert und geprüft
+666	Dateien wurden nicht
+667	iCloud-Fotos
+668	Tag
+669	Tag übrig
+670	Tage
+671	Tage übrig
+672	am einfachsten
+673	frei · %1 % belegt
+674	gib mit der Kompletten Reinigung Platz frei
+675	freigegeben
+676	Mail
+677	Mail zurückgeholt
+678	Mails
+679	Mails zurückgeholt
+680	reinige die unnötigen Dateien des Handys
+681	neue Datei
+682	neue Dateien
+683	Schritt für Schritt
+684	Foto
+685	behaltenes Foto
+686	Foto oder Video
+687	aufgenommenes Foto oder Video
+688	geschütztes Foto
+689	Fotos
+690	behaltene Fotos
+691	Fotos oder Videos
+692	aufgenommene Fotos oder Videos
+693	geschützte Fotos
+694	dann „Nächster Schritt“:
+695	Serie
+696	Serien
+697	sichere deine Fotos auf einem Stick oder einer SD-Karte
+698	sind schon in deiner Sicherung (gleicher Name, gleiche Größe).\n\nSie kommen in den Papierkorb der Galerie (30 Tage wiederherstellbar). Die neuesten bleiben auf dem Handy.
+701	von %1 Kontakten
+702	sortiere deine Fotos (Duplikate, Serien, unscharf)
+703	Download
+704	Downloads
+705	belegt
+706	Video
+707	komprimiertes Video
+708	Videos
+709	komprimierte Videos
+710	alte Mail
+711	alte Mails
+712	„Beschädigte Datei“: Der Download wurde unterbrochen. Lade diese ZIP erneut aus der Google-Mail und starte sie neu: Bereits Kopiertes wird nicht erneut kopiert.
+713	„Platz freigeben“: auf dem Handy die Fotos der letzten … behalten
+714	BEHALTEN
+715	WEGWERFEN
+716	SCHNELL WIEDERFINDEN
+717	Zu reinigen
+718	Verwende das, wenn du deine Kopie auf dem Datenträger gelöscht hast: Clean Smart vergisst, was schon kopiert wurde, und die nächste ZIP-Datei wird komplett neu kopiert.\n\nDer gewählte Datenträger und deine Einstellungen bleiben. Nichts wird auf dem Datenträger oder bei %1 gelöscht.
+719	Schreiben nicht möglich
+720	Strom
+721	zum Wegwerfen
+722	Element
+723	Elemente
+724	… und %1 weitere Mails dieser Art (angekreuzt).
+725	‹ Zurück
+726	ℹ️ %1 ohne Fehler gelesen. Die Fingerabdrücke der Kopie sind nicht mehr auf diesem Handy: Vergleich nicht möglich.
+727	↩️ %1 im Posteingang
+728	↩️ %1 zurück in der Galerie
+729	↩️ %1 zurückgelegt
+730	↩️ Ich habe mich vertan: die %1 zurücklegen
+731	↩️ Mails zurückgeholt (Demo)
+732	↩️ %1 in meinen Posteingang zurück
+733	↩️ Mails zurückholen
+734	↩️ Alles zurücklegen
+735	⏳ Warten auf die nächste Datei in Download. Tippe auf die Links „Herunterladen“ in der Mail.
+736	⏳ Warten auf die nächste Datei in Download…
+737	⏳ wird kopiert…
+738	⏳ später
+739	⏹ Stoppen
+740	☑️ Alle ankreuzen
+741	⚙️ App-Cache und Systemdateien
+742	⚙️ Optionen
+743	⚠️ %1: neu starten.\n
+744	⚠️ %1 mit Fehler: Starte die als „neu starten“ markierten ZIPs neu, bevor du weitermachst.
+745	⚠️ %1 auf dem Datenträger ist nicht mehr identisch oder nicht lesbar:\n
+746	⚠️ Keine Sicherung heute Nacht
+747	⚠️ Datei %1 neu starten
+748	⚠️ Es werden etwa %1 gebraucht, %2 sind frei. Du kannst anfangen: Wenn er voll ist, schließt du einen anderen Datenträger an, und wir machen ohne Duplikate weiter.
+749	⚠️ Die Kopie wurde gestoppt: %1\n\nNichts geht verloren: Starte den Automatikmodus neu, wir machen ohne Duplikate weiter.
+750	⚠️ Wir fangen nicht an
+751	⚠️ Nächtliche Sicherung
+752	⚠️ beschädigt: lade sie erneut aus der Mail, sie wird von selbst kopiert
+753	⚠️ Datenträger voll
+754	⚠️ nicht begonnen
+755	⚠️ neu starten
+756	⚠️ neu starten (%1)
+757	⛔ Die Kopie ist nicht vollständig (Datei beschädigt, neu zu starten oder noch nicht kopiert). Schließe zuerst die Kopie ab: Lösche nichts bei %1.
+758	✅ %1: fertig und geprüft.\n
+759	✅ %1 Duplikat(e) gelöscht
+760	✅ %1 Mail(s) gesichert · %2 PDF · Archiv CleanSmart/Mails/index.html aktuell
+761	✅ %1 wichtige Mails sicher · %2 PDFs gesammelt · Archiv index.html aktuell
+762	✅ %1 neue(s) Foto(s) gesichert
+763	✅ %1 · seit %2
+764	✅ %1 in Sicherheit
+765	✅ 312 wichtige Mails sicher (Demo)
+766	✅ 7.958 gute Fotos gesichert (Demo)
+767	✅ Genug Platz auf „%1“.
+768	✅ Postfach verbunden
+769	✅ Datenträger geprüft: %1 neu gelesen, keins beschädigt.
+770	✅ Duplikate gelöscht (Demo)
+771	✅ Datei %1 fertig
+772	✅ Die Kopie auf dem Datenträger ist vollständig und geprüft.
+773	✅ Mails gesichert (Demo)
+774	✅ Kopie vollständig und geprüft\n✅ Sicherung am Handy ausgeschaltet\n✅ Fotos auf dem Datenträger angesehen\n\n%1 öffnen? Du entscheidest selbst, was du löschst.
+775	✅ kopiert und geprüft
+776	✅ kopiert, geprüft, vom Handy gelöscht
+777	✉️ %1 weggeworfen · %2 in deinem Postfach freigegeben
+778	✉️ %1 Mails
+779	✉️ %1 Mails (Ordner „Mails Gmail“, öffne index.html)\n
+780	✉️ Postfach
+781	✉️ Mails
+782	✉️ Mails von %1
+783	✓ %1 gewählt
+784	✨ %1 freigegeben (30 Tage im Papierkorb der Galerie wiederherstellbar)
+785	✨ %1 Mails in den Papierkorb gelegt
+786	✨ %1 in den Papierkorb gelegt (Demo)
+787	✨ %1 in den Papierkorb deines Postfachs gelegt (zurückholbar mit „Mails zurückholen“)
+788	✨ %1 gereinigt · %2 freigegeben
+789	✨ %1 alte Mails in den Papierkorb (wichtige bleiben)
+790	✨ 1.249 Mails in den Papierkorb (Demo)
+791	✨ 1,1 GB freigegeben (Demo)
+792	✨ 6,4 GB freigegeben (Demo)
+793	✨ Mails in den Papierkorb (Demo)
+794	✨ Automatische Sonntagsreinigung
+795	✨ Sonntagsreinigung
+796	✨ Alte Mails in den Papierkorb (Demo)
+797	❤️ Handy-Gesundheit: %1 / 100
+798	⬅ Nach links: alle seine Mails in den Papierkorb   ·   Nach rechts: behalten ➡
+799	⬅ Nach links wischen zum Wegwerfen   ·   Nach rechts zum Behalten ➡
+800	⬇️ %1 läuft: Die Kopie beginnt, sobald es fertig ist.
+801	⬜ Alle abwählen
+802	⭐ Meine %1 schützen
+805	🍏 Meine iCloud-Fotos
+806	🍏 Zeit für eine neue iCloud-Kopie
+807	🍏 iCloud-Fotos verlassen
+808	🎁 Testversion · %1
+809	🎉 %1 insgesamt freigegeben
+810	🎉 Keine unnötigen Dateien: Das Handy ist sauber!
+811	🎉 Hier gibt es keine Mails zum Wegwerfen.
+812	🎉 Keine vergessene App: Du nutzt sie alle!
+813	🎉 Hier ist nichts mehr.
+814	🎉 Nichts zu reinigen, alles ist sauber!
+815	🎉 Fertig: %1 kopiert und geprüft. Insgesamt auf dem Datenträger: %2 und %3.
+816	🎉 Alle Dateien sind erledigt
+817	🎬 Demo
+818	🎬 DEMOMODUS: Am Handy wird nichts angerührt
+819	🎬 Demomodus: Am Handy wird nichts angerührt
+820	👀 Jede Taste zeigt zuerst die Liste der Mails: Entferne das Häkchen bei denen, die du behalten willst, dann bestätige.
+821	👀 Seine Mails jetzt ansehen und wegwerfen
+822	👆 Die Absender, die du weggeworfen hast
+823	👆 Absender sortieren
+824	👆 Schnell sortieren
+825	👉 Jetzt: In der Google-Mail die Datei %1 herunterladen (im WLAN). Dann auf die grüne Taste tippen und sie in Downloads wählen.
+826	👉 Jetzt: Auf privacy.apple.com „Part %1“ herunterladen (im WLAN). Dann auf die grüne Taste tippen und sie in Downloads wählen.
+827	👉 Jetzt zu tun
+828	👉 herunterladen, dann verarbeiten
+829	👍 Du hast schon die neueste Version (%1)
+830	👯 Doppelte Mails
+831	💡 Hilfe
+832	💡 Tipp: Melde dich ab, um sie nicht mehr zu bekommen (Taste in der Liste „Wer dir am meisten schreibt“).
+833	💡 Wenn es hakt
+834	💡 Wenn es hakt: alle Tipps
+835	💾 %1 auf „%2“
+836	💾 Nächtliche Sicherung
+837	💾 %1 sichern
+838	💾 Alle meine Fotos sichern
+839	💾 Mails sichern
+840	📁 Sicherungsordner wählen
+841	📁 Ordner wählen
+842	📁 CleanSmart / Mails: die ganze Mail (.eml)\n📕 CleanSmart / PDF: alle PDFs gesammelt\n📎 CleanSmart / Pieces jointes: die anderen Dateien
+843	📁 Sicherungsordner gespeichert
+844	📂 ZIP-Datei verarbeiten
+845	📂 ZIP-Datei von Hand verarbeiten
+846	📅 Dein Monatsbericht
+847	📎 Große Mails
+848	📕 Die PDFs ankreuzen
+849	📕 PDF gespeichert in Downloads / Clean Smart
+850	📕 Erinnerungs-PDF erstellt (Demo)
+851	📖 Anleitung
+852	📤 Senden (%1)
+853	📦 Die größten
+854	📦 Google Fotos verlassen
+855	📦 Deine neue Google-Kopie ist vielleicht fertig
+856	📧 Die Google-Mail öffnen
+857	📰 Newsletter und Werbung
+858	📱 Meine Apps
+859	📱 Die Google-Fotos-App öffnen
+860	📱 Handy
+861	📱 Handy fast voll
+862	📸 %1 Fotos und %2 Videos kopiert und geprüft, nach Jahr geordnet\n
+863	📸 Fotos
+864	🔄 Neu analysieren
+865	🔄 Neu suchen
+866	🔄 Alles neu beginnen (ich habe meine Kopie gelöscht)
+867	🔍 Mein Postfach analysieren
+868	🔍 Mein Handy analysieren
+869	🔍 Mails mit Anhängen suchen
+870	🔎 Datenträger prüfen (liest jedes Foto neu)
+871	🔒 Dein Passwort bleibt verschlüsselt auf deinem Handy. Es wird nur an den Server deines Mailanbieters gesendet.
+872	🔓 Erlauben
+873	🔓 Zugriff auf Dateien erlauben
+874	🔓 Eine Berechtigung für mehr Infos
+875	🔓 Eine Berechtigung, nur einmal
+876	🔓 Nur einmal: Erlaube „Zugriff auf alle Dateien“, damit Clean Smart den Ordner Download sieht. Es liest nur die Dateien von %1.
+877	🔔 Mail von %1
+878	🔔 Du wirst benachrichtigt, wenn er dir schreibt
+879	🕰️ Alte Mails
+880	🕰️ Alte Mails (wichtige bleiben)
+881	🗑️ Papierkorb geleert: %1 endgültig zurückgewonnen
+882	🗑️ Deinstallieren
+883	🗑️ Datei vom Handy gelöscht: Platz für die nächste
+884	🗑️ Meine „immer wegwerfen“-Absender
+885	🗑️ %1 in den Papierkorb
+886	🗑️ %1 zum Löschen öffnen
+887	🗑️ Seine Mails kommen jede Nacht in den Papierkorb
+888	🗑️ Diese ZIP vom Handy löschen (empfohlen)
+889	🗑️ Immer wegwerfen: %1   🛡️ Immer behalten: %2   🔔 Benachrichtigen: %3
+890	🗜️ Komprimieren (%1)
+891	😴 Seit 3 Monaten nicht geöffnet
+892	🚫 Abmelden
+894	🛡️ %1 (als Favorit markiert)
+895	🛡️ %1 im Ordner „Geschützt“ deines Postfachs abgelegt
+896	🛡️ Wichtiger Absender (Bank, Behörde, Gesundheit…): Seine Mails werden nie weggeworfen.
+897	🛡️ Die Löschtaste erscheint, wenn die Kopie vollständig ist und die Felder 1 und 2 angekreuzt sind.
+898	🛡️ Mails von deiner Bank, von Behörden oder zur Gesundheit kommen nie in den Papierkorb.
+899	🛡️ %1 wird nie freigeräumt, bevor die Kopie geprüft ist: Kreuze zuerst das erste Feld an.
+900	🛡️ Schützen (%1)
+901	🛡️ Meine wichtigen Mails ablegen
+902	🛡️ Seine Mails werden nie weggeworfen
+903	🤖 Automatische Kopie deiner Fotos
+904	🤖 Automatikmodus starten
+905	🤖 Ganz automatisch (am einfachsten)
+906	🧊 Cache leeren
+907	🧬 %1 Duplikate und 🎞️ %2 Serienfotos aussortiert\n
+908	🧬 Duplikate   🎞️ misslungene Serienbilder\n📱 Screenshots   🎬 große Videos\n💬 WhatsApp-Medien   👥 doppelte Kontakte\n✉️ Newsletter und große Mails
+909	🧭 Reinigung
+910	🧭 Postfach-Reinigung
+911	🧭 Geführte Reinigung
+912	🧹 Unnötige Dateien
+913	🧹 Die Mails von %1 wegwerfen
+914	🧹 Die sichere Reinigung
+915	🧹 Mails heute Nacht sortiert
+916	🧹 %1 in den Papierkorb
+917	🧹 Sichere Reinigung
+918	🧹 Sichere Reinigung: Newsletter, Benachrichtigungen, Duplikate
+919	🧹 Reinigen · %1
+920	🧹 Reinigen · %1 · %2

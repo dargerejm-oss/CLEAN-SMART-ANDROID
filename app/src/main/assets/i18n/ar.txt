@@ -1,0 +1,896 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\nتعذّر نسخ %1: أعد فتح هذا الملف نفسه.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\nستذهب %1 «للمراجعة» إلى سلة Clean Smart: يمكن استرجاعها لمدة 7 أيام.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nانتبه: الحذف يُزامَن مع حسابك (Google…)
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nالقرص أو الهاتف ممتلئ: حرّر مساحة (أو غيّر القرص في الخطوة 2) ثم أعد فتح هذا الملف. لن يُنسخ شيء مرتين.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nالملف تالف أو غير مكتمل: نزّله من جديد من رسالة Google وأعد فتحه. ما نُسخ يبقى محفوظًا.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nسيتم أولًا حفظ نسخة بصيغة ‎.vcf في مجلد النسخ الاحتياطي.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nأعد فتح ملف ZIP الذي يحتوي هذه الصور (أو الوضع التلقائي): ستُنسخ من جديد. لا تحذف شيئًا من %1 قبل ذلك.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nستُحفظ نسخة أولًا في مجلد النسخ الاحتياطي.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 في Google يتقاسم البريد وGoogle Photos مساحة 15 GB: تنظيف البريد يحرّر مساحة للصور أيضًا.
+ sur environ %1 Go	 من حوالي %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 مكررة أو متتابعة أو فاشلة لم تُنسخ احتياطيًا
+ · %1 à la corbeille	 · %1 إلى السلة
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · الملفات «للمراجعة» في سلة Clean Smart (7 أيام)
+ · va dans la corbeille Clean Smart	 · إلى سلة Clean Smart
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): مكررات زائدة، صور متتابعة زائدة، صور سوداء أو بيضاء، لقطات شاشة أقدم من شهر.\n\nستذهب إلى سلة المعرض (يمكن استرجاعها 30 يومًا).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	سيتم حذف %1 (%2) نهائيًا لتحرير المساحة فورًا.\n\nلا يمكن استرجاعها.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 محذوفة
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: نشرات إخبارية وإعلانات (%2 مرسلين)، إشعارات، رسائل مكررة.
+%1 Go · prévois %2	%1 GB · جهّز %2
+%1 analysées	تم تحليل %1
+%1 avec pièces jointes (dont %2 avec PDF)	%1 تحتوي مرفقات (%2 بها PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 ناجحة. احذف الأصول إلى السلة لتوفير %2.
+%1 ce mois-ci. 	هذا الشهر %1
+%1 copié(s) dans ton dossier de sauvegarde.	تم نسخ %1 إلى مجلد النسخ الاحتياطي
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 ملفات غير مفيدة: ملفات مؤقتة، صور مصغرة، مجلدات فارغة، بقايا تطبيقات.
+%1 de plus de %2 mois 	%1 أقدم من %2 أشهر
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	تم نقل %1 من مرسلي «احذف دائمًا» إلى السلة (يمكن استرجاعها 30 يومًا).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	ستذهب %1 رسائل مكررة إلى السلة. يُحتفظ بأول نسخة من كل رسالة.
+%1 et %2 copiées et vérifiées.	تم نسخ %1 و%2 والتحقق منها
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 و%2 في أمان. يمكنك حذفه وتنزيل الملف التالي.
+%1 fichier(s) sauvegardé(s)	تم نسخ %1 ملفات احتياطيًا
+%1 jetés	تم حذف %1
+%1 libres sur %2	%1 متاحة من %2
+%1 libérés sur le téléphone	تم تحرير %1 على الهاتف
+%1 mails dans la boîte · %2 analysés	%1 رسالة في صندوق الوارد · تم تحليل %2
+%1 min %2 s	%1 د %2 ث
+%1 newsletters · %2 gros mails	%1 نشرات · %2 رسائل كبيرة
+%1 newsletters, %2 gros mails (%3).	%1 نشرات، %2 رسائل كبيرة (%3)
+%1 photos trouvées	تم العثور على %1 صورة
+%1 photos · %2 vidéos analysées	تحليل %1 صورة · %2 فيديو
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 صورة · %2 فيديو · %3 مكررات ومتتابعات مستبعدة
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	سيُعدّ %1 نسخة من كل صورك. اتبع هذا المثال بدقة:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	سيتم حذف %1: غير مفيدة أو يُعاد إنشاؤها تلقائيًا.
+%1 seront supprimés pour de bon.	سيتم حذف %1 نهائيًا.
+%1 sur %2 choisis · %3	%1 محددة من %2 · %3
+%1 sur %2 fichiers faits	اكتمل %1 من %2 ملفات
+%1 sur %2 · %3	%1 من %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	ستذهب %1 إلى سلة المعرض (يمكن استرجاعها 30 يومًا).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 إلى سلة المعرض (يمكن استرجاعها 30 يومًا)
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: مكررات، متتابعات زائدة، صور سوداء أو بيضاء، لقطات شاشة أقدم من شهر. يُحتفظ بأفضل صورة.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	المجموع %1 · %2. المس تطبيقًا لإلغاء تثبيته أو مسح ذاكرته المؤقتة.
+%1 à jeter	احذف %1
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	راجع %1 واحدة تلو الأخرى. اسحب يسارًا للحذف، ويمينًا للاحتفاظ (مفضلة ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	تم نسخ %1، %2، %3 · استبعاد %4 و%5
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1ستذهب الرسائل الأقدم من %2 سنوات إلى السلة (ما عدا المهمة).
+(sans objet)	(بلا موضوع)
+. %1 en double ou en rafale à trier : touche ici.	. %1 مكررات أو متتابعات للفرز: المس هنا.
+1 bouton	زر واحد
+1 mois	شهر واحد
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. أوقفت النسخ الاحتياطي: تطبيق Google Photos › صورة الملف الشخصي أعلى اليمين › إعدادات Photos › النسخ الاحتياطي › إيقاف
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. على iPhone أوقفت «صور iCloud» (الإعدادات › اسمك › iCloud › الصور)
+12 mois	12 شهرًا
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. فتحت القرص على حاسوب ورأيت صوري مرتبة حسب السنة
+3 mois	3 أشهر
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. يُنصح: صنعت نسخة ثانية (قرص آخر أو حاسوب)
+4 étapes	4 خطوات
+6 mois	6 أشهر
+AFFICHAGE	المظهر
+AUTOMATIQUE	تلقائي
+AUTRE	أخرى
+Adresse mail	عنوان البريد
+Adresse, serveur et mot de passe sont obligatoires.	العنوان والخادم وكلمة المرور مطلوبة
+Alerte retirée	تم إلغاء التنبيه
+Alertes et rapport du mois	التنبيهات والتقرير الشهري
+Analyse de la boîte mail	تحليل صندوق البريد
+Analyse des 3 000 mails les plus récents de la boîte de réception.	تحليل آخر 3,000 رسالة في صندوق الوارد
+Analyse des mails (%1 / %2)	تحليل الرسائل (%1 / %2)
+Analyse du téléphone	تحليل الهاتف
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	تحليل صندوق البريد «%1»: النشرات، الرسائل الكبيرة، الرسائل القديمة. يُحتفظ بالمهمة دائمًا.
+Analyser ma boîte mail	حلّل صندوق بريدي
+Analyser mon téléphone	حلّل هاتفي
+Annuler	إلغاء
+Annuler, ne rien jeter	إلغاء، لا تحذف شيئًا
+Appeler	اتصال
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	تتحقق Apple من الطلب ثم ترسل رسالة، عادةً خلال 3 إلى 7 أيام. بعدها نزّل الملفات من privacy.apple.com (سجّل الدخول من الهاتف).
+Apple · Données et confidentialité	Apple · البيانات والخصوصية
+Appliquer « toujours jeter » maintenant	طبّق «احذف دائمًا» الآن
+Arrêt après le fichier en cours…	سيتوقف بعد الملف الحالي…
+Arrêter	إيقاف
+Arrêter le mode automatique ?	إيقاف الوضع التلقائي؟
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	تم الإيقاف. الملفات المنسوخة في أمان، والباقي يُنسخ في المرة القادمة دون تكرار.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	نصيحة: في الإعدادات › التطبيقات، المس تطبيقًا (Chrome، Facebook…) › التخزين › «مسح ذاكرة التخزين المؤقت».
+Aucun contact en double	لا توجد جهات اتصال مكررة
+Aucun dossier choisi	لم يُختر أي مجلد
+Aucun dossier de sauvegarde	لا يوجد مجلد نسخ احتياطي
+Aucun fichier inutile.	لا توجد ملفات غير مفيدة
+Aucune boîte mail connectée.	لا يوجد صندوق بريد متصل
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	لم يُعثر على ذاكرة USB أو قرص. صِلها (محول USB-C) ثم أعد فتح هذه الخطوة.
+Aucune vidéo n'a pu être réduite davantage.	لا يوجد فيديو يمكن تصغيره أكثر
+Autre	أخرى
+Autres fichiers d'installation (.apk)	ملفات تثبيت أخرى (‎.apk)
+Avant tout : analyser	أولًا: التحليل
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	بتفعيل «الوصول إلى بيانات الاستخدام» يرى Clean Smart الحجم الحقيقي لكل تطبيق وآخر مرة فتحته. لا يُرسل شيء إلى أي مكان.
+BOÎTE MAIL	صندوق البريد
+Banque	البنك
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	البنك، الإدارات، الصحة، الفواتير وكل الرسائل التي فيها PDF: تُنسخ احتياطيًا، وتُجمع ملفات PDF، مع أرشيف index.html للحاسوب.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	البنك، الإدارات، الصحة، الفواتير وكل الرسائل التي فيها PDF: تُنسخ احتياطيًا، وتُجمع ملفات PDF، مع أرشيف index.html للحاسوب. وفي صندوق البريد تُرتب في «محمية».
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	البنك، الضرائب، الصحة، المنزل، العائلة (جهات اتصالك): تُرتب جانبًا ولا تُحذف أبدًا.
+Batterie faible (%1 %)	البطارية منخفضة (%1 %)
+Bonjour	مرحبًا
+Boutique Mode	متجر أزياء
+Boîte mail en ordre !	صندوق البريد مرتب!
+Boîte mail remplie à %1 % (%2 / %3)	صندوق البريد ممتلئ بنسبة %1 % (%2 / %3)
+Boîte protégée	صندوق بريد محمي
+Boîte remplie à %1 % (%2 / %3). 	ممتلئ بنسبة %1 % (%2 / %3)
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	صِل الشاحن: قد يستغرق الملف الواحد من 10 إلى 30 دقيقة.\n\nإذا انطفأ الهاتف لا يضيع شيء: فقط أعد فتح الملف نفسه.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	صِل الشاحن أثناء العمل: الملف الكبير يستغرق من 10 إلى 30 دقيقة. ستبقى الشاشة مضاءة.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	صِل ذاكرة USB أو قرصًا بالهاتف، ثم اختر (أو أنشئ) مجلدًا عليه.
+Brancher la clé ou le disque	صِل ذاكرة USB أو قرصًا
+C'est fait : le prochain fichier sera entièrement recopié.	تم: الملف التالي سيُنسخ بالكامل من جديد.
+C'est noté	فهمت
+CONSEILLÉ	مُقترح
+CONTACT	جهة اتصال
+CONTACTS	جهات الاتصال
+Captures d'écran	لقطات الشاشة
+Carte SD, clé USB, Drive… choisis où tu veux	بطاقة SD، ذاكرة USB، Drive… كما تشاء.
+Carte SD, clé USB, Google Drive…	بطاقة SD، ذاكرة USB، Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	هذا الملف نُسخ وتم التحقق منه سابقًا. إعادته لن تنشئ مكررات، لكنها غير ضرورية.\n\nربما تقصد الملف التالي (%1).
+Ce mois-ci	هذا الشهر
+Cette année	هذه السنة
+Changer de compte	تغيير الحساب
+Changer de dossier	تغيير المجلد
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	كل يوم أحد تُنظف الملفات غير المفيدة الآمنة والرسائل المزعجة تلقائيًا. يخبرك إشعار بالمساحة المحررة وما إذا كانت هناك صور للفرز.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	كل رسالة مختارة تُحفظ في مجلد النسخ الاحتياطي:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	يُعاد إنشاء كل فيديو بدقة 720p، غالبًا أصغر بـ 3 إلى 5 مرات، ويُحفظ في Movies / Clean Smart.
+Choisir le dossier sur le disque	اختر مجلدًا على القرص
+Choisir un dossier	اختر مجلدًا
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	اختر أولًا مجلدًا على ذاكرة USB أو القرص (الخطوة 2).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	اختر أولًا مجلدًا على ذاكرة USB أو القرص (خطوة «القرص»).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	اختر أولًا مجلدًا: بطاقة SD أو ذاكرة USB أو Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	اختر أولًا مجلد نسخ احتياطي (الخيارات).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	اختر أولًا مجلد نسخ احتياطي (بطاقة SD، ذاكرة USB، Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	اختر مجلد نسخ احتياطي وانسخ احتياطيًا أولًا.
+Choisis d'abord un dossier de sauvegarde.	اختر مجلد نسخ احتياطي أولًا.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	اختر رسائلك: تُحفظ مع مرفقاتها، وملفات PDF في مجلد منفصل.
+Choisis une carte SD, une clé USB ou Google Drive	اختر بطاقة SD أو ذاكرة USB أو Google Drive
+Choix des plus belles photos…	اختيار أجمل الصور…
+Clean Smart : copie automatique	Clean Smart: نسخ تلقائي
+Clean Smart attend les fichiers dans Download…	Clean Smart ينتظر ملفًا في Download…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	يقرأ Clean Smart آخر 3,000 رسالة (لا يحذف شيئًا).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	يفحص Clean Smart كل صورك (لا يحذف شيئًا).
+Clean Smart trouve en un clic :	يجد Clean Smart بلمسة واحدة:
+Clé USB (démonstration)	ذاكرة USB (عرض)
+Clé USB ou disque dur, avec un adaptateur USB-C	ذاكرة USB أو قرص صلب، مع محول USB-C
+Colis et livraisons	الطرود والتوصيل
+Combien de place faut-il ?	كم من المساحة؟
+Comme le téléphone	مثل الهاتف
+Commencer	ابدأ
+Compresser	ضغط
+Compresser %1 ?	ضغط %1؟
+Compression des vidéos	ضغط الفيديوهات
+Compris	فهمت
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	اربط صندوق بريد (Gmail، Outlook، Yahoo، Orange، Free…): فرز النشرات والرسائل الكبيرة والقديمة. يُحتفظ بالمهمة دائمًا.
+Connecter	ربط
+Connecter ma boîte mail	اربط صندوق بريدي
+Connexion au serveur	الاتصال بالخادم
+Connexion impossible : 	تعذّر الاتصال:
+Connexion à la messagerie	الاتصال بخدمة البريد
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	يُنصح: صنعت نسخة ثانية (قرص آخر أو حاسوب)
+Contacts en double	جهات اتصال مكررة
+Continuer quand même	متابعة
+Copie automatique	نسخ تلقائي
+Copier les fichiers un par un	نسخ الملفات واحدًا تلو الآخر
+Copies identiques — l'original est gardé	نسخ متطابقة — يُحتفظ بالأصل
+Corbeille	السلة
+Corbeille : %1	السلة: %1
+Corbeille Clean Smart	سلة Clean Smart
+Corbeille de la messagerie	سلة البريد
+Correct, mais peut mieux faire	جيد، لكن يمكن تحسينه
+Créer une exportation	إنشاء تصدير
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	في Google Photos: اضغط مطولًا على صورة، اختر اليوم كله، ثم «حذف». سلة Google تحتفظ بكل شيء 60 يومًا.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	في Google Takeout اختر ملفات بحجم 2 GB: نعالجها واحدًا تلو الآخر، فلا يحتاج الهاتف مساحة كبيرة.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	في طلب Apple اختر ملفات بحجم 1 أو 2 GB: نعالجها واحدًا تلو الآخر، فلا يحتاج الهاتف مساحة كبيرة.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	في رسالة Google عُدّ أزرار «تنزيل»: هذا هو عدد الملفات.
+Demander la copie à %1	اطلب نسخة من %1
+Demander une copie de tes données	اطلب نسخة من بياناتك
+Demandée · attends le mail de %1	تم الطلب · بانتظار رسالة %1
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	منذ Android 11 لا يستطيع أي تطبيق تنظيف مسح ذاكرة التطبيقات الأخرى أو ملفات النظام. Android يفعل ذلك بنفسه: هذا الزر يفتح شاشته «تحرير المساحة».
+Depuis l'installation	منذ التثبيت
+Dernière vérification	آخر فحص
+Des applis téléchargées mais pas installées. À vérifier.	تطبيقات مُنزّلة لكن غير مثبتة، للمراجعة.
+Disque	القرص
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	القرص غير معروف: استخدم محول USB-C (OTG). ذاكرة USB بتنسيق exFAT تعمل في كل مكان (FAT32 يرفض الملفات فوق 4 GB).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	القرص ممتلئ: صِل قرصًا أكبر واختره في خطوة «القرص». نتابع من حيث توقفنا دون تكرار.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	مستندات في Download لم تُلمس منذ 6 أشهر، للمراجعة.
+Dossier Corbeille introuvable sur ce compte.	لم يُعثر على مجلد السلة في هذا الحساب
+Dossier Corbeille introuvable.	لم يُعثر على مجلد السلة
+Dossier Spam introuvable sur ce compte.	لم يُعثر على مجلد البريد المزعج في هذا الحساب
+Dossier de sauvegarde	مجلد النسخ الاحتياطي
+Dossier de sauvegarde introuvable.	لم يُعثر على مجلد النسخ الاحتياطي
+Dossiers cache	مجلدات الذاكرة المؤقتة
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	مجلدات تركتها تطبيقات لم تعد على الهاتف، للمراجعة.
+Dossiers vides	مجلدات فارغة
+Dossiers vides…	مجلدات فارغة…
+Doublons	مكررات
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	المكررات والمتتابعات الزائدة (يُحتفظ بالأفضل)، الصور السوداء أو البيضاء، لقطات الشاشة القديمة. المس صورة للاحتفاظ بها. كل شيء يذهب إلى سلة المعرض (30 يومًا).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	مكررات، متتابعات زائدة، صور سوداء أو بيضاء، لقطات شاشة قديمة
+Doublons, rafales, floues	مكررات، متتابعات، ضبابية
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	أزل العلامة عن الرسائل التي تريد الاحتفاظ بها. رسائل البنك والضرائب والصحة ومرسلي «احتفظ دائمًا» ليست في هذه القائمة. كل شيء يذهب إلى سلة البريد (يمكن استرجاعه).
+Démonstration…	عرض…
+Déplacement vers la corbeille…	النقل إلى السلة…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	معطل افتراضيًا. عند تفعيله تُنسخ الصور (وجهات الاتصال بصيغة ‎.vcf) إلى هذا المجلد قبل كل تنظيف، للاحتياط.
+Elles sont déjà toutes en favori 👍	كل الصور مفضلة بالفعل 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	في وضع العرض لا تتم معالجة أي ملف. اخرج من وضع العرض (الخيارات) للعمل الحقيقي.
+En pleine forme	بحالة ممتازة
+Envoyer %1	أرسل %1
+Envoyer le PDF souvenir	أرسل PDF الذكريات
+Envoyer le lien par e-mail · Exporter une fois	يرسل رابط تنزيل بالبريد · تصدير لمرة واحدة
+Erreur inattendue	خطأ غير متوقع
+Espace libéré	المساحة المستعادة
+Espace libéré depuis le début : %1. Une petite analyse ?	المساحة المستعادة منذ البداية: %1. تحليل سريع؟
+Espace à récupérer	المساحة التي ستُستعاد
+Et tes mails	ورسائلك
+Factures et papiers	الفواتير والمستندات
+Faire le ménage sûr ?	إجراء التنظيف الآمن؟
+Fait ✔	تم ✔
+Famille	العائلة
+Fermer	إغلاق
+Fichier %1	الملف %1
+Fichier %1 déjà fait	الملف %1 مكتمل
+Fichier illisible	ملف غير قابل للقراءة
+Fichiers d'installation déjà installés	ملفات تثبيت لتطبيقات مثبتة بالفعل.
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	ملفات عمل التطبيقات في تخزين الهاتف، يُعاد إنشاؤها عند الحاجة.
+Fichiers inutiles	ملفات غير مفيدة
+Fichiers mis de côté, vidée toute seule après 7 jours	ملفات موضوعة جانبًا، تُنظف تلقائيًا بعد 7 أيام.
+Fichiers temporaires	ملفات مؤقتة
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	ملفات مؤقتة، صور مصغرة، مجلدات فارغة، بقايا تطبيقات
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	ملفات مؤقتة، صور مصغرة، مجلدات فارغة، بقايا تطبيقات. الصور والموسيقى لا تُلمس أبدًا.
+Floue	ضبابية
+Floues, trop sombres ou trop claires — vérifie avant de cocher	ضبابية، داكنة جدًا أو فاتحة جدًا — راجعها قبل الاختيار
+GARDÉE	احتفظ
+Garder sur le téléphone les photos des derniers…	احتفظ بالصور الحديثة على الهاتف…
+Gardés	احتفظ
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	يحتاج Gmail إلى كلمة مرور تطبيق (16 حرفًا):\n1. فعّل التحقق بخطوتين في حساب Google\n2. افتح myaccount.google.com/apppasswords\n3. أنشئ كلمة مرور باسم «Clean Smart» والصقها هنا
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	ترسل Google رسالة عندما يكون جاهزًا: خلال ساعات أو أيام. يمكنك إغلاق التطبيق في الأثناء.
+Gros	كبير
+Gros mails (+ 5 Mo)	رسائل كبيرة (5 MB فأكثر)
+Grosses vidéos	فيديوهات كبيرة
+Groupe %1 · %2 photos	المجموعة %1 · %2 صور
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	رُفض تسجيل الدخول. يحتاج Gmail وYahoo وiCloud إلى كلمة مرور تطبيق، لا كلمة مرورك العادية.
+Il a besoin d'un bon ménage	يحتاج تنظيفًا كبيرًا
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	بقي %1 فقط. افتح Clean Smart لتحرير المساحة بلمسة.
+Ils ne contiennent rien.	لا يوجد شيء بالداخل.
+Ils prennent encore de la place pendant 30 jours	ما زالت تشغل مساحة لمدة 30 يومًا.
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	تُرتب في مجلد «محمية» في صندوق البريد. يتكرر كل ليلة.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	تعذّر التراجع: ربما حُذفت الملفات نهائيًا.
+Impossible de créer le dossier %1	تعذّر إنشاء المجلد %1
+Impossible de protéger ces photos	تعذّرت حماية هذه الصور
+Impossible de vider la corbeille	تعذّر إفراغ السلة
+Impôts	الضرائب
+Impôts - Administration	الضرائب - الإدارات
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	أدخل خادم IMAP لخدمة بريدك (المنفذ 993، SSL).
+J'ai demandé la copie	طلبت النسخة
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	فتحت القرص على حاسوب ورأيت صوري مرتبة حسب السنة
+J'ai traité tous les fichiers	عالجت كل الملفات
+Jamais jetés, rangés dans « Protégés »	لا تُحذف أبدًا، تُرتب في «محمية».
+Je libère la boîte	أنظف صندوق البريد
+Je libère la place	أحرر المساحة
+Je mets l'important à l'abri	أضع المهم في أمان
+Je mets à l'abri les bonnes	أضع الصور الجيدة في أمان
+Je trie par expéditeur	أفرز المرسلين
+Je vérifie le douteux	أراجع الصور المشكوك فيها
+Jeter %1 ?	حذف %1؟
+Jeter ces mails ?	حذف هذه الرسائل؟
+Jeter les copies ?	حذف النسخ؟
+Jeter les gros mails ?	حذف الرسائل الكبيرة؟
+Jeter les newsletters ?	حذف النشرات؟
+Jeter les originaux ?	حذف الأصول؟
+Jeter les vieux mails ?	حذف الرسائل القديمة؟
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	سجلات، نسخ مؤقتة، تنزيلات معلقة. لم تعد مفيدة.
+L'adresse et le mot de passe seront effacés du téléphone.	سيُحذف العنوان وكلمة المرور من الهاتف.
+L'important est à l'abri, le reste est parti	المهم في أمان، والباقي مرتب.
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	لا تُلمس الأصول: سيُسألك بعدها إن كنت تريد نقلها إلى السلة.\n\nقد يستغرق ذلك بضع دقائق.
+LA NUIT	ليلًا
+LIBÉRER LA PLACE	حرّر المساحة
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	تم حذف النسخة على القرص: سينسخ Clean Smart كل شيء من البداية.
+La corbeille est vide.	السلة فارغة.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	تتحرر مساحة البريد عندما تُفرغ سلة البريد (عادةً خلال 30 يومًا).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	فشل النسخ الاحتياطي. افتح Clean Smart للتحقق من المجلد.
+Langue	اللغة
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	التنظيف الموجّه يفعل كل شيء بالترتيب الصحيح. الزر الأخضر هو دائمًا الخطوة التالية.
+Le bilan, et comment libérer ton compte %1	الحصيلة، وكيفية تنظيف حساب %1
+Le contact d'origine est gardé.	يُحتفظ بجهة الاتصال الأصلية.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	القرص (أو الهاتف) ممتلئ: توقف النسخ بشكل سليم.\n\nصِل قرصًا أكبر، اختره في الخطوة 2، ثم أعد تشغيل الوضع التلقائي: سيتابع دون تكرار.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	المساحة على القرص غير كافية: بقي %1، وهذا الملف يحتاج حوالي %2.\n\n• حرّر مساحة على القرص، أو\n• صِل قرصًا أكبر واختره في خطوة «القرص» (المتابعة من هنا).\n\nلم يُلمس شيء.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	تعذّر الوصول إلى القرص.\n\n• تحقق من توصيله جيدًا (محول USB-C).\n• في خطوة «القرص» اختر المجلد مرة أخرى.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	تعذّر الوصول إلى مجلد النسخ الاحتياطي. افتح Clean Smart > الخيارات لاختياره.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	مجلد النسخ الاحتياطي لم يعد متاحًا. اختره مرة أخرى.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	لم يُعثر على المجلد «%1» على القرص. تحقق من توصيل القرص (الخطوة 2).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	سيُكمل الملف الحالي أولًا. الملفات المنسوخة في أمان، والباقي في المرة القادمة دون تكرار.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	روابط رسالة Google تنتهي بعد حوالي أسبوع: إن حدث ذلك اطلب تصديرًا جديدًا (لا يضيع شيء، المتابعة دون تكرار).
+Le mois dernier	الشهر الماضي
+Le ménage sûr	التنظيف الآمن
+Le refaire quand même	أعد على أي حال
+Le téléphone	الهاتف
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	الهاتف شبه ممتلئ (يلزم 300 MB متاحة على الأقل للعمل).\n\n• أفرغ سلة المعرض\n• احذف ملفات ZIP المعالجة (Download)\n• شغّل التنظيف الموجّه في Clean Smart\n\nلم يُلمس شيء.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	انطفأ الهاتف أو انفصل القرص؟ فقط أعد فتح ملف ZIP نفسه: يتابع Clean Smart دون فقدان ودون تكرار.
+Lecture de la galerie	قراءة المعرض
+Lecture des dates des photos…	قراءة تواريخ الصور…
+Lecture des vidéos	قراءة الفيديوهات
+Lecture impossible : %1	غير قابل للقراءة: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	ملفات ‎.apk لتطبيقات مثبتة بالفعل: لم تعد مفيدة.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	آخر 200 رسالة في سلة البريد. اختر ما تريد إعادته إلى صندوق الوارد.
+Les 30 photos et vidéos qui prennent le plus de place	الصور والفيديوهات الـ 30 الأكثر استهلاكًا للمساحة
+Les autres cases : inutile	البطاقات الأخرى: غير مفيدة
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	ملفات Apple متاحة للتنزيل حوالي أسبوعين على privacy.apple.com: بعدها قدّم طلبًا جديدًا (لا يضيع شيء، المتابعة دون تكرار).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	الملفات المنقولة إلى السلة يمكن استرجاعها من المعرض.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	الرسائل الأقدم من %1 سنوات تذهب إلى سلة البريد. يُحتفظ بالمهمة.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	الرسائل الأقدم من سنتين تذهب إلى سلة البريد.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	الرسائل الأكبر من 5 MB تذهب إلى سلة البريد.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	النشرات والإعلانات والإشعارات والرسائل المكررة تذهب إلى سلة البريد (كل صندوق الوارد).\n\nالرسائل المهمة لا تُلمس أبدًا.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	الصور أولًا (فرز، الاحتفاظ بالأفضل، نسخ احتياطي، تحرير)، ثم الملفات غير المفيدة في الهاتف، ثم الرسائل.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	الصور الأقدم من %1 أشهر والمنسوخة احتياطيًا ستغادر الهاتف (السلة 30 يومًا).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	الصور المفضلة (أو المحمية بزر 🛡️) لا تُقترح للحذف أبدًا.
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	صور ضبابية قليلًا، WhatsApp، لقطات شاشة حديثة: أنت تقرر.
+Les photos, vidéos et musiques ne sont jamais touchées.	الصور والفيديوهات والموسيقى لا تُلمس أبدًا.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	لا تُقترح الصور القديمة للحذف إلا إذا كانت في النسخة الاحتياطية.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	أجمل صور الشهر أو السنة، لإرسالها إلى أحبائك.
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	أكبر التطبيقات وتلك التي لم تعد تفتحها: إلغاء التثبيت بلمسة.
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	الرسائل المزعجة تذهب إلى سلة البريد. أزل العلامة إذا لم تكن الرسالة مزعجة.
+Libérer	تحرير
+Libérer %1 ?	تحرير %1؟
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	تنظيف %1 اختياري. %2 لا يسمح لأي تطبيق بحذف صورك: أنت من يحذف عندما تكون متأكدًا.
+Libérer la boîte	تنظيف صندوق البريد
+Libérer la boîte mail	تنظيف صندوق البريد
+Libérer la boîte mail ?	تنظيف صندوق البريد؟
+Libérer la place	تحرير المساحة
+Libérer la place, PDF souvenir…	تحرير المساحة، PDF الذكريات…
+Liste des photos sur le disque…	جمع قائمة الصور على القرص…
+MAINTENANT	الآن
+Mail (facultatif, pour tes mails)	البريد (اختياري، لرسائلك)
+Mails	الرسائل
+Mails Gmail : %1	رسائل Gmail: %1
+Mails avec pièces jointes	رسائل بها مرفقات
+Mails de plus de 2 ans	رسائل أقدم من سنتين
+Mails en double	رسائل مكررة
+Mails en double…	رسائل مكررة…
+Maison	المنزل
+Me prévenir	نبّهني
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	شكرًا لتجربة Clean Smart! ثبّت النسخة الكاملة لمواصلة تنظيف هاتفك.
+Mes applis	تطبيقاتي
+Mes plus gros fichiers	أكبر ملفاتي
+Mes règles	قواعدي
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	انقل إلى السلة الصور الأقدم من %1 أشهر المنسوخة احتياطيًا
+Mettre à l'abri	ضع في أمان
+Mettre à l'abri l'important	وضع المهم في أمان
+Miniatures	صور مصغرة
+Mise à jour	تحديث
+Mise à la corbeille…	النقل إلى السلة…
+Mode d'emploi	دليل الاستخدام
+Mode d'emploi introuvable.	لم يُعثر على دليل الاستخدام
+Mode démonstration terminé	تم الخروج من وضع العرض
+Modifier ▼	تعديل ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	يعرض التطبيق بصور ورسائل وجهات اتصال وهمية. لا يُلمس شيء على الهاتف: مثالي لعرض Clean Smart.
+Mot de passe (vide = garder l'actuel)	كلمة المرور (فارغة = الإبقاء على الحالية)
+Mot de passe d'application	كلمة مرور التطبيق
+Médias WhatsApp	وسائط WhatsApp
+Ménage complet	تنظيف شامل
+Ménage guidé	تنظيف موجّه
+Ménage guidé des mails	تنظيف موجّه للبريد
+Ménage sûr de la boîte mail	تنظيف آمن لصندوق البريد
+Ménage terminé !	انتهى التنظيف!
+NOUVEAU	جديد
+Nettoyage de la boîte mail	تنظيف صندوق البريد
+Nettoyage des fichiers inutiles	تنظيف الملفات غير المفيدة
+Nettoyer	تنظيف
+Nettoyer %1 ?	تنظيف %1؟
+Nettoyer le téléphone	تنظيف الهاتف
+Nettoyer les fichiers inutiles ?	تنظيف الملفات غير المفيدة؟
+Newsletters et notifications…	النشرات والإشعارات…
+Newsletters et pubs	النشرات والإعلانات
+Newsletters, pubs, notifications et mails en double.	النشرات والإعلانات والإشعارات والرسائل المكررة
+Nombre de fichiers dans le mail	عدد الملفات في الرسالة
+Normale	عادي
+Nouvelle version %1 disponible	إصدار جديد %1 متاح
+Oublier	حذف الحساب
+Oublier ce compte ?	حذف هذا الحساب؟
+Oui, c'est fini	نعم، تم
+Ouverte aujourd'hui	فُتح اليوم
+Ouverte il y a %1	فُتح قبل %1
+Ouverture de %1…	فتح %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	افتح Clean Smart لترى ما يجب فعله. لا يضيع شيء.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	افتح صفحة Google الخاصة بك وانظر كم يشغل Google Photos. أدخل الرقم هنا (بالـ GB).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	افتح «فيديوهات كبيرة»، اختر، ثم «ضغط».
+Ouvrir	فتح
+Ouvrir Google Photos	افتح Google Photos
+Ouvrir Google Takeout	افتح Google Takeout
+Ouvrir iCloud Photos	افتح صور iCloud
+Ouvrir la page du mot de passe d'application	افتح صفحة كلمات مرور التطبيقات
+Ouvrir privacy.apple.com	افتح privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	افتح «تحرير المساحة» في Android
+PDF souvenir	PDF الذكريات
+PHOTOS ET VIDÉOS	الصور والفيديوهات
+PROTECTION	الحماية
+Pas de photos pour cette période.	لا توجد صور في هذه الفترة
+Pas ouverte depuis plus d'un an	لم يُفتح منذ أكثر من سنة
+Passer	تخطي
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	نسخ صغيرة من الصور للعرض، يُعاد إنشاؤها تلقائيًا.
+Photos	الصور
+Photos : %1 · vidéos : %2 · doublons écartés : %3	صور: %1 · فيديو: %2 · مكررات مستبعدة: %3
+Photos du week-end	صور عطلة نهاية الأسبوع
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	مكررات، متتابعات، صور فاشلة، فيديوهات ثقيلة، رسائل غير مفيدة… كلها تستهلك المساحة.
+Photos et vidéos reçues ou envoyées	صور وفيديوهات مستلمة أو مرسلة.
+Photos floues ou ratées	صور ضبابية أو فاشلة
+Photos iCloud	صور iCloud
+Photos similaires	صور متشابهة
+Photos, téléphone et mails, étape par étape	الصور، الهاتف والرسائل، خطوة بخطوة.
+Place prise : %1	المساحة المستخدمة: %1
+Plus d'outils	أدوات إضافية
+Plus de 100 Mo chacune	كل ملف أكبر من 100 MB
+Pour gagner des points : %1.	لرفع النتيجة: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	للحصول على النسخة الكاملة من Clean Smart أو لطرح سؤال، راسلني:
+Pour obtenir la version complète, écris-moi :	للحصول على النسخة الكاملة، راسلني:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	للعثور على الملفات غير المفيدة يجب أن يرى Clean Smart تخزين الهاتف: اسمح بـ «الوصول إلى جميع الملفات». لا يُرسل شيء إلى أي مكان.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	لحساب آخر أو قرص آخر. الملفات المنسوخة على القرص لا تُلمس.
+Protéger mes favoris	احمِ صوري المفضلة
+Prudente	حذر
+Prudente : moins de photos proposées. Stricte : davantage.	حذر: تُقترح صور أقل. صارم: أكثر.
+Préparation	التحضير
+Préparation…	التحضير…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	نبّهني عندما يكون الهاتف شبه ممتلئ (أقل من 1 GB)، وملخص صغير في الأول من كل شهر.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	جهّز %1 على الأقل على ذاكرة USB أو القرص (مع هامش 10 %).
+QUI T'ÉCRIT LE PLUS	من يراسلك أكثر
+Quand le mail de %1 est arrivé	عندما تصل رسالة من %1
+Quitter	خروج
+Quitter Google Photos	مغادرة Google Photos
+Quitter iCloud Photos	مغادرة صور iCloud
+RECHERCHE DES PHOTOS RATÉES	البحث عن الصور الفاشلة
+Rafales : on garde la meilleure…	متتابعات: الاحتفاظ بالأفضل…
+Rafales — la plus nette est gardée	متتابعات — يُحتفظ بالأوضح
+Rangement : %1	الترتيب: %1
+Recherche des doublons	البحث عن المكررات
+Recherche des fichiers inutiles…	البحث عن الملفات غير المفيدة…
+Recherche des mails	البحث عن الرسائل
+Recherche des mails avec PDF	البحث عن الرسائل التي فيها PDF
+Recherche des mails importants (%1 / %2)	البحث عن الرسائل المهمة (%1 / %2)
+Recherche des photos floues	البحث عن الصور الضبابية
+Recherche des photos ratées	البحث عن الصور الفاشلة
+Recherche des photos similaires	البحث عن الصور المتشابهة
+Recherche des pièces jointes (%1 / %2)	البحث عن المرفقات (%1 / %2)
+Rechercher une mise à jour	البحث عن تحديث
+Recommencer	ابدأ من جديد
+Recommencer avec un autre compte	ابدأ من جديد بحساب آخر
+Recommencer depuis le début ?	البدء من الصفر؟
+Regarder la taille de %1	عرض حجم %1
+Relance l'analyse après un changement.	أعد التحليل بعد تغيير الإعداد.
+Remettre des mails	استرجاع الرسائل
+Remettre le compteur à zéro	تصفير العداد
+Remettre les fichiers	إعادة الملفات إلى مكانها
+Restes d'applis désinstallées	بقايا تطبيقات محذوفة
+Restes d'applis désinstallées…	بقايا تطبيقات محذوفة…
+Reçus plusieurs fois à quelques secondes d'écart : %1	استُلمت عدة مرات بفارق ثوانٍ: %1.
+Rien	لا شيء
+Rien n'a été supprimé.	لم يُحذف شيء
+Rien n'est perdu	لا يضيع شيء.
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	لا يُحذف شيء دون موافقتك: كل شيء يمر بالسلة.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	لا شيء لتحريره: لا توجد صور قديمة في النسخة الاحتياطية بعد. شغّل أولًا «نسخ كل صوري احتياطيًا».
+RÉSULTAT	النتيجة
+Règle retirée	تم إلغاء القاعدة
+Récupère des mails mis à la corbeille de ta messagerie	استرجع رسائل نُقلت إلى سلة البريد.
+Récupérer mes photos iCloud (ancien iPhone)	استعادة صوري من iCloud (iPhone قديم)
+Réduire mes vidéos	تصغير فيديوهاتي
+Réglages avancés	إعدادات متقدمة
+Réglages de stockage Android	إعدادات تخزين Android
+SAUVEGARDE	النسخ الاحتياطي
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	دون الوصول إلى الصور لا يستطيع Clean Smart تحليل أي شيء.
+Santé	الصحة
+Sauvegarde %1 / %2	النسخ الاحتياطي %1 / %2
+Sauvegarde automatique chaque nuit	نسخ احتياطي تلقائي كل ليلة
+Sauvegarde avant suppression	نسخ احتياطي قبل الحذف
+Sauvegarde de mes bonnes photos	نسخ صوري الجيدة احتياطيًا
+Sauvegarde des mails	نسخ الرسائل احتياطيًا
+Sauvegarde des mails importants	نسخ الرسائل المهمة احتياطيًا
+Sauvegarde du mail %1 / %2	حفظ الرسالة %1 / %2
+Sauvegarder avant de supprimer	نسخ احتياطي قبل الحذف
+Sauvegarder des mails	حفظ الرسائل
+Sauvegarder mes bonnes photos	نسخ صوري الجيدة احتياطيًا
+Se connecter avec ton identifiant Apple	سجّل الدخول بـ Apple ID.
+Serveur IMAP	خادم IMAP
+Serveur introuvable : vérifie internet et le nom du serveur.	لم يُعثر على الخادم: تحقق من الإنترنت واسم الخادم.
+Ses mails partent à la corbeille chaque nuit, tout seuls	رسائل هذا المرسل تذهب إلى السلة تلقائيًا كل ليلة.
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	الصور الجيدة فقط: لا مكررات ولا متتابعات زائدة ولا صور فاشلة. المفضلة موجودة أيضًا في «Mes meilleures» (أفضل صوري).
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	نسخ احتياطي للصور الجيدة فقط، إلى ذاكرة USB أو قرص أو Google Drive. حتى Google Photos يمكن استرجاعه.
+Seules les nouvelles photos sont copiées à chaque fois.	في كل مرة تُنسخ الصور الجديدة فقط.
+Seuls les 20 premiers fichiers sont envoyés.	تُرسل أول 20 ملفًا فقط.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	إذا رُفض تسجيل الدخول، أنشئ كلمة مرور تطبيق في أمان حساب Microsoft (يلزم التحقق بخطوتين).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	وإلا سيعيد iPhone إرسال الصور إلى iCloud، وقد يؤدي الحذف في iCloud إلى حذفها من iPhone أيضًا.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	وإلا سيعيد الهاتف إرسال الصور إلى Google، وقد يؤدي الحذف في Google إلى حذفها من هذا الهاتف أيضًا.
+Soldes d'hiver	تخفيضات الشتاء
+Souvent inutiles après coup	غالبًا لا فائدة منها لاحقًا.
+Stockage du téléphone	تخزين الهاتف
+Stricte	صارم
+Suivant	التالي
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	احذف هذا الملف بنفسك من Download لتحرير المساحة.
+Supprimer	حذف
+Supprimer %1 ?	حذف %1؟
+Supprimer ce fichier du téléphone ?	حذف هذا الملف من الهاتف؟
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	حذف كل ملف من الهاتف بعد نسخه والتحقق منه (يُنصح: يحافظ على المساحة).
+Supprimer les doublons	حذف المكررات
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	في Gmail تبقى الرسائل في صندوق الوارد وتحصل على التصنيف «محمية». يتكرر كل ليلة.
+Sur Google Takeout, en 1 minute	على Google Takeout، في دقيقة
+Sur account.apple.com → Mots de passe pour applications → en créer un.	على account.apple.com ← كلمات المرور الخاصة بالتطبيقات ← أنشئ واحدة.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	على iPhone: الإعدادات › اسمك › iCloud: تظهر المساحة التي تشغلها «الصور». أو على icloud.com. أدخل الرقم هنا (بالـ GB).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	على iPhone أو icloud.com/photos: اختر الصور ثم «حذف». ألبوم «المحذوفة مؤخرًا» يحتفظ بها 30 يومًا.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	في الصفحة التي تُفتح: التخزين › «مسح ذاكرة التخزين المؤقت». Android يفرض ذلك، ولا يستطيع Clean Smart فعله نيابة عنك.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	على الهاتف تكفي 2 إلى 3 GB متاحة: ملف واحد في كل مرة. المتاح الآن: %1.
+Sur privacy.apple.com, en 2 minutes	على privacy.apple.com، في دقيقتين
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	على privacy.apple.com تحمل الملفات اسم «iCloud Photos Part 1 of 12»: الرقم الأخير (هنا 12) هو عدد الملفات. Clean Smart يقرؤه بنفسه أيضًا.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	أمان الحساب ← أنشئ كلمة مرور تطبيق، ثم الصقها هنا.
+Sécurité, photos ratées, démonstration…	الأمان، الصور الفاشلة، العرض…
+Sévérité	الصرامة
+TERMINÉ	انتهى
+Ta messagerie	خدمة بريدك
+Ta période d'essai de 30 jours est terminée.	انتهت التجربة لمدة 30 يومًا
+Taille de %1 (Go)	حجم %1 (GB)
+Taille du texte	حجم النص
+Taille maximale des fichiers : 1 Go ou 2 Go	الحجم الأقصى للملف: 1 GB أو 2 GB
+Temps passé	الوقت المنقضي
+Temps restant	الوقت المتبقي
+Terminer la demande	أكمل الطلب
+Terminé	انتهى
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	صور iPhone الخاصة بك على ذاكرة USB أو قرص، مرتبة حسب السنة، دون مكررات.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	صورك في الشهرين الأخيرين ليست على القرص بعد. اطلب نسخة جديدة في Google Takeout، وسيضيف الوضع التلقائي الجديدة فقط دون تكرار.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	صورك في الشهرين الأخيرين ليست على القرص بعد. اطلب نسخة جديدة من Apple: سيضيف Clean Smart الجديدة فقط دون تكرار.
+Tes photos à l'abri	صورك في أمان.
+Tes réglages et ta boîte mail seront conservés.	تبقى إعداداتك وصندوق بريدك.
+Ton téléphone est plein ?	هاتفك ممتلئ؟
+Ton téléphone est propre et tes photos sont à l'abri	هاتفك نظيف وصورك في أمان.
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	هاتفك وصندوق بريدك نظيفان، وصورك في أمان.
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	المس هنا للتنزيل، ثم افتح الملف للتثبيت
+Touche ici pour la version complète ou une question	المس هنا للنسخة الكاملة أو لطرح سؤال
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	فقط المس روابط «تنزيل» في رسالة Google. ينسخ Clean Smart كل ملف إلى القرص فور وصوله إلى Download، حتى أثناء تنزيل الملفات الأخرى.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	المس مرسلًا: احذف دائمًا، احتفظ دائمًا، نبّهني، إلغاء الاشتراك.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	المس مرسلًا في «من يراسلك أكثر» للاختيار.
+Touche une image pour la cocher · appui long pour la voir en grand	المس صورة للاختيار · اضغط مطولًا للتكبير
+Toucher pour analyser	المس للتحليل
+Toucher pour voir	المس للعرض
+Toujours garder	احتفظ دائمًا
+Toujours jeter	احذف دائمًا
+Tous les fichiers sont traités ?	هل عولجت كل الملفات؟
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	كل رسائل %1 (%2 على الأقل) تذهب إلى سلة البريد.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	كل رسائل %1 مرسلي النشرات تذهب إلى سلة البريد (كل صندوق الوارد، لا المحللة فقط).\n\nيمكن استرجاعها من السلة.
+Tout cocher	اختر الكل
+Tout décocher	ألغِ الكل
+Tout désélectionner	ألغِ تحديد الكل
+Tout mettre à la corbeille	انقل الكل إلى السلة
+Tout nettoyer	تنظيف الكل
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	كل شيء يمر بالسلة: يمكن استرجاعه 30 يومًا، و«أخطأت» يتراجع بلمسة.
+Tout recommencer	كل شيء من البداية
+Tout recommencer ?	البدء بكل شيء من الصفر؟
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	كل المحتوى نُسخ وتم التحقق منه على القرص. حذفه يحرر مساحة للملف التالي.\n\nصورك تبقى أيضًا في Google Photos.
+Tout va bien, continue comme ça !	كل شيء على ما يرام، استمر هكذا!
+Tout était déjà sauvegardé 👍	كل شيء منسوخ احتياطيًا بالفعل 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	كل صورك على ذاكرة USB أو قرص، مرتبة حسب السنة، دون مكررات.
+Tri avant la sauvegarde	افرز قبل النسخ الاحتياطي
+Tri des expéditeurs	فرز المرسلين
+Tri rapide	فرز سريع
+Tri terminé !	انتهى الفرز!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	افرز أولًا، احتفظ بالأفضل، انسخ الصور الجيدة فقط، حرّر المساحة، ثم نظّف الرسائل.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	افرز أولًا، احتفظ بالأفضل، انسخ الصور الجيدة فقط، ثم حرّر المساحة.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	افرز أولًا، ضع المهم في أمان، ثم نظّف صندوق البريد. رسائل البنك أو الإدارات أو الصحة لا تُحذف أبدًا.
+Trier en glissant	فرز بالسحب
+Trier les expéditeurs	فرز المرسلين
+Trier, garder, sauvegarder, libérer	افرز، احتفظ، انسخ، حرّر
+Trier, mettre l'important à l'abri, vider la boîte	افرز، ضع المهم في أمان، نظّف صندوق البريد
+Trier, protéger	افرز، احمِ
+Trop claire	فاتحة جدًا
+Trop petite	صغيرة جدًا
+Trop sombre	داكنة جدًا
+Très gros	كبيرة جدًا
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	حذفت النسخة على القرص ولم يعد يُنسخ شيء؟ المس «كل شيء من البداية (حذفت النسخة)» أسفل الشاشة، ثم أعد فتح ملفات ZIP.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	كان لديك iPhone؟ صور iCloud الخاصة بك على ذاكرة USB أو قرص.
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	يمكنك مغادرة التطبيق للمس الروابط: يستمر النسخ (إشعار «نسخ تلقائي»).
+Type : .zip   ·   Taille : 2 Go	النوع: ‎.zip   ·   الحجم: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	نزّل ملف ZIP واحدًا في كل مرة، عبر Wi-Fi. عالجه، احذفه، ثم نزّل التالي.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	فقط نزّل الملفات على privacy.apple.com. ينسخ Clean Smart كل ملف إلى القرص فور وصوله إلى Download.
+Téléphone	الهاتف
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	الهاتف ممتلئ: أفرغ سلة المعرض، احذف ملفات ZIP المعالجة، شغّل التنظيف الموجّه. يلزم 300 MB متاحة على الأقل.
+Un bouton, et c'est trié	زر واحد، كل شيء مرتب
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	بطاقة لكل مرسل: اسحب يسارًا لحذف كل رسائله، ويمينًا للاحتفاظ بها.
+Une notification quand il t'écrit	تنبيه عندما يراسلك
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	صورة صورة: اسحب يسارًا للحذف، ويمينًا للاحتفاظ.
+Une question, un souci, la version complète ? Écris-moi :	سؤال، مشكلة، أو تريد النسخة الكاملة؟ راسلني:
+Utilise ton adresse et ton mot de passe Free.	استخدم عنوان Free وكلمة مروره.
+Utilise ton adresse et ton mot de passe La Poste.	استخدم عنوان La Poste وكلمة مروره.
+Utilise ton adresse et ton mot de passe Orange.	استخدم عنوان Orange وكلمة مروره.
+Utilise ton adresse et ton mot de passe SFR.	استخدم عنوان SFR وكلمة مروره.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	حوالي الساعة 2 ليلًا تُنسخ الصور الجديدة إلى مجلد النسخ الاحتياطي. يخبرك إشعار إذا فشل ذلك.
+Version complète	النسخة الكاملة
+Version installée : %1	الإصدار المثبت: %1
+Vider	إفراغ
+Vider la corbeille ?	إفراغ السلة؟
+Vider la corbeille Clean Smart	إفراغ سلة Clean Smart
+Vider la corbeille Clean Smart ?	إفراغ سلة Clean Smart؟
+Vider la corbeille maintenant	أفرغ السلة الآن
+Vider maintenant	أفرغ الآن
+Vieux mails vers la corbeille…	الرسائل القديمة إلى السلة…
+Vieux téléchargements (plus de 6 mois)	تنزيلات قديمة (أكثر من 6 أشهر)
+Voir la liste et jeter	اعرض القائمة واحذف
+Voir la liste et libérer	اعرض القائمة وحرّر
+Voir le courrier indésirable puis le mettre à la corbeille	اعرض الرسائل المزعجة، ثم انقلها إلى السلة.
+Voir les conseils	اعرض الدليل
+Voir ma place Google	عرض مساحتي في Google
+Voir ma place iCloud	عرض مساحتي في iCloud
+Votre facture	فاتورتك
+Voyages et réservations	السفر والحجوزات
+Vérification de la sauvegarde	التحقق من النسخة الاحتياطية
+Vérification du disque	التحقق من القرص
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	تحقق في رسالة Google من أن كل ملف (001، 002، 003…) قد عولج.
+Vérifier, puis libérer %1 (si tu veux)	تحقق، ثم نظّف %1 (إن أردت)
+Yeux fermés	عيون مغمضة
+appli	تطبيق
+applis	تطبيقات
+calcul…	جارٍ الحساب…
+compression impossible	تعذّر الضغط
+contact en double	جهة اتصال مكررة
+contacts en double	جهات اتصال مكررة
+copie	نسخة
+copies	نسخ
+de ta photothèque est à l'abri	من مكتبة صورك في أمان
+derniers fichiers	ملف حديث
+doublon	مكرر
+doublons	مكررات
+erreur	خطأ
+erreurs	أخطاء
+expéditeur	مرسل
+expéditeurs	مرسلون
+fais le ménage de ta boîte mail	نظّف صندوق بريدك
+fichier	ملف
+fichier copié	ملف منسوخ
+fichier copié et vérifié	ملف منسوخ وتم التحقق منه
+fichier n'a	ملفات
+fichiers	ملفات
+fichiers copiés	ملفات منسوخة
+fichiers copiés et vérifiés	ملفات منسوخة وتم التحقق منها
+fichiers n'ont	ملفات
+iCloud Photos	صور iCloud
+jour	يوم
+jour restant	يوم متبقٍ
+jours	أيام
+jours restants	أيام متبقية
+le plus simple	الأبسط
+libres · %1 % utilisé	متاح · مستخدم %1 %
+libère de la place avec le Ménage complet	حرّر المساحة بتنظيف شامل
+libérés	مُستعادة
+mail	رسالة
+mail remis	رسالة مسترجعة
+mails	رسائل
+mails remis	رسائل مسترجعة
+nettoie les fichiers inutiles du téléphone	تنظيف الملفات غير المفيدة في الهاتف
+nouveau fichier	ملف جديد
+nouveaux fichiers	ملفات جديدة
+pas à pas	خطوة بخطوة
+photo	صورة
+photo gardée	صورة محتفظ بها
+photo ou vidéo	صورة أو فيديو
+photo ou vidéo prise	صورة أو فيديو ملتقط
+photo protégée	صورة محمية
+photos	صور
+photos gardées	صور محتفظ بها
+photos ou vidéos	صور أو فيديوهات
+photos ou vidéos prises	صور أو فيديوهات ملتقطة
+photos protégées	صور محمية
+puis « Étape suivante » :	ثم «الخطوة التالية»:
+rafale	سلسلة متتابعة
+rafales	سلاسل متتابعة
+sauvegarde tes photos sur une clé ou une carte SD	نسخ الصور احتياطيًا إلى ذاكرة USB أو بطاقة SD
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	موجودة بأمان في النسخة الاحتياطية (نفس الاسم، نفس الحجم).\n\nستذهب إلى سلة المعرض (يمكن استرجاعها 30 يومًا). الصور الحديثة تبقى على الهاتف.
+sur %1 contacts	من %1 جهات اتصال
+trie tes photos (doublons, rafales, floues)	افرز صورك (مكررات، متتابعات، ضبابية)
+téléchargement	تنزيل
+téléchargements	تنزيلات
+utilisé	مستخدم
+vidéo	فيديو
+vidéo compressée	فيديو مضغوط
+vidéos	فيديوهات
+vidéos compressées	فيديوهات مضغوطة
+vieux mail	رسالة قديمة
+vieux mails	رسائل قديمة
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«ملف تالف»: انقطع التنزيل. نزّل ملف ZIP هذا من جديد من رسالة Google ثم أعد فتحه: ما نُسخ لن يُنسخ مرة أخرى.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«تحرير المساحة»: احتفظ بالصور الحديثة على الهاتف…
+À GARDER	احتفظ
+À JETER	احذف
+À RETROUVER VITE	سريع الإيجاد
+À nettoyer	للتنظيف
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	استخدمه عندما تحذف النسخة على القرص: ينسى Clean Smart ما تم نسخه، وستُنسخ ملفات ZIP التالية بالكامل من جديد.\n\nيبقى القرص المختار وإعداداتك. لا يُحذف شيء على القرص ولا في %1.
+Écriture impossible	غير قابل للكتابة
+Électricité	فاتورة الكهرباء
+à jeter	للحذف
+élément	عنصر
+éléments	عناصر
+… et %1 autres mails du même genre (cochés).	… و%1 رسائل أخرى من النوع نفسه (محددة بالفعل)
+‹ Retour	‹ رجوع
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ تمت قراءة %1 دون أخطاء. بصمات النسخ لم تعد على هذا الهاتف: المقارنة غير ممكنة.
+↩️ %1 dans la boîte de réception	↩️ %1 في صندوق الوارد
+↩️ %1 remis dans la galerie	↩️ أُعيدت %1 إلى المعرض
+↩️ %1 remis à leur place	↩️ أُعيدت %1 إلى مكانها
+↩️ J'ai fait une bêtise : remettre les %1	↩️ أخطأت: استرجاع %1
+↩️ Mails remis (démonstration)	↩️ تم استرجاع الرسائل (عرض)
+↩️ Remettre %1 dans ma boîte	↩️ %1 أُعيدت إلى صندوق البريد
+↩️ Remettre des mails	↩️ استرجاع الرسائل
+↩️ Tout remettre à sa place	↩️ إعادة كل شيء إلى مكانه
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ بانتظار الملف التالي في Download. المس روابط «تنزيل» في الرسالة.
+⏳ En attente du prochain fichier dans Download…	⏳ بانتظار الملف التالي في Download…
+⏳ copie en cours…	⏳ جارٍ النسخ…
+⏳ plus tard	⏳ لاحقًا
+⏹ Arrêter	⏹ إيقاف
+☑️ Tout cocher	☑️ اختر الكل
+⚙️ Cache des applis et fichiers système	⚙️ ذاكرة التطبيقات المؤقتة وملفات النظام
+⚙️ Options	⚙️ الخيارات
+⚠️ %1 : à relancer.\n	⚠️ %1: أعد الفتح\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 بها أخطاء: أعد فتح ملفات ZIP المعلَّمة «أعد الفتح» قبل المتابعة.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ %1 على القرص لم تعد متطابقة أو غير قابلة للقراءة:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ لم يتم النسخ الاحتياطي الليلة
+⚠️ Fichier %1 à reprendre	⚠️ %1 ملفات يجب إعادتها
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ يلزم حوالي %1، والمتاح %2. يمكنك البدء: عند الامتلاء صِل قرصًا آخر وسنتابع دون تكرار.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ توقف النسخ: %1\n\nلم يضع شيء: أعد تشغيل الوضع التلقائي، وسنتابع دون تكرار.
+⚠️ On ne commence pas	⚠️ لم يبدأ
+⚠️ Sauvegarde de la nuit	⚠️ النسخ الاحتياطي الليلي
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ تالف: نزّله من جديد من الرسالة، وسيُنسخ تلقائيًا
+⚠️ disque plein	⚠️ القرص ممتلئ
+⚠️ pas commencé	⚠️ لم يبدأ
+⚠️ à relancer	⚠️ أعد الفتح
+⚠️ à relancer (%1)	⚠️ أعد الفتح (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ النسخة غير مكتملة (ملفات تالفة، أو يجب إعادة فتحها، أو لم تُنسخ بعد). أكمل النسخ أولًا: لا تحذف شيئًا من %1.
+✅ %1 : terminé et vérifié.\n	✅ %1: مكتمل وتم التحقق منه\n
+✅ %1 doublon(s) supprimé(s)	✅ تم حذف %1 مكررات
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ حُفظت %1 رسائل · %2 PDF · تم تحديث الأرشيف CleanSmart/Mails/index.html
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 رسائل مهمة في أمان · %2 PDF مجمعة · تم تحديث الأرشيف index.html
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ تم نسخ %1 صور جديدة احتياطيًا
+✅ %1 · depuis %2	✅ %1 · وصلت %2
+✅ %1 à l'abri	✅ %1 في أمان
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 رسالة مهمة في أمان (عرض)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ تم نسخ 7,958 صورة جيدة احتياطيًا (عرض)
+✅ Assez de place sur « %1 ».	✅ مساحة كافية على «%1»
+✅ Boîte mail connectée	✅ صندوق البريد متصل
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ تم التحقق من القرص: أُعيدت قراءة %1، لا توجد ملفات تالفة.
+✅ Doublons supprimés (démonstration)	✅ تم حذف المكررات (عرض)
+✅ Fichier %1 terminé	✅ الملف %1 مكتمل
+✅ La copie sur le disque est complète et vérifiée.	✅ النسخة على القرص مكتملة وتم التحقق منها
+✅ Mails sauvegardés (démonstration)	✅ حُفظت الرسائل (عرض)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ النسخة مكتملة وتم التحقق منها\n✅ النسخ الاحتياطي في الهاتف متوقف\n✅ الصور شوهدت على القرص\n\nفتح %1؟ أنت من يختار ما يُحذف.
+✅ copié et vérifié	✅ نُسخت وتم التحقق منها
+✅ copié, vérifié, supprimé du téléphone	✅ نُسخت وتم التحقق منها وحُذفت من الهاتف
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ حُذفت %1 · تم توفير %2 في صندوق البريد
+✉️ %1 mails	✉️ %1 رسائل
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 رسائل (المجلد «Mails Gmail»، افتح index.html)\n
+✉️ Boîte mail	✉️ صندوق البريد
+✉️ Mails	✉️ الرسائل
+✉️ Mails de %1	✉️ رسالة من %1
+✓ %1 choisi	✓ تم اختيار %1
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ تم تحرير %1 (يمكن استرجاعها 30 يومًا في سلة المعرض)
+✨ %1 mails mis à la corbeille	✨ %1 رسائل إلى السلة
+✨ %1 mis à la corbeille (démonstration)	✨ %1 إلى السلة (عرض)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 إلى سلة البريد (يمكن استرجاعها بـ «استرجاع الرسائل»)
+✨ %1 nettoyés · %2 libérés	✨ تم تنظيف %1 · تم توفير %2
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 رسائل قديمة إلى السلة (المهمة محفوظة)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1,249 رسالة إلى السلة (عرض)
+✨ 1,1 Go libérés (démonstration)	✨ تم تحرير 1.1 GB (عرض)
+✨ 6,4 Go libérés (démonstration)	✨ تم تحرير 6.4 GB (عرض)
+✨ Mails mis à la corbeille (démonstration)	✨ الرسائل إلى السلة (عرض)
+✨ Ménage automatique du dimanche	✨ تنظيف يوم الأحد التلقائي
+✨ Ménage du dimanche	✨ تنظيف يوم الأحد
+✨ Vieux mails mis à la corbeille (démonstration)	✨ الرسائل القديمة إلى السلة (عرض)
+❤️ Santé du téléphone : %1 / 100	❤️ صحة الهاتف: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ يسارًا: كل رسائله إلى السلة   ·   يمينًا: احتفظ ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ اسحب يسارًا للحذف   ·   يمينًا للاحتفاظ ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 قيد التنزيل: يبدأ النسخ فور انتهائه
+⬜ Tout décocher	⬜ ألغِ الكل
+⭐ Protéger mes %1	⭐ احمِ %1 الخاصة بي
+🍏 Mes photos iCloud	🍏 صوري في iCloud
+🍏 Pense à une nouvelle copie iCloud	🍏 حان وقت نسخة iCloud جديدة
+🍏 Quitter iCloud Photos	🍏 مغادرة صور iCloud
+🎁 Version d'essai · %1	🎁 نسخة تجريبية · %1
+🎉 %1 libérés au total	🎉 المجموع المحرر %1
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 لا ملفات غير مفيدة: الهاتف نظيف!
+🎉 Aucun mail à jeter ici.	🎉 لا رسائل للحذف هنا
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 لا تطبيقات منسية: أنت تستخدمها كلها!
+🎉 Plus rien ici.	🎉 لم يبق شيء هنا
+🎉 Rien à nettoyer, tout est propre !	🎉 لا شيء للتنظيف، كل شيء نظيف!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 انتهى: نُسخت %1 وتم التحقق منها. المجموع على القرص: %2 و%3.
+🎉 Tous les fichiers sont faits	🎉 اكتملت كل الملفات
+🎬 Démonstration	🎬 عرض
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 وضع العرض: لا يُلمس شيء على الهاتف
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 وضع العرض: لا يُلمس شيء على الهاتف.
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 كل زر يعرض قائمة الرسائل أولًا: أزل العلامة عما تريد الاحتفاظ به، ثم أكّد.
+👀 Voir et jeter ses mails maintenant	👀 اعرض رسائله واحذفها الآن
+👆 Les expéditeurs que tu as jetés	👆 المرسلون الذين حذفتهم
+👆 Tri des expéditeurs	👆 فرز المرسلين
+👆 Tri rapide	👆 فرز سريع
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 الآن: في رسالة Google نزّل الملف %1 (عبر Wi-Fi)، ثم المس الزر الأخضر واختره في Download.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 الآن: على privacy.apple.com نزّل «Part %1» (عبر Wi-Fi)، ثم المس الزر الأخضر واختره في Download.
+👉 À faire maintenant	👉 ما يجب فعله الآن
+👉 à télécharger puis traiter	👉 نزّل ثم عالج
+👍 Tu as déjà la dernière version (%1)	👍 لديك أحدث إصدار (%1)
+👯 Mails en double	👯 رسائل مكررة
+💡 Aide	💡 مساعدة
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 نصيحة: ألغِ الاشتراك كي لا تستلمها بعد الآن (زر في قائمة «من يراسلك أكثر»).
+💡 Si ça bloque	💡 إذا تعطل شيء
+💡 Si ça bloque : tous les conseils	💡 إذا تعطل شيء: الدليل الكامل
+💾 %1 sur « %2 »	💾 %1 على «%2»
+💾 Sauvegarde de la nuit	💾 النسخ الاحتياطي الليلي
+💾 Sauvegarder %1	💾 حفظ %1
+💾 Sauvegarder toutes mes photos	💾 نسخ كل صوري احتياطيًا
+💾 Sauver des mails	💾 حفظ الرسائل
+📁 Choisir le dossier de sauvegarde	📁 اختر مجلد النسخ الاحتياطي
+📁 Choisir un dossier	📁 اختر مجلدًا
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: الرسائل كاملة (‎.eml)\n📕 CleanSmart / PDF: كل ملفات PDF مجمعة\n📎 CleanSmart / Pieces jointes: الملفات الأخرى
+📁 Dossier de sauvegarde enregistré	📁 تم حفظ مجلد النسخ الاحتياطي
+📂 Traiter un fichier ZIP	📂 معالجة ملف ZIP
+📂 Traiter un fichier ZIP à la main	📂 معالجة ملف ZIP يدويًا
+📅 Ton rapport du mois	📅 تقريرك الشهري
+📎 Gros mails	📎 رسائل كبيرة
+📕 Cocher les PDF	📕 اختر PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 حُفظ PDF في التنزيلات / Clean Smart
+📕 PDF souvenir créé (démonstration)	📕 تم إنشاء PDF الذكريات (عرض)
+📖 Mode d'emploi	📖 دليل الاستخدام
+📤 Envoyer (%1)	📤 إرسال (%1)
+📦 Les plus grosses	📦 الأكبر
+📦 Quitter Google Photos	📦 مغادرة Google Photos
+📦 Ta nouvelle copie Google est peut-être prête	📦 ربما تكون نسختك الجديدة من Google جاهزة
+📧 Ouvrir le mail de Google	📧 افتح رسالة Google
+📰 Newsletters et pubs	📰 النشرات والإعلانات
+📱 Mes applis	📱 تطبيقاتي
+📱 Ouvrir l'app Google Photos	📱 افتح تطبيق Google Photos
+📱 Téléphone	📱 الهاتف
+📱 Téléphone presque plein	📱 الهاتف شبه ممتلئ
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 نُسخت %1 صورة و%2 فيديو وتم التحقق منها، مرتبة حسب السنة.\n
+📸 Photos	📸 الصور
+🔄 Analyser à nouveau	🔄 أعد التحليل
+🔄 Chercher à nouveau	🔄 ابحث من جديد
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 كل شيء من البداية (حذفت النسخة)
+🔍 Analyser ma boîte mail	🔍 حلّل صندوق بريدي
+🔍 Analyser mon téléphone	🔍 حلّل هاتفي
+🔍 Chercher les mails avec pièces jointes	🔍 ابحث عن الرسائل التي بها مرفقات
+🔎 Vérifier le disque (relit chaque photo)	🔎 تحقق من القرص (أعد قراءة كل صورة)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 كلمة مرورك مشفرة على الهاتف. تُرسل فقط إلى خادم بريدك.
+🔓 Autoriser	🔓 اسمح
+🔓 Autoriser l'accès aux fichiers	🔓 اسمح بالوصول إلى الملفات
+🔓 Une autorisation pour en savoir plus	🔓 اسمح مرة واحدة لرؤية المزيد
+🔓 Une autorisation, une seule fois	🔓 اسمح مرة واحدة
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 مرة واحدة: اسمح بـ «الوصول إلى جميع الملفات» ليرى Clean Smart مجلد Download. يقرأ فقط ملفات %1.
+🔔 Mail de %1	🔔 رسالة من %1
+🔔 Tu seras prévenu quand il t'écrit	🔔 ستُنبَّه عندما يراسلك
+🕰️ Vieux mails	🕰️ رسائل قديمة
+🕰️ Vieux mails (les importants sont gardés)	🕰️ رسائل قديمة (المهمة محفوظة)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ السلة فارغة: تم تحرير %1 نهائيًا
+🗑️ Désinstaller	🗑️ إلغاء التثبيت
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ حُذف الملف من الهاتف: مساحة للتالي
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ مرسلو «احذف دائمًا» لدي
+🗑️ Mettre %1 à la corbeille	🗑️ انقل %1 إلى السلة
+🗑️ Ouvrir %1 pour effacer	🗑️ افتح %1 للحذف
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ رسائله ستذهب إلى السلة كل ليلة
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ احذف ملف ZIP هذا من الهاتف (يُنصح)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ احذف دائمًا: %1   🛡️ احتفظ دائمًا: %2   🔔 نبّهني: %3
+🗜️ Compresser (%1)	🗜️ ضغط (%1)
+😴 Pas ouvertes depuis 3 mois	😴 لم يُفتح منذ 3 أشهر
+🚫 Se désabonner	🚫 إلغاء الاشتراك
+🛡️ %1 (mises en favori)	🛡️ %1 (أصبحت مفضلة)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ رُتبت %1 في مجلد «محمية» في صندوق البريد
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ المرسلون المهمون (البنك، الإدارات، الصحة…): رسائلهم لا تُحذف أبدًا.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ يظهر زر الحذف عندما تكتمل النسخة وتُعلَّم الخانتان 1 و2.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ رسائل البنك أو الإدارات أو الصحة لا تذهب إلى السلة أبدًا.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ لن نُنظف %1 دون التحقق من النسخة: علّم الخانة الأولى أولًا.
+🛡️ Protéger (%1)	🛡️ حماية (%1)
+🛡️ Ranger mes mails importants	🛡️ رتّب رسائلي المهمة
+🛡️ Ses mails ne seront jamais jetés	🛡️ رسائله لن تُحذف أبدًا
+🤖 Copie automatique de tes photos	🤖 انسخ صورك تلقائيًا
+🤖 Démarrer le mode automatique	🤖 ابدأ الوضع التلقائي
+🤖 Tout automatique (le plus simple)	🤖 كل شيء تلقائي (الأبسط)
+🧊 Vider son cache	🧊 مسح الذاكرة المؤقتة
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 استُبعدت %1 مكررات و🎞️ %2 متتابعات.\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 مكررات   🎞️ متتابعات فاشلة\n📱 لقطات شاشة   🎬 فيديوهات ثقيلة\n💬 وسائط WhatsApp   👥 جهات اتصال مكررة\n✉️ نشرات ورسائل كبيرة
+🧭 Ménage	🧭 التنظيف
+🧭 Ménage des mails	🧭 تنظيف البريد
+🧭 Ménage guidé	🧭 تنظيف موجّه
+🧹 Fichiers inutiles	🧹 ملفات غير مفيدة
+🧹 Jeter les mails de %1	🧹 احذف رسائل %1
+🧹 Le ménage sûr	🧹 التنظيف الآمن
+🧹 Mails triés cette nuit	🧹 تم فرز الرسائل الليلة
+🧹 Mettre %1 à la corbeille	🧹 انقل %1 إلى السلة
+🧹 Ménage sûr	🧹 تنظيف آمن
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 تنظيف آمن: نشرات، إشعارات، مكررات
+🧹 Nettoyer · %1	🧹 تنظيف · %1
+🧹 Nettoyer · %1 · %2	🧹 تنظيف · %1 · %2

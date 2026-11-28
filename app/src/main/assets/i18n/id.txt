@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 tidak tersalin: jalankan lagi file yang sama.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 «perlu dicek» akan masuk ke tempat sampah Clean Smart: bisa dikembalikan selama 7 hari.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nPerhatian: penghapusan disinkronkan dengan akunmu (Google…).
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nDisk atau ponsel penuh: kosongkan ruang (atau ganti disk di langkah 2), lalu jalankan lagi file INI. Tidak ada yang disalin dua kali.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nFile rusak atau tidak lengkap: unduh lagi dari email Google, lalu jalankan lagi. Yang sudah tersalin tetap disimpan.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nSalinan diekspor dulu sebagai file .vcf ke folder cadanganmu.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nJalankan lagi file ZIP yang berisi foto itu (atau mode otomatis): foto akan disalin ulang. Jangan hapus apa pun di %1 sebelumnya.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nSalinan dibuat dulu di folder cadanganmu.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Di Google, email dan Google Foto berbagi 15 GB yang sama: membersihkan email juga mengosongkan ruang untuk fotomu.
+ sur environ %1 Go	 dari sekitar %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 duplikat, beruntun, atau gagal tidak dicadangkan
+ · %1 à la corbeille	 · %1 ke tempat sampah
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · file «perlu dicek» ada di tempat sampah Clean Smart (7 hari)
+ · va dans la corbeille Clean Smart	 · masuk ke tempat sampah Clean Smart
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): duplikat berlebih, foto beruntun berlebih, foto hitam atau putih, tangkapan layar lebih dari sebulan.\n\nMasuk ke tempat sampah Galeri (30 hari untuk memulihkannya).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) akan dihapus PERMANEN untuk mengosongkan ruang sekarang.\n\nTidak bisa dipulihkan.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 untuk dibuang
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: buletin dan iklan (%2 pengirim), notifikasi, email ganda.
+%1 Go · prévois %2	%1 GB · siapkan %2
+%1 analysées	%1 dianalisis
+%1 avec pièces jointes (dont %2 avec PDF)	%1 dengan lampiran (%2 dengan PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 berhasil. Dengan membuang aslinya ke tempat sampah, kamu menghemat %2.
+%1 ce mois-ci. 	%1 bulan ini.
+%1 copié(s) dans ton dossier de sauvegarde.	%1 disalin ke folder cadanganmu.
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 file tak berguna: sementara, gambar mini, folder kosong, sisa aplikasi.
+%1 de plus de %2 mois 	%1 lebih dari %2 bulan
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	%1 dari pengirim «selalu buang» dipindah ke tempat sampah (bisa dipulihkan 30 hari).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 duplikat masuk ke tempat sampah. Salinan pertama setiap email disimpan.
+%1 et %2 copiées et vérifiées.	%1 dan %2 disalin dan diperiksa.
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 dan %2 aman. Kamu bisa menghapusnya dan mengunduh yang berikutnya.
+%1 fichier(s) sauvegardé(s)	%1 file dicadangkan
+%1 jetés	%1 dibuang
+%1 libres sur %2	%1 kosong dari %2
+%1 libérés sur le téléphone	%1 dikosongkan di ponsel
+%1 mails dans la boîte · %2 analysés	%1 email di kotak masuk · %2 dianalisis
+%1 min %2 s	%1 mnt %2 dtk
+%1 newsletters · %2 gros mails	%1 buletin · %2 email besar
+%1 newsletters, %2 gros mails (%3).	%1 buletin, %2 email besar (%3).
+%1 photos trouvées	%1 foto ditemukan
+%1 photos · %2 vidéos analysées	%1 foto · %2 video dianalisis
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 foto · %2 video · %3 duplikat dan beruntun disisihkan
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 menyiapkan salinan semua fotomu. Lakukan persis seperti contoh ini:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 akan dihapus: tidak diperlukan lagi atau dibuat ulang otomatis.
+%1 seront supprimés pour de bon.	%1 akan dihapus selamanya.
+%1 sur %2 choisis · %3	%1 dari %2 dipilih · %3
+%1 sur %2 fichiers faits	%1 dari %2 file selesai
+%1 sur %2 · %3	%1 dari %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 akan masuk ke tempat sampah Galeri (bisa dipulihkan 30 hari).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 masuk ke tempat sampah Galeri (bisa dipulihkan 30 hari).
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: duplikat, foto beruntun berlebih, foto hitam atau putih, tangkapan layar lebih dari sebulan. Yang terbaik disimpan.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	Total %1 · %2. Ketuk aplikasi untuk mencopot atau mengosongkan cache-nya.
+%1 à jeter	%1 untuk dibuang
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 untuk dilihat satu per satu. Geser ke kiri untuk membuang, ke kanan untuk menyimpan (jadi favorit ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	%1, %2, %3 disalin · %4 dan %5 disisihkan.
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1email lebih dari %2 tahun masuk ke tempat sampah (kecuali yang penting).
+(sans objet)	(tanpa subjek)
+. %1 en double ou en rafale à trier : touche ici.	. %1 duplikat atau beruntun untuk dipilah: ketuk di sini.
+1 bouton	1 tombol
+1 mois	1 bulan
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. Saya mematikan pencadangan: aplikasi Google Foto › fotomu di kanan atas › Setelan Foto › Pencadangan › nonaktif.
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. Di iPhone, saya mematikan «Foto iCloud» (Pengaturan › namamu › iCloud › Foto).
+12 mois	12 bulan
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. Saya membuka disk di PC dan melihat foto saya, tahun demi tahun.
+3 mois	3 bulan
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. Disarankan: saya membuat salinan ke-2 (disk atau PC lain).
+4 étapes	4 langkah
+6 mois	6 bulan
+AFFICHAGE	TAMPILAN
+AUTOMATIQUE	OTOMATIS
+AUTRE	LAINNYA
+Adresse mail	Alamat email
+Adresse, serveur et mot de passe sont obligatoires.	Alamat, server, dan sandi wajib diisi.
+Alerte retirée	Peringatan dihapus
+Alertes et rapport du mois	Peringatan dan laporan bulanan
+Analyse de la boîte mail	Menganalisis kotak surat
+Analyse des 3 000 mails les plus récents de la boîte de réception.	Analisis 3.000 email terbaru di kotak masuk.
+Analyse des mails (%1 / %2)	Menganalisis email (%1 / %2)
+Analyse du téléphone	Menganalisis ponsel
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	Analisis kotak surat «%1»: buletin, email besar, email lama. Yang penting selalu disimpan.
+Analyser ma boîte mail	Analisis kotak surat saya
+Analyser mon téléphone	Analisis ponsel saya
+Annuler	Batal
+Annuler, ne rien jeter	Batal, jangan buang apa pun
+Appeler	Telepon
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple memeriksa permintaan lalu mengirim email, biasanya dalam 3 sampai 7 hari. File kemudian diunduh di privacy.apple.com (masuk dari ponsel).
+Apple · Données et confidentialité	Apple · Data dan Privasi
+Appliquer « toujours jeter » maintenant	Terapkan «selalu buang» sekarang
+Arrêt après le fichier en cours…	Berhenti setelah file saat ini…
+Arrêter	Hentikan
+Arrêter le mode automatique ?	Hentikan mode otomatis?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Dihentikan. File yang sudah tersalin aman; sisanya akan disalin lain kali, tanpa duplikat.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	Tips: di Setelan › Aplikasi, ketuk aplikasi (Chrome, Facebook…) › Penyimpanan › «Hapus cache».
+Aucun contact en double	Tidak ada kontak ganda
+Aucun dossier choisi	Belum ada folder dipilih
+Aucun dossier de sauvegarde	Tidak ada folder cadangan
+Aucun fichier inutile.	Tidak ada file tak berguna.
+Aucune boîte mail connectée.	Tidak ada kotak surat terhubung.
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	Tidak ada flashdisk atau disk terdeteksi. Pasang (adaptor USB-C), lalu buka lagi langkah ini.
+Aucune vidéo n'a pu être réduite davantage.	Tidak ada video yang bisa diperkecil lagi.
+Autre	Lainnya
+Autres fichiers d'installation (.apk)	File instalasi lain (.apk)
+Avant tout : analyser	Pertama: analisis
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	Dengan «Akses data penggunaan», Clean Smart melihat ukuran asli tiap aplikasi dan sejak kapan tidak kamu buka. Tidak ada yang dikirim ke mana pun.
+BOÎTE MAIL	KOTAK SURAT
+Banque	Bank
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	Bank, pemerintahan, kesehatan, tagihan, dan semua email dengan PDF: dicadangkan, PDF dikumpulkan, arsip index.html di PC.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	Bank, pemerintahan, kesehatan, tagihan, dan semua email dengan PDF: dicadangkan, PDF dikumpulkan, arsip index.html di PC. Di kotak suratmu, semuanya disimpan di «Dilindungi».
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	Bank, pajak, kesehatan, rumah, keluarga (kontakmu): disimpan terpisah, tidak pernah dibuang
+Batterie faible (%1 %)	Baterai lemah (%1 %)
+Bonjour	Halo
+Boutique Mode	Toko Fesyen
+Boîte mail en ordre !	Kotak surat rapi!
+Boîte mail remplie à %1 % (%2 / %3)	Kotak surat %1 % penuh (%2 / %3)
+Boîte protégée	Kotak terlindungi
+Boîte remplie à %1 % (%2 / %3). 	Kotak %1 % penuh (%2 / %3).
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	Pasang pengisi daya: satu file bisa memakan 10 sampai 30 menit.\n\nJika ponsel mati, tidak ada yang hilang: cukup jalankan lagi file yang sama.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	Pasang pengisi daya saat proses: file besar bisa memakan 10 sampai 30 menit. Layar tetap menyala.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	Pasang flashdisk atau disk ke ponsel, lalu pilih (atau buat) folder di dalamnya.
+Brancher la clé ou le disque	Pasang flashdisk atau disk
+C'est fait : le prochain fichier sera entièrement recopié.	Selesai: file berikutnya akan disalin ulang seluruhnya.
+C'est noté	Dicatat
+CONSEILLÉ	DISARANKAN
+CONTACT	KONTAK
+CONTACTS	KONTAK
+Captures d'écran	Tangkapan layar
+Carte SD, clé USB, Drive… choisis où tu veux	Kartu SD, flashdisk USB, Drive… pilih sesukamu
+Carte SD, clé USB, Google Drive…	Kartu SD, flashdisk USB, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	File ini sudah disalin dan diperiksa. Mengulanginya tidak membuat duplikat, tetapi tidak perlu.\n\nMungkin maksudmu yang berikutnya (%1).
+Ce mois-ci	Bulan ini
+Cette année	Tahun ini
+Changer de compte	Ganti akun
+Changer de dossier	Ganti folder
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	Setiap Minggu, file tak berguna yang aman dan spam hilang sendiri. Notifikasi memberi tahu berapa ruang yang dikosongkan dan apakah ada foto untuk dipilah.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	Setiap email yang dipilih disimpan di folder cadanganmu:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	Setiap video dibuat ulang dalam 720p, sering 3 sampai 5 kali lebih ringan, dan disimpan di Film / Clean Smart.
+Choisir le dossier sur le disque	Pilih folder di disk
+Choisir un dossier	Pilih folder
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	Pilih dulu folder di flashdisk atau disk (langkah 2).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	Pilih dulu folder di flashdisk atau disk (langkah «Disk»).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	Pilih dulu folder: kartu SD, flashdisk USB, atau Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	Pilih dulu folder cadangan (Opsi).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	Pilih dulu folder cadangan (kartu SD, flashdisk USB, Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	Pilih dulu folder cadangan dan buat cadangan.
+Choisis d'abord un dossier de sauvegarde.	Pilih dulu folder cadangan.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	Pilih emailmu: disimpan bersama lampirannya, PDF di folder terpisah
+Choisis une carte SD, une clé USB ou Google Drive	Pilih kartu SD, flashdisk USB, atau Google Drive
+Choix des plus belles photos…	Memilih foto terindah…
+Clean Smart : copie automatique	Clean Smart: salinan otomatis
+Clean Smart attend les fichiers dans Download…	Clean Smart menunggu file di Download…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart membaca 3.000 email terakhir (tidak ada yang dihapus).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart melihat semua fotomu (tidak ada yang dihapus).
+Clean Smart trouve en un clic :	Clean Smart menemukan dengan satu ketukan:
+Clé USB (démonstration)	Flashdisk USB (demo)
+Clé USB ou disque dur, avec un adaptateur USB-C	Flashdisk USB atau hard disk, dengan adaptor USB-C
+Colis et livraisons	Paket dan pengiriman
+Combien de place faut-il ?	Berapa ruang yang dibutuhkan?
+Comme le téléphone	Sama seperti ponsel
+Commencer	Mulai
+Compresser	Kompres
+Compresser %1 ?	Kompres %1?
+Compression des vidéos	Mengompres video
+Compris	Mengerti
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	Hubungkan kotak suratmu (Gmail, Outlook, Yahoo, Orange, Free…): buletin, email besar dan lama untuk dipilah, yang penting selalu disimpan.
+Connecter	Hubungkan
+Connecter ma boîte mail	Hubungkan kotak surat saya
+Connexion au serveur	Menyambung ke server
+Connexion impossible : 	Tidak bisa tersambung:
+Connexion à la messagerie	Menyambung ke layanan email
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	Disarankan: saya membuat salinan ke-2 (disk atau PC lain).
+Contacts en double	Kontak ganda
+Continuer quand même	Tetap lanjutkan
+Copie automatique	Salinan otomatis
+Copier les fichiers un par un	Salin file satu per satu
+Copies identiques — l'original est gardé	Salinan identik — aslinya disimpan
+Corbeille	Tempat sampah
+Corbeille : %1	Tempat sampah: %1
+Corbeille Clean Smart	Tempat sampah Clean Smart
+Corbeille de la messagerie	Tempat sampah email
+Correct, mais peut mieux faire	Lumayan, tapi bisa lebih baik
+Créer une exportation	Buat ekspor
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Di Google Foto: tekan lama sebuah foto, centang seluruh hari, lalu «Hapus». Tempat sampah Google menyimpan semuanya 60 hari.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Di Google Takeout, pilih file 2 GB: kami memprosesnya satu per satu, ponsel tidak pernah butuh banyak ruang.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Di permintaan Apple, pilih file 1 atau 2 GB: kami memprosesnya satu per satu, ponsel tidak pernah butuh banyak ruang.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Di email Google, hitung tombol «Unduh»: itulah jumlah file.
+Demander la copie à %1	Minta salinan ke %1
+Demander une copie de tes données	Minta salinan datamu
+Demandée · attends le mail de %1	Diminta · tunggu email dari %1
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Sejak Android 11, tidak ada aplikasi pembersih yang boleh mengosongkan cache aplikasi lain atau file sistem. Android melakukannya sendiri: tombol ini membuka layar «Kosongkan ruang».
+Depuis l'installation	Sejak instalasi
+Dernière vérification	Pemeriksaan terakhir
+Des applis téléchargées mais pas installées. À vérifier.	Aplikasi yang diunduh tetapi tidak diinstal. Perlu dicek.
+Disque	Disk
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	Disk tidak dikenali: gunakan adaptor USB-C (OTG). Flashdisk berformat exFAT berfungsi di mana saja (FAT32 menolak file di atas 4 GB).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	Disk penuh: pasang disk yang lebih besar dan pilih di langkah «Disk». Kami lanjut dari posisi terakhir, tanpa duplikat.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	Dokumen di Unduhan yang tidak disentuh selama 6 bulan. Perlu dicek.
+Dossier Corbeille introuvable sur ce compte.	Folder Sampah tidak ditemukan di akun ini.
+Dossier Corbeille introuvable.	Folder Sampah tidak ditemukan.
+Dossier Spam introuvable sur ce compte.	Folder Spam tidak ditemukan di akun ini.
+Dossier de sauvegarde	Folder cadangan
+Dossier de sauvegarde introuvable.	Folder cadangan tidak ditemukan.
+Dossiers cache	Folder cache
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	Folder sisa aplikasi yang sudah tidak ada di ponsel. Perlu dicek.
+Dossiers vides	Folder kosong
+Dossiers vides…	Folder kosong…
+Doublons	Duplikat
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	Duplikat dan foto beruntun berlebih (foto terbaik disimpan), foto hitam atau putih, tangkapan layar lama. Ketuk foto untuk menyimpannya. Semua masuk ke tempat sampah Galeri (30 hari).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	Duplikat, foto beruntun berlebih, foto hitam atau putih, tangkapan layar lama.
+Doublons, rafales, floues	Duplikat, beruntun, buram
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	Hapus centang email yang ingin kamu simpan. Email dari bank, pajak, kesehatan, dan pengirim «selalu simpan» tidak pernah ada di daftar ini. Semua masuk ke tempat sampah email (bisa dipulihkan).
+Démonstration…	Demo…
+Déplacement vers la corbeille…	Memindahkan ke tempat sampah…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	Nonaktif secara default. Jika diaktifkan, foto (dan kontak dalam .vcf) disalin ke folder sebelum setiap pembersihan, demi keamanan.
+Elles sont déjà toutes en favori 👍	Semua sudah jadi favorit 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	Dalam mode demo, tidak ada file yang diproses. Keluar dari demo (Opsi) untuk melakukannya sungguhan.
+En pleine forme	Dalam kondisi prima
+Envoyer %1	Kirim %1
+Envoyer le PDF souvenir	Kirim PDF kenangan
+Envoyer le lien par e-mail · Exporter une fois	Kirim link unduhan lewat email · Ekspor sekali
+Erreur inattendue	Kesalahan tak terduga
+Espace libéré	Ruang yang dikosongkan
+Espace libéré depuis le début : %1. Une petite analyse ?	Ruang yang dikosongkan sejak awal: %1. Analisis sebentar?
+Espace à récupérer	Ruang yang bisa didapat
+Et tes mails	Dan emailmu
+Factures et papiers	Tagihan dan dokumen
+Faire le ménage sûr ?	Lakukan pembersihan aman?
+Fait ✔	Selesai ✔
+Famille	Keluarga
+Fermer	Tutup
+Fichier %1	File %1
+Fichier %1 déjà fait	File %1 sudah selesai
+Fichier illisible	File tidak terbaca
+Fichiers d'installation déjà installés	File instalasi yang sudah terinstal
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	File kerja aplikasi di penyimpanan ponsel. Dibuat ulang jika perlu.
+Fichiers inutiles	File tak berguna
+Fichiers mis de côté, vidée toute seule après 7 jours	File yang disisihkan, dikosongkan otomatis setelah 7 hari
+Fichiers temporaires	File sementara
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	File sementara, gambar mini, folder kosong, sisa aplikasi
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	File sementara, gambar mini, folder kosong, sisa aplikasi. Foto dan musik tidak pernah disentuh.
+Floue	Buram
+Floues, trop sombres ou trop claires — vérifie avant de cocher	Buram, terlalu gelap atau terlalu terang — periksa sebelum mencentang
+GARDÉE	DISIMPAN
+Garder sur le téléphone les photos des derniers…	Simpan di ponsel foto dari … terakhir
+Gardés	Disimpan
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail mewajibkan SANDI APLIKASI (16 huruf):\n1. Aktifkan Verifikasi 2 Langkah di akun Google-mu.\n2. Buka myaccount.google.com/apppasswords\n3. Buat sandi bernama «Clean Smart» dan tempel di sini.
+Google Photos	Google Foto
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	Google mengirim email saat siap: dalam beberapa jam atau beberapa hari. Kamu bisa menutup aplikasi sementara.
+Gros	Besar
+Gros mails (+ 5 Mo)	Email besar (5 MB+)
+Grosses vidéos	Video besar
+Groupe %1 · %2 photos	Grup %1 · %2 foto
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	Login ditolak. Gmail, Yahoo, dan iCloud butuh SANDI APLIKASI, bukan sandi biasamu.
+Il a besoin d'un bon ménage	Perlu dibersihkan dengan baik
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	Tinggal %1. Buka Clean Smart untuk mengosongkan ruang dengan satu ketukan.
+Ils ne contiennent rien.	Tidak berisi apa pun.
+Ils prennent encore de la place pendant 30 jours	Masih memakan ruang selama 30 hari
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	Disimpan di folder «Dilindungi» kotak suratmu. Diulang setiap malam.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	Tidak bisa dibatalkan: file mungkin sudah dihapus permanen.
+Impossible de créer le dossier %1	Tidak bisa membuat folder %1
+Impossible de protéger ces photos	Tidak bisa melindungi foto-foto ini
+Impossible de vider la corbeille	Tidak bisa mengosongkan tempat sampah
+Impôts	Pajak
+Impôts - Administration	Pajak - Pemerintahan
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	Masukkan server IMAP layanan emailmu (port 993, SSL).
+J'ai demandé la copie	Saya sudah meminta salinan
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	Saya membuka disk di PC dan melihat foto saya, tahun demi tahun.
+J'ai traité tous les fichiers	Saya sudah memproses semua file
+Jamais jetés, rangés dans « Protégés »	Tidak pernah dibuang, disimpan di «Dilindungi»
+Je libère la boîte	Saya mengosongkan kotak surat
+Je libère la place	Saya mengosongkan ruang
+Je mets l'important à l'abri	Saya mengamankan yang penting
+Je mets à l'abri les bonnes	Saya mengamankan yang bagus
+Je trie par expéditeur	Saya memilah per pengirim
+Je vérifie le douteux	Saya mengecek yang meragukan
+Jeter %1 ?	Buang %1?
+Jeter ces mails ?	Buang email ini?
+Jeter les copies ?	Buang salinannya?
+Jeter les gros mails ?	Buang email besar?
+Jeter les newsletters ?	Buang buletin?
+Jeter les originaux ?	Buang aslinya?
+Jeter les vieux mails ?	Buang email lama?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	Log, cadangan sementara, unduhan yang terhenti. Tidak diperlukan lagi.
+L'adresse et le mot de passe seront effacés du téléphone.	Alamat dan sandi akan dihapus dari ponsel.
+L'important est à l'abri, le reste est parti	Yang penting aman, sisanya sudah pergi
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	Aslinya tidak disentuh: nanti saya tawarkan untuk membuangnya ke tempat sampah.\n\nBisa memakan beberapa menit.
+LA NUIT	MALAM HARI
+LIBÉRER LA PLACE	KOSONGKAN RUANG
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	Salinan di disk telah dihapus: Clean Smart menyalin semuanya lagi dari awal.
+La corbeille est vide.	Tempat sampah kosong.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	Ruang email dikosongkan saat tempat sampah emailmu dikosongkan (biasanya dalam 30 hari).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	Pencadangan tidak berhasil. Buka Clean Smart untuk memeriksa folder.
+Langue	Bahasa
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	Pembersihan terpandu melakukan semuanya dengan urutan yang benar. Tombol hijau selalu langkah berikutnya.
+Le bilan, et comment libérer ton compte %1	Ringkasan, dan cara mengosongkan akun %1
+Le contact d'origine est gardé.	Kontak asli disimpan.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	Disk (atau ponsel) penuh: penyalinan berhenti dengan rapi.\n\nPasang disk yang lebih besar, pilih di langkah 2, lalu jalankan lagi mode otomatis: kami lanjut tanpa duplikat.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	Ruang disk tidak cukup: sisa %1, perlu sekitar %2 untuk file ini.\n\n• Kosongkan ruang di disk, atau\n• pasang disk yang lebih besar dan pilih di langkah «Disk» (kami lanjut dari posisi sekarang).\n\nTidak ada yang disentuh.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	Disk tidak bisa diakses.\n\n• Pastikan terpasang dengan benar (adaptor USB-C).\n• Di langkah «Disk», pilih folder lagi.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	Folder cadangan tidak bisa diakses. Buka Clean Smart > Opsi untuk memilihnya.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	Folder cadangan tidak bisa diakses lagi. Pilih lagi.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	Folder «%1» tidak ditemukan di disk. Pastikan disk terpasang (langkah 2).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	File saat ini diselesaikan dulu. File yang sudah tersalin aman; sisanya lain kali, tanpa duplikat.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Link di email Google kedaluwarsa setelah sekitar seminggu: jika begitu, minta ekspor baru (tidak ada yang hilang, kami lanjut tanpa duplikat).
+Le mois dernier	Bulan lalu
+Le ménage sûr	Pembersihan aman
+Le refaire quand même	Tetap ulangi
+Le téléphone	Ponsel
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	Ponsel hampir penuh (perlu minimal 300 MB kosong untuk bekerja).\n\n• Kosongkan tempat sampah Galeri.\n• Hapus file ZIP yang sudah diproses (Unduhan).\n• Lakukan pembersihan terpandu Clean Smart.\n\nTidak ada yang disentuh.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	Ponsel mati atau disk tercabut? Jalankan lagi ZIP yang sama: Clean Smart melanjutkan tanpa kehilangan atau menggandakan apa pun.
+Lecture de la galerie	Membaca galeri
+Lecture des dates des photos…	Membaca tanggal foto…
+Lecture des vidéos	Membaca video
+Lecture impossible : %1	Tidak bisa membaca: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	.apk aplikasi yang sudah terinstal: tidak diperlukan lagi.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	200 email terakhir di tempat sampah emailmu. Centang yang ingin dikembalikan ke kotak masuk.
+Les 30 photos et vidéos qui prennent le plus de place	30 foto dan video yang paling banyak memakan ruang
+Les autres cases : inutile	Kotak lainnya: tidak perlu
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	File Apple tersedia sekitar 2 minggu di privacy.apple.com: jika sudah lewat, buat permintaan baru (tidak ada yang hilang, kami lanjut tanpa duplikat).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	File yang sudah dibuang bisa dipulihkan dari Galeri.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	Email lebih dari %1 tahun masuk ke tempat sampah emailmu. Yang penting disimpan.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	Email lebih dari 2 tahun masuk ke tempat sampah emailmu.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	Email di atas 5 MB masuk ke tempat sampah emailmu.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	Buletin, iklan, notifikasi, dan email ganda masuk ke tempat sampah emailmu (seluruh kotak masuk).\n\nEmail penting tidak pernah disentuh.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	Foto dulu (pilah, simpan yang terbaik, cadangkan, kosongkan), lalu file tak berguna di ponsel, lalu email.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	Foto lebih dari %1 bulan yang sudah dicadangkan keluar dari ponsel (tempat sampah, 30 hari).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	Foto favorit (atau dilindungi dengan tombol 🛡️) tidak pernah diusulkan
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	Foto agak buram, WhatsApp, tangkapan layar baru: kamu yang memutuskan.
+Les photos, vidéos et musiques ne sont jamais touchées.	Foto, video, dan musik tidak pernah disentuh.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	Yang lebih lama hanya diusulkan ke tempat sampah jika sudah ada di cadanganmu.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	Foto terindah bulan atau tahun ini, untuk dikirim ke orang tersayang
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	Yang terbesar dan yang tidak lagi kamu buka: copot dengan satu gerakan
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	Spam masuk ke tempat sampah emailmu. Hapus centang jika email bukan spam.
+Libérer	Kosongkan
+Libérer %1 ?	Kosongkan %1?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	Mengosongkan %1 bersifat opsional. %2 tidak mengizinkan aplikasi apa pun menghapus fotomu: kamu sendiri yang melakukannya, saat yakin.
+Libérer la boîte	Kosongkan kotak surat
+Libérer la boîte mail	Mengosongkan kotak surat
+Libérer la boîte mail ?	Kosongkan kotak surat?
+Libérer la place	Kosongkan ruang
+Libérer la place, PDF souvenir…	Kosongkan ruang, PDF kenangan…
+Liste des photos sur le disque…	Mendaftar foto di disk…
+MAINTENANT	SEKARANG
+Mail (facultatif, pour tes mails)	Email (opsional, untuk emailmu)
+Mails	Email
+Mails Gmail : %1	Email Gmail: %1
+Mails avec pièces jointes	Email dengan lampiran
+Mails de plus de 2 ans	Email lebih dari 2 tahun
+Mails en double	Email ganda
+Mails en double…	Email ganda…
+Maison	Rumah
+Me prévenir	Beri tahu saya
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Terima kasih sudah mencoba Clean Smart! Instal versi lengkap untuk terus membersihkan ponselmu.
+Mes applis	Aplikasi saya
+Mes plus gros fichiers	File terbesar saya
+Mes règles	Aturan saya
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	Membuang ke tempat sampah foto lebih dari %1 bulan yang sudah dicadangkan
+Mettre à l'abri	Amankan
+Mettre à l'abri l'important	Mengamankan yang penting
+Miniatures	Gambar mini
+Mise à jour	Pembaruan
+Mise à la corbeille…	Memindahkan ke tempat sampah…
+Mode d'emploi	Panduan penggunaan
+Mode d'emploi introuvable.	Panduan penggunaan tidak ditemukan.
+Mode démonstration terminé	Mode demo selesai
+Modifier ▼	Ubah ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	Menampilkan aplikasi dengan foto, email, dan kontak palsu. Tidak ada yang disentuh di ponsel: ideal untuk memperkenalkan Clean Smart.
+Mot de passe (vide = garder l'actuel)	Sandi (kosong = pakai yang sekarang)
+Mot de passe d'application	Sandi aplikasi
+Médias WhatsApp	Media WhatsApp
+Ménage complet	Pembersihan lengkap
+Ménage guidé	Pembersihan terpandu
+Ménage guidé des mails	Pembersihan email terpandu
+Ménage sûr de la boîte mail	Pembersihan kotak surat yang aman
+Ménage terminé !	Pembersihan selesai!
+NOUVEAU	BARU
+Nettoyage de la boîte mail	Membersihkan kotak surat
+Nettoyage des fichiers inutiles	Membersihkan file tak berguna
+Nettoyer	Bersihkan
+Nettoyer %1 ?	Bersihkan %1?
+Nettoyer le téléphone	Bersihkan ponsel
+Nettoyer les fichiers inutiles ?	Bersihkan file tak berguna?
+Newsletters et notifications…	Buletin dan notifikasi…
+Newsletters et pubs	Buletin dan iklan
+Newsletters, pubs, notifications et mails en double.	Buletin, iklan, notifikasi, dan email ganda.
+Nombre de fichiers dans le mail	Jumlah file di email
+Normale	Normal
+Nouvelle version %1 disponible	Versi baru %1 tersedia
+Oublier	Lupakan
+Oublier ce compte ?	Lupakan akun ini?
+Oui, c'est fini	Ya, sudah selesai
+Ouverte aujourd'hui	Dibuka hari ini
+Ouverte il y a %1	Dibuka %1 lalu
+Ouverture de %1…	Membuka %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Buka Clean Smart untuk melihat apa yang harus dilakukan. Tidak ada yang hilang.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Buka halaman Google-mu dan lihat ruang yang dipakai Google Foto. Tulis di sini (dalam GB).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	Buka «Video besar», centang, lalu «Kompres»
+Ouvrir	Buka
+Ouvrir Google Photos	Buka Google Foto
+Ouvrir Google Takeout	Buka Google Takeout
+Ouvrir iCloud Photos	Buka Foto iCloud
+Ouvrir la page du mot de passe d'application	Buka halaman sandi aplikasi
+Ouvrir privacy.apple.com	Buka privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	Buka «Kosongkan ruang» Android
+PDF souvenir	PDF kenangan
+PHOTOS ET VIDÉOS	FOTO DAN VIDEO
+PROTECTION	PERLINDUNGAN
+Pas de photos pour cette période.	Tidak ada foto untuk periode ini.
+Pas ouverte depuis plus d'un an	Tidak dibuka lebih dari setahun
+Passer	Lewati
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	Salinan kecil foto untuk tampilan. Dibuat ulang otomatis.
+Photos	Foto
+Photos : %1 · vidéos : %2 · doublons écartés : %3	Foto: %1 · video: %2 · duplikat disisihkan: %3
+Photos du week-end	Foto akhir pekan
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	Foto ganda, beruntun, foto gagal, video besar, email tak berguna… semuanya memakan ruang.
+Photos et vidéos reçues ou envoyées	Foto dan video yang diterima atau dikirim
+Photos floues ou ratées	Foto buram atau gagal
+Photos iCloud	Foto iCloud
+Photos similaires	Foto mirip
+Photos, téléphone et mails, étape par étape	Foto, ponsel, dan email, langkah demi langkah
+Place prise : %1	Ruang terpakai: %1
+Plus d'outils	Alat lainnya
+Plus de 100 Mo chacune	Masing-masing di atas 100 MB
+Pour gagner des points : %1.	Untuk menambah poin: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Untuk mendapatkan versi lengkap Clean Smart, atau untuk pertanyaan apa pun, tulis kepada saya:
+Pour obtenir la version complète, écris-moi :	Untuk mendapatkan versi lengkap, tulis kepada saya:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	Untuk menemukan file tak berguna, Clean Smart perlu melihat penyimpanan ponsel: izinkan «Akses semua file». Tidak ada yang dikirim ke mana pun.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	Untuk akun atau disk lain. File yang sudah disalin ke disk tidak disentuh.
+Protéger mes favoris	Lindungi favorit saya
+Prudente	Hati-hati
+Prudente : moins de photos proposées. Stricte : davantage.	Hati-hati: lebih sedikit foto diusulkan. Ketat: lebih banyak.
+Préparation	Persiapan
+Préparation…	Persiapan…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	Beri tahu saya jika ponsel hampir penuh (kurang dari 1 GB), dan ringkasan singkat setiap tanggal 1.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	Siapkan minimal %1 di flashdisk atau disk (cadangan 10 %).
+QUI T'ÉCRIT LE PLUS	SIAPA YANG PALING SERING MENGIRIM EMAIL
+Quand le mail de %1 est arrivé	Saat email dari %1 sudah tiba
+Quitter	Keluar
+Quitter Google Photos	Tinggalkan Google Foto
+Quitter iCloud Photos	Tinggalkan Foto iCloud
+RECHERCHE DES PHOTOS RATÉES	MENCARI FOTO GAGAL
+Rafales : on garde la meilleure…	Beruntun: kami simpan yang terbaik…
+Rafales — la plus nette est gardée	Beruntun — yang paling tajam disimpan
+Rangement : %1	Merapikan: %1
+Recherche des doublons	Mencari duplikat
+Recherche des fichiers inutiles…	Mencari file tak berguna…
+Recherche des mails	Mencari email
+Recherche des mails avec PDF	Mencari email dengan PDF
+Recherche des mails importants (%1 / %2)	Mencari email penting (%1 / %2)
+Recherche des photos floues	Mencari foto buram
+Recherche des photos ratées	Mencari foto gagal
+Recherche des photos similaires	Mencari foto mirip
+Recherche des pièces jointes (%1 / %2)	Mencari lampiran (%1 / %2)
+Rechercher une mise à jour	Cari pembaruan
+Recommencer	Mulai ulang
+Recommencer avec un autre compte	Mulai ulang dengan akun lain
+Recommencer depuis le début ?	Mulai lagi dari awal?
+Regarder la taille de %1	Lihat ukuran %1
+Relance l'analyse après un changement.	Analisis lagi setelah ada perubahan.
+Remettre des mails	Kembalikan email
+Remettre le compteur à zéro	Atur ulang penghitung
+Remettre les fichiers	Mengembalikan file
+Restes d'applis désinstallées	Sisa aplikasi yang dicopot
+Restes d'applis désinstallées…	Sisa aplikasi yang dicopot…
+Reçus plusieurs fois à quelques secondes d'écart : %1	Diterima beberapa kali dalam selisih detik: %1
+Rien	Tidak ada
+Rien n'a été supprimé.	Tidak ada yang dihapus.
+Rien n'est perdu	Tidak ada yang hilang
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	Tidak ada yang dihapus tanpa persetujuanmu: semuanya lewat tempat sampah.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	Tidak ada yang bisa dikosongkan: belum ada foto lama di cadangan. Jalankan dulu «Cadangkan semua foto saya».
+RÉSULTAT	HASIL
+Règle retirée	Aturan dihapus
+Récupère des mails mis à la corbeille de ta messagerie	Pulihkan email dari tempat sampah emailmu
+Récupérer mes photos iCloud (ancien iPhone)	Ambil foto iCloud saya (iPhone lama)
+Réduire mes vidéos	Perkecil video saya
+Réglages avancés	Setelan lanjutan
+Réglages de stockage Android	Setelan penyimpanan Android
+SAUVEGARDE	CADANGAN
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	Tanpa akses ke foto, Clean Smart tidak bisa menganalisis apa pun.
+Santé	Kesehatan
+Sauvegarde %1 / %2	Cadangan %1 / %2
+Sauvegarde automatique chaque nuit	Cadangan otomatis setiap malam
+Sauvegarde avant suppression	Cadangan sebelum menghapus
+Sauvegarde de mes bonnes photos	Mencadangkan foto bagus saya
+Sauvegarde des mails	Mencadangkan email
+Sauvegarde des mails importants	Mencadangkan email penting
+Sauvegarde du mail %1 / %2	Menyimpan email %1 / %2
+Sauvegarder avant de supprimer	Cadangkan sebelum menghapus
+Sauvegarder des mails	Simpan email
+Sauvegarder mes bonnes photos	Cadangkan foto bagus saya
+Se connecter avec ton identifiant Apple	Masuk dengan Apple ID-mu
+Serveur IMAP	Server IMAP
+Serveur introuvable : vérifie internet et le nom du serveur.	Server tidak ditemukan: periksa internet dan nama server.
+Ses mails partent à la corbeille chaque nuit, tout seuls	Email darinya masuk ke tempat sampah setiap malam, otomatis
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	Hanya foto bagus: tidak pernah duplikat, beruntun berlebih, atau gagal. Favorit juga masuk ke «Mes meilleures» (Terbaik saya).
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	Hanya foto bagus yang dicadangkan, ke flashdisk, disk, atau Google Drive. Bahkan Google Foto bisa diambil kembali.
+Seules les nouvelles photos sont copiées à chaque fois.	Setiap kali hanya foto baru yang disalin.
+Seuls les 20 premiers fichiers sont envoyés.	Hanya 20 file pertama yang dikirim.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	Jika login ditolak, buat sandi aplikasi di keamanan akun Microsoft (perlu verifikasi 2 langkah).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	Jika tidak, iPhone mengirim lagi foto ke iCloud, dan menghapus di iCloud bisa juga menghapusnya dari iPhone.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	Jika tidak, ponsel mengirim lagi foto ke Google, dan menghapus di Google bisa juga menghapusnya dari ponsel ini.
+Soldes d'hiver	Obral musim dingin
+Souvent inutiles après coup	Sering tidak berguna setelahnya
+Stockage du téléphone	Penyimpanan ponsel
+Stricte	Ketat
+Suivant	Berikutnya
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	Hapus sendiri file ini di Unduhan untuk mengosongkan ruang.
+Supprimer	Hapus
+Supprimer %1 ?	Hapus %1?
+Supprimer ce fichier du téléphone ?	Hapus file ini dari ponsel?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	Hapus setiap file dari ponsel setelah disalin dan diperiksa (disarankan: menjaga ruang kosong)
+Supprimer les doublons	Hapus duplikat
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Di Gmail, email tetap di kotak masuk dan diberi label «Dilindungi». Diulang setiap malam.
+Sur Google Takeout, en 1 minute	Di Google Takeout, dalam 1 menit
+Sur account.apple.com → Mots de passe pour applications → en créer un.	Di account.apple.com → Sandi khusus aplikasi → buat satu.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	Di iPhone: Pengaturan › namamu › iCloud: ruang yang dipakai «Foto» ditampilkan. Atau lihat di icloud.com. Tulis di sini (dalam GB).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	Di iPhone atau di icloud.com/photos: pilih foto lalu «Hapus». Album «Baru Dihapus» menyimpannya 30 hari.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	Di halaman yang terbuka: Penyimpanan › «Hapus cache». Android mewajibkannya, Clean Smart tidak bisa melakukannya untukmu.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	Di ponsel, 2 sampai 3 GB kosong sudah cukup: satu file sekali proses. Kosong sekarang: %1.
+Sur privacy.apple.com, en 2 minutes	Di privacy.apple.com, dalam 2 menit
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	Di privacy.apple.com, file bernama «iCloud Photos Part 1 of 12»: angka terakhir (di sini 12) adalah jumlah file. Clean Smart juga membacanya sendiri.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	Keamanan akun → Buat sandi aplikasi, lalu tempel di sini.
+Sécurité, photos ratées, démonstration…	Keamanan, foto gagal, demo…
+Sévérité	Tingkat ketelitian
+TERMINÉ	SELESAI
+Ta messagerie	Layanan emailmu
+Ta période d'essai de 30 jours est terminée.	Masa uji coba 30 harimu sudah berakhir.
+Taille de %1 (Go)	Ukuran %1 (GB)
+Taille du texte	Ukuran teks
+Taille maximale des fichiers : 1 Go ou 2 Go	Ukuran file maksimum: 1 GB atau 2 GB
+Temps passé	Waktu berlalu
+Temps restant	Sisa waktu
+Terminer la demande	Selesaikan permintaan
+Terminé	Selesai
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	Foto iPhone-mu di flashdisk atau disk, per tahun, tanpa duplikat
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	Foto 2 bulan terakhirmu belum ada di disk. Minta salinan baru di Google Takeout, lalu mode otomatis hanya menambahkan foto baru, tanpa duplikat.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	Foto 2 bulan terakhirmu belum ada di disk. Minta salinan baru ke Apple: Clean Smart hanya menambahkan foto baru, tanpa duplikat.
+Tes photos à l'abri	Fotomu aman
+Tes réglages et ta boîte mail seront conservés.	Setelan dan kotak suratmu akan disimpan.
+Ton téléphone est plein ?	Ponselmu penuh?
+Ton téléphone est propre et tes photos sont à l'abri	Ponselmu bersih dan fotomu aman
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	Ponsel dan kotak suratmu bersih, fotomu aman
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	Ketuk di sini untuk mengunduh, lalu buka file untuk menginstal
+Touche ici pour la version complète ou une question	Ketuk di sini untuk versi lengkap atau pertanyaan
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Cukup ketuk link «Unduh» di email Google. Clean Smart menyalin setiap file ke disk begitu tiba di Download, bahkan saat yang lain masih diunduh.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	Ketuk pengirim: selalu buang, selalu simpan, beri tahu saya, berhenti berlangganan.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	Ketuk pengirim di «Siapa yang paling sering mengirim email» untuk memilih
+Touche une image pour la cocher · appui long pour la voir en grand	Ketuk gambar untuk mencentang · tekan lama untuk melihat besar
+Toucher pour analyser	Ketuk untuk menganalisis
+Toucher pour voir	Ketuk untuk melihat
+Toujours garder	Selalu simpan
+Toujours jeter	Selalu buang
+Tous les fichiers sont traités ?	Semua file sudah diproses?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	Semua email dari %1 (minimal %2 email) masuk ke tempat sampah emailmu.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	Semua email dari %1 pengirim buletin masuk ke tempat sampah emailmu (seluruh kotak masuk, bukan hanya yang dianalisis).\n\nKamu bisa memulihkannya dari tempat sampah.
+Tout cocher	Centang semua
+Tout décocher	Hapus semua centang
+Tout désélectionner	Batalkan semua pilihan
+Tout mettre à la corbeille	Buang semua ke tempat sampah
+Tout nettoyer	Bersihkan semua
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	Semua lewat tempat sampah: 30 hari untuk memulihkan. Dan «Saya keliru» membatalkan dengan satu ketukan.
+Tout recommencer	Mulai ulang semuanya
+Tout recommencer ?	Mulai ulang semuanya?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	Seluruh isinya sudah disalin dan diperiksa di disk. Menghapusnya memberi ruang untuk yang berikutnya.\n\nFotomu juga tetap ada di Google Foto.
+Tout va bien, continue comme ça !	Semua baik, pertahankan!
+Tout était déjà sauvegardé 👍	Semua sudah dicadangkan 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	Semua fotomu di flashdisk atau disk, per tahun, tanpa duplikat
+Tri avant la sauvegarde	Memilah sebelum mencadangkan
+Tri des expéditeurs	Memilah pengirim
+Tri rapide	Pilah cepat
+Tri terminé !	Pemilahan selesai!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	Pilah dulu, simpan yang terbaik, cadangkan hanya foto bagus, kosongkan ruang, lalu bersihkan email.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	Pilah dulu, simpan yang terbaik, cadangkan hanya foto bagus, lalu kosongkan ruang.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	Pilah dulu, amankan yang penting, lalu kosongkan kotak surat. Email dari bank, pemerintahan, atau kesehatan tidak pernah dibuang.
+Trier en glissant	Pilah dengan menggeser
+Trier les expéditeurs	Pilah pengirim
+Trier, garder, sauvegarder, libérer	Pilah, simpan, cadangkan, kosongkan
+Trier, mettre l'important à l'abri, vider la boîte	Pilah, amankan yang penting, kosongkan kotak surat
+Trier, protéger	Pilah, lindungi
+Trop claire	Terlalu terang
+Trop petite	Terlalu kecil
+Trop sombre	Terlalu gelap
+Très gros	Sangat besar
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	Kamu menghapus salinan di disk dan tidak ada yang tersalin lagi? Ketuk «Mulai ulang semuanya (saya menghapus salinan)» di bawah layar, lalu jalankan lagi file ZIP-mu.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	Dulu pakai iPhone? Foto iCloud-mu di flashdisk atau disk
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	Kamu bisa keluar dari aplikasi untuk mengetuk link: penyalinan tetap berjalan (notifikasi «Salinan otomatis»).
+Type : .zip   ·   Taille : 2 Go	Jenis: .zip   ·   Ukuran: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	Unduh SATU ZIP saja setiap kali, lewat Wi-Fi. Proses, hapus, lalu unduh yang berikutnya.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	Cukup unduh file di privacy.apple.com. Clean Smart menyalin setiap file ke disk begitu tiba di Download.
+Téléphone	Ponsel
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	Ponsel penuh: kosongkan tempat sampah Galeri, hapus ZIP yang sudah diproses, lakukan pembersihan terpandu. Perlu minimal 300 MB kosong.
+Un bouton, et c'est trié	Satu tombol, dan beres
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	Satu kartu per pengirim: geser ke kiri untuk membuang SEMUA emailnya, ke kanan untuk menyimpannya.
+Une notification quand il t'écrit	Notifikasi saat dia mengirim email
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	Satu foto setiap kali: geser ke kiri untuk membuang, ke kanan untuk menyimpan
+Une question, un souci, la version complète ? Écris-moi :	Ada pertanyaan, masalah, ingin versi lengkap? Tulis kepada saya:
+Utilise ton adresse et ton mot de passe Free.	Gunakan alamat dan sandi Free-mu.
+Utilise ton adresse et ton mot de passe La Poste.	Gunakan alamat dan sandi La Poste-mu.
+Utilise ton adresse et ton mot de passe Orange.	Gunakan alamat dan sandi Orange-mu.
+Utilise ton adresse et ton mot de passe SFR.	Gunakan alamat dan sandi SFR-mu.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	Sekitar pukul 2 pagi, foto baru disalin ke folder cadanganmu. Notifikasi memberi tahu jika gagal.
+Version complète	Versi lengkap
+Version installée : %1	Versi terinstal: %1
+Vider	Kosongkan
+Vider la corbeille ?	Kosongkan tempat sampah?
+Vider la corbeille Clean Smart	Kosongkan tempat sampah Clean Smart
+Vider la corbeille Clean Smart ?	Kosongkan tempat sampah Clean Smart?
+Vider la corbeille maintenant	Kosongkan tempat sampah sekarang
+Vider maintenant	Kosongkan sekarang
+Vieux mails vers la corbeille…	Email lama ke tempat sampah…
+Vieux téléchargements (plus de 6 mois)	Unduhan lama (lebih dari 6 bulan)
+Voir la liste et jeter	Lihat daftar lalu buang
+Voir la liste et libérer	Lihat daftar lalu kosongkan
+Voir le courrier indésirable puis le mettre à la corbeille	Lihat surat sampah, lalu buang ke tempat sampah
+Voir les conseils	Lihat tipsnya
+Voir ma place Google	Lihat ruang Google saya
+Voir ma place iCloud	Lihat ruang iCloud saya
+Votre facture	Tagihan Anda
+Voyages et réservations	Perjalanan dan pemesanan
+Vérification de la sauvegarde	Memeriksa cadangan
+Vérification du disque	Memeriksa disk
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Periksa di email Google bahwa setiap file (001, 002, 003…) sudah diproses.
+Vérifier, puis libérer %1 (si tu veux)	Periksa, lalu kosongkan %1 (jika mau)
+Yeux fermés	Mata tertutup
+appli	aplikasi
+applis	aplikasi
+calcul…	menghitung…
+compression impossible	kompresi gagal
+contact en double	kontak ganda
+contacts en double	kontak ganda
+copie	salinan
+copies	salinan
+de ta photothèque est à l'abri	dari pustaka fotomu aman
+derniers fichiers	file terakhir
+doublon	duplikat
+doublons	duplikat
+erreur	kesalahan
+erreurs	kesalahan
+expéditeur	pengirim
+expéditeurs	pengirim
+fais le ménage de ta boîte mail	bersihkan kotak suratmu
+fichier	file
+fichier copié	file disalin
+fichier copié et vérifié	file disalin dan diperiksa
+fichier n'a	file tidak
+fichiers	file
+fichiers copiés	file disalin
+fichiers copiés et vérifiés	file disalin dan diperiksa
+fichiers n'ont	file tidak
+iCloud Photos	Foto iCloud
+jour	hari
+jour restant	hari tersisa
+jours	hari
+jours restants	hari tersisa
+le plus simple	paling mudah
+libres · %1 % utilisé	kosong · %1 % terpakai
+libère de la place avec le Ménage complet	kosongkan ruang dengan Pembersihan lengkap
+libérés	dikosongkan
+mail	email
+mail remis	email dikembalikan
+mails	email
+mails remis	email dikembalikan
+nettoie les fichiers inutiles du téléphone	bersihkan file tak berguna di ponsel
+nouveau fichier	file baru
+nouveaux fichiers	file baru
+pas à pas	langkah demi langkah
+photo	foto
+photo gardée	foto disimpan
+photo ou vidéo	foto atau video
+photo ou vidéo prise	foto atau video diambil
+photo protégée	foto dilindungi
+photos	foto
+photos gardées	foto disimpan
+photos ou vidéos	foto atau video
+photos ou vidéos prises	foto atau video diambil
+photos protégées	foto dilindungi
+puis « Étape suivante » :	lalu «Langkah berikutnya»:
+rafale	beruntun
+rafales	beruntun
+sauvegarde tes photos sur une clé ou une carte SD	cadangkan fotomu ke flashdisk atau kartu SD
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	sudah aman di cadanganmu (nama sama, ukuran sama).\n\nMasuk ke tempat sampah Galeri (bisa dipulihkan 30 hari). Yang terbaru tetap di ponsel.
+sur %1 contacts	dari %1 kontak
+trie tes photos (doublons, rafales, floues)	pilah fotomu (duplikat, beruntun, buram)
+téléchargement	unduhan
+téléchargements	unduhan
+utilisé	terpakai
+vidéo	video
+vidéo compressée	video dikompres
+vidéos	video
+vidéos compressées	video dikompres
+vieux mail	email lama
+vieux mails	email lama
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«File rusak»: unduhan terputus. Unduh lagi ZIP ini dari email Google dan jalankan lagi: yang sudah tersalin tidak akan disalin ulang.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«Kosongkan ruang»: simpan di ponsel foto dari … terakhir
+À GARDER	SIMPAN
+À JETER	BUANG
+À RETROUVER VITE	CEPAT DITEMUKAN
+À nettoyer	Untuk dibersihkan
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	Gunakan ini jika kamu menghapus salinan di disk: Clean Smart melupakan apa yang sudah disalin, dan file ZIP berikutnya akan disalin ulang seluruhnya.\n\nDisk yang dipilih dan setelanmu disimpan. Tidak ada yang dihapus di disk maupun di %1.
+Écriture impossible	Tidak bisa menulis
+Électricité	Listrik
+à jeter	untuk dibuang
+élément	item
+éléments	item
+… et %1 autres mails du même genre (cochés).	… dan %1 email lain yang sejenis (dicentang).
+‹ Retour	‹ Kembali
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1 terbaca tanpa kesalahan. Sidik jari salinan sudah tidak ada di ponsel ini: tidak bisa dibandingkan.
+↩️ %1 dans la boîte de réception	↩️ %1 di kotak masuk
+↩️ %1 remis dans la galerie	↩️ %1 dikembalikan ke galeri
+↩️ %1 remis à leur place	↩️ %1 dikembalikan ke tempatnya
+↩️ J'ai fait une bêtise : remettre les %1	↩️ Saya keliru: kembalikan %1
+↩️ Mails remis (démonstration)	↩️ Email dikembalikan (demo)
+↩️ Remettre %1 dans ma boîte	↩️ Kembalikan %1 ke kotak masuk
+↩️ Remettre des mails	↩️ Kembalikan email
+↩️ Tout remettre à sa place	↩️ Kembalikan semua ke tempatnya
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Menunggu file berikutnya di Download. Ketuk link «Unduh» di email.
+⏳ En attente du prochain fichier dans Download…	⏳ Menunggu file berikutnya di Download…
+⏳ copie en cours…	⏳ menyalin…
+⏳ plus tard	⏳ nanti
+⏹ Arrêter	⏹ Hentikan
+☑️ Tout cocher	☑️ Centang semua
+⚙️ Cache des applis et fichiers système	⚙️ Cache aplikasi dan file sistem
+⚙️ Options	⚙️ Opsi
+⚠️ %1 : à relancer.\n	⚠️ %1: jalankan lagi.\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 bermasalah: jalankan lagi ZIP bertanda «jalankan lagi» sebelum melanjutkan.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ %1 di disk tidak lagi identik atau tidak terbaca:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ Tidak ada cadangan malam ini
+⚠️ Fichier %1 à reprendre	⚠️ File %1 perlu diulang
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ Perlu sekitar %1, tersisa %2. Kamu bisa mulai: saat penuh, pasang disk lain dan kami lanjut tanpa duplikat.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ Penyalinan berhenti: %1\n\nTidak ada yang hilang: jalankan lagi mode otomatis, kami lanjut tanpa duplikat.
+⚠️ On ne commence pas	⚠️ Belum mulai
+⚠️ Sauvegarde de la nuit	⚠️ Cadangan malam
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ rusak: unduh lagi dari email, akan disalin otomatis
+⚠️ disque plein	⚠️ disk penuh
+⚠️ pas commencé	⚠️ belum mulai
+⚠️ à relancer	⚠️ jalankan lagi
+⚠️ à relancer (%1)	⚠️ jalankan lagi (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ Salinan belum lengkap (file rusak, perlu diulang, atau belum disalin). Selesaikan dulu salinannya: jangan hapus apa pun di %1.
+✅ %1 : terminé et vérifié.\n	✅ %1: selesai dan diperiksa.\n
+✅ %1 doublon(s) supprimé(s)	✅ %1 duplikat dihapus
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ %1 email disimpan · %2 PDF · arsip CleanSmart/Mails/index.html diperbarui
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 email penting aman · %2 PDF dikumpulkan · arsip index.html diperbarui
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ %1 foto baru dicadangkan
+✅ %1 · depuis %2	✅ %1 · selama %2
+✅ %1 à l'abri	✅ %1 aman
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 email penting aman (demo)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 7.958 foto bagus dicadangkan (demo)
+✅ Assez de place sur « %1 ».	✅ Ruang cukup di «%1».
+✅ Boîte mail connectée	✅ Kotak surat terhubung
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ Disk diperiksa: %1 dibaca ulang, tidak ada yang rusak.
+✅ Doublons supprimés (démonstration)	✅ Duplikat dihapus (demo)
+✅ Fichier %1 terminé	✅ File %1 selesai
+✅ La copie sur le disque est complète et vérifiée.	✅ Salinan di disk lengkap dan sudah diperiksa.
+✅ Mails sauvegardés (démonstration)	✅ Email disimpan (demo)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ salinan lengkap dan diperiksa\n✅ pencadangan ponsel dimatikan\n✅ foto dicek di disk\n\nBuka %1? Kamu sendiri yang memilih apa yang dihapus.
+✅ copié et vérifié	✅ disalin dan diperiksa
+✅ copié, vérifié, supprimé du téléphone	✅ disalin, diperiksa, dihapus dari ponsel
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 dibuang · %2 dikosongkan di kotak suratmu
+✉️ %1 mails	✉️ %1 email
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 email (folder «Mails Gmail», buka index.html)\n
+✉️ Boîte mail	✉️ Kotak surat
+✉️ Mails	✉️ Email
+✉️ Mails de %1	✉️ Email dari %1
+✓ %1 choisi	✓ %1 dipilih
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 dikosongkan (bisa dipulihkan 30 hari di tempat sampah Galeri)
+✨ %1 mails mis à la corbeille	✨ %1 email dipindah ke tempat sampah
+✨ %1 mis à la corbeille (démonstration)	✨ %1 dipindah ke tempat sampah (demo)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 dipindah ke tempat sampah emailmu (bisa dipulihkan dengan «Kembalikan email»)
+✨ %1 nettoyés · %2 libérés	✨ %1 dibersihkan · %2 dikosongkan
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 email lama ke tempat sampah (yang penting disimpan)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1.249 email ke tempat sampah (demo)
+✨ 1,1 Go libérés (démonstration)	✨ 1,1 GB dikosongkan (demo)
+✨ 6,4 Go libérés (démonstration)	✨ 6,4 GB dikosongkan (demo)
+✨ Mails mis à la corbeille (démonstration)	✨ Email ke tempat sampah (demo)
+✨ Ménage automatique du dimanche	✨ Pembersihan otomatis hari Minggu
+✨ Ménage du dimanche	✨ Pembersihan hari Minggu
+✨ Vieux mails mis à la corbeille (démonstration)	✨ Email lama ke tempat sampah (demo)
+❤️ Santé du téléphone : %1 / 100	❤️ Kesehatan ponsel: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ Geser ke kiri: semua emailnya ke tempat sampah   ·   Geser ke kanan: disimpan ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ Geser ke kiri untuk membuang   ·   Geser ke kanan untuk menyimpan ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 sedang berlangsung: penyalinan dimulai begitu selesai.
+⬜ Tout décocher	⬜ Hapus semua centang
+⭐ Protéger mes %1	⭐ Lindungi %1 saya
+🍏 Mes photos iCloud	🍏 Foto iCloud saya
+🍏 Pense à une nouvelle copie iCloud	🍏 Saatnya salinan iCloud baru
+🍏 Quitter iCloud Photos	🍏 Tinggalkan Foto iCloud
+🎁 Version d'essai · %1	🎁 Versi uji coba · %1
+🎉 %1 libérés au total	🎉 %1 dikosongkan total
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 Tidak ada file tak berguna: ponsel bersih!
+🎉 Aucun mail à jeter ici.	🎉 Tidak ada email untuk dibuang di sini.
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 Tidak ada aplikasi terlupa: semuanya kamu pakai!
+🎉 Plus rien ici.	🎉 Tidak ada apa-apa lagi di sini.
+🎉 Rien à nettoyer, tout est propre !	🎉 Tidak ada yang perlu dibersihkan, semua rapi!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 Selesai: %1 disalin dan diperiksa. Total di disk: %2 dan %3.
+🎉 Tous les fichiers sont faits	🎉 Semua file selesai
+🎬 Démonstration	🎬 Demo
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 MODE DEMO: tidak ada yang disentuh di ponsel
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 Mode demo: tidak ada yang disentuh di ponsel
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 Setiap tombol menampilkan dulu daftar email: hapus centang yang ingin disimpan, lalu konfirmasi.
+👀 Voir et jeter ses mails maintenant	👀 Lihat dan buang emailnya sekarang
+👆 Les expéditeurs que tu as jetés	👆 Pengirim yang kamu buang
+👆 Tri des expéditeurs	👆 Memilah pengirim
+👆 Tri rapide	👆 Pilah cepat
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Sekarang: di email Google, unduh file %1 (lewat Wi-Fi). Lalu ketuk tombol hijau dan pilih di Unduhan.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Sekarang: di privacy.apple.com, unduh «Part %1» (lewat Wi-Fi). Lalu ketuk tombol hijau dan pilih di Unduhan.
+👉 À faire maintenant	👉 Yang harus dilakukan sekarang
+👉 à télécharger puis traiter	👉 unduh lalu proses
+👍 Tu as déjà la dernière version (%1)	👍 Kamu sudah punya versi terbaru (%1)
+👯 Mails en double	👯 Email ganda
+💡 Aide	💡 Bantuan
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 Tips: berhenti berlangganan agar tidak menerimanya lagi (tombol di daftar «Siapa yang paling sering mengirim email»).
+💡 Si ça bloque	💡 Jika macet
+💡 Si ça bloque : tous les conseils	💡 Jika macet: semua tips
+💾 %1 sur « %2 »	💾 %1 di «%2»
+💾 Sauvegarde de la nuit	💾 Cadangan malam
+💾 Sauvegarder %1	💾 Simpan %1
+💾 Sauvegarder toutes mes photos	💾 Cadangkan semua foto saya
+💾 Sauver des mails	💾 Simpan email
+📁 Choisir le dossier de sauvegarde	📁 Pilih folder cadangan
+📁 Choisir un dossier	📁 Pilih folder
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: email lengkap (.eml)\n📕 CleanSmart / PDF: semua PDF dikumpulkan\n📎 CleanSmart / Pieces jointes: file lainnya
+📁 Dossier de sauvegarde enregistré	📁 Folder cadangan disimpan
+📂 Traiter un fichier ZIP	📂 Proses file ZIP
+📂 Traiter un fichier ZIP à la main	📂 Proses file ZIP secara manual
+📅 Ton rapport du mois	📅 Laporan bulananmu
+📎 Gros mails	📎 Email besar
+📕 Cocher les PDF	📕 Centang PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF disimpan di Unduhan / Clean Smart
+📕 PDF souvenir créé (démonstration)	📕 PDF kenangan dibuat (demo)
+📖 Mode d'emploi	📖 Panduan penggunaan
+📤 Envoyer (%1)	📤 Kirim (%1)
+📦 Les plus grosses	📦 Yang terbesar
+📦 Quitter Google Photos	📦 Tinggalkan Google Foto
+📦 Ta nouvelle copie Google est peut-être prête	📦 Salinan Google barumu mungkin sudah siap
+📧 Ouvrir le mail de Google	📧 Buka email Google
+📰 Newsletters et pubs	📰 Buletin dan iklan
+📱 Mes applis	📱 Aplikasi saya
+📱 Ouvrir l'app Google Photos	📱 Buka aplikasi Google Foto
+📱 Téléphone	📱 Ponsel
+📱 Téléphone presque plein	📱 Ponsel hampir penuh
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 %1 foto dan %2 video disalin dan diperiksa, diurutkan per tahun\n
+📸 Photos	📸 Foto
+🔄 Analyser à nouveau	🔄 Analisis lagi
+🔄 Chercher à nouveau	🔄 Cari lagi
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 Mulai ulang semuanya (saya menghapus salinan)
+🔍 Analyser ma boîte mail	🔍 Analisis kotak surat saya
+🔍 Analyser mon téléphone	🔍 Analisis ponsel saya
+🔍 Chercher les mails avec pièces jointes	🔍 Cari email dengan lampiran
+🔎 Vérifier le disque (relit chaque photo)	🔎 Periksa disk (membaca ulang setiap foto)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 Sandimu tetap terenkripsi di ponsel. Hanya dikirim ke server layanan emailmu.
+🔓 Autoriser	🔓 Izinkan
+🔓 Autoriser l'accès aux fichiers	🔓 Izinkan akses file
+🔓 Une autorisation pour en savoir plus	🔓 Satu izin untuk tahu lebih banyak
+🔓 Une autorisation, une seule fois	🔓 Satu izin, sekali saja
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 Sekali saja: izinkan «Akses semua file» agar Clean Smart bisa melihat folder Download. Hanya file %1 yang dibaca.
+🔔 Mail de %1	🔔 Email dari %1
+🔔 Tu seras prévenu quand il t'écrit	🔔 Kamu akan diberi tahu saat dia mengirim email
+🕰️ Vieux mails	🕰️ Email lama
+🕰️ Vieux mails (les importants sont gardés)	🕰️ Email lama (yang penting disimpan)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ Tempat sampah dikosongkan: %1 didapat kembali untuk selamanya
+🗑️ Désinstaller	🗑️ Copot
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ File dihapus dari ponsel: ada ruang untuk yang berikutnya
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ Pengirim «selalu buang» saya
+🗑️ Mettre %1 à la corbeille	🗑️ Buang %1 ke tempat sampah
+🗑️ Ouvrir %1 pour effacer	🗑️ Buka %1 untuk menghapus
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ Emailnya akan masuk ke tempat sampah setiap malam
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ Hapus ZIP ini dari ponsel (disarankan)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ Selalu buang: %1   🛡️ Selalu simpan: %2   🔔 Beri tahu saya: %3
+🗜️ Compresser (%1)	🗜️ Kompres (%1)
+😴 Pas ouvertes depuis 3 mois	😴 Tidak dibuka selama 3 bulan
+🚫 Se désabonner	🚫 Berhenti berlangganan
+🛡️ %1 (mises en favori)	🛡️ %1 (dijadikan favorit)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 disimpan di folder «Dilindungi» kotak suratmu
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ Pengirim penting (bank, pemerintahan, kesehatan…): emailnya tidak pernah dibuang.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ Tombol hapus muncul saat salinan lengkap dan kotak 1 dan 2 dicentang.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ Email dari bank, pemerintahan, atau kesehatan tidak pernah masuk ke tempat sampah.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ %1 tidak pernah dikosongkan sebelum salinan diperiksa: centang dulu kotak pertama.
+🛡️ Protéger (%1)	🛡️ Lindungi (%1)
+🛡️ Ranger mes mails importants	🛡️ Rapikan email penting saya
+🛡️ Ses mails ne seront jamais jetés	🛡️ Emailnya tidak akan pernah dibuang
+🤖 Copie automatique de tes photos	🤖 Salinan otomatis fotomu
+🤖 Démarrer le mode automatique	🤖 Mulai mode otomatis
+🤖 Tout automatique (le plus simple)	🤖 Serba otomatis (paling mudah)
+🧊 Vider son cache	🧊 Kosongkan cache-nya
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 %1 duplikat dan 🎞️ %2 foto beruntun disisihkan\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 duplikat   🎞️ foto beruntun yang gagal\n📱 tangkapan layar   🎬 video besar\n💬 media WhatsApp   👥 kontak ganda\n✉️ buletin dan email besar
+🧭 Ménage	🧭 Bersih-bersih
+🧭 Ménage des mails	🧭 Bersih-bersih email
+🧭 Ménage guidé	🧭 Pembersihan terpandu
+🧹 Fichiers inutiles	🧹 File tak berguna
+🧹 Jeter les mails de %1	🧹 Buang email dari %1
+🧹 Le ménage sûr	🧹 Pembersihan aman
+🧹 Mails triés cette nuit	🧹 Email dipilah malam ini
+🧹 Mettre %1 à la corbeille	🧹 Buang %1 ke tempat sampah
+🧹 Ménage sûr	🧹 Pembersihan aman
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 Pembersihan aman: buletin, notifikasi, duplikat
+🧹 Nettoyer · %1	🧹 Bersihkan · %1
+🧹 Nettoyer · %1 · %2	🧹 Bersihkan · %1 · %2

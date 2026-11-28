@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 복사하지 못했습니다: 같은 파일을 다시 실행하세요.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n「확인 필요」 %1 항목은 Clean Smart 휴지통으로 갑니다: 7일 동안 되돌릴 수 있습니다.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\n주의: 삭제는 계정(Google 등)과 동기화됩니다.
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\n디스크나 휴대폰이 가득 찼습니다: 공간을 확보하거나(또는 2단계에서 디스크 변경) 이 파일을 다시 실행하세요. 두 번 복사되는 것은 없습니다.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\n파일이 손상되었거나 불완전합니다: Google 메일에서 다시 다운로드한 후 다시 실행하세요. 이미 복사된 것은 유지됩니다.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\n사본은 먼저 백업 폴더에 .vcf 파일로 내보내집니다.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\n해당 파일이 들어 있던 ZIP 파일(또는 자동 모드)을 다시 실행하세요: 다시 복사됩니다. 그 전에 %1에서 아무것도 삭제하지 마세요.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\n먼저 백업 폴더에 사본을 만듭니다.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Google에서는 메일과 Google 포토가 같은 15GB를 함께 씁니다: 메일을 정리하면 사진 공간도 늘어납니다.
+ sur environ %1 Go	 (약 %1 GB 중)
+ · %1 doublons, rafales ou ratées non sauvegardés	 · 중복, 연속 촬영, 실패한 사진 %1개는 백업하지 않음
+ · %1 à la corbeille	 · %1 휴지통으로
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · 「확인 필요」 파일은 Clean Smart 휴지통에 있습니다(7일)
+ · va dans la corbeille Clean Smart	 · Clean Smart 휴지통으로 이동
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): 남는 중복, 남는 연속 촬영, 검거나 흰 사진, 한 달 넘은 스크린샷.\n\n갤러리 휴지통으로 갑니다(30일 안에 복원 가능).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2)이(가) 바로 공간을 확보하기 위해 영구 삭제됩니다.\n\n복원할 수 없습니다.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  버릴 항목 %3
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: 뉴스레터와 광고(보낸 사람 %2), 알림, 중복 메일.
+%1 Go · prévois %2	%1 GB · %2 준비
+%1 analysées	%1 분석함
+%1 avec pièces jointes (dont %2 avec PDF)	첨부 파일 있음 %1(PDF %2)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 성공. 원본을 휴지통으로 보내면 %2를 확보합니다.
+%1 ce mois-ci. 	이번 달 %1.
+%1 copié(s) dans ton dossier de sauvegarde.	%1을(를) 백업 폴더에 복사했습니다.
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	불필요한 파일 %1: 임시 파일, 썸네일, 빈 폴더, 앱 잔여물.
+%1 de plus de %2 mois 	%2개월이 지난 %1
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	「항상 버리기」 보낸 사람의 %1을(를) 휴지통으로 이동(30일 동안 복원 가능).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	중복 %1개가 휴지통으로 갑니다. 각 메일의 첫 번째는 유지됩니다.
+%1 et %2 copiées et vérifiées.	%1과(와) %2 복사 및 확인 완료.
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1과(와) %2 안전합니다. 삭제하고 다음 파일을 다운로드해도 됩니다.
+%1 fichier(s) sauvegardé(s)	파일 %1개 백업됨
+%1 jetés	%1 버림
+%1 libres sur %2	%2 중 %1 남음
+%1 libérés sur le téléphone	휴대폰에서 %1 확보
+%1 mails dans la boîte · %2 analysés	메일함에 메일 %1통 · %2 분석
+%1 min %2 s	%1분 %2초
+%1 newsletters · %2 gros mails	뉴스레터 %1 · 큰 메일 %2
+%1 newsletters, %2 gros mails (%3).	뉴스레터 %1, 큰 메일 %2(%3).
+%1 photos trouvées	사진 %1장을 찾았습니다
+%1 photos · %2 vidéos analysées	사진 %1장 · 동영상 %2개 분석
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	사진 %1 · 동영상 %2 · 중복과 연속 촬영 %3 제외
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1이(가) 모든 사진의 사본을 준비합니다. 이 예시와 똑같이 하세요:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1이(가) 삭제됩니다: 더 이상 필요 없거나 자동으로 다시 만들어집니다.
+%1 seront supprimés pour de bon.	%1이(가) 영구 삭제됩니다.
+%1 sur %2 choisis · %3	%2 중 %1 선택 · %3
+%1 sur %2 fichiers faits	%2개 파일 중 %1개 완료
+%1 sur %2 · %3	%2 중 %1 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1이(가) 갤러리 휴지통으로 갑니다(30일 동안 복원 가능).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1이(가) 갤러리 휴지통으로 갑니다(30일 동안 복원 가능).
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: 중복, 남는 연속 촬영, 검거나 흰 사진, 한 달 넘은 스크린샷. 가장 좋은 사진은 남깁니다.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	총 %1 · %2. 앱을 탭하면 제거하거나 캐시를 지울 수 있습니다.
+%1 à jeter	버릴 항목 %1
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1을(를) 한 장씩 확인하세요. 왼쪽으로 밀면 버리고, 오른쪽으로 밀면 보관(즐겨찾기 ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	%1, %2, %3 복사 · %4와(과) %5 제외.
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1%2년이 지난 메일은 휴지통으로(중요한 메일 제외).
+(sans objet)	(제목 없음)
+. %1 en double ou en rafale à trier : touche ici.	. 정리할 중복·연속 촬영 %1: 여기를 탭하세요.
+1 bouton	버튼 1개
+1 mois	1개월
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. 백업을 껐습니다: Google 포토 앱 › 오른쪽 위 내 사진 › 포토 설정 › 백업 › 사용 안함.
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. iPhone에서 「iCloud 사진」을 껐습니다(설정 › 내 이름 › iCloud › 사진).
+12 mois	12개월
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. PC에서 디스크를 열어 사진이 연도별로 잘 보이는 것을 확인했습니다.
+3 mois	3개월
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. 권장: 두 번째 사본을 만들었습니다(다른 디스크나 PC).
+4 étapes	4단계
+6 mois	6개월
+AFFICHAGE	화면
+AUTOMATIQUE	자동
+AUTRE	기타
+Adresse mail	이메일 주소
+Adresse, serveur et mot de passe sont obligatoires.	주소, 서버, 비밀번호는 필수입니다.
+Alerte retirée	알림을 해제했습니다
+Alertes et rapport du mois	알림 및 월간 보고서
+Analyse de la boîte mail	메일함 분석 중
+Analyse des 3 000 mails les plus récents de la boîte de réception.	받은편지함의 최근 메일 3,000통을 분석합니다.
+Analyse des mails (%1 / %2)	메일 분석 중(%1 / %2)
+Analyse du téléphone	휴대폰 분석 중
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	「%1」 메일함 분석: 뉴스레터, 큰 메일, 오래된 메일. 중요한 메일은 항상 보관됩니다.
+Analyser ma boîte mail	내 메일함 분석
+Analyser mon téléphone	내 휴대폰 분석
+Annuler	취소
+Annuler, ne rien jeter	취소, 아무것도 버리지 않기
+Appeler	전화하기
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple이 요청을 확인한 후 보통 3~7일 안에 메일을 보냅니다. 그다음 privacy.apple.com에서 파일을 다운로드합니다(휴대폰에서 로그인).
+Apple · Données et confidentialité	Apple · 데이터 및 개인정보 보호
+Appliquer « toujours jeter » maintenant	「항상 버리기」 지금 적용
+Arrêt après le fichier en cours…	현재 파일 이후 중지합니다…
+Arrêter	중지
+Arrêter le mode automatique ?	자동 모드를 중지할까요?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	중지했습니다. 이미 복사된 파일은 안전하며, 나머지는 다음에 중복 없이 복사됩니다.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	팁: 설정 › 애플리케이션에서 앱(Chrome, Facebook 등)을 탭 › 저장공간 › 「캐시 지우기」.
+Aucun contact en double	중복 연락처 없음
+Aucun dossier choisi	선택한 폴더 없음
+Aucun dossier de sauvegarde	백업 폴더 없음
+Aucun fichier inutile.	불필요한 파일이 없습니다.
+Aucune boîte mail connectée.	연결된 메일함이 없습니다.
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	USB 메모리나 디스크가 감지되지 않습니다. 연결한 후(USB-C 어댑터) 이 단계를 다시 여세요.
+Aucune vidéo n'a pu être réduite davantage.	더 줄일 수 있는 동영상이 없습니다.
+Autre	기타
+Autres fichiers d'installation (.apk)	기타 설치 파일(.apk)
+Avant tout : analyser	먼저: 분석
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	「사용 정보 접근」을 허용하면 Clean Smart가 각 앱의 실제 용량과 마지막으로 연 시기를 알 수 있습니다. 아무것도 전송되지 않습니다.
+BOÎTE MAIL	메일함
+Banque	은행
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	은행, 관공서, 건강, 청구서, PDF가 있는 모든 메일: 백업하고 PDF를 모아 PC용 index.html 보관함을 만듭니다.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	은행, 관공서, 건강, 청구서, PDF가 있는 모든 메일: 백업하고 PDF를 모아 PC용 index.html 보관함을 만듭니다. 메일함에서는 「보호됨」에 정리됩니다.
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	은행, 세금, 건강, 집, 가족(내 연락처): 따로 정리, 절대 버리지 않음
+Batterie faible (%1 %)	배터리 부족(%1 %)
+Bonjour	안녕하세요
+Boutique Mode	패션 매장
+Boîte mail en ordre !	메일함 정리 완료!
+Boîte mail remplie à %1 % (%2 / %3)	메일함 %1 % 사용(%2 / %3)
+Boîte protégée	보호된 메일함
+Boîte remplie à %1 % (%2 / %3). 	%1 % 사용(%2 / %3).
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	충전기를 연결하세요: 파일 하나에 10~30분 걸릴 수 있습니다.\n\n휴대폰이 꺼져도 잃는 것은 없습니다: 같은 파일을 다시 실행하면 됩니다.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	처리 중에는 충전기를 연결하세요: 큰 파일은 10~30분 걸릴 수 있습니다. 화면은 켜진 상태로 유지됩니다.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	USB 메모리나 디스크를 휴대폰에 연결한 후 그 안의 폴더를 선택(또는 만들기)하세요.
+Brancher la clé ou le disque	USB 메모리나 디스크 연결
+C'est fait : le prochain fichier sera entièrement recopié.	완료: 다음 파일은 처음부터 전부 다시 복사됩니다.
+C'est noté	알겠습니다
+CONSEILLÉ	추천
+CONTACT	문의
+CONTACTS	연락처
+Captures d'écran	스크린샷
+Carte SD, clé USB, Drive… choisis où tu veux	SD 카드, USB 메모리, Drive… 원하는 곳을 선택
+Carte SD, clé USB, Google Drive…	SD 카드, USB 메모리, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	이 파일은 이미 복사 및 확인되었습니다. 다시 해도 중복은 생기지 않지만 필요 없습니다.\n\n아마 다음 파일(%1)을 원하셨을 거예요.
+Ce mois-ci	이번 달
+Cette année	올해
+Changer de compte	계정 변경
+Changer de dossier	폴더 변경
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	매주 일요일, 안전한 불필요 파일과 스팸이 자동으로 정리됩니다. 확보한 공간과 정리할 사진이 있는지 알림으로 알려 드립니다.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	선택한 각 메일은 백업 폴더에 저장됩니다:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	각 동영상을 720p로 다시 만들어(보통 3~5배 가벼움) 동영상 / Clean Smart에 저장합니다.
+Choisir le dossier sur le disque	디스크의 폴더 선택
+Choisir un dossier	폴더 선택
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	먼저 USB 메모리나 디스크의 폴더를 선택하세요(2단계).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	먼저 USB 메모리나 디스크의 폴더를 선택하세요(「디스크」 단계).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	먼저 폴더를 선택하세요: SD 카드, USB 메모리 또는 Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	먼저 백업 폴더를 선택하세요(옵션).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	먼저 백업 폴더를 선택하세요(SD 카드, USB 메모리, Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	먼저 백업 폴더를 선택하고 백업하세요.
+Choisis d'abord un dossier de sauvegarde.	먼저 백업 폴더를 선택하세요.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	메일 선택: 첨부 파일과 함께 보관되며 PDF는 별도 폴더에
+Choisis une carte SD, une clé USB ou Google Drive	SD 카드, USB 메모리 또는 Google Drive를 선택하세요
+Choix des plus belles photos…	가장 멋진 사진을 고르는 중…
+Clean Smart : copie automatique	Clean Smart: 자동 복사
+Clean Smart attend les fichiers dans Download…	Clean Smart가 Download의 파일을 기다리는 중…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart가 최근 메일 3,000통을 읽습니다(아무것도 삭제하지 않음).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart가 모든 사진을 살펴봅니다(아무것도 삭제하지 않음).
+Clean Smart trouve en un clic :	Clean Smart가 한 번의 탭으로 찾아냅니다:
+Clé USB (démonstration)	USB 메모리(데모)
+Clé USB ou disque dur, avec un adaptateur USB-C	USB 메모리 또는 외장 하드, USB-C 어댑터 사용
+Colis et livraisons	택배 및 배송
+Combien de place faut-il ?	공간이 얼마나 필요할까요?
+Comme le téléphone	휴대폰과 동일
+Commencer	시작
+Compresser	압축
+Compresser %1 ?	%1 압축할까요?
+Compression des vidéos	동영상 압축 중
+Compris	알겠습니다
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	메일함 연결(Gmail, Outlook, Yahoo, Orange, Free 등): 뉴스레터, 큰 메일과 오래된 메일을 정리하고 중요한 메일은 항상 보관합니다.
+Connecter	연결
+Connecter ma boîte mail	내 메일함 연결
+Connexion au serveur	서버에 연결 중
+Connexion impossible : 	연결할 수 없음:
+Connexion à la messagerie	메일 서비스에 연결 중
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	권장: 두 번째 사본을 만들었습니다(다른 디스크나 PC).
+Contacts en double	중복 연락처
+Continuer quand même	그래도 계속
+Copie automatique	자동 복사
+Copier les fichiers un par un	파일을 하나씩 복사
+Copies identiques — l'original est gardé	동일한 사본 — 원본은 유지
+Corbeille	휴지통
+Corbeille : %1	휴지통: %1
+Corbeille Clean Smart	Clean Smart 휴지통
+Corbeille de la messagerie	메일 휴지통
+Correct, mais peut mieux faire	괜찮지만 더 좋아질 수 있어요
+Créer une exportation	내보내기 만들기
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Google 포토에서: 사진을 길게 눌러 날짜 전체를 선택한 다음 「삭제」. Google 휴지통은 60일 동안 모두 보관합니다.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Google 테이크아웃에서 2GB 파일을 선택하세요: 하나씩 처리하므로 휴대폰에 공간이 많이 필요하지 않습니다.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Apple 요청에서 1GB 또는 2GB 파일을 선택하세요: 하나씩 처리하므로 휴대폰에 공간이 많이 필요하지 않습니다.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Google 메일에서 「다운로드」 버튼 수를 세세요: 그것이 파일 수입니다.
+Demander la copie à %1	%1에 사본 요청
+Demander une copie de tes données	내 데이터 사본 요청
+Demandée · attends le mail de %1	요청함 · %1의 메일을 기다리세요
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Android 11부터 정리 앱은 다른 앱의 캐시나 시스템 파일을 지울 수 없습니다. Android가 직접 합니다: 이 버튼은 「공간 확보」 화면을 엽니다.
+Depuis l'installation	설치 이후
+Dernière vérification	마지막 확인
+Des applis téléchargées mais pas installées. À vérifier.	다운로드했지만 설치하지 않은 앱. 확인 필요.
+Disque	디스크
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	디스크를 인식하지 못합니다: USB-C(OTG) 어댑터를 사용하세요. exFAT로 포맷한 메모리는 어디서나 작동합니다(FAT32는 4GB 넘는 파일 불가).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	디스크가 가득 참: 더 큰 디스크를 연결하고 「디스크」 단계에서 선택하세요. 중복 없이 이어서 진행합니다.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	다운로드 폴더에서 6개월 동안 손대지 않은 문서. 확인 필요.
+Dossier Corbeille introuvable sur ce compte.	이 계정에서 휴지통 폴더를 찾을 수 없습니다.
+Dossier Corbeille introuvable.	휴지통 폴더를 찾을 수 없습니다.
+Dossier Spam introuvable sur ce compte.	이 계정에서 스팸 폴더를 찾을 수 없습니다.
+Dossier de sauvegarde	백업 폴더
+Dossier de sauvegarde introuvable.	백업 폴더를 찾을 수 없습니다.
+Dossiers cache	캐시 폴더
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	휴대폰에 더 이상 없는 앱이 남긴 폴더. 확인 필요.
+Dossiers vides	빈 폴더
+Dossiers vides…	빈 폴더…
+Doublons	중복
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	남는 중복과 연속 촬영(가장 좋은 사진은 유지), 검거나 흰 사진, 오래된 스크린샷. 보관할 사진은 탭하세요. 모두 갤러리 휴지통으로 갑니다(30일).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	중복, 남는 연속 촬영, 검거나 흰 사진, 오래된 스크린샷.
+Doublons, rafales, floues	중복, 연속 촬영, 흐림
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	보관할 메일의 체크를 해제하세요. 은행, 세금, 건강, 「항상 보관」 보낸 사람의 메일은 이 목록에 없습니다. 모두 메일 휴지통으로 갑니다(복원 가능).
+Démonstration…	데모…
+Déplacement vers la corbeille…	휴지통으로 이동 중…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	기본값은 꺼짐. 켜면 정리 전에 사진(과 연락처 .vcf)을 안전을 위해 폴더에 복사합니다.
+Elles sont déjà toutes en favori 👍	이미 모두 즐겨찾기입니다 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	데모 모드에서는 파일을 처리하지 않습니다. 실제로 하려면 데모를 종료하세요(옵션).
+En pleine forme	최상의 상태
+Envoyer %1	%1 보내기
+Envoyer le PDF souvenir	추억 PDF 보내기
+Envoyer le lien par e-mail · Exporter une fois	이메일로 다운로드 링크 보내기 · 한 번 내보내기
+Erreur inattendue	예기치 않은 오류
+Espace libéré	확보한 공간
+Espace libéré depuis le début : %1. Une petite analyse ?	처음부터 확보한 공간: %1. 간단히 분석해 볼까요?
+Espace à récupérer	확보할 수 있는 공간
+Et tes mails	그리고 메일
+Factures et papiers	청구서와 서류
+Faire le ménage sûr ?	안전한 정리를 할까요?
+Fait ✔	완료 ✔
+Famille	가족
+Fermer	닫기
+Fichier %1	파일 %1
+Fichier %1 déjà fait	파일 %1 이미 완료
+Fichier illisible	읽을 수 없는 파일
+Fichiers d'installation déjà installés	이미 설치된 앱의 설치 파일
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	휴대폰 저장공간에 있는 앱 작업 파일. 필요하면 다시 만들어집니다.
+Fichiers inutiles	불필요한 파일
+Fichiers mis de côté, vidée toute seule après 7 jours	따로 보관한 파일, 7일 후 자동으로 비워짐
+Fichiers temporaires	임시 파일
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	임시 파일, 썸네일, 빈 폴더, 앱 잔여물
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	임시 파일, 썸네일, 빈 폴더, 앱 잔여물. 사진과 음악은 절대 건드리지 않습니다.
+Floue	흐림
+Floues, trop sombres ou trop claires — vérifie avant de cocher	흐리거나 너무 어둡거나 밝음 — 체크 전에 확인
+GARDÉE	보관됨
+Garder sur le téléphone les photos des derniers…	휴대폰에 보관할 사진: 최근…
+Gardés	보관
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail은 앱 비밀번호(16자)가 필요합니다:\n1. Google 계정에서 2단계 인증을 켜세요.\n2. myaccount.google.com/apppasswords 를 여세요\n3. 「Clean Smart」라는 비밀번호를 만들어 여기에 붙여 넣으세요.
+Google Photos	Google 포토
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	준비되면 Google이 메일을 보냅니다: 몇 시간에서 며칠 걸립니다. 그동안 앱을 닫아도 됩니다.
+Gros	크게
+Gros mails (+ 5 Mo)	큰 메일(5MB 이상)
+Grosses vidéos	큰 동영상
+Groupe %1 · %2 photos	그룹 %1 · 사진 %2장
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	로그인이 거부되었습니다. Gmail, Yahoo, iCloud는 평소 비밀번호가 아닌 앱 비밀번호가 필요합니다.
+Il a besoin d'un bon ménage	제대로 정리가 필요해요
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	%1만 남았습니다. Clean Smart를 열어 한 번에 공간을 확보하세요.
+Ils ne contiennent rien.	비어 있습니다.
+Ils prennent encore de la place pendant 30 jours	30일 동안은 여전히 공간을 차지합니다
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	메일함의 「보호됨」 폴더에 정리됩니다. 매일 밤 반복.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	되돌릴 수 없음: 파일이 이미 영구 삭제되었을 수 있습니다.
+Impossible de créer le dossier %1	%1 폴더를 만들 수 없습니다
+Impossible de protéger ces photos	이 사진들을 보호할 수 없습니다
+Impossible de vider la corbeille	휴지통을 비울 수 없습니다
+Impôts	세금
+Impôts - Administration	세금 - 관공서
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	메일 서비스의 IMAP 서버를 입력하세요(포트 993, SSL).
+J'ai demandé la copie	사본을 요청했습니다
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	PC에서 디스크를 열어 사진이 연도별로 잘 보이는 것을 확인했습니다.
+J'ai traité tous les fichiers	모든 파일을 처리했습니다
+Jamais jetés, rangés dans « Protégés »	절대 버리지 않고 「보호됨」에 정리
+Je libère la boîte	메일함 비우기
+Je libère la place	공간 확보
+Je mets l'important à l'abri	중요한 것 지키기
+Je mets à l'abri les bonnes	좋은 사진 지키기
+Je trie par expéditeur	보낸 사람별 정리
+Je vérifie le douteux	애매한 것 확인
+Jeter %1 ?	%1 버릴까요?
+Jeter ces mails ?	이 메일들을 버릴까요?
+Jeter les copies ?	사본을 버릴까요?
+Jeter les gros mails ?	큰 메일을 버릴까요?
+Jeter les newsletters ?	뉴스레터를 버릴까요?
+Jeter les originaux ?	원본을 버릴까요?
+Jeter les vieux mails ?	오래된 메일을 버릴까요?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	로그, 임시 백업, 중단된 다운로드. 더 이상 필요 없습니다.
+L'adresse et le mot de passe seront effacés du téléphone.	주소와 비밀번호가 휴대폰에서 지워집니다.
+L'important est à l'abri, le reste est parti	중요한 것은 안전하고, 나머지는 정리되었습니다
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	원본은 건드리지 않습니다: 나중에 휴지통으로 보낼지 물어볼게요.\n\n몇 분 걸릴 수 있습니다.
+LA NUIT	밤 동안
+LIBÉRER LA PLACE	공간 확보
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	디스크의 사본이 지워졌습니다: Clean Smart가 처음부터 모두 다시 복사합니다.
+La corbeille est vide.	휴지통이 비어 있습니다.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	메일 공간은 메일 휴지통이 비워질 때 확보됩니다(보통 30일 이내).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	백업하지 못했습니다. Clean Smart를 열어 폴더를 확인하세요.
+Langue	언어
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	가이드 정리는 모든 것을 올바른 순서로 합니다. 녹색 버튼이 항상 다음 단계입니다.
+Le bilan, et comment libérer ton compte %1	요약, 그리고 %1 계정을 비우는 방법
+Le contact d'origine est gardé.	원래 연락처는 유지됩니다.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	디스크(또는 휴대폰)가 가득 찼습니다: 복사가 안전하게 멈췄습니다.\n\n더 큰 디스크를 연결하고 2단계에서 선택한 후 자동 모드를 다시 실행하세요: 중복 없이 계속합니다.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	디스크 공간이 부족합니다: %1 남음, 이 파일에 약 %2 필요.\n\n• 디스크 공간을 확보하거나\n• 더 큰 디스크를 연결하고 「디스크」 단계에서 선택하세요(현재 위치에서 이어서 진행).\n\n아무것도 건드리지 않았습니다.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	디스크에 접근할 수 없습니다.\n\n• 제대로 연결되었는지 확인하세요(USB-C 어댑터).\n• 「디스크」 단계에서 폴더를 다시 선택하세요.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	백업 폴더에 접근할 수 없습니다. Clean Smart > 옵션에서 선택하세요.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	백업 폴더에 더 이상 접근할 수 없습니다. 다시 선택하세요.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	디스크에서 「%1」 폴더를 찾을 수 없습니다. 디스크가 연결되었는지 확인하세요(2단계).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	현재 파일을 먼저 마칩니다. 이미 복사된 파일은 안전하며, 나머지는 다음에 중복 없이.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Google 메일의 링크는 약 일주일 후 만료됩니다: 그런 경우 내보내기를 다시 요청하세요(잃는 것 없이 중복 없이 계속합니다).
+Le mois dernier	지난달
+Le ménage sûr	안전한 정리
+Le refaire quand même	그래도 다시 하기
+Le téléphone	휴대폰
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	휴대폰이 거의 가득 찼습니다(작업하려면 최소 300MB 여유 필요).\n\n• 갤러리 휴지통을 비우세요.\n• 이미 처리한 ZIP 파일을 삭제하세요(다운로드).\n• Clean Smart의 가이드 정리를 하세요.\n\n아무것도 건드리지 않았습니다.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	휴대폰이 꺼졌거나 디스크가 분리되었나요? 같은 ZIP을 다시 실행하면 됩니다: Clean Smart가 잃거나 중복하는 것 없이 이어서 합니다.
+Lecture de la galerie	갤러리 읽는 중
+Lecture des dates des photos…	사진 날짜 읽는 중…
+Lecture des vidéos	동영상 읽는 중
+Lecture impossible : %1	읽을 수 없음: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	이미 설치된 앱의 .apk: 더 이상 필요 없습니다.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	메일 휴지통의 최근 메일 200통. 받은편지함으로 되돌릴 메일을 체크하세요.
+Les 30 photos et vidéos qui prennent le plus de place	가장 많은 공간을 차지하는 사진과 동영상 30개
+Les autres cases : inutile	다른 항목: 필요 없음
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Apple 파일은 privacy.apple.com에서 약 2주 동안 받을 수 있습니다: 기간이 지났다면 새로 요청하세요(잃는 것 없이 중복 없이 계속합니다).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	휴지통으로 보낸 파일은 갤러리에서 복원할 수 있습니다.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	%1년이 지난 메일은 메일 휴지통으로 갑니다. 중요한 메일은 보관됩니다.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	2년이 지난 메일은 메일 휴지통으로 갑니다.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	5MB가 넘는 메일은 메일 휴지통으로 갑니다.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	뉴스레터, 광고, 알림, 중복 메일은 메일 휴지통으로 갑니다(받은편지함 전체).\n\n중요한 메일은 절대 건드리지 않습니다.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	먼저 사진(정리, 좋은 것 보관, 백업, 확보), 다음은 휴대폰의 불필요한 파일, 마지막으로 메일.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	이미 백업된 %1개월 지난 사진은 휴대폰에서 정리됩니다(휴지통, 30일).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	즐겨찾기 사진(🛡️ 버튼으로 보호한 사진)은 제안하지 않습니다
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	조금 흐린 사진, WhatsApp, 최근 스크린샷: 직접 결정하세요.
+Les photos, vidéos et musiques ne sont jamais touchées.	사진, 동영상, 음악은 절대 건드리지 않습니다.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	오래된 사진은 이미 백업에 있을 때만 휴지통 후보가 됩니다.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	이달이나 올해의 가장 멋진 사진을 소중한 사람에게
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	가장 큰 앱과 더 이상 열지 않는 앱: 한 번에 제거
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	스팸은 메일 휴지통으로 갑니다. 스팸이 아니면 체크를 해제하세요.
+Libérer	확보
+Libérer %1 ?	%1 확보할까요?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	%1 비우기는 선택 사항입니다. %2은(는) 어떤 앱도 사진을 지우도록 허용하지 않습니다: 확신이 들 때 직접 하세요.
+Libérer la boîte	메일함 비우기
+Libérer la boîte mail	메일함 비우는 중
+Libérer la boîte mail ?	메일함을 비울까요?
+Libérer la place	공간 확보
+Libérer la place, PDF souvenir…	공간 확보, 추억 PDF…
+Liste des photos sur le disque…	디스크의 사진 목록 만드는 중…
+MAINTENANT	지금
+Mail (facultatif, pour tes mails)	메일(선택, 메일용)
+Mails	메일
+Mails Gmail : %1	Gmail 메일: %1
+Mails avec pièces jointes	첨부 파일 있는 메일
+Mails de plus de 2 ans	2년 지난 메일
+Mails en double	중복 메일
+Mails en double…	중복 메일…
+Maison	집
+Me prévenir	알림 받기
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Clean Smart를 사용해 주셔서 감사합니다! 계속 휴대폰을 정리하려면 정식 버전을 설치하세요.
+Mes applis	내 앱
+Mes plus gros fichiers	가장 큰 파일
+Mes règles	내 규칙
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	이미 백업된 %1개월 지난 사진을 휴지통으로 보냅니다
+Mettre à l'abri	안전하게 보관
+Mettre à l'abri l'important	중요한 것을 안전하게 보관하는 중
+Miniatures	썸네일
+Mise à jour	업데이트 중
+Mise à la corbeille…	휴지통으로 이동 중…
+Mode d'emploi	사용 설명서
+Mode d'emploi introuvable.	사용 설명서를 찾을 수 없습니다.
+Mode démonstration terminé	데모 모드 종료
+Modifier ▼	편집 ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	가짜 사진, 메일, 연락처로 앱을 보여줍니다. 휴대폰에는 아무것도 건드리지 않습니다: Clean Smart 소개에 딱 좋습니다.
+Mot de passe (vide = garder l'actuel)	비밀번호(비워 두면 현재 것 유지)
+Mot de passe d'application	앱 비밀번호
+Médias WhatsApp	WhatsApp 미디어
+Ménage complet	전체 정리
+Ménage guidé	가이드 정리
+Ménage guidé des mails	메일 가이드 정리
+Ménage sûr de la boîte mail	메일함 안전 정리
+Ménage terminé !	정리 완료!
+NOUVEAU	신규
+Nettoyage de la boîte mail	메일함 정리 중
+Nettoyage des fichiers inutiles	불필요한 파일 정리 중
+Nettoyer	정리
+Nettoyer %1 ?	%1 정리할까요?
+Nettoyer le téléphone	휴대폰 정리
+Nettoyer les fichiers inutiles ?	불필요한 파일을 정리할까요?
+Newsletters et notifications…	뉴스레터와 알림…
+Newsletters et pubs	뉴스레터와 광고
+Newsletters, pubs, notifications et mails en double.	뉴스레터, 광고, 알림, 중복 메일.
+Nombre de fichiers dans le mail	메일의 파일 수
+Normale	보통
+Nouvelle version %1 disponible	새 버전 %1 이용 가능
+Oublier	삭제
+Oublier ce compte ?	이 계정을 삭제할까요?
+Oui, c'est fini	네, 끝났어요
+Ouverte aujourd'hui	오늘 열었음
+Ouverte il y a %1	%1 전에 열었음
+Ouverture de %1…	%1 여는 중…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Clean Smart를 열어 무엇을 할지 확인하세요. 잃은 것은 없습니다.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Google 페이지를 열어 Google 포토가 쓰는 공간을 확인하고 여기에 입력하세요(GB).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	「큰 동영상」을 열어 체크한 후 「압축」
+Ouvrir	열기
+Ouvrir Google Photos	Google 포토 열기
+Ouvrir Google Takeout	Google 테이크아웃 열기
+Ouvrir iCloud Photos	iCloud 사진 열기
+Ouvrir la page du mot de passe d'application	앱 비밀번호 페이지 열기
+Ouvrir privacy.apple.com	privacy.apple.com 열기
+Ouvrir « Libérer de l'espace » d'Android	Android의 「공간 확보」 열기
+PDF souvenir	추억 PDF
+PHOTOS ET VIDÉOS	사진과 동영상
+PROTECTION	보호
+Pas de photos pour cette période.	이 기간에는 사진이 없습니다.
+Pas ouverte depuis plus d'un an	1년 넘게 열지 않음
+Passer	건너뛰기
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	보기용 사진의 작은 사본. 자동으로 다시 만들어집니다.
+Photos	사진
+Photos : %1 · vidéos : %2 · doublons écartés : %3	사진: %1 · 동영상: %2 · 제외한 중복: %3
+Photos du week-end	주말 사진
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	중복 사진, 연속 촬영, 실패한 사진, 큰 동영상, 불필요한 메일… 모두 공간을 차지합니다.
+Photos et vidéos reçues ou envoyées	받거나 보낸 사진과 동영상
+Photos floues ou ratées	흐리거나 실패한 사진
+Photos iCloud	iCloud 사진
+Photos similaires	비슷한 사진
+Photos, téléphone et mails, étape par étape	사진, 휴대폰, 메일을 단계별로
+Place prise : %1	사용 공간: %1
+Plus d'outils	도구 더 보기
+Plus de 100 Mo chacune	각 100MB 이상
+Pour gagner des points : %1.	점수를 올리려면: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Clean Smart 정식 버전이나 문의는 여기로 연락하세요:
+Pour obtenir la version complète, écris-moi :	정식 버전은 여기로 연락하세요:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	불필요한 파일을 찾으려면 Clean Smart가 휴대폰 저장공간을 볼 수 있어야 합니다: 「모든 파일에 대한 접근」을 허용하세요. 아무것도 전송되지 않습니다.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	다른 계정이나 다른 디스크용. 디스크에 이미 복사된 파일은 건드리지 않습니다.
+Protéger mes favoris	즐겨찾기 보호
+Prudente	신중
+Prudente : moins de photos proposées. Stricte : davantage.	신중: 제안하는 사진이 적음. 엄격: 더 많음.
+Préparation	준비
+Préparation…	준비 중…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	휴대폰 공간이 거의 없을 때(1GB 미만) 알려 주고, 매월 1일에 간단한 요약을 보내 주세요.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	USB 메모리나 디스크에 최소 %1를 준비하세요(10 % 여유).
+QUI T'ÉCRIT LE PLUS	나에게 가장 많이 보내는 사람
+Quand le mail de %1 est arrivé	%1의 메일이 도착하면
+Quitter	종료
+Quitter Google Photos	Google 포토 떠나기
+Quitter iCloud Photos	iCloud 사진 떠나기
+RECHERCHE DES PHOTOS RATÉES	실패한 사진 찾기
+Rafales : on garde la meilleure…	연속 촬영: 가장 좋은 사진을 남깁니다…
+Rafales — la plus nette est gardée	연속 촬영 — 가장 선명한 사진 보관
+Rangement : %1	정리 중: %1
+Recherche des doublons	중복 찾는 중
+Recherche des fichiers inutiles…	불필요한 파일 찾는 중…
+Recherche des mails	메일 찾는 중
+Recherche des mails avec PDF	PDF 있는 메일 찾는 중
+Recherche des mails importants (%1 / %2)	중요한 메일 찾는 중(%1 / %2)
+Recherche des photos floues	흐린 사진 찾는 중
+Recherche des photos ratées	실패한 사진 찾는 중
+Recherche des photos similaires	비슷한 사진 찾는 중
+Recherche des pièces jointes (%1 / %2)	첨부 파일 찾는 중(%1 / %2)
+Rechercher une mise à jour	업데이트 확인
+Recommencer	다시 시작
+Recommencer avec un autre compte	다른 계정으로 다시 시작
+Recommencer depuis le début ?	처음부터 다시 시작할까요?
+Regarder la taille de %1	%1 용량 보기
+Relance l'analyse après un changement.	변경 후 다시 분석하세요.
+Remettre des mails	메일 되돌리기
+Remettre le compteur à zéro	카운터 초기화
+Remettre les fichiers	파일을 되돌리는 중
+Restes d'applis désinstallées	삭제한 앱의 잔여물
+Restes d'applis désinstallées…	삭제한 앱의 잔여물…
+Reçus plusieurs fois à quelques secondes d'écart : %1	몇 초 간격으로 여러 번 받음: %1
+Rien	없음
+Rien n'a été supprimé.	아무것도 삭제하지 않았습니다.
+Rien n'est perdu	잃는 것은 없습니다
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	동의 없이는 아무것도 삭제하지 않습니다: 모두 휴지통을 거칩니다.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	확보할 것이 없습니다: 아직 백업에 오래된 사진이 없습니다. 먼저 「모든 사진 백업」을 실행하세요.
+RÉSULTAT	결과
+Règle retirée	규칙을 해제했습니다
+Récupère des mails mis à la corbeille de ta messagerie	메일 휴지통에 버린 메일 되찾기
+Récupérer mes photos iCloud (ancien iPhone)	iCloud 사진 가져오기(예전 iPhone)
+Réduire mes vidéos	동영상 줄이기
+Réglages avancés	고급 설정
+Réglages de stockage Android	Android 저장공간 설정
+SAUVEGARDE	백업
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	사진 접근 권한이 없으면 Clean Smart가 아무것도 분석할 수 없습니다.
+Santé	건강
+Sauvegarde %1 / %2	백업 %1 / %2
+Sauvegarde automatique chaque nuit	매일 밤 자동 백업
+Sauvegarde avant suppression	삭제 전 백업
+Sauvegarde de mes bonnes photos	좋은 사진 백업 중
+Sauvegarde des mails	메일 백업 중
+Sauvegarde des mails importants	중요한 메일 백업 중
+Sauvegarde du mail %1 / %2	메일 저장 중 %1 / %2
+Sauvegarder avant de supprimer	삭제 전 백업
+Sauvegarder des mails	메일 저장
+Sauvegarder mes bonnes photos	좋은 사진 백업
+Se connecter avec ton identifiant Apple	Apple ID로 로그인
+Serveur IMAP	IMAP 서버
+Serveur introuvable : vérifie internet et le nom du serveur.	서버를 찾을 수 없습니다: 인터넷과 서버 이름을 확인하세요.
+Ses mails partent à la corbeille chaque nuit, tout seuls	이 사람의 메일은 매일 밤 자동으로 휴지통으로 갑니다
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	좋은 사진만: 중복, 남는 연속 촬영, 실패한 사진은 제외. 즐겨찾기는 「Mes meilleures」(베스트)에도 들어갑니다.
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	좋은 사진만 USB 메모리, 디스크, Google Drive에 백업합니다. Google 포토도 되찾을 수 있습니다.
+Seules les nouvelles photos sont copiées à chaque fois.	매번 새 사진만 복사합니다.
+Seuls les 20 premiers fichiers sont envoyés.	처음 20개 파일만 보냅니다.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	로그인이 거부되면 Microsoft 계정 보안에서 앱 비밀번호를 만드세요(2단계 인증 필요).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	그렇지 않으면 iPhone이 사진을 iCloud로 다시 보내고, iCloud에서 지우면 iPhone에서도 지워질 수 있습니다.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	그렇지 않으면 휴대폰이 사진을 Google로 다시 보내고, Google에서 지우면 이 휴대폰에서도 지워질 수 있습니다.
+Soldes d'hiver	겨울 세일
+Souvent inutiles après coup	나중엔 대부분 필요 없음
+Stockage du téléphone	휴대폰 저장공간
+Stricte	엄격
+Suivant	다음
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	공간을 확보하려면 다운로드에서 이 파일을 직접 삭제하세요.
+Supprimer	삭제
+Supprimer %1 ?	%1 삭제할까요?
+Supprimer ce fichier du téléphone ?	이 파일을 휴대폰에서 삭제할까요?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	복사 및 확인 후 각 파일을 휴대폰에서 삭제(권장: 공간 유지)
+Supprimer les doublons	중복 삭제
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Gmail에서는 받은편지함에 그대로 두고 「보호됨」 라벨을 붙입니다. 매일 밤 반복.
+Sur Google Takeout, en 1 minute	Google 테이크아웃에서 1분
+Sur account.apple.com → Mots de passe pour applications → en créer un.	account.apple.com → 앱 암호 → 하나 만들기.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	iPhone에서: 설정 › 내 이름 › iCloud: 「사진」이 쓰는 공간이 표시됩니다. 또는 icloud.com에서 확인하세요. 여기에 입력하세요(GB).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	iPhone 또는 icloud.com/photos에서: 사진을 선택한 후 「삭제」. 「최근 삭제된 항목」 앨범에 30일 동안 보관됩니다.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	열린 페이지에서: 저장공간 › 「캐시 지우기」. Android 규칙이라 Clean Smart가 대신할 수 없습니다.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	휴대폰에는 2~3GB 여유면 충분합니다: 한 번에 파일 하나. 현재 여유: %1.
+Sur privacy.apple.com, en 2 minutes	privacy.apple.com에서 2분
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	privacy.apple.com에서 파일 이름은 「iCloud Photos Part 1 of 12」: 마지막 숫자(여기서는 12)가 파일 수입니다. Clean Smart도 자동으로 읽습니다.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	계정 보안 → 앱 비밀번호 생성 후 여기에 붙여 넣으세요.
+Sécurité, photos ratées, démonstration…	안전, 실패한 사진, 데모…
+Sévérité	엄격도
+TERMINÉ	완료
+Ta messagerie	내 메일 서비스
+Ta période d'essai de 30 jours est terminée.	30일 체험 기간이 끝났습니다.
+Taille de %1 (Go)	%1 용량(GB)
+Taille du texte	글자 크기
+Taille maximale des fichiers : 1 Go ou 2 Go	최대 파일 크기: 1GB 또는 2GB
+Temps passé	경과 시간
+Temps restant	남은 시간
+Terminer la demande	요청 완료
+Terminé	완료
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	iPhone 사진을 USB 메모리나 디스크에, 연도별로, 중복 없이
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	최근 2개월 사진이 아직 디스크에 없습니다. Google 테이크아웃에서 새 사본을 요청하면 자동 모드가 새 사진만 중복 없이 추가합니다.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	최근 2개월 사진이 아직 디스크에 없습니다. Apple에 새 사본을 요청하세요: Clean Smart가 새 사진만 중복 없이 추가합니다.
+Tes photos à l'abri	사진이 안전합니다
+Tes réglages et ta boîte mail seront conservés.	설정과 메일함은 유지됩니다.
+Ton téléphone est plein ?	휴대폰이 가득 찼나요?
+Ton téléphone est propre et tes photos sont à l'abri	휴대폰은 깨끗하고 사진은 안전합니다
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	휴대폰과 메일함이 깨끗하고 사진은 안전합니다
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	여기를 탭해 다운로드한 후 파일을 열어 설치하세요
+Touche ici pour la version complète ou une question	정식 버전이나 문의는 여기를 탭하세요
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Google 메일의 「다운로드」 링크를 탭하기만 하세요. Clean Smart가 Download에 도착한 파일을 바로 디스크로 복사합니다. 다른 파일이 다운로드 중이어도 괜찮습니다.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	보낸 사람 탭: 항상 버리기, 항상 보관, 알림 받기, 구독 취소.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	「나에게 가장 많이 보내는 사람」에서 보낸 사람을 탭해 선택하세요
+Touche une image pour la cocher · appui long pour la voir en grand	이미지를 탭해 체크 · 길게 눌러 크게 보기
+Toucher pour analyser	탭해서 분석
+Toucher pour voir	탭해서 보기
+Toujours garder	항상 보관
+Toujours jeter	항상 버리기
+Tous les fichiers sont traités ?	모든 파일을 처리했나요?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	%1의 모든 메일(최소 %2통)이 메일 휴지통으로 갑니다.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	뉴스레터 보낸 사람 %1명의 모든 메일이 메일 휴지통으로 갑니다(분석한 메일만이 아니라 받은편지함 전체).\n\n휴지통에서 되돌릴 수 있습니다.
+Tout cocher	모두 체크
+Tout décocher	모두 체크 해제
+Tout désélectionner	모두 선택 해제
+Tout mettre à la corbeille	모두 휴지통으로
+Tout nettoyer	모두 정리
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	모두 휴지통을 거칩니다: 30일 동안 되돌릴 수 있습니다. 「실수했어요」로 한 번에 취소도 가능.
+Tout recommencer	모두 다시 시작
+Tout recommencer ?	모두 다시 시작할까요?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	모든 내용이 디스크에 복사 및 확인되었습니다. 삭제하면 다음 파일을 위한 공간이 생깁니다.\n\n사진은 Google 포토에도 남아 있습니다.
+Tout va bien, continue comme ça !	모두 좋아요, 이대로 계속하세요!
+Tout était déjà sauvegardé 👍	이미 모두 백업되어 있었습니다 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	모든 사진을 USB 메모리나 디스크에, 연도별로, 중복 없이
+Tri avant la sauvegarde	백업 전 정리
+Tri des expéditeurs	보낸 사람 정리
+Tri rapide	빠른 정리
+Tri terminé !	정리 완료!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	먼저 정리하고, 좋은 것을 남기고, 좋은 사진만 백업하고, 공간을 확보한 다음 메일을 정리하세요.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	먼저 정리하고, 좋은 것을 남기고, 좋은 사진만 백업한 다음 공간을 확보하세요.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	먼저 정리하고, 중요한 것을 지킨 다음 메일함을 비우세요. 은행, 관공서, 건강 관련 메일은 절대 버리지 않습니다.
+Trier en glissant	밀어서 정리
+Trier les expéditeurs	보낸 사람 정리
+Trier, garder, sauvegarder, libérer	정리, 보관, 백업, 확보
+Trier, mettre l'important à l'abri, vider la boîte	정리, 중요한 것 지키기, 메일함 비우기
+Trier, protéger	정리, 보호
+Trop claire	너무 밝음
+Trop petite	너무 작음
+Trop sombre	너무 어두움
+Très gros	아주 크게
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	디스크의 사본을 지웠더니 더 이상 복사가 안 되나요? 화면 아래 「모두 다시 시작(사본을 지웠어요)」를 탭한 후 ZIP 파일을 다시 실행하세요.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	예전에 iPhone을 쓰셨나요? iCloud 사진을 USB 메모리나 디스크에
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	링크를 탭하러 앱을 나가도 됩니다: 복사는 계속됩니다(「자동 복사」 알림).
+Type : .zip   ·   Taille : 2 Go	형식: .zip   ·   크기: 2GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	ZIP은 한 번에 하나씩, Wi-Fi로 다운로드하세요. 처리하고 삭제한 다음 다음 파일을 받으세요.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	privacy.apple.com에서 파일을 다운로드하기만 하세요. Clean Smart가 Download에 도착한 파일을 바로 디스크로 복사합니다.
+Téléphone	휴대폰
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	휴대폰이 가득 참: 갤러리 휴지통을 비우고, 처리한 ZIP을 삭제하고, 가이드 정리를 하세요. 최소 300MB 여유가 필요합니다.
+Un bouton, et c'est trié	버튼 하나로 정리 끝
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	보낸 사람마다 카드 한 장: 왼쪽으로 밀면 그 사람의 메일을 모두 버리고, 오른쪽으로 밀면 보관.
+Une notification quand il t'écrit	그 사람이 메일을 보내면 알림
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	한 번에 한 장: 왼쪽으로 밀면 버리고, 오른쪽으로 밀면 보관
+Une question, un souci, la version complète ? Écris-moi :	질문, 문제, 정식 버전? 여기로 연락하세요:
+Utilise ton adresse et ton mot de passe Free.	Free 주소와 비밀번호를 사용하세요.
+Utilise ton adresse et ton mot de passe La Poste.	La Poste 주소와 비밀번호를 사용하세요.
+Utilise ton adresse et ton mot de passe Orange.	Orange 주소와 비밀번호를 사용하세요.
+Utilise ton adresse et ton mot de passe SFR.	SFR 주소와 비밀번호를 사용하세요.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	새벽 2시쯤 새 사진을 백업 폴더에 복사합니다. 실패하면 알림으로 알려 드립니다.
+Version complète	정식 버전
+Version installée : %1	설치된 버전: %1
+Vider	비우기
+Vider la corbeille ?	휴지통을 비울까요?
+Vider la corbeille Clean Smart	Clean Smart 휴지통 비우기
+Vider la corbeille Clean Smart ?	Clean Smart 휴지통을 비울까요?
+Vider la corbeille maintenant	지금 휴지통 비우기
+Vider maintenant	지금 비우기
+Vieux mails vers la corbeille…	오래된 메일을 휴지통으로…
+Vieux téléchargements (plus de 6 mois)	오래된 다운로드(6개월 이상)
+Voir la liste et jeter	목록 보고 버리기
+Voir la liste et libérer	목록 보고 확보
+Voir le courrier indésirable puis le mettre à la corbeille	스팸 메일을 보고 휴지통으로 보내기
+Voir les conseils	팁 보기
+Voir ma place Google	내 Google 공간 보기
+Voir ma place iCloud	내 iCloud 공간 보기
+Votre facture	청구서
+Voyages et réservations	여행 및 예약
+Vérification de la sauvegarde	백업 확인 중
+Vérification du disque	디스크 확인 중
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Google 메일에서 각 파일(001, 002, 003…)이 처리되었는지 확인하세요.
+Vérifier, puis libérer %1 (si tu veux)	확인한 후 %1 비우기(원하면)
+Yeux fermés	눈 감음
+appli	앱
+applis	앱
+calcul…	계산 중…
+compression impossible	압축 실패
+contact en double	중복 연락처
+contacts en double	중복 연락처
+copie	사본
+copies	사본
+de ta photothèque est à l'abri	의 사진 보관함이 안전합니다
+derniers fichiers	최근 파일
+doublon	중복
+doublons	중복
+erreur	오류
+erreurs	오류
+expéditeur	보낸 사람
+expéditeurs	보낸 사람
+fais le ménage de ta boîte mail	메일함을 정리하세요
+fichier	파일
+fichier copié	파일 복사됨
+fichier copié et vérifié	파일 복사 및 확인됨
+fichier n'a	파일
+fichiers	파일
+fichiers copiés	파일 복사됨
+fichiers copiés et vérifiés	파일 복사 및 확인됨
+fichiers n'ont	파일
+iCloud Photos	iCloud 사진
+jour	일
+jour restant	일 남음
+jours	일
+jours restants	일 남음
+le plus simple	가장 쉬움
+libres · %1 % utilisé	남음 · %1 % 사용
+libère de la place avec le Ménage complet	전체 정리로 공간을 확보하세요
+libérés	확보
+mail	통
+mail remis	통 되돌림
+mails	통
+mails remis	통 되돌림
+nettoie les fichiers inutiles du téléphone	휴대폰의 불필요한 파일을 정리하세요
+nouveau fichier	개 새 파일
+nouveaux fichiers	개 새 파일
+pas à pas	단계별
+photo	장
+photo gardée	장 보관
+photo ou vidéo	개 사진 또는 동영상
+photo ou vidéo prise	개 촬영한 사진 또는 동영상
+photo protégée	장 보호
+photos	장
+photos gardées	장 보관
+photos ou vidéos	개 사진 또는 동영상
+photos ou vidéos prises	개 촬영한 사진 또는 동영상
+photos protégées	장 보호
+puis « Étape suivante » :	그다음 「다음 단계」:
+rafale	개 연속 촬영
+rafales	개 연속 촬영
+sauvegarde tes photos sur une clé ou une carte SD	사진을 USB 메모리나 SD 카드에 백업하세요
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	이(가) 이미 백업에 안전하게 있습니다(같은 이름, 같은 크기).\n\n갤러리 휴지통으로 갑니다(30일 동안 복원 가능). 최근 사진은 휴대폰에 남습니다.
+sur %1 contacts	(연락처 %1개 중)
+trie tes photos (doublons, rafales, floues)	사진을 정리하세요(중복, 연속 촬영, 흐림)
+téléchargement	개 다운로드
+téléchargements	개 다운로드
+utilisé	사용
+vidéo	개 동영상
+vidéo compressée	개 압축 동영상
+vidéos	개 동영상
+vidéos compressées	개 압축 동영상
+vieux mail	통 오래된 메일
+vieux mails	통 오래된 메일
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	「손상된 파일」: 다운로드가 끊겼습니다. 이 ZIP을 Google 메일에서 다시 받아 다시 실행하세요: 이미 복사된 것은 다시 복사하지 않습니다.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	「공간 확보」: 휴대폰에 보관할 사진: 최근…
+À GARDER	보관
+À JETER	버리기
+À RETROUVER VITE	빨리 찾기
+À nettoyer	정리할 대상
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	디스크의 사본을 지운 경우 사용하세요: Clean Smart가 이미 복사한 기록을 잊고 다음 ZIP 파일을 처음부터 전부 다시 복사합니다.\n\n선택한 디스크와 설정은 유지됩니다. 디스크나 %1에서는 아무것도 지우지 않습니다.
+Écriture impossible	쓸 수 없음
+Électricité	전기
+à jeter	버릴 항목
+élément	개
+éléments	개
+… et %1 autres mails du même genre (cochés).	… 같은 종류의 메일 %1통 더(체크됨).
+‹ Retour	‹ 뒤로
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1을(를) 오류 없이 읽었습니다. 사본의 지문이 이 휴대폰에 없어 비교할 수 없습니다.
+↩️ %1 dans la boîte de réception	↩️ 받은편지함에 %1
+↩️ %1 remis dans la galerie	↩️ %1 갤러리로 되돌림
+↩️ %1 remis à leur place	↩️ %1 제자리로 되돌림
+↩️ J'ai fait une bêtise : remettre les %1	↩️ 실수했어요: %1 되돌리기
+↩️ Mails remis (démonstration)	↩️ 메일 되돌림(데모)
+↩️ Remettre %1 dans ma boîte	↩️ %1 받은편지함으로 되돌리기
+↩️ Remettre des mails	↩️ 메일 되돌리기
+↩️ Tout remettre à sa place	↩️ 모두 제자리로
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Download에서 다음 파일을 기다리는 중. 메일의 「다운로드」 링크를 탭하세요.
+⏳ En attente du prochain fichier dans Download…	⏳ Download에서 다음 파일을 기다리는 중…
+⏳ copie en cours…	⏳ 복사 중…
+⏳ plus tard	⏳ 나중에
+⏹ Arrêter	⏹ 중지
+☑️ Tout cocher	☑️ 모두 체크
+⚙️ Cache des applis et fichiers système	⚙️ 앱 캐시와 시스템 파일
+⚙️ Options	⚙️ 옵션
+⚠️ %1 : à relancer.\n	⚠️ %1: 다시 실행 필요.\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 오류: 계속하기 전에 「다시 실행」 표시된 ZIP을 다시 실행하세요.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ 디스크의 %1이(가) 더 이상 동일하지 않거나 읽을 수 없습니다:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ 오늘 밤 백업 없음
+⚠️ Fichier %1 à reprendre	⚠️ 파일 %1 다시 하기
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ 약 %1 필요, %2 남음. 시작해도 됩니다: 가득 차면 다른 디스크를 연결하면 중복 없이 계속합니다.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ 복사가 멈췄습니다: %1\n\n잃은 것은 없습니다: 자동 모드를 다시 실행하면 중복 없이 이어서 합니다.
+⚠️ On ne commence pas	⚠️ 시작하지 않습니다
+⚠️ Sauvegarde de la nuit	⚠️ 야간 백업
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ 손상됨: 메일에서 다시 받으면 자동으로 복사됩니다
+⚠️ disque plein	⚠️ 디스크 가득 참
+⚠️ pas commencé	⚠️ 시작 안 함
+⚠️ à relancer	⚠️ 다시 실행 필요
+⚠️ à relancer (%1)	⚠️ 다시 실행 필요(%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ 사본이 완전하지 않습니다(손상, 다시 실행 필요 또는 아직 복사 안 됨). 먼저 복사를 끝내세요: %1에서는 아무것도 지우지 마세요.
+✅ %1 : terminé et vérifié.\n	✅ %1: 완료 및 확인.\n
+✅ %1 doublon(s) supprimé(s)	✅ 중복 %1개 삭제
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ 메일 %1통 저장 · PDF %2 · CleanSmart/Mails/index.html 보관함 업데이트
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ 중요한 메일 %1통 안전 · PDF %2개 모음 · index.html 보관함 업데이트
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ 새 사진 %1장 백업
+✅ %1 · depuis %2	✅ %1 · %2째
+✅ %1 à l'abri	✅ %1 안전
+✅ 312 mails importants à l'abri (démonstration)	✅ 중요한 메일 312통 안전(데모)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 좋은 사진 7,958장 백업(데모)
+✅ Assez de place sur « %1 ».	✅ 「%1」에 공간이 충분합니다.
+✅ Boîte mail connectée	✅ 메일함 연결됨
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ 디스크 확인: %1 다시 읽음, 손상 없음.
+✅ Doublons supprimés (démonstration)	✅ 중복 삭제(데모)
+✅ Fichier %1 terminé	✅ 파일 %1 완료
+✅ La copie sur le disque est complète et vérifiée.	✅ 디스크의 사본이 완전하며 확인되었습니다.
+✅ Mails sauvegardés (démonstration)	✅ 메일 저장(데모)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ 사본 완전 및 확인됨\n✅ 휴대폰 백업 꺼짐\n✅ 디스크에서 사진 확인함\n\n%1을(를) 열까요? 무엇을 지울지는 직접 선택합니다.
+✅ copié et vérifié	✅ 복사 및 확인됨
+✅ copié, vérifié, supprimé du téléphone	✅ 복사, 확인, 휴대폰에서 삭제됨
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 버림 · 메일함에서 %2 확보
+✉️ %1 mails	✉️ 메일 %1통
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ 메일 %1통(「Mails Gmail」 폴더, index.html 열기)\n
+✉️ Boîte mail	✉️ 메일함
+✉️ Mails	✉️ 메일
+✉️ Mails de %1	✉️ %1의 메일
+✓ %1 choisi	✓ %1 선택
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 확보(갤러리 휴지통에서 30일 동안 복원 가능)
+✨ %1 mails mis à la corbeille	✨ 메일 %1통 휴지통으로
+✨ %1 mis à la corbeille (démonstration)	✨ %1 휴지통으로(데모)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 메일 휴지통으로(「메일 되돌리기」로 복원 가능)
+✨ %1 nettoyés · %2 libérés	✨ %1 정리 · %2 확보
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ 오래된 메일 %1통 휴지통으로(중요한 메일은 보관)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 메일 1,249통 휴지통으로(데모)
+✨ 1,1 Go libérés (démonstration)	✨ 1.1GB 확보(데모)
+✨ 6,4 Go libérés (démonstration)	✨ 6.4GB 확보(데모)
+✨ Mails mis à la corbeille (démonstration)	✨ 메일 휴지통으로(데모)
+✨ Ménage automatique du dimanche	✨ 일요일 자동 정리
+✨ Ménage du dimanche	✨ 일요일 정리
+✨ Vieux mails mis à la corbeille (démonstration)	✨ 오래된 메일 휴지통으로(데모)
+❤️ Santé du téléphone : %1 / 100	❤️ 휴대폰 건강: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ 왼쪽으로 밀기: 그 사람 메일 모두 휴지통으로   ·   오른쪽으로 밀기: 보관 ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ 왼쪽으로 밀어 버리기   ·   오른쪽으로 밀어 보관 ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 진행 중: 끝나는 대로 복사를 시작합니다.
+⬜ Tout décocher	⬜ 모두 체크 해제
+⭐ Protéger mes %1	⭐ %1 보호
+🍏 Mes photos iCloud	🍏 내 iCloud 사진
+🍏 Pense à une nouvelle copie iCloud	🍏 새 iCloud 사본을 만들 때예요
+🍏 Quitter iCloud Photos	🍏 iCloud 사진 떠나기
+🎁 Version d'essai · %1	🎁 체험판 · %1
+🎉 %1 libérés au total	🎉 총 %1 확보
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 불필요한 파일 없음: 휴대폰이 깨끗해요!
+🎉 Aucun mail à jeter ici.	🎉 여기에는 버릴 메일이 없습니다.
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 잊힌 앱 없음: 모두 사용 중이에요!
+🎉 Plus rien ici.	🎉 여기에는 더 이상 아무것도 없습니다.
+🎉 Rien à nettoyer, tout est propre !	🎉 정리할 것이 없어요, 모두 깨끗합니다!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 완료: %1 복사 및 확인. 디스크 전체: %2, %3.
+🎉 Tous les fichiers sont faits	🎉 모든 파일 완료
+🎬 Démonstration	🎬 데모
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 데모 모드: 휴대폰에는 아무것도 건드리지 않습니다
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 데모 모드: 휴대폰에는 아무것도 건드리지 않습니다
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 각 버튼은 먼저 메일 목록을 보여줍니다: 보관할 메일의 체크를 해제한 후 확인하세요.
+👀 Voir et jeter ses mails maintenant	👀 이 사람의 메일을 지금 보고 버리기
+👆 Les expéditeurs que tu as jetés	👆 버린 보낸 사람
+👆 Tri des expéditeurs	👆 보낸 사람 정리
+👆 Tri rapide	👆 빠른 정리
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 지금: Google 메일에서 파일 %1을(를) 받으세요(Wi-Fi). 그다음 녹색 버튼을 탭하고 다운로드에서 선택하세요.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 지금: privacy.apple.com에서 「Part %1」을(를) 받으세요(Wi-Fi). 그다음 녹색 버튼을 탭하고 다운로드에서 선택하세요.
+👉 À faire maintenant	👉 지금 할 일
+👉 à télécharger puis traiter	👉 다운로드 후 처리
+👍 Tu as déjà la dernière version (%1)	👍 이미 최신 버전입니다(%1)
+👯 Mails en double	👯 중복 메일
+💡 Aide	💡 도움말
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 팁: 구독을 취소하면 더 이상 받지 않습니다(「나에게 가장 많이 보내는 사람」 목록의 버튼).
+💡 Si ça bloque	💡 막힐 때
+💡 Si ça bloque : tous les conseils	💡 막힐 때: 모든 팁
+💾 %1 sur « %2 »	💾 「%2」에 %1
+💾 Sauvegarde de la nuit	💾 야간 백업
+💾 Sauvegarder %1	💾 %1 저장
+💾 Sauvegarder toutes mes photos	💾 모든 사진 백업
+💾 Sauver des mails	💾 메일 저장
+📁 Choisir le dossier de sauvegarde	📁 백업 폴더 선택
+📁 Choisir un dossier	📁 폴더 선택
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: 메일 전체(.eml)\n📕 CleanSmart / PDF: 모든 PDF 모음\n📎 CleanSmart / Pieces jointes: 기타 파일
+📁 Dossier de sauvegarde enregistré	📁 백업 폴더 저장됨
+📂 Traiter un fichier ZIP	📂 ZIP 파일 처리
+📂 Traiter un fichier ZIP à la main	📂 ZIP 파일 직접 처리
+📅 Ton rapport du mois	📅 월간 보고서
+📎 Gros mails	📎 큰 메일
+📕 Cocher les PDF	📕 PDF 체크
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF를 다운로드 / Clean Smart에 저장했습니다
+📕 PDF souvenir créé (démonstration)	📕 추억 PDF 생성(데모)
+📖 Mode d'emploi	📖 사용 설명서
+📤 Envoyer (%1)	📤 보내기(%1)
+📦 Les plus grosses	📦 큰 순서
+📦 Quitter Google Photos	📦 Google 포토 떠나기
+📦 Ta nouvelle copie Google est peut-être prête	📦 Google 새 사본이 준비되었을 수 있어요
+📧 Ouvrir le mail de Google	📧 Google 메일 열기
+📰 Newsletters et pubs	📰 뉴스레터와 광고
+📱 Mes applis	📱 내 앱
+📱 Ouvrir l'app Google Photos	📱 Google 포토 앱 열기
+📱 Téléphone	📱 휴대폰
+📱 Téléphone presque plein	📱 휴대폰 공간 부족
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 사진 %1장과 동영상 %2개를 복사 및 확인하고 연도별로 정리\n
+📸 Photos	📸 사진
+🔄 Analyser à nouveau	🔄 다시 분석
+🔄 Chercher à nouveau	🔄 다시 찾기
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 모두 다시 시작(사본을 지웠어요)
+🔍 Analyser ma boîte mail	🔍 내 메일함 분석
+🔍 Analyser mon téléphone	🔍 내 휴대폰 분석
+🔍 Chercher les mails avec pièces jointes	🔍 첨부 파일 있는 메일 찾기
+🔎 Vérifier le disque (relit chaque photo)	🔎 디스크 확인(사진을 하나씩 다시 읽음)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 비밀번호는 휴대폰에 암호화되어 보관됩니다. 메일 서비스 서버로만 전송됩니다.
+🔓 Autoriser	🔓 허용
+🔓 Autoriser l'accès aux fichiers	🔓 파일 접근 허용
+🔓 Une autorisation pour en savoir plus	🔓 더 알기 위한 권한
+🔓 Une autorisation, une seule fois	🔓 권한은 한 번만
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 한 번만: Clean Smart가 Download 폴더를 볼 수 있도록 「모든 파일에 대한 접근」을 허용하세요. %1 파일만 읽습니다.
+🔔 Mail de %1	🔔 %1의 메일
+🔔 Tu seras prévenu quand il t'écrit	🔔 이 사람이 메일을 보내면 알려 드립니다
+🕰️ Vieux mails	🕰️ 오래된 메일
+🕰️ Vieux mails (les importants sont gardés)	🕰️ 오래된 메일(중요한 메일은 보관)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ 휴지통 비움: %1 완전히 확보
+🗑️ Désinstaller	🗑️ 제거
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ 휴대폰에서 파일 삭제: 다음 파일을 위한 공간 확보
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ 「항상 버리기」 보낸 사람
+🗑️ Mettre %1 à la corbeille	🗑️ %1 휴지통으로
+🗑️ Ouvrir %1 pour effacer	🗑️ %1 열어서 삭제
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ 이 사람의 메일은 매일 밤 휴지통으로 갑니다
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ 이 ZIP을 휴대폰에서 삭제(권장)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ 항상 버리기: %1   🛡️ 항상 보관: %2   🔔 알림 받기: %3
+🗜️ Compresser (%1)	🗜️ 압축(%1)
+😴 Pas ouvertes depuis 3 mois	😴 3개월 동안 열지 않음
+🚫 Se désabonner	🚫 구독 취소
+🛡️ %1 (mises en favori)	🛡️ %1(즐겨찾기에 추가)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1을(를) 메일함의 「보호됨」 폴더에 정리
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ 중요한 보낸 사람(은행, 관공서, 건강 등): 메일을 절대 버리지 않습니다.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ 사본이 완전하고 1번과 2번이 체크되면 삭제 버튼이 나타납니다.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ 은행, 관공서, 건강 관련 메일은 절대 휴지통으로 가지 않습니다.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ 사본을 확인하기 전에는 %1을(를) 비우지 않습니다: 먼저 첫 번째 항목을 체크하세요.
+🛡️ Protéger (%1)	🛡️ 보호(%1)
+🛡️ Ranger mes mails importants	🛡️ 중요한 메일 정리
+🛡️ Ses mails ne seront jamais jetés	🛡️ 이 사람의 메일은 절대 버리지 않습니다
+🤖 Copie automatique de tes photos	🤖 사진 자동 복사
+🤖 Démarrer le mode automatique	🤖 자동 모드 시작
+🤖 Tout automatique (le plus simple)	🤖 완전 자동(가장 쉬움)
+🧊 Vider son cache	🧊 캐시 지우기
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 중복 %1개와 🎞️ 연속 촬영 사진 %2장 제외\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 중복   🎞️ 실패한 연속 촬영\n📱 스크린샷   🎬 큰 동영상\n💬 WhatsApp 미디어   👥 중복 연락처\n✉️ 뉴스레터와 큰 메일
+🧭 Ménage	🧭 정리
+🧭 Ménage des mails	🧭 메일 정리
+🧭 Ménage guidé	🧭 가이드 정리
+🧹 Fichiers inutiles	🧹 불필요한 파일
+🧹 Jeter les mails de %1	🧹 %1의 메일 버리기
+🧹 Le ménage sûr	🧹 안전한 정리
+🧹 Mails triés cette nuit	🧹 오늘 밤 메일 정리됨
+🧹 Mettre %1 à la corbeille	🧹 %1 휴지통으로
+🧹 Ménage sûr	🧹 안전한 정리
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 안전한 정리: 뉴스레터, 알림, 중복
+🧹 Nettoyer · %1	🧹 정리 · %1
+🧹 Nettoyer · %1 · %2	🧹 정리 · %1 · %2

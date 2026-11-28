@@ -1,0 +1,896 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 δεν αντιγράφηκε: ξεκίνησε ξανά το ίδιο αρχείο.
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 «για έλεγχο» θα πάνε στον κάδο του Clean Smart: μπορείς να τα επαναφέρεις για 7 ημέρες.
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nΠροσοχή: η διαγραφή συγχρονίζεται με τον λογαριασμό σου (Google…).
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nΟ δίσκος ή το τηλέφωνο είναι γεμάτο: ελευθέρωσε χώρο (ή άλλαξε δίσκο στο βήμα 2) και ξεκίνησε ξανά ΑΥΤΟ το αρχείο. Τίποτα δεν θα αντιγραφεί δύο φορές.
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nΤο αρχείο είναι κατεστραμμένο ή ελλιπές: κατέβασέ το ξανά από το email της Google και ξεκίνησέ το πάλι. Ό,τι έχει ήδη αντιγραφεί κρατιέται.
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nΤα αντίγραφα εξάγονται πρώτα σε αρχείο .vcf στον φάκελο αντιγράφων ασφαλείας.
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nΞεκίνησε ξανά το αρχείο ZIP που τα περιείχε (ή την αυτόματη λειτουργία): θα αντιγραφούν ξανά. Μη διαγράψεις τίποτα στο %1 πριν.
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nΠρώτα γίνεται ένα αντίγραφο στον φάκελο αντιγράφων ασφαλείας.
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Στη Google, τα email και το Google Photos μοιράζονται τα ίδια 15 GB: το καθάρισμα των email ελευθερώνει χώρο και για τις φωτογραφίες σου.
+ sur environ %1 Go	 από περίπου %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 διπλότυπα, ριπές ή αποτυχημένες χωρίς αντίγραφο
+ · %1 à la corbeille	 · %1 στον κάδο
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · τα αρχεία «για έλεγχο» είναι στον κάδο του Clean Smart (7 ημέρες)
+ · va dans la corbeille Clean Smart	 · πάει στον κάδο του Clean Smart
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): περιττά διπλότυπα, περιττές ριπές, μαύρες ή λευκές φωτογραφίες, στιγμιότυπα πάνω από έναν μήνα.\n\nΠάνε στον κάδο της Συλλογής (30 ημέρες για επαναφορά).
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) θα διαγραφούν ΟΡΙΣΤΙΚΑ για να ελευθερωθεί αμέσως ο χώρος.\n\nΔεν θα μπορούν να επανέλθουν.
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  %3 για πέταμα
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: ενημερωτικά δελτία και διαφημίσεις (%2 αποστολείς), ειδοποιήσεις, διπλά email.
+%1 Go · prévois %2	%1 GB · πρόβλεψε %2
+%1 analysées	%1 αναλύθηκαν
+%1 avec pièces jointes (dont %2 avec PDF)	%1 με συνημμένα (%2 με PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 με επιτυχία. Αν στείλεις τα πρωτότυπα στον κάδο, κερδίζεις %2.
+%1 ce mois-ci. 	%1 αυτόν τον μήνα.
+%1 copié(s) dans ton dossier de sauvegarde.	%1 αντιγράφηκαν στον φάκελο αντιγράφων ασφαλείας.
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	%1 άχρηστων αρχείων: προσωρινά, μικρογραφίες, κενοί φάκελοι, υπολείμματα εφαρμογών.
+%1 de plus de %2 mois 	%1 πάνω από %2 μηνών
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	%1 από τους αποστολείς «πάντα πέταμα» στον κάδο (επαναφορά για 30 ημέρες).
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 διπλότυπα πάνε στον κάδο. Κρατιέται το πρώτο αντίτυπο κάθε email.
+%1 et %2 copiées et vérifiées.	%1 και %2 αντιγράφηκαν και ελέγχθηκαν.
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 και %2 ασφαλή. Μπορείς να το διαγράψεις και να κατεβάσεις το επόμενο.
+%1 fichier(s) sauvegardé(s)	%1 αρχείο(α) αποθηκεύτηκαν
+%1 jetés	%1 πετάχτηκαν
+%1 libres sur %2	%1 ελεύθερα από %2
+%1 libérés sur le téléphone	%1 ελευθερώθηκαν στο τηλέφωνο
+%1 mails dans la boîte · %2 analysés	%1 email στο γραμματοκιβώτιο · %2 αναλύθηκαν
+%1 min %2 s	%1 λεπ. %2 δευτ.
+%1 newsletters · %2 gros mails	%1 ενημερωτικά · %2 μεγάλα email
+%1 newsletters, %2 gros mails (%3).	%1 ενημερωτικά, %2 μεγάλα email (%3).
+%1 photos trouvées	Βρέθηκαν %1 φωτογραφίες
+%1 photos · %2 vidéos analysées	%1 φωτογραφίες · %2 βίντεο αναλύθηκαν
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	%1 φωτογραφίες · %2 βίντεο · %3 διπλότυπα και ριπές παραμερίστηκαν
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	Η %1 ετοιμάζει ένα αντίγραφο όλων των φωτογραφιών σου. Κάνε ακριβώς όπως σε αυτό το υπόδειγμα:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 θα διαγραφούν: δεν χρειάζονται πια ή ξαναφτιάχνονται μόνα τους.
+%1 seront supprimés pour de bon.	%1 θα διαγραφούν οριστικά.
+%1 sur %2 choisis · %3	%1 από %2 επιλεγμένα · %3
+%1 sur %2 fichiers faits	%1 από %2 αρχεία έγιναν
+%1 sur %2 · %3	%1 από %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 θα πάνε στον κάδο της Συλλογής (επαναφορά για 30 ημέρες).
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 πάνε στον κάδο της Συλλογής (επαναφορά για 30 ημέρες).
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: διπλότυπα, περιττές ριπές, μαύρες ή λευκές φωτογραφίες, στιγμιότυπα πάνω από έναν μήνα. Κρατιούνται οι καλύτερες.
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	%1 · %2 συνολικά. Πάτησε μια εφαρμογή για να την απεγκαταστήσεις ή να αδειάσεις την προσωρινή μνήμη της.
+%1 à jeter	%1 για πέταμα
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 για να τις δεις μία μία. Σύρε αριστερά για πέταμα, δεξιά για να την κρατήσεις (γίνεται αγαπημένη ⭐).
+%1, %2, %3 copiés · %4 et %5 écartés.	%1, %2, %3 αντιγράφηκαν · %4 και %5 παραμερίστηκαν.
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1τα email πάνω από %2 ετών πάνε στον κάδο (εκτός από τα σημαντικά).
+(sans objet)	(χωρίς θέμα)
+. %1 en double ou en rafale à trier : touche ici.	. %1 διπλότυπες ή σε ριπή για ταξινόμηση: πάτησε εδώ.
+1 bouton	1 κουμπί
+1 mois	1 μήνας
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. Απενεργοποίησα τη δημιουργία αντιγράφων: εφαρμογή Google Photos › η φωτογραφία σου πάνω δεξιά › Ρυθμίσεις Photos › Αντίγραφο ασφαλείας › απενεργοποίηση.
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. Στο iPhone, απενεργοποίησα τις «Φωτογραφίες iCloud» (Ρυθμίσεις › το όνομά σου › iCloud › Φωτογραφίες).
+12 mois	12 μήνες
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. Άνοιξα τον δίσκο σε υπολογιστή και βλέπω τις φωτογραφίες μου, χρονιά προς χρονιά.
+3 mois	3 μήνες
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. Προτείνεται: έκανα 2ο αντίγραφο (άλλος δίσκος ή υπολογιστής).
+4 étapes	4 βήματα
+6 mois	6 μήνες
+AFFICHAGE	ΕΜΦΑΝΙΣΗ
+AUTOMATIQUE	ΑΥΤΟΜΑΤΑ
+AUTRE	ΑΛΛΑ
+Adresse mail	Διεύθυνση email
+Adresse, serveur et mot de passe sont obligatoires.	Η διεύθυνση, ο διακομιστής και ο κωδικός είναι υποχρεωτικά.
+Alerte retirée	Η ειδοποίηση αφαιρέθηκε
+Alertes et rapport du mois	Ειδοποιήσεις και μηνιαία αναφορά
+Analyse de la boîte mail	Ανάλυση του γραμματοκιβωτίου
+Analyse des 3 000 mails les plus récents de la boîte de réception.	Ανάλυση των 3.000 πιο πρόσφατων email των εισερχομένων.
+Analyse des mails (%1 / %2)	Ανάλυση email (%1 / %2)
+Analyse du téléphone	Ανάλυση του τηλεφώνου
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	Ανάλυσε το γραμματοκιβώτιο «%1»: ενημερωτικά, μεγάλα email, παλιά email. Τα σημαντικά κρατιούνται πάντα.
+Analyser ma boîte mail	Ανάλυση του γραμματοκιβωτίου μου
+Analyser mon téléphone	Ανάλυση του τηλεφώνου μου
+Annuler	Ακύρωση
+Annuler, ne rien jeter	Ακύρωση, να μην πεταχτεί τίποτα
+Appeler	Κλήση
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Η Apple ελέγχει το αίτημα και μετά στέλνει email, συνήθως σε 3 έως 7 ημέρες. Τα αρχεία κατεβαίνουν μετά από το privacy.apple.com (σύνδεση από το τηλέφωνο).
+Apple · Données et confidentialité	Apple · Δεδομένα και απόρρητο
+Appliquer « toujours jeter » maintenant	Εφαρμογή «πάντα πέταμα» τώρα
+Arrêt après le fichier en cours…	Διακοπή μετά το τρέχον αρχείο…
+Arrêter	Διακοπή
+Arrêter le mode automatique ?	Διακοπή της αυτόματης λειτουργίας;
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Διακόπηκε. Τα αρχεία που ήδη αντιγράφηκαν είναι ασφαλή· τα υπόλοιπα την επόμενη φορά, χωρίς διπλότυπα.
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	Συμβουλή: στις Ρυθμίσεις › Εφαρμογές, πάτησε μια εφαρμογή (Chrome, Facebook…) › Αποθηκευτικός χώρος › «Διαγραφή προσωρινής μνήμης».
+Aucun contact en double	Καμία διπλή επαφή
+Aucun dossier choisi	Δεν επιλέχθηκε φάκελος
+Aucun dossier de sauvegarde	Κανένας φάκελος αντιγράφων
+Aucun fichier inutile.	Κανένα άχρηστο αρχείο.
+Aucune boîte mail connectée.	Δεν έχει συνδεθεί γραμματοκιβώτιο.
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	Δεν εντοπίστηκε στικάκι ή δίσκος. Σύνδεσέ το (αντάπτορας USB-C) και άνοιξε ξανά αυτό το βήμα.
+Aucune vidéo n'a pu être réduite davantage.	Κανένα βίντεο δεν μπόρεσε να μικρύνει περισσότερο.
+Autre	Άλλο
+Autres fichiers d'installation (.apk)	Άλλα αρχεία εγκατάστασης (.apk)
+Avant tout : analyser	Πρώτα απ' όλα: ανάλυση
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	Με την «Πρόσβαση σε δεδομένα χρήσης», το Clean Smart βλέπει τον πραγματικό χώρο κάθε εφαρμογής και πόσο καιρό δεν την έχεις ανοίξει. Τίποτα δεν στέλνεται πουθενά.
+BOÎTE MAIL	ΓΡΑΜΜΑΤΟΚΙΒΩΤΙΟ
+Banque	Τράπεζα
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	Τράπεζα, δημόσιο, υγεία, λογαριασμοί και όλα τα email με PDF: αποθηκεύτηκαν, PDF μαζεμένα, αρχείο index.html στον υπολογιστή.
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	Τράπεζα, δημόσιο, υγεία, λογαριασμοί και όλα τα email με PDF: αποθηκεύτηκαν, PDF μαζεμένα, αρχείο index.html στον υπολογιστή. Στο email σου μπαίνουν στα «Προστατευμένα».
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	Τράπεζα, εφορία, υγεία, σπίτι, οικογένεια (οι επαφές σου): χωριστά, δεν πετιούνται ποτέ
+Batterie faible (%1 %)	Χαμηλή μπαταρία (%1 %)
+Bonjour	Γεια σας
+Boutique Mode	Κατάστημα μόδας
+Boîte mail en ordre !	Το γραμματοκιβώτιο είναι εντάξει!
+Boîte mail remplie à %1 % (%2 / %3)	Γραμματοκιβώτιο γεμάτο %1 % (%2 / %3)
+Boîte protégée	Προστατευμένο γραμματοκιβώτιο
+Boîte remplie à %1 % (%2 / %3). 	Γραμματοκιβώτιο γεμάτο %1 % (%2 / %3).
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	Σύνδεσε τον φορτιστή: ένα αρχείο μπορεί να πάρει 10 έως 30 λεπτά.\n\nΑν το τηλέφωνο σβήσει, δεν χάνεται τίποτα: απλώς ξεκίνησε ξανά το ίδιο αρχείο.
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	Σύνδεσε τον φορτιστή κατά την επεξεργασία: ένα μεγάλο αρχείο μπορεί να πάρει 10 έως 30 λεπτά. Η οθόνη μένει αναμμένη.
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	Σύνδεσε το στικάκι ή τον δίσκο στο τηλέφωνο και διάλεξε (ή φτιάξε) έναν φάκελο σε αυτό.
+Brancher la clé ou le disque	Σύνδεση στικακιού ή δίσκου
+C'est fait : le prochain fichier sera entièrement recopié.	Έγινε: το επόμενο αρχείο θα αντιγραφεί ξανά ολόκληρο.
+C'est noté	Σημειώθηκε
+CONSEILLÉ	ΠΡΟΤΕΙΝΕΤΑΙ
+CONTACT	ΕΠΙΚΟΙΝΩΝΙΑ
+CONTACTS	ΕΠΑΦΕΣ
+Captures d'écran	Στιγμιότυπα οθόνης
+Carte SD, clé USB, Drive… choisis où tu veux	Κάρτα SD, στικάκι USB, Drive… διάλεξε όπου θέλεις
+Carte SD, clé USB, Google Drive…	Κάρτα SD, στικάκι USB, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	Αυτό το αρχείο έχει ήδη αντιγραφεί και ελεγχθεί. Η επανάληψη δεν δημιουργεί διπλότυπα, αλλά είναι άχρηστη.\n\nΜάλλον ήθελες το επόμενο (%1).
+Ce mois-ci	Αυτόν τον μήνα
+Cette année	Φέτος
+Changer de compte	Αλλαγή λογαριασμού
+Changer de dossier	Αλλαγή φακέλου
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	Κάθε Κυριακή, τα ασφαλή άχρηστα αρχεία και το spam φεύγουν μόνα τους. Μια ειδοποίηση σου λέει πόσος χώρος ελευθερώθηκε και αν υπάρχουν φωτογραφίες για ταξινόμηση.
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	Κάθε επιλεγμένο email αποθηκεύεται στον φάκελο αντιγράφων σου:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	Κάθε βίντεο ξαναφτιάχνεται σε 720p, συχνά 3 έως 5 φορές ελαφρύτερο, και αποθηκεύεται στις Ταινίες / Clean Smart.
+Choisir le dossier sur le disque	Επιλογή φακέλου στον δίσκο
+Choisir un dossier	Επιλογή φακέλου
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	Διάλεξε πρώτα τον φάκελο στο στικάκι ή στον δίσκο (βήμα 2).
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	Διάλεξε πρώτα τον φάκελο στο στικάκι ή στον δίσκο (βήμα «Ο δίσκος»).
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	Διάλεξε πρώτα έναν φάκελο: κάρτα SD, στικάκι USB ή Google Drive.
+Choisis d'abord un dossier de sauvegarde (Options).	Διάλεξε πρώτα φάκελο αντιγράφων (Επιλογές).
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	Διάλεξε πρώτα φάκελο αντιγράφων (κάρτα SD, στικάκι USB, Drive).
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	Διάλεξε πρώτα φάκελο αντιγράφων και κάνε ένα αντίγραφο.
+Choisis d'abord un dossier de sauvegarde.	Διάλεξε πρώτα φάκελο αντιγράφων.
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	Διάλεξε τα email σου: κρατιούνται με τα συνημμένα τους, τα PDF σε ξεχωριστό φάκελο
+Choisis une carte SD, une clé USB ou Google Drive	Διάλεξε κάρτα SD, στικάκι USB ή Google Drive
+Choix des plus belles photos…	Επιλογή των ωραιότερων φωτογραφιών…
+Clean Smart : copie automatique	Clean Smart: αυτόματη αντιγραφή
+Clean Smart attend les fichiers dans Download…	Το Clean Smart περιμένει τα αρχεία στο Download…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Το Clean Smart διαβάζει τα τελευταία 3.000 email (δεν διαγράφεται τίποτα).
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Το Clean Smart κοιτάζει όλες τις φωτογραφίες σου (δεν διαγράφεται τίποτα).
+Clean Smart trouve en un clic :	Το Clean Smart βρίσκει με ένα πάτημα:
+Clé USB (démonstration)	Στικάκι USB (επίδειξη)
+Clé USB ou disque dur, avec un adaptateur USB-C	Στικάκι USB ή σκληρός δίσκος, με αντάπτορα USB-C
+Colis et livraisons	Δέματα και παραδόσεις
+Combien de place faut-il ?	Πόσος χώρος χρειάζεται;
+Comme le téléphone	Όπως το τηλέφωνο
+Commencer	Έναρξη
+Compresser	Συμπίεση
+Compresser %1 ?	Συμπίεση %1;
+Compression des vidéos	Συμπίεση βίντεο
+Compris	Κατάλαβα
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	Σύνδεσε το γραμματοκιβώτιό σου (Gmail, Outlook, Yahoo, Orange, Free…): ενημερωτικά, μεγάλα και παλιά email για ταξινόμηση, τα σημαντικά κρατιούνται πάντα.
+Connecter	Σύνδεση
+Connecter ma boîte mail	Σύνδεση του γραμματοκιβωτίου μου
+Connexion au serveur	Σύνδεση στον διακομιστή
+Connexion impossible : 	Αδύνατη η σύνδεση:
+Connexion à la messagerie	Σύνδεση στο email
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	Προτείνεται: έκανα 2ο αντίγραφο (άλλος δίσκος ή υπολογιστής).
+Contacts en double	Διπλές επαφές
+Continuer quand même	Συνέχεια ούτως ή άλλως
+Copie automatique	Αυτόματη αντιγραφή
+Copier les fichiers un par un	Αντιγραφή των αρχείων ένα ένα
+Copies identiques — l'original est gardé	Πανομοιότυπα αντίγραφα — το πρωτότυπο κρατιέται
+Corbeille	Κάδος
+Corbeille : %1	Κάδος: %1
+Corbeille Clean Smart	Κάδος του Clean Smart
+Corbeille de la messagerie	Κάδος του email
+Correct, mais peut mieux faire	Καλά, αλλά μπορεί καλύτερα
+Créer une exportation	Δημιουργία εξαγωγής
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Στο Google Photos: πάτα παρατεταμένα μια φωτογραφία, επίλεξε ολόκληρες μέρες και μετά «Διαγραφή». Ο κάδος της Google κρατάει τα πάντα 60 ημέρες.
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Στο Google Takeout, διάλεξε αρχεία 2 GB: τα επεξεργαζόμαστε ένα ένα, το τηλέφωνο δεν χρειάζεται ποτέ πολύ χώρο.
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Στο αίτημα της Apple, διάλεξε αρχεία 1 ή 2 GB: τα επεξεργαζόμαστε ένα ένα, το τηλέφωνο δεν χρειάζεται ποτέ πολύ χώρο.
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Στο email της Google, μέτρησε τα κουμπιά «Λήψη»: είναι ο αριθμός των αρχείων.
+Demander la copie à %1	Ζήτα το αντίγραφο από την %1
+Demander une copie de tes données	Αίτημα αντιγράφου των δεδομένων σου
+Demandée · attends le mail de %1	Ζητήθηκε · περίμενε το email της %1
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Από το Android 11, καμία εφαρμογή καθαρισμού δεν επιτρέπεται να αδειάσει την προσωρινή μνήμη άλλων εφαρμογών ή αρχεία συστήματος. Το κάνει το ίδιο το Android: αυτό το κουμπί ανοίγει την οθόνη «Απελευθέρωση χώρου».
+Depuis l'installation	Από την εγκατάσταση
+Dernière vérification	Τελευταίος έλεγχος
+Des applis téléchargées mais pas installées. À vérifier.	Εφαρμογές που κατέβηκαν αλλά δεν εγκαταστάθηκαν. Για έλεγχο.
+Disque	Δίσκος
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	Ο δίσκος δεν αναγνωρίζεται: χρησιμοποίησε αντάπτορα USB-C (OTG). Ένα στικάκι σε exFAT δουλεύει παντού (το FAT32 δεν δέχεται αρχεία πάνω από 4 GB).
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	Ο δίσκος γέμισε: σύνδεσε μεγαλύτερο δίσκο και διάλεξέ τον στο βήμα «Ο δίσκος». Συνεχίζουμε από εκεί που ήμασταν, χωρίς διπλότυπα.
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	Έγγραφα στις Λήψεις που δεν άλλαξαν εδώ και 6 μήνες. Για έλεγχο.
+Dossier Corbeille introuvable sur ce compte.	Ο φάκελος Κάδου δεν βρέθηκε σε αυτόν τον λογαριασμό.
+Dossier Corbeille introuvable.	Ο φάκελος Κάδου δεν βρέθηκε.
+Dossier Spam introuvable sur ce compte.	Ο φάκελος Spam δεν βρέθηκε σε αυτόν τον λογαριασμό.
+Dossier de sauvegarde	Φάκελος αντιγράφων
+Dossier de sauvegarde introuvable.	Ο φάκελος αντιγράφων δεν βρέθηκε.
+Dossiers cache	Φάκελοι προσωρινής μνήμης
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	Φάκελοι εφαρμογών που δεν υπάρχουν πια στο τηλέφωνο. Για έλεγχο.
+Dossiers vides	Κενοί φάκελοι
+Dossiers vides…	Κενοί φάκελοι…
+Doublons	Διπλότυπα
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	Περιττά διπλότυπα και ριπές (κρατιέται η καλύτερη), μαύρες ή λευκές φωτογραφίες, παλιά στιγμιότυπα. Πάτησε μια φωτογραφία για να την κρατήσεις. Όλα πάνε στον κάδο της Συλλογής (30 ημέρες).
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	Διπλότυπα, περιττές ριπές, μαύρες ή λευκές φωτογραφίες, παλιά στιγμιότυπα.
+Doublons, rafales, floues	Διπλότυπα, ριπές, θολές
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	Ξετσέκαρε τα email που θέλεις να κρατήσεις. Τα email της τράπεζας, της εφορίας, της υγείας και των αποστολέων «πάντα κράτημα» δεν είναι ποτέ σε αυτή τη λίστα. Όλα πάνε στον κάδο του email σου (με δυνατότητα επαναφοράς).
+Démonstration…	Επίδειξη…
+Déplacement vers la corbeille…	Μεταφορά στον κάδο…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	Απενεργοποιημένο από προεπιλογή. Αν το ενεργοποιήσεις, οι φωτογραφίες (και οι επαφές σε .vcf) αντιγράφονται στον φάκελο πριν από κάθε καθαρισμό, για ασφάλεια.
+Elles sont déjà toutes en favori 👍	Είναι ήδη όλες αγαπημένες 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	Στην επίδειξη δεν επεξεργάζεται κανένα αρχείο. Βγες από την επίδειξη (Επιλογές) για να το κάνεις στ' αλήθεια.
+En pleine forme	Σε άριστη φόρμα
+Envoyer %1	Αποστολή %1
+Envoyer le PDF souvenir	Αποστολή του αναμνηστικού PDF
+Envoyer le lien par e-mail · Exporter une fois	Αποστολή συνδέσμου λήψης μέσω email · Εξαγωγή μία φορά
+Erreur inattendue	Απρόσμενο σφάλμα
+Espace libéré	Χώρος που ελευθερώθηκε
+Espace libéré depuis le début : %1. Une petite analyse ?	Χώρος που ελευθερώθηκε από την αρχή: %1. Μια μικρή ανάλυση;
+Espace à récupérer	Χώρος για ανάκτηση
+Et tes mails	Και τα email σου
+Factures et papiers	Λογαριασμοί και έγγραφα
+Faire le ménage sûr ?	Να γίνει ο ασφαλής καθαρισμός;
+Fait ✔	Έγινε ✔
+Famille	Οικογένεια
+Fermer	Κλείσιμο
+Fichier %1	Αρχείο %1
+Fichier %1 déjà fait	Το αρχείο %1 έχει ήδη γίνει
+Fichier illisible	Μη αναγνώσιμο αρχείο
+Fichiers d'installation déjà installés	Αρχεία εγκατάστασης ήδη εγκατεστημένων εφαρμογών
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	Αρχεία εργασίας εφαρμογών στον χώρο του τηλεφώνου. Ξαναφτιάχνονται αν χρειαστεί.
+Fichiers inutiles	Άχρηστα αρχεία
+Fichiers mis de côté, vidée toute seule après 7 jours	Αρχεία στην άκρη, αδειάζει μόνος του μετά από 7 ημέρες
+Fichiers temporaires	Προσωρινά αρχεία
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	Προσωρινά αρχεία, μικρογραφίες, κενοί φάκελοι, υπολείμματα εφαρμογών
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	Προσωρινά αρχεία, μικρογραφίες, κενοί φάκελοι, υπολείμματα εφαρμογών. Φωτογραφίες και μουσική δεν αγγίζονται ποτέ.
+Floue	Θολή
+Floues, trop sombres ou trop claires — vérifie avant de cocher	Θολές, πολύ σκοτεινές ή πολύ φωτεινές — έλεγξε πριν τις επιλέξεις
+GARDÉE	ΚΡΑΤΗΘΗΚΕ
+Garder sur le téléphone les photos des derniers…	Κράτα στο τηλέφωνο τις φωτογραφίες των τελευταίων…
+Gardés	Κρατημένα
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Το Gmail απαιτεί ΚΩΔΙΚΟ ΕΦΑΡΜΟΓΗΣ (16 γράμματα):\n1. Ενεργοποίησε την επαλήθευση 2 βημάτων στον λογαριασμό Google.\n2. Άνοιξε το myaccount.google.com/apppasswords\n3. Φτιάξε έναν κωδικό με όνομα «Clean Smart» και επικόλλησέ τον εδώ.
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	Η Google στέλνει email όταν είναι έτοιμο: σε λίγες ώρες ή λίγες μέρες. Μπορείς να κλείσεις την εφαρμογή στο μεταξύ.
+Gros	Μεγάλα
+Gros mails (+ 5 Mo)	Μεγάλα email (+ 5 MB)
+Grosses vidéos	Μεγάλα βίντεο
+Groupe %1 · %2 photos	Ομάδα %1 · %2 φωτογραφίες
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	Η σύνδεση απορρίφθηκε. Τα Gmail, Yahoo και iCloud χρειάζονται ΚΩΔΙΚΟ ΕΦΑΡΜΟΓΗΣ, όχι τον συνηθισμένο σου κωδικό.
+Il a besoin d'un bon ménage	Χρειάζεται ένα καλό καθάρισμα
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	Απομένουν μόνο %1. Άνοιξε το Clean Smart για να ελευθερώσεις χώρο με ένα πάτημα.
+Ils ne contiennent rien.	Δεν περιέχουν τίποτα.
+Ils prennent encore de la place pendant 30 jours	Πιάνουν ακόμα χώρο για 30 ημέρες
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	Μπαίνουν στον φάκελο «Προστατευμένα» του email σου. Επαναλαμβάνεται κάθε νύχτα.
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	Αδύνατη η αναίρεση: τα αρχεία ίσως έχουν ήδη διαγραφεί οριστικά.
+Impossible de créer le dossier %1	Αδύνατη η δημιουργία του φακέλου %1
+Impossible de protéger ces photos	Αδύνατη η προστασία αυτών των φωτογραφιών
+Impossible de vider la corbeille	Αδύνατο το άδειασμα του κάδου
+Impôts	Εφορία
+Impôts - Administration	Εφορία - Δημόσιο
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	Δώσε τον διακομιστή IMAP του email σου (θύρα 993, SSL).
+J'ai demandé la copie	Ζήτησα το αντίγραφο
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	Άνοιξα τον δίσκο σε υπολογιστή και βλέπω τις φωτογραφίες μου, χρονιά προς χρονιά.
+J'ai traité tous les fichiers	Επεξεργάστηκα όλα τα αρχεία
+Jamais jetés, rangés dans « Protégés »	Δεν πετιούνται ποτέ, μπαίνουν στα «Προστατευμένα»
+Je libère la boîte	Αδειάζω το γραμματοκιβώτιο
+Je libère la place	Ελευθερώνω χώρο
+Je mets l'important à l'abri	Βάζω τα σημαντικά σε ασφαλές μέρος
+Je mets à l'abri les bonnes	Βάζω τις καλές σε ασφαλές μέρος
+Je trie par expéditeur	Ταξινομώ ανά αποστολέα
+Je vérifie le douteux	Ελέγχω τα αμφίβολα
+Jeter %1 ?	Πέταμα %1;
+Jeter ces mails ?	Πέταμα αυτών των email;
+Jeter les copies ?	Πέταμα των αντιγράφων;
+Jeter les gros mails ?	Πέταμα των μεγάλων email;
+Jeter les newsletters ?	Πέταμα των ενημερωτικών;
+Jeter les originaux ?	Πέταμα των πρωτοτύπων;
+Jeter les vieux mails ?	Πέταμα των παλιών email;
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	Αρχεία καταγραφής, προσωρινά αντίγραφα, εγκαταλειμμένες λήψεις. Δεν χρειάζονται πια.
+L'adresse et le mot de passe seront effacés du téléphone.	Η διεύθυνση και ο κωδικός θα σβηστούν από το τηλέφωνο.
+L'important est à l'abri, le reste est parti	Τα σημαντικά είναι ασφαλή, τα υπόλοιπα έφυγαν
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	Το πρωτότυπο δεν αγγίζεται: μετά θα σου προτείνω να το στείλεις στον κάδο.\n\nΜπορεί να πάρει λίγα λεπτά.
+LA NUIT	ΤΗ ΝΥΧΤΑ
+LIBÉRER LA PLACE	ΕΛΕΥΘΕΡΩΣΗ ΧΩΡΟΥ
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	Το αντίγραφο στον δίσκο σβήστηκε: το Clean Smart αντιγράφει ξανά τα πάντα από την αρχή.
+La corbeille est vide.	Ο κάδος είναι άδειος.
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	Ο χώρος των email ελευθερώνεται όταν αδειάσει ο κάδος του email σου (συνήθως μέσα σε 30 ημέρες).
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	Το αντίγραφο ασφαλείας δεν έγινε. Άνοιξε το Clean Smart για να ελέγξεις τον φάκελο.
+Langue	Γλώσσα
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	Ο καθοδηγούμενος καθαρισμός τα κάνει όλα με τη σωστή σειρά. Το πράσινο κουμπί είναι πάντα το επόμενο βήμα.
+Le bilan, et comment libérer ton compte %1	Ο απολογισμός, και πώς να ελευθερώσεις τον λογαριασμό %1
+Le contact d'origine est gardé.	Η αρχική επαφή κρατιέται.
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	Ο δίσκος (ή το τηλέφωνο) γέμισε: η αντιγραφή σταμάτησε σωστά.\n\nΣύνδεσε μεγαλύτερο δίσκο, διάλεξέ τον στο βήμα 2 και ξεκίνησε ξανά την αυτόματη λειτουργία: συνεχίζουμε χωρίς διπλότυπα.
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	Ο δίσκος δεν έχει αρκετό χώρο: απομένουν %1, χρειάζονται περίπου %2 για αυτό το αρχείο.\n\n• Ελευθέρωσε χώρο στον δίσκο, ή\n• σύνδεσε μεγαλύτερο δίσκο και διάλεξέ τον στο βήμα «Ο δίσκος» (συνεχίζουμε από εκεί που είμαστε).\n\nΔεν αγγίχτηκε τίποτα.
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	Ο δίσκος δεν είναι προσβάσιμος.\n\n• Έλεγξε ότι είναι καλά συνδεδεμένος (αντάπτορας USB-C).\n• Στο βήμα «Ο δίσκος», διάλεξε ξανά τον φάκελο.
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	Ο φάκελος αντιγράφων δεν είναι προσβάσιμος. Άνοιξε Clean Smart > Επιλογές για να τον διαλέξεις.
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	Ο φάκελος αντιγράφων δεν είναι πια προσβάσιμος. Διάλεξέ τον ξανά.
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	Ο φάκελος «%1» δεν βρίσκεται στον δίσκο. Έλεγξε ότι ο δίσκος είναι συνδεδεμένος (βήμα 2).
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	Πρώτα τελειώνει το τρέχον αρχείο. Τα αρχεία που ήδη αντιγράφηκαν είναι ασφαλή· τα υπόλοιπα την επόμενη φορά, χωρίς διπλότυπα.
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Ο σύνδεσμος στο email της Google λήγει μετά από περίπου μία εβδομάδα: σε αυτή την περίπτωση, ζήτα ξανά εξαγωγή (δεν χάνεται τίποτα, συνεχίζουμε χωρίς διπλότυπα).
+Le mois dernier	Τον περασμένο μήνα
+Le ménage sûr	Ο ασφαλής καθαρισμός
+Le refaire quand même	Επανάληψη ούτως ή άλλως
+Le téléphone	Το τηλέφωνο
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	Το τηλέφωνο είναι σχεδόν γεμάτο (χρειάζονται τουλάχιστον 300 MB ελεύθερα για να δουλέψει).\n\n• Άδειασε τον κάδο της Συλλογής.\n• Διάγραψε τα ZIP που ήδη επεξεργάστηκαν (Λήψεις).\n• Κάνε τον καθοδηγούμενο καθαρισμό του Clean Smart.\n\nΔεν αγγίχτηκε τίποτα.
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	Το τηλέφωνο έσβησε ή ο δίσκος αποσυνδέθηκε; Ξεκίνησε ξανά το ίδιο ZIP: το Clean Smart συνεχίζει χωρίς να χάσει ή να διπλασιάσει τίποτα.
+Lecture de la galerie	Ανάγνωση της συλλογής
+Lecture des dates des photos…	Ανάγνωση των ημερομηνιών των φωτογραφιών…
+Lecture des vidéos	Ανάγνωση των βίντεο
+Lecture impossible : %1	Αδύνατη η ανάγνωση: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	Τα .apk ήδη εγκατεστημένων εφαρμογών: δεν χρειάζονται πια.
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	Τα τελευταία 200 email του κάδου σου. Επίλεξε όσα θέλεις να επιστρέψουν στα εισερχόμενα.
+Les 30 photos et vidéos qui prennent le plus de place	Οι 30 φωτογραφίες και βίντεο που πιάνουν τον περισσότερο χώρο
+Les autres cases : inutile	Τα άλλα κουτάκια: δεν χρειάζονται
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Τα αρχεία της Apple μένουν διαθέσιμα περίπου 2 εβδομάδες στο privacy.apple.com: αν πέρασε ο χρόνος, κάνε νέο αίτημα (δεν χάνεται τίποτα, συνεχίζουμε χωρίς διπλότυπα).
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	Τα αρχεία που ήδη πήγαν στον κάδο επανέρχονται από τη Συλλογή.
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	Τα email πάνω από %1 ετών πάνε στον κάδο του email σου. Τα σημαντικά κρατιούνται.
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	Τα email πάνω από 2 ετών πάνε στον κάδο του email σου.
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	Τα email πάνω από 5 MB πάνε στον κάδο του email σου.
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	Τα ενημερωτικά, οι διαφημίσεις, οι ειδοποιήσεις και τα διπλά email πάνε στον κάδο του email σου (όλα τα εισερχόμενα).\n\nΤα σημαντικά email δεν αγγίζονται ποτέ.
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	Πρώτα οι φωτογραφίες (ταξινόμηση, κράτημα των καλύτερων, αντίγραφο, ελευθέρωση), μετά τα άχρηστα αρχεία του τηλεφώνου, μετά τα email.
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	Οι φωτογραφίες πάνω από %1 μηνών που έχουν ήδη αντίγραφο φεύγουν από το τηλέφωνο (κάδος, 30 ημέρες).
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	Οι αγαπημένες φωτογραφίες (ή προστατευμένες με το κουμπί 🛡️) δεν προτείνονται ποτέ
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	Λίγο θολές φωτογραφίες, WhatsApp, πρόσφατα στιγμιότυπα: εσύ αποφασίζεις.
+Les photos, vidéos et musiques ne sont jamais touchées.	Φωτογραφίες, βίντεο και μουσική δεν αγγίζονται ποτέ.
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	Οι παλαιότερες προτείνονται για τον κάδο μόνο αν είναι ήδη στο αντίγραφό σου.
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	Οι ωραιότερες φωτογραφίες του μήνα ή της χρονιάς, για να τις στείλεις σε αγαπημένο πρόσωπο
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	Οι μεγαλύτερες και όσες δεν ανοίγεις πια: απεγκατάστασέ τες με μια κίνηση
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	Το spam πάει στον κάδο του email σου. Ξετσέκαρε ένα email αν δεν είναι spam.
+Libérer	Ελευθέρωση
+Libérer %1 ?	Ελευθέρωση %1;
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	Η ελευθέρωση του %1 είναι προαιρετική. Η %2 δεν επιτρέπει σε καμία εφαρμογή να σβήσει τις φωτογραφίες σου: το κάνεις εσύ, όταν είσαι σίγουρος.
+Libérer la boîte	Άδειασμα γραμματοκιβωτίου
+Libérer la boîte mail	Άδειασμα του γραμματοκιβωτίου
+Libérer la boîte mail ?	Να αδειάσει το γραμματοκιβώτιο;
+Libérer la place	Ελευθέρωση χώρου
+Libérer la place, PDF souvenir…	Ελευθέρωση χώρου, αναμνηστικό PDF…
+Liste des photos sur le disque…	Λίστα των φωτογραφιών στον δίσκο…
+MAINTENANT	ΤΩΡΑ
+Mail (facultatif, pour tes mails)	Email (προαιρετικό, για τα email σου)
+Mails	Email
+Mails Gmail : %1	Email Gmail: %1
+Mails avec pièces jointes	Email με συνημμένα
+Mails de plus de 2 ans	Email πάνω από 2 ετών
+Mails en double	Διπλά email
+Mails en double…	Διπλά email…
+Maison	Σπίτι
+Me prévenir	Ειδοποίησέ με
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Ευχαριστούμε που δοκίμασες το Clean Smart! Εγκατάστησε την πλήρη έκδοση για να συνεχίσεις να καθαρίζεις το τηλέφωνό σου.
+Mes applis	Οι εφαρμογές μου
+Mes plus gros fichiers	Τα μεγαλύτερα αρχεία μου
+Mes règles	Οι κανόνες μου
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	Στέλνει στον κάδο φωτογραφίες πάνω από %1 μηνών που έχουν ήδη αντίγραφο
+Mettre à l'abri	Σε ασφαλές μέρος
+Mettre à l'abri l'important	Τα σημαντικά μπαίνουν σε ασφαλές μέρος
+Miniatures	Μικρογραφίες
+Mise à jour	Ενημέρωση
+Mise à la corbeille…	Μεταφορά στον κάδο…
+Mode d'emploi	Οδηγίες χρήσης
+Mode d'emploi introuvable.	Οι οδηγίες χρήσης δεν βρέθηκαν.
+Mode démonstration terminé	Η επίδειξη τελείωσε
+Modifier ▼	Αλλαγή ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	Δείχνει την εφαρμογή με ψεύτικες φωτογραφίες, email και επαφές. Δεν αγγίζεται τίποτα στο τηλέφωνο: ιδανικό για παρουσίαση του Clean Smart.
+Mot de passe (vide = garder l'actuel)	Κωδικός (κενό = κρατάει τον τωρινό)
+Mot de passe d'application	Κωδικός εφαρμογής
+Médias WhatsApp	Πολυμέσα WhatsApp
+Ménage complet	Πλήρης καθαρισμός
+Ménage guidé	Καθοδηγούμενος καθαρισμός
+Ménage guidé des mails	Καθοδηγούμενος καθαρισμός των email
+Ménage sûr de la boîte mail	Ασφαλής καθαρισμός του γραμματοκιβωτίου
+Ménage terminé !	Ο καθαρισμός τελείωσε!
+NOUVEAU	ΝΕΟ
+Nettoyage de la boîte mail	Καθαρισμός του γραμματοκιβωτίου
+Nettoyage des fichiers inutiles	Καθαρισμός άχρηστων αρχείων
+Nettoyer	Καθαρισμός
+Nettoyer %1 ?	Καθαρισμός %1;
+Nettoyer le téléphone	Καθαρισμός του τηλεφώνου
+Nettoyer les fichiers inutiles ?	Καθαρισμός των άχρηστων αρχείων;
+Newsletters et notifications…	Ενημερωτικά και ειδοποιήσεις…
+Newsletters et pubs	Ενημερωτικά και διαφημίσεις
+Newsletters, pubs, notifications et mails en double.	Ενημερωτικά, διαφημίσεις, ειδοποιήσεις και διπλά email.
+Nombre de fichiers dans le mail	Αριθμός αρχείων στο email
+Normale	Κανονικά
+Nouvelle version %1 disponible	Νέα έκδοση %1 διαθέσιμη
+Oublier	Ξέχασε
+Oublier ce compte ?	Να ξεχαστεί αυτός ο λογαριασμός;
+Oui, c'est fini	Ναι, τελείωσε
+Ouverte aujourd'hui	Ανοίχτηκε σήμερα
+Ouverte il y a %1	Ανοίχτηκε πριν από %1
+Ouverture de %1…	Άνοιγμα του %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Άνοιξε το Clean Smart για να δεις τι να κάνεις. Δεν χάνεται τίποτα.
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Άνοιξε τη σελίδα σου στη Google και δες τον χώρο που πιάνει το Google Photos. Γράψ' τον εδώ (σε GB).
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	Άνοιξε «Μεγάλα βίντεο», επίλεξέ τα και μετά «Συμπίεση»
+Ouvrir	Άνοιγμα
+Ouvrir Google Photos	Άνοιγμα του Google Photos
+Ouvrir Google Takeout	Άνοιγμα του Google Takeout
+Ouvrir iCloud Photos	Άνοιγμα Φωτογραφιών iCloud
+Ouvrir la page du mot de passe d'application	Άνοιγμα της σελίδας κωδικού εφαρμογής
+Ouvrir privacy.apple.com	Άνοιγμα του privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	Άνοιγμα της «Απελευθέρωσης χώρου» του Android
+PDF souvenir	Αναμνηστικό PDF
+PHOTOS ET VIDÉOS	ΦΩΤΟΓΡΑΦΙΕΣ ΚΑΙ ΒΙΝΤΕΟ
+PROTECTION	ΠΡΟΣΤΑΣΙΑ
+Pas de photos pour cette période.	Δεν υπάρχουν φωτογραφίες για αυτή την περίοδο.
+Pas ouverte depuis plus d'un an	Δεν έχει ανοιχτεί πάνω από έναν χρόνο
+Passer	Παράλειψη
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	Μικρά αντίγραφα των φωτογραφιών για προβολή. Ξαναφτιάχνονται μόνα τους.
+Photos	Φωτογραφίες
+Photos : %1 · vidéos : %2 · doublons écartés : %3	Φωτογραφίες: %1 · βίντεο: %2 · διπλότυπα που παραμερίστηκαν: %3
+Photos du week-end	Φωτογραφίες του Σαββατοκύριακου
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	Διπλές φωτογραφίες, ριπές, αποτυχημένες λήψεις, μεγάλα βίντεο, άχρηστα email… όλα πιάνουν χώρο.
+Photos et vidéos reçues ou envoyées	Φωτογραφίες και βίντεο που λήφθηκαν ή στάλθηκαν
+Photos floues ou ratées	Θολές ή αποτυχημένες φωτογραφίες
+Photos iCloud	Φωτογραφίες iCloud
+Photos similaires	Παρόμοιες φωτογραφίες
+Photos, téléphone et mails, étape par étape	Φωτογραφίες, τηλέφωνο και email, βήμα βήμα
+Place prise : %1	Χώρος που πιάνει: %1
+Plus d'outils	Περισσότερα εργαλεία
+Plus de 100 Mo chacune	Πάνω από 100 MB το καθένα
+Pour gagner des points : %1.	Για να κερδίσεις πόντους: %1.
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Για την πλήρη έκδοση του Clean Smart, ή για κάθε ερώτηση, γράψε μου:
+Pour obtenir la version complète, écris-moi :	Για την πλήρη έκδοση, γράψε μου:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	Για να βρει τα άχρηστα αρχεία, το Clean Smart πρέπει να βλέπει τον χώρο του τηλεφώνου: επίτρεψε την «Πρόσβαση σε όλα τα αρχεία». Τίποτα δεν στέλνεται πουθενά.
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	Για άλλον λογαριασμό ή άλλο δίσκο. Τα αρχεία που ήδη αντιγράφηκαν στον δίσκο δεν αγγίζονται.
+Protéger mes favoris	Προστασία των αγαπημένων μου
+Prudente	Προσεκτική
+Prudente : moins de photos proposées. Stricte : davantage.	Προσεκτική: προτείνονται λιγότερες φωτογραφίες. Αυστηρή: περισσότερες.
+Préparation	Προετοιμασία
+Préparation…	Προετοιμασία…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	Ειδοποίησέ με αν το τηλέφωνο δεν έχει σχεδόν χώρο (λιγότερο από 1 GB), και ένας μικρός απολογισμός την 1η του μήνα.
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	Πρόβλεψε τουλάχιστον %1 στο στικάκι ή στον δίσκο (10 % περιθώριο).
+QUI T'ÉCRIT LE PLUS	ΠΟΙΟΣ ΣΟΥ ΓΡΑΦΕΙ ΠΙΟ ΣΥΧΝΑ
+Quand le mail de %1 est arrivé	Όταν έρθει το email της %1
+Quitter	Έξοδος
+Quitter Google Photos	Αποχώρηση από το Google Photos
+Quitter iCloud Photos	Αποχώρηση από τις Φωτογραφίες iCloud
+RECHERCHE DES PHOTOS RATÉES	ΑΝΑΖΗΤΗΣΗ ΑΠΟΤΥΧΗΜΕΝΩΝ ΦΩΤΟΓΡΑΦΙΩΝ
+Rafales : on garde la meilleure…	Ριπές: κρατάμε την καλύτερη…
+Rafales — la plus nette est gardée	Ριπές — κρατιέται η πιο καθαρή
+Rangement : %1	Τακτοποίηση: %1
+Recherche des doublons	Αναζήτηση διπλοτύπων
+Recherche des fichiers inutiles…	Αναζήτηση άχρηστων αρχείων…
+Recherche des mails	Αναζήτηση email
+Recherche des mails avec PDF	Αναζήτηση email με PDF
+Recherche des mails importants (%1 / %2)	Αναζήτηση σημαντικών email (%1 / %2)
+Recherche des photos floues	Αναζήτηση θολών φωτογραφιών
+Recherche des photos ratées	Αναζήτηση αποτυχημένων φωτογραφιών
+Recherche des photos similaires	Αναζήτηση παρόμοιων φωτογραφιών
+Recherche des pièces jointes (%1 / %2)	Αναζήτηση συνημμένων (%1 / %2)
+Rechercher une mise à jour	Έλεγχος για ενημέρωση
+Recommencer	Από την αρχή
+Recommencer avec un autre compte	Από την αρχή με άλλον λογαριασμό
+Recommencer depuis le début ?	Να ξεκινήσει από την αρχή;
+Regarder la taille de %1	Δες το μέγεθος του %1
+Relance l'analyse après un changement.	Κάνε ξανά ανάλυση μετά από αλλαγή.
+Remettre des mails	Επαναφορά email
+Remettre le compteur à zéro	Μηδενισμός του μετρητή
+Remettre les fichiers	Επαναφορά των αρχείων
+Restes d'applis désinstallées	Υπολείμματα απεγκατεστημένων εφαρμογών
+Restes d'applis désinstallées…	Υπολείμματα απεγκατεστημένων εφαρμογών…
+Reçus plusieurs fois à quelques secondes d'écart : %1	Ελήφθησαν πολλές φορές με διαφορά δευτερολέπτων: %1
+Rien	Τίποτα
+Rien n'a été supprimé.	Δεν διαγράφηκε τίποτα.
+Rien n'est perdu	Δεν χάνεται τίποτα
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	Τίποτα δεν διαγράφεται χωρίς τη συγκατάθεσή σου: όλα περνούν από τον κάδο.
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	Τίποτα για ελευθέρωση: καμία παλιά φωτογραφία δεν είναι ακόμα στο αντίγραφο. Τρέξε πρώτα «Αντίγραφο όλων των φωτογραφιών μου».
+RÉSULTAT	ΑΠΟΤΕΛΕΣΜΑ
+Règle retirée	Ο κανόνας αφαιρέθηκε
+Récupère des mails mis à la corbeille de ta messagerie	Επανάφερε email από τον κάδο του email σου
+Récupérer mes photos iCloud (ancien iPhone)	Ανάκτηση των φωτογραφιών μου από το iCloud (παλιό iPhone)
+Réduire mes vidéos	Μείωση των βίντεό μου
+Réglages avancés	Ρυθμίσεις για προχωρημένους
+Réglages de stockage Android	Ρυθμίσεις αποθηκευτικού χώρου Android
+SAUVEGARDE	ΑΝΤΙΓΡΑΦΟ ΑΣΦΑΛΕΙΑΣ
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	Χωρίς πρόσβαση στις φωτογραφίες, το Clean Smart δεν μπορεί να αναλύσει τίποτα.
+Santé	Υγεία
+Sauvegarde %1 / %2	Αντίγραφο %1 / %2
+Sauvegarde automatique chaque nuit	Αυτόματο αντίγραφο κάθε νύχτα
+Sauvegarde avant suppression	Αντίγραφο πριν από τη διαγραφή
+Sauvegarde de mes bonnes photos	Αντίγραφο των καλών φωτογραφιών μου
+Sauvegarde des mails	Αντίγραφο των email
+Sauvegarde des mails importants	Αντίγραφο των σημαντικών email
+Sauvegarde du mail %1 / %2	Αποθήκευση του email %1 / %2
+Sauvegarder avant de supprimer	Αντίγραφο πριν από τη διαγραφή
+Sauvegarder des mails	Αποθήκευση email
+Sauvegarder mes bonnes photos	Αντίγραφο των καλών φωτογραφιών μου
+Se connecter avec ton identifiant Apple	Σύνδεση με το Apple ID σου
+Serveur IMAP	Διακομιστής IMAP
+Serveur introuvable : vérifie internet et le nom du serveur.	Ο διακομιστής δεν βρέθηκε: έλεγξε το ίντερνετ και το όνομα του διακομιστή.
+Ses mails partent à la corbeille chaque nuit, tout seuls	Τα email του πάνε στον κάδο κάθε νύχτα, μόνα τους
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	Μόνο οι καλές φωτογραφίες: ποτέ διπλότυπα, περιττές ριπές ή αποτυχημένες. Οι αγαπημένες πάνε και στο «Mes meilleures» (Οι καλύτερές μου).
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	Αποθηκεύονται μόνο οι καλές φωτογραφίες, σε στικάκι, δίσκο ή Google Drive. Ακόμα και το Google Photos μπορεί να επιστρέψει.
+Seules les nouvelles photos sont copiées à chaque fois.	Κάθε φορά αντιγράφονται μόνο οι νέες φωτογραφίες.
+Seuls les 20 premiers fichiers sont envoyés.	Στέλνονται μόνο τα πρώτα 20 αρχεία.
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	Αν η σύνδεση απορριφθεί, φτιάξε έναν κωδικό εφαρμογής στην ασφάλεια του λογαριασμού Microsoft (απαιτείται επαλήθευση 2 βημάτων).
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	Αλλιώς το iPhone ξαναστέλνει τις φωτογραφίες στο iCloud, και η διαγραφή στο iCloud μπορεί να τις σβήσει και από το iPhone.
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	Αλλιώς το τηλέφωνο ξαναστέλνει τις φωτογραφίες στη Google, και η διαγραφή στη Google μπορεί να τις σβήσει και από αυτό το τηλέφωνο.
+Soldes d'hiver	Χειμερινές εκπτώσεις
+Souvent inutiles après coup	Συχνά άχρηστα μετά
+Stockage du téléphone	Αποθηκευτικός χώρος τηλεφώνου
+Stricte	Αυστηρή
+Suivant	Επόμενο
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	Διάγραψε μόνος σου αυτό το αρχείο στις Λήψεις για να κάνεις χώρο.
+Supprimer	Διαγραφή
+Supprimer %1 ?	Διαγραφή %1;
+Supprimer ce fichier du téléphone ?	Διαγραφή αυτού του αρχείου από το τηλέφωνο;
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	Διαγραφή κάθε αρχείου από το τηλέφωνο αφού αντιγραφεί και ελεγχθεί (προτείνεται: κρατά ελεύθερο χώρο)
+Supprimer les doublons	Διαγραφή των διπλοτύπων
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Στο Gmail μένουν στα εισερχόμενα και παίρνουν ετικέτα «Προστατευμένα». Επαναλαμβάνεται κάθε νύχτα.
+Sur Google Takeout, en 1 minute	Στο Google Takeout, σε 1 λεπτό
+Sur account.apple.com → Mots de passe pour applications → en créer un.	Στο account.apple.com → Κωδικοί για εφαρμογές → φτιάξε έναν.
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	Στο iPhone: Ρυθμίσεις › το όνομά σου › iCloud: εμφανίζεται ο χώρος των «Φωτογραφιών». Ή δες στο icloud.com. Γράψ' τον εδώ (σε GB).
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	Στο iPhone ή στο icloud.com/photos: επίλεξε φωτογραφίες και μετά «Διαγραφή». Το άλμπουμ «Πρόσφατα διαγραμμένα» τις κρατά 30 ημέρες.
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	Στη σελίδα που ανοίγει: Αποθηκευτικός χώρος › «Διαγραφή προσωρινής μνήμης». Το απαιτεί το Android, το Clean Smart δεν μπορεί να το κάνει για σένα.
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	Στο τηλέφωνο αρκούν 2 έως 3 GB ελεύθερα: ένα αρχείο τη φορά. Ελεύθερα τώρα: %1.
+Sur privacy.apple.com, en 2 minutes	Στο privacy.apple.com, σε 2 λεπτά
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	Στο privacy.apple.com, τα αρχεία λέγονται «iCloud Photos Part 1 of 12»: ο τελευταίος αριθμός (εδώ 12) είναι ο αριθμός των αρχείων. Το Clean Smart τον διαβάζει και μόνο του.
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	Ασφάλεια λογαριασμού → Δημιουργία κωδικού εφαρμογής, και επικόλλησέ τον εδώ.
+Sécurité, photos ratées, démonstration…	Ασφάλεια, αποτυχημένες φωτογραφίες, επίδειξη…
+Sévérité	Αυστηρότητα
+TERMINÉ	ΤΕΛΟΣ
+Ta messagerie	Το email σου
+Ta période d'essai de 30 jours est terminée.	Η δοκιμαστική περίοδος 30 ημερών τελείωσε.
+Taille de %1 (Go)	Μέγεθος %1 (GB)
+Taille du texte	Μέγεθος κειμένου
+Taille maximale des fichiers : 1 Go ou 2 Go	Μέγιστο μέγεθος αρχείων: 1 GB ή 2 GB
+Temps passé	Χρόνος που πέρασε
+Temps restant	Χρόνος που απομένει
+Terminer la demande	Ολοκλήρωση αιτήματος
+Terminé	Τέλος
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	Οι φωτογραφίες του iPhone σου σε στικάκι ή δίσκο, ανά έτος, χωρίς διπλότυπα
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	Οι φωτογραφίες σου των 2 τελευταίων μηνών δεν είναι ακόμα στον δίσκο. Ζήτα νέο αντίγραφο στο Google Takeout και η αυτόματη λειτουργία θα προσθέσει μόνο τις νέες, χωρίς διπλότυπα.
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	Οι φωτογραφίες σου των 2 τελευταίων μηνών δεν είναι ακόμα στον δίσκο. Ζήτα νέο αντίγραφο από την Apple: το Clean Smart θα προσθέσει μόνο τις νέες, χωρίς διπλότυπα.
+Tes photos à l'abri	Οι φωτογραφίες σου ασφαλείς
+Tes réglages et ta boîte mail seront conservés.	Οι ρυθμίσεις σου και το γραμματοκιβώτιό σου θα διατηρηθούν.
+Ton téléphone est plein ?	Το τηλέφωνό σου είναι γεμάτο;
+Ton téléphone est propre et tes photos sont à l'abri	Το τηλέφωνό σου είναι καθαρό και οι φωτογραφίες σου ασφαλείς
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	Το τηλέφωνο και το γραμματοκιβώτιό σου είναι καθαρά, οι φωτογραφίες σου ασφαλείς
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	Πάτα εδώ για λήψη, μετά άνοιξε το αρχείο για εγκατάσταση
+Touche ici pour la version complète ou une question	Πάτα εδώ για την πλήρη έκδοση ή για ερώτηση
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Απλώς πάτα τους συνδέσμους «Λήψη» στο email της Google. Το Clean Smart αντιγράφει κάθε αρχείο στον δίσκο μόλις φτάσει στο Download, ακόμα και ενώ κατεβαίνουν τα άλλα.
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	Πάτα έναν αποστολέα: πάντα πέταμα, πάντα κράτημα, ειδοποίησέ με, κατάργηση εγγραφής.
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	Πάτα έναν αποστολέα στο «Ποιος σου γράφει πιο συχνά» για να διαλέξεις
+Touche une image pour la cocher · appui long pour la voir en grand	Πάτα μια εικόνα για να την επιλέξεις · παρατεταμένο πάτημα για μεγάλη προβολή
+Toucher pour analyser	Πάτα για ανάλυση
+Toucher pour voir	Πάτα για να δεις
+Toujours garder	Πάντα κράτημα
+Toujours jeter	Πάντα πέταμα
+Tous les fichiers sont traités ?	Επεξεργάστηκαν όλα τα αρχεία;
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	Όλα τα email του %1 (τουλάχιστον %2 email) πάνε στον κάδο του email σου.
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	Όλα τα email από %1 αποστολέα(είς) ενημερωτικών πάνε στον κάδο του email σου (όλα τα εισερχόμενα, όχι μόνο όσα αναλύθηκαν).\n\nΜπορείς να τα επαναφέρεις από τον κάδο.
+Tout cocher	Επιλογή όλων
+Tout décocher	Αποεπιλογή όλων
+Tout désélectionner	Αποεπιλογή όλων
+Tout mettre à la corbeille	Όλα στον κάδο
+Tout nettoyer	Καθαρισμός όλων
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	Όλα περνούν από τον κάδο: 30 ημέρες για επαναφορά. Και το «Έκανα λάθος» αναιρεί με μια κίνηση.
+Tout recommencer	Όλα από την αρχή
+Tout recommencer ?	Όλα από την αρχή;
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	Όλο το περιεχόμενό του έχει αντιγραφεί και ελεγχθεί στον δίσκο. Η διαγραφή του κάνει χώρο για το επόμενο.\n\nΟι φωτογραφίες σου μένουν και στο Google Photos.
+Tout va bien, continue comme ça !	Όλα καλά, συνέχισε έτσι!
+Tout était déjà sauvegardé 👍	Όλα είχαν ήδη αποθηκευτεί 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	Όλες οι φωτογραφίες σου σε στικάκι ή δίσκο, ανά έτος, χωρίς διπλότυπα
+Tri avant la sauvegarde	Ταξινόμηση πριν από το αντίγραφο
+Tri des expéditeurs	Ταξινόμηση αποστολέων
+Tri rapide	Γρήγορη ταξινόμηση
+Tri terminé !	Η ταξινόμηση τελείωσε!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	Πρώτα ταξινόμηση, κράτημα των καλύτερων, αντίγραφο μόνο των καλών φωτογραφιών, ελευθέρωση χώρου, μετά καθαρισμός των email.
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	Πρώτα ταξινόμηση, κράτημα των καλύτερων, αντίγραφο μόνο των καλών φωτογραφιών, μετά ελευθέρωση χώρου.
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	Πρώτα ταξινόμηση, τα σημαντικά σε ασφαλές μέρος, μετά άδειασμα του γραμματοκιβωτίου. Τα email της τράπεζας, του δημοσίου ή της υγείας δεν πετιούνται ποτέ.
+Trier en glissant	Ταξινόμηση με σύρσιμο
+Trier les expéditeurs	Ταξινόμηση των αποστολέων
+Trier, garder, sauvegarder, libérer	Ταξινόμηση, κράτημα, αντίγραφο, ελευθέρωση
+Trier, mettre l'important à l'abri, vider la boîte	Ταξινόμηση, τα σημαντικά ασφαλή, άδειασμα γραμματοκιβωτίου
+Trier, protéger	Ταξινόμηση, προστασία
+Trop claire	Πολύ φωτεινή
+Trop petite	Πολύ μικρή
+Trop sombre	Πολύ σκοτεινή
+Très gros	Πολύ μεγάλα
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	Έσβησες το αντίγραφο στον δίσκο και δεν αντιγράφεται πια τίποτα; Πάτα «Όλα από την αρχή (έσβησα το αντίγραφό μου)» κάτω στην οθόνη και ξεκίνησε ξανά τα αρχεία ZIP.
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	Είχες iPhone; Οι φωτογραφίες σου από το iCloud σε στικάκι ή δίσκο
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	Μπορείς να βγεις από την εφαρμογή για να πατήσεις τους συνδέσμους: η αντιγραφή συνεχίζει (ειδοποίηση «Αυτόματη αντιγραφή»).
+Type : .zip   ·   Taille : 2 Go	Τύπος: .zip   ·   Μέγεθος: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	Κατέβασε ΕΝΑ μόνο ZIP τη φορά, σε Wi-Fi. Επεξεργάσου το, διάγραψέ το, μετά κατέβασε το επόμενο.
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	Απλώς κατέβασε τα αρχεία στο privacy.apple.com. Το Clean Smart αντιγράφει κάθε αρχείο στον δίσκο μόλις φτάσει στο Download.
+Téléphone	Τηλέφωνο
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	Γεμάτο τηλέφωνο: άδειασε τον κάδο της Συλλογής, διάγραψε τα ZIP που ήδη επεξεργάστηκαν, κάνε τον καθοδηγούμενο καθαρισμό. Χρειάζονται τουλάχιστον 300 MB ελεύθερα.
+Un bouton, et c'est trié	Ένα κουμπί, και ταξινομήθηκαν
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	Μία κάρτα ανά αποστολέα: σύρε αριστερά για να πετάξεις ΟΛΑ του τα email, δεξιά για να τον κρατήσεις.
+Une notification quand il t'écrit	Μια ειδοποίηση όταν σου γράφει
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	Μία φωτογραφία τη φορά: σύρε αριστερά για πέταμα, δεξιά για κράτημα
+Une question, un souci, la version complète ? Écris-moi :	Μια ερώτηση, ένα πρόβλημα, η πλήρης έκδοση; Γράψε μου:
+Utilise ton adresse et ton mot de passe Free.	Χρησιμοποίησε τη διεύθυνση και τον κωδικό σου στο Free.
+Utilise ton adresse et ton mot de passe La Poste.	Χρησιμοποίησε τη διεύθυνση και τον κωδικό σου στο La Poste.
+Utilise ton adresse et ton mot de passe Orange.	Χρησιμοποίησε τη διεύθυνση και τον κωδικό σου στο Orange.
+Utilise ton adresse et ton mot de passe SFR.	Χρησιμοποίησε τη διεύθυνση και τον κωδικό σου στο SFR.
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	Γύρω στις 2 τη νύχτα, οι νέες φωτογραφίες αντιγράφονται στον φάκελο αντιγράφων. Μια ειδοποίηση σου λέει αν δεν πέτυχε.
+Version complète	Πλήρης έκδοση
+Version installée : %1	Εγκατεστημένη έκδοση: %1
+Vider	Άδειασμα
+Vider la corbeille ?	Να αδειάσει ο κάδος;
+Vider la corbeille Clean Smart	Άδειασμα του κάδου του Clean Smart
+Vider la corbeille Clean Smart ?	Να αδειάσει ο κάδος του Clean Smart;
+Vider la corbeille maintenant	Άδειασμα του κάδου τώρα
+Vider maintenant	Άδειασμα τώρα
+Vieux mails vers la corbeille…	Παλιά email στον κάδο…
+Vieux téléchargements (plus de 6 mois)	Παλιές λήψεις (πάνω από 6 μήνες)
+Voir la liste et jeter	Δες τη λίστα και πέτα
+Voir la liste et libérer	Δες τη λίστα και ελευθέρωσε
+Voir le courrier indésirable puis le mettre à la corbeille	Δες την ανεπιθύμητη αλληλογραφία και στείλ' την στον κάδο
+Voir les conseils	Δες τις συμβουλές
+Voir ma place Google	Δες τον χώρο μου στη Google
+Voir ma place iCloud	Δες τον χώρο μου στο iCloud
+Votre facture	Ο λογαριασμός σας
+Voyages et réservations	Ταξίδια και κρατήσεις
+Vérification de la sauvegarde	Έλεγχος του αντιγράφου
+Vérification du disque	Έλεγχος του δίσκου
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Έλεγξε στο email της Google ότι κάθε αρχείο (001, 002, 003…) έχει επεξεργαστεί.
+Vérifier, puis libérer %1 (si tu veux)	Έλεγχος, μετά ελευθέρωση του %1 (αν θέλεις)
+Yeux fermés	Κλειστά μάτια
+appli	εφαρμογή
+applis	εφαρμογές
+calcul…	υπολογισμός…
+compression impossible	αδύνατη η συμπίεση
+contact en double	διπλή επαφή
+contacts en double	διπλές επαφές
+copie	αντίγραφο
+copies	αντίγραφα
+de ta photothèque est à l'abri	της φωτοθήκης σου είναι ασφαλές
+derniers fichiers	τελευταία αρχεία
+doublon	διπλότυπο
+doublons	διπλότυπα
+erreur	σφάλμα
+erreurs	σφάλματα
+expéditeur	αποστολέας
+expéditeurs	αποστολείς
+fais le ménage de ta boîte mail	καθάρισε το γραμματοκιβώτιό σου
+fichier	αρχείο
+fichier copié	αρχείο αντιγράφηκε
+fichier copié et vérifié	αρχείο αντιγράφηκε και ελέγχθηκε
+fichier n'a	αρχείο δεν
+fichiers	αρχεία
+fichiers copiés	αρχεία αντιγράφηκαν
+fichiers copiés et vérifiés	αρχεία αντιγράφηκαν και ελέγχθηκαν
+fichiers n'ont	αρχεία δεν
+iCloud Photos	Φωτογραφίες iCloud
+jour	ημέρα
+jour restant	ημέρα απομένει
+jours	ημέρες
+jours restants	ημέρες απομένουν
+le plus simple	το πιο απλό
+libres · %1 % utilisé	ελεύθερα · %1 % σε χρήση
+libère de la place avec le Ménage complet	ελευθέρωσε χώρο με τον Πλήρη καθαρισμό
+libérés	ελευθερώθηκαν
+mail	email
+mail remis	email επανήλθε
+mails	email
+mails remis	email επανήλθαν
+nettoie les fichiers inutiles du téléphone	καθάρισε τα άχρηστα αρχεία του τηλεφώνου
+nouveau fichier	νέο αρχείο
+nouveaux fichiers	νέα αρχεία
+pas à pas	βήμα βήμα
+photo	φωτογραφία
+photo gardée	φωτογραφία κρατήθηκε
+photo ou vidéo	φωτογραφία ή βίντεο
+photo ou vidéo prise	φωτογραφία ή βίντεο τραβήχτηκε
+photo protégée	προστατευμένη φωτογραφία
+photos	φωτογραφίες
+photos gardées	φωτογραφίες κρατήθηκαν
+photos ou vidéos	φωτογραφίες ή βίντεο
+photos ou vidéos prises	φωτογραφίες ή βίντεο τραβήχτηκαν
+photos protégées	προστατευμένες φωτογραφίες
+puis « Étape suivante » :	μετά «Επόμενο βήμα»:
+rafale	ριπή
+rafales	ριπές
+sauvegarde tes photos sur une clé ou une carte SD	κάνε αντίγραφο των φωτογραφιών σου σε στικάκι ή κάρτα SD
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	είναι ήδη ασφαλείς στο αντίγραφό σου (ίδιο όνομα, ίδιο μέγεθος).\n\nΠάνε στον κάδο της Συλλογής (επαναφορά για 30 ημέρες). Οι πιο πρόσφατες μένουν στο τηλέφωνο.
+sur %1 contacts	από %1 επαφές
+trie tes photos (doublons, rafales, floues)	ταξινόμησε τις φωτογραφίες σου (διπλότυπα, ριπές, θολές)
+téléchargement	λήψη
+téléchargements	λήψεις
+utilisé	σε χρήση
+vidéo	βίντεο
+vidéo compressée	συμπιεσμένο βίντεο
+vidéos	βίντεο
+vidéos compressées	συμπιεσμένα βίντεο
+vieux mail	παλιό email
+vieux mails	παλιά email
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«Κατεστραμμένο αρχείο»: η λήψη διακόπηκε. Κατέβασε ξανά αυτό το ZIP από το email της Google και ξεκίνησέ το πάλι: ό,τι έχει ήδη αντιγραφεί δεν θα ξανααντιγραφεί.
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«Ελευθέρωση χώρου»: κράτα στο τηλέφωνο τις φωτογραφίες των τελευταίων…
+À GARDER	ΚΡΑΤΗΜΑ
+À JETER	ΠΕΤΑΜΑ
+À RETROUVER VITE	ΓΙΑ ΓΡΗΓΟΡΗ ΕΥΡΕΣΗ
+À nettoyer	Για καθαρισμό
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	Χρησιμοποίησέ το αν έσβησες το αντίγραφο στον δίσκο: το Clean Smart ξεχνά τι έχει ήδη αντιγράψει και το επόμενο ZIP θα αντιγραφεί ξανά ολόκληρο.\n\nΟ επιλεγμένος δίσκος και οι ρυθμίσεις σου κρατιούνται. Δεν σβήνεται τίποτα στον δίσκο ούτε στο %1.
+Écriture impossible	Αδύνατη η εγγραφή
+Électricité	Ρεύμα
+à jeter	για πέταμα
+élément	στοιχείο
+éléments	στοιχεία
+… et %1 autres mails du même genre (cochés).	… και %1 ακόμα email του ίδιου είδους (επιλεγμένα).
+‹ Retour	‹ Πίσω
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1 διαβάστηκαν χωρίς σφάλμα. Τα αποτυπώματα του αντιγράφου δεν είναι πια σε αυτό το τηλέφωνο: αδύνατη η σύγκριση.
+↩️ %1 dans la boîte de réception	↩️ %1 στα εισερχόμενα
+↩️ %1 remis dans la galerie	↩️ %1 επέστρεψαν στη συλλογή
+↩️ %1 remis à leur place	↩️ %1 επέστρεψαν στη θέση τους
+↩️ J'ai fait une bêtise : remettre les %1	↩️ Έκανα λάθος: επαναφορά των %1
+↩️ Mails remis (démonstration)	↩️ Τα email επανήλθαν (επίδειξη)
+↩️ Remettre %1 dans ma boîte	↩️ Επαναφορά %1 στα εισερχόμενα
+↩️ Remettre des mails	↩️ Επαναφορά email
+↩️ Tout remettre à sa place	↩️ Όλα πίσω στη θέση τους
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Αναμονή για το επόμενο αρχείο στο Download. Πάτα τους συνδέσμους «Λήψη» στο email.
+⏳ En attente du prochain fichier dans Download…	⏳ Αναμονή για το επόμενο αρχείο στο Download…
+⏳ copie en cours…	⏳ αντιγραφή…
+⏳ plus tard	⏳ αργότερα
+⏹ Arrêter	⏹ Διακοπή
+☑️ Tout cocher	☑️ Επιλογή όλων
+⚙️ Cache des applis et fichiers système	⚙️ Προσωρινή μνήμη εφαρμογών και αρχεία συστήματος
+⚙️ Options	⚙️ Επιλογές
+⚠️ %1 : à relancer.\n	⚠️ %1: για επανεκκίνηση.\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 με σφάλμα: ξεκίνησε ξανά τα ZIP με την ένδειξη «για επανεκκίνηση» πριν προχωρήσεις.
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ %1 στον δίσκο δεν είναι πια ίδιο ή δεν διαβάζεται:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ Κανένα αντίγραφο απόψε
+⚠️ Fichier %1 à reprendre	⚠️ Το αρχείο %1 θέλει επανάληψη
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ Χρειάζονται περίπου %1, απομένουν %2. Μπορείς να ξεκινήσεις: όταν γεμίσει, θα συνδέσεις άλλο δίσκο και συνεχίζουμε χωρίς διπλότυπα.
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ Η αντιγραφή σταμάτησε: %1\n\nΔεν χάνεται τίποτα: ξεκίνησε ξανά την αυτόματη λειτουργία, θα συνεχίσουμε χωρίς διπλότυπα.
+⚠️ On ne commence pas	⚠️ Δεν ξεκινάμε
+⚠️ Sauvegarde de la nuit	⚠️ Νυχτερινό αντίγραφο
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ κατεστραμμένο: κατέβασέ το ξανά από το email, θα αντιγραφεί μόνο του
+⚠️ disque plein	⚠️ δίσκος γεμάτος
+⚠️ pas commencé	⚠️ δεν ξεκίνησε
+⚠️ à relancer	⚠️ για επανεκκίνηση
+⚠️ à relancer (%1)	⚠️ για επανεκκίνηση (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ Το αντίγραφο δεν είναι πλήρες (κατεστραμμένο αρχείο, για επανεκκίνηση ή όχι ακόμα αντιγραμμένο). Τελείωσε πρώτα το αντίγραφο: μη σβήσεις τίποτα στο %1.
+✅ %1 : terminé et vérifié.\n	✅ %1: ολοκληρώθηκε και ελέγχθηκε.\n
+✅ %1 doublon(s) supprimé(s)	✅ %1 διπλότυπο(α) διαγράφηκαν
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ %1 email αποθηκεύτηκαν · %2 PDF · αρχείο CleanSmart/Mails/index.html ενημερωμένο
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ %1 σημαντικά email ασφαλή · %2 PDF μαζεμένα · αρχείο index.html ενημερωμένο
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ %1 νέα(ες) φωτογραφία(ες) αποθηκεύτηκαν
+✅ %1 · depuis %2	✅ %1 · εδώ και %2
+✅ %1 à l'abri	✅ %1 ασφαλή
+✅ 312 mails importants à l'abri (démonstration)	✅ 312 σημαντικά email ασφαλή (επίδειξη)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 7.958 καλές φωτογραφίες αποθηκεύτηκαν (επίδειξη)
+✅ Assez de place sur « %1 ».	✅ Αρκετός χώρος στο «%1».
+✅ Boîte mail connectée	✅ Το γραμματοκιβώτιο συνδέθηκε
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ Ο δίσκος ελέγχθηκε: %1 ξαναδιαβάστηκαν, καμία κατεστραμμένη.
+✅ Doublons supprimés (démonstration)	✅ Τα διπλότυπα διαγράφηκαν (επίδειξη)
+✅ Fichier %1 terminé	✅ Το αρχείο %1 ολοκληρώθηκε
+✅ La copie sur le disque est complète et vérifiée.	✅ Το αντίγραφο στον δίσκο είναι πλήρες και ελεγμένο.
+✅ Mails sauvegardés (démonstration)	✅ Τα email αποθηκεύτηκαν (επίδειξη)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ αντίγραφο πλήρες και ελεγμένο\n✅ το αντίγραφο του τηλεφώνου απενεργοποιήθηκε\n✅ οι φωτογραφίες ελέγχθηκαν στον δίσκο\n\nΆνοιγμα του %1; Εσύ διαλέγεις τι θα σβήσεις.
+✅ copié et vérifié	✅ αντιγράφηκε και ελέγχθηκε
+✅ copié, vérifié, supprimé du téléphone	✅ αντιγράφηκε, ελέγχθηκε, διαγράφηκε από το τηλέφωνο
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 πετάχτηκαν · %2 ελευθερώθηκαν στο γραμματοκιβώτιο
+✉️ %1 mails	✉️ %1 email
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ %1 email (φάκελος «Mails Gmail», άνοιξε το index.html)\n
+✉️ Boîte mail	✉️ Γραμματοκιβώτιο
+✉️ Mails	✉️ Email
+✉️ Mails de %1	✉️ Email από %1
+✓ %1 choisi	✓ %1 επιλέχθηκε
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 ελευθερώθηκαν (επαναφορά για 30 ημέρες από τον κάδο της Συλλογής)
+✨ %1 mails mis à la corbeille	✨ %1 email στον κάδο
+✨ %1 mis à la corbeille (démonstration)	✨ %1 στον κάδο (επίδειξη)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 στον κάδο του email σου (επαναφορά με «Επαναφορά email»)
+✨ %1 nettoyés · %2 libérés	✨ %1 καθαρίστηκαν · %2 ελευθερώθηκαν
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ %1 παλιά email στον κάδο (τα σημαντικά κρατιούνται)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ 1.249 email στον κάδο (επίδειξη)
+✨ 1,1 Go libérés (démonstration)	✨ 1,1 GB ελευθερώθηκαν (επίδειξη)
+✨ 6,4 Go libérés (démonstration)	✨ 6,4 GB ελευθερώθηκαν (επίδειξη)
+✨ Mails mis à la corbeille (démonstration)	✨ Email στον κάδο (επίδειξη)
+✨ Ménage automatique du dimanche	✨ Αυτόματος καθαρισμός της Κυριακής
+✨ Ménage du dimanche	✨ Καθαρισμός της Κυριακής
+✨ Vieux mails mis à la corbeille (démonstration)	✨ Παλιά email στον κάδο (επίδειξη)
+❤️ Santé du téléphone : %1 / 100	❤️ Υγεία τηλεφώνου: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ Σύρε αριστερά: όλα του τα email στον κάδο   ·   Σύρε δεξιά: κρατιέται ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ Σύρε αριστερά για πέταμα   ·   Σύρε δεξιά για κράτημα ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 σε εξέλιξη: η αντιγραφή θα ξεκινήσει μόλις τελειώσει.
+⬜ Tout décocher	⬜ Αποεπιλογή όλων
+⭐ Protéger mes %1	⭐ Προστασία των %1 μου
+🍏 Mes photos iCloud	🍏 Οι φωτογραφίες μου από το iCloud
+🍏 Pense à une nouvelle copie iCloud	🍏 Σκέψου ένα νέο αντίγραφο iCloud
+🍏 Quitter iCloud Photos	🍏 Αποχώρηση από τις Φωτογραφίες iCloud
+🎁 Version d'essai · %1	🎁 Δοκιμαστική έκδοση · %1
+🎉 %1 libérés au total	🎉 %1 ελευθερώθηκαν συνολικά
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 Κανένα άχρηστο αρχείο: το τηλέφωνο είναι καθαρό!
+🎉 Aucun mail à jeter ici.	🎉 Κανένα email για πέταμα εδώ.
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 Καμία ξεχασμένη εφαρμογή: τις χρησιμοποιείς όλες!
+🎉 Plus rien ici.	🎉 Δεν έμεινε τίποτα εδώ.
+🎉 Rien à nettoyer, tout est propre !	🎉 Τίποτα για καθάρισμα, όλα είναι καθαρά!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 Τέλος: %1 αντιγράφηκαν και ελέγχθηκαν. Συνολικά στον δίσκο: %2 και %3.
+🎉 Tous les fichiers sont faits	🎉 Όλα τα αρχεία έγιναν
+🎬 Démonstration	🎬 Επίδειξη
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 ΛΕΙΤΟΥΡΓΙΑ ΕΠΙΔΕΙΞΗΣ: δεν αγγίζεται τίποτα στο τηλέφωνο
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 Λειτουργία επίδειξης: δεν αγγίζεται τίποτα στο τηλέφωνο
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 Κάθε κουμπί δείχνει πρώτα τη λίστα των email: ξετσεκάρεις όσα θέλεις να κρατήσεις και επιβεβαιώνεις.
+👀 Voir et jeter ses mails maintenant	👀 Δες και πέτα τα email του τώρα
+👆 Les expéditeurs que tu as jetés	👆 Οι αποστολείς που πέταξες
+👆 Tri des expéditeurs	👆 Ταξινόμηση αποστολέων
+👆 Tri rapide	👆 Γρήγορη ταξινόμηση
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Τώρα: στο email της Google, κατέβασε το αρχείο %1 (σε Wi-Fi). Μετά πάτα το πράσινο κουμπί και διάλεξέ το στις Λήψεις.
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 Τώρα: στο privacy.apple.com, κατέβασε το «Part %1» (σε Wi-Fi). Μετά πάτα το πράσινο κουμπί και διάλεξέ το στις Λήψεις.
+👉 À faire maintenant	👉 Για να γίνει τώρα
+👉 à télécharger puis traiter	👉 για λήψη και μετά επεξεργασία
+👍 Tu as déjà la dernière version (%1)	👍 Έχεις ήδη την τελευταία έκδοση (%1)
+👯 Mails en double	👯 Διπλά email
+💡 Aide	💡 Βοήθεια
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 Συμβουλή: κατάργησε την εγγραφή για να μην τα λαμβάνεις πια (κουμπί στη λίστα «Ποιος σου γράφει πιο συχνά»).
+💡 Si ça bloque	💡 Αν κολλήσει
+💡 Si ça bloque : tous les conseils	💡 Αν κολλήσει: όλες οι συμβουλές
+💾 %1 sur « %2 »	💾 %1 στο «%2»
+💾 Sauvegarde de la nuit	💾 Νυχτερινό αντίγραφο
+💾 Sauvegarder %1	💾 Αποθήκευση %1
+💾 Sauvegarder toutes mes photos	💾 Αντίγραφο όλων των φωτογραφιών μου
+💾 Sauver des mails	💾 Αποθήκευση email
+📁 Choisir le dossier de sauvegarde	📁 Επιλογή φακέλου αντιγράφων
+📁 Choisir un dossier	📁 Επιλογή φακέλου
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: όλο το email (.eml)\n📕 CleanSmart / PDF: όλα τα PDF μαζί\n📎 CleanSmart / Pieces jointes: τα άλλα αρχεία
+📁 Dossier de sauvegarde enregistré	📁 Ο φάκελος αντιγράφων αποθηκεύτηκε
+📂 Traiter un fichier ZIP	📂 Επεξεργασία αρχείου ZIP
+📂 Traiter un fichier ZIP à la main	📂 Επεξεργασία αρχείου ZIP με το χέρι
+📅 Ton rapport du mois	📅 Η μηνιαία αναφορά σου
+📎 Gros mails	📎 Μεγάλα email
+📕 Cocher les PDF	📕 Επιλογή των PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 Το PDF αποθηκεύτηκε στις Λήψεις / Clean Smart
+📕 PDF souvenir créé (démonstration)	📕 Το αναμνηστικό PDF δημιουργήθηκε (επίδειξη)
+📖 Mode d'emploi	📖 Οδηγίες χρήσης
+📤 Envoyer (%1)	📤 Αποστολή (%1)
+📦 Les plus grosses	📦 Οι μεγαλύτερες
+📦 Quitter Google Photos	📦 Αποχώρηση από το Google Photos
+📦 Ta nouvelle copie Google est peut-être prête	📦 Το νέο σου αντίγραφο Google ίσως είναι έτοιμο
+📧 Ouvrir le mail de Google	📧 Άνοιγμα του email της Google
+📰 Newsletters et pubs	📰 Ενημερωτικά και διαφημίσεις
+📱 Mes applis	📱 Οι εφαρμογές μου
+📱 Ouvrir l'app Google Photos	📱 Άνοιγμα της εφαρμογής Google Photos
+📱 Téléphone	📱 Τηλέφωνο
+📱 Téléphone presque plein	📱 Το τηλέφωνο σχεδόν γέμισε
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 %1 φωτογραφίες και %2 βίντεο αντιγράφηκαν και ελέγχθηκαν, ταξινομημένα ανά έτος\n
+📸 Photos	📸 Φωτογραφίες
+🔄 Analyser à nouveau	🔄 Νέα ανάλυση
+🔄 Chercher à nouveau	🔄 Νέα αναζήτηση
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 Όλα από την αρχή (έσβησα το αντίγραφό μου)
+🔍 Analyser ma boîte mail	🔍 Ανάλυση του γραμματοκιβωτίου μου
+🔍 Analyser mon téléphone	🔍 Ανάλυση του τηλεφώνου μου
+🔍 Chercher les mails avec pièces jointes	🔍 Αναζήτηση email με συνημμένα
+🔎 Vérifier le disque (relit chaque photo)	🔎 Έλεγχος του δίσκου (ξαναδιαβάζει κάθε φωτογραφία)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 Ο κωδικός σου μένει κρυπτογραφημένος στο τηλέφωνο. Στέλνεται μόνο στον διακομιστή του email σου.
+🔓 Autoriser	🔓 Να επιτρέπεται
+🔓 Autoriser l'accès aux fichiers	🔓 Να επιτρέπεται η πρόσβαση στα αρχεία
+🔓 Une autorisation pour en savoir plus	🔓 Μία άδεια για περισσότερα
+🔓 Une autorisation, une seule fois	🔓 Μία άδεια, μία φορά μόνο
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 Μία φορά μόνο: επίτρεψε την «Πρόσβαση σε όλα τα αρχεία» για να βλέπει το Clean Smart τον φάκελο Download. Διαβάζει μόνο τα αρχεία του %1.
+🔔 Mail de %1	🔔 Email από %1
+🔔 Tu seras prévenu quand il t'écrit	🔔 Θα ειδοποιηθείς όταν σου γράψει
+🕰️ Vieux mails	🕰️ Παλιά email
+🕰️ Vieux mails (les importants sont gardés)	🕰️ Παλιά email (τα σημαντικά κρατιούνται)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ Ο κάδος άδειασε: %1 ανακτήθηκαν οριστικά
+🗑️ Désinstaller	🗑️ Απεγκατάσταση
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ Το αρχείο διαγράφηκε από το τηλέφωνο: χώρος για το επόμενο
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ Οι αποστολείς μου «πάντα πέταμα»
+🗑️ Mettre %1 à la corbeille	🗑️ %1 στον κάδο
+🗑️ Ouvrir %1 pour effacer	🗑️ Άνοιγμα του %1 για διαγραφή
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ Τα email του θα πηγαίνουν στον κάδο κάθε νύχτα
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ Διαγραφή αυτού του ZIP από το τηλέφωνο (προτείνεται)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ Πάντα πέταμα: %1   🛡️ Πάντα κράτημα: %2   🔔 Ειδοποίησέ με: %3
+🗜️ Compresser (%1)	🗜️ Συμπίεση (%1)
+😴 Pas ouvertes depuis 3 mois	😴 Δεν άνοιξαν εδώ και 3 μήνες
+🚫 Se désabonner	🚫 Κατάργηση εγγραφής
+🛡️ %1 (mises en favori)	🛡️ %1 (έγιναν αγαπημένες)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 μπήκαν στον φάκελο «Προστατευμένα» του email σου
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ Σημαντικός αποστολέας (τράπεζα, δημόσιο, υγεία…): τα email του δεν πετιούνται ποτέ.
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ Το κουμπί διαγραφής εμφανίζεται όταν το αντίγραφο είναι πλήρες και τα κουτάκια 1 και 2 είναι επιλεγμένα.
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ Τα email της τράπεζας, του δημοσίου ή της υγείας δεν πάνε ποτέ στον κάδο.
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ Δεν ελευθερώνεται ποτέ το %1 πριν ελεγχθεί το αντίγραφο: επίλεξε πρώτα το πρώτο κουτάκι.
+🛡️ Protéger (%1)	🛡️ Προστασία (%1)
+🛡️ Ranger mes mails importants	🛡️ Τακτοποίηση των σημαντικών email μου
+🛡️ Ses mails ne seront jamais jetés	🛡️ Τα email του δεν θα πεταχτούν ποτέ
+🤖 Copie automatique de tes photos	🤖 Αυτόματη αντιγραφή των φωτογραφιών σου
+🤖 Démarrer le mode automatique	🤖 Έναρξη αυτόματης λειτουργίας
+🤖 Tout automatique (le plus simple)	🤖 Όλα αυτόματα (το πιο απλό)
+🧊 Vider son cache	🧊 Άδειασμα προσωρινής μνήμης
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 %1 διπλότυπα και 🎞️ %2 φωτογραφίες ριπής παραμερίστηκαν\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 τα διπλότυπα   🎞️ οι αποτυχημένες φωτογραφίες σε ριπή\n📱 τα στιγμιότυπα οθόνης   🎬 τα μεγάλα βίντεο\n💬 τα πολυμέσα WhatsApp   👥 οι διπλές επαφές\n✉️ τα ενημερωτικά και τα μεγάλα email
+🧭 Ménage	🧭 Καθαρισμός
+🧭 Ménage des mails	🧭 Καθαρισμός email
+🧭 Ménage guidé	🧭 Καθοδηγούμενος καθαρισμός
+🧹 Fichiers inutiles	🧹 Άχρηστα αρχεία
+🧹 Jeter les mails de %1	🧹 Πέταμα των email του %1
+🧹 Le ménage sûr	🧹 Ο ασφαλής καθαρισμός
+🧹 Mails triés cette nuit	🧹 Email ταξινομήθηκαν απόψε
+🧹 Mettre %1 à la corbeille	🧹 %1 στον κάδο
+🧹 Ménage sûr	🧹 Ασφαλής καθαρισμός
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 Ασφαλής καθαρισμός: ενημερωτικά, ειδοποιήσεις, διπλότυπα
+🧹 Nettoyer · %1	🧹 Καθαρισμός · %1
+🧹 Nettoyer · %1 · %2	🧹 Καθαρισμός · %1 · %2

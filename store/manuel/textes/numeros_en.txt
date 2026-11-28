@@ -1,0 +1,187 @@
+0	User guide
+1	More space on your phone,\nsimply and safely.
+2	Created by JM Dargère
+3	CLEAN SMART — Created by JM Dargère
+4	How does it work?
+5	1. Is your phone full?
+6	Duplicate photos, failed shots, huge videos, useless emails… all take space.
+7	2. Clean Smart searches for you
+8	One single button. Nothing is deleted during the scan.
+9	3. You choose
+10	What is safe is already ticked for you. For the rest, you decide.
+11	4. Nothing is lost
+12	Everything goes through the bin: 30 days to get a photo or an email back.
+13	5. Everything stays safe
+14	Backup to an SD card, USB drive or Google Drive, even on its own at night.
+15	Complete clean-up (recommended)
+16	The home screen has a big green "Complete clean-up" tile and 3 doors: 📸 Photos, 🧹 Phone, ✉️ Emails. The complete clean-up does everything in the right order; the GREEN button is always the next step.
+17	Safe clean-up: extra duplicates and bursts (the best one is kept), black or white photos, old screenshots. One button.
+18	Check the doubtful ones: slightly blurry photos, WhatsApp… Swipe left to discard, right to keep (it becomes a favourite).
+19	Keep them safe: only GOOD photos are backed up. Favourites also go to "Mes meilleures" (My best).
+20	Free up space: old photos already backed up leave the phone.
+21	NEW 2.0 — And your emails: your mailbox space, newsletters and large emails, then the guided mailbox clean-up. At Google, emails and Google Photos share the same 15 GB.
+22	The summary shows what is freed on the phone AND in the mailbox. In bursts, the photo where nobody has their eyes closed is kept.
+23	Junk files (NEW 2.0)
+24	Temporary files, thumbnails, cache folders, empty folders, installation files, leftovers of uninstalled apps. Photos, videos and music are never touched.
+25	Just once: allow "All files access". The search starts by itself.
+26	Safe groups are ticked: they are recreated automatically or no longer needed. "Clean" and you're done.
+27	"To check" groups (other .apk, app leftovers, old downloads) go to the Clean Smart bin: "Put everything back" for 7 days.
+28	Other apps' cache: Android forbids apps from clearing it since Android 11. The button opens Android's "Free up space" screen.
+29	📱 My apps: the biggest ones and those not opened for 3 months. Tap one to uninstall it or clear its cache.
+30	Health score and Sunday clean-up (NEW 2.0)
+31	On the home screen, a score from 0 to 100 sums up the phone: free space, backup, photos to sort, junk files, mailbox. It also tells you what to do to earn points.
+32	In Options › Automatic, turn on "Automatic Sunday clean-up": safe junk files and spam are removed automatically, a notification sums it up.
+33	Photos never leave on their own: the notification says how many to sort, you tap and choose.
+34	Simpler options: Backup, Automatic, Display. The rest is in "Advanced settings".
+35	Leave Google Photos
+36	All your Google Photos on a USB drive or hard disk, sorted by year, without duplicates. One single dashboard: the "MAINTENANT" (now) step is open, with the green button.
+37	Space: note the size of Google Photos, Clean Smart works out the space to plan.
+38	The disk: plug in the USB drive or disk (USB-C adapter) and choose a folder on it.
+39	Ask Google for a copy: the model shows exactly what to tick (.zip files of 2 GB).
+40	The files: the 001, 002… list tells you which one to download. "Traiter un fichier", then delete it. A notification tells you when it is done.
+41	Each photo is sorted by year, duplicates and extra bursts are left out, everything is re-read and checked. The gauge shows how much is safe.
+42	Problem (phone or disk full, damaged file): nothing is lost, run the same file again. "Si ça bloque" button.
+43	NEW 2.0 — "Fully automatic": allow "All files access" once, start, then just tap the links in Google's email. Each file is copied as soon as it arrives in Download, then deleted from the phone once verified.
+44	Free up Google: the button only appears when the copy is complete, phone backup is off and you have checked your photos on the drive. You do the deleting; Google's bin keeps everything for 60 days.
+45	"Check the drive" re-reads every copied photo and reports any damaged one. Every 2 months, a notification reminds you to request a new copy: only new photos are added.
+46	Get my iCloud photos (former iPhone)
+47	For iPhone photos: the same dashboard as Google Photos, with Apple's official export.
+48	Space: on the iPhone, Settings › your name › iCloud. Clean Smart works out the space to plan.
+49	The disk: plug in the USB drive or disk and choose a folder on it.
+50	On privacy.apple.com: "Request a copy of your data", tick "iCloud Photos", files of 1 or 2 GB.
+51	Apple sends an email within a few days. Download "Part 1", process it, delete it, then "Part 2"…
+52	Everything is sorted by year in "iCloud Photos", without duplicates, the best photo of each burst kept.
+53	Scan my phone
+54	It is the big button on the home screen. Nothing to set up.
+55	Tap "Analyser mon téléphone" (Scan my phone).
+56	The first time, Android asks for access to photos and contacts: allow it.
+57	A bar shows the progress. Then Clean Smart shows in big how much space you can get back.
+58	What Clean Smart finds
+60	Duplicates
+61	Identical copies. The original is kept.
+62	Similar photos
+63	Bursts taken seconds apart. The sharpest one is kept.
+64	Failed photos
+65	Blurry, too dark, too bright or too small.
+66	Screenshots
+67	Often useless afterwards.
+68	Large videos
+69	Over 100 MB each.
+70	WhatsApp media
+71	Photos and videos received or sent.
+72	My biggest files
+73	The 30 heaviest photos and videos.
+74	Duplicate contacts
+75	Same name and same number.
+76	Choose and clean
+78	Tap a category to see the photos.
+79	Tap a photo to tick it. Long press: view it full screen.
+80	"GARDÉE" (kept): the photo Clean Smart advises you to keep.
+81	Tap the red "Nettoyer" (Clean) button at the bottom.
+82	Android asks for a final confirmation. Photos go to the bin: 30 days to restore them.
+83	Quick sort
+84	To sort your recent photos one by one, without thinking.
+85	On the home screen, tap "Tri rapide" (Quick sort).
+86	Swipe the photo LEFT to discard it, RIGHT to keep it.
+87	The small round button in the middle goes back to the previous photo.
+88	At the end, the red button sends the discarded photos to the bin.
+89	The bin and "I made a mistake"
+91	Photos in the bin still take space for 30 days.
+92	"Vider la corbeille maintenant" (Empty the bin now) frees the space right away (careful: it is final).
+93	"J'ai fait une bêtise" (I made a mistake) puts the last discarded files back in the gallery.
+94	Protect and send
+95	In a category, tick photos then:
+96	Protect
+97	The photo becomes a favourite: it will never be suggested again.
+98	Send
+99	By WhatsApp, email… (20 photos max). Nothing leaves the phone.
+100	Compress
+101	For videos: remade in 720p, often 3 to 5 times lighter.
+102	Backup
+103	Your photos safe on an SD card, a USB drive or Google Drive.
+104	In "Sauvegarde" (Backup), tap "Choisir un dossier" (Choose a folder).
+105	"Back up all my photos" copies your photos, sorted by month.
+106	Next times, only new photos are copied.
+107	In Options, "Automatic backup every night" does it on its own.
+108	More tools
+109	On the home screen, tap "Plus d'outils" (More tools):
+110	Free up space
+111	Photos older than 3 months ALREADY backed up go to the bin. Never a photo that is not safe.
+112	Souvenir PDF
+113	The best photos of the month or year in a PDF, to send to a loved one.
+114	Shrink my videos
+115	Open "Grosses vidéos" (Large videos), tick them, then "Compresser".
+116	My mailbox
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	Tap "Connecter ma boîte mail" (Connect my mailbox) and choose your provider.
+119	Gmail, Yahoo and iCloud require an APP PASSWORD. Clean Smart opens the right page.
+120	Scan your mailbox, then one button for: newsletters, large emails, old emails, duplicate emails.
+121	Emails go to your mailbox bin. Those from your bank, government or health services are NEVER touched.
+122	Guided mailbox clean-up
+123	In Mails, tap the big green tile. Same idea: the green button is the next step.
+124	Safe clean-up: newsletters, ads, notifications and duplicate emails go to the bin.
+125	Sort by sender: one card per sender. Left, all their emails go; right, you keep them.
+126	Keep the important safe: bank, government, health, invoices and emails with a PDF are backed up.
+127	Free the mailbox: old emails go to the bin, never the important ones.
+128	"Se désabonner" (Unsubscribe): stop receiving a newsletter. The button opens the unsubscribe page.
+129	NEW 2.0 — Before deleting, the list of emails is shown (sender, subject, date): untick those to keep, then confirm.
+130	Tap a sender: 🗑️ always delete (every night, automatically), 🛡️ always keep, 🔔 notify me when they write.
+131	Protected box: bank, taxes, health, home and family (your contacts) are filed in "Protected" in your mailbox, never deleted. "Spam" button to empty junk mail.
+132	Save emails and their attachments
+134	In Mails, tap "Sauvegarder des mails" (Save emails).
+135	Tick the emails to keep ("Cocher les PDF" to go fast).
+136	Tap "Sauvegarder": the full email, and all PDFs gathered in a PDF folder.
+137	On the PC, open CleanSmart/Mails/index.html: type a word, a name or a PDF to find everything.
+138	Restore emails
+140	In Mails, tap "Remettre des mails" (Restore emails).
+141	Tick the emails in the bin you want back.
+142	Tap "Remettre": they come back to your inbox.
+143	Duplicate contacts
+145	After the scan, the "Contacts" card shows duplicates (same name, same number).
+146	"Supprimer les doublons" keeps the original contact.
+147	Careful: deletion is also done on your Google account.
+148	Options explained
+149	Automatic backup every night
+150	Around 2 am, new photos are copied to your backup folder.
+151	Good to know: a notification tells you if it did not work.
+152	Alerts and monthly report
+153	Alert when less than 1 GB is left, and a short summary on the 1st of the month.
+154	Good to know: at most one alert every 3 days.
+155	Back up before deleting
+156	Copies photos (and contacts) to your folder before each clean-up.
+157	Good to know: off by default, useless for duplicates and failed photos.
+158	Protect my favourites
+159	Favourite photos are never suggested.
+160	Good to know: on by default.
+161	Severity
+162	Careful: fewer photos suggested. Normal. Strict: more.
+163	Good to know: scan again after a change.
+164	Free up space
+165	Keep on the phone the photos of the last 1, 3, 6 or 12 months.
+166	Good to know: only photos already backed up are suggested.
+167	Text size
+168	Normal, large or very large.
+169	Good to know: a bit more scrolling.
+170	Language
+171	Same as phone, or one of 16 languages (French, English, Spanish, Greek, Arabic, Chinese…).
+172	Good to know: the change applies right away.
+173	Demo mode
+174	Shows the app with fake photos, emails and contacts.
+175	Good to know: nothing is touched on the phone. Ideal to present the app.
+176	Widget
+177	On the phone's home screen: long press > Widgets > Clean Smart. It shows free space and opens the guided clean-up.
+178	Good to know: it updates on its own.
+179	A question, or the full version? Write to me: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Frequently asked questions
+181	Are my photos deleted right away?
+182	No. They go to the Gallery bin: 30 days to restore them, or "I made a mistake".
+183	Do my photos go on the Internet?
+184	No. Everything happens on the phone. Only the backup goes where you chose (SD card, USB, Drive).
+185	Why an app password?
+186	Gmail, Yahoo and iCloud require it for mail apps. It stays encrypted on your phone.
+187	The space does not come back after cleaning?
+188	The bin keeps photos for 30 days. Tap "Empty the bin now" on the home screen.
+189	I erased my copy on the disk, nothing is copied any more?
+190	In the Google Photos or iCloud Photos tab, tap "Start over (I erased my copy)" at the bottom of the screen, then run your ZIP files again.
+191	How do I get the latest version?
+192	When a new version exists, an orange banner appears on the home screen: tap it, then open the downloaded file. Or Options > "Rechercher une mise à jour" (Check for updates).

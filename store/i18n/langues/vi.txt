@@ -1,0 +1,897 @@
+0	\n\n%1 không sao chép được: hãy chạy lại chính tệp này.
+1	\n\n%1 «cần kiểm tra» sẽ vào thùng rác Clean Smart: bạn có thể khôi phục trong 7 ngày.
+2	\n\nLưu ý: việc xóa được đồng bộ với tài khoản của bạn (Google…).
+3	\n\nỔ đĩa hoặc điện thoại đã đầy: hãy giải phóng dung lượng (hoặc đổi ổ đĩa ở bước 2), rồi chạy lại tệp NÀY. Không có gì bị sao chép hai lần.
+4	\n\nTệp bị hỏng hoặc không đầy đủ: hãy tải lại từ email của Google, rồi chạy lại. Phần đã sao chép được giữ lại.
+5	\n\nCác bản sao được xuất trước thành tệp .vcf vào thư mục sao lưu của bạn.
+6	\n\nHãy chạy lại tệp ZIP chứa chúng (hoặc chế độ tự động): chúng sẽ được sao chép lại. Đừng xóa gì trên %1 trước đó.
+7	\n\nMột bản sao được tạo trước trong thư mục sao lưu của bạn.
+8	\n💡 Ở Google, email và Google Ảnh dùng chung 15 GB: dọn email cũng giải phóng chỗ cho ảnh của bạn.
+9	 trên khoảng %1 GB
+10	 · %1 ảnh trùng, chụp liên tiếp hoặc hỏng không được sao lưu
+11	 · %1 vào thùng rác
+12	 · các tệp «cần kiểm tra» nằm trong thùng rác Clean Smart (7 ngày)
+13	 · vào thùng rác Clean Smart
+14	%1 (%2): ảnh trùng thừa, ảnh liên tiếp thừa, ảnh đen hoặc trắng, ảnh chụp màn hình quá một tháng.\n\nChúng vào thùng rác của Thư viện (30 ngày để khôi phục).
+15	%1 (%2) sẽ bị xóa VĨNH VIỄN để giải phóng dung lượng ngay.\n\nKhông thể khôi phục.
+16	%1 / %2  ·  %3 cần bỏ
+17	%1: %2 %
+18	%1: bản tin và quảng cáo (%2 người gửi), thông báo, email trùng.
+19	%1 GB · dự trù %2
+20	Đã phân tích %1
+21	%1 có tệp đính kèm (%2 có PDF)
+22	%1 thành công. Bỏ bản gốc vào thùng rác, bạn tiết kiệm %2.
+23	%1 trong tháng này.
+24	Đã sao chép %1 vào thư mục sao lưu của bạn.
+25	%1 tệp vô ích: tạm thời, ảnh thu nhỏ, thư mục trống, phần còn lại của ứng dụng.
+26	%1 cũ hơn %2 tháng
+27	%1 từ người gửi «luôn bỏ» đã vào thùng rác (khôi phục được trong 30 ngày).
+28	%1 bản trùng vào thùng rác. Bản đầu tiên của mỗi email được giữ lại.
+29	%1 và %2 đã sao chép và kiểm tra.
+30	%1 và %2 đã an toàn. Bạn có thể xóa nó và tải tệp tiếp theo.
+31	Đã sao lưu %1 tệp
+32	Đã bỏ %1
+33	Còn trống %1 trên %2
+34	Đã giải phóng %1 trên điện thoại
+35	%1 email trong hộp thư · đã phân tích %2
+36	%1 phút %2 giây
+37	%1 bản tin · %2 email lớn
+38	%1 bản tin, %2 email lớn (%3).
+39	Tìm thấy %1 ảnh
+40	Đã phân tích %1 ảnh · %2 video
+41	%1 ảnh · %2 video · đã loại %3 ảnh trùng và liên tiếp
+42	%1 chuẩn bị bản sao tất cả ảnh của bạn. Làm đúng như mẫu này:
+43	%1 sẽ bị xóa: chúng không còn cần thiết hoặc tự tạo lại.
+44	%1 sẽ bị xóa vĩnh viễn.
+45	Đã chọn %1 trên %2 · %3
+46	Xong %1 trên %2 tệp
+47	%1 trên %2 · %3
+48	%1 sẽ vào thùng rác của Thư viện (khôi phục được trong 30 ngày).
+49	%1 vào thùng rác của Thư viện (khôi phục được trong 30 ngày).
+51	%1 · %2: ảnh trùng, ảnh liên tiếp thừa, ảnh đen hoặc trắng, ảnh chụp màn hình quá một tháng. Những ảnh đẹp nhất được giữ lại.
+52	Tổng cộng %1 · %2. Chạm vào một ứng dụng để gỡ cài đặt hoặc xóa bộ nhớ đệm.
+53	%1 cần bỏ
+54	%1 để xem từng tấm. Vuốt trái để bỏ, vuốt phải để giữ (thành ảnh yêu thích ⭐).
+55	Đã sao chép %1, %2, %3 · đã loại %4 và %5.
+56	%1email cũ hơn %2 năm vào thùng rác (trừ email quan trọng).
+57	(không có tiêu đề)
+58	. %1 ảnh trùng hoặc liên tiếp cần sắp xếp: chạm vào đây.
+59	1 nút
+60	1 tháng
+61	1. Tôi đã tắt sao lưu: ứng dụng Google Ảnh › ảnh của bạn ở góc trên bên phải › Cài đặt Ảnh › Sao lưu › tắt.
+62	1. Trên iPhone, tôi đã tắt «Ảnh iCloud» (Cài đặt › tên bạn › iCloud › Ảnh).
+63	12 tháng
+64	2. Tôi đã mở ổ đĩa trên máy tính và thấy rõ ảnh của mình, theo từng năm.
+65	3 tháng
+66	3. Nên làm: tôi đã tạo bản sao thứ 2 (ổ đĩa hoặc máy tính khác).
+67	4 bước
+68	6 tháng
+69	HIỂN THỊ
+70	TỰ ĐỘNG
+71	KHÁC
+72	Địa chỉ email
+73	Địa chỉ, máy chủ và mật khẩu là bắt buộc.
+74	Đã gỡ thông báo
+75	Cảnh báo và báo cáo hằng tháng
+76	Đang phân tích hộp thư
+77	Phân tích 3.000 email mới nhất trong hộp thư đến.
+78	Đang phân tích email (%1 / %2)
+79	Đang phân tích điện thoại
+80	Phân tích hộp thư «%1»: bản tin, email lớn, email cũ. Email quan trọng luôn được giữ lại.
+81	Phân tích hộp thư của tôi
+82	Phân tích điện thoại của tôi
+83	Hủy
+84	Hủy, không bỏ gì cả
+85	Gọi
+87	Apple kiểm tra yêu cầu rồi gửi email, thường trong 3 đến 7 ngày. Sau đó tệp được tải về trên privacy.apple.com (đăng nhập từ điện thoại).
+88	Apple · Dữ liệu và quyền riêng tư
+89	Áp dụng «luôn bỏ» ngay
+90	Dừng sau tệp hiện tại…
+91	Dừng
+92	Dừng chế độ tự động?
+93	Đã dừng. Các tệp đã sao chép đều an toàn; các tệp còn lại sẽ được sao chép lần sau, không trùng lặp.
+94	Mẹo: trong Cài đặt › Ứng dụng, chạm vào một ứng dụng (Chrome, Facebook…) › Bộ nhớ › «Xóa bộ nhớ đệm».
+95	Không có danh bạ trùng
+96	Chưa chọn thư mục
+97	Chưa có thư mục sao lưu
+98	Không có tệp vô ích.
+99	Chưa kết nối hộp thư.
+100	Không phát hiện USB hay ổ đĩa. Hãy cắm vào (bộ chuyển USB-C), rồi mở lại bước này.
+101	Không video nào có thể thu nhỏ thêm.
+102	Khác
+103	Tệp cài đặt khác (.apk)
+104	Trước tiên: phân tích
+105	Với «Quyền truy cập dữ liệu sử dụng», Clean Smart thấy dung lượng thật của từng ứng dụng và bao lâu bạn chưa mở. Không gì được gửi đi đâu cả.
+106	HỘP THƯ
+107	Ngân hàng
+108	Ngân hàng, cơ quan nhà nước, y tế, hóa đơn và mọi email có PDF: đã lưu, gom PDF, tệp lưu trữ index.html trên máy tính.
+109	Ngân hàng, cơ quan nhà nước, y tế, hóa đơn và mọi email có PDF: đã lưu, gom PDF, tệp lưu trữ index.html trên máy tính. Trong hộp thư, chúng được xếp vào «Được bảo vệ».
+110	Ngân hàng, thuế, y tế, nhà cửa, gia đình (danh bạ của bạn): xếp riêng, không bao giờ bỏ
+111	Pin yếu (%1 %)
+112	Xin chào
+113	Cửa hàng thời trang
+114	Hộp thư gọn gàng!
+115	Hộp thư đầy %1 % (%2 / %3)
+116	Hộp thư được bảo vệ
+117	Hộp thư đầy %1 % (%2 / %3).
+118	Hãy cắm sạc: một tệp có thể mất 10 đến 30 phút.\n\nNếu điện thoại tắt, không mất gì cả: chỉ cần chạy lại cùng tệp đó.
+119	Hãy cắm sạc trong khi xử lý: một tệp lớn có thể mất 10 đến 30 phút. Màn hình luôn sáng.
+120	Cắm USB hoặc ổ đĩa vào điện thoại, rồi chọn (hoặc tạo) một thư mục trên đó.
+121	Cắm USB hoặc ổ đĩa
+122	Xong: tệp tiếp theo sẽ được sao chép lại toàn bộ.
+123	Đã ghi nhận
+125	NÊN DÙNG
+126	LIÊN HỆ
+127	DANH BẠ
+128	Ảnh chụp màn hình
+129	Thẻ SD, USB, Drive… chọn nơi bạn muốn
+130	Thẻ SD, USB, Google Drive…
+131	Tệp này đã được sao chép và kiểm tra. Làm lại không tạo bản trùng, nhưng không cần thiết.\n\nCó lẽ bạn muốn tệp tiếp theo (%1).
+132	Tháng này
+133	Năm nay
+134	Đổi tài khoản
+135	Đổi thư mục
+136	Mỗi Chủ nhật, các tệp vô ích an toàn và thư rác tự biến mất. Một thông báo cho bạn biết đã giải phóng bao nhiêu và có ảnh nào cần sắp xếp không.
+137	Mỗi email được chọn được lưu vào thư mục sao lưu của bạn:
+138	Mỗi video được làm lại ở 720p, thường nhẹ hơn 3 đến 5 lần, và lưu vào Phim / Clean Smart.
+139	Chọn thư mục trên ổ đĩa
+140	Chọn một thư mục
+141	Hãy chọn thư mục trên USB hoặc ổ đĩa trước (bước 2).
+142	Hãy chọn thư mục trên USB hoặc ổ đĩa trước (bước «Ổ đĩa»).
+143	Hãy chọn một thư mục trước: thẻ SD, USB hoặc Google Drive.
+144	Hãy chọn thư mục sao lưu trước (Tùy chọn).
+145	Hãy chọn thư mục sao lưu trước (thẻ SD, USB, Drive).
+146	Hãy chọn thư mục sao lưu và sao lưu trước.
+147	Hãy chọn thư mục sao lưu trước.
+148	Chọn email của bạn: được lưu cùng tệp đính kèm, PDF ở thư mục riêng
+149	Chọn thẻ SD, USB hoặc Google Drive
+150	Đang chọn những ảnh đẹp nhất…
+153	Clean Smart: sao chép tự động
+154	Clean Smart đang chờ tệp trong Download…
+155	Clean Smart đọc 3.000 email gần nhất (không xóa gì cả).
+156	Clean Smart xem tất cả ảnh của bạn (không xóa gì cả).
+157	Clean Smart tìm ra chỉ với một chạm:
+158	USB (bản minh họa)
+159	USB hoặc ổ cứng, với bộ chuyển USB-C
+160	Bưu kiện và giao hàng
+161	Cần bao nhiêu dung lượng?
+162	Giống điện thoại
+163	Bắt đầu
+164	Nén
+165	Nén %1?
+166	Đang nén video
+167	Đã hiểu
+168	Kết nối hộp thư của bạn (Gmail, Outlook, Yahoo, Orange, Free…): bản tin, email lớn và cũ để sắp xếp, email quan trọng luôn được giữ.
+169	Kết nối
+170	Kết nối hộp thư của tôi
+171	Đang kết nối máy chủ
+172	Không thể kết nối:
+173	Đang kết nối dịch vụ email
+174	Nên làm: tôi đã tạo bản sao thứ 2 (ổ đĩa hoặc máy tính khác).
+175	Danh bạ trùng
+176	Vẫn tiếp tục
+177	Sao chép tự động
+178	Sao chép từng tệp một
+179	Bản sao giống hệt — bản gốc được giữ lại
+180	Thùng rác
+181	Thùng rác: %1
+182	Thùng rác Clean Smart
+183	Thùng rác email
+184	Tạm được, nhưng có thể tốt hơn
+185	Tạo bản xuất
+186	Trong Google Ảnh: nhấn giữ một ảnh, chọn cả ngày, rồi «Xóa». Thùng rác Google giữ mọi thứ 60 ngày.
+187	Trong Google Takeout, chọn tệp 2 GB: chúng tôi xử lý từng tệp, điện thoại không bao giờ cần nhiều chỗ.
+188	Trong yêu cầu gửi Apple, chọn tệp 1 hoặc 2 GB: chúng tôi xử lý từng tệp, điện thoại không bao giờ cần nhiều chỗ.
+189	Trong email của Google, đếm các nút «Tải xuống»: đó là số tệp.
+190	Yêu cầu %1 gửi bản sao
+191	Yêu cầu bản sao dữ liệu của bạn
+192	Đã yêu cầu · chờ email từ %1
+193	Từ Android 11, không ứng dụng dọn dẹp nào được xóa bộ nhớ đệm của ứng dụng khác hay tệp hệ thống. Android tự làm việc đó: nút này mở màn hình «Giải phóng dung lượng».
+194	Từ khi cài đặt
+195	Kiểm tra lần cuối
+196	Ứng dụng đã tải nhưng chưa cài. Cần kiểm tra.
+197	Ổ đĩa
+198	Không nhận ổ đĩa: hãy dùng bộ chuyển USB-C (OTG). USB định dạng exFAT dùng được ở mọi nơi (FAT32 không nhận tệp trên 4 GB).
+199	Ổ đĩa đầy: cắm ổ lớn hơn và chọn nó ở bước «Ổ đĩa». Ta tiếp tục từ chỗ đang dở, không trùng lặp.
+200	Tài liệu trong Tải xuống không đụng tới đã 6 tháng. Cần kiểm tra.
+201	Không tìm thấy thư mục Thùng rác trong tài khoản này.
+202	Không tìm thấy thư mục Thùng rác.
+203	Không tìm thấy thư mục Thư rác trong tài khoản này.
+204	Thư mục sao lưu
+205	Không tìm thấy thư mục sao lưu.
+206	Thư mục bộ nhớ đệm
+207	Thư mục do các ứng dụng không còn trên điện thoại để lại. Cần kiểm tra.
+208	Thư mục trống
+209	Thư mục trống…
+210	Ảnh trùng
+211	Ảnh trùng và ảnh liên tiếp thừa (giữ ảnh đẹp nhất), ảnh đen hoặc trắng, ảnh chụp màn hình cũ. Chạm vào ảnh để giữ lại. Tất cả vào thùng rác của Thư viện (30 ngày).
+212	Ảnh trùng, ảnh liên tiếp thừa, ảnh đen hoặc trắng, ảnh chụp màn hình cũ.
+213	Ảnh trùng, liên tiếp, mờ
+215	Bỏ chọn các email bạn muốn giữ. Email từ ngân hàng, thuế, y tế và người gửi «luôn giữ» không bao giờ có trong danh sách này. Tất cả vào thùng rác email (khôi phục được).
+216	Minh họa…
+217	Đang chuyển vào thùng rác…
+218	Tắt theo mặc định. Nếu bật, ảnh (và danh bạ dạng .vcf) được sao chép vào thư mục trước mỗi lần dọn, để an toàn.
+219	Tất cả đã là ảnh yêu thích 👍
+220	Ở chế độ minh họa, không tệp nào được xử lý. Hãy thoát minh họa (Tùy chọn) để làm thật.
+221	Rất khỏe
+222	Gửi %1
+223	Gửi tệp PDF kỷ niệm
+224	Gửi liên kết tải xuống qua email · Xuất một lần
+225	Lỗi không mong muốn
+226	Dung lượng đã giải phóng
+227	Dung lượng đã giải phóng từ đầu: %1. Phân tích nhanh nhé?
+228	Dung lượng có thể lấy lại
+229	Và email của bạn
+230	Hóa đơn và giấy tờ
+231	Dọn dẹp an toàn?
+232	Xong ✔
+233	Gia đình
+234	Đóng
+235	Tệp %1
+236	Tệp %1 đã xong
+237	Tệp không đọc được
+238	Tệp cài đặt của ứng dụng đã cài
+239	Tệp làm việc của ứng dụng trong bộ nhớ điện thoại. Chúng tự tạo lại khi cần.
+240	Tệp vô ích
+241	Tệp được để riêng, tự xóa sau 7 ngày
+242	Tệp tạm thời
+243	Tệp tạm thời, ảnh thu nhỏ, thư mục trống, phần còn lại của ứng dụng
+244	Tệp tạm thời, ảnh thu nhỏ, thư mục trống, phần còn lại của ứng dụng. Ảnh và nhạc không bao giờ bị đụng tới.
+245	Mờ
+246	Mờ, quá tối hoặc quá sáng — kiểm tra trước khi chọn
+249	ĐÃ GIỮ
+250	Giữ trên điện thoại ảnh của … gần nhất
+251	Đã giữ
+253	Gmail yêu cầu MẬT KHẨU ỨNG DỤNG (16 chữ cái):\n1. Bật Xác minh 2 bước trên tài khoản Google.\n2. Mở myaccount.google.com/apppasswords\n3. Tạo mật khẩu tên «Clean Smart» và dán vào đây.
+256	Google Ảnh
+258	Google gửi email khi sẵn sàng: trong vài giờ hoặc vài ngày. Bạn có thể đóng ứng dụng trong lúc chờ.
+259	Lớn
+260	Email lớn (trên 5 MB)
+261	Video lớn
+262	Nhóm %1 · %2 ảnh
+263	Đăng nhập bị từ chối. Gmail, Yahoo và iCloud cần MẬT KHẨU ỨNG DỤNG, không phải mật khẩu thường của bạn.
+264	Cần dọn dẹp kỹ
+265	Chỉ còn %1. Mở Clean Smart để giải phóng dung lượng chỉ với một chạm.
+266	Chúng không chứa gì.
+267	Chúng vẫn chiếm chỗ trong 30 ngày
+268	Chúng được xếp vào thư mục «Được bảo vệ» trong hộp thư. Làm lại mỗi đêm.
+269	Không thể hoàn tác: có thể tệp đã bị xóa vĩnh viễn.
+270	Không thể tạo thư mục %1
+271	Không thể bảo vệ những ảnh này
+272	Không thể dọn thùng rác
+273	Thuế
+274	Thuế - Cơ quan nhà nước
+275	Nhập máy chủ IMAP của dịch vụ email (cổng 993, SSL).
+276	Tôi đã yêu cầu bản sao
+277	Tôi đã mở ổ đĩa trên máy tính và thấy rõ ảnh của mình, theo từng năm.
+278	Tôi đã xử lý tất cả các tệp
+279	Không bao giờ bỏ, xếp vào «Được bảo vệ»
+280	Tôi dọn hộp thư
+281	Tôi giải phóng dung lượng
+282	Tôi cất giữ những gì quan trọng
+283	Tôi cất giữ ảnh đẹp
+284	Tôi sắp xếp theo người gửi
+285	Tôi kiểm tra ảnh đáng ngờ
+286	Bỏ %1?
+287	Bỏ những email này?
+288	Bỏ các bản sao?
+289	Bỏ các email lớn?
+290	Bỏ các bản tin?
+291	Bỏ các bản gốc?
+292	Bỏ các email cũ?
+293	Nhật ký, bản sao lưu tạm, tải xuống bị bỏ dở. Không còn cần.
+294	Địa chỉ và mật khẩu sẽ bị xóa khỏi điện thoại.
+295	Những gì quan trọng đã an toàn, phần còn lại đã đi
+296	Bản gốc không bị đụng tới: sau đó tôi sẽ đề nghị bỏ nó vào thùng rác.\n\nCó thể mất vài phút.
+297	BAN ĐÊM
+298	GIẢI PHÓNG DUNG LƯỢNG
+300	Bản sao trên ổ đĩa đã bị xóa: Clean Smart sao chép lại mọi thứ từ đầu.
+301	Thùng rác trống.
+302	Dung lượng email được giải phóng khi thùng rác email được dọn (thường trong 30 ngày).
+303	Không sao lưu được. Mở Clean Smart để kiểm tra thư mục.
+304	Ngôn ngữ
+305	Dọn dẹp có hướng dẫn làm mọi thứ theo đúng thứ tự. Nút xanh luôn là bước tiếp theo.
+306	Tổng kết, và cách giải phóng tài khoản %1
+307	Danh bạ gốc được giữ lại.
+308	Ổ đĩa (hoặc điện thoại) đã đầy: việc sao chép đã dừng gọn gàng.\n\nCắm ổ lớn hơn, chọn ở bước 2, rồi chạy lại chế độ tự động: ta tiếp tục không trùng lặp.
+309	Ổ đĩa không đủ chỗ: còn %1, cần khoảng %2 cho tệp này.\n\n• Giải phóng chỗ trên ổ đĩa, hoặc\n• cắm ổ lớn hơn và chọn ở bước «Ổ đĩa» (ta tiếp tục từ chỗ hiện tại).\n\nChưa đụng tới gì.
+310	Không truy cập được ổ đĩa.\n\n• Kiểm tra đã cắm chắc (bộ chuyển USB-C).\n• Ở bước «Ổ đĩa», chọn lại thư mục.
+311	Không truy cập được thư mục sao lưu. Mở Clean Smart > Tùy chọn để chọn.
+312	Thư mục sao lưu không còn truy cập được. Hãy chọn lại.
+313	Không tìm thấy thư mục «%1» trên ổ đĩa. Kiểm tra ổ đĩa đã được cắm (bước 2).
+314	Tệp hiện tại được hoàn tất trước. Các tệp đã sao chép đều an toàn; các tệp còn lại lần sau, không trùng lặp.
+315	Liên kết trong email của Google hết hạn sau khoảng một tuần: nếu vậy, hãy yêu cầu xuất lại (không mất gì, ta tiếp tục không trùng lặp).
+316	Tháng trước
+317	Dọn dẹp an toàn
+318	Vẫn làm lại
+319	Điện thoại
+320	Điện thoại gần đầy (cần ít nhất 300 MB trống để làm việc).\n\n• Dọn thùng rác của Thư viện.\n• Xóa các tệp ZIP đã xử lý (Tải xuống).\n• Thực hiện dọn dẹp có hướng dẫn của Clean Smart.\n\nChưa đụng tới gì.
+321	Điện thoại tắt hay ổ đĩa bị rút? Chỉ cần chạy lại cùng tệp ZIP: Clean Smart tiếp tục mà không mất hay nhân đôi gì.
+322	Đang đọc thư viện
+323	Đang đọc ngày chụp ảnh…
+324	Đang đọc video
+325	Không đọc được: %1
+326	Các tệp .apk của ứng dụng đã cài: không còn cần.
+327	200 email gần nhất trong thùng rác email. Chọn những email muốn đưa lại hộp thư đến.
+328	30 ảnh và video chiếm nhiều chỗ nhất
+329	Các ô khác: không cần
+330	Tệp của Apple có sẵn khoảng 2 tuần trên privacy.apple.com: nếu đã quá hạn, hãy gửi yêu cầu mới (không mất gì, ta tiếp tục không trùng lặp).
+331	Các tệp đã bỏ vào thùng rác vẫn khôi phục được trong Thư viện.
+332	Email cũ hơn %1 năm vào thùng rác email. Email quan trọng được giữ lại.
+333	Email cũ hơn 2 năm vào thùng rác email.
+334	Email trên 5 MB vào thùng rác email.
+335	Bản tin, quảng cáo, thông báo và email trùng vào thùng rác email (toàn bộ hộp thư đến).\n\nEmail quan trọng không bao giờ bị đụng tới.
+336	Ảnh trước (sắp xếp, giữ ảnh đẹp nhất, sao lưu, giải phóng), rồi tệp vô ích trên điện thoại, rồi email.
+337	Ảnh cũ hơn %1 tháng đã sao lưu sẽ rời điện thoại (thùng rác, 30 ngày).
+338	Ảnh yêu thích (hoặc được bảo vệ bằng nút 🛡️) không bao giờ được đề xuất
+339	Ảnh hơi mờ, WhatsApp, ảnh chụp màn hình mới: bạn quyết định.
+340	Ảnh, video và nhạc không bao giờ bị đụng tới.
+341	Ảnh cũ chỉ được đề xuất bỏ nếu đã có trong bản sao lưu.
+342	Những ảnh đẹp nhất của tháng hoặc năm, để gửi cho người thân
+343	Những ứng dụng lớn nhất và ít mở nhất: gỡ cài đặt chỉ với một chạm
+344	Thư rác vào thùng rác email. Bỏ chọn nếu email không phải thư rác.
+345	Giải phóng
+346	Giải phóng %1?
+347	Giải phóng %1 là tùy chọn. %2 không cho ứng dụng nào xóa ảnh của bạn: bạn tự làm, khi đã chắc chắn.
+348	Dọn hộp thư
+349	Đang dọn hộp thư
+350	Dọn hộp thư?
+351	Giải phóng dung lượng
+352	Giải phóng dung lượng, PDF kỷ niệm…
+353	Đang liệt kê ảnh trên ổ đĩa…
+354	NGAY BÂY GIỜ
+355	Email (tùy chọn, cho email của bạn)
+356	Email
+357	Email Gmail: %1
+358	Email có tệp đính kèm
+359	Email cũ hơn 2 năm
+360	Email trùng
+361	Email trùng…
+362	Nhà cửa
+363	Báo cho tôi
+364	Cảm ơn bạn đã dùng thử Clean Smart! Hãy cài bản đầy đủ để tiếp tục dọn điện thoại.
+365	Ứng dụng của tôi
+366	Tệp lớn nhất của tôi
+367	Quy tắc của tôi
+368	Bỏ vào thùng rác ảnh cũ hơn %1 tháng đã sao lưu
+369	Cất giữ
+370	Đang cất giữ những gì quan trọng
+371	Ảnh thu nhỏ
+372	Đang cập nhật
+373	Đang chuyển vào thùng rác…
+374	Hướng dẫn sử dụng
+375	Không tìm thấy hướng dẫn sử dụng.
+376	Đã kết thúc chế độ minh họa
+377	Sửa ▼
+378	Hiển thị ứng dụng với ảnh, email và danh bạ giả. Không đụng tới gì trên điện thoại: lý tưởng để giới thiệu Clean Smart.
+379	Mật khẩu (để trống = giữ mật khẩu hiện tại)
+380	Mật khẩu ứng dụng
+381	Tệp WhatsApp
+382	Dọn dẹp toàn bộ
+383	Dọn dẹp có hướng dẫn
+384	Dọn email có hướng dẫn
+385	Dọn hộp thư an toàn
+386	Đã dọn xong!
+387	MỚI
+388	Đang dọn hộp thư
+389	Đang dọn tệp vô ích
+390	Dọn dẹp
+391	Dọn %1?
+392	Dọn điện thoại
+393	Dọn tệp vô ích?
+394	Bản tin và thông báo…
+395	Bản tin và quảng cáo
+396	Bản tin, quảng cáo, thông báo và email trùng.
+397	Số tệp trong email
+398	Bình thường
+399	Có phiên bản mới %1
+401	Quên
+402	Quên tài khoản này?
+403	Vâng, đã xong
+405	Đã mở hôm nay
+406	Đã mở %1 trước
+407	Đang mở %1…
+408	Mở Clean Smart để xem cần làm gì. Không mất gì cả.
+409	Mở trang Google của bạn và xem dung lượng Google Ảnh đang dùng. Ghi vào đây (tính bằng GB).
+410	Mở «Video lớn», chọn chúng rồi «Nén»
+411	Mở
+412	Mở Google Ảnh
+413	Mở Google Takeout
+414	Mở Ảnh iCloud
+415	Mở trang mật khẩu ứng dụng
+416	Mở privacy.apple.com
+417	Mở «Giải phóng dung lượng» của Android
+418	PDF kỷ niệm
+419	ẢNH VÀ VIDEO
+420	BẢO VỆ
+421	Không có ảnh trong khoảng thời gian này.
+422	Chưa mở hơn một năm
+423	Bỏ qua
+425	Bản sao nhỏ của ảnh để hiển thị. Chúng tự tạo lại.
+426	Ảnh
+427	Ảnh: %1 · video: %2 · ảnh trùng đã loại: %3
+428	Ảnh cuối tuần
+429	Ảnh trùng, ảnh liên tiếp, ảnh hỏng, video lớn, email vô ích… tất cả đều chiếm chỗ.
+430	Ảnh và video đã nhận hoặc đã gửi
+431	Ảnh mờ hoặc hỏng
+432	Ảnh iCloud
+433	Ảnh giống nhau
+434	Ảnh, điện thoại và email, từng bước một
+435	Dung lượng chiếm: %1
+436	Thêm công cụ
+437	Mỗi tệp trên 100 MB
+438	Để được thêm điểm: %1.
+439	Để có bản đầy đủ của Clean Smart, hoặc cho mọi câu hỏi, hãy viết cho tôi:
+440	Để có bản đầy đủ, hãy viết cho tôi:
+441	Để tìm tệp vô ích, Clean Smart cần xem bộ nhớ điện thoại: hãy cho phép «Truy cập tất cả tệp». Không gì được gửi đi đâu cả.
+442	Cho tài khoản hoặc ổ đĩa khác. Các tệp đã sao chép trên ổ đĩa không bị đụng tới.
+443	Bảo vệ ảnh yêu thích của tôi
+444	Thận trọng
+445	Thận trọng: đề xuất ít ảnh hơn. Nghiêm ngặt: nhiều hơn.
+446	Chuẩn bị
+447	Đang chuẩn bị…
+448	Báo cho tôi khi điện thoại gần hết chỗ (dưới 1 GB), và một bản tổng kết nhỏ vào ngày 1 hằng tháng.
+449	Dự trù ít nhất %1 trên USB hoặc ổ đĩa (dư 10 %).
+450	AI GỬI EMAIL CHO BẠN NHIỀU NHẤT
+451	Khi email của %1 đã đến
+452	Thoát
+453	Rời Google Ảnh
+454	Rời Ảnh iCloud
+455	TÌM ẢNH HỎNG
+456	Ảnh liên tiếp: giữ ảnh đẹp nhất…
+457	Ảnh liên tiếp — giữ ảnh nét nhất
+458	Đang sắp xếp: %1
+459	Đang tìm ảnh trùng
+460	Đang tìm tệp vô ích…
+461	Đang tìm email
+462	Đang tìm email có PDF
+463	Đang tìm email quan trọng (%1 / %2)
+464	Đang tìm ảnh mờ
+465	Đang tìm ảnh hỏng
+466	Đang tìm ảnh giống nhau
+467	Đang tìm tệp đính kèm (%1 / %2)
+468	Kiểm tra cập nhật
+469	Làm lại
+470	Làm lại với tài khoản khác
+471	Làm lại từ đầu?
+472	Xem dung lượng của %1
+473	Phân tích lại sau khi thay đổi.
+474	Khôi phục email
+475	Đặt lại bộ đếm
+476	Đang đưa tệp về chỗ cũ
+477	Phần còn lại của ứng dụng đã gỡ
+478	Phần còn lại của ứng dụng đã gỡ…
+479	Nhận nhiều lần cách nhau vài giây: %1
+480	Không có
+481	Không có gì bị xóa.
+482	Không mất gì cả
+483	Không gì bị xóa khi chưa có sự đồng ý của bạn: mọi thứ đều qua thùng rác.
+484	Không có gì để giải phóng: chưa có ảnh cũ nào trong bản sao lưu. Hãy chạy «Sao lưu tất cả ảnh của tôi» trước.
+485	KẾT QUẢ
+486	Đã gỡ quy tắc
+487	Khôi phục email đã bỏ vào thùng rác email
+488	Lấy ảnh iCloud của tôi (iPhone cũ)
+489	Thu nhỏ video của tôi
+490	Cài đặt nâng cao
+491	Cài đặt bộ nhớ Android
+492	SAO LƯU
+494	Không có quyền truy cập ảnh, Clean Smart không thể phân tích gì.
+495	Y tế
+496	Sao lưu %1 / %2
+497	Tự động sao lưu mỗi đêm
+498	Sao lưu trước khi xóa
+499	Đang sao lưu ảnh đẹp của tôi
+500	Đang sao lưu email
+501	Đang sao lưu email quan trọng
+502	Đang lưu email %1 / %2
+503	Sao lưu trước khi xóa
+504	Lưu email
+505	Sao lưu ảnh đẹp của tôi
+506	Đăng nhập bằng ID Apple của bạn
+507	Máy chủ IMAP
+508	Không tìm thấy máy chủ: kiểm tra internet và tên máy chủ.
+509	Email của người này tự vào thùng rác mỗi đêm
+510	Chỉ những ảnh đẹp: không bao giờ có ảnh trùng, ảnh liên tiếp thừa hay ảnh hỏng. Ảnh yêu thích cũng vào «Mes meilleures» (Ảnh đẹp nhất của tôi).
+511	Chỉ ảnh đẹp được sao lưu, vào USB, ổ đĩa hoặc Google Drive. Ngay cả Google Ảnh cũng có thể lấy về.
+512	Mỗi lần chỉ sao chép ảnh mới.
+513	Chỉ gửi 20 tệp đầu tiên.
+514	Nếu đăng nhập bị từ chối, hãy tạo mật khẩu ứng dụng trong mục bảo mật tài khoản Microsoft (cần xác minh 2 bước).
+515	Nếu không, iPhone sẽ gửi lại ảnh lên iCloud, và xóa trên iCloud cũng có thể xóa chúng khỏi iPhone.
+516	Nếu không, điện thoại sẽ gửi lại ảnh lên Google, và xóa trên Google cũng có thể xóa chúng khỏi điện thoại này.
+517	Giảm giá mùa đông
+518	Thường vô ích sau đó
+520	Bộ nhớ điện thoại
+521	Nghiêm ngặt
+522	Tiếp
+523	Tự xóa tệp này trong Tải xuống để có chỗ trống.
+524	Xóa
+525	Xóa %1?
+526	Xóa tệp này khỏi điện thoại?
+527	Xóa từng tệp khỏi điện thoại sau khi đã sao chép và kiểm tra (nên làm: giữ chỗ trống)
+528	Xóa ảnh trùng
+529	Trên Gmail, chúng vẫn ở hộp thư đến và được gắn nhãn «Được bảo vệ». Làm lại mỗi đêm.
+530	Trên Google Takeout, trong 1 phút
+531	Trên account.apple.com → Mật khẩu cho ứng dụng → tạo một mật khẩu.
+532	Trên iPhone: Cài đặt › tên bạn › iCloud: hiển thị dung lượng «Ảnh» đang dùng. Hoặc xem trên icloud.com. Ghi vào đây (tính bằng GB).
+533	Trên iPhone hoặc icloud.com/photos: chọn ảnh rồi «Xóa». Album «Đã xóa gần đây» giữ chúng 30 ngày.
+534	Trên trang vừa mở: Bộ nhớ › «Xóa bộ nhớ đệm». Android yêu cầu vậy, Clean Smart không thể làm thay bạn.
+535	Trên điện thoại, chỉ cần 2 đến 3 GB trống: mỗi lần một tệp. Đang trống: %1.
+536	Trên privacy.apple.com, trong 2 phút
+537	Trên privacy.apple.com, tệp có tên «iCloud Photos Part 1 of 12»: số cuối (ở đây là 12) là số tệp. Clean Smart cũng tự đọc được.
+538	Bảo mật tài khoản → Tạo mật khẩu ứng dụng, rồi dán vào đây.
+539	Bảo mật, ảnh hỏng, minh họa…
+540	Mức độ nghiêm ngặt
+541	XONG
+542	Dịch vụ email của bạn
+543	Thời gian dùng thử 30 ngày đã kết thúc.
+544	Dung lượng %1 (GB)
+545	Cỡ chữ
+546	Kích thước tệp tối đa: 1 GB hoặc 2 GB
+547	Thời gian đã qua
+548	Thời gian còn lại
+549	Hoàn tất yêu cầu
+550	Xong
+551	Ảnh iPhone của bạn trên USB hoặc ổ đĩa, theo năm, không trùng lặp
+552	Ảnh 2 tháng gần nhất của bạn chưa có trên ổ đĩa. Hãy yêu cầu bản sao mới trên Google Takeout, rồi chế độ tự động chỉ thêm ảnh mới, không trùng lặp.
+553	Ảnh 2 tháng gần nhất của bạn chưa có trên ổ đĩa. Hãy yêu cầu Apple bản sao mới: Clean Smart chỉ thêm ảnh mới, không trùng lặp.
+554	Ảnh của bạn đã an toàn
+555	Cài đặt và hộp thư của bạn sẽ được giữ lại.
+556	Điện thoại của bạn đầy rồi?
+557	Điện thoại của bạn sạch và ảnh đã an toàn
+558	Điện thoại và hộp thư đều sạch, ảnh của bạn đã an toàn
+559	Chạm vào đây để tải xuống, rồi mở tệp để cài đặt
+560	Chạm vào đây để có bản đầy đủ hoặc đặt câu hỏi
+561	Chỉ cần chạm vào các liên kết «Tải xuống» trong email của Google. Clean Smart sao chép từng tệp vào ổ đĩa ngay khi nó vào Download, kể cả khi các tệp khác đang tải.
+562	Chạm vào người gửi: luôn bỏ, luôn giữ, báo cho tôi, hủy đăng ký.
+563	Chạm vào người gửi trong «Ai gửi email cho bạn nhiều nhất» để chọn
+564	Chạm vào ảnh để chọn · nhấn giữ để xem lớn
+565	Chạm để phân tích
+566	Chạm để xem
+567	Luôn giữ
+568	Luôn bỏ
+569	Đã xử lý tất cả tệp chưa?
+570	Mọi email của %1 (ít nhất %2 email) vào thùng rác email.
+571	Mọi email của %1 người gửi bản tin vào thùng rác email (toàn bộ hộp thư đến, không chỉ những email đã phân tích).\n\nBạn có thể khôi phục từ thùng rác.
+572	Chọn tất cả
+573	Bỏ chọn tất cả
+574	Bỏ chọn tất cả
+575	Bỏ tất cả vào thùng rác
+576	Dọn tất cả
+577	Mọi thứ đều qua thùng rác: 30 ngày để khôi phục. Và «Tôi nhầm rồi» hoàn tác chỉ với một chạm.
+578	Làm lại tất cả
+579	Làm lại tất cả?
+580	Toàn bộ nội dung đã được sao chép và kiểm tra trên ổ đĩa. Xóa nó sẽ có chỗ cho tệp tiếp theo.\n\nẢnh của bạn cũng vẫn còn trong Google Ảnh.
+581	Mọi thứ đều tốt, cứ thế nhé!
+582	Mọi thứ đã được sao lưu 👍
+583	Tất cả ảnh của bạn trên USB hoặc ổ đĩa, theo năm, không trùng lặp
+584	Sắp xếp trước khi sao lưu
+585	Sắp xếp người gửi
+586	Sắp xếp nhanh
+587	Đã sắp xếp xong!
+588	Sắp xếp trước, giữ ảnh đẹp nhất, chỉ sao lưu ảnh đẹp, giải phóng dung lượng, rồi dọn email.
+589	Sắp xếp trước, giữ ảnh đẹp nhất, chỉ sao lưu ảnh đẹp, rồi giải phóng dung lượng.
+590	Sắp xếp trước, cất giữ những gì quan trọng, rồi dọn hộp thư. Email từ ngân hàng, cơ quan nhà nước hay y tế không bao giờ bị bỏ.
+591	Sắp xếp bằng cách vuốt
+592	Sắp xếp người gửi
+593	Sắp xếp, giữ, sao lưu, giải phóng
+594	Sắp xếp, cất giữ điều quan trọng, dọn hộp thư
+595	Sắp xếp, bảo vệ
+596	Quá sáng
+597	Quá nhỏ
+598	Quá tối
+599	Rất lớn
+600	Bạn đã xóa bản sao trên ổ đĩa và không còn gì được sao chép? Chạm «Làm lại tất cả (tôi đã xóa bản sao)» ở cuối màn hình, rồi chạy lại các tệp ZIP.
+601	Trước đây dùng iPhone? Ảnh iCloud của bạn trên USB hoặc ổ đĩa
+602	Bạn có thể thoát ứng dụng để chạm vào liên kết: việc sao chép vẫn tiếp tục (thông báo «Sao chép tự động»).
+603	Loại: .zip   ·   Kích thước: 2 GB
+604	Mỗi lần chỉ tải MỘT tệp ZIP, qua Wi-Fi. Xử lý, xóa, rồi tải tệp tiếp theo.
+605	Chỉ cần tải tệp trên privacy.apple.com. Clean Smart sao chép từng tệp vào ổ đĩa ngay khi nó vào Download.
+606	Điện thoại
+607	Điện thoại đầy: dọn thùng rác của Thư viện, xóa ZIP đã xử lý, làm dọn dẹp có hướng dẫn. Cần ít nhất 300 MB trống.
+608	Một nút, thế là gọn
+609	Một thẻ cho mỗi người gửi: vuốt trái để bỏ TẤT CẢ email của họ, vuốt phải để giữ.
+610	Một thông báo khi người này gửi email cho bạn
+611	Mỗi lần một ảnh: vuốt trái để bỏ, vuốt phải để giữ
+612	Có câu hỏi, vấn đề, hay muốn bản đầy đủ? Hãy viết cho tôi:
+613	Dùng địa chỉ và mật khẩu Free của bạn.
+614	Dùng địa chỉ và mật khẩu La Poste của bạn.
+615	Dùng địa chỉ và mật khẩu Orange của bạn.
+616	Dùng địa chỉ và mật khẩu SFR của bạn.
+617	Khoảng 2 giờ sáng, ảnh mới được sao chép vào thư mục sao lưu. Một thông báo cho bạn biết nếu không thành công.
+618	Bản đầy đủ
+619	Phiên bản đã cài: %1
+620	Dọn
+621	Dọn thùng rác?
+622	Dọn thùng rác Clean Smart
+623	Dọn thùng rác Clean Smart?
+624	Dọn thùng rác ngay
+625	Dọn ngay
+626	Email cũ vào thùng rác…
+627	Tải xuống cũ (trên 6 tháng)
+628	Xem danh sách rồi bỏ
+629	Xem danh sách rồi giải phóng
+630	Xem thư rác, rồi bỏ vào thùng rác
+631	Xem mẹo
+632	Xem dung lượng Google của tôi
+633	Xem dung lượng iCloud của tôi
+634	Hóa đơn của bạn
+635	Du lịch và đặt chỗ
+636	Đang kiểm tra bản sao lưu
+637	Đang kiểm tra ổ đĩa
+638	Kiểm tra trong email của Google rằng mỗi tệp (001, 002, 003…) đã được xử lý.
+639	Kiểm tra, rồi giải phóng %1 (nếu muốn)
+641	Nhắm mắt
+642	ứng dụng
+643	ứng dụng
+644	đang tính…
+645	không nén được
+646	danh bạ trùng
+647	danh bạ trùng
+648	bản sao
+649	bản sao
+650	thư viện ảnh của bạn đã an toàn
+651	tệp gần nhất
+652	ảnh trùng
+653	ảnh trùng
+654	lỗi
+655	lỗi
+656	người gửi
+657	người gửi
+658	dọn hộp thư của bạn
+659	tệp
+660	tệp đã sao chép
+661	tệp đã sao chép và kiểm tra
+662	tệp không
+663	tệp
+664	tệp đã sao chép
+665	tệp đã sao chép và kiểm tra
+666	tệp không
+667	Ảnh iCloud
+668	ngày
+669	ngày còn lại
+670	ngày
+671	ngày còn lại
+672	dễ nhất
+673	trống · đã dùng %1 %
+674	giải phóng dung lượng bằng Dọn dẹp toàn bộ
+675	đã giải phóng
+676	email
+677	email đã khôi phục
+678	email
+679	email đã khôi phục
+680	dọn tệp vô ích trên điện thoại
+681	tệp mới
+682	tệp mới
+683	từng bước
+684	ảnh
+685	ảnh đã giữ
+686	ảnh hoặc video
+687	ảnh hoặc video đã chụp
+688	ảnh được bảo vệ
+689	ảnh
+690	ảnh đã giữ
+691	ảnh hoặc video
+692	ảnh hoặc video đã chụp
+693	ảnh được bảo vệ
+694	rồi «Bước tiếp theo»:
+695	chụp liên tiếp
+696	chụp liên tiếp
+697	sao lưu ảnh vào USB hoặc thẻ SD
+698	đã an toàn trong bản sao lưu (cùng tên, cùng kích thước).\n\nChúng vào thùng rác của Thư viện (khôi phục được trong 30 ngày). Những ảnh mới nhất ở lại trên điện thoại.
+701	trên %1 danh bạ
+702	sắp xếp ảnh (ảnh trùng, liên tiếp, mờ)
+703	tải xuống
+704	tải xuống
+705	đã dùng
+706	video
+707	video đã nén
+708	video
+709	video đã nén
+710	email cũ
+711	email cũ
+712	«Tệp bị hỏng»: việc tải bị ngắt. Hãy tải lại ZIP này từ email của Google rồi chạy lại: phần đã sao chép sẽ không sao chép lại.
+713	«Giải phóng dung lượng»: giữ trên điện thoại ảnh của … gần nhất
+714	GIỮ
+715	BỎ
+716	TÌM NHANH
+717	Cần dọn
+718	Dùng khi bạn đã xóa bản sao trên ổ đĩa: Clean Smart quên những gì đã sao chép, và tệp ZIP tiếp theo sẽ được sao chép lại toàn bộ.\n\nỔ đĩa đã chọn và cài đặt của bạn được giữ. Không xóa gì trên ổ đĩa hay trên %1.
+719	Không ghi được
+720	Điện
+721	cần bỏ
+722	mục
+723	mục
+724	… và %1 email cùng loại khác (đã chọn).
+725	‹ Quay lại
+726	ℹ️ Đã đọc %1 không lỗi. Dấu vân tay của bản sao không còn trên điện thoại này: không thể so sánh.
+727	↩️ %1 trong hộp thư đến
+728	↩️ Đã đưa %1 về thư viện
+729	↩️ Đã đưa %1 về chỗ cũ
+730	↩️ Tôi nhầm rồi: đưa %1 về
+731	↩️ Đã khôi phục email (minh họa)
+732	↩️ Đưa %1 về hộp thư của tôi
+733	↩️ Khôi phục email
+734	↩️ Đưa tất cả về chỗ cũ
+735	⏳ Đang chờ tệp tiếp theo trong Download. Chạm vào các liên kết «Tải xuống» trong email.
+736	⏳ Đang chờ tệp tiếp theo trong Download…
+737	⏳ đang sao chép…
+738	⏳ sau
+739	⏹ Dừng
+740	☑️ Chọn tất cả
+741	⚙️ Bộ nhớ đệm ứng dụng và tệp hệ thống
+742	⚙️ Tùy chọn
+743	⚠️ %1: cần chạy lại.\n
+744	⚠️ %1 bị lỗi: hãy chạy lại các ZIP có dấu «cần chạy lại» trước khi tiếp tục.
+745	⚠️ %1 trên ổ đĩa không còn giống hoặc không đọc được:\n
+746	⚠️ Không sao lưu đêm nay
+747	⚠️ Tệp %1 cần làm lại
+748	⚠️ Cần khoảng %1, còn %2. Bạn có thể bắt đầu: khi đầy, cắm ổ khác và ta tiếp tục không trùng lặp.
+749	⚠️ Việc sao chép đã dừng: %1\n\nKhông mất gì cả: chạy lại chế độ tự động, ta sẽ tiếp tục không trùng lặp.
+750	⚠️ Chưa bắt đầu
+751	⚠️ Sao lưu ban đêm
+752	⚠️ bị hỏng: tải lại từ email, nó sẽ tự được sao chép
+753	⚠️ ổ đĩa đầy
+754	⚠️ chưa bắt đầu
+755	⚠️ cần chạy lại
+756	⚠️ cần chạy lại (%1)
+757	⛔ Bản sao chưa đầy đủ (tệp hỏng, cần chạy lại hoặc chưa sao chép). Hãy hoàn tất bản sao trước: đừng xóa gì trên %1.
+758	✅ %1: xong và đã kiểm tra.\n
+759	✅ Đã xóa %1 ảnh trùng
+760	✅ Đã lưu %1 email · %2 PDF · tệp lưu trữ CleanSmart/Mails/index.html đã cập nhật
+761	✅ %1 email quan trọng đã an toàn · gom %2 PDF · tệp lưu trữ index.html đã cập nhật
+762	✅ Đã sao lưu %1 ảnh mới
+763	✅ %1 · từ %2
+764	✅ %1 đã an toàn
+765	✅ 312 email quan trọng đã an toàn (minh họa)
+766	✅ Đã sao lưu 7.958 ảnh đẹp (minh họa)
+767	✅ Đủ chỗ trên «%1».
+768	✅ Đã kết nối hộp thư
+769	✅ Đã kiểm tra ổ đĩa: đọc lại %1, không hỏng ảnh nào.
+770	✅ Đã xóa ảnh trùng (minh họa)
+771	✅ Tệp %1 đã xong
+772	✅ Bản sao trên ổ đĩa đầy đủ và đã kiểm tra.
+773	✅ Đã lưu email (minh họa)
+774	✅ bản sao đầy đủ và đã kiểm tra\n✅ đã tắt sao lưu trên điện thoại\n✅ đã xem ảnh trên ổ đĩa\n\nMở %1? Bạn tự chọn cần xóa gì.
+775	✅ đã sao chép và kiểm tra
+776	✅ đã sao chép, kiểm tra, xóa khỏi điện thoại
+777	✉️ Đã bỏ %1 · giải phóng %2 trong hộp thư
+778	✉️ %1 email
+779	✉️ %1 email (thư mục «Mails Gmail», mở index.html)\n
+780	✉️ Hộp thư
+781	✉️ Email
+782	✉️ Email của %1
+783	✓ Đã chọn %1
+784	✨ Đã giải phóng %1 (khôi phục được trong 30 ngày ở thùng rác Thư viện)
+785	✨ Đã bỏ %1 email vào thùng rác
+786	✨ Đã bỏ %1 vào thùng rác (minh họa)
+787	✨ Đã bỏ %1 vào thùng rác email (khôi phục bằng «Khôi phục email»)
+788	✨ Đã dọn %1 · giải phóng %2
+789	✨ %1 email cũ vào thùng rác (giữ email quan trọng)
+790	✨ 1.249 email vào thùng rác (minh họa)
+791	✨ Đã giải phóng 1,1 GB (minh họa)
+792	✨ Đã giải phóng 6,4 GB (minh họa)
+793	✨ Email vào thùng rác (minh họa)
+794	✨ Tự động dọn dẹp ngày Chủ nhật
+795	✨ Dọn dẹp ngày Chủ nhật
+796	✨ Email cũ vào thùng rác (minh họa)
+797	❤️ Sức khỏe điện thoại: %1 / 100
+798	⬅ Vuốt trái: mọi email của họ vào thùng rác   ·   Vuốt phải: giữ lại ➡
+799	⬅ Vuốt trái để bỏ   ·   Vuốt phải để giữ ➡
+800	⬇️ %1 đang tải: việc sao chép sẽ bắt đầu ngay khi xong.
+801	⬜ Bỏ chọn tất cả
+802	⭐ Bảo vệ %1 của tôi
+805	🍏 Ảnh iCloud của tôi
+806	🍏 Đến lúc tạo bản sao iCloud mới
+807	🍏 Rời Ảnh iCloud
+808	🎁 Bản dùng thử · %1
+809	🎉 Tổng cộng đã giải phóng %1
+810	🎉 Không có tệp vô ích: điện thoại sạch!
+811	🎉 Không có email nào cần bỏ ở đây.
+812	🎉 Không có ứng dụng bị bỏ quên: bạn dùng tất cả!
+813	🎉 Ở đây không còn gì.
+814	🎉 Không có gì cần dọn, mọi thứ đều sạch!
+815	🎉 Xong: đã sao chép và kiểm tra %1. Tổng cộng trên ổ đĩa: %2 và %3.
+816	🎉 Tất cả tệp đã xong
+817	🎬 Minh họa
+818	🎬 CHẾ ĐỘ MINH HỌA: không đụng tới gì trên điện thoại
+819	🎬 Chế độ minh họa: không đụng tới gì trên điện thoại
+820	👀 Mỗi nút hiển thị trước danh sách email: bạn bỏ chọn những email muốn giữ, rồi xác nhận.
+821	👀 Xem và bỏ email của họ ngay
+822	👆 Những người gửi bạn đã bỏ
+823	👆 Sắp xếp người gửi
+824	👆 Sắp xếp nhanh
+825	👉 Bây giờ: trong email của Google, tải tệp %1 (qua Wi-Fi). Rồi chạm nút xanh và chọn nó trong Tải xuống.
+826	👉 Bây giờ: trên privacy.apple.com, tải «Part %1» (qua Wi-Fi). Rồi chạm nút xanh và chọn nó trong Tải xuống.
+827	👉 Việc cần làm ngay
+828	👉 cần tải rồi xử lý
+829	👍 Bạn đã có phiên bản mới nhất (%1)
+830	👯 Email trùng
+831	💡 Trợ giúp
+832	💡 Mẹo: hủy đăng ký để không nhận nữa (nút trong danh sách «Ai gửi email cho bạn nhiều nhất»).
+833	💡 Nếu bị kẹt
+834	💡 Nếu bị kẹt: mọi lời khuyên
+835	💾 %1 trên «%2»
+836	💾 Sao lưu ban đêm
+837	💾 Lưu %1
+838	💾 Sao lưu tất cả ảnh của tôi
+839	💾 Lưu email
+840	📁 Chọn thư mục sao lưu
+841	📁 Chọn một thư mục
+842	📁 CleanSmart / Mails: email đầy đủ (.eml)\n📕 CleanSmart / PDF: gom mọi PDF\n📎 CleanSmart / Pieces jointes: các tệp khác
+843	📁 Đã lưu thư mục sao lưu
+844	📂 Xử lý một tệp ZIP
+845	📂 Xử lý thủ công một tệp ZIP
+846	📅 Báo cáo tháng của bạn
+847	📎 Email lớn
+848	📕 Chọn các PDF
+849	📕 Đã lưu PDF trong Tải xuống / Clean Smart
+850	📕 Đã tạo PDF kỷ niệm (minh họa)
+851	📖 Hướng dẫn sử dụng
+852	📤 Gửi (%1)
+853	📦 Lớn nhất
+854	📦 Rời Google Ảnh
+855	📦 Bản sao Google mới của bạn có thể đã sẵn sàng
+856	📧 Mở email của Google
+857	📰 Bản tin và quảng cáo
+858	📱 Ứng dụng của tôi
+859	📱 Mở ứng dụng Google Ảnh
+860	📱 Điện thoại
+861	📱 Điện thoại gần đầy
+862	📸 Đã sao chép và kiểm tra %1 ảnh và %2 video, sắp xếp theo năm\n
+863	📸 Ảnh
+864	🔄 Phân tích lại
+865	🔄 Tìm lại
+866	🔄 Làm lại tất cả (tôi đã xóa bản sao)
+867	🔍 Phân tích hộp thư của tôi
+868	🔍 Phân tích điện thoại của tôi
+869	🔍 Tìm email có tệp đính kèm
+870	🔎 Kiểm tra ổ đĩa (đọc lại từng ảnh)
+871	🔒 Mật khẩu của bạn được mã hóa trên điện thoại. Nó chỉ được gửi tới máy chủ email của bạn.
+872	🔓 Cho phép
+873	🔓 Cho phép truy cập tệp
+874	🔓 Một quyền để biết thêm
+875	🔓 Một quyền, chỉ một lần
+876	🔓 Chỉ một lần: cho phép «Truy cập tất cả tệp» để Clean Smart thấy thư mục Download. Ứng dụng chỉ đọc tệp của %1.
+877	🔔 Email từ %1
+878	🔔 Bạn sẽ được báo khi người này gửi email
+879	🕰️ Email cũ
+880	🕰️ Email cũ (giữ email quan trọng)
+881	🗑️ Đã dọn thùng rác: lấy lại vĩnh viễn %1
+882	🗑️ Gỡ cài đặt
+883	🗑️ Đã xóa tệp khỏi điện thoại: có chỗ cho tệp tiếp theo
+884	🗑️ Người gửi «luôn bỏ» của tôi
+885	🗑️ Bỏ %1 vào thùng rác
+886	🗑️ Mở %1 để xóa
+887	🗑️ Email của người này sẽ vào thùng rác mỗi đêm
+888	🗑️ Xóa ZIP này khỏi điện thoại (nên làm)
+889	🗑️ Luôn bỏ: %1   🛡️ Luôn giữ: %2   🔔 Báo cho tôi: %3
+890	🗜️ Nén (%1)
+891	😴 Chưa mở 3 tháng
+892	🚫 Hủy đăng ký
+894	🛡️ %1 (đã đặt làm yêu thích)
+895	🛡️ Đã xếp %1 vào thư mục «Được bảo vệ» trong hộp thư
+896	🛡️ Người gửi quan trọng (ngân hàng, cơ quan nhà nước, y tế…): email của họ không bao giờ bị bỏ.
+897	🛡️ Nút xóa xuất hiện khi bản sao đầy đủ và ô 1, ô 2 đã được chọn.
+898	🛡️ Email từ ngân hàng, cơ quan nhà nước hay y tế không bao giờ vào thùng rác.
+899	🛡️ Không bao giờ giải phóng %1 trước khi kiểm tra bản sao: hãy chọn ô đầu tiên trước.
+900	🛡️ Bảo vệ (%1)
+901	🛡️ Xếp gọn email quan trọng của tôi
+902	🛡️ Email của người này sẽ không bao giờ bị bỏ
+903	🤖 Tự động sao chép ảnh của bạn
+904	🤖 Bắt đầu chế độ tự động
+905	🤖 Hoàn toàn tự động (dễ nhất)
+906	🧊 Xóa bộ nhớ đệm
+907	🧬 Đã loại %1 ảnh trùng và 🎞️ %2 ảnh liên tiếp\n
+908	🧬 ảnh trùng   🎞️ ảnh chụp liên tiếp hỏng\n📱 ảnh chụp màn hình   🎬 video lớn\n💬 tệp WhatsApp   👥 danh bạ trùng\n✉️ bản tin và email lớn
+909	🧭 Dọn dẹp
+910	🧭 Dọn email
+911	🧭 Dọn dẹp có hướng dẫn
+912	🧹 Tệp vô ích
+913	🧹 Bỏ email của %1
+914	🧹 Dọn dẹp an toàn
+915	🧹 Đã sắp xếp email đêm nay
+916	🧹 Bỏ %1 vào thùng rác
+917	🧹 Dọn dẹp an toàn
+918	🧹 Dọn dẹp an toàn: bản tin, thông báo, ảnh trùng
+919	🧹 Dọn · %1
+920	🧹 Dọn · %1 · %2

@@ -11,7 +11,17 @@
   mails → corbeille du compte (IMAP MOVE), contacts → export .vcf avant suppression si la sauvegarde est active.
 - Code : `data/` (moteur : MediaScanner, MailCleaner, ContactsCleaner, Backup, Settings), `AppViewModel.kt`, `ui/` (écrans).
 
-## Version 2.0 (branche claude/v2-auto, en test, pas publiée)
+## Version 2.1 : 16 langues
+- Langues (`Tr.CODES`) : fr en es pt de it th hi zh ar id ja ko tr vi el. Option Langue : 0 = comme le téléphone, sinon 1 + index.
+  Arabe = écran de droite à gauche (`Tr.rtl`). Repli : langue → anglais (`TrEn.kt`) → français.
+- Tables `app/src/main/assets/i18n/<code>.txt` générées par `python store/i18n/gen_langues.py` à partir de
+  `store/i18n/langues/cles.json` (textes français numérotés) et `langues/<code>.txt` (« numéro<TAB>traduction »).
+  Nouveau texte : l'ajouter à cles.json (ordre trié) et dans chaque fichier de langue, sinon il s'affiche en anglais.
+- Mode d'emploi : FR/EN par `store/manuel/make_manual.py` ; les 14 autres par `store/manuel/manuel_langues.py`
+  (textes dans `store/manuel/textes/<code>.txt`, numérotation = `manuel_langues.py numeros`, PDF imprimé par Edge).
+- Mise à jour : vérifiée toutes les 3 h et à chaque retour dans l'appli (bandeau orange, les deux versions).
+
+## Version 2.0 (publiée en apk-33)
 - Accueil : tuile verte « Ménage complet » (photos → téléphone → mails) + 3 portes : 📸 Photos (`Ecran.PHOTOS`),
   🧹 Téléphone (`ui/Inutiles.kt`, `data/Inutiles.kt`), ✉️ Mails. Quitter Google/iCloud dans une carte plus discrète.
 - Google/iCloud : mode « Tout automatique » (`data/AutoGoogle.kt`, service de premier plan, surveille Download, MANAGE_EXTERNAL_STORAGE),

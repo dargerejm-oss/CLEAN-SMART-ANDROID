@@ -1,0 +1,897 @@
+0	\n\n%1 kopyalanamadı: aynı dosyayı yeniden başlat.
+1	\n\n%1 «kontrol edilecek» Clean Smart çöp kutusuna gidecek: 7 gün boyunca geri alabilirsin.
+2	\n\nDikkat: silme işlemi hesabınla (Google…) eşitlenir.
+3	\n\nDisk veya telefon dolu: yer aç (veya 2. adımda diski değiştir), sonra BU dosyayı yeniden başlat. Hiçbir şey iki kez kopyalanmaz.
+4	\n\nDosya bozuk veya eksik: Google e-postasından yeniden indir ve tekrar başlat. Kopyalanmış olanlar korunur.
+5	\n\nKopyalar önce yedekleme klasörüne .vcf dosyası olarak aktarılır.
+6	\n\nOnları içeren ZIP dosyasını (veya otomatik modu) yeniden başlat: tekrar kopyalanacaklar. Öncesinde %1 tarafında hiçbir şey silme.
+7	\n\nÖnce yedekleme klasörüne bir kopya yapılır.
+8	\n💡 Google'da e-postalar ve Google Fotoğraflar aynı 15 GB'ı paylaşır: e-postaları temizlemek fotoğrafların için de yer açar.
+9	 / yaklaşık %1 GB
+10	 · %1 kopya, seri çekim veya başarısız fotoğraf yedeklenmedi
+11	 · %1 çöp kutusuna
+12	 · «kontrol edilecek» dosyalar Clean Smart çöp kutusunda (7 gün)
+13	 · Clean Smart çöp kutusuna gider
+14	%1 (%2): fazla kopyalar, fazla seri çekimler, siyah veya beyaz fotoğraflar, bir aydan eski ekran görüntüleri.\n\nGaleri çöp kutusuna giderler (geri almak için 30 gün).
+15	%1 (%2) yeri hemen açmak için KALICI olarak silinecek.\n\nGeri alınamazlar.
+16	%1 / %2  ·  %3 atılacak
+17	%1: %2 %
+18	%1: bültenler ve reklamlar (%2 gönderen), bildirimler, kopya e-postalar.
+19	%1 GB · %2 öngör
+20	%1 incelendi
+21	%1 ekli (%2 tanesi PDF'li)
+22	%1 başarıyla. Orijinalleri çöp kutusuna atarak %2 kazanırsın.
+23	Bu ay %1.
+24	%1 yedekleme klasörüne kopyalandı.
+25	%1 gereksiz dosya: geçici, küçük resimler, boş klasörler, uygulama kalıntıları.
+26	%2 aydan eski %1
+27	«Her zaman at» gönderenlerinden %1 çöp kutusuna taşındı (30 gün geri alınabilir).
+28	%1 kopya çöp kutusuna gider. Her e-postanın ilk örneği korunur.
+29	%1 ve %2 kopyalandı ve doğrulandı.
+30	%1 ve %2 güvende. Silebilir ve sonrakini indirebilirsin.
+31	%1 dosya yedeklendi
+32	%1 atıldı
+33	%1 boş / %2
+34	Telefonda %1 açıldı
+35	Kutuda %1 e-posta · %2 incelendi
+36	%1 dk %2 sn
+37	%1 bülten · %2 büyük e-posta
+38	%1 bülten, %2 büyük e-posta (%3).
+39	%1 fotoğraf bulundu
+40	%1 fotoğraf · %2 video incelendi
+41	%1 fotoğraf · %2 video · %3 kopya ve seri çekim ayrıldı
+42	%1 tüm fotoğraflarının bir kopyasını hazırlar. Tam olarak bu örnekteki gibi yap:
+43	%1 silinecek: artık gerekmiyorlar veya kendiliğinden yeniden oluşurlar.
+44	%1 kalıcı olarak silinecek.
+45	%1 / %2 seçildi · %3
+46	%1 / %2 dosya tamam
+47	%1 / %2 · %3
+48	%1 Galeri çöp kutusuna gidecek (30 gün geri alınabilir).
+49	%1 Galeri çöp kutusuna gider (30 gün geri alınabilir).
+51	%1 · %2: kopyalar, fazla seri çekimler, siyah veya beyaz fotoğraflar, bir aydan eski ekran görüntüleri. En iyileri korunur.
+52	Toplam %1 · %2. Kaldırmak veya önbelleğini temizlemek için bir uygulamaya dokun.
+53	%1 atılacak
+54	Tek tek bakılacak %1. Atmak için sola, tutmak için sağa kaydır (favori olur ⭐).
+55	%1, %2, %3 kopyalandı · %4 ve %5 ayrıldı.
+56	%1%2 yıldan eski e-postalar çöp kutusuna gider (önemliler hariç).
+57	(konu yok)
+58	. Ayıklanacak %1 kopya veya seri çekim: buraya dokun.
+59	1 düğme
+60	1 ay
+61	1. Yedeklemeyi kapattım: Google Fotoğraflar uygulaması › sağ üstteki fotoğrafın › Fotoğraflar ayarları › Yedekleme › kapalı.
+62	1. iPhone'da «iCloud Fotoğrafları»nı kapattım (Ayarlar › adın › iCloud › Fotoğraflar).
+63	12 ay
+64	2. Diski bir bilgisayarda açtım ve fotoğraflarımı yıl yıl görüyorum.
+65	3 ay
+66	3. Önerilen: 2. bir kopya yaptım (başka disk veya bilgisayar).
+67	4 adım
+68	6 ay
+69	GÖRÜNÜM
+70	OTOMATİK
+71	DİĞER
+72	E-posta adresi
+73	Adres, sunucu ve parola zorunludur.
+74	Uyarı kaldırıldı
+75	Uyarılar ve aylık rapor
+76	Posta kutusu inceleniyor
+77	Gelen kutusundaki en yeni 3.000 e-posta incelenir.
+78	E-postalar inceleniyor (%1 / %2)
+79	Telefon inceleniyor
+80	«%1» kutunu incele: bültenler, büyük e-postalar, eski e-postalar. Önemliler her zaman korunur.
+81	Posta kutumu incele
+82	Telefonumu incele
+83	İptal
+84	İptal, hiçbir şey atma
+85	Ara
+87	Apple talebi kontrol eder ve genellikle 3-7 gün içinde e-posta gönderir. Dosyalar sonra privacy.apple.com'dan indirilir (telefondan oturum aç).
+88	Apple · Veriler ve Gizlilik
+89	«Her zaman at»ı şimdi uygula
+90	Geçerli dosyadan sonra durduruluyor…
+91	Durdur
+92	Otomatik mod durdurulsun mu?
+93	Durduruldu. Kopyalanmış dosyalar güvende; diğerleri bir dahaki sefere, kopyasız.
+94	İpucu: Ayarlar › Uygulamalar'da bir uygulamaya dokun (Chrome, Facebook…) › Depolama › «Önbelleği temizle».
+95	Kopya kişi yok
+96	Klasör seçilmedi
+97	Yedekleme klasörü yok
+98	Gereksiz dosya yok.
+99	Bağlı posta kutusu yok.
+100	USB bellek veya disk algılanmadı. Tak (USB-C adaptör), sonra bu adımı yeniden aç.
+101	Hiçbir video daha fazla küçültülemedi.
+102	Diğer
+103	Diğer kurulum dosyaları (.apk)
+104	Önce: incele
+105	«Kullanım verilerine erişim» ile Clean Smart her uygulamanın gerçek boyutunu ve en son ne zaman açtığını görür. Hiçbir şey hiçbir yere gönderilmez.
+106	POSTA KUTUSU
+107	Banka
+108	Banka, resmi kurumlar, sağlık, faturalar ve PDF'li tüm e-postalar: yedeklendi, PDF'ler toplandı, bilgisayarda index.html arşivi.
+109	Banka, resmi kurumlar, sağlık, faturalar ve PDF'li tüm e-postalar: yedeklendi, PDF'ler toplandı, bilgisayarda index.html arşivi. Posta kutunda «Korunanlar»a konur.
+110	Banka, vergi, sağlık, ev, aile (kişilerin): ayrı tutulur, asla atılmaz
+111	Pil zayıf (%1 %)
+112	Merhaba
+113	Moda Mağazası
+114	Posta kutusu düzende!
+115	Posta kutusu %1 % dolu (%2 / %3)
+116	Korunan kutu
+117	Kutu %1 % dolu (%2 / %3).
+118	Şarj aletini tak: bir dosya 10-30 dakika sürebilir.\n\nTelefon kapanırsa hiçbir şey kaybolmaz: aynı dosyayı yeniden başlatman yeterli.
+119	İşlem sırasında şarj aletini tak: büyük bir dosya 10-30 dakika sürebilir. Ekran açık kalır.
+120	USB belleğini veya diskini telefona tak, sonra üzerinde bir klasör seç (veya oluştur).
+121	USB belleği veya diski tak
+122	Tamam: sonraki dosya baştan tamamen kopyalanacak.
+123	Not edildi
+125	ÖNERİLEN
+126	İLETİŞİM
+127	KİŞİLER
+128	Ekran görüntüleri
+129	SD kart, USB bellek, Drive… istediğin yeri seç
+130	SD kart, USB bellek, Google Drive…
+131	Bu dosya zaten kopyalandı ve doğrulandı. Tekrarlamak kopya oluşturmaz ama gereksizdir.\n\nMuhtemelen sonrakini (%1) istedin.
+132	Bu ay
+133	Bu yıl
+134	Hesap değiştir
+135	Klasör değiştir
+136	Her pazar güvenli gereksiz dosyalar ve spam kendiliğinden gider. Bir bildirim ne kadar yer açıldığını ve ayıklanacak fotoğraf olup olmadığını söyler.
+137	Seçilen her e-posta yedekleme klasörüne kaydedilir:
+138	Her video 720p olarak yeniden yapılır, çoğu zaman 3-5 kat daha hafif, ve Filmler / Clean Smart'a kaydedilir.
+139	Diskteki klasörü seç
+140	Bir klasör seç
+141	Önce USB bellekteki veya diskteki klasörü seç (2. adım).
+142	Önce USB bellekteki veya diskteki klasörü seç («Disk» adımı).
+143	Önce bir klasör seç: SD kart, USB bellek veya Google Drive.
+144	Önce bir yedekleme klasörü seç (Seçenekler).
+145	Önce bir yedekleme klasörü seç (SD kart, USB bellek, Drive).
+146	Önce bir yedekleme klasörü seç ve yedek al.
+147	Önce bir yedekleme klasörü seç.
+148	E-postalarını seç: ekleriyle birlikte saklanır, PDF'ler ayrı bir klasörde
+149	Bir SD kart, USB bellek veya Google Drive seç
+150	En güzel fotoğraflar seçiliyor…
+153	Clean Smart: otomatik kopya
+154	Clean Smart, Download'daki dosyaları bekliyor…
+155	Clean Smart son 3.000 e-postayı okur (hiçbir şey silinmez).
+156	Clean Smart tüm fotoğraflarına bakar (hiçbir şey silinmez).
+157	Clean Smart tek dokunuşla bulur:
+158	USB bellek (tanıtım)
+159	USB bellek veya harici disk, USB-C adaptörle
+160	Kargolar ve teslimatlar
+161	Ne kadar yer gerekiyor?
+162	Telefondaki gibi
+163	Başla
+164	Sıkıştır
+165	%1 sıkıştırılsın mı?
+166	Videolar sıkıştırılıyor
+167	Anladım
+168	Posta kutunu bağla (Gmail, Outlook, Yahoo, Orange, Free…): ayıklanacak bültenler, büyük ve eski e-postalar; önemliler her zaman korunur.
+169	Bağlan
+170	Posta kutumu bağla
+171	Sunucuya bağlanılıyor
+172	Bağlanılamıyor:
+173	E-posta sağlayıcısına bağlanılıyor
+174	Önerilen: 2. bir kopya yaptım (başka disk veya bilgisayar).
+175	Kopya kişiler
+176	Yine de devam et
+177	Otomatik kopya
+178	Dosyaları tek tek kopyala
+179	Aynı kopyalar — orijinal korunur
+180	Çöp kutusu
+181	Çöp kutusu: %1
+182	Clean Smart çöp kutusu
+183	E-posta çöp kutusu
+184	İdare eder, daha iyi olabilir
+185	Dışa aktarma oluştur
+186	Google Fotoğraflar'da: bir fotoğrafa uzun bas, tüm günleri işaretle, sonra «Sil». Google çöp kutusu her şeyi 60 gün saklar.
+187	Google Takeout'ta 2 GB'lık dosyalar seç: onları tek tek işleriz, telefonun asla çok yere ihtiyacı olmaz.
+188	Apple talebinde 1 veya 2 GB'lık dosyalar seç: onları tek tek işleriz, telefonun asla çok yere ihtiyacı olmaz.
+189	Google e-postasında «İndir» düğmelerini say: dosya sayısı budur.
+190	%1'dan kopyayı iste
+191	Verilerinin bir kopyasını iste
+192	İstendi · %1 e-postasını bekle
+193	Android 11'den beri hiçbir temizleme uygulaması diğer uygulamaların önbelleğini veya sistem dosyalarını temizleyemez. Bunu Android kendisi yapar: bu düğme «Yer aç» ekranını açar.
+194	Kurulumdan beri
+195	Son kontrol
+196	İndirilmiş ama kurulmamış uygulamalar. Kontrol edilecek.
+197	Disk
+198	Disk tanınmadı: USB-C (OTG) adaptör kullan. exFAT biçimli bir bellek her yerde çalışır (FAT32 4 GB üzeri dosyaları reddeder).
+199	Disk dolu: daha büyük bir disk tak ve «Disk» adımında seç. Kaldığımız yerden kopyasız devam ederiz.
+200	İndirilenler'de 6 aydır dokunulmamış belgeler. Kontrol edilecek.
+201	Bu hesapta Çöp kutusu klasörü bulunamadı.
+202	Çöp kutusu klasörü bulunamadı.
+203	Bu hesapta Spam klasörü bulunamadı.
+204	Yedekleme klasörü
+205	Yedekleme klasörü bulunamadı.
+206	Önbellek klasörleri
+207	Artık telefonda olmayan uygulamalardan kalan klasörler. Kontrol edilecek.
+208	Boş klasörler
+209	Boş klasörler…
+210	Kopyalar
+211	Fazla kopyalar ve seri çekimler (en iyi fotoğraf korunur), siyah veya beyaz fotoğraflar, eski ekran görüntüleri. Tutmak için bir fotoğrafa dokun. Hepsi Galeri çöp kutusuna gider (30 gün).
+212	Kopyalar, fazla seri çekimler, siyah veya beyaz fotoğraflar, eski ekran görüntüleri.
+213	Kopyalar, seri çekimler, bulanıklar
+215	Tutmak istediğin e-postaların işaretini kaldır. Bankandan, vergiden, sağlıktan gelenler ve «her zaman tut» gönderenleri bu listede asla yer almaz. Hepsi e-posta çöp kutuna gider (geri alınabilir).
+216	Tanıtım…
+217	Çöp kutusuna taşınıyor…
+218	Varsayılan olarak kapalı. Açarsan, fotoğraflar (ve .vcf olarak kişiler) güvenlik için her temizlikten önce klasöre kopyalanır.
+219	Hepsi zaten favori 👍
+220	Tanıtım modunda hiçbir dosya işlenmez. Gerçekten yapmak için tanıtımdan çık (Seçenekler).
+221	Formunda
+222	%1 gönder
+223	Anı PDF'ini gönder
+224	İndirme bağlantısını e-postayla gönder · Bir kez dışa aktar
+225	Beklenmeyen hata
+226	Açılan yer
+227	Baştan beri açılan yer: %1. Küçük bir inceleme?
+228	Kazanılacak yer
+229	Ve e-postaların
+230	Faturalar ve belgeler
+231	Güvenli temizlik yapılsın mı?
+232	Tamam ✔
+233	Aile
+234	Kapat
+235	Dosya %1
+236	Dosya %1 zaten yapıldı
+237	Okunamayan dosya
+238	Zaten kurulu uygulamaların kurulum dosyaları
+239	Uygulamaların telefon deposundaki çalışma dosyaları. Gerekirse yeniden oluşurlar.
+240	Gereksiz dosyalar
+241	Kenara ayrılan dosyalar, 7 gün sonra kendiliğinden boşalır
+242	Geçici dosyalar
+243	Geçici dosyalar, küçük resimler, boş klasörler, uygulama kalıntıları
+244	Geçici dosyalar, küçük resimler, boş klasörler, uygulama kalıntıları. Fotoğraflara ve müziğe asla dokunulmaz.
+245	Bulanık
+246	Bulanık, çok karanlık veya çok aydınlık — işaretlemeden önce kontrol et
+249	TUTULDU
+250	Telefonda son … içindeki fotoğrafları tut
+251	Tutulanlar
+253	Gmail bir UYGULAMA ŞİFRESİ ister (16 harf):\n1. Google hesabında 2 Adımlı Doğrulama'yı aç.\n2. myaccount.google.com/apppasswords adresini aç\n3. «Clean Smart» adlı bir şifre oluştur ve buraya yapıştır.
+256	Google Fotoğraflar
+258	Google hazır olduğunda e-posta gönderir: birkaç saat veya birkaç gün içinde. Bu arada uygulamayı kapatabilirsin.
+259	Büyük
+260	Büyük e-postalar (5 MB+)
+261	Büyük videolar
+262	Grup %1 · %2 fotoğraf
+263	Giriş reddedildi. Gmail, Yahoo ve iCloud normal şifren değil, bir UYGULAMA ŞİFRESİ ister.
+264	İyi bir temizliğe ihtiyacı var
+265	Yalnızca %1 kaldı. Tek dokunuşla yer açmak için Clean Smart'ı aç.
+266	Hiçbir şey içermiyorlar.
+267	30 gün boyunca hâlâ yer kaplarlar
+268	E-postanın «Korunanlar» klasörüne konurlar. Her gece yeniden.
+269	Geri alınamıyor: dosyalar kalıcı olarak silinmiş olabilir.
+270	%1 klasörü oluşturulamıyor
+271	Bu fotoğraflar korunamıyor
+272	Çöp kutusu boşaltılamıyor
+273	Vergi
+274	Vergi - Resmi kurumlar
+275	E-posta sağlayıcının IMAP sunucusunu gir (bağlantı noktası 993, SSL).
+276	Kopyayı istedim
+277	Diski bir bilgisayarda açtım ve fotoğraflarımı yıl yıl görüyorum.
+278	Tüm dosyaları işledim
+279	Asla atılmaz, «Korunanlar»a konur
+280	Kutuyu boşaltıyorum
+281	Yer açıyorum
+282	Önemlileri güvene alıyorum
+283	İyileri güvene alıyorum
+284	Gönderene göre ayıklıyorum
+285	Şüphelileri kontrol ediyorum
+286	%1 atılsın mı?
+287	Bu e-postalar atılsın mı?
+288	Kopyalar atılsın mı?
+289	Büyük e-postalar atılsın mı?
+290	Bültenler atılsın mı?
+291	Orijinaller atılsın mı?
+292	Eski e-postalar atılsın mı?
+293	Günlükler, geçici yedekler, yarım kalan indirmeler. Artık gerekmiyor.
+294	Adres ve şifre telefondan silinecek.
+295	Önemliler güvende, gerisi gitti
+296	Orijinale dokunulmaz: ardından onu çöp kutusuna atmayı önereceğim.\n\nBirkaç dakika sürebilir.
+297	GECE
+298	YER AÇ
+300	Diskteki kopya silindi: Clean Smart her şeyi baştan yeniden kopyalıyor.
+301	Çöp kutusu boş.
+302	E-postaların yeri, e-posta çöp kutun boşaltılınca açılır (genellikle 30 gün içinde).
+303	Yedek alınamadı. Klasörü kontrol etmek için Clean Smart'ı aç.
+304	Dil
+305	Rehberli temizlik her şeyi doğru sırayla yapar. Yeşil düğme her zaman bir sonraki adımdır.
+306	Özet ve %1 hesabını nasıl boşaltacağın
+307	Orijinal kişi korunur.
+308	Disk (veya telefon) dolu: kopyalama düzgünce durdu.\n\nDaha büyük bir disk tak, 2. adımda seç, sonra otomatik modu yeniden başlat: kopyasız devam ederiz.
+309	Diskte yeterli yer yok: %1 kaldı, bu dosya için yaklaşık %2 gerekiyor.\n\n• Diskte yer aç, veya\n• daha büyük bir disk tak ve «Disk» adımında seç (kaldığımız yerden devam ederiz).\n\nHiçbir şeye dokunulmadı.
+310	Diske erişilemiyor.\n\n• Düzgün takılı olduğunu kontrol et (USB-C adaptör).\n• «Disk» adımında klasörü yeniden seç.
+311	Yedekleme klasörüne erişilemiyor. Seçmek için Clean Smart > Seçenekler'i aç.
+312	Yedekleme klasörüne artık erişilemiyor. Yeniden seç.
+313	«%1» klasörü diskte bulunamadı. Diskin takılı olduğunu kontrol et (2. adım).
+314	Önce geçerli dosya biter. Kopyalanmış dosyalar güvende; diğerleri bir dahaki sefere, kopyasız.
+315	Google e-postasındaki bağlantı yaklaşık bir hafta sonra sona erer: öyleyse yeni bir dışa aktarma iste (hiçbir şey kaybolmaz, kopyasız devam ederiz).
+316	Geçen ay
+317	Güvenli temizlik
+318	Yine de tekrarla
+319	Telefon
+320	Telefon neredeyse dolu (çalışmak için en az 300 MB boş yer gerekir).\n\n• Galeri çöp kutusunu boşalt.\n• İşlenmiş ZIP dosyalarını sil (İndirilenler).\n• Clean Smart'ın rehberli temizliğini yap.\n\nHiçbir şeye dokunulmadı.
+321	Telefon kapandı veya disk çıkarıldı mı? Aynı ZIP'i yeniden başlat: Clean Smart hiçbir şey kaybetmeden veya çiftlemeden devam eder.
+322	Galeri okunuyor
+323	Fotoğraf tarihleri okunuyor…
+324	Videolar okunuyor
+325	Okunamıyor: %1
+326	Zaten kurulu uygulamaların .apk dosyaları: artık gerekmiyor.
+327	E-posta çöp kutundaki son 200 e-posta. Gelen kutusuna geri koymak istediklerini işaretle.
+328	En çok yer kaplayan 30 fotoğraf ve video
+329	Diğer kutucuklar: gerek yok
+330	Apple'ın dosyaları privacy.apple.com'da yaklaşık 2 hafta durur: süre geçtiyse yeni bir talep yap (hiçbir şey kaybolmaz, kopyasız devam ederiz).
+331	Çöp kutusuna atılmış dosyalar Galeri'den geri alınabilir.
+332	%1 yıldan eski e-postalar e-posta çöp kutuna gider. Önemliler korunur.
+333	2 yıldan eski e-postalar e-posta çöp kutuna gider.
+334	5 MB'tan büyük e-postalar e-posta çöp kutuna gider.
+335	Bültenler, reklamlar, bildirimler ve kopya e-postalar e-posta çöp kutuna gider (tüm gelen kutusu).\n\nÖnemli e-postalara asla dokunulmaz.
+336	Önce fotoğraflar (ayıkla, en iyisini tut, yedekle, yer aç), sonra telefonun gereksiz dosyaları, sonra e-postalar.
+337	Yedeklenmiş %1 aydan eski fotoğraflar telefondan çıkar (çöp kutusu, 30 gün).
+338	Favori fotoğraflar (veya 🛡️ düğmesiyle korunanlar) asla önerilmez
+339	Biraz bulanık fotoğraflar, WhatsApp, yeni ekran görüntüleri: sen karar verirsin.
+340	Fotoğraflara, videolara ve müziğe asla dokunulmaz.
+341	Eskiler yalnızca zaten yedeğindeyse çöp kutusuna önerilir.
+342	Ayın veya yılın en güzel fotoğrafları, sevdiğin birine göndermek için
+343	En büyükleri ve artık açmadıkların: tek hareketle kaldır
+344	Spam e-posta çöp kutuna gider. Spam değilse e-postanın işaretini kaldır.
+345	Yer aç
+346	%1 açılsın mı?
+347	%1 boşaltmak isteğe bağlı. %2 hiçbir uygulamanın fotoğraflarını silmesine izin vermez: emin olduğunda bunu sen yaparsın.
+348	Kutuyu boşalt
+349	Posta kutusu boşaltılıyor
+350	Posta kutusu boşaltılsın mı?
+351	Yer aç
+352	Yer aç, anı PDF'i…
+353	Diskteki fotoğraflar listeleniyor…
+354	ŞİMDİ
+355	Posta (isteğe bağlı, e-postaların için)
+356	E-postalar
+357	Gmail e-postaları: %1
+358	Ekli e-postalar
+359	2 yıldan eski e-postalar
+360	Kopya e-postalar
+361	Kopya e-postalar…
+362	Ev
+363	Bana haber ver
+364	Clean Smart'ı denediğin için teşekkürler! Telefonunu temizlemeye devam etmek için tam sürümü kur.
+365	Uygulamalarım
+366	En büyük dosyalarım
+367	Kurallarım
+368	Yedeklenmiş %1 aydan eski fotoğrafları çöp kutusuna atar
+369	Güvene al
+370	Önemliler güvene alınıyor
+371	Küçük resimler
+372	Güncelleme
+373	Çöp kutusuna taşınıyor…
+374	Kullanım kılavuzu
+375	Kullanım kılavuzu bulunamadı.
+376	Tanıtım modu bitti
+377	Değiştir ▼
+378	Uygulamayı sahte fotoğraf, e-posta ve kişilerle gösterir. Telefonda hiçbir şeye dokunulmaz: Clean Smart'ı tanıtmak için ideal.
+379	Şifre (boş = mevcut şifreyi koru)
+380	Uygulama şifresi
+381	WhatsApp medyası
+382	Tam temizlik
+383	Rehberli temizlik
+384	Rehberli e-posta temizliği
+385	Güvenli posta kutusu temizliği
+386	Temizlik bitti!
+387	YENİ
+388	Posta kutusu temizleniyor
+389	Gereksiz dosyalar temizleniyor
+390	Temizle
+391	%1 temizlensin mi?
+392	Telefonu temizle
+393	Gereksiz dosyalar temizlensin mi?
+394	Bültenler ve bildirimler…
+395	Bültenler ve reklamlar
+396	Bültenler, reklamlar, bildirimler ve kopya e-postalar.
+397	E-postadaki dosya sayısı
+398	Normal
+399	Yeni sürüm %1 hazır
+401	Unut
+402	Bu hesap unutulsun mu?
+403	Evet, bitti
+405	Bugün açıldı
+406	%1 önce açıldı
+407	%1 açılıyor…
+408	Ne yapacağını görmek için Clean Smart'ı aç. Hiçbir şey kaybolmaz.
+409	Google sayfanı aç ve Google Fotoğraflar'ın kullandığı yere bak. Buraya yaz (GB olarak).
+410	«Büyük videolar»ı aç, işaretle, sonra «Sıkıştır»
+411	Aç
+412	Google Fotoğraflar'ı aç
+413	Google Takeout'u aç
+414	iCloud Fotoğrafları'nı aç
+415	Uygulama şifresi sayfasını aç
+416	privacy.apple.com'u aç
+417	Android'in «Yer aç» ekranını aç
+418	Anı PDF'i
+419	FOTOĞRAFLAR VE VİDEOLAR
+420	KORUMA
+421	Bu dönem için fotoğraf yok.
+422	Bir yıldan fazladır açılmadı
+423	Atla
+425	Gösterim için fotoğrafların küçük kopyaları. Kendiliğinden yeniden oluşurlar.
+426	Fotoğraflar
+427	Fotoğraflar: %1 · videolar: %2 · ayrılan kopyalar: %3
+428	Hafta sonu fotoğrafları
+429	Kopya fotoğraflar, seri çekimler, başarısız kareler, büyük videolar, gereksiz e-postalar… hepsi yer kaplar.
+430	Alınan veya gönderilen fotoğraf ve videolar
+431	Bulanık veya başarısız fotoğraflar
+432	iCloud Fotoğrafları
+433	Benzer fotoğraflar
+434	Fotoğraflar, telefon ve e-postalar, adım adım
+435	Kapladığı yer: %1
+436	Daha fazla araç
+437	Her biri 100 MB'tan büyük
+438	Puan kazanmak için: %1.
+439	Clean Smart'ın tam sürümü için veya her türlü sorun için bana yaz:
+440	Tam sürüm için bana yaz:
+441	Gereksiz dosyaları bulmak için Clean Smart'ın telefon deposunu görebilmesi gerekir: «Tüm dosyalara erişim»e izin ver. Hiçbir şey hiçbir yere gönderilmez.
+442	Başka bir hesap veya disk için. Diske kopyalanmış dosyalara dokunulmaz.
+443	Favorilerimi koru
+444	Temkinli
+445	Temkinli: daha az fotoğraf önerilir. Katı: daha fazla.
+446	Hazırlık
+447	Hazırlık…
+448	Telefonda neredeyse yer kalmazsa (1 GB'tan az) beni uyar, ve ayın 1'inde küçük bir özet.
+449	USB bellekte veya diskte en az %1 öngör (10 % pay).
+450	SANA EN ÇOK KİM YAZIYOR
+451	%1 e-postası geldiğinde
+452	Çık
+453	Google Fotoğraflar'dan ayrıl
+454	iCloud Fotoğrafları'ndan ayrıl
+455	BAŞARISIZ FOTOĞRAF ARAMA
+456	Seri çekimler: en iyisini tutuyoruz…
+457	Seri çekimler — en net olan korunur
+458	Yerleştiriliyor: %1
+459	Kopyalar aranıyor
+460	Gereksiz dosyalar aranıyor…
+461	E-postalar aranıyor
+462	PDF'li e-postalar aranıyor
+463	Önemli e-postalar aranıyor (%1 / %2)
+464	Bulanık fotoğraflar aranıyor
+465	Başarısız fotoğraflar aranıyor
+466	Benzer fotoğraflar aranıyor
+467	Ekler aranıyor (%1 / %2)
+468	Güncelleme ara
+469	Baştan başla
+470	Başka bir hesapla baştan başla
+471	En baştan başlansın mı?
+472	%1 boyutuna bak
+473	Bir değişiklikten sonra yeniden incele.
+474	E-postaları geri al
+475	Sayacı sıfırla
+476	Dosyalar geri konuyor
+477	Kaldırılmış uygulama kalıntıları
+478	Kaldırılmış uygulama kalıntıları…
+479	Saniyeler arayla birkaç kez alındı: %1
+480	Hiçbiri
+481	Hiçbir şey silinmedi.
+482	Hiçbir şey kaybolmaz
+483	İznin olmadan hiçbir şey silinmez: her şey çöp kutusundan geçer.
+484	Açılacak yer yok: hiçbir eski fotoğraf henüz yedekte değil. Önce «Tüm fotoğraflarımı yedekle»yi çalıştır.
+485	SONUÇ
+486	Kural kaldırıldı
+487	E-posta çöp kutuna atılan e-postaları geri al
+488	iCloud fotoğraflarımı al (eski iPhone)
+489	Videolarımı küçült
+490	Gelişmiş ayarlar
+491	Android depolama ayarları
+492	YEDEKLEME
+494	Fotoğraflara erişim olmadan Clean Smart hiçbir şeyi inceleyemez.
+495	Sağlık
+496	Yedek %1 / %2
+497	Her gece otomatik yedek
+498	Silmeden önce yedek
+499	İyi fotoğraflarım yedekleniyor
+500	E-postalar yedekleniyor
+501	Önemli e-postalar yedekleniyor
+502	E-posta kaydediliyor %1 / %2
+503	Silmeden önce yedekle
+504	E-postaları kaydet
+505	İyi fotoğraflarımı yedekle
+506	Apple Kimliğinle oturum aç
+507	IMAP sunucusu
+508	Sunucu bulunamadı: interneti ve sunucu adını kontrol et.
+509	E-postaları her gece kendiliğinden çöp kutusuna gider
+510	Yalnızca iyi fotoğraflar: asla kopyalar, fazla seri çekimler veya başarısızlar değil. Favoriler ayrıca «Mes meilleures» (En iyilerim) klasörüne gider.
+511	Yalnızca iyi fotoğraflar yedeklenir; USB bellek, disk veya Google Drive'a. Google Fotoğraflar bile geri alınabilir.
+512	Her seferinde yalnızca yeni fotoğraflar kopyalanır.
+513	Yalnızca ilk 20 dosya gönderilir.
+514	Bağlantı reddedilirse, Microsoft hesabının güvenlik bölümünde bir uygulama şifresi oluştur (2 adımlı doğrulama gerekir).
+515	Yoksa iPhone fotoğrafları yeniden iCloud'a gönderir ve iCloud'da silmek onları iPhone'dan da silebilir.
+516	Yoksa telefon fotoğrafları yeniden Google'a gönderir ve Google'da silmek onları bu telefondan da silebilir.
+517	Kış indirimleri
+518	Sonradan çoğu zaman gereksiz
+520	Telefon deposu
+521	Katı
+522	İleri
+523	Yer açmak için bu dosyayı İndirilenler'den kendin sil.
+524	Sil
+525	%1 silinsin mi?
+526	Bu dosya telefondan silinsin mi?
+527	Her dosyayı kopyalanıp doğrulandıktan sonra telefondan sil (önerilen: yer açık kalır)
+528	Kopyaları sil
+529	Gmail'de gelen kutusunda kalırlar ve «Korunanlar» etiketi alırlar. Her gece yeniden.
+530	Google Takeout'ta, 1 dakikada
+531	account.apple.com → Uygulamaya özel parolalar → bir tane oluştur.
+532	iPhone'da: Ayarlar › adın › iCloud: «Fotoğraflar»ın kullandığı yer görünür. Ya da icloud.com'a bak. Buraya yaz (GB olarak).
+533	iPhone'da veya icloud.com/photos'ta: fotoğrafları seç, sonra «Sil». «Son Silinenler» albümü onları 30 gün saklar.
+534	Açılan sayfada: Depolama › «Önbelleği temizle». Android bunu ister, Clean Smart senin yerine yapamaz.
+535	Telefonda 2-3 GB boş yer yeter: bir seferde tek dosya. Şu an boş: %1.
+536	privacy.apple.com'da, 2 dakikada
+537	privacy.apple.com'da dosyaların adı «iCloud Photos Part 1 of 12»: son sayı (burada 12) dosya sayısıdır. Clean Smart bunu kendisi de okur.
+538	Hesap güvenliği → Uygulama şifresi oluştur, sonra buraya yapıştır.
+539	Güvenlik, başarısız fotoğraflar, tanıtım…
+540	Katılık
+541	BİTTİ
+542	E-posta sağlayıcın
+543	30 günlük deneme süren bitti.
+544	%1 boyutu (GB)
+545	Yazı boyutu
+546	En büyük dosya boyutu: 1 GB veya 2 GB
+547	Geçen süre
+548	Kalan süre
+549	Talebi tamamla
+550	Bitti
+551	iPhone fotoğrafların USB bellekte veya diskte, yıla göre, kopyasız
+552	Son 2 ayın fotoğrafları henüz diskte değil. Google Takeout'tan yeni bir kopya iste, otomatik mod yalnızca yeni fotoğrafları ekler, kopyasız.
+553	Son 2 ayın fotoğrafları henüz diskte değil. Apple'dan yeni bir kopya iste: Clean Smart yalnızca yeni fotoğrafları ekler, kopyasız.
+554	Fotoğrafların güvende
+555	Ayarların ve posta kutun korunacak.
+556	Telefonun dolu mu?
+557	Telefonun temiz, fotoğrafların güvende
+558	Telefonun ve posta kutun temiz, fotoğrafların güvende
+559	İndirmek için buraya dokun, sonra kurmak için dosyayı aç
+560	Tam sürüm veya bir soru için buraya dokun
+561	Google e-postasındaki «İndir» bağlantılarına dokunman yeterli. Clean Smart her dosyayı Download'a ulaşır ulaşmaz diske kopyalar, diğerleri inerken bile.
+562	Bir gönderene dokun: her zaman at, her zaman tut, bana haber ver, abonelikten çık.
+563	Seçmek için «Sana en çok kim yazıyor» bölümünde bir gönderene dokun
+564	İşaretlemek için bir resme dokun · büyük görmek için uzun bas
+565	İncelemek için dokun
+566	Görmek için dokun
+567	Her zaman tut
+568	Her zaman at
+569	Tüm dosyalar işlendi mi?
+570	%1 gönderenin tüm e-postaları (en az %2 e-posta) e-posta çöp kutuna gider.
+571	%1 bülten gönderenin tüm e-postaları e-posta çöp kutuna gider (yalnızca incelenenler değil, tüm gelen kutusu).\n\nÇöp kutusundan geri alabilirsin.
+572	Tümünü işaretle
+573	Tüm işaretleri kaldır
+574	Seçimi kaldır
+575	Hepsini çöp kutusuna at
+576	Hepsini temizle
+577	Her şey çöp kutusundan geçer: geri almak için 30 gün. Ve «Hata yaptım» tek dokunuşla geri alır.
+578	Her şeye baştan başla
+579	Her şeye baştan başlansın mı?
+580	Tüm içeriği diske kopyalandı ve doğrulandı. Silmek sonraki için yer açar.\n\nFotoğrafların Google Fotoğraflar'da da kalır.
+581	Her şey yolunda, böyle devam!
+582	Her şey zaten yedeklenmişti 👍
+583	Tüm fotoğrafların USB bellekte veya diskte, yıla göre, kopyasız
+584	Yedeklemeden önce ayıklama
+585	Gönderenler ayıklanıyor
+586	Hızlı ayıklama
+587	Ayıklama bitti!
+588	Önce ayıkla, en iyisini tut, yalnızca iyi fotoğrafları yedekle, yer aç, sonra e-postaları temizle.
+589	Önce ayıkla, en iyisini tut, yalnızca iyi fotoğrafları yedekle, sonra yer aç.
+590	Önce ayıkla, önemlileri güvene al, sonra kutuyu boşalt. Banka, resmi kurum veya sağlık e-postaları asla atılmaz.
+591	Kaydırarak ayıkla
+592	Gönderenleri ayıkla
+593	Ayıkla, tut, yedekle, yer aç
+594	Ayıkla, önemlileri güvene al, kutuyu boşalt
+595	Ayıkla, koru
+596	Çok aydınlık
+597	Çok küçük
+598	Çok karanlık
+599	Çok büyük
+600	Diskteki kopyanı sildin ve artık hiçbir şey kopyalanmıyor mu? Ekranın altındaki «Her şeye baştan başla (kopyamı sildim)»e dokun, sonra ZIP dosyalarını yeniden başlat.
+601	iPhone'un mu vardı? iCloud fotoğrafların USB bellekte veya diskte
+602	Bağlantılara dokunmak için uygulamadan çıkabilirsin: kopyalama devam eder («Otomatik kopya» bildirimi).
+603	Tür: .zip   ·   Boyut: 2 GB
+604	Bir seferde yalnızca TEK ZIP indir, Wi-Fi'de. İşle, sil, sonra sonrakini indir.
+605	Dosyaları privacy.apple.com'dan indirmen yeterli. Clean Smart her dosyayı Download'a ulaşır ulaşmaz diske kopyalar.
+606	Telefon
+607	Telefon dolu: Galeri çöp kutusunu boşalt, işlenmiş ZIP'leri sil, rehberli temizliği yap. En az 300 MB boş yer gerekir.
+608	Tek düğme, ve ayıklandı
+609	Her gönderen için bir kart: TÜM e-postalarını atmak için sola, tutmak için sağa kaydır.
+610	Sana yazdığında bir bildirim
+611	Her seferinde bir fotoğraf: atmak için sola, tutmak için sağa kaydır
+612	Bir soru, bir sorun, tam sürüm? Bana yaz:
+613	Free adresini ve şifreni kullan.
+614	La Poste adresini ve şifreni kullan.
+615	Orange adresini ve şifreni kullan.
+616	SFR adresini ve şifreni kullan.
+617	Gece 2 civarında yeni fotoğraflar yedekleme klasörüne kopyalanır. Olmazsa bir bildirim seni uyarır.
+618	Tam sürüm
+619	Kurulu sürüm: %1
+620	Boşalt
+621	Çöp kutusu boşaltılsın mı?
+622	Clean Smart çöp kutusunu boşalt
+623	Clean Smart çöp kutusu boşaltılsın mı?
+624	Çöp kutusunu şimdi boşalt
+625	Şimdi boşalt
+626	Eski e-postalar çöp kutusuna…
+627	Eski indirmeler (6 aydan eski)
+628	Listeyi gör ve at
+629	Listeyi gör ve yer aç
+630	İstenmeyen e-postaları gör, sonra çöp kutusuna at
+631	İpuçlarını gör
+632	Google alanımı gör
+633	iCloud alanımı gör
+634	Faturanız
+635	Seyahatler ve rezervasyonlar
+636	Yedek kontrol ediliyor
+637	Disk kontrol ediliyor
+638	Google e-postasında her dosyanın (001, 002, 003…) işlendiğini kontrol et.
+639	Kontrol et, sonra %1 alanını boşalt (istersen)
+641	Gözler kapalı
+642	uygulama
+643	uygulama
+644	hesaplanıyor…
+645	sıkıştırma başarısız
+646	kopya kişi
+647	kopya kişi
+648	kopya
+649	kopya
+650	fotoğraf arşivinin güvende
+651	son dosya
+652	kopya
+653	kopya
+654	hata
+655	hata
+656	gönderen
+657	gönderen
+658	posta kutunu temizle
+659	dosya
+660	dosya kopyalandı
+661	dosya kopyalandı ve doğrulandı
+662	dosya
+663	dosya
+664	dosya kopyalandı
+665	dosya kopyalandı ve doğrulandı
+666	dosya
+667	iCloud Fotoğrafları
+668	gün
+669	gün kaldı
+670	gün
+671	gün kaldı
+672	en kolayı
+673	boş · %1 % kullanılıyor
+674	Tam temizlik ile yer aç
+675	açıldı
+676	e-posta
+677	e-posta geri alındı
+678	e-posta
+679	e-posta geri alındı
+680	telefonun gereksiz dosyalarını temizle
+681	yeni dosya
+682	yeni dosya
+683	adım adım
+684	fotoğraf
+685	tutulan fotoğraf
+686	fotoğraf veya video
+687	çekilen fotoğraf veya video
+688	korunan fotoğraf
+689	fotoğraf
+690	tutulan fotoğraf
+691	fotoğraf veya video
+692	çekilen fotoğraf veya video
+693	korunan fotoğraf
+694	sonra «Sonraki adım»:
+695	seri çekim
+696	seri çekim
+697	fotoğraflarını USB belleğe veya SD karta yedekle
+698	zaten yedeğinde güvende (aynı ad, aynı boyut).\n\nGaleri çöp kutusuna giderler (30 gün geri alınabilir). En yeniler telefonda kalır.
+701	%1 kişiden
+702	fotoğraflarını ayıkla (kopyalar, seri çekimler, bulanıklar)
+703	indirme
+704	indirme
+705	kullanılıyor
+706	video
+707	sıkıştırılmış video
+708	video
+709	sıkıştırılmış video
+710	eski e-posta
+711	eski e-posta
+712	«Bozuk dosya»: indirme kesildi. Bu ZIP'i Google e-postasından yeniden indir ve tekrar başlat: kopyalanmış olanlar yeniden kopyalanmaz.
+713	«Yer aç»: telefonda son … içindeki fotoğrafları tut
+714	TUT
+715	AT
+716	HIZLI BUL
+717	Temizlenecek
+718	Diskteki kopyanı sildiysen bunu kullan: Clean Smart kopyaladıklarını unutur ve sonraki ZIP dosyası tamamen yeniden kopyalanır.\n\nSeçilen disk ve ayarların korunur. Diskte veya %1 tarafında hiçbir şey silinmez.
+719	Yazılamıyor
+720	Elektrik
+721	atılacak
+722	öğe
+723	öğe
+724	… ve aynı türden %1 e-posta daha (işaretli).
+725	‹ Geri
+726	ℹ️ %1 hatasız okundu. Kopyanın parmak izleri artık bu telefonda değil: karşılaştırma yapılamıyor.
+727	↩️ %1 gelen kutusunda
+728	↩️ %1 galeriye geri konuldu
+729	↩️ %1 yerine geri konuldu
+730	↩️ Hata yaptım: %1 geri koy
+731	↩️ E-postalar geri alındı (tanıtım)
+732	↩️ %1 gelen kutuma geri koy
+733	↩️ E-postaları geri al
+734	↩️ Her şeyi yerine koy
+735	⏳ Download'da sonraki dosya bekleniyor. E-postadaki «İndir» bağlantılarına dokun.
+736	⏳ Download'da sonraki dosya bekleniyor…
+737	⏳ kopyalanıyor…
+738	⏳ sonra
+739	⏹ Durdur
+740	☑️ Tümünü işaretle
+741	⚙️ Uygulama önbelleği ve sistem dosyaları
+742	⚙️ Seçenekler
+743	⚠️ %1: yeniden başlatılacak.\n
+744	⚠️ %1 hatalı: devam etmeden önce «yeniden başlatılacak» işaretli ZIP'leri yeniden başlat.
+745	⚠️ Diskteki %1 artık aynı değil veya okunamıyor:\n
+746	⚠️ Bu gece yedek yok
+747	⚠️ Dosya %1 yeniden yapılacak
+748	⚠️ Yaklaşık %1 gerekiyor, %2 kaldı. Başlayabilirsin: dolunca başka bir disk takarsın ve kopyasız devam ederiz.
+749	⚠️ Kopyalama durdu: %1\n\nHiçbir şey kaybolmaz: otomatik modu yeniden başlat, kopyasız devam ederiz.
+750	⚠️ Başlamıyoruz
+751	⚠️ Gece yedeği
+752	⚠️ bozuk: e-postadan yeniden indir, kendiliğinden kopyalanacak
+753	⚠️ disk dolu
+754	⚠️ başlamadı
+755	⚠️ yeniden başlatılacak
+756	⚠️ yeniden başlatılacak (%1)
+757	⛔ Kopya tam değil (bozuk dosya, yeniden başlatılacak veya henüz kopyalanmadı). Önce kopyayı bitir: %1 tarafında hiçbir şey silme.
+758	✅ %1: bitti ve doğrulandı.\n
+759	✅ %1 kopya silindi
+760	✅ %1 e-posta kaydedildi · %2 PDF · CleanSmart/Mails/index.html arşivi güncel
+761	✅ %1 önemli e-posta güvende · %2 PDF toplandı · index.html arşivi güncel
+762	✅ %1 yeni fotoğraf yedeklendi
+763	✅ %1 · %2 süredir
+764	✅ %1 güvende
+765	✅ 312 önemli e-posta güvende (tanıtım)
+766	✅ 7.958 iyi fotoğraf yedeklendi (tanıtım)
+767	✅ «%1» üzerinde yeterli yer var.
+768	✅ Posta kutusu bağlandı
+769	✅ Disk kontrol edildi: %1 yeniden okundu, hiçbiri bozuk değil.
+770	✅ Kopyalar silindi (tanıtım)
+771	✅ Dosya %1 bitti
+772	✅ Diskteki kopya tam ve doğrulandı.
+773	✅ E-postalar kaydedildi (tanıtım)
+774	✅ kopya tam ve doğrulandı\n✅ telefon yedeklemesi kapatıldı\n✅ fotoğraflar diskte kontrol edildi\n\n%1 açılsın mı? Neyi sileceğini sen seçersin.
+775	✅ kopyalandı ve doğrulandı
+776	✅ kopyalandı, doğrulandı, telefondan silindi
+777	✉️ %1 atıldı · posta kutunda %2 açıldı
+778	✉️ %1 e-posta
+779	✉️ %1 e-posta («Mails Gmail» klasörü, index.html'i aç)\n
+780	✉️ Posta kutusu
+781	✉️ E-postalar
+782	✉️ %1 e-postaları
+783	✓ %1 seçildi
+784	✨ %1 açıldı (Galeri çöp kutusunda 30 gün geri alınabilir)
+785	✨ %1 e-posta çöp kutusuna taşındı
+786	✨ %1 çöp kutusuna taşındı (tanıtım)
+787	✨ %1 e-posta çöp kutuna taşındı («E-postaları geri al» ile geri alınabilir)
+788	✨ %1 temizlendi · %2 açıldı
+789	✨ %1 eski e-posta çöp kutusuna (önemliler korundu)
+790	✨ 1.249 e-posta çöp kutusuna (tanıtım)
+791	✨ 1,1 GB açıldı (tanıtım)
+792	✨ 6,4 GB açıldı (tanıtım)
+793	✨ E-postalar çöp kutusuna (tanıtım)
+794	✨ Otomatik pazar temizliği
+795	✨ Pazar temizliği
+796	✨ Eski e-postalar çöp kutusuna (tanıtım)
+797	❤️ Telefon sağlığı: %1 / 100
+798	⬅ Sola kaydır: tüm e-postaları çöp kutusuna   ·   Sağa kaydır: tutulur ➡
+799	⬅ Atmak için sola kaydır   ·   Tutmak için sağa kaydır ➡
+800	⬇️ %1 sürüyor: bitince kopyalama başlayacak.
+801	⬜ Tüm işaretleri kaldır
+802	⭐ %1 koru
+805	🍏 iCloud fotoğraflarım
+806	🍏 Yeni bir iCloud kopyası zamanı
+807	🍏 iCloud Fotoğrafları'ndan ayrıl
+808	🎁 Deneme sürümü · %1
+809	🎉 Toplam %1 açıldı
+810	🎉 Gereksiz dosya yok: telefon temiz!
+811	🎉 Burada atılacak e-posta yok.
+812	🎉 Unutulmuş uygulama yok: hepsini kullanıyorsun!
+813	🎉 Burada artık hiçbir şey yok.
+814	🎉 Temizlenecek bir şey yok, her şey temiz!
+815	🎉 Bitti: %1 kopyalandı ve doğrulandı. Diskte toplam: %2 ve %3.
+816	🎉 Tüm dosyalar tamam
+817	🎬 Tanıtım
+818	🎬 TANITIM MODU: telefonda hiçbir şeye dokunulmaz
+819	🎬 Tanıtım modu: telefonda hiçbir şeye dokunulmaz
+820	👀 Her düğme önce e-posta listesini gösterir: tutmak istediklerinin işaretini kaldırır, sonra onaylarsın.
+821	👀 E-postalarını şimdi gör ve at
+822	👆 Attığın gönderenler
+823	👆 Gönderenler ayıklanıyor
+824	👆 Hızlı ayıklama
+825	👉 Şimdi: Google e-postasında %1 dosyasını indir (Wi-Fi'de). Sonra yeşil düğmeye dokun ve İndirilenler'den seç.
+826	👉 Şimdi: privacy.apple.com'da «Part %1» dosyasını indir (Wi-Fi'de). Sonra yeşil düğmeye dokun ve İndirilenler'den seç.
+827	👉 Şimdi yapılacak
+828	👉 indirilip işlenecek
+829	👍 Zaten en son sürüm sende (%1)
+830	👯 Kopya e-postalar
+831	💡 Yardım
+832	💡 İpucu: artık almamak için abonelikten çık («Sana en çok kim yazıyor» listesindeki düğme).
+833	💡 Takılırsan
+834	💡 Takılırsan: tüm ipuçları
+835	💾 «%2» üzerinde %1
+836	💾 Gece yedeği
+837	💾 %1 kaydet
+838	💾 Tüm fotoğraflarımı yedekle
+839	💾 E-postaları kaydet
+840	📁 Yedekleme klasörünü seç
+841	📁 Bir klasör seç
+842	📁 CleanSmart / Mails: e-postanın tamamı (.eml)\n📕 CleanSmart / PDF: tüm PDF'ler bir arada\n📎 CleanSmart / Pieces jointes: diğer dosyalar
+843	📁 Yedekleme klasörü kaydedildi
+844	📂 Bir ZIP dosyası işle
+845	📂 Bir ZIP dosyasını elle işle
+846	📅 Aylık raporun
+847	📎 Büyük e-postalar
+848	📕 PDF'leri işaretle
+849	📕 PDF İndirilenler / Clean Smart'a kaydedildi
+850	📕 Anı PDF'i oluşturuldu (tanıtım)
+851	📖 Kullanım kılavuzu
+852	📤 Gönder (%1)
+853	📦 En büyükler
+854	📦 Google Fotoğraflar'dan ayrıl
+855	📦 Yeni Google kopyan hazır olabilir
+856	📧 Google e-postasını aç
+857	📰 Bültenler ve reklamlar
+858	📱 Uygulamalarım
+859	📱 Google Fotoğraflar uygulamasını aç
+860	📱 Telefon
+861	📱 Telefon neredeyse dolu
+862	📸 %1 fotoğraf ve %2 video kopyalandı ve doğrulandı, yıla göre düzenlendi\n
+863	📸 Fotoğraflar
+864	🔄 Yeniden incele
+865	🔄 Yeniden ara
+866	🔄 Her şeye baştan başla (kopyamı sildim)
+867	🔍 Posta kutumu incele
+868	🔍 Telefonumu incele
+869	🔍 Ekli e-postaları ara
+870	🔎 Diski kontrol et (her fotoğrafı yeniden okur)
+871	🔒 Şifren telefonunda şifreli kalır. Yalnızca e-posta sağlayıcının sunucusuna gönderilir.
+872	🔓 İzin ver
+873	🔓 Dosyalara erişime izin ver
+874	🔓 Daha fazlası için bir izin
+875	🔓 Bir izin, yalnızca bir kez
+876	🔓 Yalnızca bir kez: Clean Smart'ın Download klasörünü görmesi için «Tüm dosyalara erişim»e izin ver. Yalnızca %1 dosyalarını okur.
+877	🔔 %1 e-postası
+878	🔔 Sana yazdığında haber verilecek
+879	🕰️ Eski e-postalar
+880	🕰️ Eski e-postalar (önemliler korunur)
+881	🗑️ Çöp kutusu boşaltıldı: %1 kalıcı olarak kazanıldı
+882	🗑️ Kaldır
+883	🗑️ Dosya telefondan silindi: sonraki için yer açıldı
+884	🗑️ «Her zaman at» gönderenlerim
+885	🗑️ %1 çöp kutusuna at
+886	🗑️ Silmek için %1 aç
+887	🗑️ E-postaları her gece çöp kutusuna gidecek
+888	🗑️ Bu ZIP'i telefondan sil (önerilen)
+889	🗑️ Her zaman at: %1   🛡️ Her zaman tut: %2   🔔 Bana haber ver: %3
+890	🗜️ Sıkıştır (%1)
+891	😴 3 aydır açılmadı
+892	🚫 Abonelikten çık
+894	🛡️ %1 (favori yapıldı)
+895	🛡️ %1 e-postanın «Korunanlar» klasörüne konuldu
+896	🛡️ Önemli gönderen (banka, resmi kurum, sağlık…): e-postaları asla atılmaz.
+897	🛡️ Silme düğmesi, kopya tamamlandığında ve 1 ile 2 numaralı kutular işaretlendiğinde görünür.
+898	🛡️ Bankandan, resmi kurumlardan veya sağlıktan gelen e-postalar asla çöp kutusuna gitmez.
+899	🛡️ Kopya kontrol edilmeden %1 asla boşaltılmaz: önce ilk kutuyu işaretle.
+900	🛡️ Koru (%1)
+901	🛡️ Önemli e-postalarımı yerleştir
+902	🛡️ E-postaları asla atılmayacak
+903	🤖 Fotoğraflarının otomatik kopyası
+904	🤖 Otomatik modu başlat
+905	🤖 Tamamen otomatik (en kolayı)
+906	🧊 Önbelleğini temizle
+907	🧬 %1 kopya ve 🎞️ %2 seri çekim fotoğrafı ayrıldı\n
+908	🧬 kopyalar   🎞️ başarısız seri çekimler\n📱 ekran görüntüleri   🎬 büyük videolar\n💬 WhatsApp medyası   👥 kopya kişiler\n✉️ bültenler ve büyük e-postalar
+909	🧭 Temizlik
+910	🧭 E-posta temizliği
+911	🧭 Rehberli temizlik
+912	🧹 Gereksiz dosyalar
+913	🧹 %1 e-postalarını at
+914	🧹 Güvenli temizlik
+915	🧹 E-postalar bu gece ayıklandı
+916	🧹 %1 çöp kutusuna at
+917	🧹 Güvenli temizlik
+918	🧹 Güvenli temizlik: bültenler, bildirimler, kopyalar
+919	🧹 Temizle · %1
+920	🧹 Temizle · %1 · %2

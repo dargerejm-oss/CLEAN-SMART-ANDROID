@@ -1,0 +1,897 @@
+0	\n\n%1 no se pudo copiar: vuelve a lanzar este mismo archivo.
+1	\n\n%1 «por revisar» irán a la papelera de Clean Smart: podrás recuperarlos durante 7 días.
+2	\n\nCuidado: el borrado se sincroniza con tu cuenta (Google…).
+3	\n\nEl disco o el teléfono está lleno: libera espacio (o cambia de disco en el paso 2) y vuelve a lanzar ESTE archivo. Nada se copiará dos veces.
+4	\n\nEl archivo está dañado o incompleto: vuelve a descargarlo desde el correo de Google y lánzalo otra vez. Lo ya copiado se conserva.
+5	\n\nLas copias se exportan primero en un archivo .vcf en tu carpeta de copia de seguridad.
+6	\n\nVuelve a lanzar el archivo ZIP que los contenía (o el modo automático): se copiarán de nuevo. No borres nada en %1 antes.
+7	\n\nPrimero se hace una copia en tu carpeta de copia de seguridad.
+8	\n💡 En Google, los correos y Google Fotos comparten los mismos 15 GB: limpiar los correos también libera espacio para tus fotos.
+9	 de unos %1 GB
+10	 · %1 duplicados, ráfagas o fallidas sin copia
+11	 · %1 a la papelera
+12	 · los archivos «por revisar» están en la papelera de Clean Smart (7 días)
+13	 · va a la papelera de Clean Smart
+14	%1 (%2): duplicados de más, ráfagas de más, fotos negras o blancas, capturas de más de un mes.\n\nVan a la papelera de la Galería (30 días para recuperarlas).
+15	%1 (%2) se borrarán DEFINITIVAMENTE para liberar el espacio ya.\n\nNo se podrán recuperar.
+16	%1 / %2  ·  %3 para tirar
+17	%1: %2 %
+18	%1: boletines y publicidad (%2 remitentes), notificaciones, correos duplicados.
+19	%1 GB · prevé %2
+20	%1 analizadas
+21	%1 con adjuntos (%2 con PDF)
+22	%1 con éxito. Si mandas los originales a la papelera, ganas %2.
+23	%1 este mes.
+24	%1 copiado(s) en tu carpeta de copia de seguridad.
+25	%1 de archivos inútiles: temporales, miniaturas, carpetas vacías, restos de apps.
+26	%1 de más de %2 meses
+27	%1 de tus remitentes «tirar siempre» enviados a la papelera (recuperables 30 días).
+28	%1 duplicados van a la papelera. Se conserva el primer ejemplar de cada correo.
+29	%1 y %2 copiadas y verificadas.
+30	%1 y %2 a salvo. Puedes borrarlo y descargar el siguiente.
+31	%1 archivo(s) guardado(s)
+32	%1 tirados
+33	%1 libres de %2
+34	%1 liberados en el teléfono
+35	%1 correos en el buzón · %2 analizados
+36	%1 min %2 s
+37	%1 boletines · %2 correos grandes
+38	%1 boletines, %2 correos grandes (%3).
+39	%1 fotos encontradas
+40	%1 fotos · %2 vídeos analizados
+41	%1 fotos · %2 vídeos · %3 duplicados y ráfagas descartados
+42	%1 prepara una copia de todas tus fotos. Hazlo exactamente como en este modelo:
+43	%1 se borrarán: ya no sirven o se vuelven a crear solos.
+44	%1 se borrarán para siempre.
+45	%1 de %2 elegidos · %3
+46	%1 de %2 archivos hechos
+47	%1 de %2 · %3
+48	%1 irán a la papelera de la Galería (recuperables 30 días).
+49	%1 van a la papelera de la Galería (recuperables 30 días).
+51	%1 · %2: duplicados, ráfagas de más, fotos negras o blancas, capturas de más de un mes. Se conservan las mejores.
+52	%1 · %2 en total. Toca una app para desinstalarla o vaciar su caché.
+53	%1 para tirar
+54	%1 para mirar una a una. Desliza a la izquierda para tirar, a la derecha para conservar (pasa a favorita ⭐).
+55	%1, %2, %3 copiados · %4 y %5 descartados.
+56	%1los correos de más de %2 años van a la papelera (excepto los importantes).
+57	(sin asunto)
+58	. %1 duplicadas o en ráfaga para ordenar: toca aquí.
+59	1 botón
+60	1 mes
+61	1. Desactivé la copia: app Google Fotos › tu foto arriba a la derecha › Ajustes de Fotos › Copia de seguridad › desactivar.
+62	1. En el iPhone, desactivé «Fotos de iCloud» (Ajustes › tu nombre › iCloud › Fotos).
+63	12 meses
+64	2. Abrí el disco en un PC y veo bien mis fotos, año por año.
+65	3 meses
+66	3. Recomendado: hice una 2.ª copia (otro disco o PC).
+67	4 pasos
+68	6 meses
+69	PANTALLA
+70	AUTOMÁTICO
+71	OTROS
+72	Dirección de correo
+73	Dirección, servidor y contraseña son obligatorios.
+74	Alerta quitada
+75	Alertas e informe del mes
+76	Análisis del buzón
+77	Analiza los 3.000 correos más recientes de la bandeja de entrada.
+78	Análisis de correos (%1 / %2)
+79	Análisis del teléfono
+80	Analiza tu buzón «%1»: boletines, correos grandes, correos antiguos. Los importantes siempre se conservan.
+81	Analizar mi buzón
+82	Analizar mi teléfono
+83	Cancelar
+84	Cancelar, no tirar nada
+85	Llamar
+87	Apple revisa la solicitud y luego envía un correo, normalmente en 3 a 7 días. Los archivos se descargan después en privacy.apple.com (inicia sesión desde el teléfono).
+88	Apple · Datos y privacidad
+89	Aplicar «tirar siempre» ahora
+90	Parada tras el archivo en curso…
+91	Detener
+92	¿Detener el modo automático?
+93	Detenido. Los archivos ya copiados están a salvo; los demás lo estarán la próxima vez, sin duplicados.
+94	Consejo: en Ajustes › Aplicaciones, toca una app (Chrome, Facebook…) › Almacenamiento › «Borrar caché».
+95	Ningún contacto duplicado
+96	Ninguna carpeta elegida
+97	Ninguna carpeta de copia
+98	Ningún archivo inútil.
+99	Ningún buzón conectado.
+100	No se detecta ninguna memoria ni disco. Conéctalo (adaptador USB-C) y vuelve a abrir este paso.
+101	Ningún vídeo se pudo reducir más.
+102	Otro
+103	Otros archivos de instalación (.apk)
+104	Antes de nada: analizar
+105	Con «Acceso a datos de uso», Clean Smart ve el espacio real de cada app y desde cuándo no la abres. No se envía nada a ningún sitio.
+106	BUZÓN
+107	Banco
+108	Banco, administración, salud, facturas y todos los correos con PDF: guardados, PDF reunidos, archivo index.html en el PC.
+109	Banco, administración, salud, facturas y todos los correos con PDF: guardados, PDF reunidos, archivo index.html en el PC. En tu buzón se guardan en «Protegidos».
+110	Banco, impuestos, salud, hogar, familia (tus contactos): guardados aparte, nunca tirados
+111	Batería baja (%1 %)
+112	Hola
+113	Tienda de moda
+114	¡Buzón en orden!
+115	Buzón lleno al %1 % (%2 / %3)
+116	Buzón protegido
+117	Buzón lleno al %1 % (%2 / %3).
+118	Conecta el cargador: un archivo puede tardar de 10 a 30 minutos.\n\nSi el teléfono se apaga, no se pierde nada: basta con volver a lanzar el mismo archivo.
+119	Conecta el cargador durante el proceso: un archivo grande puede tardar de 10 a 30 minutos. La pantalla sigue encendida.
+120	Conecta tu memoria o tu disco al teléfono y elige (o crea) una carpeta en él.
+121	Conectar la memoria o el disco
+122	Hecho: el próximo archivo se volverá a copiar entero.
+123	Anotado
+125	RECOMENDADO
+126	CONTACTO
+127	CONTACTOS
+128	Capturas de pantalla
+129	Tarjeta SD, memoria USB, Drive… elige dónde quieras
+130	Tarjeta SD, memoria USB, Google Drive…
+131	Este archivo ya está copiado y verificado. Repetirlo no crea duplicados, pero es inútil.\n\nSeguramente querías el siguiente (%1).
+132	Este mes
+133	Este año
+134	Cambiar de cuenta
+135	Cambiar de carpeta
+136	Cada domingo, los archivos inútiles seguros y el spam se van solos. Una notificación te dice cuánto espacio se ha liberado y si hay fotos que ordenar.
+137	Cada correo elegido se guarda en tu carpeta de copia:
+138	Cada vídeo se rehace en 720p, a menudo de 3 a 5 veces más ligero, y se guarda en Películas / Clean Smart.
+139	Elegir la carpeta en el disco
+140	Elegir una carpeta
+141	Primero elige la carpeta en tu memoria o disco (paso 2).
+142	Primero elige la carpeta en tu memoria o disco (paso «El disco»).
+143	Primero elige una carpeta: tarjeta SD, memoria USB o Google Drive.
+144	Primero elige una carpeta de copia (Opciones).
+145	Primero elige una carpeta de copia (tarjeta SD, memoria USB, Drive).
+146	Primero elige una carpeta de copia y haz una copia.
+147	Primero elige una carpeta de copia.
+148	Elige tus correos: se guardan con sus adjuntos, los PDF en una carpeta aparte
+149	Elige una tarjeta SD, una memoria USB o Google Drive
+150	Elección de las mejores fotos…
+153	Clean Smart: copia automática
+154	Clean Smart espera los archivos en Download…
+155	Clean Smart lee los últimos 3.000 correos (no se borra nada).
+156	Clean Smart mira todas tus fotos (no se borra nada).
+157	Clean Smart encuentra en un toque:
+158	Memoria USB (demostración)
+159	Memoria USB o disco duro, con un adaptador USB-C
+160	Paquetes y entregas
+161	¿Cuánto espacio hace falta?
+162	Como el teléfono
+163	Empezar
+164	Comprimir
+165	¿Comprimir %1?
+166	Compresión de vídeos
+167	Entendido
+168	Conecta tu buzón (Gmail, Outlook, Yahoo, Orange, Free…): boletines, correos grandes y antiguos para ordenar; los importantes siempre se conservan.
+169	Conectar
+170	Conectar mi buzón
+171	Conexión al servidor
+172	No se puede conectar:
+173	Conexión al correo
+174	Recomendado: hice una 2.ª copia (otro disco o PC).
+175	Contactos duplicados
+176	Continuar igualmente
+177	Copia automática
+178	Copiar los archivos uno a uno
+179	Copias idénticas — se conserva el original
+180	Papelera
+181	Papelera: %1
+182	Papelera de Clean Smart
+183	Papelera del correo
+184	Correcto, pero puede mejorar
+185	Crear exportación
+186	En Google Fotos: mantén pulsada una foto, marca días enteros y luego «Eliminar». La papelera de Google lo guarda todo 60 días.
+187	En Google Takeout, elige archivos de 2 GB: los tratamos uno a uno, el teléfono nunca necesita mucho espacio.
+188	En la solicitud de Apple, elige archivos de 1 o 2 GB: los tratamos uno a uno, el teléfono nunca necesita mucho espacio.
+189	En el correo de Google, cuenta los botones «Descargar»: es el número de archivos.
+190	Pedir la copia a %1
+191	Solicitar una copia de tus datos
+192	Pedida · espera el correo de %1
+193	Desde Android 11, ninguna app de limpieza puede vaciar la caché de otras apps ni los archivos del sistema. Android lo hace él mismo: este botón abre su pantalla «Liberar espacio».
+194	Desde la instalación
+195	Última comprobación
+196	Apps descargadas pero no instaladas. Por revisar.
+197	Disco
+198	Disco no reconocido: usa un adaptador USB-C (OTG). Una memoria en exFAT funciona en todas partes (FAT32 rechaza archivos de más de 4 GB).
+199	Disco lleno: conecta un disco más grande y elígelo en el paso «El disco». Seguimos donde estábamos, sin duplicados.
+200	Documentos de Descargas sin tocar desde hace 6 meses. Por revisar.
+201	Carpeta Papelera no encontrada en esta cuenta.
+202	Carpeta Papelera no encontrada.
+203	Carpeta Spam no encontrada en esta cuenta.
+204	Carpeta de copia
+205	Carpeta de copia no encontrada.
+206	Carpetas de caché
+207	Carpetas dejadas por apps que ya no están en el teléfono. Por revisar.
+208	Carpetas vacías
+209	Carpetas vacías…
+210	Duplicados
+211	Duplicados y ráfagas de más (se conserva la mejor foto), fotos negras o blancas, capturas viejas. Toca una foto para conservarla. Todo va a la papelera de la Galería (30 días).
+212	Duplicados, ráfagas de más, fotos negras o blancas, capturas viejas.
+213	Duplicados, ráfagas, borrosas
+215	Desmarca los correos que quieras conservar. Los correos de tu banco, de impuestos, de salud y los remitentes «conservar siempre» nunca están en esta lista. Todo va a la papelera de tu correo (recuperable).
+216	Demostración…
+217	Moviendo a la papelera…
+218	Desactivado por defecto. Si lo activas, las fotos (y los contactos en .vcf) se copian en la carpeta antes de cada limpieza, por seguridad.
+219	Ya son todas favoritas 👍
+220	En modo demostración no se trata ningún archivo. Sal de la demostración (Opciones) para hacerlo de verdad.
+221	En plena forma
+222	Enviar %1
+223	Enviar el PDF recuerdo
+224	Enviar enlace de descarga por correo · Exportar una vez
+225	Error inesperado
+226	Espacio liberado
+227	Espacio liberado desde el principio: %1. ¿Un pequeño análisis?
+228	Espacio para recuperar
+229	Y tus correos
+230	Facturas y papeles
+231	¿Hacer la limpieza segura?
+232	Hecho ✔
+233	Familia
+234	Cerrar
+235	Archivo %1
+236	Archivo %1 ya hecho
+237	Archivo ilegible
+238	Archivos de instalación ya instalados
+239	Archivos de trabajo de las apps, en el almacenamiento del teléfono. Se vuelven a crear si hace falta.
+240	Archivos inútiles
+241	Archivos apartados, se vacía sola a los 7 días
+242	Archivos temporales
+243	Archivos temporales, miniaturas, carpetas vacías, restos de apps
+244	Archivos temporales, miniaturas, carpetas vacías, restos de apps. Las fotos y la música nunca se tocan.
+245	Borrosa
+246	Borrosas, demasiado oscuras o claras — revisa antes de marcar
+249	CONSERVADA
+250	Conservar en el teléfono las fotos de los últimos…
+251	Conservados
+253	Gmail exige una CONTRASEÑA DE APLICACIÓN (16 letras):\n1. Activa la verificación en 2 pasos en tu cuenta de Google.\n2. Abre myaccount.google.com/apppasswords\n3. Crea una contraseña llamada «Clean Smart» y pégala aquí.
+256	Google Fotos
+258	Google envía un correo cuando está listo: en unas horas o unos días. Puedes cerrar la app mientras tanto.
+259	Grande
+260	Correos grandes (+ 5 MB)
+261	Vídeos grandes
+262	Grupo %1 · %2 fotos
+263	Acceso rechazado. Gmail, Yahoo o iCloud necesitan una CONTRASEÑA DE APLICACIÓN, no tu contraseña habitual.
+264	Necesita una buena limpieza
+265	Solo quedan %1. Abre Clean Smart para liberar espacio en un toque.
+266	No contienen nada.
+267	Todavía ocupan espacio durante 30 días
+268	Se guardan en la carpeta «Protegidos» de tu correo. Se repite cada noche.
+269	No se puede deshacer: puede que los archivos ya se hayan borrado definitivamente.
+270	No se puede crear la carpeta %1
+271	No se pueden proteger estas fotos
+272	No se puede vaciar la papelera
+273	Impuestos
+274	Impuestos - Administración
+275	Indica el servidor IMAP de tu correo (puerto 993, SSL).
+276	Pedí la copia
+277	Abrí el disco en un PC y veo bien mis fotos, año por año.
+278	Traté todos los archivos
+279	Nunca tirados, guardados en «Protegidos»
+280	Libero el buzón
+281	Libero espacio
+282	Pongo a salvo lo importante
+283	Pongo a salvo las buenas
+284	Ordeno por remitente
+285	Reviso lo dudoso
+286	¿Tirar %1?
+287	¿Tirar estos correos?
+288	¿Tirar las copias?
+289	¿Tirar los correos grandes?
+290	¿Tirar los boletines?
+291	¿Tirar los originales?
+292	¿Tirar los correos antiguos?
+293	Registros, copias temporales, descargas abandonadas. Ya no sirven.
+294	La dirección y la contraseña se borrarán del teléfono.
+295	Lo importante está a salvo, el resto se ha ido
+296	El original no se toca: después te propondré mandarlo a la papelera.\n\nPuede tardar unos minutos.
+297	DE NOCHE
+298	LIBERAR ESPACIO
+300	La copia del disco se ha borrado: Clean Smart lo vuelve a copiar todo desde el principio.
+301	La papelera está vacía.
+302	El espacio de los correos se libera cuando se vacía la papelera de tu correo (normalmente en 30 días).
+303	No se pudo hacer la copia. Abre Clean Smart para comprobar la carpeta.
+304	Idioma
+305	La limpieza guiada lo hace todo en el orden correcto. El botón verde es siempre el siguiente paso.
+306	El resumen, y cómo liberar tu cuenta %1
+307	Se conserva el contacto original.
+308	El disco (o el teléfono) está lleno: la copia se detuvo limpiamente.\n\nConecta un disco más grande, elígelo en el paso 2 y vuelve a lanzar el modo automático: seguimos sin duplicados.
+309	El disco no tiene espacio suficiente: quedan %1, hacen falta unos %2 para este archivo.\n\n• Libera espacio en el disco, o\n• conecta un disco más grande y elígelo en el paso «El disco» (seguiremos donde estamos).\n\nNo se ha tocado nada.
+310	El disco no es accesible.\n\n• Comprueba que esté bien conectado (adaptador USB-C).\n• En el paso «El disco», elige la carpeta de nuevo.
+311	La carpeta de copia no es accesible. Abre Clean Smart > Opciones para elegirla.
+312	La carpeta de copia ya no es accesible. Elígela de nuevo.
+313	La carpeta «%1» no se encuentra en el disco. Comprueba que el disco esté conectado (paso 2).
+314	Primero se termina el archivo en curso. Los archivos ya copiados están a salvo; los demás lo estarán la próxima vez, sin duplicados.
+315	El enlace del correo de Google caduca en una semana aproximadamente: si es el caso, vuelve a pedir la exportación (no se pierde nada, seguimos sin duplicados).
+316	El mes pasado
+317	La limpieza segura
+318	Repetirlo igualmente
+319	El teléfono
+320	El teléfono está casi lleno (hacen falta al menos 300 MB libres para trabajar).\n\n• Vacía la papelera de la Galería.\n• Borra los ZIP ya tratados (Descargas).\n• Haz la limpieza guiada de Clean Smart.\n\nNo se ha tocado nada.
+321	¿El teléfono se apagó o el disco se desconectó? Vuelve a lanzar el mismo ZIP: Clean Smart sigue sin perder ni duplicar nada.
+322	Lectura de la galería
+323	Lectura de las fechas de las fotos…
+324	Lectura de los vídeos
+325	No se puede leer: %1
+326	Los .apk de apps ya instaladas: ya no sirven.
+327	Los 200 últimos correos de la papelera de tu correo. Marca los que quieras devolver a tu bandeja de entrada.
+328	Las 30 fotos y vídeos que más espacio ocupan
+329	Las demás casillas: no hace falta
+330	Los archivos de Apple siguen disponibles unas 2 semanas en privacy.apple.com: si ya pasó, haz una nueva solicitud (no se pierde nada, seguimos sin duplicados).
+331	Los archivos ya enviados a la papelera se pueden recuperar en la Galería.
+332	Los correos de más de %1 años van a la papelera de tu correo. Los importantes se conservan.
+333	Los correos de más de 2 años van a la papelera de tu correo.
+334	Los correos de más de 5 MB van a la papelera de tu correo.
+335	Los boletines, la publicidad, las notificaciones y los correos duplicados van a la papelera de tu correo (toda la bandeja de entrada).\n\nLos correos importantes nunca se tocan.
+336	Primero las fotos (ordenar, conservar lo mejor, guardar, liberar), luego los archivos inútiles del teléfono, luego los correos.
+337	Las fotos de más de %1 meses ya guardadas salen del teléfono (papelera, 30 días).
+338	Las fotos favoritas (o protegidas con el botón 🛡️) nunca se proponen
+339	Fotos algo borrosas, WhatsApp, capturas recientes: tú decides.
+340	Las fotos, los vídeos y la música nunca se tocan.
+341	Las más antiguas solo se proponen para la papelera si ya están en tu copia.
+342	Las mejores fotos del mes o del año, para enviar a un ser querido
+343	Las más grandes y las que ya no abres: desinstálalas en un gesto
+344	El spam va a la papelera de tu correo. Desmarca un correo si no es spam.
+345	Liberar
+346	¿Liberar %1?
+347	Liberar %1 es opcional. %2 no permite a ninguna app borrar tus fotos: lo haces tú, cuando estés seguro.
+348	Liberar el buzón
+349	Liberando el buzón
+350	¿Liberar el buzón?
+351	Liberar espacio
+352	Liberar espacio, PDF recuerdo…
+353	Lista de las fotos del disco…
+354	AHORA
+355	Correo (opcional, para tus correos)
+356	Correos
+357	Correos de Gmail: %1
+358	Correos con adjuntos
+359	Correos de más de 2 años
+360	Correos duplicados
+361	Correos duplicados…
+362	Hogar
+363	Avisarme
+364	¡Gracias por probar Clean Smart! Instala la versión completa para seguir limpiando tu teléfono.
+365	Mis apps
+366	Mis archivos más grandes
+367	Mis reglas
+368	Manda a la papelera las fotos de más de %1 meses ya guardadas
+369	Poner a salvo
+370	Poniendo a salvo lo importante
+371	Miniaturas
+372	Actualización
+373	Moviendo a la papelera…
+374	Manual de uso
+375	Manual de uso no encontrado.
+376	Modo demostración terminado
+377	Modificar ▼
+378	Muestra la app con fotos, correos y contactos falsos. No se toca nada en el teléfono: ideal para presentar Clean Smart.
+379	Contraseña (vacía = conservar la actual)
+380	Contraseña de aplicación
+381	Archivos de WhatsApp
+382	Limpieza completa
+383	Limpieza guiada
+384	Limpieza guiada de los correos
+385	Limpieza segura del buzón
+386	¡Limpieza terminada!
+387	NUEVO
+388	Limpieza del buzón
+389	Limpieza de archivos inútiles
+390	Limpiar
+391	¿Limpiar %1?
+392	Limpiar el teléfono
+393	¿Limpiar los archivos inútiles?
+394	Boletines y notificaciones…
+395	Boletines y publicidad
+396	Boletines, publicidad, notificaciones y correos duplicados.
+397	Número de archivos en el correo
+398	Normal
+399	Nueva versión %1 disponible
+401	Olvidar
+402	¿Olvidar esta cuenta?
+403	Sí, terminado
+405	Abierta hoy
+406	Abierta hace %1
+407	Abriendo %1…
+408	Abre Clean Smart para ver qué hacer. No se pierde nada.
+409	Abre tu página de Google y mira el espacio usado por Google Fotos. Escríbelo aquí (en GB).
+410	Abre «Vídeos grandes», márcalos y luego «Comprimir»
+411	Abrir
+412	Abrir Google Fotos
+413	Abrir Google Takeout
+414	Abrir Fotos de iCloud
+415	Abrir la página de contraseña de aplicación
+416	Abrir privacy.apple.com
+417	Abrir «Liberar espacio» de Android
+418	PDF recuerdo
+419	FOTOS Y VÍDEOS
+420	PROTECCIÓN
+421	No hay fotos para este periodo.
+422	No abierta desde hace más de un año
+423	Saltar
+425	Pequeñas copias de las fotos para mostrarlas. Se vuelven a crear solas.
+426	Fotos
+427	Fotos: %1 · vídeos: %2 · duplicados descartados: %3
+428	Fotos del fin de semana
+429	Fotos duplicadas, ráfagas, fotos fallidas, vídeos grandes, correos inútiles… todo ocupa espacio.
+430	Fotos y vídeos recibidos o enviados
+431	Fotos borrosas o fallidas
+432	Fotos de iCloud
+433	Fotos parecidas
+434	Fotos, teléfono y correos, paso a paso
+435	Espacio ocupado: %1
+436	Más herramientas
+437	Más de 100 MB cada uno
+438	Para ganar puntos: %1.
+439	Para obtener la versión completa de Clean Smart, o para cualquier pregunta, escríbeme:
+440	Para obtener la versión completa, escríbeme:
+441	Para encontrar los archivos inútiles, Clean Smart debe poder ver el almacenamiento del teléfono: autoriza «Acceso a todos los archivos». No se envía nada a ningún sitio.
+442	Para otra cuenta u otro disco. Los archivos ya copiados en el disco no se tocan.
+443	Proteger mis favoritas
+444	Prudente
+445	Prudente: se proponen menos fotos. Estricta: más.
+446	Preparación
+447	Preparación…
+448	Avísame si el teléfono casi no tiene espacio (menos de 1 GB), y un pequeño resumen el día 1 de cada mes.
+449	Prevé al menos %1 en la memoria o el disco (10 % de margen).
+450	QUIÉN TE ESCRIBE MÁS
+451	Cuando haya llegado el correo de %1
+452	Salir
+453	Dejar Google Fotos
+454	Dejar Fotos de iCloud
+455	BÚSQUEDA DE FOTOS FALLIDAS
+456	Ráfagas: conservamos la mejor…
+457	Ráfagas — se conserva la más nítida
+458	Guardando: %1
+459	Búsqueda de duplicados
+460	Búsqueda de archivos inútiles…
+461	Búsqueda de correos
+462	Búsqueda de correos con PDF
+463	Búsqueda de correos importantes (%1 / %2)
+464	Búsqueda de fotos borrosas
+465	Búsqueda de fotos fallidas
+466	Búsqueda de fotos parecidas
+467	Búsqueda de adjuntos (%1 / %2)
+468	Buscar una actualización
+469	Empezar de nuevo
+470	Empezar de nuevo con otra cuenta
+471	¿Empezar desde el principio?
+472	Ver el tamaño de %1
+473	Vuelve a analizar tras un cambio.
+474	Recuperar correos
+475	Poner el contador a cero
+476	Devolviendo los archivos
+477	Restos de apps desinstaladas
+478	Restos de apps desinstaladas…
+479	Recibidos varias veces con segundos de diferencia: %1
+480	Nada
+481	No se ha borrado nada.
+482	No se pierde nada
+483	No se borra nada sin tu permiso: todo pasa por la papelera.
+484	Nada que liberar: ninguna foto antigua está aún en la copia. Lanza primero «Guardar todas mis fotos».
+485	RESULTADO
+486	Regla quitada
+487	Recupera correos enviados a la papelera de tu correo
+488	Recuperar mis fotos de iCloud (antiguo iPhone)
+489	Reducir mis vídeos
+490	Ajustes avanzados
+491	Ajustes de almacenamiento de Android
+492	COPIA DE SEGURIDAD
+494	Sin acceso a las fotos, Clean Smart no puede analizar nada.
+495	Salud
+496	Copia %1 / %2
+497	Copia automática cada noche
+498	Copia antes de borrar
+499	Guardando mis buenas fotos
+500	Guardando correos
+501	Guardando correos importantes
+502	Guardando el correo %1 / %2
+503	Guardar antes de borrar
+504	Guardar correos
+505	Guardar mis buenas fotos
+506	Inicia sesión con tu ID de Apple
+507	Servidor IMAP
+508	Servidor no encontrado: comprueba internet y el nombre del servidor.
+509	Sus correos van a la papelera cada noche, solos
+510	Solo las buenas fotos: nunca duplicados, ráfagas de más o fallidas. Las favoritas van también a «Mes meilleures» (Mis mejores).
+511	Solo se guardan las buenas fotos, en una memoria, un disco o Google Drive. Incluso Google Fotos se puede recuperar.
+512	Solo se copian las fotos nuevas cada vez.
+513	Solo se envían los 20 primeros archivos.
+514	Si se rechaza la conexión, crea una contraseña de aplicación en la seguridad de la cuenta Microsoft (verificación en 2 pasos necesaria).
+515	Si no, el iPhone vuelve a enviar las fotos a iCloud, y borrar en iCloud también puede borrarlas del iPhone.
+516	Si no, el teléfono vuelve a enviar las fotos a Google, y borrar en Google también puede borrarlas de este teléfono.
+517	Rebajas de invierno
+518	A menudo inútiles después
+520	Almacenamiento del teléfono
+521	Estricta
+522	Siguiente
+523	Borra tú mismo este archivo en Descargas para hacer sitio.
+524	Borrar
+525	¿Borrar %1?
+526	¿Borrar este archivo del teléfono?
+527	Borrar cada archivo del teléfono una vez copiado y verificado (recomendado: libera espacio)
+528	Borrar los duplicados
+529	En Gmail, se quedan en la bandeja y reciben una etiqueta «Protegidos». Se repite cada noche.
+530	En Google Takeout, en 1 minuto
+531	En account.apple.com → Contraseñas de apps → crear una.
+532	En el iPhone: Ajustes › tu nombre › iCloud: se muestra el espacio usado por «Fotos». O mira en icloud.com. Escríbelo aquí (en GB).
+533	En el iPhone o en icloud.com/photos: selecciona fotos y luego «Eliminar». El álbum «Eliminado» las guarda 30 días.
+534	En la página que se abre: Almacenamiento › «Borrar caché». Android lo exige, Clean Smart no puede hacerlo por ti.
+535	En el teléfono bastan 2 o 3 GB libres: un solo archivo a la vez. Libre ahora: %1.
+536	En privacy.apple.com, en 2 minutos
+537	En privacy.apple.com, los archivos se llaman «iCloud Photos Part 1 of 12»: el último número (aquí 12) es el número de archivos. Clean Smart también lo lee solo.
+538	Seguridad de la cuenta → Generar contraseña de aplicación, y pégala aquí.
+539	Seguridad, fotos fallidas, demostración…
+540	Severidad
+541	TERMINADO
+542	Tu correo
+543	Tu periodo de prueba de 30 días ha terminado.
+544	Tamaño de %1 (GB)
+545	Tamaño del texto
+546	Tamaño máximo de los archivos: 1 GB o 2 GB
+547	Tiempo transcurrido
+548	Tiempo restante
+549	Terminar la solicitud
+550	Terminado
+551	Las fotos de tu iPhone en una memoria o un disco, por año, sin duplicados
+552	Tus fotos de los 2 últimos meses aún no están en el disco. Pide una nueva copia en Google Takeout y el modo automático solo añadirá las fotos nuevas, sin duplicados.
+553	Tus fotos de los 2 últimos meses aún no están en el disco. Pide una nueva copia a Apple: Clean Smart solo añadirá las fotos nuevas, sin duplicados.
+554	Tus fotos a salvo
+555	Tus ajustes y tu buzón se conservarán.
+556	¿Tu teléfono está lleno?
+557	Tu teléfono está limpio y tus fotos a salvo
+558	Tu teléfono y tu buzón están limpios, tus fotos a salvo
+559	Toca aquí para descargarla y luego abre el archivo para instalarla
+560	Toca aquí para la versión completa o una pregunta
+561	Solo toca los enlaces «Descargar» del correo de Google. Clean Smart copia cada archivo al disco en cuanto llega a Download, incluso mientras se descargan los demás.
+562	Toca un remitente: tirar siempre, conservar siempre, avisarme, darme de baja.
+563	Toca un remitente en «Quién te escribe más» para elegir
+564	Toca una imagen para marcarla · pulsación larga para verla en grande
+565	Tocar para analizar
+566	Tocar para ver
+567	Conservar siempre
+568	Tirar siempre
+569	¿Todos los archivos están tratados?
+570	Todos los correos de %1 (al menos %2 correos) van a la papelera de tu correo.
+571	Todos los correos de %1 remitente(s) de boletines van a la papelera de tu correo (toda la bandeja de entrada, no solo los analizados).\n\nPuedes recuperarlos desde la papelera.
+572	Marcar todo
+573	Desmarcar todo
+574	Deseleccionar todo
+575	Mandar todo a la papelera
+576	Limpiar todo
+577	Todo pasa por la papelera: 30 días para recuperar. Y «Me he equivocado» lo deshace en un gesto.
+578	Empezar todo de nuevo
+579	¿Empezar todo de nuevo?
+580	Todo su contenido está copiado y verificado en el disco. Borrarlo deja sitio al siguiente.\n\nTus fotos también siguen en Google Fotos.
+581	¡Todo va bien, sigue así!
+582	Todo estaba ya guardado 👍
+583	Todas tus fotos en una memoria o un disco, por año, sin duplicados
+584	Orden antes de la copia
+585	Orden de remitentes
+586	Orden rápido
+587	¡Orden terminado!
+588	Primero ordenar, conservar lo mejor, guardar solo las buenas fotos, liberar espacio y luego limpiar los correos.
+589	Primero ordenar, conservar lo mejor, guardar solo las buenas fotos y luego liberar espacio.
+590	Primero ordenar, poner a salvo lo importante y luego vaciar el buzón. Los correos de tu banco, la administración o la salud nunca se tiran.
+591	Ordenar deslizando
+592	Ordenar los remitentes
+593	Ordenar, conservar, guardar, liberar
+594	Ordenar, poner a salvo lo importante, vaciar el buzón
+595	Ordenar, proteger
+596	Demasiado clara
+597	Demasiado pequeña
+598	Demasiado oscura
+599	Muy grande
+600	¿Borraste tu copia del disco y ya no se copia nada? Toca «Empezar todo de nuevo (borré mi copia)» abajo de la pantalla y vuelve a lanzar tus archivos ZIP.
+601	¿Tenías un iPhone? Tus fotos de iCloud en una memoria o un disco
+602	Puedes salir de la app para tocar los enlaces: la copia continúa (notificación «Copia automática»).
+603	Tipo: .zip   ·   Tamaño: 2 GB
+604	Descarga UN solo ZIP a la vez, con Wi-Fi. Trátalo, bórralo y luego descarga el siguiente.
+605	Solo descarga los archivos en privacy.apple.com. Clean Smart copia cada archivo al disco en cuanto llega a Download.
+606	Teléfono
+607	Teléfono lleno: vacía la papelera de la Galería, borra los ZIP ya tratados, haz la limpieza guiada. Hacen falta al menos 300 MB libres.
+608	Un botón y está ordenado
+609	Una tarjeta por remitente: desliza a la izquierda para tirar TODOS sus correos, a la derecha para conservarlo.
+610	Una notificación cuando te escribe
+611	Una foto a la vez: desliza a la izquierda para tirar, a la derecha para conservar
+612	¿Una pregunta, un problema, la versión completa? Escríbeme:
+613	Usa tu dirección y tu contraseña de Free.
+614	Usa tu dirección y tu contraseña de La Poste.
+615	Usa tu dirección y tu contraseña de Orange.
+616	Usa tu dirección y tu contraseña de SFR.
+617	Hacia las 2 h, las fotos nuevas se copian en tu carpeta de copia. Una notificación te avisa si no ha funcionado.
+618	Versión completa
+619	Versión instalada: %1
+620	Vaciar
+621	¿Vaciar la papelera?
+622	Vaciar la papelera de Clean Smart
+623	¿Vaciar la papelera de Clean Smart?
+624	Vaciar la papelera ahora
+625	Vaciar ahora
+626	Correos antiguos a la papelera…
+627	Descargas antiguas (más de 6 meses)
+628	Ver la lista y tirar
+629	Ver la lista y liberar
+630	Ver el correo no deseado y mandarlo a la papelera
+631	Ver los consejos
+632	Ver mi espacio de Google
+633	Ver mi espacio de iCloud
+634	Tu factura
+635	Viajes y reservas
+636	Comprobación de la copia
+637	Comprobación del disco
+638	Comprueba en el correo de Google que cada archivo (001, 002, 003…) se ha tratado.
+639	Comprobar y luego liberar %1 (si quieres)
+641	Ojos cerrados
+642	app
+643	apps
+644	calculando…
+645	compresión imposible
+646	contacto duplicado
+647	contactos duplicados
+648	copia
+649	copias
+650	de tu fototeca está a salvo
+651	últimos archivos
+652	duplicado
+653	duplicados
+654	error
+655	errores
+656	remitente
+657	remitentes
+658	limpia tu buzón
+659	archivo
+660	archivo copiado
+661	archivo copiado y verificado
+662	archivo no se pudo
+663	archivos
+664	archivos copiados
+665	archivos copiados y verificados
+666	archivos no se pudieron
+667	Fotos de iCloud
+668	día
+669	día restante
+670	días
+671	días restantes
+672	lo más sencillo
+673	libres · %1 % usado
+674	libera espacio con la Limpieza completa
+675	liberados
+676	correo
+677	correo recuperado
+678	correos
+679	correos recuperados
+680	limpia los archivos inútiles del teléfono
+681	archivo nuevo
+682	archivos nuevos
+683	paso a paso
+684	foto
+685	foto conservada
+686	foto o vídeo
+687	foto o vídeo tomado
+688	foto protegida
+689	fotos
+690	fotos conservadas
+691	fotos o vídeos
+692	fotos o vídeos tomados
+693	fotos protegidas
+694	luego «Paso siguiente»:
+695	ráfaga
+696	ráfagas
+697	guarda tus fotos en una memoria o tarjeta SD
+698	ya están a salvo en tu copia (mismo nombre, mismo tamaño).\n\nVan a la papelera de la Galería (recuperables 30 días). Las más recientes se quedan en el teléfono.
+701	de %1 contactos
+702	ordena tus fotos (duplicados, ráfagas, borrosas)
+703	descarga
+704	descargas
+705	usado
+706	vídeo
+707	vídeo comprimido
+708	vídeos
+709	vídeos comprimidos
+710	correo antiguo
+711	correos antiguos
+712	«Archivo dañado»: la descarga se cortó. Vuelve a descargar este ZIP desde el correo de Google y lánzalo otra vez: lo ya copiado no se volverá a copiar.
+713	«Liberar espacio»: conservar en el teléfono las fotos de los últimos…
+714	CONSERVAR
+715	TIRAR
+716	PARA ENCONTRAR RÁPIDO
+717	Para limpiar
+718	Úsalo si borraste tu copia del disco: Clean Smart olvida lo que ya copió y el próximo archivo ZIP se volverá a copiar entero.\n\nSe conservan el disco elegido y tus ajustes. No se borra nada en el disco ni en %1.
+719	No se puede escribir
+720	Electricidad
+721	para tirar
+722	elemento
+723	elementos
+724	… y %1 correos más del mismo tipo (marcados).
+725	‹ Volver
+726	ℹ️ %1 leídas sin error. Las huellas de la copia ya no están en este teléfono: imposible comparar.
+727	↩️ %1 en la bandeja de entrada
+728	↩️ %1 devueltos a la galería
+729	↩️ %1 devueltos a su sitio
+730	↩️ Me he equivocado: devolver los %1
+731	↩️ Correos recuperados (demostración)
+732	↩️ Devolver %1 a mi bandeja
+733	↩️ Recuperar correos
+734	↩️ Devolver todo a su sitio
+735	⏳ Esperando el siguiente archivo en Download. Toca los enlaces «Descargar» del correo.
+736	⏳ Esperando el siguiente archivo en Download…
+737	⏳ copiando…
+738	⏳ más tarde
+739	⏹ Detener
+740	☑️ Marcar todo
+741	⚙️ Caché de las apps y archivos del sistema
+742	⚙️ Opciones
+743	⚠️ %1: volver a lanzar.\n
+744	⚠️ %1 con error: vuelve a lanzar los ZIP marcados «volver a lanzar» antes de seguir.
+745	⚠️ %1 del disco ya no es idéntico o ya no se lee:\n
+746	⚠️ Ninguna copia esta noche
+747	⚠️ Archivo %1 por repetir
+748	⚠️ Hacen falta unos %1, quedan %2. Puedes empezar: cuando esté lleno, conectarás otro disco y seguiremos sin duplicados.
+749	⚠️ La copia se ha detenido: %1\n\nNo se pierde nada: vuelve a lanzar el modo automático, seguiremos sin duplicados.
+750	⚠️ No empezamos
+751	⚠️ Copia de la noche
+752	⚠️ dañado: vuelve a descargarlo desde el correo, se copiará solo
+753	⚠️ disco lleno
+754	⚠️ sin empezar
+755	⚠️ volver a lanzar
+756	⚠️ volver a lanzar (%1)
+757	⛔ La copia no está completa (archivo dañado, por repetir o aún sin copiar). Termina primero la copia: no borres nada en %1.
+758	✅ %1: terminado y verificado.\n
+759	✅ %1 duplicado(s) borrado(s)
+760	✅ %1 correo(s) guardado(s) · %2 PDF · archivo CleanSmart/Mails/index.html al día
+761	✅ %1 correos importantes a salvo · %2 PDF reunidos · archivo index.html al día
+762	✅ %1 foto(s) nueva(s) guardada(s)
+763	✅ %1 · desde hace %2
+764	✅ %1 a salvo
+765	✅ 312 correos importantes a salvo (demostración)
+766	✅ 7.958 buenas fotos guardadas (demostración)
+767	✅ Espacio suficiente en «%1».
+768	✅ Buzón conectado
+769	✅ Disco comprobado: %1 releídas, ninguna dañada.
+770	✅ Duplicados borrados (demostración)
+771	✅ Archivo %1 terminado
+772	✅ La copia del disco está completa y verificada.
+773	✅ Correos guardados (demostración)
+774	✅ copia completa y verificada\n✅ copia del teléfono desactivada\n✅ fotos revisadas en el disco\n\n¿Abrir %1? Tú eliges qué borrar.
+775	✅ copiado y verificado
+776	✅ copiado, verificado, borrado del teléfono
+777	✉️ %1 tirados · %2 liberados en tu buzón
+778	✉️ %1 correos
+779	✉️ %1 correos (carpeta «Mails Gmail», abre index.html)\n
+780	✉️ Buzón
+781	✉️ Correos
+782	✉️ Correos de %1
+783	✓ %1 elegido
+784	✨ %1 liberados (recuperables 30 días en la papelera de la Galería)
+785	✨ %1 correos enviados a la papelera
+786	✨ %1 enviados a la papelera (demostración)
+787	✨ %1 enviados a la papelera de tu correo (recuperables con «Recuperar correos»)
+788	✨ %1 limpiados · %2 liberados
+789	✨ %1 correos antiguos a la papelera (los importantes se conservan)
+790	✨ 1.249 correos a la papelera (demostración)
+791	✨ 1,1 GB liberados (demostración)
+792	✨ 6,4 GB liberados (demostración)
+793	✨ Correos a la papelera (demostración)
+794	✨ Limpieza automática del domingo
+795	✨ Limpieza del domingo
+796	✨ Correos antiguos a la papelera (demostración)
+797	❤️ Salud del teléfono: %1 / 100
+798	⬅ Desliza a la izquierda: todos sus correos a la papelera   ·   Desliza a la derecha: se conserva ➡
+799	⬅ Desliza a la izquierda para tirar   ·   Desliza a la derecha para conservar ➡
+800	⬇️ %1 en curso: la copia empezará en cuanto termine.
+801	⬜ Desmarcar todo
+802	⭐ Proteger mis %1
+805	🍏 Mis fotos de iCloud
+806	🍏 Piensa en una nueva copia de iCloud
+807	🍏 Dejar Fotos de iCloud
+808	🎁 Versión de prueba · %1
+809	🎉 %1 liberados en total
+810	🎉 Ningún archivo inútil: ¡el teléfono está limpio!
+811	🎉 Ningún correo que tirar aquí.
+812	🎉 Ninguna app olvidada: ¡las usas todas!
+813	🎉 Ya no queda nada aquí.
+814	🎉 Nada que limpiar, ¡todo está limpio!
+815	🎉 Terminado: %1 copiados y verificados. En total en el disco: %2 y %3.
+816	🎉 Todos los archivos están hechos
+817	🎬 Demostración
+818	🎬 MODO DEMOSTRACIÓN: no se toca nada en el teléfono
+819	🎬 Modo demostración: no se toca nada en el teléfono
+820	👀 Cada botón muestra primero la lista de correos: desmarcas los que quieras conservar y validas.
+821	👀 Ver y tirar sus correos ahora
+822	👆 Los remitentes que has tirado
+823	👆 Orden de remitentes
+824	👆 Orden rápido
+825	👉 Ahora: en el correo de Google, descarga el archivo %1 (con Wi-Fi). Luego toca el botón verde y elígelo en Descargas.
+826	👉 Ahora: en privacy.apple.com, descarga «Part %1» (con Wi-Fi). Luego toca el botón verde y elígelo en Descargas.
+827	👉 Para hacer ahora
+828	👉 para descargar y luego tratar
+829	👍 Ya tienes la última versión (%1)
+830	👯 Correos duplicados
+831	💡 Ayuda
+832	💡 Consejo: date de baja para no recibirlos más (botón en la lista «Quién te escribe más»).
+833	💡 Si se bloquea
+834	💡 Si se bloquea: todos los consejos
+835	💾 %1 en «%2»
+836	💾 Copia de la noche
+837	💾 Guardar %1
+838	💾 Guardar todas mis fotos
+839	💾 Guardar correos
+840	📁 Elegir la carpeta de copia
+841	📁 Elegir una carpeta
+842	📁 CleanSmart / Mails: el correo completo (.eml)\n📕 CleanSmart / PDF: todos los PDF reunidos\n📎 CleanSmart / Pieces jointes: los demás archivos
+843	📁 Carpeta de copia guardada
+844	📂 Tratar un archivo ZIP
+845	📂 Tratar un archivo ZIP a mano
+846	📅 Tu informe del mes
+847	📎 Correos grandes
+848	📕 Marcar los PDF
+849	📕 PDF guardado en Descargas / Clean Smart
+850	📕 PDF recuerdo creado (demostración)
+851	📖 Manual de uso
+852	📤 Enviar (%1)
+853	📦 Las más grandes
+854	📦 Dejar Google Fotos
+855	📦 Tu nueva copia de Google quizá esté lista
+856	📧 Abrir el correo de Google
+857	📰 Boletines y publicidad
+858	📱 Mis apps
+859	📱 Abrir la app Google Fotos
+860	📱 Teléfono
+861	📱 Teléfono casi lleno
+862	📸 %1 fotos y %2 vídeos copiados y verificados, ordenados por año\n
+863	📸 Fotos
+864	🔄 Analizar de nuevo
+865	🔄 Buscar de nuevo
+866	🔄 Empezar todo de nuevo (borré mi copia)
+867	🔍 Analizar mi buzón
+868	🔍 Analizar mi teléfono
+869	🔍 Buscar los correos con adjuntos
+870	🔎 Comprobar el disco (relee cada foto)
+871	🔒 Tu contraseña se queda cifrada en tu teléfono. Solo se envía al servidor de tu correo.
+872	🔓 Autorizar
+873	🔓 Autorizar el acceso a los archivos
+874	🔓 Un permiso para saber más
+875	🔓 Un permiso, una sola vez
+876	🔓 Una sola vez: autoriza «Acceso a todos los archivos» para que Clean Smart vea la carpeta Download. Solo lee los archivos de %1.
+877	🔔 Correo de %1
+878	🔔 Te avisaremos cuando te escriba
+879	🕰️ Correos antiguos
+880	🕰️ Correos antiguos (se conservan los importantes)
+881	🗑️ Papelera vaciada: %1 recuperados para siempre
+882	🗑️ Desinstalar
+883	🗑️ Archivo borrado del teléfono: sitio libre para el siguiente
+884	🗑️ Mis remitentes «tirar siempre»
+885	🗑️ Mandar %1 a la papelera
+886	🗑️ Abrir %1 para borrar
+887	🗑️ Sus correos irán a la papelera cada noche
+888	🗑️ Borrar este ZIP del teléfono (recomendado)
+889	🗑️ Tirar siempre: %1   🛡️ Conservar siempre: %2   🔔 Avisarme: %3
+890	🗜️ Comprimir (%1)
+891	😴 Sin abrir desde hace 3 meses
+892	🚫 Darse de baja
+894	🛡️ %1 (marcadas como favoritas)
+895	🛡️ %1 guardados en la carpeta «Protegidos» de tu correo
+896	🛡️ Remitente importante (banco, administración, salud…): sus correos nunca se tiran.
+897	🛡️ El botón para borrar aparece cuando la copia está completa y las casillas 1 y 2 están marcadas.
+898	🛡️ Los correos de tu banco, de la administración o de salud nunca van a la papelera.
+899	🛡️ Nunca se libera %1 antes de comprobar la copia: marca primero la primera casilla.
+900	🛡️ Proteger (%1)
+901	🛡️ Guardar mis correos importantes
+902	🛡️ Sus correos nunca se tirarán
+903	🤖 Copia automática de tus fotos
+904	🤖 Iniciar el modo automático
+905	🤖 Todo automático (lo más sencillo)
+906	🧊 Vaciar su caché
+907	🧬 %1 duplicados y 🎞️ %2 fotos de ráfaga descartados\n
+908	🧬 los duplicados   🎞️ las fotos fallidas en ráfaga\n📱 las capturas de pantalla   🎬 los vídeos grandes\n💬 los archivos de WhatsApp   👥 los contactos duplicados\n✉️ los boletines y correos grandes
+909	🧭 Limpieza
+910	🧭 Limpieza de correos
+911	🧭 Limpieza guiada
+912	🧹 Archivos inútiles
+913	🧹 Tirar los correos de %1
+914	🧹 La limpieza segura
+915	🧹 Correos ordenados esta noche
+916	🧹 Mandar %1 a la papelera
+917	🧹 Limpieza segura
+918	🧹 Limpieza segura: boletines, notificaciones, duplicados
+919	🧹 Limpiar · %1
+920	🧹 Limpiar · %1 · %2

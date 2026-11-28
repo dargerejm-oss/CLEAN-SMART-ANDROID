@@ -1,0 +1,897 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 をコピーできませんでした：同じファイルをもう一度実行してください。
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n「要確認」の %1 は Clean Smart のごみ箱に入ります：7 日間は元に戻せます。
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\n注意：削除はアカウント（Google など）と同期されます。
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nディスクまたはスマホがいっぱいです：空き容量を作る（または手順 2 でディスクを変更）してから、このファイルをもう一度実行してください。二重にコピーされることはありません。
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nファイルが壊れているか不完全です：Google のメールからもう一度ダウンロードし、再実行してください。コピー済みのものは残ります。
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nコピーはまずバックアップフォルダに .vcf ファイルとして書き出されます。
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nそれらを含む ZIP ファイル（または自動モード）をもう一度実行してください：再コピーされます。その前に %1 では何も削除しないでください。
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nまずバックアップフォルダにコピーが作られます。
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 Google ではメールと Google フォトが同じ 15 GB を共有しています：メールを整理すると写真の空き容量も増えます。
+ sur environ %1 Go	 （約 %1 GB 中）
+ · %1 doublons, rafales ou ratées non sauvegardés	 · %1 件の重複・連写・失敗写真はバックアップしません
+ · %1 à la corbeille	 · %1 をごみ箱へ
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · 「要確認」のファイルは Clean Smart のごみ箱にあります（7 日間）
+ · va dans la corbeille Clean Smart	 · Clean Smart のごみ箱へ
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1（%2）：余分な重複、余分な連写、真っ黒・真っ白な写真、1 か月以上前のスクリーンショット。\n\nギャラリーのごみ箱に入ります（30 日以内なら復元可）。
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1（%2）はすぐに空き容量を作るため完全に削除されます。\n\n元に戻せません。
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  削除候補 %3
+%1 : %2 %	%1：%2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1：メルマガと広告（送信者 %2）、通知、重複メール。
+%1 Go · prévois %2	%1 GB · %2 を用意
+%1 analysées	%1 件を分析
+%1 avec pièces jointes (dont %2 avec PDF)	添付ファイルあり %1 件（うち PDF %2 件）
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 件成功。元ファイルをごみ箱に入れると %2 空きます。
+%1 ce mois-ci. 	今月 %1。
+%1 copié(s) dans ton dossier de sauvegarde.	%1 件をバックアップフォルダにコピーしました。
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	不要ファイル %1：一時ファイル、サムネイル、空のフォルダ、アプリの残り。
+%1 de plus de %2 mois 	%2 か月以上前の %1
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	「常に削除」の送信者から %1 をごみ箱へ（30 日間復元可）。
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	重複 %1 件をごみ箱へ。各メールの最初の 1 通は残ります。
+%1 et %2 copiées et vérifiées.	%1 と %2 をコピーして確認しました。
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 と %2 は安全です。削除して次のファイルをダウンロードできます。
+%1 fichier(s) sauvegardé(s)	%1 件のファイルをバックアップ
+%1 jetés	%1 件削除
+%1 libres sur %2	空き %1 / %2
+%1 libérés sur le téléphone	スマホで %1 空きました
+%1 mails dans la boîte · %2 analysés	受信箱に %1 通 · %2 を分析
+%1 min %2 s	%1 分 %2 秒
+%1 newsletters · %2 gros mails	メルマガ %1 · 大きなメール %2
+%1 newsletters, %2 gros mails (%3).	メルマガ %1、大きなメール %2（%3）。
+%1 photos trouvées	写真が %1 枚見つかりました
+%1 photos · %2 vidéos analysées	写真 %1 枚 · 動画 %2 本を分析
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	写真 %1 · 動画 %2 · 重複と連写 %3 を除外
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 がすべての写真のコピーを用意します。この見本のとおりにしてください：
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 を削除します：もう不要か、自動で作り直されます。
+%1 seront supprimés pour de bon.	%1 を完全に削除します。
+%1 sur %2 choisis · %3	%1 / %2 を選択 · %3
+%1 sur %2 fichiers faits	%1 / %2 ファイル完了
+%1 sur %2 · %3	%1 / %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 はギャラリーのごみ箱に入ります（30 日間復元可）。
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 はギャラリーのごみ箱に入ります（30 日間復元可）。
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2：重複、余分な連写、真っ黒・真っ白な写真、1 か月以上前のスクリーンショット。いちばん良いものは残ります。
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	合計 %1 · %2。アプリをタップするとアンインストールやキャッシュ削除ができます。
+%1 à jeter	削除候補 %1
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	%1 を 1 枚ずつ確認。左にスワイプで削除、右で残す（お気に入りになります ⭐）。
+%1, %2, %3 copiés · %4 et %5 écartés.	%1、%2、%3 をコピー · %4 と %5 を除外。
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1%2 年以上前のメールはごみ箱へ（重要なものを除く）。
+(sans objet)	（件名なし）
+. %1 en double ou en rafale à trier : touche ici.	。重複・連写 %1 を整理：ここをタップ。
+1 bouton	ボタン 1 つ
+1 mois	1 か月
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. バックアップをオフにした：Google フォト アプリ › 右上のプロフィール写真 › フォトの設定 › バックアップ › オフ。
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. iPhone で「iCloud 写真」をオフにした（設定 › 自分の名前 › iCloud › 写真）。
+12 mois	12 か月
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. PC でディスクを開き、年ごとに写真が見えることを確認した。
+3 mois	3 か月
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. おすすめ：2 つ目のコピーを作った（別のディスクか PC）。
+4 étapes	4 ステップ
+6 mois	6 か月
+AFFICHAGE	表示
+AUTOMATIQUE	自動
+AUTRE	その他
+Adresse mail	メールアドレス
+Adresse, serveur et mot de passe sont obligatoires.	アドレス、サーバー、パスワードは必須です。
+Alerte retirée	通知を解除しました
+Alertes et rapport du mois	通知と月次レポート
+Analyse de la boîte mail	メールボックスを分析中
+Analyse des 3 000 mails les plus récents de la boîte de réception.	受信箱の最新 3,000 通を分析します。
+Analyse des mails (%1 / %2)	メールを分析中（%1 / %2）
+Analyse du téléphone	スマホを分析中
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	メールボックス「%1」を分析：メルマガ、大きなメール、古いメール。重要なメールは必ず残ります。
+Analyser ma boîte mail	メールボックスを分析
+Analyser mon téléphone	スマホを分析
+Annuler	キャンセル
+Annuler, ne rien jeter	キャンセル、何も削除しない
+Appeler	電話する
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple がリクエストを確認し、通常 3〜7 日でメールを送ります。その後 privacy.apple.com からファイルをダウンロードします（スマホからサインイン）。
+Apple · Données et confidentialité	Apple · データとプライバシー
+Appliquer « toujours jeter » maintenant	「常に削除」を今すぐ適用
+Arrêt après le fichier en cours…	現在のファイルの後で停止します…
+Arrêter	停止
+Arrêter le mode automatique ?	自動モードを停止しますか？
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	停止しました。コピー済みのファイルは安全です。残りは次回、重複なしでコピーされます。
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	ヒント：設定 › アプリ で、アプリ（Chrome、Facebook など）をタップ › ストレージ › 「キャッシュを削除」。
+Aucun contact en double	重複した連絡先はありません
+Aucun dossier choisi	フォルダが選ばれていません
+Aucun dossier de sauvegarde	バックアップフォルダがありません
+Aucun fichier inutile.	不要なファイルはありません。
+Aucune boîte mail connectée.	メールボックスが接続されていません。
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	USB メモリもディスクも見つかりません。接続して（USB-C アダプタ）、この手順をもう一度開いてください。
+Aucune vidéo n'a pu être réduite davantage.	これ以上小さくできる動画はありませんでした。
+Autre	その他
+Autres fichiers d'installation (.apk)	その他のインストールファイル（.apk）
+Avant tout : analyser	まず：分析
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	「使用状況へのアクセス」があると、Clean Smart は各アプリの実際のサイズと最後に開いた日がわかります。どこにも何も送信されません。
+BOÎTE MAIL	メールボックス
+Banque	銀行
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	銀行、役所、医療、請求書、PDF 付きのすべてのメール：保存し、PDF をまとめ、PC 用の index.html アーカイブを作成。
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	銀行、役所、医療、請求書、PDF 付きのすべてのメール：保存し、PDF をまとめ、PC 用の index.html アーカイブを作成。メールボックスでは「保護」に整理されます。
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	銀行、税金、医療、住まい、家族（連絡先）：別に整理し、決して削除しません
+Batterie faible (%1 %)	バッテリー残量低下（%1 %）
+Bonjour	こんにちは
+Boutique Mode	ファッションショップ
+Boîte mail en ordre !	メールボックスは整っています！
+Boîte mail remplie à %1 % (%2 / %3)	メールボックス使用率 %1 %（%2 / %3）
+Boîte protégée	保護されたボックス
+Boîte remplie à %1 % (%2 / %3). 	使用率 %1 %（%2 / %3）。
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	充電器をつないでください：1 ファイルに 10〜30 分かかることがあります。\n\nスマホの電源が切れても何も失われません：同じファイルをもう一度実行するだけです。
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	処理中は充電器をつないでください：大きなファイルは 10〜30 分かかることがあります。画面はつけたままになります。
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	USB メモリまたはディスクをスマホにつなぎ、その中のフォルダを選んで（または作って）ください。
+Brancher la clé ou le disque	USB メモリまたはディスクをつなぐ
+C'est fait : le prochain fichier sera entièrement recopié.	完了：次のファイルは最初から全部コピーされます。
+C'est noté	了解
+CONSEILLÉ	おすすめ
+CONTACT	お問い合わせ
+CONTACTS	連絡先
+Captures d'écran	スクリーンショット
+Carte SD, clé USB, Drive… choisis où tu veux	SD カード、USB メモリ、Drive… 好きな場所を選べます
+Carte SD, clé USB, Google Drive…	SD カード、USB メモリ、Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	このファイルはコピー・確認済みです。やり直しても重複はできませんが、不要です。\n\nたぶん次のファイル（%1）のことですね。
+Ce mois-ci	今月
+Cette année	今年
+Changer de compte	アカウントを変更
+Changer de dossier	フォルダを変更
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	毎週日曜日、安全な不要ファイルと迷惑メールが自動で消えます。空いた容量と、整理する写真があるかを通知でお知らせします。
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	選んだメールはバックアップフォルダに保存されます：
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	各動画を 720p で作り直し（多くは 3〜5 倍軽く）、ムービー / Clean Smart に保存します。
+Choisir le dossier sur le disque	ディスク上のフォルダを選ぶ
+Choisir un dossier	フォルダを選ぶ
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	先に USB メモリまたはディスクのフォルダを選んでください（手順 2）。
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	先に USB メモリまたはディスクのフォルダを選んでください（手順「ディスク」）。
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	先にフォルダを選んでください：SD カード、USB メモリ、Google Drive。
+Choisis d'abord un dossier de sauvegarde (Options).	先にバックアップフォルダを選んでください（オプション）。
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	先にバックアップフォルダを選んでください（SD カード、USB メモリ、Drive）。
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	先にバックアップフォルダを選び、バックアップを取ってください。
+Choisis d'abord un dossier de sauvegarde.	先にバックアップフォルダを選んでください。
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	メールを選ぶ：添付ファイルごと保存され、PDF は別フォルダへ
+Choisis une carte SD, une clé USB ou Google Drive	SD カード、USB メモリ、Google Drive を選んでください
+Choix des plus belles photos…	いちばん良い写真を選んでいます…
+Clean Smart : copie automatique	Clean Smart：自動コピー
+Clean Smart attend les fichiers dans Download…	Clean Smart は Download のファイルを待っています…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart は最新 3,000 通のメールを読みます（何も削除しません）。
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart はすべての写真を確認します（何も削除しません）。
+Clean Smart trouve en un clic :	Clean Smart がワンタップで見つけます：
+Clé USB (démonstration)	USB メモリ（デモ）
+Clé USB ou disque dur, avec un adaptateur USB-C	USB メモリまたは外付けディスク、USB-C アダプタで
+Colis et livraisons	荷物と配達
+Combien de place faut-il ?	どれくらいの容量が必要？
+Comme le téléphone	スマホと同じ
+Commencer	はじめる
+Compresser	圧縮
+Compresser %1 ?	%1 を圧縮しますか？
+Compression des vidéos	動画を圧縮中
+Compris	わかりました
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	メールボックスを接続（Gmail、Outlook、Yahoo、Orange、Free など）：メルマガ、大きなメールや古いメールを整理。重要なメールは必ず残ります。
+Connecter	接続
+Connecter ma boîte mail	メールボックスを接続
+Connexion au serveur	サーバーに接続中
+Connexion impossible : 	接続できません：
+Connexion à la messagerie	メールサービスに接続中
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	おすすめ：2 つ目のコピーを作った（別のディスクか PC）。
+Contacts en double	重複した連絡先
+Continuer quand même	それでも続ける
+Copie automatique	自動コピー
+Copier les fichiers un par un	ファイルを 1 つずつコピー
+Copies identiques — l'original est gardé	同一のコピー — オリジナルは残ります
+Corbeille	ごみ箱
+Corbeille : %1	ごみ箱：%1
+Corbeille Clean Smart	Clean Smart のごみ箱
+Corbeille de la messagerie	メールのごみ箱
+Correct, mais peut mieux faire	まずまず、改善の余地あり
+Créer une exportation	エクスポートを作成
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	Google フォトで：写真を長押しし、日ごとにまとめて選んで「削除」。Google のごみ箱は 60 日間すべてを保管します。
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Google データ エクスポートでは 2 GB のファイルを選んでください：1 つずつ処理するので、スマホに大きな空きは要りません。
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	Apple へのリクエストでは 1 GB か 2 GB のファイルを選んでください：1 つずつ処理するので、スマホに大きな空きは要りません。
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	Google のメールの「ダウンロード」ボタンを数えてください：それがファイルの数です。
+Demander la copie à %1	%1 にコピーを依頼
+Demander une copie de tes données	データのコピーを依頼
+Demandée · attends le mail de %1	依頼済み · %1 からのメールを待ちます
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	Android 11 以降、クリーニングアプリは他のアプリのキャッシュやシステムファイルを削除できません。Android 自体が行います：このボタンで「空き容量を増やす」画面を開きます。
+Depuis l'installation	インストール以降
+Dernière vérification	最終確認
+Des applis téléchargées mais pas installées. À vérifier.	ダウンロードしたが未インストールのアプリ。要確認。
+Disque	ディスク
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	ディスクが認識されません：USB-C（OTG）アダプタを使ってください。exFAT でフォーマットしたメモリはどこでも使えます（FAT32 は 4 GB を超えるファイル不可）。
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	ディスクがいっぱい：もっと大きなディスクをつなぎ、手順「ディスク」で選んでください。重複なしで続きから再開します。
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	ダウンロード内の 6 か月間触れていない書類。要確認。
+Dossier Corbeille introuvable sur ce compte.	このアカウントにごみ箱フォルダが見つかりません。
+Dossier Corbeille introuvable.	ごみ箱フォルダが見つかりません。
+Dossier Spam introuvable sur ce compte.	このアカウントに迷惑メールフォルダが見つかりません。
+Dossier de sauvegarde	バックアップフォルダ
+Dossier de sauvegarde introuvable.	バックアップフォルダが見つかりません。
+Dossiers cache	キャッシュフォルダ
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	スマホにもうないアプリが残したフォルダ。要確認。
+Dossiers vides	空のフォルダ
+Dossiers vides…	空のフォルダ…
+Doublons	重複
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	余分な重複と連写（いちばん良い写真は残ります）、真っ黒・真っ白な写真、古いスクリーンショット。残したい写真はタップ。すべてギャラリーのごみ箱へ（30 日間）。
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	重複、余分な連写、真っ黒・真っ白な写真、古いスクリーンショット。
+Doublons, rafales, floues	重複、連写、ピンぼけ
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	残したいメールのチェックを外してください。銀行、税金、医療、「常に残す」送信者のメールはこの一覧に入りません。すべてメールのごみ箱へ（復元可）。
+Démonstration…	デモ…
+Déplacement vers la corbeille…	ごみ箱へ移動中…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	初期設定ではオフ。オンにすると、整理の前に写真（と連絡先の .vcf）を念のためフォルダにコピーします。
+Elles sont déjà toutes en favori 👍	すべてお気に入り済みです 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	デモモードではファイルは処理されません。実際に行うにはデモを終了してください（オプション）。
+En pleine forme	絶好調
+Envoyer %1	%1 を送る
+Envoyer le PDF souvenir	思い出 PDF を送る
+Envoyer le lien par e-mail · Exporter une fois	ダウンロード リンクをメールで送信 · 1 回エクスポート
+Erreur inattendue	予期しないエラー
+Espace libéré	空いた容量
+Espace libéré depuis le début : %1. Une petite analyse ?	これまでに空いた容量：%1。ちょっと分析しますか？
+Espace à récupérer	取り戻せる容量
+Et tes mails	そしてメール
+Factures et papiers	請求書と書類
+Faire le ménage sûr ?	安全な整理を実行しますか？
+Fait ✔	完了 ✔
+Famille	家族
+Fermer	閉じる
+Fichier %1	ファイル %1
+Fichier %1 déjà fait	ファイル %1 は処理済み
+Fichier illisible	読み取れないファイル
+Fichiers d'installation déjà installés	インストール済みアプリのインストールファイル
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	スマホ内のアプリの作業ファイル。必要なら作り直されます。
+Fichiers inutiles	不要なファイル
+Fichiers mis de côté, vidée toute seule après 7 jours	保留中のファイル、7 日後に自動で空になります
+Fichiers temporaires	一時ファイル
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	一時ファイル、サムネイル、空のフォルダ、アプリの残り
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	一時ファイル、サムネイル、空のフォルダ、アプリの残り。写真と音楽には触れません。
+Floue	ピンぼけ
+Floues, trop sombres ou trop claires — vérifie avant de cocher	ピンぼけ、暗すぎ・明るすぎ — チェックする前に確認
+GARDÉE	保存
+Garder sur le téléphone les photos des derniers…	スマホに残す写真：直近…
+Gardés	残す
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail には アプリ パスワード（16 文字）が必要です：\n1. Google アカウントで 2 段階認証プロセスをオンにします。\n2. myaccount.google.com/apppasswords を開きます\n3. 「Clean Smart」という名前のパスワードを作り、ここに貼り付けます。
+Google Photos	Google フォト
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	準備ができると Google からメールが届きます：数時間〜数日。その間アプリを閉じてもかまいません。
+Gros	大
+Gros mails (+ 5 Mo)	大きなメール（5 MB 以上）
+Grosses vidéos	大きな動画
+Groupe %1 · %2 photos	グループ %1 · 写真 %2 枚
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	ログインが拒否されました。Gmail、Yahoo、iCloud はいつものパスワードではなく アプリ パスワードが必要です。
+Il a besoin d'un bon ménage	しっかり整理が必要です
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	残り %1 だけです。Clean Smart を開けばワンタップで空き容量を作れます。
+Ils ne contiennent rien.	中身は空です。
+Ils prennent encore de la place pendant 30 jours	30 日間はまだ容量を使います
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	メールボックスの「保護」フォルダに整理されます。毎晩くり返します。
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	元に戻せません：ファイルはすでに完全に削除されている可能性があります。
+Impossible de créer le dossier %1	フォルダ %1 を作成できません
+Impossible de protéger ces photos	これらの写真を保護できません
+Impossible de vider la corbeille	ごみ箱を空にできません
+Impôts	税金
+Impôts - Administration	税金・役所
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	メールサービスの IMAP サーバーを入力してください（ポート 993、SSL）。
+J'ai demandé la copie	コピーを依頼した
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	PC でディスクを開き、年ごとに写真が見えることを確認した。
+J'ai traité tous les fichiers	すべてのファイルを処理した
+Jamais jetés, rangés dans « Protégés »	決して削除せず、「保護」に整理
+Je libère la boîte	受信箱をすっきり
+Je libère la place	空き容量を作る
+Je mets l'important à l'abri	大事なものを守る
+Je mets à l'abri les bonnes	良い写真を守る
+Je trie par expéditeur	送信者ごとに整理
+Je vérifie le douteux	迷うものを確認
+Jeter %1 ?	%1 を削除しますか？
+Jeter ces mails ?	これらのメールを削除しますか？
+Jeter les copies ?	コピーを削除しますか？
+Jeter les gros mails ?	大きなメールを削除しますか？
+Jeter les newsletters ?	メルマガを削除しますか？
+Jeter les originaux ?	元ファイルを削除しますか？
+Jeter les vieux mails ?	古いメールを削除しますか？
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	ログ、一時バックアップ、中断したダウンロード。もう不要です。
+L'adresse et le mot de passe seront effacés du téléphone.	アドレスとパスワードはスマホから消去されます。
+L'important est à l'abri, le reste est parti	大事なものは守られ、残りは片付きました
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	元ファイルには触れません：あとでごみ箱に入れるかお尋ねします。\n\n数分かかることがあります。
+LA NUIT	夜間
+LIBÉRER LA PLACE	空き容量を作る
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	ディスク上のコピーが消されました：Clean Smart が最初からすべてコピーし直します。
+La corbeille est vide.	ごみ箱は空です。
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	メールの容量は、メールのごみ箱が空になると空きます（通常 30 日以内）。
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	バックアップできませんでした。Clean Smart を開いてフォルダを確認してください。
+Langue	言語
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	ガイド付き整理は正しい順番ですべて行います。緑のボタンが常に次のステップです。
+Le bilan, et comment libérer ton compte %1	まとめと、%1 アカウントの空け方
+Le contact d'origine est gardé.	元の連絡先は残ります。
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	ディスク（またはスマホ）がいっぱいです：コピーは安全に停止しました。\n\nもっと大きなディスクをつなぎ、手順 2 で選んで自動モードを再実行してください：重複なしで続けます。
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	ディスクの空きが足りません：残り %1、このファイルには約 %2 必要です。\n\n• ディスクの空きを作る、または\n• もっと大きなディスクをつなぎ、手順「ディスク」で選ぶ（今の位置から再開します）。\n\n何も変更していません。
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	ディスクにアクセスできません。\n\n• しっかりつながっているか確認（USB-C アダプタ）。\n• 手順「ディスク」でフォルダを選び直してください。
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	バックアップフォルダにアクセスできません。Clean Smart > オプションで選んでください。
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	バックアップフォルダにアクセスできなくなりました。選び直してください。
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	ディスクに「%1」フォルダが見つかりません。ディスクがつながっているか確認してください（手順 2）。
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	まず現在のファイルを完了します。コピー済みのファイルは安全です。残りは次回、重複なしで。
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	Google のメールのリンクは約 1 週間で期限が切れます：その場合はもう一度エクスポートを依頼してください（何も失われず、重複なしで続けます）。
+Le mois dernier	先月
+Le ménage sûr	安全な整理
+Le refaire quand même	それでもやり直す
+Le téléphone	スマホ
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	スマホがほぼいっぱいです（作業には 300 MB 以上の空きが必要）。\n\n• ギャラリーのごみ箱を空にする。\n• 処理済みの ZIP を削除する（ダウンロード）。\n• Clean Smart のガイド付き整理を行う。\n\n何も変更していません。
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	スマホの電源が切れた、またはディスクが外れた？ 同じ ZIP をもう一度実行するだけ：Clean Smart は何も失わず重複もなく再開します。
+Lecture de la galerie	ギャラリーを読み込み中
+Lecture des dates des photos…	写真の日付を読み込み中…
+Lecture des vidéos	動画を読み込み中
+Lecture impossible : %1	読み取れません：%1
+Les .apk d'applis déjà installées : ils ne servent plus.	インストール済みアプリの .apk：もう不要です。
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	メールのごみ箱の最新 200 通。受信箱に戻すものにチェックしてください。
+Les 30 photos et vidéos qui prennent le plus de place	いちばん容量を使っている写真と動画 30 件
+Les autres cases : inutile	ほかの項目：不要
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	Apple のファイルは privacy.apple.com で約 2 週間ダウンロードできます：過ぎた場合は新しく依頼してください（何も失われず、重複なしで続けます）。
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	ごみ箱に入れたファイルはギャラリーから復元できます。
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	%1 年以上前のメールはメールのごみ箱へ。重要なメールは残ります。
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	2 年以上前のメールはメールのごみ箱へ。
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	5 MB を超えるメールはメールのごみ箱へ。
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	メルマガ、広告、通知、重複メールはメールのごみ箱へ（受信箱全体）。\n\n重要なメールには決して触れません。
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	まず写真（整理、良いものを残す、バックアップ、空ける）、次にスマホの不要ファイル、最後にメール。
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	バックアップ済みの %1 か月以上前の写真をスマホから外します（ごみ箱、30 日間）。
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	お気に入りの写真（🛡️ ボタンで保護したもの）は提案されません
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	少しピンぼけの写真、WhatsApp、最近のスクリーンショット：あなたが決めます。
+Les photos, vidéos et musiques ne sont jamais touchées.	写真、動画、音楽には決して触れません。
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	古い写真は、すでにバックアップにある場合だけごみ箱候補になります。
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	今月や今年のいちばん良い写真を、大切な人に送る
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	いちばん大きいアプリと、もう開かないアプリ：ワンタップでアンインストール
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	迷惑メールはメールのごみ箱へ。迷惑メールでなければチェックを外してください。
+Libérer	空ける
+Libérer %1 ?	%1 空けますか？
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	%1 を空けるのは任意です。%2 はどのアプリにも写真の削除を許可していません：確信できたら、ご自身で行ってください。
+Libérer la boîte	受信箱をすっきり
+Libérer la boîte mail	メールボックスを空けています
+Libérer la boîte mail ?	メールボックスを空けますか？
+Libérer la place	空き容量を作る
+Libérer la place, PDF souvenir…	空き容量を作る、思い出 PDF…
+Liste des photos sur le disque…	ディスク上の写真を一覧中…
+MAINTENANT	今すぐ
+Mail (facultatif, pour tes mails)	メール（任意、メール用）
+Mails	メール
+Mails Gmail : %1	Gmail のメール：%1
+Mails avec pièces jointes	添付ファイル付きメール
+Mails de plus de 2 ans	2 年以上前のメール
+Mails en double	重複メール
+Mails en double…	重複メール…
+Maison	住まい
+Me prévenir	知らせる
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	Clean Smart をお試しいただきありがとうございます！ 引き続きスマホを整理するには完全版をインストールしてください。
+Mes applis	マイアプリ
+Mes plus gros fichiers	いちばん大きなファイル
+Mes règles	マイルール
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	バックアップ済みの %1 か月以上前の写真をごみ箱へ
+Mettre à l'abri	守る
+Mettre à l'abri l'important	大事なものを守っています
+Miniatures	サムネイル
+Mise à jour	更新中
+Mise à la corbeille…	ごみ箱へ移動中…
+Mode d'emploi	使い方ガイド
+Mode d'emploi introuvable.	使い方ガイドが見つかりません。
+Mode démonstration terminé	デモモードを終了しました
+Modifier ▼	編集 ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	偽の写真、メール、連絡先でアプリを紹介します。スマホには何も触れません：Clean Smart の紹介に最適。
+Mot de passe (vide = garder l'actuel)	パスワード（空欄 = 今のものを使う）
+Mot de passe d'application	アプリ パスワード
+Médias WhatsApp	WhatsApp のメディア
+Ménage complet	まるごと整理
+Ménage guidé	ガイド付き整理
+Ménage guidé des mails	メールのガイド付き整理
+Ménage sûr de la boîte mail	メールボックスの安全な整理
+Ménage terminé !	整理完了！
+NOUVEAU	新機能
+Nettoyage de la boîte mail	メールボックスを整理中
+Nettoyage des fichiers inutiles	不要ファイルを整理中
+Nettoyer	整理する
+Nettoyer %1 ?	%1 を整理しますか？
+Nettoyer le téléphone	スマホを整理
+Nettoyer les fichiers inutiles ?	不要ファイルを整理しますか？
+Newsletters et notifications…	メルマガと通知…
+Newsletters et pubs	メルマガと広告
+Newsletters, pubs, notifications et mails en double.	メルマガ、広告、通知、重複メール。
+Nombre de fichiers dans le mail	メール内のファイル数
+Normale	標準
+Nouvelle version %1 disponible	新しいバージョン %1 があります
+Oublier	削除する
+Oublier ce compte ?	このアカウントを削除しますか？
+Oui, c'est fini	はい、完了です
+Ouverte aujourd'hui	今日開いた
+Ouverte il y a %1	%1 前に開いた
+Ouverture de %1…	%1 を開いています…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	Clean Smart を開いて、何をすればよいか確認してください。何も失われていません。
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	Google のページを開き、Google フォトの使用容量を確認して、ここに入力してください（GB）。
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	「大きな動画」を開き、チェックして「圧縮」
+Ouvrir	開く
+Ouvrir Google Photos	Google フォトを開く
+Ouvrir Google Takeout	Google データ エクスポートを開く
+Ouvrir iCloud Photos	iCloud 写真を開く
+Ouvrir la page du mot de passe d'application	アプリ パスワードのページを開く
+Ouvrir privacy.apple.com	privacy.apple.com を開く
+Ouvrir « Libérer de l'espace » d'Android	Android の「空き容量を増やす」を開く
+PDF souvenir	思い出 PDF
+PHOTOS ET VIDÉOS	写真と動画
+PROTECTION	保護
+Pas de photos pour cette période.	この期間の写真はありません。
+Pas ouverte depuis plus d'un an	1 年以上開いていない
+Passer	スキップ
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	表示用の写真の小さなコピー。自動で作り直されます。
+Photos	写真
+Photos : %1 · vidéos : %2 · doublons écartés : %3	写真：%1 · 動画：%2 · 除外した重複：%3
+Photos du week-end	週末の写真
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	重複写真、連写、失敗写真、大きな動画、不要なメール… すべて容量を使います。
+Photos et vidéos reçues ou envoyées	受信・送信した写真と動画
+Photos floues ou ratées	ピンぼけ・失敗写真
+Photos iCloud	iCloud 写真
+Photos similaires	似ている写真
+Photos, téléphone et mails, étape par étape	写真、スマホ、メールを順番に
+Place prise : %1	使用容量：%1
+Plus d'outils	その他のツール
+Plus de 100 Mo chacune	1 本 100 MB 超
+Pour gagner des points : %1.	ポイントを上げるには：%1。
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	Clean Smart の完全版、またはご質問はこちらへ：
+Pour obtenir la version complète, écris-moi :	完全版はこちらへご連絡ください：
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	不要ファイルを見つけるには、Clean Smart がスマホのストレージを見る必要があります：「すべてのファイルへのアクセス」を許可してください。どこにも何も送信されません。
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	別のアカウントまたは別のディスク用。ディスクにコピー済みのファイルには触れません。
+Protéger mes favoris	お気に入りを保護
+Prudente	控えめ
+Prudente : moins de photos proposées. Stricte : davantage.	控えめ：提案する写真が少なめ。厳しめ：多め。
+Préparation	準備中
+Préparation…	準備中…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	スマホの空きがほぼなくなったら（1 GB 未満）お知らせし、毎月 1 日に簡単なまとめを届けます。
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	USB メモリかディスクに少なくとも %1 を用意してください（10 % の余裕）。
+QUI T'ÉCRIT LE PLUS	よくメールを送ってくる人
+Quand le mail de %1 est arrivé	%1 からのメールが届いたら
+Quitter	終了
+Quitter Google Photos	Google フォトから移行
+Quitter iCloud Photos	iCloud 写真から移行
+RECHERCHE DES PHOTOS RATÉES	失敗写真の検出
+Rafales : on garde la meilleure…	連写：いちばん良いものを残します…
+Rafales — la plus nette est gardée	連写 — いちばんシャープなものを残す
+Rangement : %1	整理中：%1
+Recherche des doublons	重複を検索中
+Recherche des fichiers inutiles…	不要ファイルを検索中…
+Recherche des mails	メールを検索中
+Recherche des mails avec PDF	PDF 付きメールを検索中
+Recherche des mails importants (%1 / %2)	重要なメールを検索中（%1 / %2）
+Recherche des photos floues	ピンぼけ写真を検索中
+Recherche des photos ratées	失敗写真を検索中
+Recherche des photos similaires	似ている写真を検索中
+Recherche des pièces jointes (%1 / %2)	添付ファイルを検索中（%1 / %2）
+Rechercher une mise à jour	アップデートを確認
+Recommencer	やり直す
+Recommencer avec un autre compte	別のアカウントでやり直す
+Recommencer depuis le début ?	最初からやり直しますか？
+Regarder la taille de %1	%1 の容量を確認
+Relance l'analyse après un changement.	変更したら分析し直してください。
+Remettre des mails	メールを戻す
+Remettre le compteur à zéro	カウンターをリセット
+Remettre les fichiers	ファイルを元に戻しています
+Restes d'applis désinstallées	アンインストールしたアプリの残り
+Restes d'applis désinstallées…	アンインストールしたアプリの残り…
+Reçus plusieurs fois à quelques secondes d'écart : %1	数秒差で複数回受信：%1
+Rien	なし
+Rien n'a été supprimé.	何も削除していません。
+Rien n'est perdu	何も失われません
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	あなたの同意なしには何も削除しません：すべてごみ箱を経由します。
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	空けられるものはありません：古い写真はまだバックアップにありません。先に「すべての写真をバックアップ」を実行してください。
+RÉSULTAT	結果
+Règle retirée	ルールを解除しました
+Récupère des mails mis à la corbeille de ta messagerie	メールのごみ箱に入れたメールを取り戻す
+Récupérer mes photos iCloud (ancien iPhone)	iCloud の写真を取り出す（以前の iPhone）
+Réduire mes vidéos	動画を小さくする
+Réglages avancés	詳細設定
+Réglages de stockage Android	Android のストレージ設定
+SAUVEGARDE	バックアップ
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	写真へのアクセスがないと、Clean Smart は何も分析できません。
+Santé	医療
+Sauvegarde %1 / %2	バックアップ %1 / %2
+Sauvegarde automatique chaque nuit	毎晩自動バックアップ
+Sauvegarde avant suppression	削除前にバックアップ
+Sauvegarde de mes bonnes photos	良い写真をバックアップ中
+Sauvegarde des mails	メールをバックアップ中
+Sauvegarde des mails importants	重要なメールをバックアップ中
+Sauvegarde du mail %1 / %2	メールを保存中 %1 / %2
+Sauvegarder avant de supprimer	削除前にバックアップ
+Sauvegarder des mails	メールを保存
+Sauvegarder mes bonnes photos	良い写真をバックアップ
+Se connecter avec ton identifiant Apple	Apple ID でサインイン
+Serveur IMAP	IMAP サーバー
+Serveur introuvable : vérifie internet et le nom du serveur.	サーバーが見つかりません：インターネットとサーバー名を確認してください。
+Ses mails partent à la corbeille chaque nuit, tout seuls	この送信者のメールは毎晩自動でごみ箱へ
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	良い写真だけ：重複、余分な連写、失敗写真は含めません。お気に入りは「Mes meilleures」（ベスト）にも入ります。
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	良い写真だけを USB メモリ、ディスク、Google Drive にバックアップ。Google フォトも取り戻せます。
+Seules les nouvelles photos sont copiées à chaque fois.	毎回新しい写真だけをコピーします。
+Seuls les 20 premiers fichiers sont envoyés.	最初の 20 ファイルだけ送ります。
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	ログインが拒否されたら、Microsoft アカウントのセキュリティでアプリ パスワードを作ってください（2 段階認証が必要）。
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	そうしないと iPhone が写真を iCloud に送り直し、iCloud で削除すると iPhone からも消えることがあります。
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	そうしないとスマホが写真を Google に送り直し、Google で削除するとこのスマホからも消えることがあります。
+Soldes d'hiver	冬のセール
+Souvent inutiles après coup	あとで不要になりがち
+Stockage du téléphone	スマホのストレージ
+Stricte	厳しめ
+Suivant	次へ
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	空きを作るため、このファイルをダウンロードからご自身で削除してください。
+Supprimer	削除
+Supprimer %1 ?	%1 を削除しますか？
+Supprimer ce fichier du téléphone ?	このファイルをスマホから削除しますか？
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	コピー・確認後に各ファイルをスマホから削除（おすすめ：空きを保てます）
+Supprimer les doublons	重複を削除
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	Gmail では受信箱に残ったまま「保護」ラベルが付きます。毎晩くり返します。
+Sur Google Takeout, en 1 minute	Google データ エクスポートで 1 分
+Sur account.apple.com → Mots de passe pour applications → en créer un.	account.apple.com → App 用パスワード → 作成。
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	iPhone で：設定 › 自分の名前 › iCloud：「写真」の使用容量が表示されます。icloud.com でも確認できます。ここに入力してください（GB）。
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	iPhone または icloud.com/photos で：写真を選んで「削除」。「最近削除した項目」に 30 日間残ります。
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	開いたページで：ストレージ › 「キャッシュを削除」。Android の決まりで、Clean Smart が代わりに行うことはできません。
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	スマホの空きは 2〜3 GB で十分：一度に 1 ファイル。現在の空き：%1。
+Sur privacy.apple.com, en 2 minutes	privacy.apple.com で 2 分
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	privacy.apple.com ではファイル名が「iCloud Photos Part 1 of 12」：最後の数字（ここでは 12）がファイル数です。Clean Smart も自動で読み取ります。
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	アカウントのセキュリティ → アプリ パスワードを生成し、ここに貼り付けます。
+Sécurité, photos ratées, démonstration…	安全性、失敗写真、デモ…
+Sévérité	厳しさ
+TERMINÉ	完了
+Ta messagerie	メールサービス
+Ta période d'essai de 30 jours est terminée.	30 日間の試用期間が終了しました。
+Taille de %1 (Go)	%1 の容量（GB）
+Taille du texte	文字サイズ
+Taille maximale des fichiers : 1 Go ou 2 Go	最大ファイルサイズ：1 GB または 2 GB
+Temps passé	経過時間
+Temps restant	残り時間
+Terminer la demande	リクエストを完了
+Terminé	完了
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	iPhone の写真を USB メモリかディスクへ、年ごとに、重複なしで
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	直近 2 か月の写真はまだディスクにありません。Google データ エクスポートで新しいコピーを依頼すれば、自動モードが新しい写真だけを重複なしで追加します。
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	直近 2 か月の写真はまだディスクにありません。Apple に新しいコピーを依頼してください：Clean Smart が新しい写真だけを重複なしで追加します。
+Tes photos à l'abri	写真は安全です
+Tes réglages et ta boîte mail seront conservés.	設定とメールボックスは保持されます。
+Ton téléphone est plein ?	スマホがいっぱい？
+Ton téléphone est propre et tes photos sont à l'abri	スマホはすっきり、写真は安全です
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	スマホもメールボックスもすっきり、写真は安全です
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	ここをタップしてダウンロードし、ファイルを開いてインストール
+Touche ici pour la version complète ou une question	完全版やご質問はここをタップ
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	Google のメールの「ダウンロード」リンクをタップするだけ。Clean Smart は Download に届いたファイルからすぐにディスクへコピーします。ほかがダウンロード中でも大丈夫。
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	送信者をタップ：常に削除、常に残す、知らせる、配信停止。
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	「よくメールを送ってくる人」で送信者をタップして選ぶ
+Touche une image pour la cocher · appui long pour la voir en grand	画像をタップしてチェック · 長押しで大きく表示
+Toucher pour analyser	タップして分析
+Toucher pour voir	タップして表示
+Toujours garder	常に残す
+Toujours jeter	常に削除
+Tous les fichiers sont traités ?	すべてのファイルを処理しましたか？
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	%1 からのすべてのメール（%2 通以上）をメールのごみ箱へ。
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	メルマガ送信者 %1 件からのすべてのメールをメールのごみ箱へ（分析したものだけでなく受信箱全体）。\n\nごみ箱から戻せます。
+Tout cocher	すべてチェック
+Tout décocher	すべてのチェックを外す
+Tout désélectionner	選択をすべて解除
+Tout mettre à la corbeille	すべてごみ箱へ
+Tout nettoyer	すべて整理
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	すべてごみ箱を経由：30 日間は戻せます。「間違えた」でワンタップ取り消しも。
+Tout recommencer	すべてやり直す
+Tout recommencer ?	すべてやり直しますか？
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	中身はすべてディスクにコピー・確認済みです。削除すると次のための空きができます。\n\n写真は Google フォトにも残っています。
+Tout va bien, continue comme ça !	問題なし、この調子で！
+Tout était déjà sauvegardé 👍	すでにすべてバックアップ済みです 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	すべての写真を USB メモリかディスクへ、年ごとに、重複なしで
+Tri avant la sauvegarde	バックアップ前に整理
+Tri des expéditeurs	送信者を整理
+Tri rapide	クイック整理
+Tri terminé !	整理完了！
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	まず整理し、良いものを残し、良い写真だけバックアップして空き容量を作り、最後にメールを整理。
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	まず整理し、良いものを残し、良い写真だけバックアップして、空き容量を作る。
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	まず整理し、大事なものを守ってから受信箱を空にします。銀行、役所、医療のメールは決して削除しません。
+Trier en glissant	スワイプで整理
+Trier les expéditeurs	送信者を整理
+Trier, garder, sauvegarder, libérer	整理、残す、バックアップ、空ける
+Trier, mettre l'important à l'abri, vider la boîte	整理、大事なものを守る、受信箱を空にする
+Trier, protéger	整理、保護
+Trop claire	明るすぎ
+Trop petite	小さすぎ
+Trop sombre	暗すぎ
+Très gros	特大
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	ディスクのコピーを消したら何もコピーされなくなった？ 画面下の「すべてやり直す（コピーを消した）」をタップし、ZIP ファイルをもう一度実行してください。
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	以前 iPhone を使っていた？ iCloud の写真を USB メモリかディスクへ
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	リンクをタップするためにアプリを離れても大丈夫：コピーは続きます（「自動コピー」の通知）。
+Type : .zip   ·   Taille : 2 Go	形式：.zip   ·   サイズ：2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	ZIP は 1 つずつ、Wi-Fi でダウンロード。処理して削除し、次をダウンロード。
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	privacy.apple.com でファイルをダウンロードするだけ。Clean Smart は Download に届いたファイルからすぐにディスクへコピーします。
+Téléphone	スマホ
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	スマホがいっぱい：ギャラリーのごみ箱を空にし、処理済みの ZIP を削除し、ガイド付き整理を行ってください。300 MB 以上の空きが必要です。
+Un bouton, et c'est trié	ボタン 1 つで整理完了
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	送信者ごとに 1 枚のカード：左にスワイプでその人のメールを全部削除、右で残す。
+Une notification quand il t'écrit	メールが届いたら通知
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	1 枚ずつ：左にスワイプで削除、右で残す
+Une question, un souci, la version complète ? Écris-moi :	ご質問、困ったこと、完全版のご希望は？ こちらへ：
+Utilise ton adresse et ton mot de passe Free.	Free のアドレスとパスワードを使ってください。
+Utilise ton adresse et ton mot de passe La Poste.	La Poste のアドレスとパスワードを使ってください。
+Utilise ton adresse et ton mot de passe Orange.	Orange のアドレスとパスワードを使ってください。
+Utilise ton adresse et ton mot de passe SFR.	SFR のアドレスとパスワードを使ってください。
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	午前 2 時ごろ、新しい写真をバックアップフォルダにコピーします。うまくいかなかったときは通知でお知らせします。
+Version complète	完全版
+Version installée : %1	インストール済みバージョン：%1
+Vider	空にする
+Vider la corbeille ?	ごみ箱を空にしますか？
+Vider la corbeille Clean Smart	Clean Smart のごみ箱を空にする
+Vider la corbeille Clean Smart ?	Clean Smart のごみ箱を空にしますか？
+Vider la corbeille maintenant	今すぐごみ箱を空にする
+Vider maintenant	今すぐ空にする
+Vieux mails vers la corbeille…	古いメールをごみ箱へ…
+Vieux téléchargements (plus de 6 mois)	古いダウンロード（6 か月以上）
+Voir la liste et jeter	一覧を見て削除
+Voir la liste et libérer	一覧を見て空ける
+Voir le courrier indésirable puis le mettre à la corbeille	迷惑メールを見てからごみ箱へ
+Voir les conseils	ヒントを見る
+Voir ma place Google	Google の容量を見る
+Voir ma place iCloud	iCloud の容量を見る
+Votre facture	ご請求書
+Voyages et réservations	旅行と予約
+Vérification de la sauvegarde	バックアップを確認中
+Vérification du disque	ディスクを確認中
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	Google のメールで、各ファイル（001、002、003…）が処理済みか確認してください。
+Vérifier, puis libérer %1 (si tu veux)	確認してから %1 を空ける（必要なら）
+Yeux fermés	目つぶり
+appli	アプリ
+applis	アプリ
+calcul…	計算中…
+compression impossible	圧縮できません
+contact en double	重複した連絡先
+contacts en double	重複した連絡先
+copie	コピー
+copies	コピー
+de ta photothèque est à l'abri	の写真ライブラリが安全です
+derniers fichiers	件の最近のファイル
+doublon	重複
+doublons	重複
+erreur	エラー
+erreurs	エラー
+expéditeur	送信者
+expéditeurs	送信者
+fais le ménage de ta boîte mail	メールボックスを整理する
+fichier	ファイル
+fichier copié	ファイルをコピー
+fichier copié et vérifié	ファイルをコピー・確認
+fichier n'a	ファイルが
+fichiers	ファイル
+fichiers copiés	ファイルをコピー
+fichiers copiés et vérifiés	ファイルをコピー・確認
+fichiers n'ont	ファイルが
+iCloud Photos	iCloud 写真
+jour	日
+jour restant	日残り
+jours	日
+jours restants	日残り
+le plus simple	いちばん簡単
+libres · %1 % utilisé	空き · %1 % 使用
+libère de la place avec le Ménage complet	まるごと整理で空き容量を作る
+libérés	空き
+mail	通
+mail remis	通を戻しました
+mails	通
+mails remis	通を戻しました
+nettoie les fichiers inutiles du téléphone	スマホの不要ファイルを整理する
+nouveau fichier	件の新しいファイル
+nouveaux fichiers	件の新しいファイル
+pas à pas	順番に
+photo	枚
+photo gardée	枚を残しました
+photo ou vidéo	件の写真・動画
+photo ou vidéo prise	件の撮影した写真・動画
+photo protégée	枚を保護
+photos	枚
+photos gardées	枚を残しました
+photos ou vidéos	件の写真・動画
+photos ou vidéos prises	件の撮影した写真・動画
+photos protégées	枚を保護
+puis « Étape suivante » :	次に「次のステップ」：
+rafale	件の連写
+rafales	件の連写
+sauvegarde tes photos sur une clé ou une carte SD	写真を USB メモリか SD カードにバックアップする
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	はすでにバックアップ済みです（同じ名前、同じサイズ）。\n\nギャラリーのごみ箱に入ります（30 日間復元可）。最近のものはスマホに残ります。
+sur %1 contacts	（連絡先 %1 件中）
+trie tes photos (doublons, rafales, floues)	写真を整理する（重複、連写、ピンぼけ）
+téléchargement	件のダウンロード
+téléchargements	件のダウンロード
+utilisé	使用
+vidéo	本の動画
+vidéo compressée	本の圧縮動画
+vidéos	本の動画
+vidéos compressées	本の圧縮動画
+vieux mail	通の古いメール
+vieux mails	通の古いメール
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	「破損ファイル」：ダウンロードが途切れました。この ZIP を Google のメールからもう一度ダウンロードして再実行してください：コピー済みのものは再コピーされません。
+« Libérer la place » : garder sur le téléphone les photos des derniers…	「空き容量を作る」：スマホに残す写真：直近…
+À GARDER	残す
+À JETER	削除
+À RETROUVER VITE	すぐ見つける
+À nettoyer	整理対象
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	ディスクのコピーを消した場合に使います：Clean Smart はコピー済みの記録を忘れ、次の ZIP ファイルを最初から全部コピーします。\n\n選んだディスクと設定は残ります。ディスクや %1 では何も消しません。
+Écriture impossible	書き込めません
+Électricité	電気
+à jeter	削除候補
+élément	件
+éléments	件
+… et %1 autres mails du même genre (cochés).	…ほか同じ種類のメール %1 通（チェック済み）。
+‹ Retour	‹ 戻る
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ %1 をエラーなしで読み取りました。コピーの指紋がこのスマホにもうないため、比較できません。
+↩️ %1 dans la boîte de réception	↩️ %1 を受信箱へ
+↩️ %1 remis dans la galerie	↩️ %1 をギャラリーに戻しました
+↩️ %1 remis à leur place	↩️ %1 を元の場所へ戻しました
+↩️ J'ai fait une bêtise : remettre les %1	↩️ 間違えた：%1 を戻す
+↩️ Mails remis (démonstration)	↩️ メールを戻しました（デモ）
+↩️ Remettre %1 dans ma boîte	↩️ %1 を受信箱に戻す
+↩️ Remettre des mails	↩️ メールを戻す
+↩️ Tout remettre à sa place	↩️ すべて元に戻す
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ Download で次のファイルを待っています。メールの「ダウンロード」リンクをタップしてください。
+⏳ En attente du prochain fichier dans Download…	⏳ Download で次のファイルを待っています…
+⏳ copie en cours…	⏳ コピー中…
+⏳ plus tard	⏳ あとで
+⏹ Arrêter	⏹ 停止
+☑️ Tout cocher	☑️ すべてチェック
+⚙️ Cache des applis et fichiers système	⚙️ アプリのキャッシュとシステムファイル
+⚙️ Options	⚙️ オプション
+⚠️ %1 : à relancer.\n	⚠️ %1：再実行が必要。\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 にエラー：先に進む前に「再実行」の ZIP をもう一度実行してください。
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ ディスク上の %1 が同一でないか、読み取れません：\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ 今夜はバックアップなし
+⚠️ Fichier %1 à reprendre	⚠️ ファイル %1 をやり直し
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ 約 %1 必要、残り %2。始めても大丈夫：いっぱいになったら別のディスクをつなげば、重複なしで続けます。
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ コピーが停止しました：%1\n\n何も失われていません：自動モードを再実行すれば重複なしで再開します。
+⚠️ On ne commence pas	⚠️ 開始しません
+⚠️ Sauvegarde de la nuit	⚠️ 夜間バックアップ
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ 破損：メールからもう一度ダウンロードすると自動でコピーされます
+⚠️ disque plein	⚠️ ディスクがいっぱい
+⚠️ pas commencé	⚠️ 未開始
+⚠️ à relancer	⚠️ 再実行が必要
+⚠️ à relancer (%1)	⚠️ 再実行が必要（%1）
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ コピーが完全ではありません（破損、再実行が必要、または未コピー）。先にコピーを完了してください：%1 では何も消さないでください。
+✅ %1 : terminé et vérifié.\n	✅ %1：完了・確認済み。\n
+✅ %1 doublon(s) supprimé(s)	✅ 重複 %1 件を削除
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ メール %1 通を保存 · PDF %2 · CleanSmart/Mails/index.html アーカイブを更新
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ 重要なメール %1 通を保護 · PDF %2 件をまとめ · index.html アーカイブを更新
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ 新しい写真 %1 枚をバックアップ
+✅ %1 · depuis %2	✅ %1 · %2 継続中
+✅ %1 à l'abri	✅ %1 は安全です
+✅ 312 mails importants à l'abri (démonstration)	✅ 重要なメール 312 通を保護（デモ）
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ 良い写真 7,958 枚をバックアップ（デモ）
+✅ Assez de place sur « %1 ».	✅ 「%1」に十分な空きがあります。
+✅ Boîte mail connectée	✅ メールボックスを接続しました
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ ディスクを確認しました：%1 を再読み込み、破損なし。
+✅ Doublons supprimés (démonstration)	✅ 重複を削除しました（デモ）
+✅ Fichier %1 terminé	✅ ファイル %1 完了
+✅ La copie sur le disque est complète et vérifiée.	✅ ディスク上のコピーは完全で確認済みです。
+✅ Mails sauvegardés (démonstration)	✅ メールを保存しました（デモ）
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ コピーは完全で確認済み\n✅ スマホのバックアップをオフ\n✅ ディスクで写真を確認\n\n%1 を開きますか？ 何を削除するかはご自身で選びます。
+✅ copié et vérifié	✅ コピー・確認済み
+✅ copié, vérifié, supprimé du téléphone	✅ コピー・確認済み、スマホから削除
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ %1 を削除 · メールボックスで %2 空き
+✉️ %1 mails	✉️ メール %1 通
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ メール %1 通（「Mails Gmail」フォルダ、index.html を開く）\n
+✉️ Boîte mail	✉️ メールボックス
+✉️ Mails	✉️ メール
+✉️ Mails de %1	✉️ %1 からのメール
+✓ %1 choisi	✓ %1 を選択
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ %1 空きました（ギャラリーのごみ箱で 30 日間復元可）
+✨ %1 mails mis à la corbeille	✨ %1 通をごみ箱へ
+✨ %1 mis à la corbeille (démonstration)	✨ %1 をごみ箱へ（デモ）
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ %1 をメールのごみ箱へ（「メールを戻す」で復元可）
+✨ %1 nettoyés · %2 libérés	✨ %1 を整理 · %2 空き
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ 古いメール %1 通をごみ箱へ（重要なものは残します）
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ メール 1,249 通をごみ箱へ（デモ）
+✨ 1,1 Go libérés (démonstration)	✨ 1.1 GB 空きました（デモ）
+✨ 6,4 Go libérés (démonstration)	✨ 6.4 GB 空きました（デモ）
+✨ Mails mis à la corbeille (démonstration)	✨ メールをごみ箱へ（デモ）
+✨ Ménage automatique du dimanche	✨ 日曜日の自動整理
+✨ Ménage du dimanche	✨ 日曜日の整理
+✨ Vieux mails mis à la corbeille (démonstration)	✨ 古いメールをごみ箱へ（デモ）
+❤️ Santé du téléphone : %1 / 100	❤️ スマホの健康度：%1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ 左にスワイプ：その人のメールを全部ごみ箱へ   ·   右にスワイプ：残す ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ 左にスワイプで削除   ·   右にスワイプで残す ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 進行中：終わりしだいコピーを始めます。
+⬜ Tout décocher	⬜ すべてのチェックを外す
+⭐ Protéger mes %1	⭐ %1 を保護
+🍏 Mes photos iCloud	🍏 iCloud の写真
+🍏 Pense à une nouvelle copie iCloud	🍏 iCloud の新しいコピーを作りましょう
+🍏 Quitter iCloud Photos	🍏 iCloud 写真から移行
+🎁 Version d'essai · %1	🎁 試用版 · %1
+🎉 %1 libérés au total	🎉 合計 %1 空きました
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 不要ファイルはありません：スマホはすっきり！
+🎉 Aucun mail à jeter ici.	🎉 ここに削除するメールはありません。
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 忘れられたアプリはありません：全部使っています！
+🎉 Plus rien ici.	🎉 ここにはもう何もありません。
+🎉 Rien à nettoyer, tout est propre !	🎉 整理するものはありません、すっきりです！
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 完了：%1 をコピー・確認。ディスクの合計：%2 と %3。
+🎉 Tous les fichiers sont faits	🎉 すべてのファイルが完了
+🎬 Démonstration	🎬 デモ
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 デモモード：スマホには何も触れません
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 デモモード：スマホには何も触れません
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 どのボタンもまずメールの一覧を表示：残したいもののチェックを外してから確定します。
+👀 Voir et jeter ses mails maintenant	👀 この送信者のメールを今すぐ見て削除
+👆 Les expéditeurs que tu as jetés	👆 削除した送信者
+👆 Tri des expéditeurs	👆 送信者を整理
+👆 Tri rapide	👆 クイック整理
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 今すぐ：Google のメールでファイル %1 をダウンロード（Wi-Fi で）。次に緑のボタンをタップしてダウンロードから選んでください。
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 今すぐ：privacy.apple.com で「Part %1」をダウンロード（Wi-Fi で）。次に緑のボタンをタップしてダウンロードから選んでください。
+👉 À faire maintenant	👉 今やること
+👉 à télécharger puis traiter	👉 ダウンロードしてから処理
+👍 Tu as déjà la dernière version (%1)	👍 すでに最新バージョンです（%1）
+👯 Mails en double	👯 重複メール
+💡 Aide	💡 ヘルプ
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 ヒント：配信停止すればもう届きません（「よくメールを送ってくる人」一覧のボタン）。
+💡 Si ça bloque	💡 うまくいかないとき
+💡 Si ça bloque : tous les conseils	💡 うまくいかないとき：すべてのヒント
+💾 %1 sur « %2 »	💾 「%2」に %1
+💾 Sauvegarde de la nuit	💾 夜間バックアップ
+💾 Sauvegarder %1	💾 %1 を保存
+💾 Sauvegarder toutes mes photos	💾 すべての写真をバックアップ
+💾 Sauver des mails	💾 メールを保存
+📁 Choisir le dossier de sauvegarde	📁 バックアップフォルダを選ぶ
+📁 Choisir un dossier	📁 フォルダを選ぶ
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails：メール全体（.eml）\n📕 CleanSmart / PDF：すべての PDF\n📎 CleanSmart / Pieces jointes：その他のファイル
+📁 Dossier de sauvegarde enregistré	📁 バックアップフォルダを保存しました
+📂 Traiter un fichier ZIP	📂 ZIP ファイルを処理
+📂 Traiter un fichier ZIP à la main	📂 ZIP ファイルを手動で処理
+📅 Ton rapport du mois	📅 今月のレポート
+📎 Gros mails	📎 大きなメール
+📕 Cocher les PDF	📕 PDF をチェック
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 PDF をダウンロード / Clean Smart に保存しました
+📕 PDF souvenir créé (démonstration)	📕 思い出 PDF を作成しました（デモ）
+📖 Mode d'emploi	📖 使い方ガイド
+📤 Envoyer (%1)	📤 送る（%1）
+📦 Les plus grosses	📦 大きい順
+📦 Quitter Google Photos	📦 Google フォトから移行
+📦 Ta nouvelle copie Google est peut-être prête	📦 Google の新しいコピーが用意できたかもしれません
+📧 Ouvrir le mail de Google	📧 Google のメールを開く
+📰 Newsletters et pubs	📰 メルマガと広告
+📱 Mes applis	📱 マイアプリ
+📱 Ouvrir l'app Google Photos	📱 Google フォト アプリを開く
+📱 Téléphone	📱 スマホ
+📱 Téléphone presque plein	📱 スマホの空きが残りわずか
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 写真 %1 枚と動画 %2 本をコピー・確認し、年ごとに整理\n
+📸 Photos	📸 写真
+🔄 Analyser à nouveau	🔄 もう一度分析
+🔄 Chercher à nouveau	🔄 もう一度探す
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 すべてやり直す（コピーを消した）
+🔍 Analyser ma boîte mail	🔍 メールボックスを分析
+🔍 Analyser mon téléphone	🔍 スマホを分析
+🔍 Chercher les mails avec pièces jointes	🔍 添付ファイル付きのメールを探す
+🔎 Vérifier le disque (relit chaque photo)	🔎 ディスクを確認（写真を 1 枚ずつ読み直す）
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 パスワードはスマホ内で暗号化されています。メールサービスのサーバーにだけ送られます。
+🔓 Autoriser	🔓 許可
+🔓 Autoriser l'accès aux fichiers	🔓 ファイルへのアクセスを許可
+🔓 Une autorisation pour en savoir plus	🔓 詳しく知るための許可
+🔓 Une autorisation, une seule fois	🔓 許可は 1 回だけ
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 1 回だけ：Clean Smart が Download フォルダを見られるよう「すべてのファイルへのアクセス」を許可してください。読むのは %1 のファイルだけです。
+🔔 Mail de %1	🔔 %1 からのメール
+🔔 Tu seras prévenu quand il t'écrit	🔔 この送信者からメールが届いたらお知らせします
+🕰️ Vieux mails	🕰️ 古いメール
+🕰️ Vieux mails (les importants sont gardés)	🕰️ 古いメール（重要なものは残します）
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ ごみ箱を空にしました：%1 を完全に回収
+🗑️ Désinstaller	🗑️ アンインストール
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ スマホからファイルを削除：次のための空きができました
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ 「常に削除」の送信者
+🗑️ Mettre %1 à la corbeille	🗑️ %1 をごみ箱へ
+🗑️ Ouvrir %1 pour effacer	🗑️ %1 を開いて削除
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ この送信者のメールは毎晩ごみ箱へ入ります
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ この ZIP をスマホから削除（おすすめ）
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ 常に削除：%1   🛡️ 常に残す：%2   🔔 知らせる：%3
+🗜️ Compresser (%1)	🗜️ 圧縮（%1）
+😴 Pas ouvertes depuis 3 mois	😴 3 か月開いていない
+🚫 Se désabonner	🚫 配信停止
+🛡️ %1 (mises en favori)	🛡️ %1（お気に入りに追加）
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ %1 をメールボックスの「保護」フォルダに整理
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ 重要な送信者（銀行、役所、医療など）：メールは決して削除しません。
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ 削除ボタンは、コピーが完全で項目 1 と 2 にチェックがあるときに表示されます。
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ 銀行、役所、医療のメールは決してごみ箱に入りません。
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ コピーを確認する前に %1 を空けることはありません：まず最初の項目にチェック。
+🛡️ Protéger (%1)	🛡️ 保護（%1）
+🛡️ Ranger mes mails importants	🛡️ 重要なメールを整理
+🛡️ Ses mails ne seront jamais jetés	🛡️ この送信者のメールは決して削除しません
+🤖 Copie automatique de tes photos	🤖 写真の自動コピー
+🤖 Démarrer le mode automatique	🤖 自動モードを開始
+🤖 Tout automatique (le plus simple)	🤖 全自動（いちばん簡単）
+🧊 Vider son cache	🧊 キャッシュを削除
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 重複 %1 と 🎞️ 連写 %2 枚を除外\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 重複   🎞️ 失敗した連写\n📱 スクリーンショット   🎬 大きな動画\n💬 WhatsApp のメディア   👥 重複した連絡先\n✉️ メルマガと大きなメール
+🧭 Ménage	🧭 整理
+🧭 Ménage des mails	🧭 メール整理
+🧭 Ménage guidé	🧭 ガイド付き整理
+🧹 Fichiers inutiles	🧹 不要なファイル
+🧹 Jeter les mails de %1	🧹 %1 のメールを削除
+🧹 Le ménage sûr	🧹 安全な整理
+🧹 Mails triés cette nuit	🧹 今夜メールを整理しました
+🧹 Mettre %1 à la corbeille	🧹 %1 をごみ箱へ
+🧹 Ménage sûr	🧹 安全な整理
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 安全な整理：メルマガ、通知、重複
+🧹 Nettoyer · %1	🧹 整理 · %1
+🧹 Nettoyer · %1 · %2	🧹 整理 · %1 · %2

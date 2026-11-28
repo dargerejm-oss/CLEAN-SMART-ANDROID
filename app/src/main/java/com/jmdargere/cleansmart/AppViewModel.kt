@@ -122,7 +122,8 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     init {
-        Tr.choix = when (settings.langue) { 1 -> "fr"; 2 -> "en"; else -> null }
+        Tr.init(app)
+        Tr.choix = Tr.CODES.getOrNull(settings.langue - 1)
         com.jmdargere.cleansmart.data.Regles.init(app)
         com.jmdargere.cleansmart.data.AlertesMail.programmer(app)
         Night.schedule(app, settings)
@@ -994,7 +995,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun guideMark(step: Int) { guideDone = guideDone + step }
 
     fun updateSettings(s: Settings) {
-        Tr.choix = when (s.langue) { 1 -> "fr"; 2 -> "en"; else -> null }
+        Tr.choix = Tr.CODES.getOrNull(s.langue - 1)
         settings = s
         Settings.save(ctx, s)
         Night.schedule(ctx, s)

@@ -1,0 +1,187 @@
+0	Manual de utilização
+1	Mais espaço no seu telemóvel,\nde forma simples e segura.
+2	Criado por JM Dargère
+3	CLEAN SMART — Criado por JM Dargère
+4	Como funciona?
+5	1. O seu telemóvel está cheio?
+6	Fotos duplicadas, fotos falhadas, vídeos enormes, e-mails inúteis… tudo ocupa espaço.
+7	2. O Clean Smart procura sozinho
+8	Um só botão. Durante a análise nada é apagado.
+9	3. Você escolhe
+10	O que é seguro já está assinalado. Quanto ao resto, decide você.
+11	4. Nada se perde
+12	Tudo passa pelo lixo: 30 dias para recuperar uma foto ou um e-mail.
+13	5. Tudo fica protegido
+14	Cópia de segurança em cartão SD, pen USB ou Google Drive, até sozinha durante a noite.
+15	Limpeza completa (recomendada)
+16	O ecrã inicial tem um grande mosaico verde «Limpeza completa» e 3 portas: 📸 Fotos, 🧹 Telemóvel, ✉️ E-mails. A limpeza completa faz tudo pela ordem certa; o botão VERDE é sempre o passo seguinte.
+17	Limpeza segura: duplicados e rajadas a mais (a melhor é mantida), fotos pretas ou brancas, capturas antigas. Um botão.
+18	Verifico o duvidoso: fotos um pouco desfocadas, WhatsApp… Deslize para a esquerda para deitar fora, para a direita para manter (passa a favorita).
+19	Ponho a salvo: só as fotos BOAS são guardadas. As favoritas vão também para «Mes meilleures» (As minhas melhores).
+20	Liberto espaço: as fotos antigas já guardadas saem do telemóvel.
+21	NOVO 2.0 — E os seus e-mails: o espaço da caixa, newsletters e e-mails grandes, depois a limpeza guiada do correio. No Google, e-mail e Google Photos partilham os mesmos 15 GB.
+22	O resumo mostra o que foi libertado no telemóvel E na caixa de correio. Nas rajadas, é mantida a foto em que ninguém tem os olhos fechados.
+23	Ficheiros inúteis (NOVO 2.0)
+24	Ficheiros temporários, miniaturas, pastas de cache, pastas vazias, ficheiros de instalação, restos de apps desinstaladas. Fotos, vídeos e música nunca são tocados.
+25	Uma única vez: autorize «Acesso a todos os ficheiros». A pesquisa começa sozinha.
+26	Os grupos seguros estão assinalados: recriam-se sozinhos ou já não servem. «Limpar» e pronto.
+27	Os grupos «a verificar» (outros .apk, restos de apps, transferências antigas) vão para o lixo do Clean Smart: «Repor tudo» durante 7 dias.
+28	A cache das outras apps: o Android proíbe-o às apps desde o Android 11. O botão abre o ecrã «Libertar espaço» do Android.
+29	📱 As minhas apps: as maiores e as que não abre há 3 meses. Toque numa para a desinstalar ou limpar a cache.
+30	Nota de saúde e limpeza de domingo (NOVO 2.0)
+31	No ecrã inicial, uma nota de 0 a 100 resume o estado do telemóvel: espaço livre, cópia de segurança, fotos por ordenar, ficheiros inúteis, caixa de correio. Também diz o que fazer para ganhar pontos.
+32	Em Opções › Automático, ative «Limpeza automática de domingo»: ficheiros inúteis seguros e spam saem sozinhos, e uma notificação faz o resumo.
+33	As fotos nunca saem sozinhas: a notificação diz quantas há para ordenar, toca e escolhe.
+34	Opções simplificadas: Cópia de segurança, Automático, Aparência. O resto está em «Definições avançadas».
+35	Deixar o Google Photos
+36	Todas as suas fotos do Google Photos numa pen ou disco rígido, ordenadas por ano, sem duplicados. Um só painel: o passo «AGORA» está aberto, com o botão verde.
+37	O espaço: anote o tamanho do Google Photos e o Clean Smart calcula o espaço necessário.
+38	O disco: ligue a pen ou o disco (adaptador USB-C) e escolha uma pasta nele.
+39	Pedir a cópia ao Google: o modelo mostra exatamente o que assinalar (ficheiros .zip de 2 GB).
+40	Os ficheiros: a lista 001, 002… diz qual transferir. «Processar um ficheiro ZIP» e depois apague-o. Uma notificação avisa no fim.
+41	Cada foto é ordenada por ano, os duplicados e rajadas a mais são postos de lado, tudo é relido e verificado. O indicador mostra quanto está a salvo.
+42	Problema (telemóvel ou disco cheio, ficheiro danificado): nada se perde, volte a abrir o mesmo ficheiro. Botão «Se bloquear».
+43	NOVO 2.0 — «Tudo automático»: autorize uma vez «Acesso a todos os ficheiros», comece e depois toque simplesmente nas ligações do e-mail do Google. Cada ficheiro é copiado mal chega a Download e apagado do telemóvel depois de verificado.
+44	Libertar o Google: o botão só aparece se a cópia estiver completa, a cópia de segurança do telemóvel estiver desligada e tiver visto as fotos no disco. É você que apaga; o lixo do Google guarda tudo 60 dias.
+45	«Verificar o disco» relê cada foto copiada e assinala as danificadas. De 2 em 2 meses, uma notificação lembra-o de pedir uma nova cópia: só as fotos novas são acrescentadas.
+46	Recuperar as minhas fotos do iCloud (iPhone antigo)
+47	Para as fotos do iPhone: o mesmo painel do Google Photos, com a exportação oficial da Apple.
+48	O espaço: no iPhone, Definições › o seu nome › iCloud. O Clean Smart calcula o espaço necessário.
+49	O disco: ligue a pen ou o disco e escolha uma pasta nele.
+50	Em privacy.apple.com: «Pedir uma cópia dos seus dados», assinale «Fotografias em iCloud», ficheiros de 1 ou 2 GB.
+51	A Apple envia um e-mail em poucos dias. Transfira «Part 1», processe-o, apague-o e depois «Part 2»…
+52	Tudo é ordenado por ano em «iCloud Photos», sem duplicados, mantendo a melhor foto de cada rajada.
+53	Analisar o meu telemóvel
+54	É o botão grande do ecrã inicial. Não há nada a configurar.
+55	Toque em «Analisar o meu telemóvel».
+56	Na primeira vez, o Android pede acesso às fotos e aos contactos: aceite.
+57	Uma barra mostra o progresso. Depois, o Clean Smart mostra em grande o espaço que pode recuperar.
+58	O que o Clean Smart encontra
+60	Duplicados
+61	Cópias idênticas. O original é mantido.
+62	Fotos semelhantes
+63	Rajadas tiradas com segundos de diferença. A mais nítida é mantida.
+64	Fotos falhadas
+65	Desfocadas, demasiado escuras, demasiado claras ou demasiado pequenas.
+66	Capturas de ecrã
+67	Muitas vezes inúteis depois.
+68	Vídeos grandes
+69	Mais de 100 MB cada.
+70	Multimédia do WhatsApp
+71	Fotos e vídeos recebidos ou enviados.
+72	Os meus maiores ficheiros
+73	As 30 fotos e vídeos mais pesados.
+74	Contactos duplicados
+75	Mesmo nome e mesmo número.
+76	Escolher e limpar
+78	Toque numa categoria para ver as fotos.
+79	Toque numa foto para a assinalar. Toque longo: vê-a em grande.
+80	«MANTIDA»: a foto que o Clean Smart aconselha a manter.
+81	Toque no botão vermelho «Limpar» no fundo do ecrã.
+82	O Android pede uma última confirmação. As fotos vão para o lixo: 30 dias para as recuperar.
+83	A triagem rápida
+84	Para ordenar as fotos recentes uma a uma, sem pensar.
+85	No ecrã inicial, toque em «Triagem rápida».
+86	Deslize a foto para a ESQUERDA para a deitar fora, para a DIREITA para a manter.
+87	O pequeno botão redondo do meio volta à foto anterior.
+88	No fim, o botão vermelho envia para o lixo as fotos a deitar fora.
+89	O lixo e «Enganei-me»
+91	As fotos no lixo ainda ocupam espaço durante 30 dias.
+92	«Esvaziar o lixo agora» liberta o espaço de imediato (atenção: é definitivo).
+93	«Enganei-me» devolve à galeria os últimos ficheiros deitados fora.
+94	Proteger e enviar
+95	Numa categoria, assinale fotos e depois:
+96	Proteger
+97	A foto passa a favorita: nunca mais será proposta.
+98	Enviar
+99	Por WhatsApp, e-mail… (20 fotos no máximo). Nada sai do telemóvel.
+100	Comprimir
+101	Para os vídeos: refeitos em 720p, muitas vezes 3 a 5 vezes mais leves.
+102	A cópia de segurança
+103	As suas fotos a salvo num cartão SD, numa pen USB ou no Google Drive.
+104	Em «Cópia de segurança», toque em «Escolher uma pasta».
+105	«Copiar todas as minhas fotos» copia as fotos, ordenadas por mês.
+106	Nas vezes seguintes, só as fotos novas são copiadas.
+107	Em Opções, a «Cópia automática todas as noites» fá-lo sozinha.
+108	Mais ferramentas
+109	No ecrã inicial, toque em «Mais ferramentas»:
+110	Libertar espaço
+111	As fotos com mais de 3 meses JÁ guardadas vão para o lixo. Nunca uma foto que não esteja a salvo.
+112	PDF de recordações
+113	As melhores fotos do mês ou do ano num PDF, para enviar a alguém querido.
+114	Reduzir os meus vídeos
+115	Abra «Vídeos grandes», assinale-os e depois «Comprimir».
+116	A minha caixa de correio
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	Toque em «Ligar a minha caixa de correio» e escolha o seu serviço.
+119	Gmail, Yahoo e iCloud pedem uma PALAVRA-PASSE DE APLICAÇÃO. O Clean Smart abre a página certa.
+120	«Analisar a minha caixa de correio» e depois um botão para: newsletters, e-mails grandes, e-mails antigos, e-mails duplicados.
+121	Os e-mails vão para o lixo do seu correio. Os do banco, da administração ou da saúde NUNCA são tocados.
+122	A limpeza guiada do correio
+123	Em E-mails, toque no grande mosaico verde. Mesma ideia: o botão verde é o passo seguinte.
+124	Limpeza segura: newsletters, publicidade, notificações e e-mails duplicados vão para o lixo.
+125	Ordeno por remetente: um cartão por remetente. À esquerda, todos os e-mails dele saem; à direita, fica.
+126	Ponho a salvo o importante: banco, administração, saúde, faturas e e-mails com PDF são guardados.
+127	Liberto a caixa: os e-mails antigos vão para o lixo, nunca os importantes.
+128	«Cancelar subscrição»: para deixar de receber uma newsletter. O botão abre a página de cancelamento.
+129	NOVO 2.0 — Antes de deitar fora, a lista de e-mails aparece (remetente, assunto, data): desassinale os que quer manter e confirme.
+130	Toque num remetente: 🗑️ deitar sempre fora (todas as noites, sozinho), 🛡️ manter sempre, 🔔 avisar-me quando escreve.
+131	Caixa protegida: banco, impostos, saúde, casa e família (os seus contactos) ficam em «Protegidos» no seu correio, nunca deitados fora. Botão «Spam» para esvaziar o correio indesejado.
+132	Guardar e-mails e os seus anexos
+134	Em E-mails, toque em «Guardar e-mails».
+135	Assinale os e-mails a guardar («Assinalar os PDF» para ir depressa).
+136	Toque em «Guardar»: o e-mail completo, e todos os PDF reunidos numa pasta PDF.
+137	No PC, abra CleanSmart/Mails/index.html: escreva uma palavra, um nome ou um PDF para encontrar tudo.
+138	Recuperar e-mails
+140	Em E-mails, toque em «Recuperar e-mails».
+141	Assinale os e-mails do lixo a recuperar.
+142	Toque em «Recuperar»: voltam à caixa de entrada.
+143	Contactos duplicados
+145	Depois da análise, o cartão «Contactos» mostra os duplicados (mesmo nome, mesmo número).
+146	«Apagar duplicados» mantém o contacto original.
+147	Atenção: a eliminação também é feita na sua conta Google.
+148	As opções explicadas
+149	Cópia automática todas as noites
+150	Por volta das 2 h, as fotos novas são copiadas para a sua pasta de cópia de segurança.
+151	Bom saber: uma notificação avisa se não funcionou.
+152	Alertas e relatório do mês
+153	Alerta se restar menos de 1 GB, e um pequeno resumo no dia 1 de cada mês.
+154	Bom saber: no máximo um alerta a cada 3 dias.
+155	Cópia de segurança antes de apagar
+156	Copia as fotos (e os contactos) para a sua pasta antes de cada limpeza.
+157	Bom saber: desativada por predefinição, inútil para duplicados e fotos falhadas.
+158	Proteger as minhas favoritas
+159	As fotos favoritas nunca são propostas.
+160	Bom saber: ativado por predefinição.
+161	Rigor
+162	Prudente: menos fotos propostas. Normal. Rigoroso: mais.
+163	Bom saber: volte a analisar depois de uma alteração.
+164	Libertar espaço
+165	Manter no telemóvel as fotos dos últimos 1, 3, 6 ou 12 meses.
+166	Bom saber: só são propostas fotos já guardadas.
+167	Tamanho do texto
+168	Normal, grande ou muito grande.
+169	Bom saber: há um pouco mais para percorrer.
+170	Idioma
+171	Como o telemóvel, ou um dos 16 idiomas (português, inglês, francês, grego, árabe, chinês…).
+172	Bom saber: a alteração aplica-se de imediato.
+173	Demonstração
+174	Mostra a app com fotos, e-mails e contactos falsos.
+175	Bom saber: nada é tocado no telemóvel. Ideal para apresentar a app.
+176	Widget
+177	No ecrã inicial do telemóvel: toque longo > Widgets > Clean Smart. Mostra o espaço livre e abre a limpeza guiada.
+178	Bom saber: atualiza-se sozinho.
+179	Uma pergunta, ou a versão completa? Escreva-me: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Perguntas frequentes
+181	As minhas fotos são apagadas de imediato?
+182	Não. Vão para o lixo da Galeria: 30 dias para as recuperar, ou «Enganei-me».
+183	As minhas fotos vão para a Internet?
+184	Não. Tudo acontece no telemóvel. Só a cópia de segurança vai para onde escolheu (cartão SD, pen, Drive).
+185	Porquê uma palavra-passe de aplicação?
+186	Gmail, Yahoo e iCloud exigem-na para as apps de correio. Fica encriptada no seu telemóvel.
+187	O espaço não volta depois da limpeza?
+188	O lixo guarda as fotos 30 dias. Toque em «Esvaziar o lixo agora» no ecrã inicial.
+189	Apaguei a minha cópia no disco e já nada é copiado?
+190	No separador Google Photos ou Fotografias em iCloud, toque em «Recomeçar tudo (apaguei a minha cópia)» no fundo do ecrã e volte a abrir os ficheiros ZIP.
+191	Como obter a versão mais recente?
+192	Quando há uma nova versão, aparece uma faixa laranja no ecrã inicial: toque nela e abra o ficheiro transferido. Ou Opções > «Procurar atualização».

@@ -1,0 +1,897 @@
+0	\n\n%1 tidak tersalin: jalankan lagi file yang sama.
+1	\n\n%1 «perlu dicek» akan masuk ke tempat sampah Clean Smart: bisa dikembalikan selama 7 hari.
+2	\n\nPerhatian: penghapusan disinkronkan dengan akunmu (Google…).
+3	\n\nDisk atau ponsel penuh: kosongkan ruang (atau ganti disk di langkah 2), lalu jalankan lagi file INI. Tidak ada yang disalin dua kali.
+4	\n\nFile rusak atau tidak lengkap: unduh lagi dari email Google, lalu jalankan lagi. Yang sudah tersalin tetap disimpan.
+5	\n\nSalinan diekspor dulu sebagai file .vcf ke folder cadanganmu.
+6	\n\nJalankan lagi file ZIP yang berisi foto itu (atau mode otomatis): foto akan disalin ulang. Jangan hapus apa pun di %1 sebelumnya.
+7	\n\nSalinan dibuat dulu di folder cadanganmu.
+8	\n💡 Di Google, email dan Google Foto berbagi 15 GB yang sama: membersihkan email juga mengosongkan ruang untuk fotomu.
+9	 dari sekitar %1 GB
+10	 · %1 duplikat, beruntun, atau gagal tidak dicadangkan
+11	 · %1 ke tempat sampah
+12	 · file «perlu dicek» ada di tempat sampah Clean Smart (7 hari)
+13	 · masuk ke tempat sampah Clean Smart
+14	%1 (%2): duplikat berlebih, foto beruntun berlebih, foto hitam atau putih, tangkapan layar lebih dari sebulan.\n\nMasuk ke tempat sampah Galeri (30 hari untuk memulihkannya).
+15	%1 (%2) akan dihapus PERMANEN untuk mengosongkan ruang sekarang.\n\nTidak bisa dipulihkan.
+16	%1 / %2  ·  %3 untuk dibuang
+17	%1: %2 %
+18	%1: buletin dan iklan (%2 pengirim), notifikasi, email ganda.
+19	%1 GB · siapkan %2
+20	%1 dianalisis
+21	%1 dengan lampiran (%2 dengan PDF)
+22	%1 berhasil. Dengan membuang aslinya ke tempat sampah, kamu menghemat %2.
+23	%1 bulan ini.
+24	%1 disalin ke folder cadanganmu.
+25	%1 file tak berguna: sementara, gambar mini, folder kosong, sisa aplikasi.
+26	%1 lebih dari %2 bulan
+27	%1 dari pengirim «selalu buang» dipindah ke tempat sampah (bisa dipulihkan 30 hari).
+28	%1 duplikat masuk ke tempat sampah. Salinan pertama setiap email disimpan.
+29	%1 dan %2 disalin dan diperiksa.
+30	%1 dan %2 aman. Kamu bisa menghapusnya dan mengunduh yang berikutnya.
+31	%1 file dicadangkan
+32	%1 dibuang
+33	%1 kosong dari %2
+34	%1 dikosongkan di ponsel
+35	%1 email di kotak masuk · %2 dianalisis
+36	%1 mnt %2 dtk
+37	%1 buletin · %2 email besar
+38	%1 buletin, %2 email besar (%3).
+39	%1 foto ditemukan
+40	%1 foto · %2 video dianalisis
+41	%1 foto · %2 video · %3 duplikat dan beruntun disisihkan
+42	%1 menyiapkan salinan semua fotomu. Lakukan persis seperti contoh ini:
+43	%1 akan dihapus: tidak diperlukan lagi atau dibuat ulang otomatis.
+44	%1 akan dihapus selamanya.
+45	%1 dari %2 dipilih · %3
+46	%1 dari %2 file selesai
+47	%1 dari %2 · %3
+48	%1 akan masuk ke tempat sampah Galeri (bisa dipulihkan 30 hari).
+49	%1 masuk ke tempat sampah Galeri (bisa dipulihkan 30 hari).
+51	%1 · %2: duplikat, foto beruntun berlebih, foto hitam atau putih, tangkapan layar lebih dari sebulan. Yang terbaik disimpan.
+52	Total %1 · %2. Ketuk aplikasi untuk mencopot atau mengosongkan cache-nya.
+53	%1 untuk dibuang
+54	%1 untuk dilihat satu per satu. Geser ke kiri untuk membuang, ke kanan untuk menyimpan (jadi favorit ⭐).
+55	%1, %2, %3 disalin · %4 dan %5 disisihkan.
+56	%1email lebih dari %2 tahun masuk ke tempat sampah (kecuali yang penting).
+57	(tanpa subjek)
+58	. %1 duplikat atau beruntun untuk dipilah: ketuk di sini.
+59	1 tombol
+60	1 bulan
+61	1. Saya mematikan pencadangan: aplikasi Google Foto › fotomu di kanan atas › Setelan Foto › Pencadangan › nonaktif.
+62	1. Di iPhone, saya mematikan «Foto iCloud» (Pengaturan › namamu › iCloud › Foto).
+63	12 bulan
+64	2. Saya membuka disk di PC dan melihat foto saya, tahun demi tahun.
+65	3 bulan
+66	3. Disarankan: saya membuat salinan ke-2 (disk atau PC lain).
+67	4 langkah
+68	6 bulan
+69	TAMPILAN
+70	OTOMATIS
+71	LAINNYA
+72	Alamat email
+73	Alamat, server, dan sandi wajib diisi.
+74	Peringatan dihapus
+75	Peringatan dan laporan bulanan
+76	Menganalisis kotak surat
+77	Analisis 3.000 email terbaru di kotak masuk.
+78	Menganalisis email (%1 / %2)
+79	Menganalisis ponsel
+80	Analisis kotak surat «%1»: buletin, email besar, email lama. Yang penting selalu disimpan.
+81	Analisis kotak surat saya
+82	Analisis ponsel saya
+83	Batal
+84	Batal, jangan buang apa pun
+85	Telepon
+87	Apple memeriksa permintaan lalu mengirim email, biasanya dalam 3 sampai 7 hari. File kemudian diunduh di privacy.apple.com (masuk dari ponsel).
+88	Apple · Data dan Privasi
+89	Terapkan «selalu buang» sekarang
+90	Berhenti setelah file saat ini…
+91	Hentikan
+92	Hentikan mode otomatis?
+93	Dihentikan. File yang sudah tersalin aman; sisanya akan disalin lain kali, tanpa duplikat.
+94	Tips: di Setelan › Aplikasi, ketuk aplikasi (Chrome, Facebook…) › Penyimpanan › «Hapus cache».
+95	Tidak ada kontak ganda
+96	Belum ada folder dipilih
+97	Tidak ada folder cadangan
+98	Tidak ada file tak berguna.
+99	Tidak ada kotak surat terhubung.
+100	Tidak ada flashdisk atau disk terdeteksi. Pasang (adaptor USB-C), lalu buka lagi langkah ini.
+101	Tidak ada video yang bisa diperkecil lagi.
+102	Lainnya
+103	File instalasi lain (.apk)
+104	Pertama: analisis
+105	Dengan «Akses data penggunaan», Clean Smart melihat ukuran asli tiap aplikasi dan sejak kapan tidak kamu buka. Tidak ada yang dikirim ke mana pun.
+106	KOTAK SURAT
+107	Bank
+108	Bank, pemerintahan, kesehatan, tagihan, dan semua email dengan PDF: dicadangkan, PDF dikumpulkan, arsip index.html di PC.
+109	Bank, pemerintahan, kesehatan, tagihan, dan semua email dengan PDF: dicadangkan, PDF dikumpulkan, arsip index.html di PC. Di kotak suratmu, semuanya disimpan di «Dilindungi».
+110	Bank, pajak, kesehatan, rumah, keluarga (kontakmu): disimpan terpisah, tidak pernah dibuang
+111	Baterai lemah (%1 %)
+112	Halo
+113	Toko Fesyen
+114	Kotak surat rapi!
+115	Kotak surat %1 % penuh (%2 / %3)
+116	Kotak terlindungi
+117	Kotak %1 % penuh (%2 / %3).
+118	Pasang pengisi daya: satu file bisa memakan 10 sampai 30 menit.\n\nJika ponsel mati, tidak ada yang hilang: cukup jalankan lagi file yang sama.
+119	Pasang pengisi daya saat proses: file besar bisa memakan 10 sampai 30 menit. Layar tetap menyala.
+120	Pasang flashdisk atau disk ke ponsel, lalu pilih (atau buat) folder di dalamnya.
+121	Pasang flashdisk atau disk
+122	Selesai: file berikutnya akan disalin ulang seluruhnya.
+123	Dicatat
+125	DISARANKAN
+126	KONTAK
+127	KONTAK
+128	Tangkapan layar
+129	Kartu SD, flashdisk USB, Drive… pilih sesukamu
+130	Kartu SD, flashdisk USB, Google Drive…
+131	File ini sudah disalin dan diperiksa. Mengulanginya tidak membuat duplikat, tetapi tidak perlu.\n\nMungkin maksudmu yang berikutnya (%1).
+132	Bulan ini
+133	Tahun ini
+134	Ganti akun
+135	Ganti folder
+136	Setiap Minggu, file tak berguna yang aman dan spam hilang sendiri. Notifikasi memberi tahu berapa ruang yang dikosongkan dan apakah ada foto untuk dipilah.
+137	Setiap email yang dipilih disimpan di folder cadanganmu:
+138	Setiap video dibuat ulang dalam 720p, sering 3 sampai 5 kali lebih ringan, dan disimpan di Film / Clean Smart.
+139	Pilih folder di disk
+140	Pilih folder
+141	Pilih dulu folder di flashdisk atau disk (langkah 2).
+142	Pilih dulu folder di flashdisk atau disk (langkah «Disk»).
+143	Pilih dulu folder: kartu SD, flashdisk USB, atau Google Drive.
+144	Pilih dulu folder cadangan (Opsi).
+145	Pilih dulu folder cadangan (kartu SD, flashdisk USB, Drive).
+146	Pilih dulu folder cadangan dan buat cadangan.
+147	Pilih dulu folder cadangan.
+148	Pilih emailmu: disimpan bersama lampirannya, PDF di folder terpisah
+149	Pilih kartu SD, flashdisk USB, atau Google Drive
+150	Memilih foto terindah…
+153	Clean Smart: salinan otomatis
+154	Clean Smart menunggu file di Download…
+155	Clean Smart membaca 3.000 email terakhir (tidak ada yang dihapus).
+156	Clean Smart melihat semua fotomu (tidak ada yang dihapus).
+157	Clean Smart menemukan dengan satu ketukan:
+158	Flashdisk USB (demo)
+159	Flashdisk USB atau hard disk, dengan adaptor USB-C
+160	Paket dan pengiriman
+161	Berapa ruang yang dibutuhkan?
+162	Sama seperti ponsel
+163	Mulai
+164	Kompres
+165	Kompres %1?
+166	Mengompres video
+167	Mengerti
+168	Hubungkan kotak suratmu (Gmail, Outlook, Yahoo, Orange, Free…): buletin, email besar dan lama untuk dipilah, yang penting selalu disimpan.
+169	Hubungkan
+170	Hubungkan kotak surat saya
+171	Menyambung ke server
+172	Tidak bisa tersambung:
+173	Menyambung ke layanan email
+174	Disarankan: saya membuat salinan ke-2 (disk atau PC lain).
+175	Kontak ganda
+176	Tetap lanjutkan
+177	Salinan otomatis
+178	Salin file satu per satu
+179	Salinan identik — aslinya disimpan
+180	Tempat sampah
+181	Tempat sampah: %1
+182	Tempat sampah Clean Smart
+183	Tempat sampah email
+184	Lumayan, tapi bisa lebih baik
+185	Buat ekspor
+186	Di Google Foto: tekan lama sebuah foto, centang seluruh hari, lalu «Hapus». Tempat sampah Google menyimpan semuanya 60 hari.
+187	Di Google Takeout, pilih file 2 GB: kami memprosesnya satu per satu, ponsel tidak pernah butuh banyak ruang.
+188	Di permintaan Apple, pilih file 1 atau 2 GB: kami memprosesnya satu per satu, ponsel tidak pernah butuh banyak ruang.
+189	Di email Google, hitung tombol «Unduh»: itulah jumlah file.
+190	Minta salinan ke %1
+191	Minta salinan datamu
+192	Diminta · tunggu email dari %1
+193	Sejak Android 11, tidak ada aplikasi pembersih yang boleh mengosongkan cache aplikasi lain atau file sistem. Android melakukannya sendiri: tombol ini membuka layar «Kosongkan ruang».
+194	Sejak instalasi
+195	Pemeriksaan terakhir
+196	Aplikasi yang diunduh tetapi tidak diinstal. Perlu dicek.
+197	Disk
+198	Disk tidak dikenali: gunakan adaptor USB-C (OTG). Flashdisk berformat exFAT berfungsi di mana saja (FAT32 menolak file di atas 4 GB).
+199	Disk penuh: pasang disk yang lebih besar dan pilih di langkah «Disk». Kami lanjut dari posisi terakhir, tanpa duplikat.
+200	Dokumen di Unduhan yang tidak disentuh selama 6 bulan. Perlu dicek.
+201	Folder Sampah tidak ditemukan di akun ini.
+202	Folder Sampah tidak ditemukan.
+203	Folder Spam tidak ditemukan di akun ini.
+204	Folder cadangan
+205	Folder cadangan tidak ditemukan.
+206	Folder cache
+207	Folder sisa aplikasi yang sudah tidak ada di ponsel. Perlu dicek.
+208	Folder kosong
+209	Folder kosong…
+210	Duplikat
+211	Duplikat dan foto beruntun berlebih (foto terbaik disimpan), foto hitam atau putih, tangkapan layar lama. Ketuk foto untuk menyimpannya. Semua masuk ke tempat sampah Galeri (30 hari).
+212	Duplikat, foto beruntun berlebih, foto hitam atau putih, tangkapan layar lama.
+213	Duplikat, beruntun, buram
+215	Hapus centang email yang ingin kamu simpan. Email dari bank, pajak, kesehatan, dan pengirim «selalu simpan» tidak pernah ada di daftar ini. Semua masuk ke tempat sampah email (bisa dipulihkan).
+216	Demo…
+217	Memindahkan ke tempat sampah…
+218	Nonaktif secara default. Jika diaktifkan, foto (dan kontak dalam .vcf) disalin ke folder sebelum setiap pembersihan, demi keamanan.
+219	Semua sudah jadi favorit 👍
+220	Dalam mode demo, tidak ada file yang diproses. Keluar dari demo (Opsi) untuk melakukannya sungguhan.
+221	Dalam kondisi prima
+222	Kirim %1
+223	Kirim PDF kenangan
+224	Kirim link unduhan lewat email · Ekspor sekali
+225	Kesalahan tak terduga
+226	Ruang yang dikosongkan
+227	Ruang yang dikosongkan sejak awal: %1. Analisis sebentar?
+228	Ruang yang bisa didapat
+229	Dan emailmu
+230	Tagihan dan dokumen
+231	Lakukan pembersihan aman?
+232	Selesai ✔
+233	Keluarga
+234	Tutup
+235	File %1
+236	File %1 sudah selesai
+237	File tidak terbaca
+238	File instalasi yang sudah terinstal
+239	File kerja aplikasi di penyimpanan ponsel. Dibuat ulang jika perlu.
+240	File tak berguna
+241	File yang disisihkan, dikosongkan otomatis setelah 7 hari
+242	File sementara
+243	File sementara, gambar mini, folder kosong, sisa aplikasi
+244	File sementara, gambar mini, folder kosong, sisa aplikasi. Foto dan musik tidak pernah disentuh.
+245	Buram
+246	Buram, terlalu gelap atau terlalu terang — periksa sebelum mencentang
+249	DISIMPAN
+250	Simpan di ponsel foto dari … terakhir
+251	Disimpan
+253	Gmail mewajibkan SANDI APLIKASI (16 huruf):\n1. Aktifkan Verifikasi 2 Langkah di akun Google-mu.\n2. Buka myaccount.google.com/apppasswords\n3. Buat sandi bernama «Clean Smart» dan tempel di sini.
+256	Google Foto
+258	Google mengirim email saat siap: dalam beberapa jam atau beberapa hari. Kamu bisa menutup aplikasi sementara.
+259	Besar
+260	Email besar (5 MB+)
+261	Video besar
+262	Grup %1 · %2 foto
+263	Login ditolak. Gmail, Yahoo, dan iCloud butuh SANDI APLIKASI, bukan sandi biasamu.
+264	Perlu dibersihkan dengan baik
+265	Tinggal %1. Buka Clean Smart untuk mengosongkan ruang dengan satu ketukan.
+266	Tidak berisi apa pun.
+267	Masih memakan ruang selama 30 hari
+268	Disimpan di folder «Dilindungi» kotak suratmu. Diulang setiap malam.
+269	Tidak bisa dibatalkan: file mungkin sudah dihapus permanen.
+270	Tidak bisa membuat folder %1
+271	Tidak bisa melindungi foto-foto ini
+272	Tidak bisa mengosongkan tempat sampah
+273	Pajak
+274	Pajak - Pemerintahan
+275	Masukkan server IMAP layanan emailmu (port 993, SSL).
+276	Saya sudah meminta salinan
+277	Saya membuka disk di PC dan melihat foto saya, tahun demi tahun.
+278	Saya sudah memproses semua file
+279	Tidak pernah dibuang, disimpan di «Dilindungi»
+280	Saya mengosongkan kotak surat
+281	Saya mengosongkan ruang
+282	Saya mengamankan yang penting
+283	Saya mengamankan yang bagus
+284	Saya memilah per pengirim
+285	Saya mengecek yang meragukan
+286	Buang %1?
+287	Buang email ini?
+288	Buang salinannya?
+289	Buang email besar?
+290	Buang buletin?
+291	Buang aslinya?
+292	Buang email lama?
+293	Log, cadangan sementara, unduhan yang terhenti. Tidak diperlukan lagi.
+294	Alamat dan sandi akan dihapus dari ponsel.
+295	Yang penting aman, sisanya sudah pergi
+296	Aslinya tidak disentuh: nanti saya tawarkan untuk membuangnya ke tempat sampah.\n\nBisa memakan beberapa menit.
+297	MALAM HARI
+298	KOSONGKAN RUANG
+300	Salinan di disk telah dihapus: Clean Smart menyalin semuanya lagi dari awal.
+301	Tempat sampah kosong.
+302	Ruang email dikosongkan saat tempat sampah emailmu dikosongkan (biasanya dalam 30 hari).
+303	Pencadangan tidak berhasil. Buka Clean Smart untuk memeriksa folder.
+304	Bahasa
+305	Pembersihan terpandu melakukan semuanya dengan urutan yang benar. Tombol hijau selalu langkah berikutnya.
+306	Ringkasan, dan cara mengosongkan akun %1
+307	Kontak asli disimpan.
+308	Disk (atau ponsel) penuh: penyalinan berhenti dengan rapi.\n\nPasang disk yang lebih besar, pilih di langkah 2, lalu jalankan lagi mode otomatis: kami lanjut tanpa duplikat.
+309	Ruang disk tidak cukup: sisa %1, perlu sekitar %2 untuk file ini.\n\n• Kosongkan ruang di disk, atau\n• pasang disk yang lebih besar dan pilih di langkah «Disk» (kami lanjut dari posisi sekarang).\n\nTidak ada yang disentuh.
+310	Disk tidak bisa diakses.\n\n• Pastikan terpasang dengan benar (adaptor USB-C).\n• Di langkah «Disk», pilih folder lagi.
+311	Folder cadangan tidak bisa diakses. Buka Clean Smart > Opsi untuk memilihnya.
+312	Folder cadangan tidak bisa diakses lagi. Pilih lagi.
+313	Folder «%1» tidak ditemukan di disk. Pastikan disk terpasang (langkah 2).
+314	File saat ini diselesaikan dulu. File yang sudah tersalin aman; sisanya lain kali, tanpa duplikat.
+315	Link di email Google kedaluwarsa setelah sekitar seminggu: jika begitu, minta ekspor baru (tidak ada yang hilang, kami lanjut tanpa duplikat).
+316	Bulan lalu
+317	Pembersihan aman
+318	Tetap ulangi
+319	Ponsel
+320	Ponsel hampir penuh (perlu minimal 300 MB kosong untuk bekerja).\n\n• Kosongkan tempat sampah Galeri.\n• Hapus file ZIP yang sudah diproses (Unduhan).\n• Lakukan pembersihan terpandu Clean Smart.\n\nTidak ada yang disentuh.
+321	Ponsel mati atau disk tercabut? Jalankan lagi ZIP yang sama: Clean Smart melanjutkan tanpa kehilangan atau menggandakan apa pun.
+322	Membaca galeri
+323	Membaca tanggal foto…
+324	Membaca video
+325	Tidak bisa membaca: %1
+326	.apk aplikasi yang sudah terinstal: tidak diperlukan lagi.
+327	200 email terakhir di tempat sampah emailmu. Centang yang ingin dikembalikan ke kotak masuk.
+328	30 foto dan video yang paling banyak memakan ruang
+329	Kotak lainnya: tidak perlu
+330	File Apple tersedia sekitar 2 minggu di privacy.apple.com: jika sudah lewat, buat permintaan baru (tidak ada yang hilang, kami lanjut tanpa duplikat).
+331	File yang sudah dibuang bisa dipulihkan dari Galeri.
+332	Email lebih dari %1 tahun masuk ke tempat sampah emailmu. Yang penting disimpan.
+333	Email lebih dari 2 tahun masuk ke tempat sampah emailmu.
+334	Email di atas 5 MB masuk ke tempat sampah emailmu.
+335	Buletin, iklan, notifikasi, dan email ganda masuk ke tempat sampah emailmu (seluruh kotak masuk).\n\nEmail penting tidak pernah disentuh.
+336	Foto dulu (pilah, simpan yang terbaik, cadangkan, kosongkan), lalu file tak berguna di ponsel, lalu email.
+337	Foto lebih dari %1 bulan yang sudah dicadangkan keluar dari ponsel (tempat sampah, 30 hari).
+338	Foto favorit (atau dilindungi dengan tombol 🛡️) tidak pernah diusulkan
+339	Foto agak buram, WhatsApp, tangkapan layar baru: kamu yang memutuskan.
+340	Foto, video, dan musik tidak pernah disentuh.
+341	Yang lebih lama hanya diusulkan ke tempat sampah jika sudah ada di cadanganmu.
+342	Foto terindah bulan atau tahun ini, untuk dikirim ke orang tersayang
+343	Yang terbesar dan yang tidak lagi kamu buka: copot dengan satu gerakan
+344	Spam masuk ke tempat sampah emailmu. Hapus centang jika email bukan spam.
+345	Kosongkan
+346	Kosongkan %1?
+347	Mengosongkan %1 bersifat opsional. %2 tidak mengizinkan aplikasi apa pun menghapus fotomu: kamu sendiri yang melakukannya, saat yakin.
+348	Kosongkan kotak surat
+349	Mengosongkan kotak surat
+350	Kosongkan kotak surat?
+351	Kosongkan ruang
+352	Kosongkan ruang, PDF kenangan…
+353	Mendaftar foto di disk…
+354	SEKARANG
+355	Email (opsional, untuk emailmu)
+356	Email
+357	Email Gmail: %1
+358	Email dengan lampiran
+359	Email lebih dari 2 tahun
+360	Email ganda
+361	Email ganda…
+362	Rumah
+363	Beri tahu saya
+364	Terima kasih sudah mencoba Clean Smart! Instal versi lengkap untuk terus membersihkan ponselmu.
+365	Aplikasi saya
+366	File terbesar saya
+367	Aturan saya
+368	Membuang ke tempat sampah foto lebih dari %1 bulan yang sudah dicadangkan
+369	Amankan
+370	Mengamankan yang penting
+371	Gambar mini
+372	Pembaruan
+373	Memindahkan ke tempat sampah…
+374	Panduan penggunaan
+375	Panduan penggunaan tidak ditemukan.
+376	Mode demo selesai
+377	Ubah ▼
+378	Menampilkan aplikasi dengan foto, email, dan kontak palsu. Tidak ada yang disentuh di ponsel: ideal untuk memperkenalkan Clean Smart.
+379	Sandi (kosong = pakai yang sekarang)
+380	Sandi aplikasi
+381	Media WhatsApp
+382	Pembersihan lengkap
+383	Pembersihan terpandu
+384	Pembersihan email terpandu
+385	Pembersihan kotak surat yang aman
+386	Pembersihan selesai!
+387	BARU
+388	Membersihkan kotak surat
+389	Membersihkan file tak berguna
+390	Bersihkan
+391	Bersihkan %1?
+392	Bersihkan ponsel
+393	Bersihkan file tak berguna?
+394	Buletin dan notifikasi…
+395	Buletin dan iklan
+396	Buletin, iklan, notifikasi, dan email ganda.
+397	Jumlah file di email
+398	Normal
+399	Versi baru %1 tersedia
+401	Lupakan
+402	Lupakan akun ini?
+403	Ya, sudah selesai
+405	Dibuka hari ini
+406	Dibuka %1 lalu
+407	Membuka %1…
+408	Buka Clean Smart untuk melihat apa yang harus dilakukan. Tidak ada yang hilang.
+409	Buka halaman Google-mu dan lihat ruang yang dipakai Google Foto. Tulis di sini (dalam GB).
+410	Buka «Video besar», centang, lalu «Kompres»
+411	Buka
+412	Buka Google Foto
+413	Buka Google Takeout
+414	Buka Foto iCloud
+415	Buka halaman sandi aplikasi
+416	Buka privacy.apple.com
+417	Buka «Kosongkan ruang» Android
+418	PDF kenangan
+419	FOTO DAN VIDEO
+420	PERLINDUNGAN
+421	Tidak ada foto untuk periode ini.
+422	Tidak dibuka lebih dari setahun
+423	Lewati
+425	Salinan kecil foto untuk tampilan. Dibuat ulang otomatis.
+426	Foto
+427	Foto: %1 · video: %2 · duplikat disisihkan: %3
+428	Foto akhir pekan
+429	Foto ganda, beruntun, foto gagal, video besar, email tak berguna… semuanya memakan ruang.
+430	Foto dan video yang diterima atau dikirim
+431	Foto buram atau gagal
+432	Foto iCloud
+433	Foto mirip
+434	Foto, ponsel, dan email, langkah demi langkah
+435	Ruang terpakai: %1
+436	Alat lainnya
+437	Masing-masing di atas 100 MB
+438	Untuk menambah poin: %1.
+439	Untuk mendapatkan versi lengkap Clean Smart, atau untuk pertanyaan apa pun, tulis kepada saya:
+440	Untuk mendapatkan versi lengkap, tulis kepada saya:
+441	Untuk menemukan file tak berguna, Clean Smart perlu melihat penyimpanan ponsel: izinkan «Akses semua file». Tidak ada yang dikirim ke mana pun.
+442	Untuk akun atau disk lain. File yang sudah disalin ke disk tidak disentuh.
+443	Lindungi favorit saya
+444	Hati-hati
+445	Hati-hati: lebih sedikit foto diusulkan. Ketat: lebih banyak.
+446	Persiapan
+447	Persiapan…
+448	Beri tahu saya jika ponsel hampir penuh (kurang dari 1 GB), dan ringkasan singkat setiap tanggal 1.
+449	Siapkan minimal %1 di flashdisk atau disk (cadangan 10 %).
+450	SIAPA YANG PALING SERING MENGIRIM EMAIL
+451	Saat email dari %1 sudah tiba
+452	Keluar
+453	Tinggalkan Google Foto
+454	Tinggalkan Foto iCloud
+455	MENCARI FOTO GAGAL
+456	Beruntun: kami simpan yang terbaik…
+457	Beruntun — yang paling tajam disimpan
+458	Merapikan: %1
+459	Mencari duplikat
+460	Mencari file tak berguna…
+461	Mencari email
+462	Mencari email dengan PDF
+463	Mencari email penting (%1 / %2)
+464	Mencari foto buram
+465	Mencari foto gagal
+466	Mencari foto mirip
+467	Mencari lampiran (%1 / %2)
+468	Cari pembaruan
+469	Mulai ulang
+470	Mulai ulang dengan akun lain
+471	Mulai lagi dari awal?
+472	Lihat ukuran %1
+473	Analisis lagi setelah ada perubahan.
+474	Kembalikan email
+475	Atur ulang penghitung
+476	Mengembalikan file
+477	Sisa aplikasi yang dicopot
+478	Sisa aplikasi yang dicopot…
+479	Diterima beberapa kali dalam selisih detik: %1
+480	Tidak ada
+481	Tidak ada yang dihapus.
+482	Tidak ada yang hilang
+483	Tidak ada yang dihapus tanpa persetujuanmu: semuanya lewat tempat sampah.
+484	Tidak ada yang bisa dikosongkan: belum ada foto lama di cadangan. Jalankan dulu «Cadangkan semua foto saya».
+485	HASIL
+486	Aturan dihapus
+487	Pulihkan email dari tempat sampah emailmu
+488	Ambil foto iCloud saya (iPhone lama)
+489	Perkecil video saya
+490	Setelan lanjutan
+491	Setelan penyimpanan Android
+492	CADANGAN
+494	Tanpa akses ke foto, Clean Smart tidak bisa menganalisis apa pun.
+495	Kesehatan
+496	Cadangan %1 / %2
+497	Cadangan otomatis setiap malam
+498	Cadangan sebelum menghapus
+499	Mencadangkan foto bagus saya
+500	Mencadangkan email
+501	Mencadangkan email penting
+502	Menyimpan email %1 / %2
+503	Cadangkan sebelum menghapus
+504	Simpan email
+505	Cadangkan foto bagus saya
+506	Masuk dengan Apple ID-mu
+507	Server IMAP
+508	Server tidak ditemukan: periksa internet dan nama server.
+509	Email darinya masuk ke tempat sampah setiap malam, otomatis
+510	Hanya foto bagus: tidak pernah duplikat, beruntun berlebih, atau gagal. Favorit juga masuk ke «Mes meilleures» (Terbaik saya).
+511	Hanya foto bagus yang dicadangkan, ke flashdisk, disk, atau Google Drive. Bahkan Google Foto bisa diambil kembali.
+512	Setiap kali hanya foto baru yang disalin.
+513	Hanya 20 file pertama yang dikirim.
+514	Jika login ditolak, buat sandi aplikasi di keamanan akun Microsoft (perlu verifikasi 2 langkah).
+515	Jika tidak, iPhone mengirim lagi foto ke iCloud, dan menghapus di iCloud bisa juga menghapusnya dari iPhone.
+516	Jika tidak, ponsel mengirim lagi foto ke Google, dan menghapus di Google bisa juga menghapusnya dari ponsel ini.
+517	Obral musim dingin
+518	Sering tidak berguna setelahnya
+520	Penyimpanan ponsel
+521	Ketat
+522	Berikutnya
+523	Hapus sendiri file ini di Unduhan untuk mengosongkan ruang.
+524	Hapus
+525	Hapus %1?
+526	Hapus file ini dari ponsel?
+527	Hapus setiap file dari ponsel setelah disalin dan diperiksa (disarankan: menjaga ruang kosong)
+528	Hapus duplikat
+529	Di Gmail, email tetap di kotak masuk dan diberi label «Dilindungi». Diulang setiap malam.
+530	Di Google Takeout, dalam 1 menit
+531	Di account.apple.com → Sandi khusus aplikasi → buat satu.
+532	Di iPhone: Pengaturan › namamu › iCloud: ruang yang dipakai «Foto» ditampilkan. Atau lihat di icloud.com. Tulis di sini (dalam GB).
+533	Di iPhone atau di icloud.com/photos: pilih foto lalu «Hapus». Album «Baru Dihapus» menyimpannya 30 hari.
+534	Di halaman yang terbuka: Penyimpanan › «Hapus cache». Android mewajibkannya, Clean Smart tidak bisa melakukannya untukmu.
+535	Di ponsel, 2 sampai 3 GB kosong sudah cukup: satu file sekali proses. Kosong sekarang: %1.
+536	Di privacy.apple.com, dalam 2 menit
+537	Di privacy.apple.com, file bernama «iCloud Photos Part 1 of 12»: angka terakhir (di sini 12) adalah jumlah file. Clean Smart juga membacanya sendiri.
+538	Keamanan akun → Buat sandi aplikasi, lalu tempel di sini.
+539	Keamanan, foto gagal, demo…
+540	Tingkat ketelitian
+541	SELESAI
+542	Layanan emailmu
+543	Masa uji coba 30 harimu sudah berakhir.
+544	Ukuran %1 (GB)
+545	Ukuran teks
+546	Ukuran file maksimum: 1 GB atau 2 GB
+547	Waktu berlalu
+548	Sisa waktu
+549	Selesaikan permintaan
+550	Selesai
+551	Foto iPhone-mu di flashdisk atau disk, per tahun, tanpa duplikat
+552	Foto 2 bulan terakhirmu belum ada di disk. Minta salinan baru di Google Takeout, lalu mode otomatis hanya menambahkan foto baru, tanpa duplikat.
+553	Foto 2 bulan terakhirmu belum ada di disk. Minta salinan baru ke Apple: Clean Smart hanya menambahkan foto baru, tanpa duplikat.
+554	Fotomu aman
+555	Setelan dan kotak suratmu akan disimpan.
+556	Ponselmu penuh?
+557	Ponselmu bersih dan fotomu aman
+558	Ponsel dan kotak suratmu bersih, fotomu aman
+559	Ketuk di sini untuk mengunduh, lalu buka file untuk menginstal
+560	Ketuk di sini untuk versi lengkap atau pertanyaan
+561	Cukup ketuk link «Unduh» di email Google. Clean Smart menyalin setiap file ke disk begitu tiba di Download, bahkan saat yang lain masih diunduh.
+562	Ketuk pengirim: selalu buang, selalu simpan, beri tahu saya, berhenti berlangganan.
+563	Ketuk pengirim di «Siapa yang paling sering mengirim email» untuk memilih
+564	Ketuk gambar untuk mencentang · tekan lama untuk melihat besar
+565	Ketuk untuk menganalisis
+566	Ketuk untuk melihat
+567	Selalu simpan
+568	Selalu buang
+569	Semua file sudah diproses?
+570	Semua email dari %1 (minimal %2 email) masuk ke tempat sampah emailmu.
+571	Semua email dari %1 pengirim buletin masuk ke tempat sampah emailmu (seluruh kotak masuk, bukan hanya yang dianalisis).\n\nKamu bisa memulihkannya dari tempat sampah.
+572	Centang semua
+573	Hapus semua centang
+574	Batalkan semua pilihan
+575	Buang semua ke tempat sampah
+576	Bersihkan semua
+577	Semua lewat tempat sampah: 30 hari untuk memulihkan. Dan «Saya keliru» membatalkan dengan satu ketukan.
+578	Mulai ulang semuanya
+579	Mulai ulang semuanya?
+580	Seluruh isinya sudah disalin dan diperiksa di disk. Menghapusnya memberi ruang untuk yang berikutnya.\n\nFotomu juga tetap ada di Google Foto.
+581	Semua baik, pertahankan!
+582	Semua sudah dicadangkan 👍
+583	Semua fotomu di flashdisk atau disk, per tahun, tanpa duplikat
+584	Memilah sebelum mencadangkan
+585	Memilah pengirim
+586	Pilah cepat
+587	Pemilahan selesai!
+588	Pilah dulu, simpan yang terbaik, cadangkan hanya foto bagus, kosongkan ruang, lalu bersihkan email.
+589	Pilah dulu, simpan yang terbaik, cadangkan hanya foto bagus, lalu kosongkan ruang.
+590	Pilah dulu, amankan yang penting, lalu kosongkan kotak surat. Email dari bank, pemerintahan, atau kesehatan tidak pernah dibuang.
+591	Pilah dengan menggeser
+592	Pilah pengirim
+593	Pilah, simpan, cadangkan, kosongkan
+594	Pilah, amankan yang penting, kosongkan kotak surat
+595	Pilah, lindungi
+596	Terlalu terang
+597	Terlalu kecil
+598	Terlalu gelap
+599	Sangat besar
+600	Kamu menghapus salinan di disk dan tidak ada yang tersalin lagi? Ketuk «Mulai ulang semuanya (saya menghapus salinan)» di bawah layar, lalu jalankan lagi file ZIP-mu.
+601	Dulu pakai iPhone? Foto iCloud-mu di flashdisk atau disk
+602	Kamu bisa keluar dari aplikasi untuk mengetuk link: penyalinan tetap berjalan (notifikasi «Salinan otomatis»).
+603	Jenis: .zip   ·   Ukuran: 2 GB
+604	Unduh SATU ZIP saja setiap kali, lewat Wi-Fi. Proses, hapus, lalu unduh yang berikutnya.
+605	Cukup unduh file di privacy.apple.com. Clean Smart menyalin setiap file ke disk begitu tiba di Download.
+606	Ponsel
+607	Ponsel penuh: kosongkan tempat sampah Galeri, hapus ZIP yang sudah diproses, lakukan pembersihan terpandu. Perlu minimal 300 MB kosong.
+608	Satu tombol, dan beres
+609	Satu kartu per pengirim: geser ke kiri untuk membuang SEMUA emailnya, ke kanan untuk menyimpannya.
+610	Notifikasi saat dia mengirim email
+611	Satu foto setiap kali: geser ke kiri untuk membuang, ke kanan untuk menyimpan
+612	Ada pertanyaan, masalah, ingin versi lengkap? Tulis kepada saya:
+613	Gunakan alamat dan sandi Free-mu.
+614	Gunakan alamat dan sandi La Poste-mu.
+615	Gunakan alamat dan sandi Orange-mu.
+616	Gunakan alamat dan sandi SFR-mu.
+617	Sekitar pukul 2 pagi, foto baru disalin ke folder cadanganmu. Notifikasi memberi tahu jika gagal.
+618	Versi lengkap
+619	Versi terinstal: %1
+620	Kosongkan
+621	Kosongkan tempat sampah?
+622	Kosongkan tempat sampah Clean Smart
+623	Kosongkan tempat sampah Clean Smart?
+624	Kosongkan tempat sampah sekarang
+625	Kosongkan sekarang
+626	Email lama ke tempat sampah…
+627	Unduhan lama (lebih dari 6 bulan)
+628	Lihat daftar lalu buang
+629	Lihat daftar lalu kosongkan
+630	Lihat surat sampah, lalu buang ke tempat sampah
+631	Lihat tipsnya
+632	Lihat ruang Google saya
+633	Lihat ruang iCloud saya
+634	Tagihan Anda
+635	Perjalanan dan pemesanan
+636	Memeriksa cadangan
+637	Memeriksa disk
+638	Periksa di email Google bahwa setiap file (001, 002, 003…) sudah diproses.
+639	Periksa, lalu kosongkan %1 (jika mau)
+641	Mata tertutup
+642	aplikasi
+643	aplikasi
+644	menghitung…
+645	kompresi gagal
+646	kontak ganda
+647	kontak ganda
+648	salinan
+649	salinan
+650	dari pustaka fotomu aman
+651	file terakhir
+652	duplikat
+653	duplikat
+654	kesalahan
+655	kesalahan
+656	pengirim
+657	pengirim
+658	bersihkan kotak suratmu
+659	file
+660	file disalin
+661	file disalin dan diperiksa
+662	file tidak
+663	file
+664	file disalin
+665	file disalin dan diperiksa
+666	file tidak
+667	Foto iCloud
+668	hari
+669	hari tersisa
+670	hari
+671	hari tersisa
+672	paling mudah
+673	kosong · %1 % terpakai
+674	kosongkan ruang dengan Pembersihan lengkap
+675	dikosongkan
+676	email
+677	email dikembalikan
+678	email
+679	email dikembalikan
+680	bersihkan file tak berguna di ponsel
+681	file baru
+682	file baru
+683	langkah demi langkah
+684	foto
+685	foto disimpan
+686	foto atau video
+687	foto atau video diambil
+688	foto dilindungi
+689	foto
+690	foto disimpan
+691	foto atau video
+692	foto atau video diambil
+693	foto dilindungi
+694	lalu «Langkah berikutnya»:
+695	beruntun
+696	beruntun
+697	cadangkan fotomu ke flashdisk atau kartu SD
+698	sudah aman di cadanganmu (nama sama, ukuran sama).\n\nMasuk ke tempat sampah Galeri (bisa dipulihkan 30 hari). Yang terbaru tetap di ponsel.
+701	dari %1 kontak
+702	pilah fotomu (duplikat, beruntun, buram)
+703	unduhan
+704	unduhan
+705	terpakai
+706	video
+707	video dikompres
+708	video
+709	video dikompres
+710	email lama
+711	email lama
+712	«File rusak»: unduhan terputus. Unduh lagi ZIP ini dari email Google dan jalankan lagi: yang sudah tersalin tidak akan disalin ulang.
+713	«Kosongkan ruang»: simpan di ponsel foto dari … terakhir
+714	SIMPAN
+715	BUANG
+716	CEPAT DITEMUKAN
+717	Untuk dibersihkan
+718	Gunakan ini jika kamu menghapus salinan di disk: Clean Smart melupakan apa yang sudah disalin, dan file ZIP berikutnya akan disalin ulang seluruhnya.\n\nDisk yang dipilih dan setelanmu disimpan. Tidak ada yang dihapus di disk maupun di %1.
+719	Tidak bisa menulis
+720	Listrik
+721	untuk dibuang
+722	item
+723	item
+724	… dan %1 email lain yang sejenis (dicentang).
+725	‹ Kembali
+726	ℹ️ %1 terbaca tanpa kesalahan. Sidik jari salinan sudah tidak ada di ponsel ini: tidak bisa dibandingkan.
+727	↩️ %1 di kotak masuk
+728	↩️ %1 dikembalikan ke galeri
+729	↩️ %1 dikembalikan ke tempatnya
+730	↩️ Saya keliru: kembalikan %1
+731	↩️ Email dikembalikan (demo)
+732	↩️ Kembalikan %1 ke kotak masuk
+733	↩️ Kembalikan email
+734	↩️ Kembalikan semua ke tempatnya
+735	⏳ Menunggu file berikutnya di Download. Ketuk link «Unduh» di email.
+736	⏳ Menunggu file berikutnya di Download…
+737	⏳ menyalin…
+738	⏳ nanti
+739	⏹ Hentikan
+740	☑️ Centang semua
+741	⚙️ Cache aplikasi dan file sistem
+742	⚙️ Opsi
+743	⚠️ %1: jalankan lagi.\n
+744	⚠️ %1 bermasalah: jalankan lagi ZIP bertanda «jalankan lagi» sebelum melanjutkan.
+745	⚠️ %1 di disk tidak lagi identik atau tidak terbaca:\n
+746	⚠️ Tidak ada cadangan malam ini
+747	⚠️ File %1 perlu diulang
+748	⚠️ Perlu sekitar %1, tersisa %2. Kamu bisa mulai: saat penuh, pasang disk lain dan kami lanjut tanpa duplikat.
+749	⚠️ Penyalinan berhenti: %1\n\nTidak ada yang hilang: jalankan lagi mode otomatis, kami lanjut tanpa duplikat.
+750	⚠️ Belum mulai
+751	⚠️ Cadangan malam
+752	⚠️ rusak: unduh lagi dari email, akan disalin otomatis
+753	⚠️ disk penuh
+754	⚠️ belum mulai
+755	⚠️ jalankan lagi
+756	⚠️ jalankan lagi (%1)
+757	⛔ Salinan belum lengkap (file rusak, perlu diulang, atau belum disalin). Selesaikan dulu salinannya: jangan hapus apa pun di %1.
+758	✅ %1: selesai dan diperiksa.\n
+759	✅ %1 duplikat dihapus
+760	✅ %1 email disimpan · %2 PDF · arsip CleanSmart/Mails/index.html diperbarui
+761	✅ %1 email penting aman · %2 PDF dikumpulkan · arsip index.html diperbarui
+762	✅ %1 foto baru dicadangkan
+763	✅ %1 · selama %2
+764	✅ %1 aman
+765	✅ 312 email penting aman (demo)
+766	✅ 7.958 foto bagus dicadangkan (demo)
+767	✅ Ruang cukup di «%1».
+768	✅ Kotak surat terhubung
+769	✅ Disk diperiksa: %1 dibaca ulang, tidak ada yang rusak.
+770	✅ Duplikat dihapus (demo)
+771	✅ File %1 selesai
+772	✅ Salinan di disk lengkap dan sudah diperiksa.
+773	✅ Email disimpan (demo)
+774	✅ salinan lengkap dan diperiksa\n✅ pencadangan ponsel dimatikan\n✅ foto dicek di disk\n\nBuka %1? Kamu sendiri yang memilih apa yang dihapus.
+775	✅ disalin dan diperiksa
+776	✅ disalin, diperiksa, dihapus dari ponsel
+777	✉️ %1 dibuang · %2 dikosongkan di kotak suratmu
+778	✉️ %1 email
+779	✉️ %1 email (folder «Mails Gmail», buka index.html)\n
+780	✉️ Kotak surat
+781	✉️ Email
+782	✉️ Email dari %1
+783	✓ %1 dipilih
+784	✨ %1 dikosongkan (bisa dipulihkan 30 hari di tempat sampah Galeri)
+785	✨ %1 email dipindah ke tempat sampah
+786	✨ %1 dipindah ke tempat sampah (demo)
+787	✨ %1 dipindah ke tempat sampah emailmu (bisa dipulihkan dengan «Kembalikan email»)
+788	✨ %1 dibersihkan · %2 dikosongkan
+789	✨ %1 email lama ke tempat sampah (yang penting disimpan)
+790	✨ 1.249 email ke tempat sampah (demo)
+791	✨ 1,1 GB dikosongkan (demo)
+792	✨ 6,4 GB dikosongkan (demo)
+793	✨ Email ke tempat sampah (demo)
+794	✨ Pembersihan otomatis hari Minggu
+795	✨ Pembersihan hari Minggu
+796	✨ Email lama ke tempat sampah (demo)
+797	❤️ Kesehatan ponsel: %1 / 100
+798	⬅ Geser ke kiri: semua emailnya ke tempat sampah   ·   Geser ke kanan: disimpan ➡
+799	⬅ Geser ke kiri untuk membuang   ·   Geser ke kanan untuk menyimpan ➡
+800	⬇️ %1 sedang berlangsung: penyalinan dimulai begitu selesai.
+801	⬜ Hapus semua centang
+802	⭐ Lindungi %1 saya
+805	🍏 Foto iCloud saya
+806	🍏 Saatnya salinan iCloud baru
+807	🍏 Tinggalkan Foto iCloud
+808	🎁 Versi uji coba · %1
+809	🎉 %1 dikosongkan total
+810	🎉 Tidak ada file tak berguna: ponsel bersih!
+811	🎉 Tidak ada email untuk dibuang di sini.
+812	🎉 Tidak ada aplikasi terlupa: semuanya kamu pakai!
+813	🎉 Tidak ada apa-apa lagi di sini.
+814	🎉 Tidak ada yang perlu dibersihkan, semua rapi!
+815	🎉 Selesai: %1 disalin dan diperiksa. Total di disk: %2 dan %3.
+816	🎉 Semua file selesai
+817	🎬 Demo
+818	🎬 MODE DEMO: tidak ada yang disentuh di ponsel
+819	🎬 Mode demo: tidak ada yang disentuh di ponsel
+820	👀 Setiap tombol menampilkan dulu daftar email: hapus centang yang ingin disimpan, lalu konfirmasi.
+821	👀 Lihat dan buang emailnya sekarang
+822	👆 Pengirim yang kamu buang
+823	👆 Memilah pengirim
+824	👆 Pilah cepat
+825	👉 Sekarang: di email Google, unduh file %1 (lewat Wi-Fi). Lalu ketuk tombol hijau dan pilih di Unduhan.
+826	👉 Sekarang: di privacy.apple.com, unduh «Part %1» (lewat Wi-Fi). Lalu ketuk tombol hijau dan pilih di Unduhan.
+827	👉 Yang harus dilakukan sekarang
+828	👉 unduh lalu proses
+829	👍 Kamu sudah punya versi terbaru (%1)
+830	👯 Email ganda
+831	💡 Bantuan
+832	💡 Tips: berhenti berlangganan agar tidak menerimanya lagi (tombol di daftar «Siapa yang paling sering mengirim email»).
+833	💡 Jika macet
+834	💡 Jika macet: semua tips
+835	💾 %1 di «%2»
+836	💾 Cadangan malam
+837	💾 Simpan %1
+838	💾 Cadangkan semua foto saya
+839	💾 Simpan email
+840	📁 Pilih folder cadangan
+841	📁 Pilih folder
+842	📁 CleanSmart / Mails: email lengkap (.eml)\n📕 CleanSmart / PDF: semua PDF dikumpulkan\n📎 CleanSmart / Pieces jointes: file lainnya
+843	📁 Folder cadangan disimpan
+844	📂 Proses file ZIP
+845	📂 Proses file ZIP secara manual
+846	📅 Laporan bulananmu
+847	📎 Email besar
+848	📕 Centang PDF
+849	📕 PDF disimpan di Unduhan / Clean Smart
+850	📕 PDF kenangan dibuat (demo)
+851	📖 Panduan penggunaan
+852	📤 Kirim (%1)
+853	📦 Yang terbesar
+854	📦 Tinggalkan Google Foto
+855	📦 Salinan Google barumu mungkin sudah siap
+856	📧 Buka email Google
+857	📰 Buletin dan iklan
+858	📱 Aplikasi saya
+859	📱 Buka aplikasi Google Foto
+860	📱 Ponsel
+861	📱 Ponsel hampir penuh
+862	📸 %1 foto dan %2 video disalin dan diperiksa, diurutkan per tahun\n
+863	📸 Foto
+864	🔄 Analisis lagi
+865	🔄 Cari lagi
+866	🔄 Mulai ulang semuanya (saya menghapus salinan)
+867	🔍 Analisis kotak surat saya
+868	🔍 Analisis ponsel saya
+869	🔍 Cari email dengan lampiran
+870	🔎 Periksa disk (membaca ulang setiap foto)
+871	🔒 Sandimu tetap terenkripsi di ponsel. Hanya dikirim ke server layanan emailmu.
+872	🔓 Izinkan
+873	🔓 Izinkan akses file
+874	🔓 Satu izin untuk tahu lebih banyak
+875	🔓 Satu izin, sekali saja
+876	🔓 Sekali saja: izinkan «Akses semua file» agar Clean Smart bisa melihat folder Download. Hanya file %1 yang dibaca.
+877	🔔 Email dari %1
+878	🔔 Kamu akan diberi tahu saat dia mengirim email
+879	🕰️ Email lama
+880	🕰️ Email lama (yang penting disimpan)
+881	🗑️ Tempat sampah dikosongkan: %1 didapat kembali untuk selamanya
+882	🗑️ Copot
+883	🗑️ File dihapus dari ponsel: ada ruang untuk yang berikutnya
+884	🗑️ Pengirim «selalu buang» saya
+885	🗑️ Buang %1 ke tempat sampah
+886	🗑️ Buka %1 untuk menghapus
+887	🗑️ Emailnya akan masuk ke tempat sampah setiap malam
+888	🗑️ Hapus ZIP ini dari ponsel (disarankan)
+889	🗑️ Selalu buang: %1   🛡️ Selalu simpan: %2   🔔 Beri tahu saya: %3
+890	🗜️ Kompres (%1)
+891	😴 Tidak dibuka selama 3 bulan
+892	🚫 Berhenti berlangganan
+894	🛡️ %1 (dijadikan favorit)
+895	🛡️ %1 disimpan di folder «Dilindungi» kotak suratmu
+896	🛡️ Pengirim penting (bank, pemerintahan, kesehatan…): emailnya tidak pernah dibuang.
+897	🛡️ Tombol hapus muncul saat salinan lengkap dan kotak 1 dan 2 dicentang.
+898	🛡️ Email dari bank, pemerintahan, atau kesehatan tidak pernah masuk ke tempat sampah.
+899	🛡️ %1 tidak pernah dikosongkan sebelum salinan diperiksa: centang dulu kotak pertama.
+900	🛡️ Lindungi (%1)
+901	🛡️ Rapikan email penting saya
+902	🛡️ Emailnya tidak akan pernah dibuang
+903	🤖 Salinan otomatis fotomu
+904	🤖 Mulai mode otomatis
+905	🤖 Serba otomatis (paling mudah)
+906	🧊 Kosongkan cache-nya
+907	🧬 %1 duplikat dan 🎞️ %2 foto beruntun disisihkan\n
+908	🧬 duplikat   🎞️ foto beruntun yang gagal\n📱 tangkapan layar   🎬 video besar\n💬 media WhatsApp   👥 kontak ganda\n✉️ buletin dan email besar
+909	🧭 Bersih-bersih
+910	🧭 Bersih-bersih email
+911	🧭 Pembersihan terpandu
+912	🧹 File tak berguna
+913	🧹 Buang email dari %1
+914	🧹 Pembersihan aman
+915	🧹 Email dipilah malam ini
+916	🧹 Buang %1 ke tempat sampah
+917	🧹 Pembersihan aman
+918	🧹 Pembersihan aman: buletin, notifikasi, duplikat
+919	🧹 Bersihkan · %1
+920	🧹 Bersihkan · %1 · %2

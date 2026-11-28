@@ -18,7 +18,7 @@ data class Settings(
     val severity: Int = 1,
     /** Gros caracteres : 0 = normal, 1 = gros, 2 = tres gros (mode senior). */
     val textSize: Int = 0,
-    /** Langue : 0 = comme le telephone, 1 = francais, 2 = anglais. */
+    /** Langue : 0 = comme le telephone, sinon 1 + position dans Tr.CODES (1 = francais, 2 = anglais...). */
     val langue: Int = 0,
     /** Chaque nuit, copier les nouvelles photos dans le dossier de sauvegarde. */
     val nightBackup: Boolean = false,

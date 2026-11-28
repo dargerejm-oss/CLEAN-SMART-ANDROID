@@ -1,0 +1,187 @@
+0	Bedienungsanleitung
+1	Mehr Platz auf deinem Handy,\neinfach und ohne Risiko.
+2	Erstellt von JM Dargère
+3	CLEAN SMART — Erstellt von JM Dargère
+4	Wie funktioniert es?
+5	1. Ist dein Handy voll?
+6	Doppelte Fotos, misslungene Fotos, riesige Videos, unnütze E-Mails… alles braucht Platz.
+7	2. Clean Smart sucht von allein
+8	Ein einziger Knopf. Während der Analyse wird nichts gelöscht.
+9	3. Du entscheidest
+10	Was sicher ist, ist schon für dich angehakt. Über den Rest entscheidest du.
+11	4. Nichts geht verloren
+12	Alles geht über den Papierkorb: 30 Tage, um ein Foto oder eine E-Mail zurückzuholen.
+13	5. Alles bleibt sicher
+14	Sicherung auf SD-Karte, USB-Stick oder Google Drive, sogar von allein in der Nacht.
+15	Großer Hausputz (empfohlen)
+16	Der Startbildschirm hat eine große grüne Kachel „Großer Hausputz“ und 3 Türen: 📸 Fotos, 🧹 Handy, ✉️ E-Mails. Der große Hausputz erledigt alles in der richtigen Reihenfolge; der GRÜNE Knopf ist immer der nächste Schritt.
+17	Sicheres Aufräumen: überzählige Duplikate und Serienbilder (das beste bleibt), schwarze oder weiße Fotos, alte Screenshots. Ein Knopf.
+18	Ich prüfe das Zweifelhafte: leicht unscharfe Fotos, WhatsApp… Nach links wischen zum Wegwerfen, nach rechts zum Behalten (wird Favorit).
+19	Ich sichere: nur die GUTEN Fotos werden gesichert. Favoriten kommen auch in „Mes meilleures“ (Meine besten).
+20	Ich schaffe Platz: alte, bereits gesicherte Fotos verlassen das Handy.
+21	NEU 2.0 — Und deine E-Mails: der Platz im Postfach, Newsletter und große E-Mails, dann das geführte Aufräumen der E-Mails. Bei Google teilen sich E-Mail und Google Fotos dieselben 15 GB.
+22	Die Bilanz zeigt, was auf dem Handy UND im Postfach frei wurde. Bei Serienbildern bleibt das Foto, auf dem niemand die Augen geschlossen hat.
+23	Unnütze Dateien (NEU 2.0)
+24	Temporäre Dateien, Vorschaubilder, Cache-Ordner, leere Ordner, Installationsdateien, Reste deinstallierter Apps. Fotos, Videos und Musik werden nie angerührt.
+25	Nur einmal: „Zugriff auf alle Dateien“ erlauben. Die Suche startet von allein.
+26	Die sicheren Gruppen sind angehakt: sie entstehen von selbst neu oder werden nicht mehr gebraucht. „Aufräumen“ und fertig.
+27	Die Gruppen „zu prüfen“ (andere .apk, App-Reste, alte Downloads) kommen in den Papierkorb von Clean Smart: „Alles zurücklegen“ 7 Tage lang.
+28	Der Cache anderer Apps: Android verbietet es Apps seit Android 11. Der Knopf öffnet den Android-Bildschirm „Speicherplatz freigeben“.
+29	📱 Meine Apps: die größten und die, die du seit 3 Monaten nicht geöffnet hast. Tippe eine an, um sie zu deinstallieren oder ihren Cache zu leeren.
+30	Gesundheitsnote und Sonntagsputz (NEU 2.0)
+31	Auf dem Startbildschirm fasst eine Note von 0 bis 100 den Zustand des Handys zusammen: freier Platz, Sicherung, zu sortierende Fotos, unnütze Dateien, Postfach. Sie sagt auch, was du tun kannst, um Punkte zu gewinnen.
+32	Unter Optionen › Automatisch „Automatischer Sonntagsputz“ einschalten: sichere unnütze Dateien und Spam verschwinden von allein, eine Benachrichtigung zieht Bilanz.
+33	Fotos verschwinden nie von allein: die Benachrichtigung sagt, wie viele zu sortieren sind, du tippst und entscheidest.
+34	Vereinfachte Optionen: Sicherung, Automatisch, Darstellung. Der Rest steht unter „Erweiterte Einstellungen“.
+35	Google Fotos verlassen
+36	Alle deine Google-Fotos auf einem USB-Stick oder einer Festplatte, nach Jahr sortiert, ohne Duplikate. Ein einziges Dashboard: der Schritt „JETZT“ ist offen, mit dem grünen Knopf.
+37	Der Platz: notiere die Größe von Google Fotos, Clean Smart berechnet den nötigen Platz.
+38	Die Festplatte: Stick oder Festplatte anschließen (USB-C-Adapter) und einen Ordner darauf wählen.
+39	Die Kopie bei Google anfordern: das Muster zeigt genau, was anzuhaken ist (.zip-Dateien zu 2 GB).
+40	Die Dateien: die Liste 001, 002… sagt dir, welche du herunterladen sollst. „ZIP-Datei verarbeiten“, dann löschen. Eine Benachrichtigung meldet das Ende.
+41	Jedes Foto wird nach Jahr sortiert, Duplikate und überzählige Serienbilder werden aussortiert, alles wird erneut gelesen und geprüft. Die Anzeige zeigt, wie viel sicher ist.
+42	Problem (Handy oder Festplatte voll, beschädigte Datei): nichts geht verloren, dieselbe Datei erneut öffnen. Knopf „Wenn es hakt“.
+43	NEU 2.0 — „Alles automatisch“: einmal „Zugriff auf alle Dateien“ erlauben, starten, dann einfach die Links in der Google-Mail antippen. Jede Datei wird kopiert, sobald sie in Download ankommt, und nach der Prüfung vom Handy gelöscht.
+44	Google freigeben: der Knopf erscheint erst, wenn die Kopie vollständig ist, die Handy-Sicherung aus ist und du deine Fotos auf der Festplatte angesehen hast. Du löschst selbst; der Google-Papierkorb behält alles 60 Tage.
+45	„Festplatte prüfen“ liest jedes kopierte Foto erneut und meldet beschädigte. Alle 2 Monate erinnert eine Benachrichtigung daran, eine neue Kopie anzufordern: nur neue Fotos werden hinzugefügt.
+46	Meine iCloud-Fotos holen (altes iPhone)
+47	Für iPhone-Fotos: dasselbe Dashboard wie bei Google Fotos, mit dem offiziellen Export von Apple.
+48	Der Platz: auf dem iPhone Einstellungen › dein Name › iCloud. Clean Smart berechnet den nötigen Platz.
+49	Die Festplatte: Stick oder Festplatte anschließen und einen Ordner darauf wählen.
+50	Auf privacy.apple.com: „Kopie deiner Daten anfordern“, „iCloud-Fotos“ anhaken, Dateien zu 1 oder 2 GB.
+51	Apple schickt in einigen Tagen eine E-Mail. „Part 1“ herunterladen, verarbeiten, löschen, dann „Part 2“…
+52	Alles wird nach Jahr in „iCloud Photos“ sortiert, ohne Duplikate, das beste Foto jeder Serie bleibt.
+53	Mein Handy analysieren
+54	Das ist der große Knopf auf dem Startbildschirm. Nichts einzustellen.
+55	Tippe auf „Mein Handy analysieren“.
+56	Beim ersten Mal fragt Android nach Zugriff auf Fotos und Kontakte: erlauben.
+57	Ein Balken zeigt den Fortschritt. Danach zeigt Clean Smart groß an, wie viel Platz du zurückgewinnen kannst.
+58	Was Clean Smart findet
+60	Duplikate
+61	Identische Kopien. Das Original bleibt.
+62	Ähnliche Fotos
+63	Serienbilder im Abstand von Sekunden. Das schärfste bleibt.
+64	Misslungene Fotos
+65	Unscharf, zu dunkel, zu hell oder zu klein.
+66	Screenshots
+67	Später oft nutzlos.
+68	Große Videos
+69	Jeweils über 100 MB.
+70	WhatsApp-Medien
+71	Empfangene oder gesendete Fotos und Videos.
+72	Meine größten Dateien
+73	Die 30 schwersten Fotos und Videos.
+74	Doppelte Kontakte
+75	Gleicher Name und gleiche Nummer.
+76	Auswählen und aufräumen
+78	Tippe auf eine Kategorie, um die Fotos zu sehen.
+79	Tippe auf ein Foto, um es anzuhaken. Lange drücken: groß ansehen.
+80	„BEHALTEN“: das Foto, das Clean Smart dir zu behalten rät.
+81	Drücke den roten Knopf „Aufräumen“ unten auf dem Bildschirm.
+82	Android fragt ein letztes Mal nach. Die Fotos kommen in den Papierkorb: 30 Tage, um sie zurückzuholen.
+83	Schnell sortieren
+84	Um deine neuen Fotos eins nach dem anderen zu sortieren, ohne nachzudenken.
+85	Tippe auf dem Startbildschirm auf „Schnell sortieren“.
+86	Wische das Foto nach LINKS zum Wegwerfen, nach RECHTS zum Behalten.
+87	Der kleine runde Knopf in der Mitte geht zum vorigen Foto zurück.
+88	Am Ende schickt der rote Knopf die wegzuwerfenden Fotos in den Papierkorb.
+89	Der Papierkorb und „Ich habe mich vertan“
+91	Fotos im Papierkorb belegen noch 30 Tage lang Platz.
+92	„Papierkorb jetzt leeren“ gibt den Platz sofort frei (Achtung: endgültig).
+93	„Ich habe mich vertan“ legt die zuletzt weggeworfenen Dateien zurück in die Galerie.
+94	Schützen und senden
+95	In einer Kategorie Fotos anhaken, dann:
+96	Schützen
+97	Das Foto wird Favorit: es wird nie wieder vorgeschlagen.
+98	Senden
+99	Per WhatsApp, E-Mail… (höchstens 20 Fotos). Nichts verlässt das Handy.
+100	Komprimieren
+101	Für Videos: neu in 720p erstellt, oft 3- bis 5-mal kleiner.
+102	Die Sicherung
+103	Deine Fotos sicher auf einer SD-Karte, einem USB-Stick oder Google Drive.
+104	Unter „Sicherung“ auf „Ordner wählen“ tippen.
+105	„Alle meine Fotos sichern“ kopiert deine Fotos, nach Monat sortiert.
+106	Bei den nächsten Malen werden nur neue Fotos kopiert.
+107	In den Optionen erledigt das die „Automatische Sicherung jede Nacht“ von allein.
+108	Weitere Werkzeuge
+109	Tippe auf dem Startbildschirm auf „Weitere Werkzeuge“:
+110	Platz schaffen
+111	Fotos älter als 3 Monate, die BEREITS gesichert sind, kommen in den Papierkorb. Nie ein Foto, das nicht sicher ist.
+112	Erinnerungs-PDF
+113	Die schönsten Fotos des Monats oder Jahres in einem PDF, für einen lieben Menschen.
+114	Meine Videos verkleinern
+115	„Große Videos“ öffnen, anhaken, dann „Komprimieren“.
+116	Mein Postfach
+117	Gmail, Outlook, Yahoo, iCloud, Orange, Free, SFR, La Poste…
+118	Tippe auf „Mein Postfach verbinden“ und wähle deinen Anbieter.
+119	Gmail, Yahoo und iCloud verlangen ein APP-PASSWORT. Clean Smart öffnet die richtige Seite.
+120	„Mein Postfach analysieren“, dann ein Knopf für: Newsletter, große E-Mails, alte E-Mails, doppelte E-Mails.
+121	Die E-Mails kommen in den Papierkorb deines Postfachs. E-Mails von Bank, Behörden oder Gesundheit werden NIE angerührt.
+122	Geführtes Aufräumen der E-Mails
+123	Unter E-Mails auf die große grüne Kachel tippen. Gleiches Prinzip: der grüne Knopf ist der nächste Schritt.
+124	Sicheres Aufräumen: Newsletter, Werbung, Benachrichtigungen und doppelte E-Mails kommen in den Papierkorb.
+125	Ich sortiere nach Absender: eine Karte pro Absender. Links gehen alle seine E-Mails weg; rechts bleibt er.
+126	Ich sichere das Wichtige: Bank, Behörden, Gesundheit, Rechnungen und E-Mails mit PDF werden gesichert.
+127	Ich mache das Postfach frei: alte E-Mails kommen in den Papierkorb, nie die wichtigen.
+128	„Abbestellen“: um einen Newsletter nicht mehr zu bekommen. Der Knopf öffnet die Abmeldeseite.
+129	NEU 2.0 — Vor dem Wegwerfen erscheint die Liste der E-Mails (Absender, Betreff, Datum): Haken bei denen entfernen, die du behalten willst, dann bestätigen.
+130	Tippe auf einen Absender: 🗑️ immer wegwerfen (jede Nacht, von allein), 🛡️ immer behalten, 🔔 mich benachrichtigen, wenn er schreibt.
+131	Geschütztes Postfach: Bank, Steuern, Gesundheit, Haus und Familie (deine Kontakte) werden in „Geschützt“ in deinem Postfach abgelegt, nie weggeworfen. Knopf „Spam“, um unerwünschte Post zu leeren.
+132	E-Mails und ihre Anhänge sichern
+134	Unter E-Mails auf „E-Mails sichern“ tippen.
+135	Die zu behaltenden E-Mails anhaken („PDFs anhaken“ für schnell).
+136	Auf „Sichern“ tippen: die vollständige E-Mail und alle PDFs gesammelt in einem PDF-Ordner.
+137	Am PC CleanSmart/Mails/index.html öffnen: ein Wort, einen Namen oder ein PDF eingeben, um alles zu finden.
+138	E-Mails zurückholen
+140	Unter E-Mails auf „E-Mails zurückholen“ tippen.
+141	Die E-Mails im Papierkorb anhaken, die du zurückwillst.
+142	Auf „Zurückholen“ tippen: sie kommen in deinen Posteingang zurück.
+143	Doppelte Kontakte
+145	Nach der Analyse zeigt die Karte „Kontakte“ die Duplikate (gleicher Name, gleiche Nummer).
+146	„Duplikate löschen“ behält den ursprünglichen Kontakt.
+147	Achtung: das Löschen geschieht auch in deinem Google-Konto.
+148	Die Optionen erklärt
+149	Automatische Sicherung jede Nacht
+150	Gegen 2 Uhr werden die neuen Fotos in deinen Sicherungsordner kopiert.
+151	Gut zu wissen: eine Benachrichtigung meldet, wenn es nicht geklappt hat.
+152	Warnungen und Monatsbericht
+153	Warnung, wenn weniger als 1 GB frei ist, und eine kleine Bilanz am 1. jedes Monats.
+154	Gut zu wissen: höchstens eine Warnung alle 3 Tage.
+155	Vor dem Löschen sichern
+156	Kopiert Fotos (und Kontakte) vor jedem Aufräumen in deinen Ordner.
+157	Gut zu wissen: standardmäßig aus, unnötig für Duplikate und misslungene Fotos.
+158	Meine Favoriten schützen
+159	Favorisierte Fotos werden nie vorgeschlagen.
+160	Gut zu wissen: standardmäßig an.
+161	Strenge
+162	Vorsichtig: weniger Fotos vorgeschlagen. Normal. Streng: mehr.
+163	Gut zu wissen: nach einer Änderung neu analysieren.
+164	Platz schaffen
+165	Die Fotos der letzten 1, 3, 6 oder 12 Monate auf dem Handy behalten.
+166	Gut zu wissen: nur bereits gesicherte Fotos werden vorgeschlagen.
+167	Textgröße
+168	Normal, groß oder sehr groß.
+169	Gut zu wissen: etwas mehr zu scrollen.
+170	Sprache
+171	Wie das Handy, oder eine der 16 Sprachen (Deutsch, Englisch, Französisch, Griechisch, Arabisch, Chinesisch…).
+172	Gut zu wissen: die Änderung gilt sofort.
+173	Demo
+174	Zeigt die App mit falschen Fotos, E-Mails und Kontakten.
+175	Gut zu wissen: auf dem Handy wird nichts angerührt. Ideal, um die App vorzustellen.
+176	Widget
+177	Auf dem Startbildschirm des Handys: lange drücken > Widgets > Clean Smart. Es zeigt den freien Platz und öffnet das geführte Aufräumen.
+178	Gut zu wissen: es aktualisiert sich von allein.
+179	Eine Frage oder die Vollversion? Schreib mir: dargerejm@gmail.com — Instagram @jean_michel_dargere — WhatsApp +33 6 13 37 10 42
+180	Häufige Fragen
+181	Werden meine Fotos sofort gelöscht?
+182	Nein. Sie kommen in den Papierkorb der Galerie: 30 Tage, um sie zurückzuholen, oder „Ich habe mich vertan“.
+183	Gehen meine Fotos ins Internet?
+184	Nein. Alles passiert auf dem Handy. Nur die Sicherung geht dorthin, wo du es gewählt hast (SD-Karte, Stick, Drive).
+185	Warum ein App-Passwort?
+186	Gmail, Yahoo und iCloud verlangen es für E-Mail-Apps. Es bleibt verschlüsselt auf deinem Handy.
+187	Der Platz kommt nach dem Aufräumen nicht zurück?
+188	Der Papierkorb behält Fotos 30 Tage. Tippe auf dem Startbildschirm auf „Papierkorb jetzt leeren“.
+189	Ich habe meine Kopie auf der Festplatte gelöscht, nichts wird mehr kopiert?
+190	Im Tab Google Fotos oder iCloud-Fotos unten auf „Alles von vorn (ich habe meine Kopie gelöscht)“ tippen, dann die ZIP-Dateien erneut öffnen.
+191	Wie bekomme ich die neueste Version?
+192	Wenn es eine neue Version gibt, erscheint ein orangefarbenes Banner auf dem Startbildschirm: antippen, dann die heruntergeladene Datei öffnen. Oder Optionen > „Nach Update suchen“.

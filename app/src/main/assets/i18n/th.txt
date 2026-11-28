@@ -1,0 +1,896 @@
+\n\n%1 pas pu être copié(s) : relance ce même fichier.	\n\n%1 คัดลอกไม่ได้: เปิดไฟล์เดิมนี้อีกครั้ง
+\n\n%1 « à vérifier » iront dans la corbeille Clean Smart : tu pourras les remettre pendant 7 jours.	\n\n%1 รายการ «ต้องตรวจ» จะไปที่ถังขยะของ Clean Smart: กู้คืนได้ภายใน 7 วัน
+\n\nAttention : la suppression est synchronisée avec ton compte (Google…).	\n\nระวัง: การลบจะซิงค์กับบัญชีของคุณ (Google…)
+\n\nLe disque ou le téléphone est plein : libère de la place (ou change de disque à l'étape 2), puis relance CE fichier. Rien ne sera recopié en double.	\n\nดิสก์หรือโทรศัพท์เต็ม: เพิ่มพื้นที่ว่าง (หรือเปลี่ยนดิสก์ในขั้นตอนที่ 2) แล้วเปิดไฟล์นี้อีกครั้ง จะไม่มีอะไรถูกคัดลอกซ้ำ
+\n\nLe fichier est abîmé ou incomplet : retélécharge-le depuis le mail de Google, puis relance-le. Ce qui est déjà copié est gardé.	\n\nไฟล์เสียหรือไม่สมบูรณ์: ดาวน์โหลดใหม่จากอีเมลของ Google แล้วเปิดอีกครั้ง ส่วนที่คัดลอกแล้วจะยังอยู่
+\n\nLes copies sont d'abord exportées en fichier .vcf dans ton dossier de sauvegarde.	\n\nสำเนาจะถูกส่งออกเป็นไฟล์ .vcf ไปที่โฟลเดอร์สำรองข้อมูลก่อน
+\n\nRelance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.	\n\nเปิดไฟล์ ZIP ที่มีรูปเหล่านั้นอีกครั้ง (หรือโหมดอัตโนมัติ): จะถูกคัดลอกใหม่ อย่าลบอะไรที่ %1 ก่อนหน้านั้น
+\n\nUne copie est d'abord faite dans ton dossier de sauvegarde.	\n\nจะทำสำเนาไว้ในโฟลเดอร์สำรองข้อมูลก่อน
+\n💡 Chez Google, les mails et Google Photos partagent les mêmes 15 Go : faire le ménage des mails libère aussi de la place pour tes photos.	\n💡 ใน Google อีเมลและ Google Photos ใช้พื้นที่ 15 GB ร่วมกัน: ล้างอีเมลก็ได้พื้นที่ให้รูปด้วย
+ sur environ %1 Go	 จากประมาณ %1 GB
+ · %1 doublons, rafales ou ratées non sauvegardés	 · ไม่สำรอง %1 รูปซ้ำ รูปถ่ายต่อเนื่อง หรือรูปเสีย
+ · %1 à la corbeille	 · %1 ไปที่ถังขยะ
+ · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)	 · ไฟล์ «ต้องตรวจ» อยู่ในถังขยะของ Clean Smart (7 วัน)
+ · va dans la corbeille Clean Smart	 · ไปที่ถังขยะของ Clean Smart
+%1 (%2) : doublons en trop, rafales en trop, photos noires ou blanches, captures de plus d'un mois.\n\nElles vont dans la corbeille de la Galerie (30 jours pour les récupérer).	%1 (%2): รูปซ้ำเกิน รูปถ่ายต่อเนื่องเกิน รูปดำหรือขาว ภาพหน้าจอเก่ากว่าหนึ่งเดือน\n\nจะไปที่ถังขยะของแกลเลอรี (กู้คืนได้ 30 วัน)
+%1 (%2) seront supprimés DÉFINITIVEMENT pour libérer la place tout de suite.\n\nIls ne pourront plus être récupérés.	%1 (%2) จะถูกลบถาวรเพื่อเพิ่มพื้นที่ทันที\n\nกู้คืนไม่ได้
+%1 / %2  ·  %3 à jeter	%1 / %2  ·  ทิ้ง %3
+%1 : %2 %	%1: %2 %
+%1 : newsletters et pubs (%2 expéditeurs), notifications, mails en double.	%1: จดหมายข่าวและโฆษณา (ผู้ส่ง %2 ราย) การแจ้งเตือน อีเมลซ้ำ
+%1 Go · prévois %2	%1 GB · เตรียม %2
+%1 analysées	วิเคราะห์แล้ว %1
+%1 avec pièces jointes (dont %2 avec PDF)	%1 มีไฟล์แนบ (%2 มี PDF)
+%1 avec succès. En mettant les originaux à la corbeille, tu gagnes %2.	%1 สำเร็จ ทิ้งต้นฉบับลงถังขยะจะได้พื้นที่ %2
+%1 ce mois-ci. 	เดือนนี้ %1
+%1 copié(s) dans ton dossier de sauvegarde.	คัดลอก %1 ไปที่โฟลเดอร์สำรองข้อมูลแล้ว
+%1 de fichiers inutiles : temporaires, miniatures, dossiers vides, restes d'applis.	ไฟล์ไม่จำเป็น %1: ไฟล์ชั่วคราว ภาพย่อ โฟลเดอร์ว่าง ไฟล์ที่แอปทิ้งไว้
+%1 de plus de %2 mois 	%1 ที่เก่ากว่า %2 เดือน
+%1 de tes expéditeurs « toujours jeter » mis à la corbeille (récupérables 30 jours).	ย้าย %1 จากผู้ส่ง «ทิ้งเสมอ» ไปที่ถังขยะแล้ว (กู้คืนได้ 30 วัน)
+%1 en double vont dans la corbeille. Le premier exemplaire de chaque mail est gardé.	%1 อีเมลซ้ำไปที่ถังขยะ ฉบับแรกของแต่ละอีเมลจะถูกเก็บไว้
+%1 et %2 copiées et vérifiées.	คัดลอกและตรวจ %1 และ %2 แล้ว
+%1 et %2 à l'abri. Tu peux le supprimer et télécharger le suivant.	%1 และ %2 ปลอดภัยแล้ว ลบได้และดาวน์โหลดไฟล์ถัดไป
+%1 fichier(s) sauvegardé(s)	สำรองแล้ว %1 ไฟล์
+%1 jetés	ทิ้งแล้ว %1
+%1 libres sur %2	ว่าง %1 จาก %2
+%1 libérés sur le téléphone	ได้พื้นที่บนโทรศัพท์ %1
+%1 mails dans la boîte · %2 analysés	%1 อีเมลในกล่องจดหมาย · วิเคราะห์ %2
+%1 min %2 s	%1 นาที %2 วินาที
+%1 newsletters · %2 gros mails	%1 จดหมายข่าว · %2 อีเมลขนาดใหญ่
+%1 newsletters, %2 gros mails (%3).	%1 จดหมายข่าว, %2 อีเมลขนาดใหญ่ (%3)
+%1 photos trouvées	พบรูป %1 รูป
+%1 photos · %2 vidéos analysées	วิเคราะห์รูป %1 · วิดีโอ %2
+%1 photos · %2 vidéos · %3 doublons et rafales écartés	รูป %1 · วิดีโอ %2 · คัดออก %3 รูปซ้ำและถ่ายต่อเนื่อง
+%1 prépare une copie de toutes tes photos. Fais exactement comme sur ce modèle :	%1 จะเตรียมสำเนารูปทั้งหมดของคุณ ทำตามตัวอย่างนี้ทุกอย่าง:
+%1 seront supprimés : ils ne servent plus ou se recréent tout seuls.	%1 จะถูกลบ: ไม่จำเป็นแล้วหรือสร้างใหม่เองได้
+%1 seront supprimés pour de bon.	%1 จะถูกลบถาวร
+%1 sur %2 choisis · %3	เลือก %1 จาก %2 · %3
+%1 sur %2 fichiers faits	เสร็จ %1 จาก %2 ไฟล์
+%1 sur %2 · %3	%1 จาก %2 · %3
+%1 vont aller dans la corbeille de la Galerie (récupérables 30 jours).	%1 จะไปที่ถังขยะของแกลเลอรี (กู้คืนได้ 30 วัน)
+%1 vont dans la corbeille de la Galerie (récupérables 30 jours).	%1 ไปที่ถังขยะของแกลเลอรี (กู้คืนได้ 30 วัน)
+%1 · %2 : doublons, rafales en trop, photos noires ou blanches, captures de plus d'un mois. Les meilleures sont gardées.	%1 · %2: รูปซ้ำ รูปถ่ายต่อเนื่องเกิน รูปดำหรือขาว ภาพหน้าจอเก่ากว่าหนึ่งเดือน รูปที่ดีที่สุดจะถูกเก็บไว้
+%1 · %2 au total. Touche une appli pour la désinstaller ou vider son cache.	รวม %1 · %2 แตะแอปเพื่อถอนการติดตั้งหรือล้างแคช
+%1 à jeter	ทิ้ง %1
+%1 à regarder une par une. Glisse à gauche pour jeter, à droite pour garder (elle devient favori ⭐).	ดู %1 ทีละรูป ปัดซ้ายเพื่อทิ้ง ปัดขวาเพื่อเก็บ (เป็นรายการโปรด ⭐)
+%1, %2, %3 copiés · %4 et %5 écartés.	คัดลอก %1, %2, %3 · คัดออก %4 และ %5
+%1les mails de plus de %2 ans vont à la corbeille (sauf les importants).	%1อีเมลที่เก่ากว่า %2 ปีจะไปที่ถังขยะ (ยกเว้นอีเมลสำคัญ)
+(sans objet)	(ไม่มีหัวเรื่อง)
+. %1 en double ou en rafale à trier : touche ici.	. %1 รูปซ้ำหรือถ่ายต่อเนื่องให้จัดการ: แตะที่นี่
+1 bouton	1 ปุ่ม
+1 mois	1 เดือน
+1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.	1. ฉันปิดการสำรองข้อมูลแล้ว: แอป Google Photos › รูปโปรไฟล์มุมขวาบน › การตั้งค่า Photos › การสำรองข้อมูล › ปิด
+1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).	1. บน iPhone ฉันปิด «รูปภาพ iCloud» แล้ว (การตั้งค่า › ชื่อของคุณ › iCloud › รูปภาพ)
+12 mois	12 เดือน
+2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	2. ฉันเปิดดิสก์บนคอมพิวเตอร์และเห็นรูปของฉันครบ แยกตามปี
+3 mois	3 เดือน
+3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).	3. แนะนำ: ฉันทำสำเนาชุดที่ 2 แล้ว (ดิสก์หรือคอมพิวเตอร์อื่น)
+4 étapes	4 ขั้นตอน
+6 mois	6 เดือน
+AFFICHAGE	การแสดงผล
+AUTOMATIQUE	อัตโนมัติ
+AUTRE	อื่นๆ
+Adresse mail	ที่อยู่อีเมล
+Adresse, serveur et mot de passe sont obligatoires.	ต้องกรอกที่อยู่ เซิร์ฟเวอร์ และรหัสผ่าน
+Alerte retirée	ยกเลิกการแจ้งเตือนแล้ว
+Alertes et rapport du mois	การแจ้งเตือนและรายงานประจำเดือน
+Analyse de la boîte mail	กำลังวิเคราะห์กล่องจดหมาย
+Analyse des 3 000 mails les plus récents de la boîte de réception.	วิเคราะห์อีเมลล่าสุด 3,000 ฉบับในกล่องจดหมายเข้า
+Analyse des mails (%1 / %2)	กำลังวิเคราะห์อีเมล (%1 / %2)
+Analyse du téléphone	กำลังวิเคราะห์โทรศัพท์
+Analyse ta boîte « %1 » : newsletters, gros mails, vieux mails. Les importants sont toujours gardés.	วิเคราะห์กล่องจดหมาย «%1»: จดหมายข่าว อีเมลขนาดใหญ่ อีเมลเก่า อีเมลสำคัญจะถูกเก็บไว้เสมอ
+Analyser ma boîte mail	วิเคราะห์กล่องจดหมายของฉัน
+Analyser mon téléphone	วิเคราะห์โทรศัพท์ของฉัน
+Annuler	ยกเลิก
+Annuler, ne rien jeter	ยกเลิก ไม่ทิ้งอะไร
+Appeler	โทร
+Apple vérifie la demande puis envoie un mail, en général sous 3 à 7 jours. Les fichiers se téléchargent ensuite sur privacy.apple.com (connecte-toi depuis le téléphone).	Apple จะตรวจสอบคำขอแล้วส่งอีเมล ปกติภายใน 3 ถึง 7 วัน จากนั้นดาวน์โหลดไฟล์ที่ privacy.apple.com (ลงชื่อเข้าใช้จากโทรศัพท์)
+Apple · Données et confidentialité	Apple · ข้อมูลและความเป็นส่วนตัว
+Appliquer « toujours jeter » maintenant	ใช้ «ทิ้งเสมอ» ตอนนี้
+Arrêt après le fichier en cours…	จะหยุดหลังไฟล์ปัจจุบัน…
+Arrêter	หยุด
+Arrêter le mode automatique ?	หยุดโหมดอัตโนมัติไหม?
+Arrêté. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	หยุดแล้ว ไฟล์ที่คัดลอกแล้วปลอดภัย ที่เหลือจะคัดลอกครั้งหน้าโดยไม่ซ้ำ
+Astuce : dans Paramètres › Applications, touche une appli (Chrome, Facebook…) › Stockage › « Vider le cache ».	เคล็ดลับ: ใน การตั้งค่า › แอป แตะแอป (Chrome, Facebook…) › พื้นที่เก็บข้อมูล › «ล้างแคช»
+Aucun contact en double	ไม่มีรายชื่อติดต่อซ้ำ
+Aucun dossier choisi	ยังไม่ได้เลือกโฟลเดอร์
+Aucun dossier de sauvegarde	ไม่มีโฟลเดอร์สำรองข้อมูล
+Aucun fichier inutile.	ไม่มีไฟล์ไม่จำเป็น
+Aucune boîte mail connectée.	ยังไม่ได้เชื่อมต่อกล่องจดหมาย
+Aucune clé ni disque détecté. Branche-le (adaptateur USB-C), puis rouvre cette étape.	ไม่พบแฟลชไดรฟ์หรือดิสก์ เสียบเข้า (อะแดปเตอร์ USB-C) แล้วเปิดขั้นตอนนี้อีกครั้ง
+Aucune vidéo n'a pu être réduite davantage.	ไม่มีวิดีโอที่ย่อเล็กลงได้อีก
+Autre	อื่นๆ
+Autres fichiers d'installation (.apk)	ไฟล์ติดตั้งอื่นๆ (.apk)
+Avant tout : analyser	ก่อนอื่น: วิเคราะห์
+Avec « Accès aux données d'utilisation », Clean Smart voit la vraie place de chaque appli et depuis quand tu ne l'as pas ouverte. Rien n'est envoyé nulle part.	เมื่อเปิด «การเข้าถึงข้อมูลการใช้งาน» Clean Smart จะเห็นขนาดจริงของแต่ละแอปและเวลาที่คุณเปิดครั้งล่าสุด ไม่มีการส่งข้อมูลไปที่ใด
+BOÎTE MAIL	กล่องจดหมาย
+Banque	ธนาคาร
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC.	ธนาคาร หน่วยงานราชการ สุขภาพ ใบแจ้งหนี้ และอีเมลทั้งหมดที่มี PDF: สำรองแล้ว รวม PDF ไว้ด้วยกัน มีไฟล์เก็บ index.html สำหรับคอมพิวเตอร์
+Banque, administration, santé, factures et tous les mails avec un PDF : sauvegardés, PDF réunis, archive index.html sur le PC. Dans ta messagerie, ils sont rangés dans « Protégés ».	ธนาคาร หน่วยงานราชการ สุขภาพ ใบแจ้งหนี้ และอีเมลทั้งหมดที่มี PDF: สำรองแล้ว รวม PDF ไว้ด้วยกัน มีไฟล์เก็บ index.html สำหรับคอมพิวเตอร์ ในกล่องจดหมายจะถูกจัดไว้ใน «ได้รับการปกป้อง»
+Banque, impôts, santé, maison, famille (tes contacts) : rangés à part, jamais jetés	ธนาคาร ภาษี สุขภาพ บ้าน ครอบครัว (รายชื่อติดต่อของคุณ): แยกเก็บ ไม่ทิ้งเด็ดขาด
+Batterie faible (%1 %)	แบตเตอรี่ต่ำ (%1 %)
+Bonjour	สวัสดี
+Boutique Mode	ร้านแฟชั่น
+Boîte mail en ordre !	กล่องจดหมายเรียบร้อย!
+Boîte mail remplie à %1 % (%2 / %3)	กล่องจดหมายใช้ไป %1 % (%2 / %3)
+Boîte protégée	กล่องจดหมายที่ได้รับการปกป้อง
+Boîte remplie à %1 % (%2 / %3). 	ใช้ไป %1 % (%2 / %3)
+Branche le chargeur : un fichier peut prendre 10 à 30 minutes.\n\nSi le téléphone s'éteint, rien n'est perdu : il suffira de relancer le même fichier.	เสียบที่ชาร์จ: หนึ่งไฟล์อาจใช้เวลา 10 ถึง 30 นาที\n\nถ้าโทรศัพท์ดับ ไม่มีอะไรหาย: แค่เปิดไฟล์เดิมอีกครั้ง
+Branche le chargeur pendant le traitement : un gros fichier peut prendre 10 à 30 minutes. L'écran reste allumé.	เสียบที่ชาร์จระหว่างประมวลผล: ไฟล์ใหญ่อาจใช้เวลา 10 ถึง 30 นาที หน้าจอจะเปิดค้างไว้
+Branche ta clé ou ton disque sur le téléphone, puis choisis (ou crée) un dossier dessus.	เสียบแฟลชไดรฟ์หรือดิสก์เข้ากับโทรศัพท์ แล้วเลือก (หรือสร้าง) โฟลเดอร์บนนั้น
+Brancher la clé ou le disque	เสียบแฟลชไดรฟ์หรือดิสก์
+C'est fait : le prochain fichier sera entièrement recopié.	เสร็จแล้ว: ไฟล์ถัดไปจะถูกคัดลอกใหม่ทั้งหมด
+C'est noté	รับทราบ
+CONSEILLÉ	แนะนำ
+CONTACT	ติดต่อ
+CONTACTS	รายชื่อติดต่อ
+Captures d'écran	ภาพหน้าจอ
+Carte SD, clé USB, Drive… choisis où tu veux	การ์ด SD, แฟลชไดรฟ์ USB, Drive… เลือกได้ตามใจ
+Carte SD, clé USB, Google Drive…	การ์ด SD, แฟลชไดรฟ์ USB, Google Drive…
+Ce fichier est déjà copié et vérifié. Le refaire ne crée aucun doublon, mais c'est inutile.\n\nTu voulais sans doute prendre le suivant (%1).	ไฟล์นี้คัดลอกและตรวจแล้ว ทำซ้ำจะไม่เกิดรูปซ้ำ แต่ไม่จำเป็น\n\nคุณน่าจะต้องการไฟล์ถัดไป (%1)
+Ce mois-ci	เดือนนี้
+Cette année	ปีนี้
+Changer de compte	เปลี่ยนบัญชี
+Changer de dossier	เปลี่ยนโฟลเดอร์
+Chaque dimanche, les fichiers inutiles sûrs et le spam partent tout seuls. Une notification te dit combien de place est libérée et s'il y a des photos à trier.	ทุกวันอาทิตย์ ไฟล์ไม่จำเป็นที่ปลอดภัยและสแปมจะถูกล้างเอง การแจ้งเตือนจะบอกว่าได้พื้นที่เท่าไรและมีรูปให้จัดการหรือไม่
+Chaque mail choisi est enregistré dans ton dossier de sauvegarde :	อีเมลที่เลือกแต่ละฉบับจะถูกบันทึกในโฟลเดอร์สำรองข้อมูล:
+Chaque vidéo est refaite en 720p, souvent 3 à 5 fois plus légère, et enregistrée dans Films / Clean Smart. 	วิดีโอแต่ละไฟล์จะถูกสร้างใหม่ที่ 720p มักเล็กลง 3 ถึง 5 เท่า และบันทึกใน ภาพยนตร์ / Clean Smart
+Choisir le dossier sur le disque	เลือกโฟลเดอร์บนดิสก์
+Choisir un dossier	เลือกโฟลเดอร์
+Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).	เลือกโฟลเดอร์บนแฟลชไดรฟ์หรือดิสก์ก่อน (ขั้นตอนที่ 2)
+Choisis d'abord le dossier sur ta clé ou ton disque (étape « Le disque »).	เลือกโฟลเดอร์บนแฟลชไดรฟ์หรือดิสก์ก่อน (ขั้นตอน «ดิสก์»)
+Choisis d'abord un dossier : carte SD, clé USB ou Google Drive.	เลือกโฟลเดอร์ก่อน: การ์ด SD, แฟลชไดรฟ์ USB หรือ Google Drive
+Choisis d'abord un dossier de sauvegarde (Options).	เลือกโฟลเดอร์สำรองข้อมูลก่อน (ตัวเลือก)
+Choisis d'abord un dossier de sauvegarde (carte SD, clé USB, Drive).	เลือกโฟลเดอร์สำรองข้อมูลก่อน (การ์ด SD, แฟลชไดรฟ์ USB, Drive)
+Choisis d'abord un dossier de sauvegarde et fais une sauvegarde.	เลือกโฟลเดอร์สำรองข้อมูลและสำรองข้อมูลก่อน
+Choisis d'abord un dossier de sauvegarde.	เลือกโฟลเดอร์สำรองข้อมูลก่อน
+Choisis tes mails : ils sont gardés avec leurs pièces jointes, les PDF dans un dossier à part	เลือกอีเมลของคุณ: เก็บพร้อมไฟล์แนบ ส่วน PDF แยกไว้อีกโฟลเดอร์
+Choisis une carte SD, une clé USB ou Google Drive	เลือกการ์ด SD, แฟลชไดรฟ์ USB หรือ Google Drive
+Choix des plus belles photos…	กำลังเลือกรูปที่สวยที่สุด…
+Clean Smart : copie automatique	Clean Smart: คัดลอกอัตโนมัติ
+Clean Smart attend les fichiers dans Download…	Clean Smart กำลังรอไฟล์ใน Download…
+Clean Smart lit les 3 000 derniers mails (rien n'est supprimé).	Clean Smart อ่านอีเมลล่าสุด 3,000 ฉบับ (ไม่ลบอะไร)
+Clean Smart regarde toutes tes photos (rien n'est supprimé).	Clean Smart ดูรูปทั้งหมดของคุณ (ไม่ลบอะไร)
+Clean Smart trouve en un clic :	Clean Smart หาเจอในแตะเดียว:
+Clé USB (démonstration)	แฟลชไดรฟ์ USB (สาธิต)
+Clé USB ou disque dur, avec un adaptateur USB-C	แฟลชไดรฟ์ USB หรือฮาร์ดดิสก์ พร้อมอะแดปเตอร์ USB-C
+Colis et livraisons	พัสดุและการจัดส่ง
+Combien de place faut-il ?	ต้องใช้พื้นที่เท่าไร?
+Comme le téléphone	ตามโทรศัพท์
+Commencer	เริ่ม
+Compresser	บีบอัด
+Compresser %1 ?	บีบอัด %1 ไหม?
+Compression des vidéos	กำลังบีบอัดวิดีโอ
+Compris	เข้าใจแล้ว
+Connecte ta boîte mail (Gmail, Outlook, Yahoo, Orange, Free…) : newsletters, gros mails et vieux mails à trier, les importants sont toujours gardés.	เชื่อมต่อกล่องจดหมาย (Gmail, Outlook, Yahoo, Orange, Free…): จัดการจดหมายข่าว อีเมลขนาดใหญ่และอีเมลเก่า อีเมลสำคัญเก็บไว้เสมอ
+Connecter	เชื่อมต่อ
+Connecter ma boîte mail	เชื่อมต่อกล่องจดหมายของฉัน
+Connexion au serveur	กำลังเชื่อมต่อเซิร์ฟเวอร์
+Connexion impossible : 	เชื่อมต่อไม่ได้:
+Connexion à la messagerie	กำลังเชื่อมต่อบริการอีเมล
+Conseillé : j'ai fait une 2e copie (autre disque ou PC).	แนะนำ: ฉันทำสำเนาชุดที่ 2 แล้ว (ดิสก์หรือคอมพิวเตอร์อื่น)
+Contacts en double	รายชื่อติดต่อซ้ำ
+Continuer quand même	ดำเนินการต่อ
+Copie automatique	คัดลอกอัตโนมัติ
+Copier les fichiers un par un	คัดลอกไฟล์ทีละไฟล์
+Copies identiques — l'original est gardé	สำเนาเหมือนกันทุกอย่าง — เก็บต้นฉบับไว้
+Corbeille	ถังขยะ
+Corbeille : %1	ถังขยะ: %1
+Corbeille Clean Smart	ถังขยะของ Clean Smart
+Corbeille de la messagerie	ถังขยะอีเมล
+Correct, mais peut mieux faire	พอใช้ แต่ดีขึ้นได้
+Créer une exportation	สร้างการส่งออก
+Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.	ใน Google Photos: กดค้างที่รูป เลือกทั้งวัน แล้ว «ลบ» ถังขยะของ Google เก็บทุกอย่างไว้ 60 วัน
+Dans Google Takeout, choisis des fichiers de 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	ใน Google Takeout ให้เลือกไฟล์ขนาด 2 GB: เราจัดการทีละไฟล์ โทรศัพท์ไม่ต้องใช้พื้นที่มาก
+Dans la demande Apple, choisis des fichiers de 1 ou 2 Go : on les traite un par un, le téléphone n'a jamais besoin de beaucoup de place.	ในคำขอของ Apple ให้เลือกไฟล์ขนาด 1 หรือ 2 GB: เราจัดการทีละไฟล์ โทรศัพท์ไม่ต้องใช้พื้นที่มาก
+Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.	ในอีเมลของ Google นับปุ่ม «ดาวน์โหลด»: นั่นคือจำนวนไฟล์
+Demander la copie à %1	ขอสำเนาจาก %1
+Demander une copie de tes données	ขอสำเนาข้อมูลของคุณ
+Demandée · attends le mail de %1	ขอแล้ว · รออีเมลจาก %1
+Depuis Android 11, aucune appli de nettoyage n'a le droit de vider le cache des autres applis ni les fichiers système. Android le fait lui-même : ce bouton ouvre son écran « Libérer de l'espace ».	ตั้งแต่ Android 11 แอปทำความสะอาดไม่สามารถล้างแคชของแอปอื่นหรือไฟล์ระบบได้ Android ทำเอง: ปุ่มนี้เปิดหน้าจอ «เพิ่มพื้นที่ว่าง»
+Depuis l'installation	ตั้งแต่ติดตั้ง
+Dernière vérification	ตรวจล่าสุด
+Des applis téléchargées mais pas installées. À vérifier.	แอปที่ดาวน์โหลดแต่ไม่ได้ติดตั้ง ต้องตรวจ
+Disque	ดิสก์
+Disque non reconnu : utilise un adaptateur USB-C (OTG). Une clé formatée en exFAT marche partout (FAT32 refuse les fichiers de plus de 4 Go).	ไม่รู้จักดิสก์: ใช้อะแดปเตอร์ USB-C (OTG) แฟลชไดรฟ์ที่ฟอร์แมตเป็น exFAT ใช้ได้ทุกที่ (FAT32 ไม่รับไฟล์เกิน 4 GB)
+Disque plein : branche un disque plus grand et choisis-le dans l'étape « Le disque ». On reprend là où on en était, sans doublon.	ดิสก์เต็ม: เสียบดิสก์ที่ใหญ่กว่าแล้วเลือกในขั้นตอน «ดิสก์» เราทำต่อจากจุดเดิมโดยไม่ซ้ำ
+Documents de Téléchargements jamais retouchés depuis 6 mois. À vérifier.	เอกสารในดาวน์โหลดที่ไม่ได้แตะมา 6 เดือน ต้องตรวจ
+Dossier Corbeille introuvable sur ce compte.	ไม่พบโฟลเดอร์ถังขยะในบัญชีนี้
+Dossier Corbeille introuvable.	ไม่พบโฟลเดอร์ถังขยะ
+Dossier Spam introuvable sur ce compte.	ไม่พบโฟลเดอร์สแปมในบัญชีนี้
+Dossier de sauvegarde	โฟลเดอร์สำรองข้อมูล
+Dossier de sauvegarde introuvable.	ไม่พบโฟลเดอร์สำรองข้อมูล
+Dossiers cache	โฟลเดอร์แคช
+Dossiers laissés par des applis qui ne sont plus sur le téléphone. À vérifier.	โฟลเดอร์ที่แอปซึ่งไม่อยู่ในโทรศัพท์แล้วทิ้งไว้ ต้องตรวจ
+Dossiers vides	โฟลเดอร์ว่าง
+Dossiers vides…	โฟลเดอร์ว่าง…
+Doublons	รูปซ้ำ
+Doublons et rafales en trop (la meilleure photo est gardée), photos noires ou blanches, vieilles captures. Touche une photo pour la garder. Tout va dans la corbeille de la Galerie (30 jours).	รูปซ้ำและรูปถ่ายต่อเนื่องเกิน (เก็บรูปที่ดีที่สุด) รูปดำหรือขาว ภาพหน้าจอเก่า แตะรูปเพื่อเก็บไว้ ทั้งหมดไปที่ถังขยะของแกลเลอรี (30 วัน)
+Doublons, rafales en trop, photos noires ou blanches, vieilles captures.	รูปซ้ำ รูปถ่ายต่อเนื่องเกิน รูปดำหรือขาว ภาพหน้าจอเก่า
+Doublons, rafales, floues	รูปซ้ำ ถ่ายต่อเนื่อง เบลอ
+Décoche les mails que tu veux garder. Les mails de ta banque, des impôts, de santé et les expéditeurs « toujours garder » ne sont jamais dans cette liste. Tout va dans la corbeille de ta messagerie (récupérable).	ยกเลิกเครื่องหมายอีเมลที่ต้องการเก็บ อีเมลจากธนาคาร ภาษี สุขภาพ และผู้ส่ง «เก็บเสมอ» จะไม่อยู่ในรายการนี้ ทั้งหมดไปที่ถังขยะอีเมล (กู้คืนได้)
+Démonstration…	สาธิต…
+Déplacement vers la corbeille…	กำลังย้ายไปถังขยะ…
+Désactivé par défaut. Si tu l'actives, les photos (et les contacts en .vcf) sont copiés dans le dossier avant chaque nettoyage, par sécurité.	ปิดเป็นค่าเริ่มต้น ถ้าเปิด รูป (และรายชื่อติดต่อแบบ .vcf) จะถูกคัดลอกไปที่โฟลเดอร์ก่อนการล้างทุกครั้ง เพื่อความปลอดภัย
+Elles sont déjà toutes en favori 👍	ทุกรูปเป็นรายการโปรดอยู่แล้ว 👍
+En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.	ในโหมดสาธิตจะไม่มีการประมวลผลไฟล์ ออกจากโหมดสาธิต (ตัวเลือก) เพื่อทำจริง
+En pleine forme	สภาพดีเยี่ยม
+Envoyer %1	ส่ง %1
+Envoyer le PDF souvenir	ส่ง PDF ความทรงจำ
+Envoyer le lien par e-mail · Exporter une fois	ส่งลิงก์ดาวน์โหลดทางอีเมล · ส่งออกครั้งเดียว
+Erreur inattendue	ข้อผิดพลาดที่ไม่คาดคิด
+Espace libéré	พื้นที่ที่ได้คืน
+Espace libéré depuis le début : %1. Une petite analyse ?	พื้นที่ที่ได้คืนตั้งแต่เริ่ม: %1 วิเคราะห์สักหน่อยไหม?
+Espace à récupérer	พื้นที่ที่จะได้คืน
+Et tes mails	และอีเมลของคุณ
+Factures et papiers	ใบแจ้งหนี้และเอกสาร
+Faire le ménage sûr ?	ล้างแบบปลอดภัยไหม?
+Fait ✔	เสร็จ ✔
+Famille	ครอบครัว
+Fermer	ปิด
+Fichier %1	ไฟล์ %1
+Fichier %1 déjà fait	ไฟล์ %1 ทำแล้ว
+Fichier illisible	ไฟล์อ่านไม่ได้
+Fichiers d'installation déjà installés	ไฟล์ติดตั้งของแอปที่ติดตั้งแล้ว
+Fichiers de travail des applis, dans le stockage du téléphone. Ils se recréent si besoin.	ไฟล์ทำงานของแอปในพื้นที่โทรศัพท์ สร้างใหม่ได้เมื่อจำเป็น
+Fichiers inutiles	ไฟล์ไม่จำเป็น
+Fichiers mis de côté, vidée toute seule après 7 jours	ไฟล์ที่พักไว้ จะล้างเองหลัง 7 วัน
+Fichiers temporaires	ไฟล์ชั่วคราว
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis	ไฟล์ชั่วคราว ภาพย่อ โฟลเดอร์ว่าง ไฟล์ที่แอปทิ้งไว้
+Fichiers temporaires, miniatures, dossiers vides, restes d'applis. Les photos et la musique ne sont jamais touchées.	ไฟล์ชั่วคราว ภาพย่อ โฟลเดอร์ว่าง ไฟล์ที่แอปทิ้งไว้ รูปและเพลงไม่ถูกแตะเด็ดขาด
+Floue	เบลอ
+Floues, trop sombres ou trop claires — vérifie avant de cocher	เบลอ มืดหรือสว่างเกินไป — ตรวจก่อนเลือก
+GARDÉE	เก็บไว้
+Garder sur le téléphone les photos des derniers…	เก็บรูปในโทรศัพท์ของช่วงล่าสุด…
+Gardés	เก็บไว้
+Gmail exige un MOT DE PASSE D'APPLICATION (16 lettres) :\n1. Active la validation en 2 étapes sur ton compte Google.\n2. Ouvre myaccount.google.com/apppasswords\n3. Crée un mot de passe nommé « Clean Smart » et colle-le ici.	Gmail ต้องใช้รหัสผ่านสำหรับแอป (16 ตัวอักษร):\n1. เปิดการยืนยันแบบ 2 ขั้นตอนในบัญชี Google\n2. เปิด myaccount.google.com/apppasswords\n3. สร้างรหัสผ่านชื่อ «Clean Smart» แล้ววางที่นี่
+Google envoie un mail quand c'est prêt : en quelques heures ou quelques jours. Tu peux fermer l'appli en attendant.	Google จะส่งอีเมลเมื่อพร้อม: ภายในไม่กี่ชั่วโมงหรือไม่กี่วัน ระหว่างนี้ปิดแอปได้
+Gros	ใหญ่
+Gros mails (+ 5 Mo)	อีเมลขนาดใหญ่ (5 MB ขึ้นไป)
+Grosses vidéos	วิดีโอขนาดใหญ่
+Groupe %1 · %2 photos	กลุ่ม %1 · รูป %2 รูป
+Identifiants refusés. Pour Gmail, Yahoo ou iCloud il faut un MOT DE PASSE D'APPLICATION, pas ton mot de passe habituel.	การเข้าสู่ระบบถูกปฏิเสธ Gmail, Yahoo และ iCloud ต้องใช้รหัสผ่านสำหรับแอป ไม่ใช่รหัสผ่านปกติของคุณ
+Il a besoin d'un bon ménage	ต้องการการล้างครั้งใหญ่
+Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.	เหลือเพียง %1 เปิด Clean Smart เพื่อเพิ่มพื้นที่ในแตะเดียว
+Ils ne contiennent rien.	ไม่มีอะไรข้างใน
+Ils prennent encore de la place pendant 30 jours	ยังใช้พื้นที่อยู่อีก 30 วัน
+Ils sont rangés dans le dossier « Protégés » de ta messagerie. Refait chaque nuit.	จะถูกจัดไว้ในโฟลเดอร์ «ได้รับการปกป้อง» ของกล่องจดหมาย ทำซ้ำทุกคืน
+Impossible d'annuler : les fichiers ont peut-être déjà été supprimés définitivement.	ยกเลิกไม่ได้: ไฟล์อาจถูกลบถาวรไปแล้ว
+Impossible de créer le dossier %1	สร้างโฟลเดอร์ %1 ไม่ได้
+Impossible de protéger ces photos	ปกป้องรูปเหล่านี้ไม่ได้
+Impossible de vider la corbeille	ล้างถังขยะไม่ได้
+Impôts	ภาษี
+Impôts - Administration	ภาษี - หน่วยงานราชการ
+Indique le serveur IMAP de ta messagerie (port 993, SSL).	ระบุเซิร์ฟเวอร์ IMAP ของบริการอีเมล (พอร์ต 993, SSL)
+J'ai demandé la copie	ฉันขอสำเนาแล้ว
+J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.	ฉันเปิดดิสก์บนคอมพิวเตอร์และเห็นรูปของฉันครบ แยกตามปี
+J'ai traité tous les fichiers	ฉันจัดการไฟล์ครบแล้ว
+Jamais jetés, rangés dans « Protégés »	ไม่ทิ้งเด็ดขาด จัดไว้ใน «ได้รับการปกป้อง»
+Je libère la boîte	ฉันล้างกล่องจดหมาย
+Je libère la place	ฉันเพิ่มพื้นที่ว่าง
+Je mets l'important à l'abri	ฉันเก็บของสำคัญให้ปลอดภัย
+Je mets à l'abri les bonnes	ฉันเก็บรูปดีให้ปลอดภัย
+Je trie par expéditeur	ฉันจัดตามผู้ส่ง
+Je vérifie le douteux	ฉันตรวจรูปที่ไม่แน่ใจ
+Jeter %1 ?	ทิ้ง %1 ไหม?
+Jeter ces mails ?	ทิ้งอีเมลเหล่านี้ไหม?
+Jeter les copies ?	ทิ้งสำเนาไหม?
+Jeter les gros mails ?	ทิ้งอีเมลขนาดใหญ่ไหม?
+Jeter les newsletters ?	ทิ้งจดหมายข่าวไหม?
+Jeter les originaux ?	ทิ้งต้นฉบับไหม?
+Jeter les vieux mails ?	ทิ้งอีเมลเก่าไหม?
+Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus.	บันทึกการทำงาน สำรองชั่วคราว ดาวน์โหลดที่ค้างไว้ ไม่จำเป็นแล้ว
+L'adresse et le mot de passe seront effacés du téléphone.	ที่อยู่และรหัสผ่านจะถูกลบออกจากโทรศัพท์
+L'important est à l'abri, le reste est parti	ของสำคัญปลอดภัยแล้ว ที่เหลือจัดการเรียบร้อย
+L'original n'est pas touché : je te proposerai ensuite de le mettre à la corbeille.\n\nCela peut prendre quelques minutes.	ต้นฉบับจะไม่ถูกแตะ: จากนั้นจะถามว่าจะทิ้งลงถังขยะไหม\n\nอาจใช้เวลาสองสามนาที
+LA NUIT	ตอนกลางคืน
+LIBÉRER LA PLACE	เพิ่มพื้นที่ว่าง
+La copie sur le disque a été effacée : Clean Smart recopie tout depuis le début.	สำเนาบนดิสก์ถูกลบแล้ว: Clean Smart จะคัดลอกทุกอย่างใหม่ตั้งแต่ต้น
+La corbeille est vide.	ถังขยะว่างเปล่า
+La place des mails se libère quand la corbeille de ta messagerie se vide (en général sous 30 jours).	พื้นที่ของอีเมลจะว่างเมื่อถังขยะอีเมลถูกล้าง (ปกติภายใน 30 วัน)
+La sauvegarde n'a pas pu se faire. Ouvre Clean Smart pour vérifier le dossier.	สำรองข้อมูลไม่สำเร็จ เปิด Clean Smart เพื่อตรวจโฟลเดอร์
+Langue	ภาษา
+Le Ménage guidé fait tout dans le bon ordre. Le bouton vert est toujours la prochaine étape.	การล้างแบบมีคำแนะนำทำทุกอย่างตามลำดับที่ถูกต้อง ปุ่มสีเขียวคือขั้นตอนถัดไปเสมอ
+Le bilan, et comment libérer ton compte %1	สรุปผล และวิธีล้างบัญชี %1
+Le contact d'origine est gardé.	รายชื่อติดต่อต้นฉบับจะถูกเก็บไว้
+Le disque (ou le téléphone) est plein : la copie s'est arrêtée proprement.\n\nBranche un disque plus grand, choisis-le à l'étape 2, puis relance le mode automatique : on continue sans doublon.	ดิสก์ (หรือโทรศัพท์) เต็ม: การคัดลอกหยุดอย่างเรียบร้อย\n\nเสียบดิสก์ที่ใหญ่กว่า เลือกในขั้นตอนที่ 2 แล้วเปิดโหมดอัตโนมัติอีกครั้ง: ทำต่อโดยไม่ซ้ำ
+Le disque n'a plus assez de place : il reste %1, il faut environ %2 pour ce fichier.\n\n• Libère de la place sur le disque, ou\n• branche un disque plus grand et choisis-le dans l'étape « Le disque » (on reprendra là où on en est).\n\nRien n'a été touché.	ดิสก์มีพื้นที่ไม่พอ: เหลือ %1 ไฟล์นี้ต้องใช้ประมาณ %2\n\n• เพิ่มพื้นที่ว่างบนดิสก์ หรือ\n• เสียบดิสก์ที่ใหญ่กว่าแล้วเลือกในขั้นตอน «ดิสก์» (ทำต่อจากจุดปัจจุบัน)\n\nยังไม่ได้แตะอะไร
+Le disque n'est pas accessible.\n\n• Vérifie qu'il est bien branché (adaptateur USB-C).\n• Dans l'étape « Le disque », choisis le dossier à nouveau.	เข้าถึงดิสก์ไม่ได้\n\n• ตรวจว่าเสียบแน่นดี (อะแดปเตอร์ USB-C)\n• ในขั้นตอน «ดิสก์» เลือกโฟลเดอร์ใหม่
+Le dossier de sauvegarde n'est pas accessible. Ouvre Clean Smart > Options pour le choisir.	เข้าถึงโฟลเดอร์สำรองข้อมูลไม่ได้ เปิด Clean Smart > ตัวเลือก เพื่อเลือก
+Le dossier de sauvegarde n'est plus accessible. Choisis-le à nouveau.	เข้าถึงโฟลเดอร์สำรองข้อมูลไม่ได้แล้ว เลือกใหม่อีกครั้ง
+Le dossier « %1 » est introuvable sur le disque. Vérifie que le disque est branché (étape 2).	ไม่พบโฟลเดอร์ «%1» บนดิสก์ ตรวจว่าเสียบดิสก์แล้ว (ขั้นตอนที่ 2)
+Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon.	จะทำไฟล์ปัจจุบันให้เสร็จก่อน ไฟล์ที่คัดลอกแล้วปลอดภัย ที่เหลือครั้งหน้าโดยไม่ซ้ำ
+Le lien du mail de Google expire au bout d'environ une semaine : si c'est le cas, refais une demande d'export (rien n'est perdu, on continue sans doublon).	ลิงก์ในอีเมลของ Google หมดอายุหลังประมาณหนึ่งสัปดาห์: หากหมดอายุ ให้ขอส่งออกใหม่ (ไม่มีอะไรหาย ทำต่อโดยไม่ซ้ำ)
+Le mois dernier	เดือนที่แล้ว
+Le ménage sûr	การล้างแบบปลอดภัย
+Le refaire quand même	ทำซ้ำอยู่ดี
+Le téléphone	โทรศัพท์
+Le téléphone est presque plein (il faut au moins 300 Mo libres pour travailler).\n\n• Vide la corbeille de la Galerie.\n• Supprime les fichiers ZIP déjà traités (Téléchargements).\n• Fais le Ménage guidé de Clean Smart.\n\nRien n'a été touché.	โทรศัพท์ใกล้เต็ม (ต้องมีที่ว่างอย่างน้อย 300 MB เพื่อทำงาน)\n\n• ล้างถังขยะของแกลเลอรี\n• ลบไฟล์ ZIP ที่จัดการแล้ว (ดาวน์โหลด)\n• ใช้การล้างแบบมีคำแนะนำของ Clean Smart\n\nยังไม่ได้แตะอะไร
+Le téléphone s'est éteint ou le disque s'est débranché ? Relance simplement le même ZIP : Clean Smart reprend sans rien perdre ni doubler.	โทรศัพท์ดับหรือดิสก์หลุด? แค่เปิด ZIP เดิมอีกครั้ง: Clean Smart ทำต่อโดยไม่หายและไม่ซ้ำ
+Lecture de la galerie	กำลังอ่านแกลเลอรี
+Lecture des dates des photos…	กำลังอ่านวันที่ของรูป…
+Lecture des vidéos	กำลังอ่านวิดีโอ
+Lecture impossible : %1	อ่านไม่ได้: %1
+Les .apk d'applis déjà installées : ils ne servent plus.	ไฟล์ .apk ของแอปที่ติดตั้งแล้ว: ไม่จำเป็นแล้ว
+Les 200 derniers mails de la corbeille de ta messagerie. Coche ceux à remettre dans ta boîte de réception.	อีเมลล่าสุด 200 ฉบับในถังขยะอีเมล เลือกฉบับที่จะนำกลับไปกล่องจดหมายเข้า
+Les 30 photos et vidéos qui prennent le plus de place	รูปและวิดีโอ 30 รายการที่ใช้พื้นที่มากที่สุด
+Les autres cases : inutile	ช่องอื่นๆ: ไม่จำเป็น
+Les fichiers d'Apple restent disponibles environ 2 semaines sur privacy.apple.com : si c'est passé, refais une demande (rien n'est perdu, on continue sans doublon).	ไฟล์ของ Apple ดาวน์โหลดได้ประมาณ 2 สัปดาห์ที่ privacy.apple.com: ถ้าเลยแล้ว ให้ขอใหม่ (ไม่มีอะไรหาย ทำต่อโดยไม่ซ้ำ)
+Les fichiers déjà mis à la corbeille restent récupérables dans la Galerie.	ไฟล์ที่ทิ้งลงถังขยะแล้วยังกู้คืนได้ในแกลเลอรี
+Les mails de plus de %1 ans vont dans la corbeille de ta messagerie. Les importants sont gardés.	อีเมลที่เก่ากว่า %1 ปีไปที่ถังขยะอีเมล อีเมลสำคัญถูกเก็บไว้
+Les mails de plus de 2 ans vont dans la corbeille de ta messagerie.	อีเมลที่เก่ากว่า 2 ปีไปที่ถังขยะอีเมล
+Les mails de plus de 5 Mo vont dans la corbeille de ta messagerie.	อีเมลที่ใหญ่กว่า 5 MB ไปที่ถังขยะอีเมล
+Les newsletters, pubs, notifications et mails en double vont dans la corbeille de ta messagerie (toute la boîte de réception).\n\nLes mails importants ne sont jamais touchés.	จดหมายข่าว โฆษณา การแจ้งเตือน และอีเมลซ้ำไปที่ถังขยะอีเมล (ทั้งกล่องจดหมายเข้า)\n\nอีเมลสำคัญไม่ถูกแตะเด็ดขาด
+Les photos d'abord (trier, garder le meilleur, sauvegarder, libérer), puis les fichiers inutiles du téléphone, puis les mails.	รูปก่อน (จัด เก็บรูปที่ดีที่สุด สำรอง เพิ่มพื้นที่) แล้วไฟล์ไม่จำเป็นในโทรศัพท์ แล้วอีเมล
+Les photos de plus de %1 mois déjà sauvegardées quittent le téléphone (corbeille, 30 jours).	รูปที่เก่ากว่า %1 เดือนและสำรองแล้วจะออกจากโทรศัพท์ (ถังขยะ 30 วัน)
+Les photos mises en favori (ou protégées avec le bouton 🛡️) ne sont jamais proposées	รูปโปรด (หรือที่ปกป้องด้วยปุ่ม 🛡️) จะไม่ถูกเสนอให้ลบ
+Les photos un peu floues, WhatsApp, captures récentes : c'est toi qui décides.	รูปเบลอเล็กน้อย WhatsApp ภาพหน้าจอล่าสุด: คุณตัดสินใจเอง
+Les photos, vidéos et musiques ne sont jamais touchées.	รูป วิดีโอ และเพลงไม่ถูกแตะเด็ดขาด
+Les plus anciennes ne sont proposées à la corbeille que si elles sont déjà dans ta sauvegarde.	รูปเก่าจะถูกเสนอให้ทิ้งก็ต่อเมื่ออยู่ในสำรองข้อมูลแล้ว
+Les plus belles photos du mois ou de l'année, à envoyer à un proche	รูปที่สวยที่สุดของเดือนหรือของปี ส่งให้คนที่คุณรัก
+Les plus grosses et celles que tu n'ouvres plus : les désinstaller en un geste	แอปที่ใหญ่ที่สุดและแอปที่ไม่ได้เปิดแล้ว: ถอนการติดตั้งในแตะเดียว
+Les spams vont dans la corbeille de ta messagerie. Décoche un mail s'il n'est pas un spam.	สแปมไปที่ถังขยะอีเมล ยกเลิกเครื่องหมายถ้าอีเมลไม่ใช่สแปม
+Libérer	เพิ่มพื้นที่
+Libérer %1 ?	เพิ่มพื้นที่ %1 ไหม?
+Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.	การล้าง %1 เป็นทางเลือก %2 ไม่อนุญาตให้แอปใดลบรูปของคุณ: คุณลบเองเมื่อแน่ใจ
+Libérer la boîte	ล้างกล่องจดหมาย
+Libérer la boîte mail	กำลังล้างกล่องจดหมาย
+Libérer la boîte mail ?	ล้างกล่องจดหมายไหม?
+Libérer la place	เพิ่มพื้นที่ว่าง
+Libérer la place, PDF souvenir…	เพิ่มพื้นที่ว่าง, PDF ความทรงจำ…
+Liste des photos sur le disque…	กำลังรวบรวมรายการรูปบนดิสก์…
+MAINTENANT	ตอนนี้
+Mail (facultatif, pour tes mails)	อีเมล (ไม่บังคับ สำหรับอีเมลของคุณ)
+Mails	อีเมล
+Mails Gmail : %1	อีเมล Gmail: %1
+Mails avec pièces jointes	อีเมลที่มีไฟล์แนบ
+Mails de plus de 2 ans	อีเมลที่เก่ากว่า 2 ปี
+Mails en double	อีเมลซ้ำ
+Mails en double…	อีเมลซ้ำ…
+Maison	บ้าน
+Me prévenir	แจ้งฉัน
+Merci d'avoir essayé Clean Smart ! Installe la version complète pour continuer à nettoyer ton téléphone. 	ขอบคุณที่ลองใช้ Clean Smart! ติดตั้งเวอร์ชันเต็มเพื่อล้างโทรศัพท์ต่อ
+Mes applis	แอปของฉัน
+Mes plus gros fichiers	ไฟล์ใหญ่ที่สุดของฉัน
+Mes règles	กฎของฉัน
+Met à la corbeille les photos de plus de %1 mois déjà sauvegardées	ทิ้งรูปที่เก่ากว่า %1 เดือนซึ่งสำรองแล้วลงถังขยะ
+Mettre à l'abri	เก็บให้ปลอดภัย
+Mettre à l'abri l'important	กำลังเก็บของสำคัญให้ปลอดภัย
+Miniatures	ภาพย่อ
+Mise à jour	กำลังอัปเดต
+Mise à la corbeille…	กำลังย้ายไปถังขยะ…
+Mode d'emploi	คู่มือการใช้งาน
+Mode d'emploi introuvable.	ไม่พบคู่มือการใช้งาน
+Mode démonstration terminé	ออกจากโหมดสาธิตแล้ว
+Modifier ▼	แก้ไข ▼
+Montre l'appli avec de fausses photos, de faux mails et de faux contacts. Rien n'est touché sur le téléphone : idéal pour présenter Clean Smart.	แสดงแอปด้วยรูป อีเมล และรายชื่อติดต่อปลอม ไม่แตะอะไรในโทรศัพท์: เหมาะสำหรับแนะนำ Clean Smart
+Mot de passe (vide = garder l'actuel)	รหัสผ่าน (เว้นว่าง = ใช้รหัสเดิม)
+Mot de passe d'application	รหัสผ่านสำหรับแอป
+Médias WhatsApp	สื่อ WhatsApp
+Ménage complet	ล้างทั้งหมด
+Ménage guidé	ล้างแบบมีคำแนะนำ
+Ménage guidé des mails	ล้างอีเมลแบบมีคำแนะนำ
+Ménage sûr de la boîte mail	ล้างกล่องจดหมายแบบปลอดภัย
+Ménage terminé !	ล้างเสร็จแล้ว!
+NOUVEAU	ใหม่
+Nettoyage de la boîte mail	กำลังล้างกล่องจดหมาย
+Nettoyage des fichiers inutiles	กำลังล้างไฟล์ไม่จำเป็น
+Nettoyer	ล้าง
+Nettoyer %1 ?	ล้าง %1 ไหม?
+Nettoyer le téléphone	ล้างโทรศัพท์
+Nettoyer les fichiers inutiles ?	ล้างไฟล์ไม่จำเป็นไหม?
+Newsletters et notifications…	จดหมายข่าวและการแจ้งเตือน…
+Newsletters et pubs	จดหมายข่าวและโฆษณา
+Newsletters, pubs, notifications et mails en double.	จดหมายข่าว โฆษณา การแจ้งเตือน และอีเมลซ้ำ
+Nombre de fichiers dans le mail	จำนวนไฟล์ในอีเมล
+Normale	ปกติ
+Nouvelle version %1 disponible	มีเวอร์ชันใหม่ %1
+Oublier	ลบบัญชี
+Oublier ce compte ?	ลบบัญชีนี้ไหม?
+Oui, c'est fini	ใช่ เสร็จแล้ว
+Ouverte aujourd'hui	เปิดวันนี้
+Ouverte il y a %1	เปิดเมื่อ %1 ที่แล้ว
+Ouverture de %1…	กำลังเปิด %1…
+Ouvre Clean Smart pour voir quoi faire. Rien n'est perdu.	เปิด Clean Smart เพื่อดูว่าต้องทำอะไร ไม่มีอะไรหาย
+Ouvre ta page Google et regarde la place utilisée par Google Photos. Écris-la ici (en Go).	เปิดหน้า Google ของคุณแล้วดูพื้นที่ที่ Google Photos ใช้ กรอกที่นี่ (เป็น GB)
+Ouvre « Grosses vidéos », coche-les puis « Compresser »	เปิด «วิดีโอขนาดใหญ่» เลือก แล้ว «บีบอัด»
+Ouvrir	เปิด
+Ouvrir Google Photos	เปิด Google Photos
+Ouvrir Google Takeout	เปิด Google Takeout
+Ouvrir iCloud Photos	เปิดรูปภาพ iCloud
+Ouvrir la page du mot de passe d'application	เปิดหน้ารหัสผ่านสำหรับแอป
+Ouvrir privacy.apple.com	เปิด privacy.apple.com
+Ouvrir « Libérer de l'espace » d'Android	เปิด «เพิ่มพื้นที่ว่าง» ของ Android
+PDF souvenir	PDF ความทรงจำ
+PHOTOS ET VIDÉOS	รูปและวิดีโอ
+PROTECTION	การปกป้อง
+Pas de photos pour cette période.	ไม่มีรูปในช่วงเวลานี้
+Pas ouverte depuis plus d'un an	ไม่ได้เปิดมากกว่าหนึ่งปี
+Passer	ข้าม
+Petites copies des photos pour l'affichage. Elles se recréent toutes seules.	สำเนาขนาดเล็กของรูปสำหรับแสดงผล สร้างใหม่เองได้
+Photos	รูป
+Photos : %1 · vidéos : %2 · doublons écartés : %3	รูป: %1 · วิดีโอ: %2 · คัดรูปซ้ำออก: %3
+Photos du week-end	รูปสุดสัปดาห์
+Photos en double, rafales, photos ratées, grosses vidéos, mails inutiles… tout prend de la place.	รูปซ้ำ ถ่ายต่อเนื่อง รูปเสีย วิดีโอใหญ่ อีเมลไม่จำเป็น… ทุกอย่างกินพื้นที่
+Photos et vidéos reçues ou envoyées	รูปและวิดีโอที่ได้รับหรือส่ง
+Photos floues ou ratées	รูปเบลอหรือรูปเสีย
+Photos iCloud	รูปภาพ iCloud
+Photos similaires	รูปที่คล้ายกัน
+Photos, téléphone et mails, étape par étape	รูป โทรศัพท์ และอีเมล ทีละขั้นตอน
+Place prise : %1	พื้นที่ที่ใช้: %1
+Plus d'outils	เครื่องมือเพิ่มเติม
+Plus de 100 Mo chacune	แต่ละไฟล์มากกว่า 100 MB
+Pour gagner des points : %1.	เพิ่มคะแนน: %1
+Pour obtenir la version complète de Clean Smart, ou pour toute question, écris-moi :	หากต้องการเวอร์ชันเต็มของ Clean Smart หรือมีคำถาม เขียนถึงฉัน:
+Pour obtenir la version complète, écris-moi :	หากต้องการเวอร์ชันเต็ม เขียนถึงฉัน:
+Pour trouver les fichiers inutiles, Clean Smart doit pouvoir regarder le stockage du téléphone : autorise « Accès à tous les fichiers ». Rien n'est envoyé nulle part.	เพื่อหาไฟล์ไม่จำเป็น Clean Smart ต้องดูพื้นที่ของโทรศัพท์ได้: อนุญาต «การเข้าถึงไฟล์ทั้งหมด» ไม่มีการส่งข้อมูลไปที่ใด
+Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés.	สำหรับบัญชีหรือดิสก์อื่น ไฟล์ที่คัดลอกไปที่ดิสก์แล้วจะไม่ถูกแตะ
+Protéger mes favoris	ปกป้องรูปโปรดของฉัน
+Prudente	ระมัดระวัง
+Prudente : moins de photos proposées. Stricte : davantage.	ระมัดระวัง: เสนอรูปน้อยลง เข้มงวด: มากขึ้น
+Préparation	การเตรียม
+Préparation…	กำลังเตรียม…
+Préviens-moi si le téléphone n'a presque plus de place (moins de 1 Go), et un petit bilan le 1er du mois.	แจ้งฉันเมื่อโทรศัพท์ใกล้เต็ม (น้อยกว่า 1 GB) และสรุปสั้นๆ ทุกวันที่ 1 ของเดือน
+Prévois au moins %1 sur la clé ou le disque (10 % de marge). 	เตรียมพื้นที่อย่างน้อย %1 บนแฟลชไดรฟ์หรือดิสก์ (เผื่อ 10 %)
+QUI T'ÉCRIT LE PLUS	ใครส่งอีเมลถึงคุณมากที่สุด
+Quand le mail de %1 est arrivé	เมื่ออีเมลจาก %1 มาถึง
+Quitter	ออก
+Quitter Google Photos	ย้ายออกจาก Google Photos
+Quitter iCloud Photos	ย้ายออกจากรูปภาพ iCloud
+RECHERCHE DES PHOTOS RATÉES	ค้นหารูปเสีย
+Rafales : on garde la meilleure…	ถ่ายต่อเนื่อง: เก็บรูปที่ดีที่สุด…
+Rafales — la plus nette est gardée	ถ่ายต่อเนื่อง — เก็บรูปที่คมที่สุด
+Rangement : %1	กำลังจัดเก็บ: %1
+Recherche des doublons	กำลังหารูปซ้ำ
+Recherche des fichiers inutiles…	กำลังหาไฟล์ไม่จำเป็น…
+Recherche des mails	กำลังหาอีเมล
+Recherche des mails avec PDF	กำลังหาอีเมลที่มี PDF
+Recherche des mails importants (%1 / %2)	กำลังหาอีเมลสำคัญ (%1 / %2)
+Recherche des photos floues	กำลังหารูปเบลอ
+Recherche des photos ratées	กำลังหารูปเสีย
+Recherche des photos similaires	กำลังหารูปที่คล้ายกัน
+Recherche des pièces jointes (%1 / %2)	กำลังหาไฟล์แนบ (%1 / %2)
+Rechercher une mise à jour	ตรวจหาอัปเดต
+Recommencer	เริ่มใหม่
+Recommencer avec un autre compte	เริ่มใหม่ด้วยบัญชีอื่น
+Recommencer depuis le début ?	เริ่มใหม่ตั้งแต่ต้นไหม?
+Regarder la taille de %1	ดูขนาดของ %1
+Relance l'analyse après un changement.	วิเคราะห์ใหม่หลังจากเปลี่ยนการตั้งค่า
+Remettre des mails	นำอีเมลกลับ
+Remettre le compteur à zéro	รีเซ็ตตัวนับ
+Remettre les fichiers	กำลังนำไฟล์กลับที่เดิม
+Restes d'applis désinstallées	ไฟล์ที่แอปซึ่งถอนแล้วทิ้งไว้
+Restes d'applis désinstallées…	ไฟล์ที่แอปซึ่งถอนแล้วทิ้งไว้…
+Reçus plusieurs fois à quelques secondes d'écart : %1	ได้รับหลายครั้งห่างกันไม่กี่วินาที: %1
+Rien	ไม่มี
+Rien n'a été supprimé.	ไม่ได้ลบอะไร
+Rien n'est perdu	ไม่มีอะไรหาย
+Rien n'est supprimé sans ton accord : tout passe par la corbeille.	ไม่มีอะไรถูกลบโดยไม่ได้รับความยินยอม: ทุกอย่างผ่านถังขยะ
+Rien à libérer : aucune photo ancienne n'est encore dans la sauvegarde. Lance d'abord « Sauvegarder toutes mes photos ».	ไม่มีอะไรให้เพิ่มพื้นที่: ยังไม่มีรูปเก่าในสำรองข้อมูล เรียกใช้ «สำรองรูปทั้งหมดของฉัน» ก่อน
+RÉSULTAT	ผลลัพธ์
+Règle retirée	ยกเลิกกฎแล้ว
+Récupère des mails mis à la corbeille de ta messagerie	กู้อีเมลที่ทิ้งลงถังขยะอีเมล
+Récupérer mes photos iCloud (ancien iPhone)	นำรูป iCloud ของฉันกลับมา (iPhone เครื่องเก่า)
+Réduire mes vidéos	ย่อวิดีโอของฉัน
+Réglages avancés	การตั้งค่าขั้นสูง
+Réglages de stockage Android	การตั้งค่าพื้นที่เก็บข้อมูล Android
+SAUVEGARDE	สำรองข้อมูล
+Sans l'accès aux photos, Clean Smart ne peut rien analyser.	ถ้าไม่มีสิทธิ์เข้าถึงรูป Clean Smart วิเคราะห์อะไรไม่ได้
+Santé	สุขภาพ
+Sauvegarde %1 / %2	สำรองข้อมูล %1 / %2
+Sauvegarde automatique chaque nuit	สำรองข้อมูลอัตโนมัติทุกคืน
+Sauvegarde avant suppression	สำรองก่อนลบ
+Sauvegarde de mes bonnes photos	กำลังสำรองรูปดีของฉัน
+Sauvegarde des mails	กำลังสำรองอีเมล
+Sauvegarde des mails importants	กำลังสำรองอีเมลสำคัญ
+Sauvegarde du mail %1 / %2	กำลังบันทึกอีเมล %1 / %2
+Sauvegarder avant de supprimer	สำรองก่อนลบ
+Sauvegarder des mails	บันทึกอีเมล
+Sauvegarder mes bonnes photos	สำรองรูปดีของฉัน
+Se connecter avec ton identifiant Apple	ลงชื่อเข้าใช้ด้วย Apple ID ของคุณ
+Serveur IMAP	เซิร์ฟเวอร์ IMAP
+Serveur introuvable : vérifie internet et le nom du serveur.	ไม่พบเซิร์ฟเวอร์: ตรวจอินเทอร์เน็ตและชื่อเซิร์ฟเวอร์
+Ses mails partent à la corbeille chaque nuit, tout seuls	อีเมลของผู้ส่งนี้ไปที่ถังขยะเองทุกคืน
+Seulement les bonnes photos : jamais les doublons, rafales en trop ou ratées. Les favoris vont aussi dans « Mes meilleures ».	เฉพาะรูปดี: ไม่มีรูปซ้ำ รูปถ่ายต่อเนื่องเกิน หรือรูปเสีย รูปโปรดจะอยู่ใน «Mes meilleures» (รูปที่ดีที่สุดของฉัน) ด้วย
+Seules les bonnes photos sont sauvegardées, sur une clé, un disque ou Google Drive. Même Google Photos peut être rapatrié.	สำรองเฉพาะรูปดี ไปที่แฟลชไดรฟ์ ดิสก์ หรือ Google Drive แม้แต่ Google Photos ก็นำกลับมาได้
+Seules les nouvelles photos sont copiées à chaque fois.	แต่ละครั้งคัดลอกเฉพาะรูปใหม่
+Seuls les 20 premiers fichiers sont envoyés.	ส่งเฉพาะ 20 ไฟล์แรก
+Si la connexion est refusée, crée un mot de passe d'application dans la sécurité du compte Microsoft (validation en 2 étapes requise).	ถ้าการเข้าสู่ระบบถูกปฏิเสธ ให้สร้างรหัสผ่านสำหรับแอปในส่วนความปลอดภัยของบัญชี Microsoft (ต้องเปิดยืนยัน 2 ขั้นตอน)
+Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone.	มิฉะนั้น iPhone จะส่งรูปกลับไป iCloud และการลบใน iCloud อาจลบรูปออกจาก iPhone ด้วย
+Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone.	มิฉะนั้นโทรศัพท์จะส่งรูปกลับไป Google และการลบใน Google อาจลบรูปออกจากโทรศัพท์นี้ด้วย
+Soldes d'hiver	ลดราคาหน้าหนาว
+Souvent inutiles après coup	มักไม่มีประโยชน์ภายหลัง
+Stockage du téléphone	พื้นที่เก็บข้อมูลโทรศัพท์
+Stricte	เข้มงวด
+Suivant	ถัดไป
+Supprime ce fichier toi-même dans Téléchargements pour faire de la place.	ลบไฟล์นี้เองในดาวน์โหลดเพื่อเพิ่มพื้นที่
+Supprimer	ลบ
+Supprimer %1 ?	ลบ %1 ไหม?
+Supprimer ce fichier du téléphone ?	ลบไฟล์นี้ออกจากโทรศัพท์ไหม?
+Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)	ลบแต่ละไฟล์ออกจากโทรศัพท์หลังคัดลอกและตรวจแล้ว (แนะนำ: รักษาพื้นที่ว่าง)
+Supprimer les doublons	ลบรูปซ้ำ
+Sur Gmail, ils gardent leur place dans la boîte et reçoivent un libellé « Protégés ». Refait chaque nuit.	ใน Gmail อีเมลจะยังอยู่ในกล่องจดหมายเข้าและติดป้ายกำกับ «ได้รับการปกป้อง» ทำซ้ำทุกคืน
+Sur Google Takeout, en 1 minute	ที่ Google Takeout ใน 1 นาที
+Sur account.apple.com → Mots de passe pour applications → en créer un.	ที่ account.apple.com → รหัสผ่านเฉพาะแอป → สร้างหนึ่งรหัส
+Sur l'iPhone : Réglages › ton nom › iCloud : la place utilisée par « Photos » s'affiche. Ou regarde sur icloud.com. Écris-la ici (en Go).	บน iPhone: การตั้งค่า › ชื่อของคุณ › iCloud: จะแสดงพื้นที่ที่ «รูปภาพ» ใช้ หรือดูที่ icloud.com กรอกที่นี่ (เป็น GB)
+Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours.	บน iPhone หรือ icloud.com/photos: เลือกรูปแล้ว «ลบ» อัลบั้ม «ที่เพิ่งลบ» เก็บไว้ 30 วัน
+Sur la page qui s'ouvre : Stockage › « Vider le cache ». Android le demande, Clean Smart ne peut pas le faire à ta place.	ในหน้าที่เปิดขึ้น: พื้นที่เก็บข้อมูล › «ล้างแคช» Android กำหนดไว้ Clean Smart ทำแทนคุณไม่ได้
+Sur le téléphone, 2 à 3 Go libres suffisent : un seul fichier à la fois. Libre maintenant : %1.	บนโทรศัพท์ ที่ว่าง 2 ถึง 3 GB ก็พอ: ครั้งละไฟล์เดียว ว่างตอนนี้: %1
+Sur privacy.apple.com, en 2 minutes	ที่ privacy.apple.com ใน 2 นาที
+Sur privacy.apple.com, les fichiers s'appellent « iCloud Photos Part 1 of 12 » : le dernier nombre (ici 12) est le nombre de fichiers. Clean Smart le lit aussi tout seul.	ที่ privacy.apple.com ไฟล์ชื่อ «iCloud Photos Part 1 of 12»: ตัวเลขสุดท้าย (ที่นี่คือ 12) คือจำนวนไฟล์ Clean Smart อ่านเองได้ด้วย
+Sécurité du compte → Générer un mot de passe d'application, puis colle-le ici.	ความปลอดภัยของบัญชี → สร้างรหัสผ่านสำหรับแอป แล้ววางที่นี่
+Sécurité, photos ratées, démonstration…	ความปลอดภัย รูปเสีย การสาธิต…
+Sévérité	ความเข้มงวด
+TERMINÉ	เสร็จแล้ว
+Ta messagerie	บริการอีเมลของคุณ
+Ta période d'essai de 30 jours est terminée.	ช่วงทดลองใช้ 30 วันสิ้นสุดแล้ว
+Taille de %1 (Go)	ขนาดของ %1 (GB)
+Taille du texte	ขนาดตัวอักษร
+Taille maximale des fichiers : 1 Go ou 2 Go	ขนาดไฟล์สูงสุด: 1 GB หรือ 2 GB
+Temps passé	เวลาที่ผ่านไป
+Temps restant	เวลาที่เหลือ
+Terminer la demande	ส่งคำขอให้เสร็จ
+Terminé	เสร็จแล้ว
+Tes photos d'iPhone sur une clé ou un disque, par année, sans doublon	รูปจาก iPhone ของคุณบนแฟลชไดรฟ์หรือดิสก์ แยกตามปี ไม่ซ้ำ
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon.	รูปของคุณช่วง 2 เดือนล่าสุดยังไม่อยู่บนดิสก์ ขอสำเนาใหม่ใน Google Takeout แล้วโหมดอัตโนมัติจะเพิ่มเฉพาะรูปใหม่โดยไม่ซ้ำ
+Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon.	รูปของคุณช่วง 2 เดือนล่าสุดยังไม่อยู่บนดิสก์ ขอสำเนาใหม่จาก Apple: Clean Smart จะเพิ่มเฉพาะรูปใหม่โดยไม่ซ้ำ
+Tes photos à l'abri	รูปของคุณปลอดภัย
+Tes réglages et ta boîte mail seront conservés.	การตั้งค่าและกล่องจดหมายของคุณจะถูกเก็บไว้
+Ton téléphone est plein ?	โทรศัพท์ของคุณเต็มหรือเปล่า?
+Ton téléphone est propre et tes photos sont à l'abri	โทรศัพท์สะอาดแล้ว และรูปของคุณปลอดภัย
+Ton téléphone et ta boîte mail sont propres, tes photos sont à l'abri	โทรศัพท์และกล่องจดหมายสะอาดแล้ว รูปของคุณปลอดภัย
+Touche ici pour la télécharger, puis ouvre le fichier pour l'installer	แตะที่นี่เพื่อดาวน์โหลด แล้วเปิดไฟล์เพื่อติดตั้ง
+Touche ici pour la version complète ou une question	แตะที่นี่เพื่อเวอร์ชันเต็มหรือถามคำถาม
+Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.	แค่แตะลิงก์ «ดาวน์โหลด» ในอีเมลของ Google Clean Smart จะคัดลอกแต่ละไฟล์ไปที่ดิสก์ทันทีที่มาถึง Download แม้ไฟล์อื่นยังดาวน์โหลดอยู่
+Touche un expéditeur : toujours jeter, toujours garder, me prévenir, se désabonner.	แตะผู้ส่ง: ทิ้งเสมอ เก็บเสมอ แจ้งฉัน ยกเลิกการติดตาม
+Touche un expéditeur dans « Qui t'écrit le plus » pour choisir	แตะผู้ส่งใน «ใครส่งอีเมลถึงคุณมากที่สุด» เพื่อเลือก
+Touche une image pour la cocher · appui long pour la voir en grand	แตะรูปเพื่อเลือก · กดค้างเพื่อดูขนาดใหญ่
+Toucher pour analyser	แตะเพื่อวิเคราะห์
+Toucher pour voir	แตะเพื่อดู
+Toujours garder	เก็บเสมอ
+Toujours jeter	ทิ้งเสมอ
+Tous les fichiers sont traités ?	จัดการไฟล์ครบแล้วหรือยัง?
+Tous les mails de %1 (au moins %2 mails) vont dans la corbeille de ta messagerie.	อีเมลทั้งหมดของ %1 (อย่างน้อย %2 ฉบับ) ไปที่ถังขยะอีเมล
+Tous les mails de %1 expéditeur(s) de newsletters vont dans la corbeille de ta messagerie (toute la boîte de réception, pas seulement les mails analysés).\n\nTu peux les récupérer depuis la corbeille.	อีเมลทั้งหมดจากผู้ส่งจดหมายข่าว %1 ราย ไปที่ถังขยะอีเมล (ทั้งกล่องจดหมายเข้า ไม่ใช่แค่ที่วิเคราะห์)\n\nกู้คืนได้จากถังขยะ
+Tout cocher	เลือกทั้งหมด
+Tout décocher	ยกเลิกเลือกทั้งหมด
+Tout désélectionner	ยกเลิกการเลือกทั้งหมด
+Tout mettre à la corbeille	ทิ้งทั้งหมดลงถังขยะ
+Tout nettoyer	ล้างทั้งหมด
+Tout passe par la corbeille : 30 jours pour récupérer. Et « J'ai fait une bêtise » annule en un geste.	ทุกอย่างผ่านถังขยะ: กู้คืนได้ 30 วัน และ «ฉันพลาด» ยกเลิกได้ในแตะเดียว
+Tout recommencer	เริ่มใหม่ทั้งหมด
+Tout recommencer ?	เริ่มใหม่ทั้งหมดไหม?
+Tout son contenu est copié et vérifié sur le disque. Le supprimer fait de la place pour le suivant.\n\nTes photos restent aussi dans Google Photos.	เนื้อหาทั้งหมดถูกคัดลอกและตรวจบนดิสก์แล้ว การลบจะได้พื้นที่สำหรับไฟล์ถัดไป\n\nรูปของคุณยังอยู่ใน Google Photos ด้วย
+Tout va bien, continue comme ça !	ทุกอย่างดี ทำแบบนี้ต่อไป!
+Tout était déjà sauvegardé 👍	ทุกอย่างสำรองไว้แล้ว 👍
+Toutes tes photos sur une clé ou un disque, par année, sans doublon	รูปทั้งหมดของคุณบนแฟลชไดรฟ์หรือดิสก์ แยกตามปี ไม่ซ้ำ
+Tri avant la sauvegarde	จัดก่อนสำรอง
+Tri des expéditeurs	กำลังจัดผู้ส่ง
+Tri rapide	จัดอย่างรวดเร็ว
+Tri terminé !	จัดเสร็จแล้ว!
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, libérer la place, puis faire le ménage des mails.	จัดก่อน เก็บสิ่งที่ดีที่สุด สำรองเฉพาะรูปดี เพิ่มพื้นที่ แล้วค่อยล้างอีเมล
+Trier d'abord, garder le meilleur, sauvegarder seulement les bonnes photos, puis libérer la place.	จัดก่อน เก็บสิ่งที่ดีที่สุด สำรองเฉพาะรูปดี แล้วค่อยเพิ่มพื้นที่
+Trier d'abord, mettre l'important à l'abri, puis vider la boîte. Les mails de ta banque, de l'administration ou de santé ne sont jamais jetés.	จัดก่อน เก็บของสำคัญให้ปลอดภัย แล้วค่อยล้างกล่องจดหมาย อีเมลจากธนาคาร หน่วยงานราชการ หรือสุขภาพ ไม่ถูกทิ้งเด็ดขาด
+Trier en glissant	จัดด้วยการปัด
+Trier les expéditeurs	จัดผู้ส่ง
+Trier, garder, sauvegarder, libérer	จัด เก็บ สำรอง เพิ่มพื้นที่
+Trier, mettre l'important à l'abri, vider la boîte	จัด เก็บของสำคัญ ล้างกล่องจดหมาย
+Trier, protéger	จัด ปกป้อง
+Trop claire	สว่างเกินไป
+Trop petite	เล็กเกินไป
+Trop sombre	มืดเกินไป
+Très gros	ใหญ่มาก
+Tu as effacé ta copie sur le disque et plus rien n'est recopié ? Touche « Tout recommencer (j'ai effacé ma copie) » en bas de l'écran, puis relance tes fichiers ZIP.	ลบสำเนาบนดิสก์แล้วไม่มีอะไรถูกคัดลอกอีก? แตะ «เริ่มใหม่ทั้งหมด (ฉันลบสำเนาแล้ว)» ด้านล่างหน้าจอ แล้วเปิดไฟล์ ZIP อีกครั้ง
+Tu avais un iPhone ? Tes photos iCloud sur une clé ou un disque	เคยใช้ iPhone? รูป iCloud ของคุณบนแฟลชไดรฟ์หรือดิสก์
+Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »).	ออกจากแอปไปแตะลิงก์ได้: การคัดลอกยังดำเนินต่อ (การแจ้งเตือน «คัดลอกอัตโนมัติ»)
+Type : .zip   ·   Taille : 2 Go	ชนิด: .zip   ·   ขนาด: 2 GB
+Télécharge UN seul ZIP à la fois, en Wi-Fi. Traite-le, supprime-le, puis télécharge le suivant.	ดาวน์โหลด ZIP ครั้งละไฟล์เดียว ผ่าน Wi-Fi จัดการ ลบ แล้วดาวน์โหลดไฟล์ถัดไป
+Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download.	แค่ดาวน์โหลดไฟล์ที่ privacy.apple.com Clean Smart จะคัดลอกแต่ละไฟล์ไปที่ดิสก์ทันทีที่มาถึง Download
+Téléphone	โทรศัพท์
+Téléphone plein : vide la corbeille de la Galerie, supprime les ZIP déjà traités, fais le Ménage guidé. Il faut au moins 300 Mo libres.	โทรศัพท์เต็ม: ล้างถังขยะของแกลเลอรี ลบ ZIP ที่จัดการแล้ว ใช้การล้างแบบมีคำแนะนำ ต้องมีที่ว่างอย่างน้อย 300 MB
+Un bouton, et c'est trié	ปุ่มเดียว จัดเรียบร้อย
+Une carte par expéditeur : glisse à gauche pour jeter TOUS ses mails, à droite pour le garder.	หนึ่งการ์ดต่อผู้ส่ง: ปัดซ้ายเพื่อทิ้งอีเมลทั้งหมดของเขา ปัดขวาเพื่อเก็บ
+Une notification quand il t'écrit	แจ้งเตือนเมื่อเขาส่งอีเมลถึงคุณ
+Une photo à la fois : glisse à gauche pour jeter, à droite pour garder	ทีละรูป: ปัดซ้ายเพื่อทิ้ง ปัดขวาเพื่อเก็บ
+Une question, un souci, la version complète ? Écris-moi :	มีคำถาม ปัญหา หรือต้องการเวอร์ชันเต็ม? เขียนถึงฉัน:
+Utilise ton adresse et ton mot de passe Free.	ใช้ที่อยู่และรหัสผ่าน Free ของคุณ
+Utilise ton adresse et ton mot de passe La Poste.	ใช้ที่อยู่และรหัสผ่าน La Poste ของคุณ
+Utilise ton adresse et ton mot de passe Orange.	ใช้ที่อยู่และรหัสผ่าน Orange ของคุณ
+Utilise ton adresse et ton mot de passe SFR.	ใช้ที่อยู่และรหัสผ่าน SFR ของคุณ
+Vers 2 h, les nouvelles photos sont copiées dans ton dossier de sauvegarde. Une notification te dit si ça n'a pas marché.	ประมาณตี 2 รูปใหม่จะถูกคัดลอกไปที่โฟลเดอร์สำรองข้อมูล การแจ้งเตือนจะบอกถ้าไม่สำเร็จ
+Version complète	เวอร์ชันเต็ม
+Version installée : %1	เวอร์ชันที่ติดตั้ง: %1
+Vider	ล้าง
+Vider la corbeille ?	ล้างถังขยะไหม?
+Vider la corbeille Clean Smart	ล้างถังขยะของ Clean Smart
+Vider la corbeille Clean Smart ?	ล้างถังขยะของ Clean Smart ไหม?
+Vider la corbeille maintenant	ล้างถังขยะตอนนี้
+Vider maintenant	ล้างตอนนี้
+Vieux mails vers la corbeille…	ย้ายอีเมลเก่าไปถังขยะ…
+Vieux téléchargements (plus de 6 mois)	ไฟล์ดาวน์โหลดเก่า (มากกว่า 6 เดือน)
+Voir la liste et jeter	ดูรายการแล้วทิ้ง
+Voir la liste et libérer	ดูรายการแล้วเพิ่มพื้นที่
+Voir le courrier indésirable puis le mettre à la corbeille	ดูอีเมลขยะ แล้วทิ้งลงถังขยะ
+Voir les conseils	ดูคำแนะนำ
+Voir ma place Google	ดูพื้นที่ Google ของฉัน
+Voir ma place iCloud	ดูพื้นที่ iCloud ของฉัน
+Votre facture	ใบแจ้งหนี้ของคุณ
+Voyages et réservations	การเดินทางและการจอง
+Vérification de la sauvegarde	กำลังตรวจสำรองข้อมูล
+Vérification du disque	กำลังตรวจดิสก์
+Vérifie dans le mail de Google que chaque fichier (001, 002, 003…) a bien été traité.	ตรวจในอีเมลของ Google ว่าแต่ละไฟล์ (001, 002, 003…) จัดการแล้ว
+Vérifier, puis libérer %1 (si tu veux)	ตรวจ แล้วค่อยล้าง %1 (ถ้าต้องการ)
+Yeux fermés	หลับตา
+appli	แอป
+applis	แอป
+calcul…	กำลังคำนวณ…
+compression impossible	บีบอัดไม่ได้
+contact en double	รายชื่อติดต่อซ้ำ
+contacts en double	รายชื่อติดต่อซ้ำ
+copie	สำเนา
+copies	สำเนา
+de ta photothèque est à l'abri	ของคลังรูปของคุณปลอดภัย
+derniers fichiers	ไฟล์ล่าสุด
+doublon	รูปซ้ำ
+doublons	รูปซ้ำ
+erreur	ข้อผิดพลาด
+erreurs	ข้อผิดพลาด
+expéditeur	ผู้ส่ง
+expéditeurs	ผู้ส่ง
+fais le ménage de ta boîte mail	ล้างกล่องจดหมายของคุณ
+fichier	ไฟล์
+fichier copié	ไฟล์ที่คัดลอกแล้ว
+fichier copié et vérifié	ไฟล์ที่คัดลอกและตรวจแล้ว
+fichier n'a	ไฟล์
+fichiers	ไฟล์
+fichiers copiés	ไฟล์ที่คัดลอกแล้ว
+fichiers copiés et vérifiés	ไฟล์ที่คัดลอกและตรวจแล้ว
+fichiers n'ont	ไฟล์
+iCloud Photos	รูปภาพ iCloud
+jour	วัน
+jour restant	วันที่เหลือ
+jours	วัน
+jours restants	วันที่เหลือ
+le plus simple	ง่ายที่สุด
+libres · %1 % utilisé	ว่าง · ใช้ไป %1 %
+libère de la place avec le Ménage complet	เพิ่มพื้นที่ด้วยการล้างทั้งหมด
+libérés	ได้คืน
+mail	อีเมล
+mail remis	อีเมลที่นำกลับ
+mails	อีเมล
+mails remis	อีเมลที่นำกลับ
+nettoie les fichiers inutiles du téléphone	ล้างไฟล์ไม่จำเป็นในโทรศัพท์
+nouveau fichier	ไฟล์ใหม่
+nouveaux fichiers	ไฟล์ใหม่
+pas à pas	ทีละขั้นตอน
+photo	รูป
+photo gardée	รูปที่เก็บไว้
+photo ou vidéo	รูปหรือวิดีโอ
+photo ou vidéo prise	รูปหรือวิดีโอที่ถ่าย
+photo protégée	รูปที่ปกป้อง
+photos	รูป
+photos gardées	รูปที่เก็บไว้
+photos ou vidéos	รูปหรือวิดีโอ
+photos ou vidéos prises	รูปหรือวิดีโอที่ถ่าย
+photos protégées	รูปที่ปกป้อง
+puis « Étape suivante » :	แล้ว «ขั้นตอนถัดไป»:
+rafale	ชุดถ่ายต่อเนื่อง
+rafales	ชุดถ่ายต่อเนื่อง
+sauvegarde tes photos sur une clé ou une carte SD	สำรองรูปไปที่แฟลชไดรฟ์หรือการ์ด SD
+sont déjà à l'abri dans ta sauvegarde (même nom, même taille).\n\nElles vont dans la corbeille de la Galerie (récupérables 30 jours). Les plus récentes restent sur le téléphone.	ปลอดภัยอยู่ในสำรองข้อมูลแล้ว (ชื่อเดียวกัน ขนาดเท่ากัน)\n\nจะไปที่ถังขยะของแกลเลอรี (กู้คืนได้ 30 วัน) รูปล่าสุดยังอยู่ในโทรศัพท์
+sur %1 contacts	จาก %1 รายชื่อ
+trie tes photos (doublons, rafales, floues)	จัดรูปของคุณ (รูปซ้ำ ถ่ายต่อเนื่อง เบลอ)
+téléchargement	ดาวน์โหลด
+téléchargements	ดาวน์โหลด
+utilisé	ใช้ไป
+vidéo	วิดีโอ
+vidéo compressée	วิดีโอที่บีบอัด
+vidéos	วิดีโอ
+vidéos compressées	วิดีโอที่บีบอัด
+vieux mail	อีเมลเก่า
+vieux mails	อีเมลเก่า
+« Fichier abîmé » : le téléchargement a été coupé. Retélécharge ce ZIP depuis le mail de Google et relance-le : ce qui est déjà copié ne sera pas recopié.	«ไฟล์เสีย»: การดาวน์โหลดขาดตอน ดาวน์โหลด ZIP นี้ใหม่จากอีเมลของ Google แล้วเปิดอีกครั้ง: ส่วนที่คัดลอกแล้วจะไม่ถูกคัดลอกซ้ำ
+« Libérer la place » : garder sur le téléphone les photos des derniers…	«เพิ่มพื้นที่ว่าง»: เก็บรูปในโทรศัพท์ของช่วงล่าสุด…
+À GARDER	เก็บ
+À JETER	ทิ้ง
+À RETROUVER VITE	หาได้เร็ว
+À nettoyer	ที่จะล้าง
+À utiliser si tu as effacé ta copie sur le disque : Clean Smart oublie ce qu'il a déjà copié, et le prochain fichier ZIP sera entièrement recopié.\n\nLe disque choisi et tes réglages sont gardés. Rien n'est effacé sur le disque ni chez %1.	ใช้เมื่อคุณลบสำเนาบนดิสก์: Clean Smart จะลืมสิ่งที่คัดลอกแล้ว และไฟล์ ZIP ถัดไปจะถูกคัดลอกใหม่ทั้งหมด\n\nดิสก์ที่เลือกและการตั้งค่าของคุณยังอยู่ ไม่มีอะไรถูกลบบนดิสก์หรือที่ %1
+Écriture impossible	เขียนไม่ได้
+Électricité	ค่าไฟ
+à jeter	ที่จะทิ้ง
+élément	รายการ
+éléments	รายการ
+… et %1 autres mails du même genre (cochés).	… และอีเมลประเภทเดียวกันอีก %1 ฉบับ (เลือกไว้แล้ว)
+‹ Retour	‹ กลับ
+ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.	ℹ️ อ่าน %1 ได้โดยไม่มีข้อผิดพลาด ลายนิ้วมือของสำเนาไม่อยู่ในโทรศัพท์นี้แล้ว: เปรียบเทียบไม่ได้
+↩️ %1 dans la boîte de réception	↩️ %1 ในกล่องจดหมายเข้า
+↩️ %1 remis dans la galerie	↩️ นำ %1 กลับไปที่แกลเลอรีแล้ว
+↩️ %1 remis à leur place	↩️ นำ %1 กลับที่เดิมแล้ว
+↩️ J'ai fait une bêtise : remettre les %1	↩️ ฉันพลาด: นำ %1 กลับ
+↩️ Mails remis (démonstration)	↩️ นำอีเมลกลับแล้ว (สาธิต)
+↩️ Remettre %1 dans ma boîte	↩️ นำ %1 กลับเข้ากล่องจดหมาย
+↩️ Remettre des mails	↩️ นำอีเมลกลับ
+↩️ Tout remettre à sa place	↩️ นำทุกอย่างกลับที่เดิม
+⏳ En attente du prochain fichier dans Download. Touche les liens « Télécharger » du mail.	⏳ กำลังรอไฟล์ถัดไปใน Download แตะลิงก์ «ดาวน์โหลด» ในอีเมล
+⏳ En attente du prochain fichier dans Download…	⏳ กำลังรอไฟล์ถัดไปใน Download…
+⏳ copie en cours…	⏳ กำลังคัดลอก…
+⏳ plus tard	⏳ ภายหลัง
+⏹ Arrêter	⏹ หยุด
+☑️ Tout cocher	☑️ เลือกทั้งหมด
+⚙️ Cache des applis et fichiers système	⚙️ แคชของแอปและไฟล์ระบบ
+⚙️ Options	⚙️ ตัวเลือก
+⚠️ %1 : à relancer.\n	⚠️ %1: ต้องเปิดใหม่\n
+⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.	⚠️ %1 มีข้อผิดพลาด: เปิด ZIP ที่ระบุว่า «ต้องเปิดใหม่» อีกครั้งก่อนไปต่อ
+⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :\n	⚠️ %1 บนดิสก์ไม่เหมือนเดิมหรืออ่านไม่ได้แล้ว:\n
+⚠️ Aucune sauvegarde cette nuit	⚠️ คืนนี้ไม่มีการสำรองข้อมูล
+⚠️ Fichier %1 à reprendre	⚠️ ไฟล์ %1 ต้องทำใหม่
+⚠️ Il faut environ %1, il reste %2. Tu peux commencer : quand il sera plein, tu brancheras un autre disque et on continuera sans doublon.	⚠️ ต้องใช้ประมาณ %1 เหลือ %2 เริ่มได้เลย: เมื่อเต็ม ค่อยเสียบดิสก์อื่น แล้วเราทำต่อโดยไม่ซ้ำ
+⚠️ La copie s'est arrêtée : %1\n\nRien n'est perdu : relance le mode automatique, on reprendra sans doublon.	⚠️ การคัดลอกหยุดแล้ว: %1\n\nไม่มีอะไรหาย: เปิดโหมดอัตโนมัติอีกครั้ง เราจะทำต่อโดยไม่ซ้ำ
+⚠️ On ne commence pas	⚠️ ยังไม่เริ่ม
+⚠️ Sauvegarde de la nuit	⚠️ สำรองข้อมูลตอนกลางคืน
+⚠️ abîmé : retélécharge-le depuis le mail, il sera copié tout seul	⚠️ เสีย: ดาวน์โหลดใหม่จากอีเมล แล้วจะคัดลอกเอง
+⚠️ disque plein	⚠️ ดิสก์เต็ม
+⚠️ pas commencé	⚠️ ยังไม่เริ่ม
+⚠️ à relancer	⚠️ ต้องเปิดใหม่
+⚠️ à relancer (%1)	⚠️ ต้องเปิดใหม่ (%1)
+⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.	⛔ สำเนายังไม่ครบ (ไฟล์เสีย ต้องเปิดใหม่ หรือยังไม่ได้คัดลอก) ทำการคัดลอกให้เสร็จก่อน: อย่าลบอะไรที่ %1
+✅ %1 : terminé et vérifié.\n	✅ %1: เสร็จและตรวจแล้ว\n
+✅ %1 doublon(s) supprimé(s)	✅ ลบรูปซ้ำ %1 แล้ว
+✅ %1 mail(s) sauvegardé(s) · %2 PDF · archive CleanSmart/Mails/index.html à jour	✅ บันทึกอีเมล %1 ฉบับ · PDF %2 · อัปเดตไฟล์เก็บ CleanSmart/Mails/index.html แล้ว
+✅ %1 mails importants à l'abri · %2 PDF réunis · archive index.html à jour	✅ อีเมลสำคัญ %1 ฉบับปลอดภัย · รวม PDF %2 ไฟล์ · อัปเดตไฟล์เก็บ index.html แล้ว
+✅ %1 nouvelle(s) photo(s) sauvegardée(s)	✅ สำรองรูปใหม่ %1 รูปแล้ว
+✅ %1 · depuis %2	✅ %1 · มา %2
+✅ %1 à l'abri	✅ %1 ปลอดภัยแล้ว
+✅ 312 mails importants à l'abri (démonstration)	✅ อีเมลสำคัญ 312 ฉบับปลอดภัย (สาธิต)
+✅ 7 958 bonnes photos sauvegardées (démonstration)	✅ สำรองรูปดี 7,958 รูปแล้ว (สาธิต)
+✅ Assez de place sur « %1 ».	✅ มีพื้นที่พอบน «%1»
+✅ Boîte mail connectée	✅ เชื่อมต่อกล่องจดหมายแล้ว
+✅ Disque vérifié : %1 relues, aucune abîmée.	✅ ตรวจดิสก์แล้ว: อ่าน %1 ใหม่ ไม่มีไฟล์เสีย
+✅ Doublons supprimés (démonstration)	✅ ลบรูปซ้ำแล้ว (สาธิต)
+✅ Fichier %1 terminé	✅ ไฟล์ %1 เสร็จแล้ว
+✅ La copie sur le disque est complète et vérifiée.	✅ สำเนาบนดิสก์ครบและตรวจแล้ว
+✅ Mails sauvegardés (démonstration)	✅ บันทึกอีเมลแล้ว (สาธิต)
+✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.	✅ สำเนาครบและตรวจแล้ว\n✅ ปิดการสำรองข้อมูลในโทรศัพท์แล้ว\n✅ ดูรูปบนดิสก์แล้ว\n\nเปิด %1 ไหม? คุณเลือกเองว่าจะลบอะไร
+✅ copié et vérifié	✅ คัดลอกและตรวจแล้ว
+✅ copié, vérifié, supprimé du téléphone	✅ คัดลอก ตรวจ และลบออกจากโทรศัพท์แล้ว
+✉️ %1 jetés · %2 libérés sur ta boîte mail	✉️ ทิ้ง %1 · ได้พื้นที่ในกล่องจดหมาย %2
+✉️ %1 mails	✉️ อีเมล %1 ฉบับ
+✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n	✉️ อีเมล %1 ฉบับ (โฟลเดอร์ «Mails Gmail» เปิด index.html)\n
+✉️ Boîte mail	✉️ กล่องจดหมาย
+✉️ Mails	✉️ อีเมล
+✉️ Mails de %1	✉️ อีเมลจาก %1
+✓ %1 choisi	✓ เลือก %1
+✨ %1 libérés (récupérables 30 jours dans la corbeille de la Galerie)	✨ ได้พื้นที่คืน %1 (กู้คืนได้ 30 วันในถังขยะของแกลเลอรี)
+✨ %1 mails mis à la corbeille	✨ ย้ายอีเมล %1 ฉบับไปถังขยะ
+✨ %1 mis à la corbeille (démonstration)	✨ ย้าย %1 ไปถังขยะ (สาธิต)
+✨ %1 mis à la corbeille de ta messagerie (récupérables avec « Remettre des mails »)	✨ ย้าย %1 ไปถังขยะอีเมล (กู้คืนได้ด้วย «นำอีเมลกลับ»)
+✨ %1 nettoyés · %2 libérés	✨ ล้าง %1 · ได้พื้นที่ %2
+✨ %1 vieux mails mis à la corbeille (les importants sont gardés)	✨ ย้ายอีเมลเก่า %1 ฉบับไปถังขยะ (เก็บอีเมลสำคัญไว้)
+✨ 1 249 mails mis à la corbeille (démonstration)	✨ ย้ายอีเมล 1,249 ฉบับไปถังขยะ (สาธิต)
+✨ 1,1 Go libérés (démonstration)	✨ ได้พื้นที่คืน 1.1 GB (สาธิต)
+✨ 6,4 Go libérés (démonstration)	✨ ได้พื้นที่คืน 6.4 GB (สาธิต)
+✨ Mails mis à la corbeille (démonstration)	✨ ย้ายอีเมลไปถังขยะ (สาธิต)
+✨ Ménage automatique du dimanche	✨ ล้างอัตโนมัติวันอาทิตย์
+✨ Ménage du dimanche	✨ ล้างวันอาทิตย์
+✨ Vieux mails mis à la corbeille (démonstration)	✨ ย้ายอีเมลเก่าไปถังขยะ (สาธิต)
+❤️ Santé du téléphone : %1 / 100	❤️ สุขภาพโทรศัพท์: %1 / 100
+⬅ Glisse à gauche : tous ses mails à la corbeille   ·   Glisse à droite : on garde ➡	⬅ ปัดซ้าย: อีเมลทั้งหมดของเขาไปถังขยะ   ·   ปัดขวา: เก็บไว้ ➡
+⬅ Glisse à gauche pour jeter   ·   Glisse à droite pour garder ➡	⬅ ปัดซ้ายเพื่อทิ้ง   ·   ปัดขวาเพื่อเก็บ ➡
+⬇️ %1 en cours : la copie commencera dès qu'il sera fini.	⬇️ %1 กำลังดาวน์โหลด: จะเริ่มคัดลอกทันทีที่เสร็จ
+⬜ Tout décocher	⬜ ยกเลิกเลือกทั้งหมด
+⭐ Protéger mes %1	⭐ ปกป้อง %1 ของฉัน
+🍏 Mes photos iCloud	🍏 รูป iCloud ของฉัน
+🍏 Pense à une nouvelle copie iCloud	🍏 ถึงเวลาทำสำเนา iCloud ใหม่
+🍏 Quitter iCloud Photos	🍏 ย้ายออกจากรูปภาพ iCloud
+🎁 Version d'essai · %1	🎁 เวอร์ชันทดลอง · %1
+🎉 %1 libérés au total	🎉 ได้พื้นที่คืนทั้งหมด %1
+🎉 Aucun fichier inutile : le téléphone est propre !	🎉 ไม่มีไฟล์ไม่จำเป็น: โทรศัพท์สะอาด!
+🎉 Aucun mail à jeter ici.	🎉 ไม่มีอีเมลให้ทิ้งที่นี่
+🎉 Aucune appli oubliée : tu les utilises toutes !	🎉 ไม่มีแอปที่ถูกลืม: คุณใช้ทุกแอป!
+🎉 Plus rien ici.	🎉 ที่นี่ไม่เหลืออะไรแล้ว
+🎉 Rien à nettoyer, tout est propre !	🎉 ไม่มีอะไรต้องล้าง ทุกอย่างสะอาด!
+🎉 Terminé : %1 copiés et vérifiés. Au total sur le disque : %2 et %3.	🎉 เสร็จแล้ว: คัดลอกและตรวจ %1 รวมบนดิสก์: %2 และ %3
+🎉 Tous les fichiers sont faits	🎉 ทุกไฟล์เสร็จแล้ว
+🎬 Démonstration	🎬 สาธิต
+🎬 MODE DÉMONSTRATION : rien n'est touché sur le téléphone	🎬 โหมดสาธิต: ไม่แตะอะไรในโทรศัพท์
+🎬 Mode démonstration : rien n'est touché sur le téléphone	🎬 โหมดสาธิต: ไม่แตะอะไรในโทรศัพท์
+👀 Chaque bouton montre d'abord la liste des mails : tu décoches ceux à garder, puis tu valides.	👀 ทุกปุ่มจะแสดงรายการอีเมลก่อน: ยกเลิกเครื่องหมายฉบับที่ต้องการเก็บ แล้วยืนยัน
+👀 Voir et jeter ses mails maintenant	👀 ดูและทิ้งอีเมลของเขาตอนนี้
+👆 Les expéditeurs que tu as jetés	👆 ผู้ส่งที่คุณทิ้ง
+👆 Tri des expéditeurs	👆 กำลังจัดผู้ส่ง
+👆 Tri rapide	👆 จัดอย่างรวดเร็ว
+👉 Maintenant : dans le mail de Google, télécharge le fichier %1 (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 ตอนนี้: ในอีเมลของ Google ดาวน์โหลดไฟล์ %1 (ผ่าน Wi-Fi) แล้วแตะปุ่มสีเขียวและเลือกไฟล์ในดาวน์โหลด
+👉 Maintenant : sur privacy.apple.com, télécharge « Part %1 » (en Wi-Fi). Puis touche le bouton vert et choisis-le dans Téléchargements.	👉 ตอนนี้: ที่ privacy.apple.com ดาวน์โหลด «Part %1» (ผ่าน Wi-Fi) แล้วแตะปุ่มสีเขียวและเลือกไฟล์ในดาวน์โหลด
+👉 À faire maintenant	👉 สิ่งที่ต้องทำตอนนี้
+👉 à télécharger puis traiter	👉 ดาวน์โหลดแล้วจัดการ
+👍 Tu as déjà la dernière version (%1)	👍 คุณมีเวอร์ชันล่าสุดแล้ว (%1)
+👯 Mails en double	👯 อีเมลซ้ำ
+💡 Aide	💡 ช่วยเหลือ
+💡 Astuce : désabonne-toi pour ne plus les recevoir (bouton dans la liste « Qui t'écrit le plus »).	💡 เคล็ดลับ: ยกเลิกการติดตามเพื่อไม่ให้ได้รับอีก (ปุ่มในรายการ «ใครส่งอีเมลถึงคุณมากที่สุด»)
+💡 Si ça bloque	💡 ถ้าติดขัด
+💡 Si ça bloque : tous les conseils	💡 ถ้าติดขัด: คำแนะนำทั้งหมด
+💾 %1 sur « %2 »	💾 %1 บน «%2»
+💾 Sauvegarde de la nuit	💾 สำรองข้อมูลตอนกลางคืน
+💾 Sauvegarder %1	💾 บันทึก %1
+💾 Sauvegarder toutes mes photos	💾 สำรองรูปทั้งหมดของฉัน
+💾 Sauver des mails	💾 บันทึกอีเมล
+📁 Choisir le dossier de sauvegarde	📁 เลือกโฟลเดอร์สำรองข้อมูล
+📁 Choisir un dossier	📁 เลือกโฟลเดอร์
+📁 CleanSmart / Mails : le mail complet (.eml)\n📕 CleanSmart / PDF : tous les PDF réunis\n📎 CleanSmart / Pieces jointes : les autres fichiers	📁 CleanSmart / Mails: อีเมลฉบับเต็ม (.eml)\n📕 CleanSmart / PDF: รวม PDF ทั้งหมด\n📎 CleanSmart / Pieces jointes: ไฟล์อื่นๆ
+📁 Dossier de sauvegarde enregistré	📁 บันทึกโฟลเดอร์สำรองข้อมูลแล้ว
+📂 Traiter un fichier ZIP	📂 จัดการไฟล์ ZIP
+📂 Traiter un fichier ZIP à la main	📂 จัดการไฟล์ ZIP ด้วยตนเอง
+📅 Ton rapport du mois	📅 รายงานประจำเดือนของคุณ
+📎 Gros mails	📎 อีเมลขนาดใหญ่
+📕 Cocher les PDF	📕 เลือก PDF
+📕 PDF enregistré dans Téléchargements / Clean Smart	📕 บันทึก PDF ใน ดาวน์โหลด / Clean Smart แล้ว
+📕 PDF souvenir créé (démonstration)	📕 สร้าง PDF ความทรงจำแล้ว (สาธิต)
+📖 Mode d'emploi	📖 คู่มือการใช้งาน
+📤 Envoyer (%1)	📤 ส่ง (%1)
+📦 Les plus grosses	📦 ใหญ่ที่สุด
+📦 Quitter Google Photos	📦 ย้ายออกจาก Google Photos
+📦 Ta nouvelle copie Google est peut-être prête	📦 สำเนา Google ชุดใหม่ของคุณอาจพร้อมแล้ว
+📧 Ouvrir le mail de Google	📧 เปิดอีเมลของ Google
+📰 Newsletters et pubs	📰 จดหมายข่าวและโฆษณา
+📱 Mes applis	📱 แอปของฉัน
+📱 Ouvrir l'app Google Photos	📱 เปิดแอป Google Photos
+📱 Téléphone	📱 โทรศัพท์
+📱 Téléphone presque plein	📱 โทรศัพท์ใกล้เต็ม
+📸 %1 photos et %2 vidéos copiées et vérifiées, rangées par année\n	📸 คัดลอกและตรวจรูป %1 รูปและวิดีโอ %2 ไฟล์ จัดเรียงตามปี\n
+📸 Photos	📸 รูป
+🔄 Analyser à nouveau	🔄 วิเคราะห์อีกครั้ง
+🔄 Chercher à nouveau	🔄 ค้นหาอีกครั้ง
+🔄 Tout recommencer (j'ai effacé ma copie)	🔄 เริ่มใหม่ทั้งหมด (ฉันลบสำเนาแล้ว)
+🔍 Analyser ma boîte mail	🔍 วิเคราะห์กล่องจดหมายของฉัน
+🔍 Analyser mon téléphone	🔍 วิเคราะห์โทรศัพท์ของฉัน
+🔍 Chercher les mails avec pièces jointes	🔍 หาอีเมลที่มีไฟล์แนบ
+🔎 Vérifier le disque (relit chaque photo)	🔎 ตรวจดิสก์ (อ่านรูปทุกรูปใหม่)
+🔒 Ton mot de passe reste chiffré sur ton téléphone. Il n'est envoyé qu'au serveur de ta messagerie.	🔒 รหัสผ่านของคุณเข้ารหัสอยู่ในโทรศัพท์ ส่งไปที่เซิร์ฟเวอร์อีเมลของคุณเท่านั้น
+🔓 Autoriser	🔓 อนุญาต
+🔓 Autoriser l'accès aux fichiers	🔓 อนุญาตการเข้าถึงไฟล์
+🔓 Une autorisation pour en savoir plus	🔓 อนุญาตครั้งเดียวเพื่อดูข้อมูลเพิ่ม
+🔓 Une autorisation, une seule fois	🔓 อนุญาตครั้งเดียว
+🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.	🔓 ครั้งเดียว: อนุญาต «การเข้าถึงไฟล์ทั้งหมด» เพื่อให้ Clean Smart เห็นโฟลเดอร์ Download อ่านเฉพาะไฟล์ของ %1
+🔔 Mail de %1	🔔 อีเมลจาก %1
+🔔 Tu seras prévenu quand il t'écrit	🔔 คุณจะได้รับแจ้งเมื่อเขาส่งอีเมลถึงคุณ
+🕰️ Vieux mails	🕰️ อีเมลเก่า
+🕰️ Vieux mails (les importants sont gardés)	🕰️ อีเมลเก่า (เก็บอีเมลสำคัญไว้)
+🗑️ Corbeille vidée : %1 récupérés pour de bon	🗑️ ล้างถังขยะแล้ว: ได้คืน %1 ถาวร
+🗑️ Désinstaller	🗑️ ถอนการติดตั้ง
+🗑️ Fichier supprimé du téléphone : place libre pour le suivant	🗑️ ลบไฟล์ออกจากโทรศัพท์แล้ว: มีที่ว่างสำหรับไฟล์ถัดไป
+🗑️ Mes expéditeurs « toujours jeter »	🗑️ ผู้ส่ง «ทิ้งเสมอ» ของฉัน
+🗑️ Mettre %1 à la corbeille	🗑️ ทิ้ง %1 ลงถังขยะ
+🗑️ Ouvrir %1 pour effacer	🗑️ เปิด %1 เพื่อลบ
+🗑️ Ses mails partiront à la corbeille chaque nuit	🗑️ อีเมลของเขาจะไปที่ถังขยะทุกคืน
+🗑️ Supprimer ce ZIP du téléphone (conseillé)	🗑️ ลบ ZIP นี้ออกจากโทรศัพท์ (แนะนำ)
+🗑️ Toujours jeter : %1   🛡️ Toujours garder : %2   🔔 Me prévenir : %3	🗑️ ทิ้งเสมอ: %1   🛡️ เก็บเสมอ: %2   🔔 แจ้งฉัน: %3
+🗜️ Compresser (%1)	🗜️ บีบอัด (%1)
+😴 Pas ouvertes depuis 3 mois	😴 ไม่ได้เปิดมา 3 เดือน
+🚫 Se désabonner	🚫 ยกเลิกการติดตาม
+🛡️ %1 (mises en favori)	🛡️ %1 (ตั้งเป็นรายการโปรดแล้ว)
+🛡️ %1 rangés dans le dossier « Protégés » de ta messagerie	🛡️ จัด %1 ไว้ในโฟลเดอร์ «ได้รับการปกป้อง» ของกล่องจดหมาย
+🛡️ Expéditeur important (banque, administration, santé…) : ses mails ne sont jamais jetés.	🛡️ ผู้ส่งสำคัญ (ธนาคาร หน่วยงานราชการ สุขภาพ…): อีเมลของเขาไม่ถูกทิ้งเด็ดขาด
+🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées.	🛡️ ปุ่มลบจะปรากฏเมื่อสำเนาครบและเลือกช่อง 1 และ 2 แล้ว
+🛡️ Les mails de ta banque, de l'administration ou de santé ne sont jamais mis à la corbeille.	🛡️ อีเมลจากธนาคาร หน่วยงานราชการ หรือสุขภาพ ไม่ไปที่ถังขยะเด็ดขาด
+🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.	🛡️ จะไม่ล้าง %1 ก่อนตรวจสำเนา: เลือกช่องแรกก่อน
+🛡️ Protéger (%1)	🛡️ ปกป้อง (%1)
+🛡️ Ranger mes mails importants	🛡️ จัดเก็บอีเมลสำคัญของฉัน
+🛡️ Ses mails ne seront jamais jetés	🛡️ อีเมลของเขาจะไม่ถูกทิ้งเด็ดขาด
+🤖 Copie automatique de tes photos	🤖 คัดลอกรูปของคุณอัตโนมัติ
+🤖 Démarrer le mode automatique	🤖 เริ่มโหมดอัตโนมัติ
+🤖 Tout automatique (le plus simple)	🤖 อัตโนมัติทั้งหมด (ง่ายที่สุด)
+🧊 Vider son cache	🧊 ล้างแคช
+🧬 %1 doublons et 🎞️ %2 photos de rafale écartés\n	🧬 คัดรูปซ้ำ %1 และ 🎞️ รูปถ่ายต่อเนื่อง %2 ออก\n
+🧬 les doublons   🎞️ les photos ratées en rafale\n📱 les captures d'écran   🎬 les grosses vidéos\n💬 les médias WhatsApp   👥 les contacts en double\n✉️ les newsletters et gros mails	🧬 รูปซ้ำ   🎞️ รูปถ่ายต่อเนื่องที่เสีย\n📱 ภาพหน้าจอ   🎬 วิดีโอขนาดใหญ่\n💬 สื่อ WhatsApp   👥 รายชื่อติดต่อซ้ำ\n✉️ จดหมายข่าวและอีเมลขนาดใหญ่
+🧭 Ménage	🧭 ล้าง
+🧭 Ménage des mails	🧭 ล้างอีเมล
+🧭 Ménage guidé	🧭 ล้างแบบมีคำแนะนำ
+🧹 Fichiers inutiles	🧹 ไฟล์ไม่จำเป็น
+🧹 Jeter les mails de %1	🧹 ทิ้งอีเมลของ %1
+🧹 Le ménage sûr	🧹 การล้างแบบปลอดภัย
+🧹 Mails triés cette nuit	🧹 จัดอีเมลแล้วคืนนี้
+🧹 Mettre %1 à la corbeille	🧹 ทิ้ง %1 ลงถังขยะ
+🧹 Ménage sûr	🧹 ล้างแบบปลอดภัย
+🧹 Ménage sûr : newsletters, notifications, doublons	🧹 ล้างแบบปลอดภัย: จดหมายข่าว การแจ้งเตือน รายการซ้ำ
+🧹 Nettoyer · %1	🧹 ล้าง · %1
+🧹 Nettoyer · %1 · %2	🧹 ล้าง · %1 · %2
