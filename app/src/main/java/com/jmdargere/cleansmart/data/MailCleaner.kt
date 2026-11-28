@@ -330,8 +330,12 @@ class MailCleaner(private val ctx: Context) {
         }
     }
 
+    /** Taille des mails mis a la corbeille par le dernier appel a [trash] (pour le bilan « mails »). */
+    @Volatile var derniersOctets = 0L; private set
+
     /** Deplace dans la corbeille du compte les mails de la boite de reception qui correspondent. */
     fun trash(c: MailCriteria): Int {
+        derniersOctets = 0L
         val st = connect()
         var inbox: IMAPFolder? = null
         try {
@@ -354,6 +358,7 @@ class MailCleaner(private val ctx: Context) {
                     MailTri.important(ia?.address ?: "", ia?.personal ?: "")
                 }.getOrDefault(true)
             }.toTypedArray()
+            derniersOctets = all.sumOf { m -> runCatching { m.size.toLong().coerceAtLeast(0) }.getOrDefault(0L) }
             var needExpunge = false
             all.toList().chunked(200).forEach { part ->
                 val arr = part.toTypedArray()

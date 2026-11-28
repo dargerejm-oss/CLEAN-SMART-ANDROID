@@ -106,7 +106,22 @@ object Night {
                     p.edit().putLong("lastLowAlert", now).apply()
                     notify(ctx, 2, Tr.t("📱 Téléphone presque plein"), Tr.t("Il ne reste que %1. Ouvre Clean Smart pour libérer de la place en un clic.", fmtBytes(free)))
                 }
-                // 3. Rapport du mois (le 1er)
+                // 3. Rappel tous les 2 mois : une nouvelle copie Google / iCloud pour les nouvelles photos
+                for (src in SourceExport.entries) {
+                    val derniere = GoogleExport(ctx, src).derniereCopie
+                    val cle = "rappelCopie_" + src.name
+                    val deuxMois = 60L * 24 * 3600 * 1000
+                    if (derniere > 0 && now - maxOf(derniere, p.getLong(cle, 0)) > deuxMois) {
+                        p.edit().putLong(cle, now).apply()
+                        if (src == SourceExport.GOOGLE)
+                            notify(ctx, 4, Tr.t("📦 Ta nouvelle copie Google est peut-être prête"),
+                                Tr.t("Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie sur Google Takeout, puis le mode automatique n'ajoutera que les nouvelles photos, sans doublon."))
+                        else
+                            notify(ctx, 5, Tr.t("🍏 Pense à une nouvelle copie iCloud"),
+                                Tr.t("Tes photos des 2 derniers mois ne sont pas encore sur le disque. Demande une nouvelle copie à Apple : Clean Smart n'ajoutera que les nouvelles photos, sans doublon."))
+                    }
+                }
+                // 4. Rapport du mois (le 1er)
                 val cal = Calendar.getInstance()
                 val month = cal.get(Calendar.YEAR) * 100 + cal.get(Calendar.MONTH)
                 if (cal.get(Calendar.DAY_OF_MONTH) == 1 && p.getInt("lastReport", 0) != month) {

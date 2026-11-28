@@ -404,8 +404,28 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         refreshStorage()
     }
 
+    // ------------------------------------------------------------------ bilan des mails (2.0)
+
+    /** Mails mis a la corbeille et place liberee sur le compte mail, depuis le debut. */
+    var mailJetes by mutableIntStateOf(prefs.getInt("mailJetes", 0)); private set
+    var mailLibere by mutableLongStateOf(prefs.getLong("mailLibere", 0)); private set
+
+    /** Met des mails a la corbeille du compte et les compte dans le bilan. */
+    private suspend fun jeterMails(c: MailCriteria): Int {
+        val n = withContext(Dispatchers.IO) { mail.trash(c) }
+        mailJetes += n; mailLibere += mail.derniersOctets
+        prefs.edit().putInt("mailJetes", mailJetes).putLong("mailLibere", mailLibere).apply()
+        return n
+    }
+
+    /** Compte Gmail : les mails et Google Photos partagent les memes 15 Go. */
+    val mailGmail: Boolean get() = mailAccount.email.endsWith("@gmail.com", true) || mailAccount.email.endsWith("@googlemail.com", true)
+
     private fun addFreed(b: Long) { freed += b; prefs.edit().putLong("freed", freed).apply() }
-    fun resetFreed() { freed = 0; prefs.edit().putLong("freed", 0).apply() }
+    fun resetFreed() {
+        freed = 0; mailJetes = 0; mailLibere = 0
+        prefs.edit().putLong("freed", 0).putInt("mailJetes", 0).putLong("mailLibere", 0).apply()
+    }
 
     // ------------------------------------------------------------------ contacts
 
@@ -480,9 +500,61 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     private fun trashMail(c: MailCriteria) = run(Tr.t("Nettoyage de la boîte mail")) {
         upd(Tr.t("Nettoyage de la boîte mail"), Tr.t("Déplacement vers la corbeille…"), 50)
-        val n = withContext(Dispatchers.IO) { mail.trash(c) }
+        val n = jeterMails(c)
         say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
         mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }
+    }
+
+    // ------------------------------------------------------------------ fichiers inutiles (2.0, repris de Nettoyage Pro)
+
+    private val inutiles = com.jmdargere.cleansmart.data.Inutiles(app)
+    var junk by mutableStateOf<List<com.jmdargere.cleansmart.data.GroupeInutile>?>(null); private set
+    var junkChoix by mutableStateOf(setOf<String>())
+    var junkCorbeille by mutableLongStateOf(0L); private set
+
+    fun junkAcces() = inutiles.acces()
+
+    fun junkChercher() = run(Tr.t("Fichiers inutiles")) {
+        if (demo) {
+            demoAttente(Tr.t("Fichiers inutiles"))
+            val f = java.io.File("demo")
+            junk = listOf(
+                com.jmdargere.cleansmart.data.GroupeInutile("temp", "🗒️", Tr.t("Fichiers temporaires"), Tr.t("Journaux, sauvegardes temporaires, téléchargements abandonnés. Ne servent plus."), List(214) { f }, 412L shl 20, true),
+                com.jmdargere.cleansmart.data.GroupeInutile("mini", "🖼️", Tr.t("Miniatures"), Tr.t("Petites copies des photos pour l'affichage. Elles se recréent toutes seules."), List(3120) { f }, 690L shl 20, true),
+                com.jmdargere.cleansmart.data.GroupeInutile("vides", "📂", Tr.t("Dossiers vides"), Tr.t("Ils ne contiennent rien."), List(37) { f }, 0, true),
+                com.jmdargere.cleansmart.data.GroupeInutile("apk", "📦", Tr.t("Autres fichiers d'installation (.apk)"), Tr.t("Des applis téléchargées mais pas installées. À vérifier."), List(4) { f }, 180L shl 20, false),
+            )
+            junkChoix = junk!!.filter { it.sur }.map { it.cle }.toSet()
+            return@run
+        }
+        val r = withContext(Dispatchers.IO) { inutiles.chercher(progress(Tr.t("Fichiers inutiles"))) }
+        junk = r
+        junkChoix = r.filter { it.sur }.map { it.cle }.toSet()
+        junkCorbeille = withContext(Dispatchers.IO) { inutiles.tailleCorbeille() }
+    }
+
+    fun junkNettoyer() = run(Tr.t("Nettoyage des fichiers inutiles")) {
+        val choisis = junk.orEmpty().filter { it.cle in junkChoix }
+        if (demo) { demoAttente(Tr.t("Nettoyage des fichiers inutiles")); junk = junk.orEmpty() - choisis.toSet(); say(Tr.t("✨ 1,1 Go libérés (démonstration)")); return@run }
+        val (n, octets) = withContext(Dispatchers.IO) { inutiles.nettoyer(choisis, progress(Tr.t("Nettoyage des fichiers inutiles"))) }
+        val libere = choisis.filter { it.sur }.sumOf { it.taille }.coerceAtMost(octets)
+        addFreed(libere)
+        junkCorbeille = withContext(Dispatchers.IO) { inutiles.tailleCorbeille() }
+        junk = junk.orEmpty() - choisis.toSet()
+        say(Tr.t("✨ %1 nettoyés · %2 libérés", plural(n, Tr.t("élément")), fmtBytes(libere)) +
+            if (choisis.any { !it.sur }) Tr.t(" · les fichiers « à vérifier » sont dans la corbeille Clean Smart (7 jours)") else "")
+    }
+
+    fun junkRemettre() = run(Tr.t("Remettre les fichiers")) {
+        val n = withContext(Dispatchers.IO) { inutiles.remettre() }
+        junkCorbeille = 0
+        say(Tr.t("↩️ %1 remis à leur place", plural(n, Tr.t("fichier"))))
+    }
+
+    fun junkViderCorbeille() = run(Tr.t("Vider la corbeille Clean Smart")) {
+        val t = withContext(Dispatchers.IO) { inutiles.viderCorbeille() }
+        addFreed(t); junkCorbeille = 0
+        say(Tr.t("🗑️ Corbeille vidée : %1 récupérés pour de bon", fmtBytes(t)))
     }
 
     // ------------------------------------------------------------------ quitter Google Photos (export Takeout)
@@ -494,6 +566,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Choisit l'onglet : Google Photos ou iCloud Photos. */
     fun gpUtiliser(s: com.jmdargere.cleansmart.data.SourceExport) {
+        if (s != gpSource) gpVerif = null
         google = exports.getValue(s); gpSource = s
         gpTotal = google.total(); gpTaille = google.tailleGoogleGo; gpDest = google.nomDestination(); gpDestOk = google.destinationOk()
         gpNb = google.nbFichiers; gpDemande = google.exportDemande; gpTermine = google.termine; gpEtats = google.etats(); gpDernier = null
@@ -508,6 +581,14 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var gpTermine by mutableStateOf(google.termine); private set
     var gpEtats by mutableStateOf(google.etats()); private set
     var gpDernier by mutableStateOf<Pair<String, com.jmdargere.cleansmart.data.ExportStats>?>(null); private set
+
+    /** Resultat de « Vérifier le disque » (null = pas encore fait). */
+    var gpVerif by mutableStateOf<com.jmdargere.cleansmart.data.GoogleExport.Verification?>(null); private set
+
+    fun gpVerifier() = run(Tr.t("Vérification du disque")) {
+        if (demo) { demoAttente(Tr.t("Vérification du disque")); gpVerif = com.jmdargere.cleansmart.data.GoogleExport.Verification(8412, emptyList(), emptyList(), 0); return@run }
+        gpVerif = withContext(Dispatchers.IO) { google.verifierDisque(progress(Tr.t("Vérification du disque"))) }
+    }
 
     /** Relit l'etat de l'onglet (apres le mode automatique, qui travaille dans un service a part). */
     fun gpRafraichir() = gpUtiliser(gpSource)
@@ -586,10 +667,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         if (demo) { demoAttente(Tr.t("Ménage sûr de la boîte mail")); mailGuideDone = mailGuideDone + 1; say(Tr.t("✨ 1 249 mails mis à la corbeille (démonstration)")); return@run }
         val r = mailResult ?: return@run
         upd(Tr.t("Ménage sûr de la boîte mail"), Tr.t("Newsletters et notifications…"), 30)
-        var n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.From(mailSafeSenders.map { it.email })) }
+        var n = jeterMails(MailCriteria.From(mailSafeSenders.map { it.email }))
         if (r.doublons.isNotEmpty()) {
             upd(Tr.t("Ménage sûr de la boîte mail"), Tr.t("Mails en double…"), 70)
-            n += withContext(Dispatchers.IO) { mail.trash(MailCriteria.Uids(r.doublons)) }
+            n += jeterMails(MailCriteria.Uids(r.doublons))
         }
         mailGuideDone = mailGuideDone + 1
         say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
@@ -624,7 +705,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun mailSwipeApply() = run(Tr.t("Tri des expéditeurs")) {
         if (demo) { mailSwipeTrash = emptyList(); mailGuideDone = mailGuideDone + 2; say(Tr.t("✨ Mails mis à la corbeille (démonstration)")); return@run }
         upd(Tr.t("Tri des expéditeurs"), Tr.t("Mise à la corbeille…"), 40)
-        val n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.From(mailSwipeTrash.map { it.email })) }
+        val n = jeterMails(MailCriteria.From(mailSwipeTrash.map { it.email }))
         mailSwipeTrash = emptyList()
         mailGuideDone = mailGuideDone + 2
         say(Tr.t("✨ %1 mails mis à la corbeille", fmtNum(n)))
@@ -654,7 +735,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     fun mailGuideFree() = run(Tr.t("Libérer la boîte mail")) {
         if (demo) { demoAttente(Tr.t("Libérer la boîte mail")); mailGuideDone = mailGuideDone + 4; say(Tr.t("✨ Vieux mails mis à la corbeille (démonstration)")); return@run }
         upd(Tr.t("Libérer la boîte mail"), Tr.t("Vieux mails vers la corbeille…"), 50)
-        val n = withContext(Dispatchers.IO) { mail.trash(MailCriteria.Old(settings.oldMailYears)) }
+        val n = jeterMails(MailCriteria.Old(settings.oldMailYears))
         mailGuideDone = mailGuideDone + 4
         say(Tr.t("✨ %1 vieux mails mis à la corbeille (les importants sont gardés)", fmtNum(n)))
         mailResult = withContext(Dispatchers.IO) { mail.scan(3000, settings, progress(Tr.t("Mise à jour"))) }

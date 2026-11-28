@@ -313,6 +313,25 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                         (if (t.mails > 0) Tr.t("✉️ %1 mails (dossier « Mails Gmail », ouvre index.html)\n", fmtNum(t.mails)) else "") +
                         Tr.t("💾 %1 sur « %2 »", fmtBytes(t.octets), vm.gpDest), Vert)
                 if (t.erreurs > 0) Encadre(Tr.t("⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.", plural(t.erreurs, "fichier")), Rouge)
+                // Verifier le disque : relit chaque photo et compare son empreinte
+                vm.gpVerif?.let { v ->
+                    when {
+                        v.abimes.isNotEmpty() || v.illisibles.isNotEmpty() -> Encadre(
+                            Tr.t("⚠️ %1 sur le disque n'est plus identique ou ne se lit plus :
+", plural(v.abimes.size + v.illisibles.size, Tr.t("fichier"))) +
+                                    (v.abimes + v.illisibles).take(8).joinToString("
+") { "• $it" } +
+                                    Tr.t("
+
+Relance le fichier ZIP qui les contenait (ou le mode automatique) : ils seront recopiés. N'efface rien chez %1 avant.", qui), Rouge)
+                        v.inconnus > 0 && v.ok == 0 -> Encadre(Tr.t("ℹ️ %1 lus sans erreur. Les empreintes de la copie ne sont plus sur ce téléphone : impossible de comparer.", plural(v.inconnus, "photo")), Orange)
+                        else -> Encadre(Tr.t("✅ Disque vérifié : %1 relues, aucune abîmée.", plural(v.ok + v.inconnus, Tr.t("photo ou vidéo"), Tr.t("photos ou vidéos"))), Vert)
+                    }
+                }
+                OutlinedButton(onClick = { vm.gpVerifier() }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
+                    Text(Tr.t("🔎 Vérifier le disque (relit chaque photo)"), color = Texte, fontWeight = FontWeight.Bold)
+                }
+                Gap(4)
                 Txt(Tr.t("Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.", vm.gpSource.nom, qui))
                 val complet = remember(vm.gpEtats, vm.gpTotal, vm.gpNb) { vm.google.copieComplete() }
                 if (complet) Encadre(Tr.t("✅ La copie sur le disque est complète et vérifiée."), Vert)

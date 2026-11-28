@@ -94,6 +94,8 @@ dependencies {
     implementation 'androidx.work:work-runtime-ktx:2.10.0'
     // Lecture rapide des ZIP de Google Takeout (acces direct a la table des matieres)
     implementation 'org.apache.commons:commons-compress:1.27.1'
+    // Yeux fermes dans les rafales : detecteur de visages de Google integre (sans Internet)
+    implementation 'com.google.mlkit:face-detection:16.1.7'
     // Compression des videos
     implementation 'androidx.media3:media3-transformer:1.5.1'
     implementation 'androidx.media3:media3-effect:1.5.1'
