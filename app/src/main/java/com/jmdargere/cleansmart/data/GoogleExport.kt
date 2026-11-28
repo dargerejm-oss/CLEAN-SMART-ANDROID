@@ -218,11 +218,11 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
     /** Place libre sur le telephone. */
     fun libreTelephone(): Long = runCatching { StatFs(ctx.cacheDir.path).availableBytes }.getOrDefault(0L)
 
-    fun tailleDe(uri: Uri): Long = runCatching {
+    fun tailleDe(uri: Uri): Long = if (uri.scheme == "file") File(uri.path!!).length() else runCatching {
         cr.query(uri, arrayOf(OpenableColumns.SIZE), null, null, null)?.use { if (it.moveToFirst()) it.getLong(0) else 0L } ?: 0L
     }.getOrDefault(0L)
 
-    fun nomDe(uri: Uri): String = runCatching {
+    fun nomDe(uri: Uri): String = if (uri.scheme == "file") File(uri.path!!).name else runCatching {
         cr.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { if (it.moveToFirst()) it.getString(0) else null }
     }.getOrNull() ?: "fichier.zip"
 
@@ -517,7 +517,26 @@ class GoogleExport(private val ctx: Context, val source: SourceExport = SourceEx
     }
 
     /** Essaie de supprimer le ZIP du telephone une fois traite (pour faire de la place au suivant). */
-    fun supprimerZip(zip: Uri): Boolean = runCatching { DocumentsContract.deleteDocument(cr, zip) }.getOrDefault(false)
+    fun supprimerZip(zip: Uri): Boolean =
+        if (zip.scheme == "file") runCatching { File(zip.path!!).delete() }.getOrDefault(false)
+        else runCatching { DocumentsContract.deleteDocument(cr, zip) }.getOrDefault(false)
+
+    /**
+     * La copie est-elle complete et verifiee ? (pour autoriser « Liberer Google »)
+     * Vrai seulement si : au moins un fichier copie, aucun fichier « a relancer » (un fichier relance sans
+     * erreur repasse a OK), et (si le nombre de fichiers du mail est connu) tous les fichiers 001...N copies.
+     */
+    fun copieComplete(): Boolean {
+        val e = etats()
+        if (total().zips == 0 || e.values.any { it != EtatZip.OK }) return false
+        return nbFichiers <= 0 || (1..nbFichiers).all { e[it] == EtatZip.OK }
+    }
+
+    /** Est-ce un fichier de cet export ? Google : takeout-....zip ; Apple : iCloud Photos Part 1 of 12.zip */
+    fun estFichierExport(nom: String): Boolean = nom.endsWith(".zip", true) && when (source) {
+        SourceExport.GOOGLE -> nom.startsWith("takeout", true)
+        else -> nom.contains("iCloud Photos", true)
+    }
 
     private fun dateDe(dates: Map<String, Long>, chemin: String, nom: String): Long? =
         dates[chemin.lowercase()] ?: dates[(chemin.substringBeforeLast('/') + "/" + nom).lowercase()]

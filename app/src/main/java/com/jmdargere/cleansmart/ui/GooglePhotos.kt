@@ -68,6 +68,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import com.jmdargere.cleansmart.AppViewModel
+import com.jmdargere.cleansmart.data.AutoEtat
 import com.jmdargere.cleansmart.data.EtatZip
 import com.jmdargere.cleansmart.data.fmtBytes
 import com.jmdargere.cleansmart.data.fmtNum
@@ -237,6 +238,8 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                 if (vm.gpTermine) "${plural(vm.gpEtats.count { it.value == EtatZip.OK }, Tr.t("fichier copié et vérifié"), Tr.t("fichiers copiés et vérifiés"))}"
                 else if (vm.gpNb > 0) Tr.t("%1 sur %2 fichiers faits", vm.gpEtats.count { it.value == EtatZip.OK }, vm.gpNb) else Tr.t("Quand le mail de %1 est arrivé", qui),
                 faites, maintenant, affichee, { ouverte = if (affichee == 4) -1 else 4 }) {
+                AutoCarte(vm, g, ask)
+                Gap(10)
                 // combien de fichiers ?
                 var nb by rememberSaveable(vm.gpSource) { mutableStateOf(if (vm.gpNb > 0) vm.gpNb.toString() else "") }
                 Txt(if (g) Tr.t("Dans le mail de Google, compte les boutons « Télécharger » : c'est le nombre de fichiers.")
@@ -289,7 +292,7 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                         }, modifier = Modifier.fillMaxWidth()) { Text(Tr.t("🗑️ Supprimer ce ZIP du téléphone (conseillé)"), color = Rouge) }
                     }
                 }
-                BoutonVert(Tr.t("📂 Traiter un fichier ZIP")) { choisirZip() }
+                if (!AutoEtat.actif) BoutonVert(Tr.t("📂 Traiter un fichier ZIP à la main")) { choisirZip() }
                 val tousFaits = vm.gpNb > 0 && (1..vm.gpNb).all { vm.gpEtats[it] == EtatZip.OK }
                 if (tousFaits) BigButton(Tr.t("🎉 Tous les fichiers sont faits"), color = Bleu) { vm.gpSetTermine(true); ouverte = 0 }
                 else if (vm.gpTotal.zips > 0) TextButton(onClick = {
@@ -311,19 +314,37 @@ fun GooglePhotos(vm: AppViewModel, ask: (Confirm) -> Unit) {
                         Tr.t("💾 %1 sur « %2 »", fmtBytes(t.octets), vm.gpDest), Vert)
                 if (t.erreurs > 0) Encadre(Tr.t("⚠️ %1 en erreur : relance les ZIP marqués « à relancer » avant d'aller plus loin.", plural(t.erreurs, "fichier")), Rouge)
                 Txt(Tr.t("Libérer %1 est facultatif. %2 n'autorise aucune appli à effacer tes photos : c'est toi qui le fais, quand tu es sûr.", vm.gpSource.nom, qui))
+                val complet = remember(vm.gpEtats, vm.gpTotal, vm.gpNb) { vm.google.copieComplete() }
+                if (complet) Encadre(Tr.t("✅ La copie sur le disque est complète et vérifiée."), Vert)
+                else Encadre(Tr.t("⛔ La copie n'est pas complète (fichier abîmé, à relancer ou pas encore copié). Termine d'abord la copie : n'efface rien chez %1.", qui), Rouge)
+                var sauvegarde by rememberSaveable { mutableStateOf(false) }
                 var verifie by rememberSaveable { mutableStateOf(false) }
                 var copie2 by rememberSaveable { mutableStateOf(false) }
-                Coche(verifie, Tr.t("J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.")) { verifie = it }
-                Coche(copie2, Tr.t("Conseillé : j'ai fait une 2e copie (autre disque ou PC).")) { copie2 = it }
-                if (verifie) {
-                    if (g) {
-                        Txt(Tr.t("Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours."))
-                        BigButton(Tr.t("Ouvrir Google Photos"), color = Rouge) { ouvrir("https://photos.google.com/") }
-                    } else {
-                        Txt(Tr.t("Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours."))
-                        BigButton(Tr.t("Ouvrir iCloud Photos"), color = Rouge) { ouvrir("https://www.icloud.com/photos/") }
+                if (g) {
+                    Coche(sauvegarde, Tr.t("1. J'ai coupé la sauvegarde : app Google Photos › ta photo en haut à droite › Paramètres Photos › Sauvegarde › désactiver.")) { sauvegarde = it }
+                    Text(Tr.t("Sinon le téléphone renvoie les photos chez Google, et effacer chez Google peut aussi les effacer de ce téléphone."),
+                        color = Gris, fontSize = 12.sp, modifier = Modifier.padding(start = 48.dp))
+                    TextButton(onClick = {
+                        val i = ctx.packageManager.getLaunchIntentForPackage("com.google.android.apps.photos")
+                        if (i != null) runCatching { ctx.startActivity(i) } else ouvrir("https://photos.google.com/")
+                    }, modifier = Modifier.padding(start = 40.dp)) { Text(Tr.t("📱 Ouvrir l'app Google Photos"), color = Bleu) }
+                } else {
+                    Coche(sauvegarde, Tr.t("1. Sur l'iPhone, j'ai coupé « Photos iCloud » (Réglages › ton nom › iCloud › Photos).")) { sauvegarde = it }
+                    Text(Tr.t("Sinon l'iPhone renvoie les photos sur iCloud, et effacer sur iCloud peut aussi les effacer de l'iPhone."),
+                        color = Gris, fontSize = 12.sp, modifier = Modifier.padding(start = 48.dp))
+                }
+                Coche(verifie, Tr.t("2. J'ai ouvert le disque sur un PC et je vois bien mes photos, année par année.")) { verifie = it }
+                Coche(copie2, Tr.t("3. Conseillé : j'ai fait une 2e copie (autre disque ou PC).")) { copie2 = it }
+                if (complet && sauvegarde && verifie) {
+                    val (url, appli) = if (g) "https://photos.google.com/" to Tr.t("Google Photos") else "https://www.icloud.com/photos/" to Tr.t("iCloud Photos")
+                    Txt(if (g) Tr.t("Dans Google Photos : appuie longuement sur une photo, coche des journées entières, puis « Supprimer ». La corbeille de Google garde tout 60 jours.")
+                        else Tr.t("Sur l'iPhone ou sur icloud.com/photos : sélectionne des photos puis « Supprimer ». L'album « Supprimés récemment » les garde 30 jours."))
+                    BigButton(Tr.t("🗑️ Ouvrir %1 pour effacer", appli), color = Rouge) {
+                        ask(Confirm(Tr.t("Dernière vérification"),
+                            Tr.t("✅ copie complète et vérifiée\n✅ sauvegarde du téléphone coupée\n✅ photos regardées sur le disque\n\nOuvrir %1 ? C'est toi qui choisiras quoi effacer.", appli),
+                            Tr.t("Ouvrir"), danger = false) { ouvrir(url) })
                     }
-                } else Encadre(Tr.t("🛡️ On ne libère jamais %1 avant d'avoir vérifié la copie : coche d'abord la première case.", if (g) Tr.t("Google") else "iCloud"), Vert)
+                } else Encadre(Tr.t("🛡️ Le bouton pour effacer apparaît quand la copie est complète et que les cases 1 et 2 sont cochées."), Vert)
                 TextButton(onClick = {
                     ask(Confirm(Tr.t("Recommencer depuis le début ?"),
                         Tr.t("Pour un autre compte ou un autre disque. Les fichiers déjà copiés sur le disque ne sont pas touchés."), Tr.t("Recommencer")) { vm.gpRecommencer() })
@@ -510,6 +531,74 @@ private fun LigneModele(n: Int, txt: String, coche: Boolean, lien: Boolean = fal
         }
         Text(txt, color = if (lien) Color(0xFF1A73E8) else if (faible) Color(0xFF9AA0A6) else Color(0xFF202124),
             fontWeight = if (lien || important) FontWeight.Bold else FontWeight.Normal, fontSize = 14.sp)
+    }
+}
+
+/**
+ * Mode « Tout automatique » (2.0) : l'utilisateur touche les liens du mail, l'appli copie chaque fichier
+ * des qu'il est telecharge dans Download, puis le supprime du telephone une fois verifie (si choisi).
+ */
+@Composable
+private fun AutoCarte(vm: AppViewModel, g: Boolean, ask: (Confirm) -> Unit) {
+    val ctx = LocalContext.current
+    var supprimer by rememberSaveable { mutableStateOf(true) }
+    var acces by remember { mutableStateOf(AutoEtat.accesFichiers()) }
+    // au retour du reglage « Accès à tous les fichiers »
+    val vie = androidx.compose.ui.platform.LocalLifecycleOwner.current
+    androidx.compose.runtime.DisposableEffect(vie) {
+        val o = androidx.lifecycle.LifecycleEventObserver { _, e -> if (e == androidx.lifecycle.Lifecycle.Event.ON_RESUME) acces = AutoEtat.accesFichiers() }
+        vie.lifecycle.addObserver(o)
+        onDispose { vie.lifecycle.removeObserver(o) }
+    }
+    // a chaque fichier copie, et a la fin : la jauge et la liste 001, 002... se mettent a jour
+    LaunchedEffect(AutoEtat.actif, AutoEtat.faits) { vm.gpRafraichir() }
+
+    Column(Modifier.fillMaxWidth().background(Vert.copy(alpha = 0.08f), RoundedCornerShape(16.dp))
+        .border(1.5.dp, Vert.copy(alpha = 0.45f), RoundedCornerShape(16.dp)).padding(14.dp).animateContentSize()) {
+        Text(Tr.t("🤖 Tout automatique (le plus simple)"), fontWeight = FontWeight.Black, fontSize = 17.sp, color = Vert)
+        if (!AutoEtat.actif) {
+            Txt(if (g) Tr.t("Touche simplement les liens « Télécharger » du mail de Google. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download, même pendant que les autres se téléchargent.")
+                else Tr.t("Télécharge simplement les fichiers sur privacy.apple.com. Clean Smart copie chaque fichier sur le disque dès qu'il est arrivé dans Download."))
+            Coche(supprimer, Tr.t("Supprimer chaque fichier du téléphone une fois copié et vérifié (conseillé : garde de la place)")) { supprimer = it }
+            AutoEtat.fin?.let { Encadre(it, if (it.startsWith("🎉")) Vert else Orange) }
+            if (!acces) Encadre(Tr.t("🔓 Une seule fois : autorise « Accès à tous les fichiers » pour que Clean Smart voie le dossier Download. Il ne lit que les fichiers de %1.", if (g) "Google" else "iCloud"), Bleu)
+            BigButton(if (acces) Tr.t("🤖 Démarrer le mode automatique") else Tr.t("🔓 Autoriser l'accès aux fichiers"), color = Vert) {
+                when {
+                    !acces -> runCatching {
+                        ctx.startActivity(Intent(android.provider.Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, Uri.parse("package:" + ctx.packageName)))
+                    }.onFailure { runCatching { ctx.startActivity(Intent(android.provider.Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION)) } }
+                    !vm.gpDestOk -> vm.message = Tr.t("Choisis d'abord le dossier sur ta clé ou ton disque (étape 2).")
+                    vm.demo -> vm.message = Tr.t("En démonstration, aucun fichier n'est traité. Quitte la démonstration (Options) pour le faire vraiment.")
+                    else -> AutoEtat.demarrer(ctx, vm.gpSource, supprimer)
+                }
+            }
+        } else {
+            var maintenant by remember { mutableStateOf(System.currentTimeMillis()) }
+            LaunchedEffect(Unit) { while (true) { maintenant = System.currentTimeMillis(); kotlinx.coroutines.delay(1000) } }
+            Gap(6)
+            if (AutoEtat.pct > 0) LinearProgressIndicator(progress = { AutoEtat.pct / 100f }, color = Vert, trackColor = Carte2,
+                modifier = Modifier.fillMaxWidth().height(12.dp).clip(RoundedCornerShape(99.dp)))
+            else LinearProgressIndicator(color = Vert, trackColor = Carte2, modifier = Modifier.fillMaxWidth().height(12.dp).clip(RoundedCornerShape(99.dp)))
+            Gap(6)
+            Text(AutoEtat.texte, color = Texte, fontSize = 14.sp)
+            val secondes = ((maintenant - AutoEtat.debut) / 1000).coerceAtLeast(0)
+            val duree = if (secondes < 3600) "${secondes / 60} min" else "${secondes / 3600} h ${"%02d".format((secondes % 3600) / 60)}"
+            Text(Tr.t("✅ %1 · depuis %2", plural(AutoEtat.faits, Tr.t("fichier copié"), Tr.t("fichiers copiés")), duree), color = Gris, fontSize = 13.sp)
+            AutoEtat.lignes.forEach { (nom, etat) ->
+                Text("$etat  ·  $nom", fontSize = 13.sp, color = if (etat.startsWith("✅")) Vert else if (etat.startsWith("⚠")) Rouge else Texte,
+                    modifier = Modifier.padding(top = 3.dp))
+            }
+            Gap(6)
+            if (g) BigButton(Tr.t("📧 Ouvrir le mail de Google"), color = Bleu) {
+                runCatching { ctx.startActivity(Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_APP_EMAIL).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+            }
+            Text(Tr.t("Tu peux quitter l'appli pour toucher les liens : la copie continue (notification « Copie automatique »)."), color = Gris, fontSize = 12.sp)
+            TextButton(onClick = {
+                ask(Confirm(Tr.t("Arrêter le mode automatique ?"),
+                    Tr.t("Le fichier en cours est terminé d'abord. Les fichiers déjà copiés sont à l'abri ; les autres le seront la prochaine fois, sans doublon."),
+                    Tr.t("Arrêter"), danger = false) { AutoEtat.arreter(ctx) })
+            }, modifier = Modifier.fillMaxWidth()) { Text(Tr.t("⏹ Arrêter"), color = Rouge) }
+        }
     }
 }
 

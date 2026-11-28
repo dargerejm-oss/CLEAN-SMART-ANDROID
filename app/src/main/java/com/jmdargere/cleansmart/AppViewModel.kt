@@ -509,6 +509,9 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var gpEtats by mutableStateOf(google.etats()); private set
     var gpDernier by mutableStateOf<Pair<String, com.jmdargere.cleansmart.data.ExportStats>?>(null); private set
 
+    /** Relit l'etat de l'onglet (apres le mode automatique, qui travaille dans un service a part). */
+    fun gpRafraichir() = gpUtiliser(gpSource)
+
     fun gpSetTaille(go: Int) { gpTaille = go; google.tailleGoogleGo = go }
     fun gpSetDest(uri: android.net.Uri) { google.destination = uri; gpDest = google.nomDestination(); gpDestOk = google.destinationOk() }
     fun gpRafraichirDisque() { gpDestOk = google.destinationOk() }
